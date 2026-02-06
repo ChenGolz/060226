@@ -863,16 +863,24 @@ function stopLinkPropagation(el) {
 
     // Keep a short, consistent set in compact cards
     // 1) cruelty-free program badge if present
-    var prog = badges.find(function (b) {
-      var t = String(b || '').toLowerCase();
-      return t.indexOf('peta') !== -1 || t.indexOf('leaping') !== -1 || t.indexOf('cruelty') !== -1;
+    var progBadges = badges
+      .filter(function (b) {
+        var t = String(b || '').toLowerCase();
+        return t.indexOf('peta') !== -1 || t.indexOf('leaping') !== -1 || t.indexOf('cruelty') !== -1;
+      })
+      .map(function (b) {
+        var lbl = String(b || '');
+        if (/leaping\s*bunny/i.test(lbl)) return 'Leaping Bunny';
+        if (/peta/i.test(lbl)) return 'PETA';
+        return lbl;
+      })
+      .filter(function (lbl, idx, arr) {
+        return lbl && arr.indexOf(lbl) === idx; // dedupe
+      });
+
+    progBadges.forEach(function (lbl) {
+      addBadge(lbl, 'brandBadge--approved');
     });
-    if (prog) {
-      var progLabel = String(prog || '');
-      if (/leaping\s*bunny/i.test(progLabel)) progLabel = 'Leaping Bunny';
-      else if (/peta/i.test(progLabel)) progLabel = 'PETA';
-      addBadge(progLabel, 'brandBadge--approved');
-    }
     if (vegan) addBadge('טבעוני', 'brandBadge--vegan');
     var lu = formatLastUpdated(pickLastUpdated(brand));
     if (lu) addBadge('עודכן: ' + lu, 'brandBadge--muted');
