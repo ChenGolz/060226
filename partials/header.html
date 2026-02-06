@@ -1,0 +1,260 @@
+<header class="siteHeader" id="siteHeader">
+  <div class="wrap headerRow">
+    <a aria-label="דף הבית" class="logo" href="index.html">
+      <img alt="לקנות ללא אכזריות" class="logoImg" height="40" src="assets/img/logo.png" width="40"/>
+      <span class="logoText">לקנות ללא אכזריות</span>
+    </a>
+
+    <!-- Mobile hamburger (required for the drawer nav) -->
+    <div class="navMobileActions">
+      <a class="quickSearch" href="products.html" aria-label="חיפוש מוצרים">
+        <span aria-hidden="true">🔎</span>
+      </a>
+      <button class="navToggle" type="button" aria-label="פתח תפריט" aria-expanded="false">
+        <span class="navToggleIcon" aria-hidden="true">☰</span>
+        <span class="navToggleText">תפריט</span>
+      </button>
+    </div>
+
+    <nav aria-label="ניווט ראשי" class="nav">
+      <details class="navGroup">
+        <summary>
+          מוצרים
+          <span class="navChevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="navDrop" role="menu" aria-label="מוצרים מומלצים">
+          <a href="products.html" role="menuitem">🛍️ חיפוש מוצרים</a>
+          <a href="bundles.html" role="menuitem">🎁 מארזים</a>
+        </div>
+      </details>
+
+      <details class="navGroup">
+        <summary>
+          מותגים
+          <span class="navChevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="navDrop" role="menu" aria-label="מותגים מומלצים">
+          <a href="israeli-brands.html" role="menuitem">🇮🇱 מותגים בישראל</a>
+          <a href="recommended-brands.html" role="menuitem">🌍 מותגים מחו״ל</a>
+        </div>
+      </details>
+
+      <details class="navGroup navGroupDeals">
+        <summary>
+          דילים
+          <span class="navChevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="navDrop" role="menu" aria-label="דילים ומבצעים">
+          <a href="todays-top-deals.html" role="menuitem">🔥 דילים היום</a>
+          <a href="shopping-calendar.html" role="menuitem">📅 לוח מבצעים</a>
+        </div>
+      </details>
+
+      <details class="navGroup">
+        <summary>
+          כלים
+          <span class="navChevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="navDrop" role="menu" aria-label="כלים לקנייה חכמה">
+          <a href="ingredient-detective.html" role="menuitem">🧪 בודק רכיבים</a>
+          <a href="pharmacy.html" role="menuitem">🧴 בפארם</a>
+          <a href="amazon-info.html" role="menuitem">🛒 קנייה באמזון</a>
+        </div>
+      </details>
+
+      <details class="navGroup">
+        <summary>
+          מדריכים
+          <span class="navChevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="navDrop" role="menu" aria-label="מדריכים ומפות">
+          <a href="vegan-in-israel.html" role="menuitem">🗺️ טבעוני בישראל</a>
+          <a href="hidden-gems-map.html" role="menuitem">✨ Hidden Gems</a>
+          <a href="learn.html" role="menuitem">📚 מידע</a>
+        </div>
+      </details>
+
+      <details class="navGroup">
+        <summary>
+          בקרוב
+          <span class="navChevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="navDrop" role="menu" aria-label="קהילה ועשייה טובה">
+          <a href="wall-of-kindness.html" role="menuitem">🤝 Wall of Kindness</a>
+        </div>
+      </details>
+
+      <details class="navGroup">
+        <summary>
+          אודות
+          <span class="navChevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="navDrop" role="menu" aria-label="אודות ועזרה">
+          <a href="methodology.html" role="menuitem">🧠 השיטה</a>
+          <a href="about.html" role="menuitem">ℹ️ על האתר</a>
+          <a href="contact.html" role="menuitem">✉️ צור קשר</a>
+          <a href="terms.html" role="menuitem">📜 תקנון</a>
+        </div>
+      </details>
+    </nav>
+  </div>
+
+  <style>
+    /* Sticky header + subtle blur */
+    #siteHeader.siteHeader{
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      transition: box-shadow .2s ease, background .2s ease;
+    }
+    #siteHeader.siteHeader.isScrolled{
+      box-shadow: 0 10px 28px rgba(0,0,0,.12);
+      background: rgba(255,255,255,.96);
+    }
+    #siteHeader.siteHeader.isScrolled .logoImg{ height: 34px; width: 34px; }
+    #siteHeader.siteHeader.isScrolled .logoText{ font-size: .98rem; }
+
+    /* Grouped nav — single-level dropdown, fast & mobile-friendly */
+    #siteHeader .nav{ overflow: visible; }
+    #siteHeader .navGroup{ position: relative; }
+
+    /* Touch targets */
+    #siteHeader .nav a,
+    #siteHeader .navGroup > summary{
+      min-height: 44px;
+      line-height: 1;
+    }
+    /* Mobile action row (hamburger + quick search) */
+    #siteHeader .navMobileActions{ display: inline-flex; gap: 10px; align-items: center; }
+    #siteHeader .quickSearch{
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: 1px solid rgba(31,41,55,.12);
+      background: rgba(157,195,230,.18);
+      color: var(--ink);
+      font-weight: 900;
+    }
+    #siteHeader .navGroup > summary{
+      list-style: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 10px;
+      border-radius: 14px;
+      font-weight: 900;
+      color: var(--ink);
+      user-select: none;
+      border: 1px solid transparent;
+    }
+    #siteHeader .navGroup > summary::-webkit-details-marker{ display:none; }
+    #siteHeader .navGroup[open] > summary{
+      background: rgba(157,195,230,.18);
+      border-color: rgba(42,91,154,.18);
+    }
+    #siteHeader .navChevron{ opacity: .75; transform: translateY(1px); }
+
+    /* Desktop: hover/focus opens dropdown (no click friction). Click still works for accessibility. */
+    #siteHeader .navDrop{
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      min-width: 250px;
+      padding: 8px;
+      border-radius: 16px;
+      border: 1px solid rgba(31,41,55,.12);
+      background: #fff;
+      box-shadow: 0 18px 40px rgba(0,0,0,.10);
+      display: grid;
+      gap: 4px;
+      z-index: 2000;
+
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+      transition: opacity .18s ease, transform .18s ease;
+    }
+
+    #siteHeader .navGroup[open] .navDrop,
+    #siteHeader .navGroup:hover .navDrop,
+    #siteHeader .navGroup:focus-within .navDrop{
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    #siteHeader .navDrop a{
+      display: block;
+      padding: 10px 10px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 900;
+      color: var(--ink);
+    }
+    #siteHeader .navDrop a:hover{ background: rgba(157,195,230,.18); }
+    /* Mobile: keep dropdowns inside flow so they won't get clipped */
+    @media (max-width: 820px){
+      #siteHeader .quickSearch{ display: inline-flex; }
+      #siteHeader .navDrop{
+        position: static;
+        min-width: unset;
+        margin-top: 6px;
+        box-shadow: none;
+        background: #fff;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+        transition: none;
+      }
+      #siteHeader .navGroup{ width: 100%; }
+      #siteHeader .navGroup > summary{ width: 100%; justify-content: space-between; }
+
+      /* Bigger tap targets on mobile */
+      #siteHeader .navDrop a{ padding: 14px 12px; }
+      #siteHeader .navGroup > summary{ padding: 14px 12px; }
+    }
+  </style>
+
+  <script>
+    (function(){
+      var header = document.getElementById('siteHeader');
+      if(!header) return;
+
+      // 1) Sticky shadow / shrink on scroll
+      var ticking = false;
+      function onScroll(){
+        if(ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function(){
+          var scrolled = window.scrollY > 50;
+          header.classList.toggle('isScrolled', scrolled);
+          ticking = false;
+        });
+      }
+      window.addEventListener('scroll', onScroll, { passive:true });
+      onScroll();
+
+      // 2) Close any open dropdown when clicking outside
+      document.addEventListener('click', function(e){
+        if(header.contains(e.target)) return;
+        header.querySelectorAll('details.navGroup[open]').forEach(function(d){ d.removeAttribute('open'); });
+      });
+
+      // 3) Only one dropdown open at a time on click
+      header.querySelectorAll('details.navGroup > summary').forEach(function(s){
+        s.addEventListener('click', function(){
+          var cur = s.parentElement;
+          header.querySelectorAll('details.navGroup[open]').forEach(function(d){ if(d !== cur) d.removeAttribute('open'); });
+        });
+      });
+    })();
+  </script>
+</header>

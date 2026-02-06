@@ -1,0 +1,78 @@
+<footer class="siteFooter">
+  <div class="wrap">
+    <div aria-label="ציטוטים" class="footerQuotes">
+      <span class="quotePill">חמלה היא דרך חיים</span>
+      <span class="quotePill">חיה ותן לחיות</span>
+      <span class="quotePill">חמלה היא האופנה הכי יפה</span>
+      <span class="quotePill">היו טובים לכל היצורים</span>
+    </div>
+
+    <div class="footerGrid" aria-label="קישורים בתחתית האתר">
+      <div class="footerCol">
+        <h3 class="footerTitle">קישורים מהירים</h3>
+        <a href="products.html">מאגר מוצרים עם חיפוש</a>
+        <a href="bundles.html">מארזים משתלמים</a>
+        <a href="todays-top-deals.html">דילים חמים היום</a>
+        <a href="ingredient-detective.html">בודק רכיבים</a>
+      </div>
+
+      <div class="footerCol">
+        <h3 class="footerTitle">מותגים</h3>
+        <a href="recommended-brands.html">מותגים מומלצים מחו״ל</a>
+        <a href="israeli-brands.html">מותגים מומלצים בישראל</a>
+        <a href="pharmacy.html">מוצרים טבעוניים בפארם</a>
+      </div>
+
+      <div class="footerCol">
+        <h3 class="footerTitle">אודות ועזרה</h3>
+        <a href="about.html">על האתר</a>
+        <a href="methodology.html">איך אנחנו בודקים</a>
+        <a href="contact.html">צור קשר ותיקונים</a>
+        <a href="terms.html">תקנון ותנאי שימוש</a>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <p class="muted footerNote">
+        חלק מהקישורים באתר עשויים להיות קישורי שותפים — זה עוזר לנו לשמור את המאגר חינמי ומעודכן, בלי עלות נוספת עבורך.
+        <a href="terms.html">פרטים בתקנון</a>
+      </p>
+
+      <p class="muted footerLegal">© 2026 NoCrueltyIL. כל הזכויות שמורות. All rights reserved.</p>
+    </div>
+  </div>
+
+  <style>
+    .footerGrid{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(15, 23, 42, 0.08);
+    }
+    .footerTitle{
+      margin: 0 0 8px;
+      font-size: 0.95rem;
+      font-weight: 1000;
+      color: rgba(15,23,42,.88);
+    }
+    .footerCol a{
+      display: block;
+      text-decoration: none;
+      padding: 6px 0;
+      font-weight: 800;
+      color: rgba(15,23,42,.78);
+    }
+    .footerCol a:hover{ color: rgba(42,91,154,.98); }
+
+    .footerBottom{ margin-top: 14px; }
+    .footerNote{ margin-top: 10px; }
+    .footerLegal{ margin-top: 10px; opacity: .9; }
+
+    @media (max-width: 820px){
+      .footerGrid{ grid-template-columns: 1fr; }
+      .footerCol a{ padding: 4px 0; }
+    }
+  </style>
+</footer>

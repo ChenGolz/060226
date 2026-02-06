@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Hidden Gems · טבעוני בעולם | לקנות ללא אכזריות</title>
+<meta content="רשימת Hidden Gems של מקומות טבעוניים בעולם: מסעדות ועסקים 100% טבעוניים — מסודר ונוח לחיפוש." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css?v=2026-02-02-v19" rel="stylesheet"/>
+<link href="assets/img/logo.png" rel="icon" type="image/png"/>
+<style>
+  /* Hidden Gems – list view */
+  .hgTopRow{
+    display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end;
+    margin: 14px 0 10px;
+  }
+  .hgTopRow .field{ flex: 1; min-width: 240px; }
+  .hgMetaRow{
+    display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+    margin-top: 8px;
+  }
+  .hgCount{
+    font-weight:700;
+  }
+  .hgGroups{
+    margin-top: 14px;
+    display:flex; flex-direction:column; gap: 16px;
+  }
+  .hgCountryHeader{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    margin: 0 0 10px;
+  }
+  .hgCountryHeader h3{
+    margin:0;
+    font-size: 1.05rem;
+  }
+  .hgGrid{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .hgCard{
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 14px;
+    padding: 14px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    display:flex;
+    flex-direction:column;
+    gap: 8px;
+  }
+  .hgName{
+    margin:0;
+    font-weight: 800;
+    font-size: 1.02rem;
+    line-height: 1.25;
+  }
+  .hgLoc{
+    margin:0;
+    color: rgba(0,0,0,.68);
+    font-weight:600;
+  }
+  .hgAddr{
+    margin:0;
+    color: rgba(0,0,0,.62);
+    font-size:.95rem;
+  }
+  .hgActions{
+    display:flex; gap:8px; flex-wrap:wrap;
+    margin-top: 4px;
+  }
+  .hgActions a, .hgActions button{
+    font-size: .92rem;
+  }
+  .hgTag{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(0,0,0,.06);
+    font-weight: 700;
+    font-size: .86rem;
+    color: rgba(0,0,0,.75);
+  }
+
+  @media (max-width: 980px){
+    .hgGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 560px){
+    .hgGrid{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body class="pageMap">
+<div id="siteHeaderMount"></div>
+<main id="main">
+<section class="hero product-hero heroSmall">
+<img alt="" aria-hidden="true" class="decorPhoto decorCL" decoding="async" loading="eager" src="assets/img/photos/hero-intl.png"/>
+<div class="wrap heroInner">
+<div class="heroCopy center-text">
+<h1>Hidden Gems בעולם</h1>
+<p>רשימה מסודרת של מסעדות טבעוניות מומלצות בעולם — לחיפוש, סינון ושמירה לטיולים.</p>
+</div>
+</div>
+</section>
+<section class="panel">
+<div class="wrap">
+<div class="contentCard">
+<h2 class="sectionTitle">חיפוש וסינון</h2>
+<div class="hgTopRow">
+<div class="field">
+<label for="hgSearch">חיפוש</label>
+<input id="hgSearch" placeholder="לדוגמה: London, Athens, Pizza..." type="search"/>
+</div>
+<div class="field" style="min-width: 220px;">
+<label for="hgCountry">מדינה</label>
+<select id="hgCountry">
+<option value="all">כל המדינות</option>
+</select>
+</div>
+<div class="field" style="min-width: 220px;">
+<label for="hgSort">מיון</label>
+<select id="hgSort">
+<option value="country">מדינה → עיר → שם</option>
+<option value="name">שם (א״ב)</option>
+<option value="city">עיר (א״ב)</option>
+</select>
+</div>
+<div class="field" style="align-self:flex-end;">
+<button class="btnSmall" id="hgReset" type="button">איפוס</button>
+</div>
+</div>
+<div class="hgMetaRow">
+<div class="muted" style="margin:0;">טיפ: לחצי על “פתח במפות” כדי לנווט או לשמור.</div>
+<div class="hgCount"><span id="hgCount">0</span> מקומות</div>
+</div>
+</div>
+<div class="hgGroups" id="hgGroups"></div>
+</div>
+</section>
+</main>
+<div id="siteFooterMount"></div>
+<script data-base="./" defer="" src="assets/js/layout-inject.js?v=2026-02-02-v20"></script>
+<script defer="" src="assets/js/site.js?v=2026-02-02-v19"></script>
+<script defer="" src="assets/js/hidden-gems-map.js?v=2026-02-02-v19"></script>
+<!-- Weglot helper: refresh translations after dynamic content renders -->
+<script>
+(function(){
+  function wgRefresh(){
+    try{
+      if (window.Weglot && typeof Weglot.refresh === 'function') Weglot.refresh();
+    }catch(e){}
+  }
+  // initial
+  document.addEventListener('DOMContentLoaded', function(){ setTimeout(wgRefresh, 80); });
+
+  // optional: if your JS triggers this after rendering cards/lists
+  window.addEventListener('kbwg:content-rendered', function(){ setTimeout(wgRefresh, 80); });
+
+  // watch for DOM changes (debounced)
+  var t=null;
+  var mo=new MutationObserver(function(){
+    clearTimeout(t);
+    t=setTimeout(wgRefresh, 250);
+  });
+  mo.observe(document.documentElement, { childList:true, subtree:true });
+})();
+</script>
+</body>
+</html>

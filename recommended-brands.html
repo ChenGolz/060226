@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="page-recommended-brands" dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>מותגים טבעוניים מחו״ל · ללא ניסויים | 100% טבעוני</title>
+<meta content="מותגים מחו״ל שהם 100% טבעוניים ואשר לא נוסו על בעלי חיים. Cruelty-free &amp; vegan brands." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css?v=2026-02-06-v21" rel="stylesheet"/><link href="assets/css/brands-compact.css?v=2026-02-06-v21" rel="stylesheet"/>
+<link href="assets/img/logo.png" rel="icon" type="image/png"/>
+<style>
+/* מומלצים brands – page polish (scoped) */
+.hero.heroSmall { padding-top: 18px; padding-bottom: 18px; min-height: 260px; }
+.filter-panel { margin-top: -12px; }
+
+/* Grid */
+.page-recommended-brands #brandGrid{
+  display:grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  grid-auto-flow: row !important;
+  gap:14px !important;
+  align-items:stretch;
+}
+@media (max-width: 1100px){
+  .page-recommended-brands #brandGrid{ grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+}
+@media (max-width: 900px){
+  .page-recommended-brands #brandGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+@media (max-width: 560px){
+  /* Mobile: 2 cards per row */
+  .page-recommended-brands #brandGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap:10px !important; }
+  .page-recommended-brands .brandCard{ min-height: auto; }
+}
+
+/* Stack card content vertically (name → badges → links) */
+.page-recommended-brands .brandCard .brandTop{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  gap:10px;
+}
+
+/* Card — PRO (minimal, consistent) */
+.page-recommended-brands .brandCard{
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+  border:1px solid rgba(42,91,154,.12);
+  background: linear-gradient(180deg, rgba(42,91,154,.055), #ffffff 55%);
+  padding:12px 12px 10px;
+  box-shadow:0 10px 22px rgba(15,23,42,.06);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+  cursor:pointer;
+  min-height: 185px;
+}
+.page-recommended-brands .brandCard::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height:6px;
+  background: linear-gradient(90deg, rgba(42,91,154,.65), rgba(16,185,129,.55));
+  opacity:.22;
+  pointer-events:none;
+}
+.page-recommended-brands .brandCard:hover,
+.page-recommended-brands .brandCard:focus-within{
+  transform: translateY(-1px);
+  box-shadow:0 14px 28px rgba(15,23,42,.09);
+  border-color: rgba(42,91,154,.22);
+}
+.page-recommended-brands .brandCard:focus-visible{
+  outline:none;
+  box-shadow:0 0 0 4px rgba(42,91,154,.16), 0 14px 28px rgba(15,23,42,.10);
+}
+
+/* Content should sit above decorative shapes */
+.page-recommended-brands .brandCard .brandTop{ position:relative; z-index:1; height:100%; }
+
+/* Header (logo + name + categories) */
+.page-recommended-brands .brandHeader{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  padding-bottom:10px;
+  margin-bottom:8px;
+  border-bottom: 1px solid rgba(15,23,42,.07);
+}
+.page-recommended-brands .brandLogo{
+  width:32px;
+  height:32px;
+  border-radius:12px;
+  border:1px solid rgba(42,91,154,.18);
+  background: rgba(42,91,154,.07);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  flex:0 0 auto;
+  color: rgba(15,23,42,.88);
+}
+.page-recommended-brands .brandLogo--fallback{ font-weight:800; }
+.page-recommended-brands .brandTitleBlock{ min-width:0; flex:1 1 auto; }
+.page-recommended-brands .brandName{
+  font-size: 1.22rem !important;
+  font-family: "Ambassador", "Assistant", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight: 650 !important;
+  letter-spacing: -0.1px;
+  line-height: 1.32;
+  display:block;
+  padding: 3px 0; /* prevent top clipping on some mobile renderers */
+  text-decoration:none;
+}
+.page-recommended-brands .brandName:hover{ text-decoration: underline; }
+.page-recommended-brands .brandCatsInline{
+  margin-top:4px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: rgba(15,23,42,.62);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+/* קטגוריות inside cards (professional inline) */
+.page-recommended-brands .brandCatsChips,
+.page-recommended-brands .brandChip{
+  display:none !important;
+}
+.page-recommended-brands .brandCat{ display:none !important; }
+
+/* Badges (clean, subtle) */
+.page-recommended-brands .brandBadges{
+  margin-top:0 !important;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+.page-recommended-brands .brandBadge{
+  border:1px solid rgba(15,23,42,.10);
+  background: rgba(255,255,255,.65);
+  color: rgba(15,23,42,.82);
+  font-weight: 650;
+  border-radius: 999px;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+.page-recommended-brands .brandBadge--approved{
+  background: rgba(42,91,154,.08);
+  border-color: rgba(42,91,154,.22);
+}
+.page-recommended-brands .brandBadge--vegan{
+  background: rgba(16,185,129,.11);
+  border-color: rgba(16,185,129,.25);
+}
+
+/* Links (consistent CTAs) */
+.page-recommended-brands .brandLinks{
+  margin-top:auto !important;
+  padding-top: 6px;
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:6px;
+}
+.page-recommended-brands .brandLinks a{
+  border-radius: 12px;
+  text-align:center;
+  white-space: nowrap;
+}
+.page-recommended-brands .brandLinks a.brandLink--amazon{
+  border-color: rgba(42,91,154,.26);
+  background: rgba(42,91,154,.10);
+}
+.page-recommended-brands .brandLinks a.brandLink--site{
+  background: rgba(15,23,42,.03);
+}
+.page-recommended-brands .brandLinks a:focus-visible{
+  outline:none;
+  box-shadow:0 0 0 3px rgba(42,91,154,.16);
+}
+
+/* קטגוריה filter pills (intl) */
+.page-recommended-brands .brandCategoryBar{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+@media (max-width: 720px){
+  .page-recommended-brands .brandCategoryBar{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+    scroll-snap-type: x mandatory;
+  }
+  .page-recommended-brands .brandCategoryBar > *{ scroll-snap-align: start; }
+}
+.page-recommended-brands .catPill{
+  border:1px solid rgba(42,91,154,.14);
+  background: rgba(42,91,154,.07);
+  color:#0f172a;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 900;
+  cursor:pointer;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+  white-space: nowrap;
+}
+.page-recommended-brands .catPill:hover{ transform: translateY(-1px); }
+.page-recommended-brands .catPill.isActive{
+  background: rgba(42,91,154,.14);
+  border-color: rgba(42,91,154,.30);
+}
+.page-recommended-brands .brandClearPill{
+  background: rgba(239,68,68,.10);
+  border-color: rgba(239,68,68,.22);
+}
+
+
+/* Hide cards properly when filtering */
+.page-recommended-brands .brandCard.isHidden,
+.page-recommended-brands .brandCard[aria-hidden="true"],
+.page-recommended-brands .brandCard[hidden]{
+  display:none !important;
+}
+
+
+/* ==========================
+   v8: intl compact (mobile)
+   ========================== */
+@media (max-width: 768px){
+  /* Hide long intro text to reduce scroll */
+  .page-recommended-brands .filterPanel__collapseArea .lead{ display:none !important; }
+
+  /* Tighter filter card */
+  .page-recommended-brands .toolbar-container{
+    padding: 12px !important;
+    margin-bottom: 12px !important;
+    border-radius: 14px !important;
+  }
+  .page-recommended-brands .brandsControls{
+    gap: 10px !important;
+  }
+  .page-recommended-brands .brandsSearchControl input,
+  .page-recommended-brands .brandsCategoryControl select{
+    padding: 10px 12px !important;
+    border-radius: 14px !important;
+  }
+  .page-recommended-brands .brandsCategoryControl label{
+    font-size: .92rem !important;
+    margin-bottom: 6px !important;
+  }
+  .page-recommended-brands #brandClearFilters{
+    padding: 7px 10px !important;
+    border-radius: 12px !important;
+  }
+
+  /* קטגוריה pills: smaller + always scroll horizontally on mobile */
+  .page-recommended-brands .brandCategoryBar{
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    gap: 6px !important;
+    padding-bottom: 4px !important;
+  }
+  .page-recommended-brands .catPill{
+    padding: 6px 10px !important;
+    font-weight: 850 !important;
+    background: rgba(42,91,154,.06) !important;
+    border-color: rgba(42,91,154,.14) !important;
+  }
+  .page-recommended-brands .catPill.isActive{
+    background: rgba(42,91,154,.12) !important;
+    border-color: rgba(42,91,154,.28) !important;
+  }
+
+  /* Cards smaller (keep text size) */
+  .page-recommended-brands .brandCard{
+    padding: 10px !important;
+    min-height: 170px !important;
+    border-radius: 16px !important;
+  }
+  .page-recommended-brands .brandCard .brandTop{ gap: 8px !important; }
+  .page-recommended-brands .brandBadges{ gap: 6px !important; margin-top: 8px !important; }
+  .page-recommended-brands .brandBadge{ padding: 5px 8px !important; }
+  .page-recommended-brands .brandLinks{ gap: 6px !important; margin-top: 8px !important; }
+  .page-recommended-brands .brandLinks .btn.small{ padding: 6px 10px !important; }
+}
+/* Mobile: hide category pill buttons (use the combobox instead) */
+@media (max-width: 640px){
+  .page-recommended-brands #brandCategoryBar{ display:none !important; }
+  .page-recommended-brands #brandClearFilters{ display:none !important; }
+}
+
+/* Vegan checkbox alignment */
+.page-recommended-brands .brandsVeganControl{
+  display:flex;
+  align-items:flex-end;
+}
+.page-recommended-brands .brandsVeganControl .check{
+  font-weight: 900;
+  gap: 10px;
+}
+.page-recommended-brands .brandsVeganControl input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+}
+</style></head>
+<body class="page-recommended-brands page-recommended-brands page-recommended-brands page-recommended-brands">
+<div id="siteHeaderMount"></div>
+<main id="main">
+<section class="hero product-hero heroSmall">
+<img alt="" aria-hidden="true" class="decorPhoto decorCL" decoding="async" loading="eager" src="assets/img/photos/dogs-cuddle.jpg"/>
+<div class="wrap heroInner">
+<div class="heroCopy center-text">
+<h1 data-i18n="recommended-brands_h1">בינלאומי</h1>
+          <div class="muted" style="margin-top:6px;font-weight:900;">עודכן לאחרונה: 31.01.2026</div>
+<p>מותגים בינלאומיים מומלצים — לחצי על מותג כדי לפתוח חיפוש באמזון.</p>
+</div>
+</div>
+</section>
+<section class="panel filter-panel">
+<div class="wrap">
+<div class="toolbar-container contentCard"><div class="filterPanel__collapseArea">
+<p class="lead">בחרי קטגוריה כדי לראות מותגים רלוונטיים, או חפשי לפי שם.</p><p class="muted">הכל brands on this list are also top rated in Amazon.</p><p class="muted" data-price-note="1">הסימון $ הוא הערכה כללית לרמת המחירים של המותג (לא מחיר מדויק לכל מוצר).</p>
+<div aria-label="חיפוש מותגים" class="brandsControls">
+<div class="brandsSearchControl">
+<label class="visuallyHidden" for="brandSearch">חיפוש מותגים</label>
+<input autocomplete="off" class="brandSearchInput" id="brandSearch" placeholder="חיפוש מותג לפי שם או תחום..." type="search"/>
+</div>
+<div class="brandsCategoryControl">
+<label for="brandCategoryFilter">סינון לפי סוג מוצר</label>
+<select class="brandCategoryFilter" id="brandCategoryFilter"><option value="">כל סוגי המוצרים</option></select>
+</div><div class="brandsPriceControl"><label for="brandPriceFilter">סינון לפי מחיר</label><select class="brandPriceFilter" id="brandPriceFilter"><option value="">כל הרמות</option></select></div>
+</div><p class="brandsPriceHint muted">מחיר משוער: $ זול · $$$$$ יקר. בחירה ב־$$ תציג מותגים עד $$ (כולל).</p><div class="brandsMetaRow">
+<div class="brandsCount" data-brands-count=""></div>
+</div>
+</div></div><div class="cardsGrid cardsGrid--brands" data-json="data/intl-brands.json" data-page="intl" id="brandGrid"></div>
+</div>
+</section>
+</main>
+<div id="siteFooterMount"></div>
+<script src="assets/js/price-tier.js?v=2026-02-06-v21"></script><script src="assets/js/brands-json.js?v=2026-02-06-v21"></script>
+<script data-base="./" defer="" src="assets/js/layout-inject.js?v=2026-02-02-v20"></script>
+<script defer="" src="assets/js/site.js?v=2026-02-06-v21"></script>
+<!-- Weglot helper: refresh translations after dynamic content renders -->
+<script>
+(function(){
+  function wgRefresh(){
+    try{
+      if (window.Weglot && typeof Weglot.refresh === 'function') Weglot.refresh();
+    }catch(e){}
+  }
+  // initial
+  document.addEventListener('DOMContentLoaded', function(){ setTimeout(wgRefresh, 80); });
+
+  // optional: if your JS triggers this after rendering cards/lists
+  window.addEventListener('kbwg:content-rendered', function(){ setTimeout(wgRefresh, 80); });
+
+  // watch for DOM changes (debounced)
+  var t=null;
+  var mo=new MutationObserver(function(){
+    clearTimeout(t);
+    t=setTimeout(wgRefresh, 250);
+  });
+  mo.observe(document.documentElement, { childList:true, subtree:true });
+})();
+</script>
+</body>
+</html>

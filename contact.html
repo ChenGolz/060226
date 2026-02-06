@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>צור קשר | עדכונים והמלצות</title>
+<meta content="שאלות, תיקונים והמלצות? כתבי לנו ונשמח לעדכן את המאגר של מותגים ומוצרים 100% טבעוניים שלא נוסו על בעלי חיים." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css?v=2026-02-02-v19" rel="stylesheet"/>
+<link href="assets/img/logo.png" rel="icon" type="image/png"/>
+</head>
+<body>
+<div id="siteHeaderMount"></div>
+<main id="main">
+<section class="hero product-hero heroSmall">
+<img alt="" aria-hidden="true" class="decorPhoto decorCL" decoding="async" loading="eager" src="assets/img/photos/dog-field.jpg"/>
+<div class="wrap heroInner">
+<div class="heroCopy center-text">
+<h1>צור קשר</h1>
+<p>מצאת טעות? יש לך המלצה? כתבי לנו ונשמח לבדוק ולעדכן.</p>
+</div>
+</div>
+</section>
+<section class="panel filter-panel">
+<div class="wrap">
+<div class="toolbar-container contentCard">
+<p class="lead">שמחה לשמוע ממך. רעיונות, תיקונים, מותגים שחסרים או שיתופי פעולה — הכל מתקבל באהבה.</p>
+<div class="infoCard">
+<h2>אימייל</h2>
+<div class="emailRow">
+<code id="emailAddr">kbwg.contactus@gmail.com</code>
+<button class="btnPrimary btnSmall" id="copyEmail" type="button">העתקה</button>
+</div>
+<p class="muted small">לחצי להעתקה ואז הדביקי בכל אפליקציית מייל.</p>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('copyEmail');
+  const addr = document.getElementById('emailAddr');
+  btn?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(addr.textContent.trim());
+      btn.textContent = 'הועתק';
+      setTimeout(()=>btn.textContent='העתקה', 1200);
+    } catch(e) {
+      const ta = document.createElement('textarea');
+      ta.value = addr.textContent.trim();
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+      btn.textContent = 'הועתק';
+      setTimeout(()=>btn.textContent='העתקה', 1200);
+    }
+  });
+});
+</script>
+</div>
+</div>
+</section>
+</main>
+<div id="siteFooterMount"></div>
+<script data-base="./" defer="" src="assets/js/layout-inject.js?v=2026-02-02-v20"></script>
+<script defer="" src="assets/js/site.js?v=2026-02-02-v19"></script>
+<!-- Weglot helper: refresh translations after dynamic content renders -->
+<script>
+(function(){
+  function wgRefresh(){
+    try{
+      if (window.Weglot && typeof Weglot.refresh === 'function') Weglot.refresh();
+    }catch(e){}
+  }
+  // initial
+  document.addEventListener('DOMContentLoaded', function(){ setTimeout(wgRefresh, 80); });
+
+  // optional: if your JS triggers this after rendering cards/lists
+  window.addEventListener('kbwg:content-rendered', function(){ setTimeout(wgRefresh, 80); });
+
+  // watch for DOM changes (debounced)
+  var t=null;
+  var mo=new MutationObserver(function(){
+    clearTimeout(t);
+    t=setTimeout(wgRefresh, 250);
+  });
+  mo.observe(document.documentElement, { childList:true, subtree:true });
+})();
+</script>
+</body>
+</html>

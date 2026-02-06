@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>טבעוני בישראל · מסעדות וחנויות 100% טבעוני | לקנות ללא אכזריות</title>
+<meta content="מדריך טבעוני בישראל: מסעדות, חנויות ומקומות שהם 100% טבעוניים. מתאים לטיולים ולתכנון יום בחוץ." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css?v=2026-02-02-v19" rel="stylesheet"/>
+<link href="assets/img/logo.png" rel="icon" type="image/png"/>
+<link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/>
+<style>
+      /* Page-only styles to match your existing cards/panels */
+      #veganMap { height: 440px; border-radius: 18px; overflow: hidden; }
+      .mapWrap { display:grid; gap:14px; }
+      .filtersRow { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+      .filtersRow .field { display:flex; flex-direction:column; gap:6px; min-width: 180px; }
+      .filtersRow input, .filtersRow select {
+        padding: 10px 12px; border-radius: 12px; border: 1px solid rgba(0,0,0,.12);
+        background: rgba(255,255,255,.9);
+      }
+      .btnSmall {
+        display:inline-flex; align-items:center; justify-content:center;
+        padding: 8px 10px; border-radius: 12px; border: 1px solid rgba(0,0,0,.12);
+        text-decoration:none; cursor:pointer; background: rgba(255,255,255,.92);
+        font-weight: 600;
+      }
+      .btnSmall:hover { filter: brightness(0.98); }
+      .btnGhost { background: transparent; }
+      .placesGrid { display:grid; gap:14px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      @media (max-width: 980px) { .placesGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+      @media (max-width: 620px) { .placesGrid { grid-template-columns: 1fr; } #veganMap { height: 360px; } }
+
+      .placeCard { padding: 16px; }
+      .placeTitle { margin: 0 0 8px; font-size: 1.05rem; }
+      .pillRow { display:flex; flex-wrap:wrap; gap:8px; }
+      .pill {
+        display:inline-flex; padding: 6px 10px; border-radius: 999px;
+        background: rgba(0,0,0,.06); font-size: .85rem;
+      }
+      .placeAddr { margin: 10px 0 8px; opacity: .85; }
+      .placeNotes { margin: 0 0 12px; }
+      .placeActions { display:flex; flex-wrap:wrap; gap:10px; }
+      .sectionTitle { margin: 0 0 10px; }
+      .muted { opacity: .8; }
+      .itineraryGrid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:14px; }
+      @media (max-width: 980px) { .itineraryGrid { grid-template-columns: 1fr; } }
+      .kicker { font-weight: 700; letter-spacing: .02em; opacity: .85; }
+    </style>
+</head>
+<body>
+<div id="siteHeaderMount"></div>
+<main>
+<section class="hero product-hero heroSmall">
+<img alt="" aria-hidden="true" class="decorPhoto decorCL" decoding="async" loading="eager" src="assets/img/photos/hero-israel.png"/>
+<div class="wrap heroInner">
+<div class="heroCopy center-text">
+<h1>טבעוני בישראל</h1>
+<p>מפה אינטראקטיבית של מסעדות וחנויות טבעוניות בישראל + רעיונות למסלולים קצרים לטיול.</p>
+<p class="muted" style="margin-top:.65rem;">עדכון נתונים אחרון: <span id="dataStamp">2026-01-30</span></p>
+<div class="badgeRow center-badges">
+<div class="trust-badge"><span class="icon">📍</span> מפה</div>
+<div class="trust-badge"><span class="icon">🌿</span> 100% טבעוני</div>
+<div class="trust-badge"><span class="icon">🧭</span> מסלולים</div>
+</div>
+</div>
+</div>
+</section>
+<section class="panel filter-panel" id="mapSection">
+<div class="wrap">
+<div class="contentCard">
+<h2 class="sectionTitle">מפה אינטראקטיבית</h2>
+<p class="muted" style="margin-top:0;">סינון לפי אזור/סוג מקום וחיפוש חופשי. לחצו על מקום כדי לראות אותו במפה.</p>
+<div class="filtersRow" style="margin: 14px 0 16px;">
+<div class="field" style="flex:1; min-width: 240px;">
+<label for="searchInput">חיפוש</label>
+<input id="searchInput" placeholder="לדוגמה: תל אביב, שווארמה, חנות..." type="search"/>
+</div>
+<div class="field">
+<label for="regionSelect">אזור</label>
+<select id="regionSelect">
+<option value="all">כל הארץ</option>
+</select>
+</div>
+<div class="field">
+<label for="typeSelect">סוג</label>
+<select id="typeSelect">
+<option value="all">הכול</option>
+<option value="restaurant">מסעדות</option>
+<option value="shop">חנויות</option>
+</select>
+</div>
+<div class="field" style="align-self:flex-end;">
+<button class="btnSmall" id="resetFilters" type="button">איפוס</button>
+</div>
+<div class="field" style="align-self:flex-end;">
+<button class="btnSmall btnGhost" id="btnLoadCoords" type="button">טעני מיקומים חסרים</button>
+</div>
+</div>
+<div aria-label="מפה טבעונית" id="veganMap"></div>
+<p class="muted" style="margin:10px 0 0;">אם חסרים פינים — לחצי על “טעני מיקומים חסרים”. זה יכול לקחת קצת זמן כי המיקומים נטענים בהדרגה.</p>
+<p class="muted" style="margin: 10px 0 0;">טיפ: אם אתם במובייל, השתמשו בכפתור “הצג במפה” בכרטיס כדי לזום למיקום.</p>
+</div>
+</div>
+</section>
+<section class="panel">
+<div class="wrap">
+<div class="contentCard" style="margin-bottom:14px;">
+<h2 class="sectionTitle">מסלולים מומלצים</h2>
+<p class="muted" style="margin-top:0;">רעיונות מהירים לסופ״ש/יום טיול. (תמיד מומלץ לבדוק שעות ולקבוע מקום מראש.)</p>
+<div class="itineraryGrid">
+<div class="contentCard">
+<h3 style="margin-top:0;">סופ״ש טבעוני בתל אביב</h3>
+<ul style="margin:0; padding-inline-start: 18px;">
+<li>בוקר: בראנץ׳ ב־<strong>Anastasia</strong></li>
+<li>צהריים: שופינג ב־<strong>מרקט טבעוני דיזינגוף</strong></li>
+<li>ערב: חוויה מיוחדת ב־<strong>Opa</strong> (הזמנה מראש)</li>
+</ul>
+</div>
+<div class="contentCard">
+<h3 style="margin-top:0;">יום טעים בנמל</h3>
+<ul style="margin:0; padding-inline-start: 18px;">
+<li>צהריים: <strong>J17</strong> – מנות מנחמות</li>
+<li>אחר הצהריים: טיול על הטיילת + קפה</li>
+<li>ערב: <strong>Goodness</strong> כשבא משהו מהיר</li>
+</ul>
+</div>
+<div class="contentCard">
+<h3 style="margin-top:0;">קפיצה לצפון</h3>
+<ul style="margin:0; padding-inline-start: 18px;">
+<li>חיפה: <strong>Hummus BAR</strong> (טבעוני)</li>
+<li>פרדס חנה-כרכור: <strong>Yamima</strong> (שווארמה סייטן)</li>
+<li>לסיים בקפה/שוק מקומי</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 class="sectionTitle">מקומות 100% טבעוניים</h2>
+<div class="placesGrid" id="placesGrid"></div>
+<div class="contentCard" style="margin-top:14px;">
+<h3 style="margin-top:0;">יש לכם מקום להוסיף?</h3>
+<p class="muted">שלחו לי שם + עיר + לינק (אינסטגרם/אתר) ואוסיף למפה. הכי חשוב: <strong>100% טבעוני בלבד</strong>.</p>
+<div class="placeActions">
+<a class="btnSmall" href="contact.html">צור קשר</a>
+<a class="btnSmall btnGhost" href="community-wall.html">Wall of Kindness</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="siteFooterMount"></div>
+<script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script data-base="./" defer="" src="assets/js/layout-inject.js?v=2026-02-02-v20"></script>
+<script src="assets/js/site.js?v=2026-02-02-v19"></script>
+<script src="assets/js/vegan-in-israel.js?v=2026-02-02-v19"></script>
+<script>
+    // Weglot refresh helper (kept consistent with your other pages)
+    function refreshWeglot(){ if(window.Weglot && Weglot.refresh){ Weglot.refresh(); } }
+    document.addEventListener('DOMContentLoaded', refreshWeglot);
+    </script>
+<script>
+(function(){
+  function wgRefresh(){
+    try{
+      if (window.Weglot && typeof Weglot.refresh === 'function') Weglot.refresh();
+    }catch(e){}
+  }
+  // initial
+  document.addEventListener('DOMContentLoaded', function(){ setTimeout(wgRefresh, 80); });
+
+  // optional: if your JS triggers this after rendering cards/lists
+  window.addEventListener('kbwg:content-rendered', function(){ setTimeout(wgRefresh, 80); });
+
+  // watch for DOM changes (debounced)
+  var t=null;
+  var mo=new MutationObserver(function(){
+    clearTimeout(t);
+    t=setTimeout(wgRefresh, 250);
+  });
+  mo.observe(document.documentElement, { childList:true, subtree:true });
+})();
+</script>
+</body>
+</html>

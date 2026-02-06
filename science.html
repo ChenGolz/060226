@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>מה המדע אומר | לקנות ללא אכזריות</title>
+<meta content="קונצנזוס מדעי על תזונה טבעונית: מה ארגוני תזונה מובילים אומרים, ומה חשוב לבדוק (B12 ועוד)." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css?v=2026-02-02-v19" rel="stylesheet"/>
+<link href="assets/img/logo.png" rel="icon" type="image/png"/>
+</head>
+<body>
+<div id="siteHeaderMount"></div>
+<main id="main">
+<section class="hero product-hero heroSmall">
+  <img loading="eager" decoding="async" alt="" aria-hidden="true" class="decorPhoto decorCL" src="assets/img/photos/hero-learn.png"/>
+  <div class="wrap heroInner">
+    <div class="heroCopy center-text">
+      <h1>מה המדע אומר</h1>
+      <p>תקציר קצר, ברור ומגובה במקורות אמינים – שיעזור להבין מה הקונצנזוס המדעי אומר (ומה חשוב לבדוק בתזונה טבעונית).</p>
+    </div>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="wrap">
+    <div class="prose">
+      <h2>בשורה התחתונה</h2>
+      <ul>
+        <li>תזונה צמחונית, כולל טבעונית, יכולה להיות <strong>בריאה ומספקת תזונתית</strong> כשמתכננים נכון.</li>
+        <li>החריג המרכזי הוא <strong>ויטמין B12</strong>: חובה מקור אמין (תוסף או מזון מועשר).</li>
+        <li>כדאי לשים לב גם ל: ברזל, סידן, ויטמין D, יוד, אומגה‑3 וחלבון (בדרך כלל זה עניין של הרגלים טובים).</li>
+      </ul>
+      <p class="muted">המידע כאן הוא כללי ולא מחליף ייעוץ רפואי/תזונתי אישי.</p>
+    </div>
+
+    <div class="gridCards" style="margin-top:14px">
+      <a class="miniCard" target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/27886704/">
+        <h3>נייר עמדה – Academy of Nutrition and Dietetics (2016)</h3>
+        <div class="muted">קביעה רשמית: תזונה טבעונית מתוכננת היטב יכולה להתאים לכל שלבי החיים.</div>
+        <div class="actions" style="margin-top:10px">
+          <span class="btn primary">ל‑PubMed</span>
+        </div>
+      </a>
+
+      <a class="miniCard" target="_blank" rel="noopener" href="https://www.health.harvard.edu/staying-healthy/is-a-vegetarian-or-vegan-diet-for-you">
+        <h3>Harvard Health – “Is a vegetarian or vegan diet for you?”</h3>
+        <div class="muted">סקירה פרקטית: מה היתרונות ומה צריך להיזהר ממנו (חלבון, ברזל, סידן, B12).</div>
+        <div class="actions" style="margin-top:10px">
+          <span class="btn primary">למאמר</span>
+        </div>
+      </a>
+
+      <a class="miniCard" target="_blank" rel="noopener" href="https://www.pcrm.org/good-nutrition/plant-based-diets">
+        <h3>PCRM – Plant‑Based Diets</h3>
+        <div class="muted">עמוד מרוכז עם דגש ברור על B12 ומזונות מועשרים.</div>
+        <div class="actions" style="margin-top:10px">
+          <span class="btn primary">למדריך</span>
+        </div>
+      </a>
+
+      <a class="miniCard" target="_blank" rel="noopener" href="https://www.bda.uk.com/resource/vegetarian-vegan-plant-based-diet.html">
+        <h3>BDA – Vegetarian / Vegan / Plant‑Based</h3>
+        <div class="muted">דף של אגודת הדיאטנים הבריטית: מזונות מומלצים + B12 כתוסף/מועשר.</div>
+        <div class="actions" style="margin-top:10px">
+          <span class="btn primary">למשאב</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="siteFooterMount"></div>
+<script data-base="./" defer="" src="assets/js/layout-inject.js?v=2026-02-02-v20"></script>
+<script defer="" src="assets/js/site.js?v=2026-02-02-v19"></script>
+<!-- Weglot helper: refresh translations after dynamic content renders -->
+<script>
+(function(){
+  function wgRefresh(){
+    try{
+      if (window.Weglot && typeof Weglot.refresh === 'function') Weglot.refresh();
+    }catch(e){}
+  }
+  // initial
+  document.addEventListener('DOMContentLoaded', function(){ setTimeout(wgRefresh, 80); });
+
+  // optional: if your JS triggers this after rendering cards/lists
+  window.addEventListener('kbwg:content-rendered', function(){ setTimeout(wgRefresh, 80); });
+
+  // watch for DOM changes (debounced)
+  var t=null;
+  var mo=new MutationObserver(function(){
+    clearTimeout(t);
+    t=setTimeout(wgRefresh, 250);
+  });
+  mo.observe(document.documentElement, { childList:true, subtree:true });
+})();
+</script>
+</body>
+</html>
+
+</body>
+</html>

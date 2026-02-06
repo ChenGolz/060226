@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>בריאות ותזונה | לקנות ללא אכזריות</title>
+<meta content="מקורות מומלצים לתזונה טבעונית מאוזנת: B12, ברזל, סידן, ויטמין D ועוד — בלי בלבול." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css?v=2026-02-02-v19" rel="stylesheet"/>
+<link href="assets/img/logo.png" rel="icon" type="image/png"/>
+</head>
+<body>
+<div id="siteHeaderMount"></div>
+<main id="main">
+<section class="hero product-hero heroSmall">
+  <img loading="eager" decoding="async" alt="" aria-hidden="true" class="decorPhoto decorCL" src="assets/img/photos/hero-learn.png"/>
+  <div class="wrap heroInner">
+    <div class="heroCopy center-text">
+      <h1>בריאות ותזונה</h1>
+      <p>שלושה מקורות אמינים שיעזרו לך לבנות תזונה טבעונית מאוזנת – בלי בלבול ובלי רעש.</p>
+    </div>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="wrap">
+    <div class="prose">
+      <h2>קריאה מומלצת</h2>
+      <p>בחרנו מקורות “ירוקי‑עד” שמסבירים בצורה ברורה מה חשוב לבדוק (עם הפניות למקורות) – ומתאימים גם למתחילות.</p>
+    </div>
+
+    <div class="gridCards" style="margin-top:14px">
+      <a class="miniCard" target="_blank" rel="noopener" href="https://veganhealth.org/">
+        <h3>Vegan Health</h3>
+        <div class="muted">תזונה טבעונית מבוססת‑ראיות: B12, ברזל, סידן, ויטמין D, אומגה‑3 ועוד.</div>
+        <div class="actions" style="margin-top:10px">
+          <span class="btn primary">לאתר</span>
+        </div>
+      </a>
+
+      <a class="miniCard" target="_blank" rel="noopener" href="https://nutritionfacts.org/">
+        <h3>NutritionFacts.org</h3>
+        <div class="muted">סרטונים והסברים קצרים שמסכמים מחקרים + מדריכים שימושיים.</div>
+        <div class="actions" style="margin-top:10px">
+          <span class="btn primary">לאתר</span>
+        </div>
+      </a>
+
+      <a class="miniCard" target="_blank" rel="noopener" href="https://www.vegansociety.com/resources/nutrition-and-health/nutrition-overview-0">
+        <h3>The Vegan Society – Nutrition overview</h3>
+        <div class="muted">תמונת‑על מעשית על רכיבי תזונה בתזונה טבעונית + דגשים למעקב.</div>
+        <div class="actions" style="margin-top:10px">
+          <span class="btn primary">למשאב</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="prose" style="margin-top:18px">
+      <h2>הדגשים הכי חשובים</h2>
+      <ul>
+        <li><strong>ויטמין B12</strong> – חובה מקור אמין (תוסף או מזון מועשר).</li>
+        <li>להרכיב תפריט עם: קטניות, דגנים מלאים, ירקות/פירות, אגוזים/זרעים.</li>
+        <li>לשים לב ל: ברזל, סידן, ויטמין D, יוד ואומגה‑3 (לרוב פתרון פשוט).</li>
+      </ul>
+      <p>רוצה גם את “הקונצנזוס המדעי” בקצרה? <a href="science.html">מה המדע אומר</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="siteFooterMount"></div>
+<script data-base="./" defer="" src="assets/js/layout-inject.js?v=2026-02-02-v20"></script>
+<script defer="" src="assets/js/site.js?v=2026-02-02-v19"></script>
+<!-- Weglot helper: refresh translations after dynamic content renders -->
+<script>
+(function(){
+  function wgRefresh(){
+    try{
+      if (window.Weglot && typeof Weglot.refresh === 'function') Weglot.refresh();
+    }catch(e){}
+  }
+  // initial
+  document.addEventListener('DOMContentLoaded', function(){ setTimeout(wgRefresh, 80); });
+
+  // optional: if your JS triggers this after rendering cards/lists
+  window.addEventListener('kbwg:content-rendered', function(){ setTimeout(wgRefresh, 80); });
+
+  // watch for DOM changes (debounced)
+  var t=null;
+  var mo=new MutationObserver(function(){
+    clearTimeout(t);
+    t=setTimeout(wgRefresh, 250);
+  });
+  mo.observe(document.documentElement, { childList:true, subtree:true });
+})();
+</script>
+</body>
+</html>
+
+</body>
+</html>

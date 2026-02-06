@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>בקרוב | לקנות ללא אכזריות</title>
+<meta name="description" content="אנחנו עובדים על פיצ׳רים ודפים חדשים שיקלו למצוא מוצרים 100% טבעוניים שלא נוסו על בעלי חיים.">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css?v=2026-02-02-v19" rel="stylesheet"/>
+<link href="assets/img/logo.png" rel="icon" type="image/png"/>
+</head>
+<body>
+<div id="siteHeaderMount"></div>
+
+<main id="main">
+<section class="hero product-hero heroSmall"><img loading="eager" decoding="async" alt="" aria-hidden="true" class="decorPhoto decorCL" src="assets/img/photos/care-products.png"/>
+<div class="wrap heroInner">
+<div class="heroCopy center-text">
+<h1>בקרוב</h1>
+<p>דפים ופיצ׳רים חדשים בדרך — חזרי בקרוב ✨</p>
+</div>
+</div>
+</section>
+<section class="panel filter-panel">
+<div class="wrap">
+<div class="toolbar-container contentCard">
+<p class="lead">עוד רגע... הדף הזה בעבודה.</p>
+<div class="infoCard">
+<p>בינתיים אפשר לחזור ל<a href="products.html">מאגר המוצרים</a> או ל<a href="ingredient-detective.html">בודק רכיבים</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="siteFooterMount"></div>
+
+<script defer src="assets/js/layout-inject.js?v=2026-02-02-v20" data-base="./"></script>
+<script defer="" src="assets/js/site.js?v=2026-02-02-v19"></script>
+
+<!-- Weglot helper: refresh translations after dynamic content renders -->
+<script>
+(function(){
+  function wgRefresh(){
+    try{
+      if (window.Weglot && typeof Weglot.refresh === 'function') Weglot.refresh();
+    }catch(e){}
+  }
+  // initial
+  document.addEventListener('DOMContentLoaded', function(){ setTimeout(wgRefresh, 80); });
+
+  // optional: if your JS triggers this after rendering cards/lists
+  window.addEventListener('kbwg:content-rendered', function(){ setTimeout(wgRefresh, 80); });
+
+  // watch for DOM changes (debounced)
+  var t=null;
+  var mo=new MutationObserver(function(){
+    clearTimeout(t);
+    t=setTimeout(wgRefresh, 250);
+  });
+  mo.observe(document.documentElement, { childList:true, subtree:true });
+})();
+</script>
+
+</body>
+</html>

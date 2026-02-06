@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>לוח סיילים | 100% טבעוני · לא נוסו על בעלי חיים</title>
+<meta name="description" content="לוח סיילים מרכזיים לאורך השנה כדי לקנות חכם ולחסוך על מוצרים 100% טבעוניים שלא נוסו על בעלי חיים.">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&amp;family=Assistant:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="assets/css/styles.css?v=2026-02-02-v19" rel="stylesheet"/>
+<link href="assets/css/calendar-restore.css?v=2026-02-02-v19" rel="stylesheet"/>
+<meta content="website" property="og:type"/><meta content="לקנות ללא אכזריות – לקנות בלי לפגוע" property="og:site_name"/><meta content="he_IL" property="og:locale"/><meta content="לוח מבצעים | לקנות ללא אכזריות" property="og:title"/><meta content="מתי שווה לחכות לסייל הבא? לוח מבצעים חכם עם תזכורות וטיפים לקנייה." property="og:description"/><meta content="https://yoursite.com/assets/img/social-preview.jpg" property="og:image"/><meta content="https://yoursite.com/shopping-calendar.html" property="og:url"/><meta content="summary_large_image" name="twitter:card"/><meta content="לוח מבצעים | לקנות ללא אכזריות" name="twitter:title"/><meta content="מתי שווה לחכות לסייל הבא? לוח מבצעים חכם עם תזכורות וטיפים לקנייה." name="twitter:description"/><meta content="https://yoursite.com/assets/img/social-preview.jpg" name="twitter:image"/><link href="assets/img/logo.png" rel="icon" type="image/png"/><link href="assets/img/logo.png" rel="apple-touch-icon"/></head>
+<body class="page-calendar">
+<a class="skipLink" href="#main">דלגי לתוכן</a>
+<img alt="" aria-hidden="true" class="corner r" src="assets/img/corner.svg"/>
+<img alt="" aria-hidden="true" class="corner l" src="assets/img/corner.svg"/>
+<div id="siteHeaderMount"></div>
+
+<main class="wrap" id="main">
+<section class="hero product-hero heroSmall calendarHero">
+<img loading="eager" decoding="async" alt="" aria-hidden="true" class="decorPhoto decorCL" src="assets/img/photos/hero-calendar.png"/>
+<div class="wrap heroInner">
+<div class="heroCopy center-text">
+<h1>לוח מבצעים</h1>
+<p>לוח סיילים מסודר לפי חודשים וחגים — כדי לתזמן קניות ולחסוך.</p>
+<div aria-label="מקרא" class="badgeRow">
+<span class="trust-badge">סייל גדול</span>
+<span class="trust-badge">מבצע עונתי</span>
+<span class="trust-badge">טיפ</span>
+</div>
+</div>
+</div>
+</section>
+<section class="panel">
+<div aria-label="אג׳נדה של מבצעים" class="agendaGrid" id="agenda"></div>
+</section>
+<script src="assets/js/sales-data.js?v=2026-02-02-v19"></script>
+<script src="assets/js/sales-calendar.js?v=2026-02-02-v19"></script>
+</main>
+<div id="siteFooterMount"></div>
+
+<script defer src="assets/js/layout-inject.js?v=2026-02-02-v20" data-base="./"></script>
+<script defer="" src="assets/js/site.js?v=2026-02-02-v19"></script>
+
+<!-- Weglot helper: refresh translations after dynamic content renders -->
+<script>
+(function(){
+  function wgRefresh(){
+    try{
+      if (window.Weglot && typeof Weglot.refresh === 'function') Weglot.refresh();
+    }catch(e){}
+  }
+  // initial
+  document.addEventListener('DOMContentLoaded', function(){ setTimeout(wgRefresh, 80); });
+
+  // optional: if your JS triggers this after rendering cards/lists
+  window.addEventListener('kbwg:content-rendered', function(){ setTimeout(wgRefresh, 80); });
+
+  // watch for DOM changes (debounced)
+  var t=null;
+  var mo=new MutationObserver(function(){
+    clearTimeout(t);
+    t=setTimeout(wgRefresh, 250);
+  });
+  mo.observe(document.documentElement, { childList:true, subtree:true });
+})();
+</script>
+
+</body>
+</html>
