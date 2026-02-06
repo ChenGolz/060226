@@ -2180,8 +2180,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -2212,8 +2212,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -2244,8 +2244,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -2703,7 +2703,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -3094,7 +3094,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -3159,7 +3159,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -3617,7 +3617,7 @@
     "isPeta": null,
     "isLB": null,
     "priceMin": 0,
-    "priceMax": 100,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -3991,7 +3991,7 @@
   {
     "id": "arctic-fox-b07pyhsgyf",
     "brand": "Arctic Fox",
-    "name": "צבע שיער חצי-קבוע Arctic Fox – Arctic Cruelty Free Semi Permanent Ounces Ritual – Vegan & Cruelty-Free",
+    "name": "צבע שיער חצי-קבוע Semi Permanent Ounces Ritual ",
     "size": null,
     "categories": [
       "hair",
@@ -4004,7 +4004,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
