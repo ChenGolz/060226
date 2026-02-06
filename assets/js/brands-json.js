@@ -254,6 +254,38 @@ function __kbwgResolveFromSiteBase(relPath, scriptName) {
     return brand.lastUpdated || brand.last_updated || brand.updatedAt || brand.updated_at || brand.modifiedAt || brand.modified_at || '';
   }
 
+// Fetch JSON robustly. If the JSON contains unescaped ASCII quotes inside Hebrew abbreviations (e.g. ארה"ב / ע"י),
+// JSON.parse will fail. We try a safe, minimal fix by converting those internal quotes to Hebrew gershayim (״).
+function __kbwgParseJsonWithHebrewQuoteFix(rawText, debugLabel, debugUrl) {
+  var t = rawText;
+  // Strip UTF-8 BOM if present
+  if (t && t.charCodeAt(0) === 0xFEFF) t = t.slice(1);
+
+  try {
+    return JSON.parse(t);
+  } catch (e1) {
+    try {
+      // Only affects patterns like <hebrew_letter>"<hebrew_letter>, common in Hebrew abbreviations.
+      var fixed = t.replace(/([\u0590-\u05FF])"([\u0590-\u05FF])/g, '$1\u05F4$2');
+      return JSON.parse(fixed);
+    } catch (e2) {
+      console.error('[KBWG] JSON parse failed for ' + debugLabel + ' (' + debugUrl + ')');
+      console.error(e2);
+      throw e1;
+    }
+  }
+}
+
+function __kbwgFetchJson(url, debugLabel) {
+  return fetch(url, { cache: 'force-cache' }).then(function (r) {
+    if (!r.ok) throw new Error('Failed to load ' + url + ' (from ' + debugLabel + ')');
+    return r.text().then(function (txt) {
+      return __kbwgParseJsonWithHebrewQuoteFix(txt, debugLabel, url);
+    });
+  });
+}
+
+
 function stopLinkPropagation(el) {
     el.addEventListener('click', function (e) {
       e.stopPropagation();
@@ -1131,14 +1163,8 @@ function stopLinkPropagation(el) {
     var productsUrl = __kbwgResolveFromSiteBase(productsPath, 'brands-json.js');
 
     Promise.all([
-      fetch(jsonUrl, { cache: 'force-cache' }).then(function (r) {
-        if (!r.ok) throw new Error('Failed to load ' + jsonUrl + ' (from ' + jsonPath + ')');
-        return r.json();
-      }),
-      fetch(productsUrl, { cache: 'force-cache' }).then(function (r) {
-        if (!r.ok) throw new Error('Failed to load ' + productsUrl + ' (from ' + productsPath + ')');
-        return r.json();
-      })
+      __kbwgFetchJson(jsonUrl, jsonPath),
+      __kbwgFetchJson(productsUrl, productsPath)
     ])
       .then(function (arr) {
         var brands = arr[0];
