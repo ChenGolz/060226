@@ -28,7 +28,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSPSRYGD.jpg"
   },
   {
@@ -60,7 +60,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSPT1GHY.jpg"
   },
   {
@@ -91,7 +91,7 @@
         "priceUSD": 14.98      }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B07X8L13JV.jpg"
   },
   {
@@ -122,7 +122,7 @@
         "priceUSD": 9.88      }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0BS4ZZ7HN.jpg"
   },
   {
@@ -155,7 +155,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0BW1NJJS8.jpg"
   },
   {
@@ -1765,7 +1765,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0DL8PM2S2.jpg"
   },
   {
@@ -1797,7 +1797,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0DL8DB32W.jpg"
   },
   {
@@ -1829,7 +1829,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0DL81LDK8.jpg"
   },
   {
@@ -1861,7 +1861,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CTVFLQYN.jpg"
   },
   {
@@ -1894,7 +1894,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CTVDGKNY.jpg"
   },
   {
@@ -2711,7 +2711,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B00WYE3D6I.jpg"
   },
   {
@@ -3201,7 +3201,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B01492LPEY.jpg"
   },
   {
@@ -3655,7 +3655,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B09WZB31R6.jpg"
   },
   {
@@ -3963,7 +3963,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B007RNOBSK.jpg"
   },
   {
@@ -4029,7 +4029,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B06XWJV4Z1.jpg"
   },
   {
@@ -4094,7 +4094,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B000K76X72.jpg"
   },
   {
@@ -4194,7 +4194,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0BYPMN677.jpg"
   },
   {
@@ -4352,7 +4352,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B00VU68T6U.jpg"
   },
   {
@@ -4384,7 +4384,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CHTMGHVH.jpg"
   },
   {
@@ -4577,7 +4577,7 @@
       }
     ],
     "isKids": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B07FSRHRKW.jpg"
   },
   {
@@ -7957,7 +7957,7 @@
       }
     ],
     "isKids": false,
-        "isDiscounted": true,
+        "isDiscounted": false,
     "image": "assets/img/products/B086W2S5LV.jpg"
   },
   {
@@ -7982,7 +7982,8 @@
         "url": "https://www.amazon.com/dp/B086W38SXX?tag=nocrueltyil-20",
         "asin": "B086W38SXX",
         "currency": "USD",
-        "priceUSD": 27.99
+        "priceUSD": 34.99,
+                "freeShipOver": 49
       }
     ],
     "isKids": false,
