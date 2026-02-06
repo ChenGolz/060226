@@ -9,6 +9,8 @@
     listPer: 0,
     listPagerEl: null,
 
+    mobileView: 'list',
+
     places: [],
     filter: {
       q: '',
@@ -26,6 +28,84 @@
       .trim();
   }
 
+
+const VIEW_BREAKPOINT = 820;
+const VIEW_STORAGE_KEY = 'vii_view_v1';
+
+function isMobileViewport() {
+  return (window.innerWidth || 1024) <= VIEW_BREAKPOINT;
+}
+
+function getStoredView() {
+  try {
+    const v = localStorage.getItem(VIEW_STORAGE_KEY);
+    return (v === 'map' || v === 'list') ? v : null;
+  } catch {
+    return null;
+  }
+}
+
+function setMobileView(view) {
+  const v = (view === 'map') ? 'map' : 'list';
+  STATE.mobileView = v;
+
+  if (!isMobileViewport()) {
+    document.body.classList.remove('vii-view-list', 'vii-view-map');
+    return;
+  }
+
+  document.body.classList.toggle('vii-view-list', v === 'list');
+  document.body.classList.toggle('vii-view-map', v === 'map');
+
+  const btnList = $('#viewListBtn');
+  const btnMap = $('#viewMapBtn');
+  if (btnList) btnList.setAttribute('aria-pressed', v === 'list' ? 'true' : 'false');
+  if (btnMap) btnMap.setAttribute('aria-pressed', v === 'map' ? 'true' : 'false');
+
+  try { localStorage.setItem(VIEW_STORAGE_KEY, v); } catch {}
+
+  // Leaflet needs a resize recalculation when becoming visible
+  if (v === 'map') {
+    // Ensure the map exists; render if needed
+    if (!STATE.map) renderMap({ fit: true });
+    setTimeout(() => {
+      try { STATE.map?.invalidateSize?.(); } catch {}
+    }, 220);
+  }
+}
+
+function shouldRenderMapNow() {
+  return !isMobileViewport() || STATE.mobileView === 'map';
+}
+
+function wireViewToggle() {
+  const btnList = $('#viewListBtn');
+  const btnMap = $('#viewMapBtn');
+  const scrollToList = $('#scrollToListBtn');
+
+  if (btnList) btnList.addEventListener('click', () => setMobileView('list'));
+  if (btnMap) btnMap.addEventListener('click', () => setMobileView('map'));
+
+  if (scrollToList) {
+    scrollToList.addEventListener('click', () => {
+      if (isMobileViewport()) setMobileView('list');
+      $('#placesGrid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  // Keep UI sane when rotating / resizing
+  window.addEventListener('resize', () => {
+    if (!isMobileViewport()) {
+      document.body.classList.remove('vii-view-list', 'vii-view-map');
+      // ensure map renders on desktop after a resize from mobile
+      if (!STATE.map) renderMap({ fit: true });
+      setTimeout(() => { try { STATE.map?.invalidateSize?.(); } catch {} }, 120);
+    } else {
+      // entering mobile: apply stored view (or keep current)
+      setMobileView(STATE.mobileView || 'list');
+    }
+  }, { passive: true });
+}
 
   // Client-side geocoding for places missing coordinates (cached in localStorage)
   // This lets you add new places by address only, and the map will pin them automatically.
@@ -180,11 +260,15 @@
   }
 
   function renderList() {
-    const grid = $('#placesGrid');
-    const itemsAll = STATE.places.filter(passesFilter);
+    const grid = $('#placesGrid');    const itemsAll = STATE.places.filter(passesFilter);
+    // Meta
+    const countEl = $('#placesCount');
+    if (countEl) countEl.textContent = String(itemsAll.length);
     STATE.listPer = kbPerPage('places');
     if (!STATE.listPagerEl) STATE.listPagerEl = kbEnsurePager(grid, 'placesPager');
     kbRenderPager(STATE.listPagerEl, STATE.listPage, itemsAll.length, STATE.listPer, function(n){ STATE.listPage = n; renderList(); });
+    const rangeEl = $('#placesRange');
+    if (rangeEl) rangeEl.textContent = kbRangeText(STATE.listPage, itemsAll.length, STATE.listPer);
     const start = (STATE.listPage - 1) * STATE.listPer;
     const end = start + STATE.listPer;
     const items = (itemsAll.length > STATE.listPer) ? itemsAll.slice(start, end) : itemsAll;
@@ -305,19 +389,31 @@
     const pid = String(placeId);
     const p = STATE.places.find(x => String(x.id) === pid);
     if (!p) return;
+
+    // Mobile: switch to map view first so Leaflet gets the correct size
+    if (isMobileViewport()) {
+      setMobileView('map');
+      await new Promise(r => setTimeout(r, 80));
+    }
+
     if (!STATE.map) { renderMap({ fit: true }); }
     if (!STATE.map) return;
+
     if (!Number.isFinite(p.lat) || !Number.isFinite(p.lng)) {
       // Try to geocode on-demand if coordinates are missing
       await geocodePlace(p);
-      renderMap({ fit: false });
+      if (shouldRenderMapNow()) renderMap({ fit: false });
     }
     if (!p || !STATE.map || !Number.isFinite(p.lat) || !Number.isFinite(p.lng)) return;
+
+    try { STATE.map.invalidateSize?.(); } catch {}
     STATE.map.setView([p.lat, p.lng], 15, { animate: true });
     const m = STATE.markers.find(mm => String(mm.__placeId) === pid);
     if (m) m.openPopup();
-    // scroll to map on mobile
-    $('#mapSection')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Scroll the visible map into view
+    const target = $('#veganMap') || $('#mapSection');
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   function wireFilters() {
@@ -329,19 +425,22 @@
 
     if (q) q.addEventListener('input', () => {
       STATE.filter.q = q.value || '';
-      renderMap(); // auto-fit when filter changes
+      STATE.listPage = 1;
+      if (shouldRenderMapNow()) renderMap(); // auto-fit when filter changes
       renderList();
     });
 
     if (region) region.addEventListener('change', () => {
       STATE.filter.region = region.value;
-      renderMap();
+      STATE.listPage = 1;
+      if (shouldRenderMapNow()) renderMap();
       renderList();
     });
 
     if (type) type.addEventListener('change', () => {
       STATE.filter.type = type.value;
-      renderMap();
+      STATE.listPage = 1;
+      if (shouldRenderMapNow()) renderMap();
       renderList();
     });
 
@@ -350,7 +449,12 @@
       if (q) q.value = '';
       if (region) region.value = 'all';
       if (type) type.value = 'all';
-      renderMap({ fit: true });
+      STATE.listPage = 1;
+      if (shouldRenderMapNow()) {
+        renderMap({ fit: true });
+      } else {
+        STATE.fitKey = null;
+      }
       renderList();
     });
 
@@ -412,10 +516,15 @@
       ].join('');
     }
 
+    // Initial view (mobile): list-first with a toggle to map
+    STATE.mobileView = getStoredView() || 'list';
+    setMobileView(STATE.mobileView);
 
-    renderMap();
     renderList();
     wireFilters();
+    wireViewToggle();
+
+    if (shouldRenderMapNow() && !STATE.map) renderMap({ fit: true });
   }
 
   function escapeHtml(str) {
