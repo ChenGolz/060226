@@ -1,5 +1,211 @@
 [
   {
+    "id": "dotted-zebra-super-clay-face-b0cj38jw5s",
+    "brand": "Dotted Zebra",
+    "name": "מסכת פנים מחימר Super Clay, 2.7 fl oz – עם שזיף קקדו, מגנזיום, אבץ וסיליקה – מסכה מזינה לכל סוגי העור",
+    "size": "2.7 fl oz",
+    "categories": [
+      "skin",
+      "face",
+      "mask",
+      "clay-mask",
+      "nourishing",
+      "minerals",
+      "dry-skin",
+      "zinc",
+      "magnesium"
+    ],
+    "isVegan": null,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CJ38JW5S?tag=nocrueltyil-20",
+        "asin": "B0CJ38JW5S",
+        "currency": "USD",
+        "priceUSD": 16.21,
+        "freeShipOver": 49
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": null,
+    "image": "assets/img/products/B0CJ38JW5S.jpg"
+  },
+  {
+    "id": "dotted-zebra-daily-miracle-moisturizer-b0cj37l8xf",
+    "brand": "Dotted Zebra",
+    "name": "קרם לחות יומי Daily Miracle, 1.69 fl oz – מועשר בויטמין C – מזין – טבעוני – לכל סוגי העור",
+    "size": "1.69 fl oz",
+    "categories": [
+      "skin",
+      "face",
+      "moisturizer",
+      "daily-moisturizer",
+      "vitamin-c",
+      "brightening",
+      "hydrating",
+      "smoothening"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CJ37L8XF?tag=nocrueltyil-20",
+        "asin": "B0CJ37L8XF",
+        "currency": "USD",
+        "priceUSD": 10.38,
+        "freeShipOver": null
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": null,
+    "image": "assets/img/products/B0CJ37L8XF.jpg"
+  },
+  {
+    "id": "dotted-zebra-daily-miracle-cleansing-foam-b0cj3bnpvh",
+    "brand": "Dotted Zebra",
+    "name": "קצף ניקוי Daily Miracle, 4.05 fl oz – תכשיר ניקוי פנים עם שזיפי בר אוסטרליים – טבעוני – לחותי – לכל סוגי העור",
+    "size": "4.05 fl oz",
+    "categories": [
+      "skin",
+      "face",
+      "cleanser",
+      "foam-cleanser",
+      "hydrating",
+      "exfoliating"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CJ3BNPVH?tag=nocrueltyil-20",
+        "asin": "B0CJ3BNPVH",
+        "currency": "USD",
+        "priceUSD": 10.0,
+        "freeShipOver": null
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": null,
+    "image": "assets/img/products/B0CJ3BNPVH.jpg"
+  },
+  {
+    "id": "dotted-zebra-best-ever-exfoliating-cleanser-b0cj39hn5q",
+    "brand": "Dotted Zebra",
+    "name": "תכשיר ניקוי פילינג Best Ever, 3.16 fl oz – טבעוני – עם פסיפלורה אמיתית – גרגרי מיקרו-שעווה – לכל סוגי העור",
+    "size": "3.16 fl oz",
+    "categories": [
+      "skin",
+      "face",
+      "cleanser",
+      "exfoliating",
+      "scrub",
+      "passionfruit"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CJ39HN5Q?tag=nocrueltyil-20",
+        "asin": "B0CJ39HN5Q",
+        "currency": "USD",
+        "priceUSD": 5.89,
+        "freeShipOver": null
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": null,
+    "image": "assets/img/products/B0CJ39HN5Q.jpg"
+  },
+  {
+    "id": "dotted-zebra-watermelon-jelly-moisturising-mask-b0cj39qlth",
+    "brand": "Dotted Zebra",
+    "name": "מסכת לחות ג’לי אבטיח, 1.6 fl oz – לחות עם חומצה היאלורונית וויטמינים – לכל סוגי העור (לעור רגיש)",
+    "size": "1.6 fl oz",
+    "categories": [
+      "skin",
+      "face",
+      "mask",
+      "hydrating",
+      "hyaluronic-acid",
+      "sensitive-skin",
+      "jelly-mask",
+      "watermelon"
+    ],
+    "isVegan": null,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CJ39QLTH?tag=nocrueltyil-20",
+        "asin": "B0CJ39QLTH",
+        "currency": "USD",
+        "priceUSD": 8.69,
+        "freeShipOver": null
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": null,
+    "image": "assets/img/products/B0CJ39QLTH.jpg"
+  },
+  {
+    "id": "dotted-zebra-peel-off-sparkle-mask-pink-frenzy-b0cj3871pk",
+    "brand": "Dotted Zebra",
+    "name": "מסכת פיל-אוף נצנצים Pink Frenzy, 1.6 fl oz – עם חומצה היאלורונית וקולגן – מסכת לחות – טבעונית – לכל סוגי העור",
+    "size": "1.6 fl oz",
+    "categories": [
+      "skin",
+      "face",
+      "mask",
+      "peel-off-mask",
+      "hydrating",
+      "hyaluronic-acid",
+      "collagen"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CJ3871PK?tag=nocrueltyil-20",
+        "asin": "B0CJ3871PK",
+        "currency": "USD",
+        "priceUSD": 14.46,
+        "freeShipOver": 49
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": null,
+    "image": "assets/img/products/B0CJ3871PK.jpg"
+  },
+  {
     "id": "derma-e-b01ma35egm",
     "brand": "Derma E",
     "name": "סרום ויטמין C מרוכז עם חומצה היאלורונית – לחות והבהרה עם ויטמין E ואלוורה",
