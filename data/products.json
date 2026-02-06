@@ -1,5 +1,719 @@
 [
   {
+    "id": "derma-e-b01ma35egm",
+    "brand": "Derma E",
+    "name": "סרום ויטמין C מרוכז עם חומצה היאלורונית – לחות והבהרה עם ויטמין E ואלוורה",
+    "size": "2 fl oz",
+    "categories": [
+      "skin",
+      "face",
+      "serum",
+      "brightening",
+      "vitamin-c",
+      "hyaluronic-acid",
+      "antioxidants",
+      "hydrating"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B01MA35EGM?tag=nocrueltyil-20",
+        "asin": "B01MA35EGM",
+        "currency": "USD",
+        "priceUSD": 20.0
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B01MA35EGM.jpg"
+  },
+  {
+    "id": "derma-e-b00014fsxo",
+    "brand": "Derma E",
+    "name": "קרם ויטמין E 12,000 IU – קרם רב-שימושי לפנים ולגוף להרגעה והגנה",
+    "size": "4 oz",
+    "categories": [
+      "skin",
+      "face",
+      "body",
+      "moisturizer",
+      "cream",
+      "vitamin-e",
+      "soothing",
+      "dry-skin"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B00014FSXO?tag=nocrueltyil-20",
+        "asin": "B00014FSXO",
+        "currency": "USD",
+        "priceUSD": 15.16
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B00014FSXO.jpg"
+  },
+  {
+    "id": "derma-e-b007rnobsk",
+    "brand": "Derma E",
+    "name": "ג׳ל ניקוי יומי להבהרה עם ויטמין C – ניקוי עדין לאחידות גוון וזוהר",
+    "size": "6 fl oz",
+    "categories": [
+      "skin",
+      "face",
+      "cleanser",
+      "face-wash",
+      "brightening",
+      "vitamin-c",
+      "hydrating"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B007RNOBSK?tag=nocrueltyil-20",
+        "asin": "B007RNOBSK",
+        "currency": "USD",
+        "priceUSD": 13.9
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B007RNOBSK.jpg"
+  },
+  {
+    "id": "derma-e-b0byr1pggb",
+    "brand": "Derma E",
+    "name": "קרם לחות פפטידים וקולגן צמחי – לחות אינטנסיבית לקמטים ואדמומיות",
+    "size": "2 oz",
+    "categories": [
+      "skin",
+      "face",
+      "moisturizer",
+      "cream",
+      "peptides",
+      "collagen",
+      "anti-aging",
+      "hydrating"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0BYR1PGGB?tag=nocrueltyil-20",
+        "asin": "B0BYR1PGGB",
+        "currency": "USD",
+        "priceUSD": 23.83
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B0BYR1PGGB.jpg"
+  },
+  {
+    "id": "derma-e-b06xwjv4z1",
+    "brand": "Derma E",
+    "name": "טונר זוהר עם גליקולית ותמצית ורד הבר – רענון ועדינות למראה אחיד",
+    "size": "6 oz",
+    "categories": [
+      "skin",
+      "face",
+      "toner",
+      "exfoliating",
+      "glycolic-acid",
+      "radiance"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B06XWJV4Z1?tag=nocrueltyil-20",
+        "asin": "B06XWJV4Z1",
+        "currency": "USD",
+        "priceUSD": 14.5
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B06XWJV4Z1.jpg"
+  },
+  {
+    "id": "derma-e-b000z93vvq",
+    "brand": "Derma E",
+    "name": "שמן ויטמין E לעור – הזנה לעור יבש עם שמן חריע",
+    "size": "2 fl oz",
+    "categories": [
+      "skin",
+      "face",
+      "body",
+      "oil",
+      "vitamin-e",
+      "nourishing",
+      "dry-skin"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B000Z93VVQ?tag=nocrueltyil-20",
+        "asin": "B000Z93VVQ",
+        "currency": "USD",
+        "priceUSD": 12.75
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B000Z93VVQ.jpg"
+  },
+  {
+    "id": "derma-e-b000k76x72",
+    "brand": "Derma E",
+    "name": "תחליב להרגעת גרד – תחליב גוף קליל להרגעה ולחות לעור יבש",
+    "size": "8 oz",
+    "categories": [
+      "skin",
+      "body",
+      "lotion",
+      "soothing",
+      "itch-relief",
+      "dry-skin"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B000K76X72?tag=nocrueltyil-20",
+        "asin": "B000K76X72",
+        "currency": "USD",
+        "priceUSD": 14.48
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B000K76X72.jpg"
+  },
+  {
+    "id": "derma-e-b07nsvb2y6",
+    "brand": "Derma E",
+    "name": "פילינג הדרים עדין ללא גרגרים – להחלקה וחידוש מראה העור",
+    "size": "2 oz",
+    "categories": [
+      "skin",
+      "face",
+      "peel",
+      "exfoliating",
+      "brightening",
+      "vitamin-c"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B07NSVB2Y6?tag=nocrueltyil-20",
+        "asin": "B07NSVB2Y6",
+        "currency": "USD",
+        "priceUSD": 17.5
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B07NSVB2Y6.jpg"
+  },
+  {
+    "id": "derma-e-b07zld8w13",
+    "brand": "Derma E",
+    "name": "משחת ניקוי יומית עם ויטמין C וכורכום – מסכה/ניקוי עדין להבהרה וניקוי",
+    "size": "4 oz",
+    "categories": [
+      "skin",
+      "face",
+      "cleanser",
+      "mask",
+      "scrub",
+      "brightening",
+      "vitamin-c",
+      "turmeric"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B07ZLD8W13?tag=nocrueltyil-20",
+        "asin": "B07ZLD8W13",
+        "currency": "USD",
+        "priceUSD": 11.85
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B07ZLD8W13.jpg"
+  },
+  {
+    "id": "derma-e-b0bypmn677",
+    "brand": "Derma E",
+    "name": "פילינג נוזלי רב-חומצות עם ויטמין C – חומצה לקטית, ניאצינאמיד וברומליין לאחידות גוון",
+    "size": "1 fl oz",
+    "categories": [
+      "skin",
+      "face",
+      "peel",
+      "exfoliating",
+      "brightening",
+      "vitamin-c",
+      "niacinamide",
+      "lactic-acid"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0BYPMN677?tag=nocrueltyil-20",
+        "asin": "B0BYPMN677",
+        "currency": "USD",
+        "priceUSD": 18.95
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B0BYPMN677.jpg"
+  },
+  {
+    "id": "derma-e-b00niokab0",
+    "brand": "Derma E",
+    "name": "קרם הרגעה עם עץ התה וויטמין E – לחות עמוקה לעור יבש ומגורה",
+    "size": "4 oz",
+    "categories": [
+      "skin",
+      "face",
+      "body",
+      "moisturizer",
+      "cream",
+      "tea-tree",
+      "vitamin-e",
+      "soothing"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B00NIOKABO?tag=nocrueltyil-20",
+        "asin": "B00NIOKABO",
+        "currency": "USD",
+        "priceUSD": 14.8
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B00NIOKABO.jpg"
+  },
+  {
+    "id": "derma-e-b09bpbgrbz",
+    "brand": "Derma E",
+    "name": "ספריי להענקת נפח ועיבוי לשיער – מרקם ומראה מלא יותר",
+    "size": "3.3 fl oz",
+    "categories": [
+      "hair",
+      "styling",
+      "spray",
+      "volumizing",
+      "thickening"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B09BPBGRBZ?tag=nocrueltyil-20",
+        "asin": "B09BPBGRBZ",
+        "currency": "USD",
+        "priceUSD": 12.5
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B09BPBGRBZ.jpg"
+  },
+  {
+    "id": "derma-e-b084z48bcf",
+    "brand": "Derma E",
+    "name": "שמפו לעיבוי שיער דליל – שמפו נפח טבעי לשיער מלא יותר",
+    "size": "10 oz",
+    "categories": [
+      "hair",
+      "shampoo",
+      "thickening",
+      "volumizing",
+      "scalp"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B084Z48BCF?tag=nocrueltyil-20",
+        "asin": "B084Z48BCF",
+        "currency": "USD",
+        "priceUSD": 8.49
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B084Z48BCF.jpg"
+  },
+  {
+    "id": "derma-e-b00vu6d1qs",
+    "brand": "Derma E",
+    "name": "מרכך להקלה בקרקפת – להרגעת גירוי ותמיכה בבריאות הקרקפת",
+    "size": "10 fl oz",
+    "categories": [
+      "hair",
+      "conditioner",
+      "scalp",
+      "soothing",
+      "dandruff"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B00VU6D1QS?tag=nocrueltyil-20",
+        "asin": "B00VU6D1QS",
+        "currency": "USD",
+        "priceUSD": 8.99
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B00VU6D1QS.jpg"
+  },
+  {
+    "id": "derma-e-b00vu68t6u",
+    "brand": "Derma E",
+    "name": "שמפו להקלה בקרקפת – להרגעת גירוי ותמיכה בבריאות הקרקפת",
+    "size": "10 fl oz",
+    "categories": [
+      "hair",
+      "shampoo",
+      "scalp",
+      "soothing",
+      "dandruff"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B00VU68T6U?tag=nocrueltyil-20",
+        "asin": "B00VU68T6U",
+        "currency": "USD",
+        "priceUSD": 10.8
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B00VU68T6U.jpg"
+  },
+  {
+    "id": "derma-e-b0chtmmghvh",
+    "brand": "Derma E",
+    "name": "שטיפה פילינגית לקרקפת – ניקוי מבהיר ומאזן לקרקפת ושיער צבוע",
+    "size": "4 fl oz",
+    "categories": [
+      "hair",
+      "scalp",
+      "rinse",
+      "exfoliating",
+      "clarifying",
+      "dandruff"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CHTMGHVH?tag=nocrueltyil-20",
+        "asin": "B0CHTMGHVH",
+        "currency": "USD",
+        "priceUSD": 10.5
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B0CHTMGHVH.jpg"
+  },
+  {
+    "id": "derma-e-b0d1ksq9tj",
+    "brand": "Derma E",
+    "name": "אבקת הגנה מינרלית SPF 30 במברשת – גימור שקוף וקיבוע איפור",
+    "size": "0.16 oz",
+    "categories": [
+      "skin",
+      "face",
+      "sunscreen",
+      "spf",
+      "mineral",
+      "makeup",
+      "powder"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0D1KSQ9TJ?tag=nocrueltyil-20",
+        "asin": "B0D1KSQ9TJ",
+        "currency": "USD",
+        "priceUSD": 23.95
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B0D1KSQ9TJ.jpg"
+  },
+  {
+    "id": "derma-e-b00iv29ih0",
+    "brand": "Derma E",
+    "name": "קרם הגנה מינרלי לפנים SPF 30 – הגנה רחבה במרקם קליל",
+    "size": "2 oz",
+    "categories": [
+      "skin",
+      "face",
+      "sunscreen",
+      "spf",
+      "mineral"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B00IV29IH0?tag=nocrueltyil-20",
+        "asin": "B00IV29IH0",
+        "currency": "USD",
+        "priceUSD": 23.03
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B00IV29IH0.jpg"
+  },
+  {
+    "id": "derma-e-b000gezu14",
+    "brand": "Derma E",
+    "name": "קרם יום משקם אנטי-אייג׳ינג – לחות ותחושת מיצוק עם אסטקסנטין",
+    "size": "2 oz",
+    "categories": [
+      "skin",
+      "face",
+      "moisturizer",
+      "day-cream",
+      "anti-aging",
+      "firming"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B000GEZU14?tag=nocrueltyil-20",
+        "asin": "B000GEZU14",
+        "currency": "USD",
+        "priceUSD": 22.95
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B000GEZU14.jpg"
+  },
+  {
+    "id": "derma-e-b000gezu1e",
+    "brand": "Derma E",
+    "name": "קרם לילה משקם אנטי-אייג׳ינג – לחות ותמיכה במראה מוצק",
+    "size": "2 oz",
+    "categories": [
+      "skin",
+      "face",
+      "moisturizer",
+      "night-cream",
+      "anti-aging",
+      "firming"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B000GEZU1E?tag=nocrueltyil-20",
+        "asin": "B000GEZU1E",
+        "currency": "USD",
+        "priceUSD": 28.57
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B000GEZU1E.jpg"
+  },
+  {
+    "id": "derma-e-b07fsrj54t",
+    "brand": "Derma E",
+    "name": "תחליב גוף חמאת שיאה עם ורד הבר ושקדים – לחות והזנה לעור יבש",
+    "size": "8 oz",
+    "categories": [
+      "skin",
+      "body",
+      "lotion",
+      "moisturizer",
+      "nourishing",
+      "dry-skin"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B07FSRJ54T?tag=nocrueltyil-20",
+        "asin": "B07FSRJ54T",
+        "currency": "USD",
+        "priceUSD": 11.95
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B07FSRJ54T.jpg"
+  },
+  {
+    "id": "derma-e-b07fsrhrkw",
+    "brand": "Derma E",
+    "name": "תחליב גוף אולטרה-לחות בניחוח יסמין ווניל – לחות עשירה לעור יבש",
+    "size": "8 oz",
+    "categories": [
+      "skin",
+      "body",
+      "lotion",
+      "moisturizer",
+      "hydrating",
+      "dry-skin"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B07FSRHRKW?tag=nocrueltyil-20",
+        "asin": "B07FSRHRKW",
+        "currency": "USD",
+        "priceUSD": 11.5
+      }
+    ],
+    "isKids": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B07FSRHRKW.jpg"
+  },
+  {
     "id": "skin1004-b0b1jrgglf",
     "brand": "SKIN1004",
     "name": "אמפולה Madagascar Centella לטיפול בנקבוביות – לחות מרגיעה לעור שמן/מעורב",
