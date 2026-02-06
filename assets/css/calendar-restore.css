@@ -1,0 +1,159 @@
+
+/* ===== Patch: Restore Shopping Calendar layout (month boxes + event cards) ===== */
+
+/* 2-column responsive grid (like screenshot) */
+.agendaGrid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+@media (max-width: 520px){
+  .agendaGrid{ grid-template-columns: 1fr; }
+}
+
+/* Month container */
+.monthCard{
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px;
+  background: rgba(255,255,255,.85);
+  border: 1px solid rgba(20,40,80,.10);
+  box-shadow: 0 18px 40px rgba(20,35,60,.08);
+}
+
+/* Subtle “printed” background wash */
+.monthCard::before{
+  content:"";
+  position:absolute;
+  inset:-40px;
+  background:
+    radial-gradient(900px 420px at 15% 20%, rgba(42,91,154,.10), transparent 60%),
+    radial-gradient(800px 420px at 85% 15%, rgba(157,195,230,.10), transparent 62%),
+    radial-gradient(760px 420px at 60% 95%, rgba(42,91,154,.06), transparent 65%);
+  opacity: .9;
+  pointer-events:none;
+}
+.monthCard > *{ position: relative; z-index: 1; }
+
+/* Month header row */
+.monthTop{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 10px;
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(20,40,80,.08);
+}
+.monthTitle{
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+.monthMeta{
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(17,24,39,.62);
+}
+
+/* Event list inside month */
+.eventList{
+  padding: 14px 14px 16px;
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+}
+
+/* Event card */
+.eventItem{
+  display:flex;
+  gap: 12px;
+  align-items:flex-start;
+  padding: 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(20,40,80,.10);
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 10px 22px rgba(20,35,60,.06);
+}
+
+/* Right column (date + tag) */
+.eventLeft{
+  min-width: 96px;
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+  text-align:right;
+}
+.datePill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 13px;
+  border: 1px solid rgba(20,40,80,.12);
+  background: rgba(245,248,255,.95);
+  white-space: nowrap;
+}
+.tagPill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 12px;
+  border: 1px solid rgba(20,40,80,.10);
+  white-space: nowrap;
+}
+.tag-major{ background: rgba(70,130,255,.14); }
+.tag-mid  { background: rgba(40,170,140,.14); }
+.tag-note { background: rgba(255,170,60,.16); }
+
+/* Text area */
+.eventBody{ flex: 1; min-width: 0; }
+.eventName{ font-weight: 900; font-size: 16px; margin-bottom: 4px; }
+.eventDesc{ color: rgba(30,45,70,.78); font-weight: 700; font-size: 13px; line-height: 1.45; }
+
+/* Focus chips row (cart pills) */
+.eventBuy{ display:flex; gap:8px; flex-wrap:wrap; margin-top: 10px; }
+.buyChip{
+  display:inline-flex;
+  align-items:center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(17,24,39,.12);
+  background: rgba(255,255,255,.70);
+  font-weight: 800;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Empty state */
+.noEvents{
+  padding: 14px;
+  color: rgba(30,45,70,.65);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+/* Mobile refinements */
+@media (max-width: 520px){
+  .agendaGrid{ grid-template-columns: 1fr; }
+  .eventItem{ flex-direction: column; align-items: stretch; }
+  .eventLeft{ min-width: 0; flex-direction: row; flex-wrap: wrap; gap: 8px; }
+  .datePill, .tagPill{ width: auto; }
+}
+
+.calendarHero .muted{ color: rgba(255,255,255,.86); }
+
+
+/* --- Hebrew RTL enhancements --- */
+:root { --he-font: 'Heebo', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; }
+html[dir="rtl"] body { direction: rtl; text-align: right; font-family: var(--he-font); }
+html[dir="rtl"] input, html[dir="rtl"] textarea, html[dir="rtl"] select { font-family: var(--he-font); }
+html[dir="rtl"] .nav, html[dir="rtl"] nav ul { flex-direction: row; }
+html[dir="rtl"] .menu, html[dir="rtl"] .topMenu, html[dir="rtl"] .navbar, html[dir="rtl"] .nav-links { flex-direction: row; }
+html[dir="rtl"] .card, html[dir="rtl"] .productCard, html[dir="rtl"] .dealCard, html[dir="rtl"] .brandCard { text-align: right; }
+html[dir="rtl"] .price, html[dir="rtl"] .priceLabel { direction: ltr; unicode-bidi: embed; } /* keep numbers readable */
+

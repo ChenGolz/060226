@@ -1,0 +1,32 @@
+/* מחיר tier: renders $$$$$ with inactive $ in gray */
+.price-tier {
+  display: inline-flex;
+  gap: 0.08em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-family: inherit;
+  user-select: none;
+}
+
+.price-tier .dollar {
+  opacity: 0.9;
+}
+
+.price-tier .dollar.inactive {
+  opacity: 0.25;         /* grayed out */
+  filter: grayscale(1);
+}
+
+/* Optional: make it a bit smaller on dense cards */
+.price-tier--sm { font-size: 0.92em; }
+
+
+/* --- Hebrew RTL enhancements --- */
+:root { --he-font: 'Heebo', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; }
+html[dir="rtl"] body { direction: rtl; text-align: right; font-family: var(--he-font); }
+html[dir="rtl"] input, html[dir="rtl"] textarea, html[dir="rtl"] select { font-family: var(--he-font); }
+html[dir="rtl"] .nav, html[dir="rtl"] nav ul { flex-direction: row; }
+html[dir="rtl"] .menu, html[dir="rtl"] .topMenu, html[dir="rtl"] .navbar, html[dir="rtl"] .nav-links { flex-direction: row; }
+html[dir="rtl"] .card, html[dir="rtl"] .productCard, html[dir="rtl"] .dealCard, html[dir="rtl"] .brandCard { text-align: right; }
+html[dir="rtl"] .price, html[dir="rtl"] .priceLabel { direction: ltr; unicode-bidi: embed; } /* keep numbers readable */
+

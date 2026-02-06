@@ -1,0 +1,259 @@
+/* Shared compact brand cards + filters (intl + israel) */
+
+/* Fonts (Hebrew + English)
+   - Use Rubik for Hebrew UI
+   - Use Inter for English UI (Weglot)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Rubik:wght@300;400;600;700;800&display=swap');
+
+/* Controls */
+.brandsControls{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;}
+.brandsSearchControl{flex:1 1 260px;min-width:200px;}
+.brandsCategoryControl,.brandsPriceControl{flex:0 0 220px;min-width:190px;}
+.brandsCategoryControl label,.brandsPriceControl label{display:block;margin-bottom:6px;font-weight:800;}
+.brandsPriceControl .hintText{margin:6px 0 0;font-size:.9rem;opacity:.75;}
+
+/* Grid */
+#brandGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:stretch;}
+@media(max-width:1100px){#brandGrid{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media(max-width:900px){#brandGrid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+/* Phones: keep 2 per row to reduce scrolling; fall back to 1 on very small screens */
+@media(max-width:520px){#brandGrid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:360px){#brandGrid{grid-template-columns:1fr;}}
+
+/* Cards */
+.brandCard{position:relative;overflow:hidden;border-radius:20px;border:1px solid rgba(42,91,154,.12);background:linear-gradient(180deg,rgba(42,91,154,.055),#fff 55%);padding:12px 12px 10px;box-shadow:0 10px 22px rgba(15,23,42,.06);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease;cursor:pointer;min-height:185px;}
+.brandCard:hover,.brandCard:focus-within{transform:translateY(-1px);box-shadow:0 14px 28px rgba(15,23,42,.09);border-color:rgba(42,91,154,.22);}
+.brandCard:focus-visible{outline:none;box-shadow:0 0 0 4px rgba(42,91,154,.16),0 14px 28px rgba(15,23,42,.10);}
+.brandCard .brandTop{display:flex;flex-direction:column;align-items:stretch;gap:10px;height:100%;}
+.brandHeader{display:flex;align-items:flex-start;gap:10px;padding-bottom:10px;margin-bottom:2px;border-bottom:1px solid rgba(15,23,42,.07);}
+.brandLogo{width:32px;height:32px;border-radius:12px;border:1px solid rgba(42,91,154,.18);background:rgba(42,91,154,.07);display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 auto;color:rgba(15,23,42,.88);}
+.brandLogo--fallback{font-weight:800;}
+.brandTitleBlock{min-width:0;flex:1 1 auto;}
+.brandName{font-size:1.22rem;font-weight:650;letter-spacing:-0.1px;line-height:1.32;display:block;padding:3px 0;text-decoration:none;}
+.brandName:hover{text-decoration:underline;}
+.brandCatsInline{margin-top:4px;font-size:12.5px;font-weight:600;color:rgba(15,23,42,.62);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.brandBadges{display:flex;flex-wrap:wrap;gap:6px;}
+.brandBadge{border:1px solid rgba(15,23,42,.10);background:rgba(255,255,255,.65);color:rgba(15,23,42,.82);font-weight:650;border-radius:999px;font-size:12px;padding:4px 8px;}
+.brandBadge--approved{background:rgba(42,91,154,.08);border-color:rgba(42,91,154,.22);}
+.brandBadge--vegan{background:rgba(16,185,129,.11);border-color:rgba(16,185,129,.25);}
+.brandLinks{margin-top:auto;padding-top:6px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+.brandLinks a{border-radius:12px;text-align:center;white-space:nowrap;}
+.brandLinks a.brandLink--amazon{border-color:rgba(42,91,154,.26);background:rgba(42,91,154,.10);}
+.brandLinks a.brandLink--site{background:rgba(15,23,42,.03);}
+.brandCard[hidden]{display:none !important;}
+
+/* Intl brands: mobile card redesign (single column + no overlaps) */
+@media (max-width: 560px){
+  /* Mobile: keep 2 cards per row (requested) */
+  .page-recommended-brands #brandGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-recommended-brands .brandHeader{ flex-wrap: wrap; row-gap: 6px; }
+  .page-recommended-brands .brandTitleBlock{ flex: 1 1 calc(100% - 44px); }
+  .page-recommended-brands .brandCatsInline{ white-space: normal; overflow: visible; text-overflow: clip; }
+  .page-recommended-brands .brandPriceTier{ order: 3; width: 100%; justify-content: flex-end; }
+  .page-recommended-brands .brandLinks{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .page-recommended-brands .brandLinks a{ white-space: nowrap; }
+}
+
+/* ===== v6: Intl brands – nicer cards + aligned price filter ===== */
+.page-recommended-brands .brandsPriceControl .hintText{display:none;}
+.page-recommended-brands .brandsPriceHint{margin:8px 0 0;font-size:.92rem;opacity:.78;}
+
+/* Card facelift: color accents by price tier */
+.page-recommended-brands .brandCard{
+  --accent: 42 91 154;
+  --accent2: 16 185 129;
+  border-color: rgba(var(--accent)/.18);
+  background:
+    radial-gradient(120% 160% at 0% 0%, rgba(var(--accent)/.14), transparent 58%),
+    radial-gradient(100% 140% at 100% 0%, rgba(var(--accent2)/.12), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.94), #ffffff);
+}
+.page-recommended-brands .brandCard::before{
+  opacity:.36;
+  background: linear-gradient(90deg, rgba(var(--accent)/.85), rgba(var(--accent2)/.70));
+}
+.page-recommended-brands .brandCard::after{
+  content:"";
+  position:absolute;
+  inset:auto -60px -60px auto;
+  width:180px;
+  height:180px;
+  border-radius:999px;
+  background: radial-gradient(circle at 30% 30%, rgba(var(--accent2)/.16), transparent 62%);
+  transform: rotate(8deg);
+  pointer-events:none;
+}
+.page-recommended-brands .brandLogo{
+  width:36px;
+  height:36px;
+  border-radius:14px;
+  background: rgba(var(--accent)/.10);
+  border-color: rgba(var(--accent)/.24);
+  color: rgba(var(--accent)/.95);
+}
+.page-recommended-brands .brandName{font-size:1.26rem;}
+.page-recommended-brands .brandPriceTier{
+  margin-inline-start:auto;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(var(--accent)/.18);
+  box-shadow: 0 8px 18px rgba(15,23,42,.06);
+}
+.page-recommended-brands .brandLinks a.brandLink--amazon{
+  background: rgba(var(--accent)/.10);
+  border-color: rgba(var(--accent)/.30);
+}
+.page-recommended-brands .brandLinks a.brandLink--site{
+  background: rgba(255,255,255,.70);
+  border: 1px solid rgba(15,23,42,.10);
+}
+
+.page-recommended-brands .brandCard[data-price-tier="1"]{ --accent: 34 197 94;  --accent2: 16 185 129; }
+.page-recommended-brands .brandCard[data-price-tier="2"]{ --accent: 20 184 166; --accent2: 59 130 246; }
+.page-recommended-brands .brandCard[data-price-tier="3"]{ --accent: 59 130 246; --accent2: 99 102 241; }
+.page-recommended-brands .brandCard[data-price-tier="4"]{ --accent: 139 92 246; --accent2: 236 72 153; }
+.page-recommended-brands .brandCard[data-price-tier="5"]{ --accent: 245 158 11; --accent2: 239 68 68; }
+
+/* Mobile: make header elements wrap nicely with new tier pill */
+@media (max-width: 560px){
+  .page-recommended-brands .brandHeader{flex-wrap:wrap;}
+  .page-recommended-brands .brandPriceTier{width:fit-content;}
+}
+
+/* ==========================
+   v9: Intl cards – clearer typography + brighter CTAs
+   (Uses !important to override older page-scoped tweaks)
+   ========================== */
+
+html[lang^="he"] .page-recommended-brands .brandName{
+  font-family: "Rubik","Assistant",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif !important;
+}
+html[lang^="en"] .page-recommended-brands .brandName{
+  font-family: "Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif !important;
+}
+
+.page-recommended-brands .brandName{
+  font-weight: 800 !important;
+  letter-spacing: -0.2px !important;
+}
+
+/* Ensure decorative blobs never cover interactive content */
+.page-recommended-brands .brandCard::before,
+.page-recommended-brands .brandCard::after{ z-index: 0 !important; }
+.page-recommended-brands .brandCard .brandTop{ position: relative !important; z-index: 1 !important; }
+
+/* Fresher card colors */
+.page-recommended-brands .brandCard{
+  height: auto !important;
+  min-height: 210px !important;
+  border-radius: 22px !important;
+  border-color: rgba(var(--accent)/.22) !important;
+  background:
+    radial-gradient(120% 140% at 12% 0%, rgba(var(--accent)/.18), transparent 52%),
+    radial-gradient(120% 140% at 88% 0%, rgba(var(--accent2)/.14), transparent 52%),
+    linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.90)) !important;
+  box-shadow: 0 16px 34px rgba(15,23,42,.10) !important;
+}
+.page-recommended-brands .brandCard:hover,
+.page-recommended-brands .brandCard:focus-within{
+  transform: translateY(-2px) !important;
+  box-shadow: 0 22px 44px rgba(15,23,42,.12) !important;
+}
+.page-recommended-brands .brandCard::before{
+  height: 8px !important;
+  opacity: .55 !important;
+}
+
+/* Badges: slightly bolder + clearer */
+.page-recommended-brands .brandBadge{
+  padding: 6px 10px !important;
+  font-size: 12.5px !important;
+  font-weight: 800 !important;
+  background: rgba(255,255,255,.86) !important;
+}
+.page-recommended-brands .brandBadge--approved{
+  background: rgba(var(--accent)/.10) !important;
+  border-color: rgba(var(--accent)/.28) !important;
+}
+.page-recommended-brands .brandBadge--vegan{
+  background: rgba(var(--accent2)/.12) !important;
+  border-color: rgba(var(--accent2)/.30) !important;
+}
+
+/* Buttons forward: frosted tray + bold CTAs */
+.page-recommended-brands .brandLinks{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  padding: 10px !important;
+  border-radius: 18px !important;
+  background: rgba(255,255,255,.74) !important;
+  border: 1px solid rgba(15,23,42,.08) !important;
+  box-shadow: 0 14px 26px rgba(15,23,42,.07) !important;
+  position: relative !important;
+  z-index: 3 !important;
+}
+.page-recommended-brands .brandLinks a{
+  flex: 1 1 calc(33.33% - 8px) !important;
+  min-width: 110px !important;
+  min-height: 42px !important;
+  padding: 10px 12px !important;
+  border-radius: 14px !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.1px !important;
+  box-shadow: 0 10px 18px rgba(15,23,42,.10) !important;
+  transition: transform .12s ease, box-shadow .12s ease, filter .12s ease !important;
+}
+
+/* Beat older .brandLinks .btn.small mobile overrides */
+.page-recommended-brands .brandLinks a.btn.small{
+  padding: 10px 12px !important;
+  font-size: 13px !important;
+  border-radius: 14px !important;
+}
+.page-recommended-brands .brandLinks a:hover{
+  transform: translateY(-1px) !important;
+  box-shadow: 0 14px 24px rgba(15,23,42,.12) !important;
+}
+
+.page-recommended-brands .brandLinks a.brandLink--amazon{
+  color: #ffffff !important;
+  border-color: transparent !important;
+  background: linear-gradient(135deg, rgb(var(--accent) / .96), rgb(var(--accent2) / .90)) !important;
+}
+.page-recommended-brands .brandLinks a.brandLink--site{
+  color: rgba(15,23,42,.92) !important;
+  background: rgba(255,255,255,.92) !important;
+  border-color: rgba(var(--accent)/.22) !important;
+}
+
+/* Mobile: keep the tray compact */
+@media (max-width: 560px){
+  .page-recommended-brands .brandLinks{ padding: 8px !important; border-radius: 16px !important; }
+  .page-recommended-brands .brandLinks a{ flex: 1 1 calc(50% - 8px) !important; min-width: 120px !important; }
+}
+
+
+/* --- Hebrew RTL enhancements --- */
+:root { --he-font: 'Heebo', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; }
+html[dir="rtl"] body { direction: rtl; text-align: right; font-family: var(--he-font); }
+html[dir="rtl"] input, html[dir="rtl"] textarea, html[dir="rtl"] select { font-family: var(--he-font); }
+html[dir="rtl"] .nav, html[dir="rtl"] nav ul { flex-direction: row; }
+html[dir="rtl"] .menu, html[dir="rtl"] .topMenu, html[dir="rtl"] .navbar, html[dir="rtl"] .nav-links { flex-direction: row; }
+html[dir="rtl"] .card, html[dir="rtl"] .productCard, html[dir="rtl"] .dealCard, html[dir="rtl"] .brandCard { text-align: right; }
+html[dir="rtl"] .price, html[dir="rtl"] .priceLabel { direction: ltr; unicode-bidi: embed; } /* keep numbers readable */
+
+
+
+
+/* Remove the empty logo box entirely (shrinks the card) */
+.page-recommended-brands .brandLogo{
+  display:none !important;
+}
+
+/* tighten spacing now that logo box is gone */
+.page-recommended-brands .brandCard{
+  padding-top: 10px;
+}

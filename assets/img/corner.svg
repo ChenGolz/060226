@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420" aria-hidden="true">
+  <defs>
+    <radialGradient id="g" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#2a5b9a" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#2aa876" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path d="M0,0 H420 V260 C420,350 350,420 260,420 H0 Z" fill="url(#g)"/>
+</svg>
