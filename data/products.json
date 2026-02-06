@@ -2,8 +2,8 @@
   {
     "id": "tanologist-b0cspsrygd",
     "brand": "Tanologist",
-    "name": "ספריי שיזוף עצמי לפנים Tanologist – Face Mist (Medium) – ספריי שיזוף לחותי, ללא פסים, גימור זוהר",
-    "size": "3.38 fl oz",
+    "name": "ספריי שיזוף עצמי לפנים, גוון מדיום – לחות מוגברת, ללא פסים ומראה זוהר",
+    "size": "100ml",
     "categories": [
       "skin",
       "face",
@@ -35,8 +35,8 @@
   {
     "id": "tanologist-b0cspt1ghy",
     "brand": "Tanologist",
-    "name": "ברונזר קרמי מבריק Tanologist – Insta Glow Face Bronzer – קליל וניתן לטשטוש (Vegan)",
-    "size": "2.02 fl oz",
+    "name": "ברונזר פנים Insta Glow – קרם ברונזר למראה זוהר ומואר ברגע",
+    "size": "60ml",
     "categories": [
       "skin",
       "face",
@@ -57,8 +57,7 @@
         "url": "https://www.amazon.com/dp/B0CSPT1GHY?tag=nocrueltyil-20",
         "asin": "B0CSPT1GHY",
         "currency": "USD",
-        "priceUSD": 12.78,
-        "freeShipOver": null
+        "priceUSD": 12.78
       }
     ],
     "isKids": false,
@@ -163,38 +162,6 @@
     "isKids": false,
     "isDiscounted": true,
     "image": "assets/img/products/B0BW1NJJS8.jpg"
-  },
-  {
-    "id": "ravie-beauty-b0dgqqqwvw",
-    "brand": "Ravie Beauty",
-    "name": "מברשת סומק Ravie Beauty Blush Brush – מברשת פלאפית רכה ללחיים/פודרה/ברונזר",
-    "size": "1 count",
-    "categories": [
-      "makeup",
-      "tools",
-      "brush",
-      "blush",
-      "bronzer"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DGQQQWVW?tag=nocrueltyil-20",
-        "asin": "B0DGQQQWVW",
-        "currency": "USD",
-        "priceUSD": 24.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": null,
-    "image": "assets/img/products/B0DGQQQWVW.jpg"
   },
   {
     "id": "ravie-beauty-b0df7glrcd",
@@ -506,37 +473,6 @@
     "image": "assets/img/products/B0DF7CXSNQ.jpg"
   },
   {
-    "id": "ravie-beauty-b0f1nhjhp7",
-    "brand": "Ravie Beauty",
-    "name": "עיפרון גבות Ravie Beauty Easy Everyday (Dark Brown) – 1.2mm + מברשת, Vegan",
-    "size": "1 count",
-    "categories": [
-      "makeup",
-      "brows",
-      "brow-pencil",
-      "vegan"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0F1NHJHP7?tag=nocrueltyil-20",
-        "asin": "B0F1NHJHP7",
-        "currency": "USD",
-        "priceUSD": 24.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": null,
-    "image": "assets/img/products/B0F1NHJHP7.jpg"
-  },
-  {
     "id": "ravie-beauty-b0f1nhgw4f",
     "brand": "Ravie Beauty",
     "name": "עיפרון גבות Ravie Beauty Easy Everyday (Ebony) – 1.2mm + מברשת, Vegan",
@@ -566,69 +502,6 @@
     "isKids": false,
     "isDiscounted": null,
     "image": "assets/img/products/B0F1NHGW4F.jpg"
-  },
-  {
-    "id": "ravie-beauty-b0f1njnwk6",
-    "brand": "Ravie Beauty",
-    "name": "עיפרון גבות Ravie Beauty Easy Everyday (Light Brown) – 1.2mm + מברשת, Vegan",
-    "size": "1 count",
-    "categories": [
-      "makeup",
-      "brows",
-      "brow-pencil",
-      "vegan"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0F1NJNWK6?tag=nocrueltyil-20",
-        "asin": "B0F1NJNWK6",
-        "currency": "USD",
-        "priceUSD": 24.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": null,
-    "image": "assets/img/products/B0F1NJNWK6.jpg"
-  },
-  {
-    "id": "ravie-beauty-b0g2mllt5c",
-    "brand": "Ravie Beauty",
-    "name": "עיפרון אייליינר עמיד Ravie Beauty Soft Definition (Drift – cool brown) – עמיד במים, Vegan",
-    "size": "1 count",
-    "categories": [
-      "makeup",
-      "eyes",
-      "eyeliner",
-      "waterproof",
-      "vegan"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0G2MLLT5C?tag=nocrueltyil-20",
-        "asin": "B0G2MLLT5C",
-        "currency": "USD",
-        "priceUSD": 22.5,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": null,
-    "image": "assets/img/products/B0G2MLLT5C.jpg"
   },
   {
     "id": "ravie-beauty-b0g2t5pfjb",
@@ -663,40 +536,6 @@
     "image": "assets/img/products/B0G2T5PFJB.jpg"
   },
   {
-    "id": "ravie-beauty-b0fqfl6kcw",
-    "brand": "Ravie Beauty",
-    "name": "קרם לחות לפנים Ravie Beauty Signature Skin Dream Barrier Cream – פפטידים/סרמידים/ניאצינאמיד, 1.7 fl oz",
-    "size": "1.7 fl oz",
-    "categories": [
-      "skin",
-      "face",
-      "moisturizer",
-      "barrier",
-      "ceramides",
-      "niacinamide",
-      "peptides"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0FQFL6KCW?tag=nocrueltyil-20",
-        "asin": "B0FQFL6KCW",
-        "currency": "USD",
-        "priceUSD": 38.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": null,
-    "image": "assets/img/products/B0FQFL6KCW.jpg"
-  },
-  {
     "id": "ravie-beauty-b0g278jg1z",
     "brand": "Ravie Beauty",
     "name": "עיפרון אייליינר עמיד Ravie Beauty Soft Definition (Dune – brightener) – Vegan",
@@ -727,69 +566,6 @@
     "isKids": false,
     "isDiscounted": null,
     "image": "assets/img/products/B0G278JG1Z.jpg"
-  },
-  {
-    "id": "ravie-beauty-b0fhk5mrd8",
-    "brand": "Ravie Beauty",
-    "name": "עיפרון תוחם שפתיים Ravie Beauty Soft Definition Longwear Lip Liner (Fig) – עמיד במים, Vegan",
-    "size": "1 count",
-    "categories": [
-      "makeup",
-      "lips",
-      "lip-liner",
-      "waterproof",
-      "vegan"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0FHK5MRD8?tag=nocrueltyil-20",
-        "asin": "B0FHK5MRD8",
-        "currency": "USD",
-        "priceUSD": 18.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": null,
-    "image": "assets/img/products/B0FHK5MRD8.jpg"
-  },
-  {
-    "id": "ravie-beauty-b0g2cv9l1c",
-    "brand": "Ravie Beauty",
-    "name": "מברשת אייליינר Ravie Beauty Soft Definition Eyeliner Brush – זוויתית לטשטוש/דיוק",
-    "size": "1 count",
-    "categories": [
-      "makeup",
-      "tools",
-      "brush",
-      "eyeliner"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0G2CV9L1C?tag=nocrueltyil-20",
-        "asin": "B0G2CV9L1C",
-        "currency": "USD",
-        "priceUSD": 16.0,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": null,
-    "image": "assets/img/products/B0G2CV9L1C.jpg"
   },
   {
     "id": "fleur-bee-b09mzqg4l6",
@@ -1546,37 +1322,6 @@
     "image": "assets/img/products/B0CRF9RWZB.jpg"
   },
   {
-    "id": "naked-sundays-b0crgcwbcm",
-    "brand": "Naked Sundays",
-    "name": "מברשת SPF Naked Sundays – SPF BFF Brush – כלי מריחה",
-    "size": "1 count",
-    "categories": [
-      "makeup",
-      "tools",
-      "brush",
-      "sunscreen-application"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CRGCWBCM?tag=nocrueltyil-20",
-        "asin": "B0CRGCWBCM",
-        "currency": "USD",
-        "priceUSD": 10.99,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": true,
-    "image": "assets/img/products/B0CRGCWBCM.jpg"
-  },
-  {
     "id": "naked-sundays-b0crfb366v",
     "brand": "Naked Sundays",
     "name": "שמן שפתיים SPF50 Naked Sundays – Glow & Go Lip Oil (Watermelon) – 4.5ml",
@@ -1743,40 +1488,6 @@
     "image": "assets/img/products/B0DWLVW4W5.jpg"
   },
   {
-    "id": "naked-sundays-b0cqkgqfpf",
-    "brand": "Naked Sundays",
-    "name": "טיפות SPF50 מוארות Naked Sundays – CabanaGlow™ Illuminating Tinted Serum Drops – 1.35 fl oz",
-    "size": "1.35 fl oz",
-    "categories": [
-      "skin",
-      "face",
-      "sunscreen",
-      "spf-50",
-      "tinted",
-      "glow",
-      "zinc-oxide"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CQKGQFPF?tag=nocrueltyil-20",
-        "asin": "B0CQKGQFPF",
-        "currency": "USD",
-        "priceUSD": 15.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": true,
-    "image": "assets/img/products/B0CQKGQFPF.jpg"
-  },
-  {
     "id": "naked-sundays-b0f9htrkv8",
     "brand": "Naked Sundays",
     "name": "סטיק בלש עם SPF50 Naked Sundays – Glow Balm (Dusty Rose) – לשפתיים/לחיים/עיניים – 8g",
@@ -1809,71 +1520,6 @@
     "image": "assets/img/products/B0F9HTRKV8.jpg"
   },
   {
-    "id": "naked-sundays-b0fwzxs63d",
-    "brand": "Naked Sundays",
-    "name": "בלש עם SPF50 Naked Sundays – CabanaGlow™ SPF 50 Blush – 1.35 fl oz",
-    "size": "1.35 fl oz",
-    "categories": [
-      "skin",
-      "face",
-      "spf",
-      "blush",
-      "cream"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0FWZXS63D?tag=nocrueltyil-20",
-        "asin": "B0FWZXS63D",
-        "currency": "USD",
-        "priceUSD": 15.0,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": true,
-    "image": "assets/img/products/B0FWZXS63D.jpg"
-  },
-  {
-    "id": "naked-sundays-b0crf9v9pm",
-    "brand": "Naked Sundays",
-    "name": "קרם גוף SPF50 Naked Sundays – Golden Glow Body Sunscreen – שימר/זוהר – 100ml",
-    "size": "3.38 fl oz",
-    "categories": [
-      "skin",
-      "body",
-      "sunscreen",
-      "spf-50",
-      "glow",
-      "fragrance-free"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CRF9V9PM?tag=nocrueltyil-20",
-        "asin": "B0CRF9V9PM",
-        "currency": "USD",
-        "priceUSD": 19.99,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": true,
-    "image": "assets/img/products/B0CRF9V9PM.jpg"
-  },
-  {
     "id": "naked-sundays-b0dh55t542",
     "brand": "Naked Sundays",
     "name": "קרם גוף SPF50 Naked Sundays – Antioxidant Body Sunscreen Lotion – 100ml",
@@ -1904,72 +1550,6 @@
     "isKids": false,
     "isDiscounted": null,
     "image": "assets/img/products/B0DH55T542.jpg"
-  },
-  {
-    "id": "naked-sundays-b0cx67mn53",
-    "brand": "Naked Sundays",
-    "name": "טיפות ברונזינג עם SPF50 Naked Sundays – CabanaGlow™ Bronzing Drops – 1.67 fl oz",
-    "size": "1.67 fl oz",
-    "categories": [
-      "skin",
-      "face",
-      "sunscreen",
-      "spf-50",
-      "bronzing-drops",
-      "tinted"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CX67MN53?tag=nocrueltyil-20",
-        "asin": "B0CX67MN53",
-        "currency": "USD",
-        "priceUSD": 15.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": true,
-    "image": "assets/img/products/B0CX67MN53.jpg"
-  },
-  {
-    "id": "naked-sundays-b0fwrpxw8r",
-    "brand": "Naked Sundays",
-    "name": "טינט שקוף עם SPF50 Naked Sundays – CabanaGlow™ Sheer Tint – 1.35 fl oz",
-    "size": "1.35 fl oz",
-    "categories": [
-      "skin",
-      "face",
-      "sunscreen",
-      "spf-50",
-      "tinted",
-      "sheer"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0FWRPXW8R?tag=nocrueltyil-20",
-        "asin": "B0FWRPXW8R",
-        "currency": "USD",
-        "priceUSD": 15.0,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": true,
-    "image": "assets/img/products/B0FWRPXW8R.jpg"
   },
   {
     "id": "naked-sundays-b0dlbqsdnv",
@@ -5077,40 +4657,6 @@
     "image": "assets/img/products/B0C8Y1TSKZ.jpg"
   },
   {
-    "id": "rovectin-b0cbqzxbtr",
-    "brand": "Rovectin",
-    "name": "סרום לתיקון כתמים כהים – ויטמין C וניאצינאמיד להבהרה ואחידות גוון, פורמולה עדינה לעור רגיש",
-    "size": "1.01 fl oz (30 ml)",
-    "categories": [
-      "skin",
-      "face",
-      "serum",
-      "brightening",
-      "dark-spots",
-      "vitamin-c",
-      "niacinamide"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CBQZXBTR?tag=nocrueltyil-20",
-        "asin": "B0CBQZXBTR",
-        "currency": "USD",
-        "priceUSD": 19.99,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": true,
-    "image": "assets/img/products/B0CBQZXBTR.jpg"
-  },
-  {
     "id": "rinna-beauty-b0dhlrkc5r",
     "brand": "Rinna Beauty",
     "name": "ערכת טיפוח שפתיים – מסכה, פילינג, גלוס, שפתון, תוחם, קריון ושמן פלמפר",
@@ -5509,40 +5055,6 @@
     ],
     "isKids": false,
     "image": "assets/img/products/B0BNNN3FN5.jpg"
-  },
-  {
-    "id": "the-humble-co-b09smqx3lr",
-    "brand": "The Humble Co",
-    "name": "טבליות משחת שיניים ללעיסה ללא פלואוריד – מנטה (180 יח׳)",
-    "size": "180 count",
-    "categories": [
-      "oral",
-      "toothpaste",
-      "tablets",
-      "fluoride-free",
-      "mint",
-      "travel",
-      "plastic-free"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B09SMQX3LR?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.133F1DSWDDJZ&linkCode=tr1&tag=nocrueltyil-20&linkId=amzn1.campaign.133F1DSWDDJZ_1769640328513",
-        "asin": "B09SMQX3LR",
-        "currency": "USD",
-        "priceUSD": 20.99,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": true,
-    "image": "assets/img/products/B09SMQX3LR.jpg"
   },
   {
     "id": "lime-crime-b09gx4cvbx",
@@ -11086,92 +10598,6 @@
         "isDiscounted": true
   },
   {
-    "id": "naked-sundays-b0d6wgfkvj",
-    "brand": "naked sundays",
-    "name": "סרום הגנה שקוף SPF 50 לפנים – CabanaClear™ Invisible Water Gel מרקם ג'ל-מים קליל | בלתי נראה על העור | ללא בישום וללא סימנים לבנים | לעור רגיש",
-    "size": "30 ml",
-    "categories": [
-      "sun",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": true,
-     "isPeta": false,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0D6WGFKVJ?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.1S691NS3RCZU3&linkCode=tr1&tag=nocrueltyil-20&linkId=amzn1.campaign.1S691NS3RCZU3_1769253069036",
-        "asin": "B0D6WGFKVJ",
-        "currency": "USD",
-        "priceUSD": 22,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "image": "assets/img/products/B0D6WGFKVJ.jpg"
-  },
-  {
-    "id": "naked-sundays-b0dtwpkfjh",
-    "brand": "naked sundays",
-    "name": "באלם טיפולי לשפתיים PoutScreen™ עם SPF 50 – לחות, הגנה וברק מועשר בחומצה פוליגלוטמית | גימור High-Gloss יוקרתי | , לא דביק ומגן מהשמש",
-    "size": "0.5 ounces",
-    "categories": [
-      "skincare",
-      "lips",
-      "sunscreen"
-    ],
-  "isVegan": true,
-    "isPeta": true,
-    "isLB": false,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DTWPKFJH?tag=nocrueltyil-20",
-        "asin": "B0DTWPKFJH",
-        "currency": "USD",
-        "priceUSD": 18,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isDiscounted": true,
-    "image": "assets/img/products/B0DTWPKFJH.jpg"
-  },
-  {
-    "id": "naked-sundays-b0f9htrkv8",
-    "brand": "naked sundays",
-    "name": "באלם זוהר מינרלי",
-    "size": null,
-    "categories": [
-      "טיפוח עור",
-      "פנים",
-      "באלם"
-    ],
-   "isVegan": true,
-    "isPeta": true,
-    "isLB": false,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0F9HTRKV8?tag=nocrueltyil-20",
-        "asin": "B0F9HTRKV8",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "image": "assets/img/products/B0F9HTRKV8.jpg"
-  },
-  {
     "id": "naked-sundays-b0fwrpxw8r",
     "brand": "naked sundays",
     "name": "סרום הגנה קליל עם גוון שקוף SPF 50 רכיבי טיפוח לעור לחות זוהר קורן טבעי",
@@ -11227,33 +10653,6 @@
     ],
     "isKids": false,
     "image": "assets/img/products/B0FWZXS63D.jpg"
-  },
-  {
-    "id": "nakedsundays-b0crfb366v",
-    "brand": "naked sundays",
-    "name": "שמן לשפתיים עם SPF 50 Glow & Go – Watermelon",
-    "size": "4.5 ml",
-    "categories": [
-      "makeup",
-      "sun"
-    ],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": false,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CRFB366V?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.9AKN52IF0V5K&linkCode=tr1&tag=nocrueltyil-20&linkId=amzn1.campaign.9AKN52IF0V5K_1768995073637",
-        "asin": "B0CRFB366V",
-        "currency": "USD",
-        "priceUSD": 18.99
-      }
-    ],
-    "isKids": false,
-    "image": "assets/img/products/B0CRFB366V.jpg"
   },
   {
     "id": "Odacité -b07h9kr5d6",
