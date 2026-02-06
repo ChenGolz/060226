@@ -26,7 +26,8 @@
         "url": "https://www.amazon.com/dp/B01MA35EGM?tag=nocrueltyil-20",
         "asin": "B01MA35EGM",
         "currency": "USD",
-        "priceUSD": 20.0
+        "priceUSD": 20.0,
+                "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -70,7 +71,7 @@
   {
     "id": "derma-e-b007rnobsk",
     "brand": "Derma E",
-    "name": "ג׳ל ניקוי יומי להבהרה עם ויטמין C – ניקוי עדין לאחידות גוון וזוהר",
+    "name": "סבון פנים ויטמין C להבהרה, לחות וחידוש העור",
     "size": "6 fl oz",
     "categories": [
       "skin",
@@ -524,7 +525,7 @@
   {
     "id": "derma-e-b0d1ksq9tj",
     "brand": "Derma E",
-    "name": "אבקת הגנה מינרלית SPF 30 במברשת – גימור שקוף וקיבוע איפור",
+    "name": "פודרה מינרלית להגנה מהשמש SPF 30 עם מברשת",
     "size": "0.16 oz",
     "categories": [
       "skin",
@@ -642,7 +643,8 @@
         "url": "https://www.amazon.com/dp/B000GEZU1E?tag=nocrueltyil-20",
         "asin": "B000GEZU1E",
         "currency": "USD",
-        "priceUSD": 28.57
+        "priceUSD": 28.57,
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
