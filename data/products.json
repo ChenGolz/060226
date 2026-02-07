@@ -3,7 +3,7 @@
     "id": "hero-cosmetics-b0dhxyw6xm",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Nose XL Hydrocolloid Spot Patches (10 patches)",
-    "size": "10 patches",
+    "size": "10 יחידות",
     "categories": [
       "skin",
       "face",
@@ -14,8 +14,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.64,
-    "priceMax": 13.64,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -35,7 +35,7 @@
     "id": "hero-cosmetics-b0f8p97rdv",
     "brand": "Hero Cosmetics",
     "name": "Rescue Balm + Red Correct Post-Blemish Recovery Cream & Colour Corrector (15 ml)",
-    "size": "15ml",
+    "size": "15 מ\"ל",
     "categories": [
       "skin",
       "moisturizer"
@@ -43,8 +43,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.9,
-    "priceMax": 13.9,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -64,7 +64,7 @@
     "id": "hero-cosmetics-b0f8p947rj",
     "brand": "Hero Cosmetics",
     "name": "Rescue Balm Post-Blemish Recovery Cream (15 ml)",
-    "size": "15ml",
+    "size": "15 מ\"ל",
     "categories": [
       "skin",
       "moisturizer"
@@ -72,8 +72,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.77,
-    "priceMax": 14.77,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -93,7 +93,7 @@
     "id": "hero-cosmetics-b0f8p69fbv",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Original Hydrocolloid Spot Patches (144 patches)",
-    "size": "144 patches",
+    "size": "144 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -103,8 +103,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 27.3,
-    "priceMax": 27.3,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -124,7 +124,7 @@
     "id": "hero-cosmetics-b0f8p8lycw",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Invisible+ Hydrocolloid Spot Patches (78 patches)",
-    "size": "78 patches",
+    "size": "78 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -134,8 +134,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 21.05,
-    "priceMax": 21.05,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -155,7 +155,7 @@
     "id": "hero-cosmetics-b0fdwxn2wz",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Day + Night Hydrocolloid Acne Patches (24 patches)",
-    "size": "24 patches",
+    "size": "24 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -165,8 +165,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 7.95,
-    "priceMax": 7.95,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -186,7 +186,7 @@
     "id": "hero-cosmetics-b074pvtpbw",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Original Patch Hydrocolloid Acne Pimple Patches (36 count)",
-    "size": "36 patches",
+    "size": "36 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -196,8 +196,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.08,
-    "priceMax": 13.08,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -205,7 +205,7 @@
         "url": "https://www.amazon.com/dp/B074PVTPBW?tag=nocrueltyil-20",
         "asin": "B074PVTPBW",
         "currency": "USD",
-        "priceUSD": 13.08
+        "priceUSD": 127.38
       }
     ],
     "isKids": false,
@@ -217,7 +217,7 @@
     "id": "hero-cosmetics-b07b4kqvk6",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Original Patch Hydrocolloid Acne Pimple Patches (72 count)",
-    "size": "72 patches",
+    "size": "72 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -227,8 +227,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 22.13,
-    "priceMax": 22.13,
+    "priceMin": 200,
+    "priceMax": 250,
     "offers": [
       {
         "store": "amazon-us",
@@ -236,7 +236,7 @@
         "url": "https://www.amazon.com/dp/B07B4KQVK6?tag=nocrueltyil-20",
         "asin": "B07B4KQVK6",
         "currency": "USD",
-        "priceUSD": 22.13
+        "priceUSD": 215.5
       }
     ],
     "isKids": false,
@@ -248,7 +248,7 @@
     "id": "hero-cosmetics-b07kjs13pk",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Invisible+ Hydrocolloid Acne Pimple Patches (39 count)",
-    "size": "39 patches",
+    "size": "39 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -258,8 +258,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.49,
-    "priceMax": 14.49,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -267,7 +267,7 @@
         "url": "https://www.amazon.com/dp/B07KJS13PK?tag=nocrueltyil-20",
         "asin": "B07KJS13PK",
         "currency": "USD",
-        "priceUSD": 14.49
+        "priceUSD": 141.11
       }
     ],
     "isKids": false,
@@ -279,7 +279,7 @@
     "id": "hero-cosmetics-b0g66py3bk",
     "brand": "Hero Cosmetics",
     "name": "Mighty Shield Liquid Patch Invisible Blemish Protectant (1 count)",
-    "size": "1 count",
+    "size": "1 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -289,8 +289,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 15.1,
-    "priceMax": 15.1,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -298,7 +298,7 @@
         "url": "https://www.amazon.com/dp/B0G66PY3BK?tag=nocrueltyil-20",
         "asin": "B0G66PY3BK",
         "currency": "USD",
-        "priceUSD": 15.1
+        "priceUSD": 147.04
       }
     ],
     "isKids": false,
@@ -310,7 +310,7 @@
     "id": "hero-cosmetics-b0bpdbyrtz",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Micropoint Large Hydrocolloid Pimple Patches (8 count)",
-    "size": "8 patches",
+    "size": "8 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -320,8 +320,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 11.05,
-    "priceMax": 11.05,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -329,7 +329,7 @@
         "url": "https://www.amazon.com/dp/B0BPDBYRTZ?tag=nocrueltyil-20",
         "asin": "B0BPDBYRTZ",
         "currency": "USD",
-        "priceUSD": 11.05
+        "priceUSD": 107.6
       }
     ],
     "isKids": false,
@@ -343,7 +343,7 @@
     "id": "hero-cosmetics-b0dvj7blq7",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Invisible+ Patch (72 count)",
-    "size": "72 patches",
+    "size": "72 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -353,8 +353,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 30.19,
-    "priceMax": 30.19,
+    "priceMin": 250,
+    "priceMax": 300,
     "offers": [
       {
         "store": "amazon-us",
@@ -362,7 +362,7 @@
         "url": "https://www.amazon.com/dp/B0DVJ7BLQ7?tag=nocrueltyil-20",
         "asin": "B0DVJ7BLQ7",
         "currency": "USD",
-        "priceUSD": 30.19
+        "priceUSD": 293.99
       }
     ],
     "isKids": false,
@@ -376,7 +376,7 @@
     "id": "hero-cosmetics-b07kjxfjhf",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Surface Large Hydrocolloid Patches (10 count)",
-    "size": "10 patches",
+    "size": "10 יחידות",
     "categories": [
       "skin",
       "face",
@@ -387,8 +387,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 18.1,
-    "priceMax": 18.1,
+    "priceMin": 150,
+    "priceMax": 200,
     "offers": [
       {
         "store": "amazon-us",
@@ -396,7 +396,7 @@
         "url": "https://www.amazon.com/dp/B07KJXFJHF?tag=nocrueltyil-20",
         "asin": "B07KJXFJHF",
         "currency": "USD",
-        "priceUSD": 18.1
+        "priceUSD": 176.25
       }
     ],
     "isKids": false,
@@ -408,7 +408,7 @@
     "id": "hero-cosmetics-b09nnf2dxx",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Nose Pimple Patches (10 count)",
-    "size": "10 patches",
+    "size": "10 יחידות",
     "categories": [
       "skin",
       "face",
@@ -419,8 +419,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 15.1,
-    "priceMax": 15.1,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -428,7 +428,7 @@
         "url": "https://www.amazon.com/dp/B09NNF2DXX?tag=nocrueltyil-20",
         "asin": "B09NNF2DXX",
         "currency": "USD",
-        "priceUSD": 15.1
+        "priceUSD": 147.04
       }
     ],
     "isKids": false,
@@ -440,7 +440,7 @@
     "id": "hero-cosmetics-b0d38dmbpq",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Mini Invisible+ Patches (30 count)",
-    "size": "30 patches",
+    "size": "30 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -450,8 +450,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.31,
-    "priceMax": 13.31,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -459,7 +459,7 @@
         "url": "https://www.amazon.com/dp/B0D38DMBPQ?tag=nocrueltyil-20",
         "asin": "B0D38DMBPQ",
         "currency": "USD",
-        "priceUSD": 13.31
+        "priceUSD": 129.6
       }
     ],
     "isKids": false,
@@ -473,7 +473,7 @@
     "id": "hero-cosmetics-b0bs49yw8z",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Micropoint for Dark Spots (8 count)",
-    "size": "8 patches",
+    "size": "8 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -483,8 +483,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 11.05,
-    "priceMax": 11.05,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -492,7 +492,7 @@
         "url": "https://www.amazon.com/dp/B0BS49YW8Z?tag=nocrueltyil-20",
         "asin": "B0BS49YW8Z",
         "currency": "USD",
-        "priceUSD": 11.05
+        "priceUSD": 107.6
       }
     ],
     "isKids": false,
@@ -504,7 +504,7 @@
     "id": "hero-cosmetics-b0cgmc8ws9",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch for Tired Eyes Hydrogel Patches (6 count)",
-    "size": "6 patches",
+    "size": "6 יחידות",
     "categories": [
       "skin",
       "eye",
@@ -515,8 +515,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.99,
-    "priceMax": 14.99,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -524,7 +524,7 @@
         "url": "https://www.amazon.com/dp/B0CGMC8WS9?tag=nocrueltyil-20",
         "asin": "B0CGMC8WS9",
         "currency": "USD",
-        "priceUSD": 14.99
+        "priceUSD": 145.98
       }
     ],
     "isKids": false,
@@ -536,7 +536,7 @@
     "id": "hero-cosmetics-b085p3typs",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Variety Pack (26 count)",
-    "size": "26 patches",
+    "size": "26 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -546,8 +546,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.07,
-    "priceMax": 14.07,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -555,7 +555,7 @@
         "url": "https://www.amazon.com/dp/B085P3TYPS?tag=nocrueltyil-20",
         "asin": "B085P3TYPS",
         "currency": "USD",
-        "priceUSD": 14.07
+        "priceUSD": 137.02
       }
     ],
     "isKids": false,
@@ -569,7 +569,7 @@
     "id": "hero-cosmetics-b0b16vd9rq",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Face Patch XL Hydrocolloid Face Mask (5 count)",
-    "size": "5 patches",
+    "size": "5 יחידות",
     "categories": [
       "skin",
       "face",
@@ -580,8 +580,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 20.12,
-    "priceMax": 20.12,
+    "priceMin": 150,
+    "priceMax": 200,
     "offers": [
       {
         "store": "amazon-us",
@@ -589,7 +589,7 @@
         "url": "https://www.amazon.com/dp/B0B16VD9RQ?tag=nocrueltyil-20",
         "asin": "B0B16VD9RQ",
         "currency": "USD",
-        "priceUSD": 20.12
+        "priceUSD": 195.94
       }
     ],
     "isKids": false,
@@ -603,7 +603,7 @@
     "id": "hero-cosmetics-b0dvhvb9dy",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Day and Night Patches Duo Pack (36 count)",
-    "size": "36 patches",
+    "size": "36 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -614,8 +614,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 19.13,
-    "priceMax": 19.13,
+    "priceMin": 150,
+    "priceMax": 200,
     "offers": [
       {
         "store": "amazon-us",
@@ -623,7 +623,7 @@
         "url": "https://www.amazon.com/dp/B0DVHVB9DY?tag=nocrueltyil-20",
         "asin": "B0DVHVB9DY",
         "currency": "USD",
-        "priceUSD": 19.13
+        "priceUSD": 186.3
       }
     ],
     "isKids": false,
@@ -637,7 +637,7 @@
     "id": "hero-cosmetics-b0bmm44hbf",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Chin Patch XL Contoured (10 count)",
-    "size": "10 patches",
+    "size": "10 יחידות",
     "categories": [
       "skin",
       "face",
@@ -648,8 +648,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 18.1,
-    "priceMax": 18.1,
+    "priceMin": 150,
+    "priceMax": 200,
     "offers": [
       {
         "store": "amazon-us",
@@ -657,7 +657,7 @@
         "url": "https://www.amazon.com/dp/B0BMM44HBF?tag=nocrueltyil-20",
         "asin": "B0BMM44HBF",
         "currency": "USD",
-        "priceUSD": 18.1
+        "priceUSD": 176.25
       }
     ],
     "isKids": false,
@@ -669,7 +669,7 @@
     "id": "hero-cosmetics-b0cmdgp48l",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch Forehead Patch (5 count)",
-    "size": "5 patches",
+    "size": "5 יחידות",
     "categories": [
       "skin",
       "face",
@@ -680,8 +680,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 15.1,
-    "priceMax": 15.1,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -689,7 +689,7 @@
         "url": "https://www.amazon.com/dp/B0CMDGP48L?tag=nocrueltyil-20",
         "asin": "B0CMDGP48L",
         "currency": "USD",
-        "priceUSD": 15.1
+        "priceUSD": 147.04
       }
     ],
     "isKids": false,
@@ -701,7 +701,7 @@
     "id": "hero-cosmetics-b0fg655345",
     "brand": "Hero Cosmetics",
     "name": "Dark Spot Correct Spot-Fading Vitamin C + Hyaluronic Acid Serum (10 ml)",
-    "size": "10ml",
+    "size": "10 מ\"ל",
     "categories": [
       "skin",
       "serum"
@@ -709,8 +709,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 20.12,
-    "priceMax": 20.12,
+    "priceMin": 150,
+    "priceMax": 200,
     "offers": [
       {
         "store": "amazon-us",
@@ -718,7 +718,7 @@
         "url": "https://www.amazon.com/dp/B0FG655345?tag=nocrueltyil-20",
         "asin": "B0FG655345",
         "currency": "USD",
-        "priceUSD": 20.12
+        "priceUSD": 195.94
       }
     ],
     "isKids": false,
@@ -732,7 +732,7 @@
     "id": "hero-cosmetics-b0cczmsj4t",
     "brand": "Hero Cosmetics",
     "name": "Mighty Patch for Fine Lines Patches (6 count)",
-    "size": "6 patches",
+    "size": "6 יחידות",
     "categories": [
       "skin",
       "acne",
@@ -742,8 +742,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 15.1,
-    "priceMax": 15.1,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -751,7 +751,7 @@
         "url": "https://www.amazon.com/dp/B0CCZMSJ4T?tag=nocrueltyil-20",
         "asin": "B0CCZMSJ4T",
         "currency": "USD",
-        "priceUSD": 15.1
+        "priceUSD": 147.04
       }
     ],
     "isKids": false,
@@ -763,7 +763,7 @@
     "id": "hero-cosmetics-b0bp2wfygj",
     "brand": "Hero Cosmetics",
     "name": "Rescue Retinol Nighttime Renewing Cream (30 ml)",
-    "size": "30ml",
+    "size": "30 מ\"ל",
     "categories": [
       "skin",
       "moisturizer"
@@ -771,8 +771,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 10.42,
-    "priceMax": 10.42,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -780,7 +780,7 @@
         "url": "https://www.amazon.com/dp/B0BP2WFYGJ?tag=nocrueltyil-20",
         "asin": "B0BP2WFYGJ",
         "currency": "USD",
-        "priceUSD": 10.42
+        "priceUSD": 101.48
       }
     ],
     "isKids": false,
@@ -792,7 +792,7 @@
     "id": "hero-cosmetics-b0cgmg1l61",
     "brand": "Hero Cosmetics",
     "name": "Bright Eyes Illuminating Eye Cream (0.5 fl oz)",
-    "size": "0.5oz",
+    "size": "15 מ\"ל",
     "categories": [
       "skin",
       "eye",
@@ -801,8 +801,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 12.08,
-    "priceMax": 12.08,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -810,7 +810,7 @@
         "url": "https://www.amazon.com/dp/B0CGMG1L61?tag=nocrueltyil-20",
         "asin": "B0CGMG1L61",
         "currency": "USD",
-        "priceUSD": 12.08
+        "priceUSD": 117.64
       }
     ],
     "isKids": false,
@@ -822,7 +822,7 @@
     "id": "hero-cosmetics-b0crwwscj5",
     "brand": "Hero Cosmetics",
     "name": "Dissolve Away Daily Cleansing Balm (2.2 fl oz)",
-    "size": "2.2oz",
+    "size": "65 מ\"ל",
     "categories": [
       "skin",
       "cleanser",
@@ -831,8 +831,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 10.87,
-    "priceMax": 10.87,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -840,7 +840,7 @@
         "url": "https://www.amazon.com/dp/B0CRWWSCJ5?tag=nocrueltyil-20",
         "asin": "B0CRWWSCJ5",
         "currency": "USD",
-        "priceUSD": 10.87
+        "priceUSD": 105.85
       }
     ],
     "isKids": false,
@@ -852,7 +852,7 @@
     "id": "hero-cosmetics-b0crlgx6s6",
     "brand": "Hero Cosmetics",
     "name": "Glow Balm Radiant Skin Stick (0.4 oz)",
-    "size": "0.4oz",
+    "size": "11 גרם",
     "categories": [
       "skin",
       "moisturizer"
@@ -860,8 +860,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 11.07,
-    "priceMax": 11.07,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -869,7 +869,7 @@
         "url": "https://www.amazon.com/dp/B0CRLGX6S6?tag=nocrueltyil-20",
         "asin": "B0CRLGX6S6",
         "currency": "USD",
-        "priceUSD": 11.07
+        "priceUSD": 107.78
       }
     ],
     "isKids": false,
@@ -881,7 +881,7 @@
     "id": "hero-cosmetics-b0fhy2qmrk",
     "brand": "Hero Cosmetics",
     "name": "Rescue Balm + Red Correct Color-Correcting Green Cream (15 ml)",
-    "size": "15ml",
+    "size": "15 מ\"ל",
     "categories": [
       "skin",
       "moisturizer"
@@ -889,8 +889,8 @@
     "isVegan": null,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 12.97,
-    "priceMax": 12.97,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -898,7 +898,7 @@
         "url": "https://www.amazon.com/dp/B0FHY2QMRK?tag=nocrueltyil-20",
         "asin": "B0FHY2QMRK",
         "currency": "USD",
-        "priceUSD": 12.97
+        "priceUSD": 126.29
       }
     ],
     "isKids": false,
@@ -910,7 +910,7 @@
     "id": "sukin-b003vjqkss",
     "brand": "Sukin",
     "name": "Sukin Signature Cream Cleanser (125ml)",
-    "size": "125ml",
+    "size": "125 מ\"ל",
     "categories": [
       "skin",
       "cleanser",
@@ -920,8 +920,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 6.83,
-    "priceMax": 6.83,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -941,7 +941,7 @@
     "id": "sukin-b003vjxum2",
     "brand": "Sukin",
     "name": "Sukin Signature Facial Moisturiser (125ml)",
-    "size": "125ml",
+    "size": "125 מ\"ל",
     "categories": [
       "skin",
       "face",
@@ -951,8 +951,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 8.18,
-    "priceMax": 8.18,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -972,7 +972,7 @@
     "id": "sukin-b003vjxufo",
     "brand": "Sukin",
     "name": "Sukin Signature Foaming Facial Cleanser (125ml)",
-    "size": "125ml",
+    "size": "125 מ\"ל",
     "categories": [
       "skin",
       "face",
@@ -982,8 +982,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 6.83,
-    "priceMax": 6.83,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1003,7 +1003,7 @@
     "id": "sukin-b003vjxuk4",
     "brand": "Sukin",
     "name": "Sukin Signature Hydrating Mist Toner (125ml)",
-    "size": "125ml",
+    "size": "125 מ\"ל",
     "categories": [
       "skin",
       "toner",
@@ -1012,8 +1012,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 6.38,
-    "priceMax": 6.38,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1033,7 +1033,7 @@
     "id": "sukin-b01in3iwoq",
     "brand": "Sukin",
     "name": "Sukin Signature Hydrating Facial Masque (200g)",
-    "size": "200g",
+    "size": "200 גרם",
     "categories": [
       "skin",
       "face",
@@ -1042,8 +1042,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 6.58,
-    "priceMax": 6.58,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1063,7 +1063,7 @@
     "id": "sukin-b003vjtrfq",
     "brand": "Sukin",
     "name": "Sukin Signature Moisture Restoring Night Cream (120ml)",
-    "size": "120ml",
+    "size": "120 מ\"ל",
     "categories": [
       "skin",
       "moisturizer",
@@ -1072,8 +1072,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 12.18,
-    "priceMax": 12.18,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1093,7 +1093,7 @@
     "id": "sukin-b003vjql64",
     "brand": "Sukin",
     "name": "Sukin Signature Antioxidant Eye Serum (35ml)",
-    "size": "35ml",
+    "size": "35 מ\"ל",
     "categories": [
       "skin",
       "eye",
@@ -1103,8 +1103,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 9.41,
-    "priceMax": 9.41,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1124,7 +1124,7 @@
     "id": "sukin-b003vjxuhw",
     "brand": "Sukin",
     "name": "Sukin Signature Revitalising Facial Scrub (200ml)",
-    "size": "200ml",
+    "size": "200 מ\"ל",
     "categories": [
       "skin",
       "face",
@@ -1133,8 +1133,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 10.18,
-    "priceMax": 10.18,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1154,7 +1154,7 @@
     "id": "byoma-b0btycfck7",
     "brand": "BYOMA",
     "name": "BYOMA So Bright Set (Barrier Repair Skincare Set) (30ml/15ml/15ml)",
-    "size": "set",
+    "size": "30 מ\"ל + 15 מ\"ל + 15 מ\"ל",
     "categories": [
       "skin",
       "set",
@@ -1163,8 +1163,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.79,
-    "priceMax": 14.79,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1184,7 +1184,7 @@
     "id": "byoma-b0bxphyqgc",
     "brand": "BYOMA",
     "name": "BYOMA So Hydrated Set (Barrier Repair Skincare Set) (30ml/15ml/15ml)",
-    "size": "set",
+    "size": "30 מ\"ל + 15 מ\"ל + 15 מ\"ל",
     "categories": [
       "skin",
       "set",
@@ -1193,8 +1193,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 17.9,
-    "priceMax": 17.9,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1214,7 +1214,7 @@
     "id": "byoma-b0c7c7clpl",
     "brand": "BYOMA",
     "name": "BYOMA So Clear Set (Barrier Repair Skincare Set) (30ml/15ml/15ml)",
-    "size": "set",
+    "size": "30 מ\"ל + 15 מ\"ל + 15 מ\"ל",
     "categories": [
       "skin",
       "set",
@@ -1223,8 +1223,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 19.33,
-    "priceMax": 19.33,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1253,8 +1253,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 19.33,
-    "priceMax": 19.33,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1274,7 +1274,7 @@
     "id": "byoma-b0gc7lssys",
     "brand": "BYOMA",
     "name": "BYOMA Foaming Rice Deep Cleanser (175ml)",
-    "size": "175ml",
+    "size": "175 מ\"ל",
     "categories": [
       "skin",
       "cleanser",
@@ -1283,8 +1283,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 15.92,
-    "priceMax": 15.92,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1304,7 +1304,7 @@
     "id": "byoma-b0csdxl86l",
     "brand": "BYOMA",
     "name": "BYOMA Milky Moisture Cleanser (175ml)",
-    "size": "175ml",
+    "size": "175 מ\"ל",
     "categories": [
       "skin",
       "cleanser",
@@ -1314,8 +1314,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.66,
-    "priceMax": 14.66,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1335,7 +1335,7 @@
     "id": "byoma-b0c7c8yl9d",
     "brand": "BYOMA",
     "name": "BYOMA Milky Oil Cleanser (100ml)",
-    "size": "100ml",
+    "size": "100 מ\"ל",
     "categories": [
       "skin",
       "cleanser",
@@ -1345,8 +1345,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 15.89,
-    "priceMax": 15.89,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1366,7 +1366,7 @@
     "id": "byoma-b0btybvlfw",
     "brand": "BYOMA",
     "name": "BYOMA Creamy Jelly Cleanser (175ml)",
-    "size": "175ml",
+    "size": "175 מ\"ל",
     "categories": [
       "skin",
       "cleanser",
@@ -1376,8 +1376,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 10.22,
-    "priceMax": 10.22,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1397,7 +1397,7 @@
     "id": "byoma-b0c7cb452s",
     "brand": "BYOMA",
     "name": "BYOMA Melting Balm Facial Cleanser (60g)",
-    "size": "60g",
+    "size": "60 גרם",
     "categories": [
       "skin",
       "face",
@@ -1408,8 +1408,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 17.02,
-    "priceMax": 17.02,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1429,7 +1429,7 @@
     "id": "byoma-b0fm8tcgf1",
     "brand": "BYOMA",
     "name": "BYOMA Blemish Clearing Cleanser (175ml)",
-    "size": "175ml",
+    "size": "175 מ\"ל",
     "categories": [
       "skin",
       "cleanser",
@@ -1438,8 +1438,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.77,
-    "priceMax": 14.77,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1459,7 +1459,7 @@
     "id": "byoma-b0c7c8d9ls",
     "brand": "BYOMA",
     "name": "BYOMA Balancing Face Mist (100ml)",
-    "size": "100ml",
+    "size": "100 מ\"ל",
     "categories": [
       "skin",
       "face",
@@ -1469,8 +1469,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 12.51,
-    "priceMax": 12.51,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1490,7 +1490,7 @@
     "id": "byoma-b0c7c8bsbq",
     "brand": "BYOMA",
     "name": "BYOMA Brightening Toner (150ml)",
-    "size": "150ml",
+    "size": "150 מ\"ל",
     "categories": [
       "skin",
       "toner",
@@ -1499,8 +1499,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.61,
-    "priceMax": 13.61,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1520,7 +1520,7 @@
     "id": "byoma-b0csdws3hj",
     "brand": "BYOMA",
     "name": "BYOMA Hydrating Milky Toner (150ml)",
-    "size": "150ml",
+    "size": "150 מ\"ל",
     "categories": [
       "skin",
       "toner",
@@ -1529,8 +1529,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.47,
-    "priceMax": 13.47,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1550,7 +1550,7 @@
     "id": "byoma-b0fm8t7lch",
     "brand": "BYOMA",
     "name": "BYOMA Blemish Redness Relief Soothing Toner (100ml)",
-    "size": "100ml",
+    "size": "100 מ\"ל",
     "categories": [
       "skin",
       "toner",
@@ -1559,8 +1559,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.77,
-    "priceMax": 14.77,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1580,7 +1580,7 @@
     "id": "byoma-b0c7c7ddt3",
     "brand": "BYOMA",
     "name": "BYOMA De-Puff and Brighten Eye Gel (20ml)",
-    "size": "20ml",
+    "size": "20 מ\"ל",
     "categories": [
       "skin",
       "eye",
@@ -1589,8 +1589,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.77,
-    "priceMax": 14.77,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1610,7 +1610,7 @@
     "id": "byoma-b0dr9v1l1r",
     "brand": "BYOMA",
     "name": "BYOMA Barrier Repair Eye Cream (20ml)",
-    "size": "20ml",
+    "size": "20 מ\"ל",
     "categories": [
       "skin",
       "eye",
@@ -1620,8 +1620,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.79,
-    "priceMax": 14.79,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1641,7 +1641,7 @@
     "id": "byoma-b0dr9vmf5n",
     "brand": "BYOMA",
     "name": "BYOMA Phyto-Mucin Glow Serum (40ml)",
-    "size": "40ml",
+    "size": "40 מ\"ל",
     "categories": [
       "skin",
       "serum",
@@ -1650,8 +1650,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 17.01,
-    "priceMax": 17.01,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1671,7 +1671,7 @@
     "id": "byoma-b0bj74djxg",
     "brand": "BYOMA",
     "name": "BYOMA Moisturising Gel Cream (50ml)",
-    "size": "50ml",
+    "size": "50 מ\"ל",
     "categories": [
       "skin",
       "moisturizer",
@@ -1680,8 +1680,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.57,
-    "priceMax": 13.57,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1701,7 +1701,7 @@
     "id": "byoma-b0fm8wqkkv",
     "brand": "BYOMA",
     "name": "BYOMA Blemish Control Moisturiser (50ml)",
-    "size": "50ml",
+    "size": "50 מ\"ל",
     "categories": [
       "skin",
       "moisturizer",
@@ -1710,8 +1710,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 15.92,
-    "priceMax": 15.92,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1731,7 +1731,7 @@
     "id": "byoma-b0bzx2rlnx",
     "brand": "BYOMA",
     "name": "BYOMA Moisturising Rich Cream (50ml)",
-    "size": "50ml",
+    "size": "50 מ\"ל",
     "categories": [
       "skin",
       "moisturizer",
@@ -1740,8 +1740,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.77,
-    "priceMax": 14.77,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1761,7 +1761,7 @@
     "id": "byoma-b0csdvqbzk",
     "brand": "BYOMA",
     "name": "BYOMA Barrier Repair Treatment (50ml)",
-    "size": "50ml",
+    "size": "50 מ\"ל",
     "categories": [
       "skin",
       "vegan"
@@ -1769,8 +1769,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 17.41,
-    "priceMax": 17.41,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1790,7 +1790,7 @@
     "id": "byoma-b0fm8xg9zj",
     "brand": "BYOMA",
     "name": "BYOMA Blemish Clearing Paste",
-    "size": null,
+    "size": "",
     "categories": [
       "skin",
       "vegan"
@@ -1798,8 +1798,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 11.36,
-    "priceMax": 11.36,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1819,7 +1819,7 @@
     "id": "byoma-b0csdwy381",
     "brand": "BYOMA",
     "name": "BYOMA Sensitive Retinol Oil (30ml)",
-    "size": "30ml",
+    "size": "30 מ\"ל",
     "categories": [
       "skin",
       "oil",
@@ -1828,8 +1828,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 18.43,
-    "priceMax": 18.43,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1849,7 +1849,7 @@
     "id": "byoma-b0c7c8s8ft",
     "brand": "BYOMA",
     "name": "BYOMA Hydrating Recovery Oil (30ml)",
-    "size": "30ml",
+    "size": "30 מ\"ל",
     "categories": [
       "skin",
       "oil",
@@ -1858,8 +1858,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 11.95,
-    "priceMax": 11.95,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1879,7 +1879,7 @@
     "id": "byoma-b0c7c88zsk",
     "brand": "BYOMA",
     "name": "BYOMA Hydrating Serum (30ml)",
-    "size": "30ml",
+    "size": "30 מ\"ל",
     "categories": [
       "skin",
       "serum",
@@ -1888,8 +1888,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.77,
-    "priceMax": 14.77,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1909,7 +1909,7 @@
     "id": "byoma-b0c7c7zbg9",
     "brand": "BYOMA",
     "name": "BYOMA Brightening Serum (30ml)",
-    "size": "30ml",
+    "size": "30 מ\"ל",
     "categories": [
       "skin",
       "serum",
@@ -1918,8 +1918,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.7,
-    "priceMax": 14.7,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1939,7 +1939,7 @@
     "id": "byoma-b0c7c8bzlm",
     "brand": "BYOMA",
     "name": "BYOMA Clarifying Serum (30ml)",
-    "size": "30ml",
+    "size": "30 מ\"ל",
     "categories": [
       "skin",
       "serum",
@@ -1948,8 +1948,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.64,
-    "priceMax": 13.64,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -1969,7 +1969,7 @@
     "id": "byoma-b0dr9wdr2g",
     "brand": "BYOMA",
     "name": "BYOMA SPF 50 Face Fluid (50ml)",
-    "size": "50ml",
+    "size": "50 מ\"ל",
     "categories": [
       "skin",
       "face",
@@ -1979,8 +1979,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 16.96,
-    "priceMax": 16.96,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2000,7 +2000,7 @@
     "id": "byoma-b0c7c9n7ss",
     "brand": "BYOMA",
     "name": "BYOMA SPF 30 Gel Moisturiser (50ml)",
-    "size": "50ml",
+    "size": "50 מ\"ל",
     "categories": [
       "skin",
       "moisturizer",
@@ -2010,8 +2010,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 17.05,
-    "priceMax": 17.05,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2031,7 +2031,7 @@
     "id": "byoma-b0csdxrtnd",
     "brand": "BYOMA",
     "name": "BYOMA Brightening Body Lotion (400ml)",
-    "size": "400ml",
+    "size": "400 מ\"ל",
     "categories": [
       "skin",
       "body",
@@ -2040,8 +2040,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 12.51,
-    "priceMax": 12.51,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2061,7 +2061,7 @@
     "id": "byoma-b0csdwp9sy",
     "brand": "BYOMA",
     "name": "BYOMA Sensitive Body Lotion (400ml)",
-    "size": "400ml",
+    "size": "400 מ\"ל",
     "categories": [
       "skin",
       "body",
@@ -2070,8 +2070,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 12.51,
-    "priceMax": 12.51,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2091,7 +2091,7 @@
     "id": "byoma-b0csdy6h9f",
     "brand": "BYOMA",
     "name": "BYOMA Hydrating Body Lotion (400ml)",
-    "size": "400ml",
+    "size": "400 מ\"ל",
     "categories": [
       "skin",
       "body",
@@ -2100,8 +2100,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 12.51,
-    "priceMax": 12.51,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2121,7 +2121,7 @@
     "id": "byoma-b0csdxlpdp",
     "brand": "BYOMA",
     "name": "BYOMA Nourishing Body Oil (200ml)",
-    "size": "200ml",
+    "size": "200 מ\"ל",
     "categories": [
       "skin",
       "body",
@@ -2131,8 +2131,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 14.77,
-    "priceMax": 14.77,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2152,7 +2152,7 @@
     "id": "byoma-b0csdxpf98",
     "brand": "BYOMA",
     "name": "BYOMA Smoothing Body Polish (300ml)",
-    "size": "300ml",
+    "size": "300 מ\"ל",
     "categories": [
       "skin",
       "body",
@@ -2161,8 +2161,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 12.51,
-    "priceMax": 12.51,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2182,7 +2182,7 @@
     "id": "byoma-b0csdyn1z6",
     "brand": "BYOMA",
     "name": "BYOMA Smoothing Body Serum (200ml)",
-    "size": "200ml",
+    "size": "200 מ\"ל",
     "categories": [
       "skin",
       "body",
@@ -2192,8 +2192,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.64,
-    "priceMax": 13.64,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2213,7 +2213,7 @@
     "id": "byoma-b0csdy4jy3",
     "brand": "BYOMA",
     "name": "BYOMA Sensitive Skin Body Wash (400ml)",
-    "size": "400ml",
+    "size": "400 מ\"ל",
     "categories": [
       "skin",
       "body",
@@ -2222,8 +2222,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 11.36,
-    "priceMax": 11.36,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2243,7 +2243,7 @@
     "id": "byoma-b0fm99s7l4",
     "brand": "BYOMA",
     "name": "BYOMA Blemish Clearing Body Wash (300ml)",
-    "size": "300ml",
+    "size": "300 מ\"ל",
     "categories": [
       "skin",
       "body",
@@ -2252,8 +2252,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 15.92,
-    "priceMax": 15.92,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2273,7 +2273,7 @@
     "id": "byoma-b0csdxhtj7",
     "brand": "BYOMA",
     "name": "BYOMA Brightening Body Wash (400ml)",
-    "size": "400ml",
+    "size": "400 מ\"ל",
     "categories": [
       "skin",
       "body",
@@ -2282,8 +2282,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 11.36,
-    "priceMax": 11.36,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2303,7 +2303,7 @@
     "id": "byoma-b0csdxhth9",
     "brand": "BYOMA",
     "name": "BYOMA Hydrating Body Wash (400ml)",
-    "size": "400ml",
+    "size": "400 מ\"ל",
     "categories": [
       "skin",
       "body",
@@ -2312,8 +2312,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 11.36,
-    "priceMax": 11.36,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2333,7 +2333,7 @@
     "id": "byoma-b0fn7qm1vp",
     "brand": "BYOMA",
     "name": "BYOMA Stellar Skin & Bodycare 4-Piece Kit",
-    "size": "kit",
+    "size": "ערכה",
     "categories": [
       "skin",
       "body",
@@ -2343,8 +2343,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.09,
-    "priceMax": 13.09,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2364,7 +2364,7 @@
     "id": "byoma-b0fn4m2wgy",
     "brand": "BYOMA",
     "name": "BYOMA Universal Skincare Heroes 5-Piece Kit",
-    "size": "kit",
+    "size": "ערכה",
     "categories": [
       "skin",
       "set",
@@ -2373,8 +2373,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 24.01,
-    "priceMax": 24.01,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2403,8 +2403,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.65,
-    "priceMax": 13.65,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2424,7 +2424,7 @@
     "id": "byoma-b0fn5bqckj",
     "brand": "BYOMA",
     "name": "BYOMA Milky Way Hydrating Heroes 3-Piece Kit",
-    "size": "kit",
+    "size": "ערכה",
     "categories": [
       "skin",
       "set",
@@ -2433,8 +2433,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 17.02,
-    "priceMax": 17.02,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2463,8 +2463,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 17.06,
-    "priceMax": 17.06,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2484,7 +2484,7 @@
     "id": "byoma-b0fgdqy4ny",
     "brand": "BYOMA",
     "name": "BYOMA Body Trial 6-Piece Kit",
-    "size": "kit",
+    "size": "ערכה",
     "categories": [
       "skin",
       "body",
@@ -2494,8 +2494,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 20.48,
-    "priceMax": 20.48,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2515,7 +2515,7 @@
     "id": "byoma-b0fn821kcp",
     "brand": "BYOMA",
     "name": "BYOMA Galactic Liptide Lip Oil (5ml)",
-    "size": "5ml",
+    "size": "5 מ\"ל",
     "categories": [
       "skin",
       "lip",
@@ -2525,8 +2525,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 13.65,
-    "priceMax": 13.65,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2546,7 +2546,7 @@
     "id": "byoma-b0c7c92zp9",
     "brand": "BYOMA",
     "name": "BYOMA Balancing Face Mist Refill (100ml)",
-    "size": "100ml",
+    "size": "100 מ\"ל",
     "categories": [
       "skin",
       "face",
@@ -2556,8 +2556,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 12.51,
-    "priceMax": 12.51,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2577,7 +2577,7 @@
     "id": "byoma-b0c7cbdhfj",
     "brand": "BYOMA",
     "name": "BYOMA Creamy Jelly Cleanser Refill (175ml)",
-    "size": "175ml",
+    "size": "175 מ\"ל",
     "categories": [
       "skin",
       "cleanser",
@@ -2587,8 +2587,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 10.22,
-    "priceMax": 10.22,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2608,7 +2608,7 @@
     "id": "byoma-b0d6zgwb7k",
     "brand": "BYOMA",
     "name": "BYOMA Full Routine Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "set",
@@ -2617,8 +2617,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 62.66,
-    "priceMax": 62.66,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2638,7 +2638,7 @@
     "id": "byoma-b0d83zwn4y",
     "brand": "BYOMA",
     "name": "BYOMA Creamy Jelly Cleanser + Hydrating Serum + Moisturising Gel Cream Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "cleanser",
@@ -2650,8 +2650,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 46.29,
-    "priceMax": 46.29,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2671,7 +2671,7 @@
     "id": "byoma-b0db69tslb",
     "brand": "BYOMA",
     "name": "BYOMA Hydrating Trio Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "set",
@@ -2680,8 +2680,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 51.51,
-    "priceMax": 51.51,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2701,7 +2701,7 @@
     "id": "byoma-b0d842wc8r",
     "brand": "BYOMA",
     "name": "BYOMA Melting Balm Cleanser + Creamy Jelly Cleanser Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "cleanser",
@@ -2712,8 +2712,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 32.7,
-    "priceMax": 32.7,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2733,7 +2733,7 @@
     "id": "byoma-b0d6gydvl5",
     "brand": "BYOMA",
     "name": "BYOMA Sensitive Retinol Oil + Barrier Repair Treatment Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "oil",
@@ -2743,8 +2743,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 43.0,
-    "priceMax": 43.0,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2764,7 +2764,7 @@
     "id": "byoma-b0dcwc1ygg",
     "brand": "BYOMA",
     "name": "BYOMA Hydrating Milky Toner + Milky Moisture Cleanser Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "cleanser",
@@ -2776,8 +2776,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 33.78,
-    "priceMax": 33.78,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2797,7 +2797,7 @@
     "id": "byoma-b0dcwcbltw",
     "brand": "BYOMA",
     "name": "BYOMA Brightening Serum + Brightening Toner Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "toner",
@@ -2808,8 +2808,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 33.98,
-    "priceMax": 33.98,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2829,7 +2829,7 @@
     "id": "byoma-b0d6gv8d58",
     "brand": "BYOMA",
     "name": "BYOMA Sensitive Body Wash + Sensitive Body Lotion Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "body",
@@ -2839,8 +2839,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 28.64,
-    "priceMax": 28.64,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2860,7 +2860,7 @@
     "id": "byoma-b0d8wpdlgq",
     "brand": "BYOMA",
     "name": "BYOMA Brightening Body Wash + Brightening Body Lotion Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "body",
@@ -2870,8 +2870,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 28.64,
-    "priceMax": 28.64,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2891,7 +2891,7 @@
     "id": "byoma-b0d8wnp97b",
     "brand": "BYOMA",
     "name": "BYOMA Smoothing Polish + Body Serum Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "body",
@@ -2902,8 +2902,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 31.37,
-    "priceMax": 31.37,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2923,7 +2923,7 @@
     "id": "byoma-b0db6bwscw",
     "brand": "BYOMA",
     "name": "BYOMA Nourishing Face & Body Oil Bundle",
-    "size": "bundle",
+    "size": "באנדל",
     "categories": [
       "skin",
       "body",
@@ -2935,8 +2935,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 32.07,
-    "priceMax": 32.07,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-uk",
