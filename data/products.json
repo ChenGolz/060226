@@ -32,35 +32,6 @@
     "image": "assets/img/products/B0DHXYW6XM.jpg"
   },
   {
-    "id": "hero-cosmetics-b0f8p97rdv",
-    "brand": "Hero Cosmetics",
-    "name": "Rescue Balm + Red Correct Post-Blemish Recovery Cream & Colour Corrector (15 ml)",
-    "size": "15 מ\"ל",
-    "categories": [
-      "skin",
-      "moisturizer"
-    ],
-    "isVegan": null,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-uk",
-        "storeLabel": "Amazon בריטניה",
-        "url": "https://www.amazon.co.uk/dp/B0F8P97RDV?tag=nocrueltyil-21",
-        "asin": "B0F8P97RDV",
-        "currency": "USD",
-        "priceUSD": 13.9
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": true,
-    "image": "assets/img/products/B0F8P97RDV.jpg"
-  },
-  {
     "id": "hero-cosmetics-b0f8p947rj",
     "brand": "Hero Cosmetics",
     "name": "Rescue Balm Post-Blemish Recovery Cream (15 ml)",
