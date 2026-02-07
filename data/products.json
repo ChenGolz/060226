@@ -88,7 +88,6 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
     "image": "assets/img/products/B0F8P69FBV.jpg"
   },
   {
@@ -238,7 +237,7 @@
         "url": "https://www.amazon.com/dp/B07KJS13PK?tag=nocrueltyil-20",
         "asin": "B07KJS13PK",
         "currency": "USD",
-        "priceUSD": 141.11
+        "priceUSD": 14.39
       }
     ],
     "isKids": false,
@@ -300,14 +299,14 @@
         "url": "https://www.amazon.com/dp/B0BPDBYRTZ?tag=nocrueltyil-20",
         "asin": "B0BPDBYRTZ",
         "currency": "USD",
-        "priceUSD": 107.6
+        "priceUSD": 10.79,
+            "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": true,
     "image": "assets/img/products/B0BPDBYRTZ.jpg",
-    "freeShipOver": 49,
     "freeShipToIsrael": true
   },
   {
