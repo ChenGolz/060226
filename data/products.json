@@ -2,7 +2,7 @@
   {
     "id": "hero-cosmetics-b0dhxyw6xm",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Nose XL Hydrocolloid Spot Patches (10 patches)",
+    "name": "Mighty Patch™ Nose XL – מדבקות הידרוקולואיד לפצעונים באף",
     "size": "10 יחידות",
     "categories": [
       "skin",
@@ -34,7 +34,7 @@
   {
     "id": "hero-cosmetics-b0f8p947rj",
     "brand": "Hero Cosmetics",
-    "name": "Rescue Balm Post-Blemish Recovery Cream (15 ml)",
+    "name": "Rescue Balm – קרם שיקום לאחר פצעונים",
     "size": "15 מ\"ל",
     "categories": [
       "skin",
@@ -63,7 +63,7 @@
   {
     "id": "hero-cosmetics-b0f8p69fbv",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Original Hydrocolloid Spot Patches (144 patches)",
+    "name": "Mighty Patch™ Original – מדבקות הידרוקולואיד לפצעונים",
     "size": "144 יחידות",
     "categories": [
       "skin",
@@ -93,7 +93,7 @@
   {
     "id": "hero-cosmetics-b0f8p8lycw",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Invisible+ Hydrocolloid Spot Patches (78 patches)",
+    "name": "Mighty Patch™ Invisible+ – מדבקות הידרוקולואיד שקופות לפצעונים",
     "size": "78 יחידות",
     "categories": [
       "skin",
@@ -124,7 +124,7 @@
   {
     "id": "hero-cosmetics-b0fdwxn2wz",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Day + Night Hydrocolloid Acne Patches (24 patches)",
+    "name": "Mighty Patch™ Day + Night – מדבקות הידרוקולואיד לאקנה (יום + לילה)",
     "size": "24 יחידות",
     "categories": [
       "skin",
@@ -155,7 +155,7 @@
   {
     "id": "hero-cosmetics-b074pvtpbw",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Original Patch Hydrocolloid Acne Pimple Patches (36 count)",
+    "name": "Mighty Patch™ Original – מדבקות הידרוקולואיד לפצעוני אקנה",
     "size": "36 יחידות",
     "categories": [
       "skin",
@@ -167,7 +167,7 @@
     "isPeta": null,
     "isLB": null,
     "priceMin": 50,
-       "priceMin": 100,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -186,7 +186,7 @@
   {
     "id": "hero-cosmetics-b07b4kqvk6",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Original Patch Hydrocolloid Acne Pimple Patches (72 count)",
+    "name": "Mighty Patch™ Original – מדבקות הידרוקולואיד לפצעוני אקנה",
     "size": "72 יחידות",
     "categories": [
       "skin",
@@ -217,7 +217,7 @@
   {
     "id": "hero-cosmetics-b07kjs13pk",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Invisible+ Hydrocolloid Acne Pimple Patches (39 count)",
+    "name": "Mighty Patch™ Invisible+ – מדבקות הידרוקולואיד שקופות לפצעוני אקנה",
     "size": "39 יחידות",
     "categories": [
       "skin",
@@ -248,7 +248,7 @@
   {
     "id": "hero-cosmetics-b0g66py3bk",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Shield Liquid Patch Invisible Blemish Protectant (1 count)",
+    "name": "Mighty Shield – פלסטר נוזלי שקוף להגנה על פגמים בעור",
     "size": "1 יחידות",
     "categories": [
       "skin",
@@ -260,7 +260,7 @@
     "isPeta": null,
     "isLB": null,
     "priceMin": 50,
-       "priceMin": 100,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -281,7 +281,7 @@
     "brand": "Hero Cosmetics",
     "name": "מדבקות Micropoint Large לטיפול ממוקד בפצעונים בשלב מוקדם",
     "size": "8 יחידות",
-    "categories": [ 
+    "categories": [
       "face",
       "skin",
       "acne",
@@ -301,7 +301,7 @@
         "asin": "B0BPDBYRTZ",
         "currency": "USD",
         "priceUSD": 10.97,
-            "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -339,11 +339,12 @@
     "isMen": false,
     "isDiscounted": false,
     "image": "assets/img/products/B0DVJ7BLQ7.jpg",
-    "freeShipOver": 49  },
+    "freeShipOver": 49
+  },
   {
     "id": "hero-cosmetics-b07kjxfjhf",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Surface Large Hydrocolloid Patches (10 count)",
+    "name": "Mighty Patch™ Surface – מדבקות הידרוקולואיד גדולות לאזורים נרחבים",
     "size": "10 יחידות",
     "categories": [
       "skin",
@@ -375,7 +376,7 @@
   {
     "id": "hero-cosmetics-b09nnf2dxx",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Nose Pimple Patches (10 count)",
+    "name": "Mighty Patch™ Nose – מדבקות לפצעונים באף",
     "size": "10 יחידות",
     "categories": [
       "skin",
@@ -388,7 +389,7 @@
     "isPeta": null,
     "isLB": null,
     "priceMin": 50,
-       "priceMin": 100,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -434,11 +435,12 @@
     "isMen": false,
     "isDiscounted": true,
     "image": "assets/img/products/B0D38DMBPQ.jpg",
-    "freeShipOver": 49  },
+    "freeShipOver": 49
+  },
   {
     "id": "hero-cosmetics-b0bs49yw8z",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Micropoint for Dark Spots (8 count)",
+    "name": "Mighty Patch™ Micropoint – מדבקות מיקרו-נקודות לכתמים כהים",
     "size": "8 יחידות",
     "categories": [
       "skin",
@@ -469,7 +471,7 @@
   {
     "id": "hero-cosmetics-b0cgmc8ws9",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch for Tired Eyes Hydrogel Patches (6 count)",
+    "name": "Mighty Patch™ – מדבקות הידרוג׳ל לעיניים עייפות",
     "size": "6 יחידות",
     "categories": [
       "skin",
@@ -513,7 +515,7 @@
     "isPeta": null,
     "isLB": null,
     "priceMin": 0,
-       "priceMin": 50,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -599,7 +601,7 @@
   {
     "id": "hero-cosmetics-b0bmm44hbf",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Chin Patch XL Contoured (10 count)",
+    "name": "Mighty Patch™ Chin XL – מדבקת סנטר מעוצבת (XL)",
     "size": "10 יחידות",
     "categories": [
       "skin",
@@ -631,7 +633,7 @@
   {
     "id": "hero-cosmetics-b0cmdgp48l",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Forehead Patch (5 count)",
+    "name": "Mighty Patch™ Forehead – מדבקת מצח",
     "size": "5 יחידות",
     "categories": [
       "skin",
@@ -693,7 +695,7 @@
   {
     "id": "hero-cosmetics-b0cczmsj4t",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch for Fine Lines Patches (6 count)",
+    "name": "Mighty Patch™ – מדבקות לקמטים עדינים",
     "size": "6 יחידות",
     "categories": [
       "skin",
@@ -724,7 +726,7 @@
   {
     "id": "hero-cosmetics-b0bp2wfygj",
     "brand": "Hero Cosmetics",
-    "name": "Rescue Retinol Nighttime Renewing Cream (30 ml)",
+    "name": "Rescue Retinol – קרם לילה מחדש עם רטינול",
     "size": "30 מ\"ל",
     "categories": [
       "skin",
@@ -734,7 +736,7 @@
     "isPeta": null,
     "isLB": null,
     "priceMin": 50,
-       "priceMin": 100,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -753,7 +755,7 @@
   {
     "id": "hero-cosmetics-b0cgmg1l61",
     "brand": "Hero Cosmetics",
-    "name": "Bright Eyes Illuminating Eye Cream (0.5 fl oz)",
+    "name": "Bright Eyes – קרם עיניים מאיר",
     "size": "15 מ\"ל",
     "categories": [
       "skin",
@@ -783,7 +785,7 @@
   {
     "id": "hero-cosmetics-b0crwwscj5",
     "brand": "Hero Cosmetics",
-    "name": "Dissolve Away Daily Cleansing Balm (2.2 fl oz)",
+    "name": "Dissolve Away – באלם ניקוי יומי",
     "size": "65 מ\"ל",
     "categories": [
       "skin",
@@ -813,7 +815,7 @@
   {
     "id": "hero-cosmetics-b0crlgx6s6",
     "brand": "Hero Cosmetics",
-    "name": "סטיק "Glow Balm" למראה עור קורן וזוהר",
+    "name": "סטיק ״Glow Balm״ למראה עור קורן וזוהר",
     "size": "11 גרם",
     "categories": [
       "skin",
@@ -842,7 +844,7 @@
   {
     "id": "hero-cosmetics-b0fhy2qmrk",
     "brand": "Hero Cosmetics",
-    "name": "Rescue Balm + Red Correct Color-Correcting Green Cream (15 ml)",
+    "name": "Rescue Balm + Red Correct – קרם ירוק לתיקון אדמומיות (קולור-קורקט)",
     "size": "15 מ\"ל",
     "categories": [
       "skin",
@@ -852,7 +854,7 @@
     "isPeta": null,
     "isLB": null,
     "priceMin": 50,
-       "priceMin": 100,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -871,7 +873,7 @@
   {
     "id": "sukin-b003vjqkss",
     "brand": "Sukin",
-    "name": "Sukin Signature Cream Cleanser (125ml)",
+    "name": "Sukin Signature – קרם ניקוי עדין לפנים",
     "size": "125 מ\"ל",
     "categories": [
       "skin",
@@ -902,7 +904,7 @@
   {
     "id": "sukin-b003vjxum2",
     "brand": "Sukin",
-    "name": "Sukin Signature Facial Moisturiser (125ml)",
+    "name": "Sukin Signature – קרם לחות לפנים",
     "size": "125 מ\"ל",
     "categories": [
       "skin",
@@ -933,7 +935,7 @@
   {
     "id": "sukin-b003vjxufo",
     "brand": "Sukin",
-    "name": "Sukin Signature Foaming Facial Cleanser (125ml)",
+    "name": "Sukin Signature – תרחיץ פנים מקציף",
     "size": "125 מ\"ל",
     "categories": [
       "skin",
@@ -964,7 +966,7 @@
   {
     "id": "sukin-b003vjxuk4",
     "brand": "Sukin",
-    "name": "Sukin Signature Hydrating Mist Toner (125ml)",
+    "name": "Sukin Signature – טונר ספריי מלחח",
     "size": "125 מ\"ל",
     "categories": [
       "skin",
@@ -994,7 +996,7 @@
   {
     "id": "sukin-b01in3iwoq",
     "brand": "Sukin",
-    "name": "Sukin Signature Hydrating Facial Masque (200g)",
+    "name": "Sukin Signature – מסכת לחות לפנים",
     "size": "200 גרם",
     "categories": [
       "skin",
@@ -1024,7 +1026,7 @@
   {
     "id": "sukin-b003vjtrfq",
     "brand": "Sukin",
-    "name": "Sukin Signature Moisture Restoring Night Cream (120ml)",
+    "name": "Sukin Signature – קרם לילה לשיקום הלחות",
     "size": "120 מ\"ל",
     "categories": [
       "skin",
@@ -1054,7 +1056,7 @@
   {
     "id": "sukin-b003vjql64",
     "brand": "Sukin",
-    "name": "Sukin Signature Antioxidant Eye Serum (35ml)",
+    "name": "Sukin Signature – סרום עיניים נוגד חמצון",
     "size": "35 מ\"ל",
     "categories": [
       "skin",
@@ -1085,7 +1087,7 @@
   {
     "id": "sukin-b003vjxuhw",
     "brand": "Sukin",
-    "name": "Sukin Signature Revitalising Facial Scrub (200ml)",
+    "name": "Sukin Signature – פילינג פנים מרענן",
     "size": "200 מ\"ל",
     "categories": [
       "skin",
@@ -1115,7 +1117,7 @@
   {
     "id": "byoma-b0btycfck7",
     "brand": "BYOMA",
-    "name": "BYOMA So Bright Set (Barrier Repair Skincare Set) (30ml/15ml/15ml)",
+    "name": "סט BYOMA So Bright – ערכת טיפוח לשיקום מחסום העור",
     "size": "30 מ\"ל + 15 מ\"ל + 15 מ\"ל",
     "categories": [
       "skin",
@@ -1145,7 +1147,7 @@
   {
     "id": "byoma-b0bxphyqgc",
     "brand": "BYOMA",
-    "name": "BYOMA So Hydrated Set (Barrier Repair Skincare Set) (30ml/15ml/15ml)",
+    "name": "סט BYOMA So Hydrated – ערכת טיפוח לשיקום מחסום העור (לחות)",
     "size": "30 מ\"ל + 15 מ\"ל + 15 מ\"ל",
     "categories": [
       "skin",
@@ -1175,7 +1177,7 @@
   {
     "id": "byoma-b0c7c7clpl",
     "brand": "BYOMA",
-    "name": "BYOMA So Clear Set (Barrier Repair Skincare Set) (30ml/15ml/15ml)",
+    "name": "סט BYOMA So Clear – ערכת טיפוח לשיקום מחסום העור (להבהרה/נקיון)",
     "size": "30 מ\"ל + 15 מ\"ל + 15 מ\"ל",
     "categories": [
       "skin",
@@ -1205,7 +1207,7 @@
   {
     "id": "byoma-b0gc7vd8xv",
     "brand": "BYOMA",
-    "name": "BYOMA Bio-Collagen Radiance Facial Mask",
+    "name": "BYOMA – מסכת פנים ביו-קולגן להארה",
     "size": "mask",
     "categories": [
       "skin",
@@ -1235,7 +1237,7 @@
   {
     "id": "byoma-b0gc7lssys",
     "brand": "BYOMA",
-    "name": "BYOMA Foaming Rice Deep Cleanser (175ml)",
+    "name": "BYOMA – תרחיץ אורז מקציף לניקוי עמוק",
     "size": "175 מ\"ל",
     "categories": [
       "skin",
@@ -1327,7 +1329,7 @@
   {
     "id": "byoma-b0btybvlfw",
     "brand": "BYOMA",
-    "name": "BYOMA Creamy Jelly Cleanser (175ml)",
+    "name": "BYOMA – תרחיץ ג׳לי קרמי לניקוי",
     "size": "175 מ\"ל",
     "categories": [
       "skin",
@@ -1420,8 +1422,8 @@
   {
     "id": "byoma-b0c7c8d9ls",
     "brand": "BYOMA",
-    "name": "ספריי פנים מאזן (100 מ"ל) – טונר pH מאוזן עם סרמידים ופרוביוטיקה",
-    "size": "100ml",
+    "name": "ספריי פנים מאזן – טונר pH מאוזן עם סרמידים ופרוביוטיקה",
+    "size": "100 מ\"ל",
     "categories": [
       "skin",
       "face",
@@ -1451,7 +1453,7 @@
   {
     "id": "byoma-b0c7c8bsbq",
     "brand": "BYOMA",
-    "name": "BYOMA Brightening Toner (150ml)",
+    "name": "BYOMA – טונר מבהיר",
     "size": "150 מ\"ל",
     "categories": [
       "skin",
@@ -1541,7 +1543,7 @@
   {
     "id": "byoma-b0c7c7ddt3",
     "brand": "BYOMA",
-    "name": "BYOMA De-Puff and Brighten Eye Gel (20ml)",
+    "name": "BYOMA – ג׳ל עיניים להפחתת נפיחות ולהארה",
     "size": "20 מ\"ל",
     "categories": [
       "skin",
@@ -1602,7 +1604,7 @@
   {
     "id": "byoma-b0dr9vmf5n",
     "brand": "BYOMA",
-    "name": "BYOMA Phyto-Mucin Glow Serum (40ml)",
+    "name": "BYOMA – סרום זוהר פיטו-מוצין",
     "size": "40 מ\"ל",
     "categories": [
       "skin",
@@ -1632,7 +1634,7 @@
   {
     "id": "byoma-b0bj74djxg",
     "brand": "BYOMA",
-    "name": "BYOMA Moisturising Gel Cream (50ml)",
+    "name": "BYOMA – קרם-ג׳ל לחות",
     "size": "50 מ\"ל",
     "categories": [
       "skin",
@@ -1692,7 +1694,7 @@
   {
     "id": "byoma-b0bzx2rlnx",
     "brand": "BYOMA",
-    "name": "BYOMA Moisturising Rich Cream (50ml)",
+    "name": "BYOMA – קרם לחות עשיר",
     "size": "50 מ\"ל",
     "categories": [
       "skin",
@@ -1722,7 +1724,7 @@
   {
     "id": "byoma-b0csdvqbzk",
     "brand": "BYOMA",
-    "name": "BYOMA Barrier Repair Treatment (50ml)",
+    "name": "BYOMA – טיפול לשיקום מחסום העור",
     "size": "50 מ\"ל",
     "categories": [
       "skin",
@@ -1752,7 +1754,7 @@
     "id": "byoma-b0fm8xg9zj",
     "brand": "BYOMA",
     "name": "משחה לטיפול ממוקד בפגמי עור – לעור רגיש, להרגעת אדמומיות וחידוש המראה",
-    "size": "30 g",
+    "size": "30 גרם",
     "categories": [
       "skin",
       "vegan"
@@ -1780,7 +1782,7 @@
   {
     "id": "byoma-b0csdwy381",
     "brand": "BYOMA",
-    "name": "BYOMA Sensitive Retinol Oil (30ml)",
+    "name": "BYOMA – שמן רטינול לעור רגיש",
     "size": "30 מ\"ל",
     "categories": [
       "skin",
@@ -1900,7 +1902,7 @@
   {
     "id": "byoma-b0c7c8bzlm",
     "brand": "BYOMA",
-    "name": "BYOMA Clarifying Serum (30ml)",
+    "name": "BYOMA – סרום מטהר",
     "size": "30 מ\"ל",
     "categories": [
       "skin",
@@ -1930,7 +1932,7 @@
   {
     "id": "byoma-b0dr9wdr2g",
     "brand": "BYOMA",
-    "name": "BYOMA SPF 50 Face Fluid (50ml)",
+    "name": "BYOMA – פלואיד פנים SPF 50",
     "size": "50 מ\"ל",
     "categories": [
       "skin",
@@ -1961,7 +1963,7 @@
   {
     "id": "byoma-b0c7c9n7ss",
     "brand": "BYOMA",
-    "name": "BYOMA SPF 30 Gel Moisturiser (50ml)",
+    "name": "BYOMA – קרם-ג׳ל לחות SPF 30",
     "size": "50 מ\"ל",
     "categories": [
       "skin",
@@ -2022,7 +2024,7 @@
   {
     "id": "byoma-b0csdwp9sy",
     "brand": "BYOMA",
-    "name": "BYOMA Sensitive Body Lotion (400ml)",
+    "name": "BYOMA – תחליב גוף לעור רגיש",
     "size": "400 מ\"ל",
     "categories": [
       "skin",
@@ -2082,7 +2084,7 @@
   {
     "id": "byoma-b0csdxlpdp",
     "brand": "BYOMA",
-    "name": "BYOMA Nourishing Body Oil (200ml)",
+    "name": "BYOMA – שמן גוף מזין",
     "size": "200 מ\"ל",
     "categories": [
       "skin",
@@ -2113,7 +2115,7 @@
   {
     "id": "byoma-b0csdxpf98",
     "brand": "BYOMA",
-    "name": "BYOMA Smoothing Body Polish (300ml)",
+    "name": "BYOMA – פילינג גוף מחליק",
     "size": "300 מ\"ל",
     "categories": [
       "skin",
@@ -2143,7 +2145,7 @@
   {
     "id": "byoma-b0csdyn1z6",
     "brand": "BYOMA",
-    "name": "BYOMA Smoothing Body Serum (200ml)",
+    "name": "BYOMA – סרום גוף מחליק",
     "size": "200 מ\"ל",
     "categories": [
       "skin",
@@ -2174,7 +2176,7 @@
   {
     "id": "byoma-b0csdy4jy3",
     "brand": "BYOMA",
-    "name": "BYOMA Sensitive Skin Body Wash (400ml)",
+    "name": "BYOMA – סבון גוף לעור רגיש",
     "size": "400 מ\"ל",
     "categories": [
       "skin",
@@ -2204,7 +2206,7 @@
   {
     "id": "byoma-b0fm99s7l4",
     "brand": "BYOMA",
-    "name": "BYOMA Blemish Clearing Body Wash (300ml)",
+    "name": "BYOMA – סבון גוף לטיפול בפגמי עור",
     "size": "300 מ\"ל",
     "categories": [
       "skin",
@@ -2264,7 +2266,7 @@
   {
     "id": "byoma-b0csdxhth9",
     "brand": "BYOMA",
-    "name": "BYOMA Hydrating Body Wash (400ml)",
+    "name": "BYOMA – סבון גוף מלחח",
     "size": "400 מ\"ל",
     "categories": [
       "skin",
@@ -2294,7 +2296,7 @@
   {
     "id": "byoma-b0fn7qm1vp",
     "brand": "BYOMA",
-    "name": "BYOMA Stellar Skin & Bodycare 4-Piece Kit",
+    "name": "BYOMA – ערכת טיפוח לעור ולגוף (4 חלקים)",
     "size": "ערכה",
     "categories": [
       "skin",
@@ -2325,7 +2327,7 @@
   {
     "id": "byoma-b0fn4m2wgy",
     "brand": "BYOMA",
-    "name": "BYOMA Universal Skincare Heroes 5-Piece Kit",
+    "name": "BYOMA – ערכת גיבורי הטיפוח (5 חלקים)",
     "size": "ערכה",
     "categories": [
       "skin",
@@ -2355,7 +2357,7 @@
   {
     "id": "byoma-b0fn5fqbng",
     "brand": "BYOMA",
-    "name": "BYOMA Star Power Brightening Trio",
+    "name": "BYOMA – טריו הבהרה Star Power",
     "size": "trio",
     "categories": [
       "skin",
@@ -2385,7 +2387,7 @@
   {
     "id": "byoma-b0fn5bqckj",
     "brand": "BYOMA",
-    "name": "מארז "גיבורי הלחות" Milky Way (קיט 3 חלקים) – לשיקום ושמירה על מחסום העור",
+    "name": "מארז ״גיבורי הלחות״ Milky Way (קיט 3 חלקים) – לשיקום ושמירה על מחסום העור",
     "size": "ערכה",
     "categories": [
       "skin",
@@ -2415,7 +2417,7 @@
   {
     "id": "byoma-b0fn4yl21d",
     "brand": "BYOMA",
-    "name": "BYOMA Cosmic Glow Treat Trio",
+    "name": "BYOMA – טריו טיפוח Cosmic Glow",
     "size": "trio",
     "categories": [
       "skin",
@@ -2508,7 +2510,7 @@
     "id": "byoma-b0c7c92zp9",
     "brand": "BYOMA",
     "name": "מילוי לספריי פנים מאזן (Refill) – טונר pH מאוזן עם סרמידים ופרוביוטיקה",
-    "size": "100ml",
+    "size": "100 מ\"ל",
     "categories": [
       "skin",
       "face",
@@ -2538,7 +2540,7 @@
   {
     "id": "byoma-b0c7cbdhfj",
     "brand": "BYOMA",
-    "name": "BYOMA Creamy Jelly Cleanser Refill (175ml)",
+    "name": "BYOMA – מילוי תרחיץ ג׳לי קרמי",
     "size": "175 מ\"ל",
     "categories": [
       "skin",
@@ -2569,7 +2571,7 @@
   {
     "id": "byoma-b0d6zgwb7k",
     "brand": "BYOMA",
-    "name": "BYOMA Full Routine Bundle",
+    "name": "BYOMA – באנדל שגרת טיפוח מלאה",
     "size": "מארז",
     "categories": [
       "skin",
@@ -2599,7 +2601,7 @@
   {
     "id": "byoma-b0d83zwn4y",
     "brand": "BYOMA",
-    "name": "BYOMA Creamy Jelly Cleanser + Hydrating Serum + Moisturising Gel Cream Bundle",
+    "name": "BYOMA – באנדל: תרחיץ ג׳לי קרמי + סרום לחות + קרם-ג׳ל לחות",
     "size": "מארז",
     "categories": [
       "skin",
@@ -2632,7 +2634,7 @@
   {
     "id": "byoma-b0db69tslb",
     "brand": "BYOMA",
-    "name": "BYOMA Hydrating Trio Bundle",
+    "name": "BYOMA – באנדל טריו לחות",
     "size": "מארז",
     "categories": [
       "skin",
@@ -2694,7 +2696,7 @@
   {
     "id": "byoma-b0d6gydvl5",
     "brand": "BYOMA",
-    "name": "BYOMA Sensitive Retinol Oil + Barrier Repair Treatment Bundle",
+    "name": "BYOMA – באנדל: שמן רטינול לעור רגיש + טיפול לשיקום מחסום העור",
     "size": "מארז",
     "categories": [
       "skin",
@@ -2739,7 +2741,7 @@
     "isPeta": null,
     "isLB": null,
     "priceMin": 50,
-       "priceMin": 100,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2758,8 +2760,8 @@
   {
     "id": "byoma-b0dcwcbltw",
     "brand": "BYOMA",
-    "name": "סט BYOMA להארה וחידוש הפנים: טונר (150 מ"ל) + סרום (30 מ"ל)",
-    "size": "מארז",
+    "name": "סט BYOMA להארה וחידוש הפנים: טונר + סרום",
+    "size": "מארז (150 מ\"ל + 30 מ\"ל)",
     "categories": [
       "skin",
       "toner",
@@ -2790,8 +2792,8 @@
   {
     "id": "byoma-b0d6gv8d58",
     "brand": "BYOMA",
-    "name": "סט BYOMA להבהרה וחידוש הגוף: תרחיץ + תחליב (400 מ"ל)",
-    "size": "מארז",
+    "name": "סט BYOMA להבהרה וחידוש הגוף: תרחיץ + תחליב",
+    "size": "מארז (400 מ\"ל)",
     "categories": [
       "skin",
       "body",
@@ -2821,8 +2823,8 @@
   {
     "id": "byoma-b0d8wpdlgq",
     "brand": "BYOMA",
-    "name": "סט BYOMA להבהרה וחידוש הגוף: תרחיץ + תחליב (400 מ"ל)",
-    "size": "מארז",
+    "name": "סט BYOMA להבהרה וחידוש הגוף: תרחיץ + תחליב",
+    "size": "מארז (400 מ\"ל)",
     "categories": [
       "skin",
       "body",
@@ -2852,7 +2854,7 @@
   {
     "id": "byoma-b0d8wnp97b",
     "brand": "BYOMA",
-    "name": "BYOMA Smoothing Polish + Body Serum Bundle",
+    "name": "BYOMA – באנדל: פילינג גוף מחליק + סרום גוף",
     "size": "מארז",
     "categories": [
       "skin",
@@ -2884,7 +2886,7 @@
   {
     "id": "byoma-b0db6bwscw",
     "brand": "BYOMA",
-    "name": "BYOMA Nourishing Face & Body Oil Bundle",
+    "name": "BYOMA – באנדל שמנים מזינים לפנים ולגוף",
     "size": "מארז",
     "categories": [
       "skin",
@@ -2913,5 +2915,36 @@
     "isMen": false,
     "isDiscounted": false,
     "image": "assets/img/products/B0DB6BWSCW.jpg"
+  },
+  {
+    "id": "freck-beauty-b0bn4j254r",
+    "brand": "Freck Beauty",
+    "name": "עט הנמשים המקורי – נמשים מלאכותיים במראה טבעי, ניתנים לבנייה ועמידים לאורך זמן",
+    "size": "XL (Light/Medium) – 13 מ\"ל",
+    "categories": [
+      "skin",
+      "face",
+      "vegan"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0BN4J254R?tag=nocrueltyil-20",
+        "asin": "B0BN4J254R",
+        "currency": "USD",
+        "priceUSD": 28.0
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0BN4J254R.jpg",
+    "freeShipOver": 49
   }
 ]
