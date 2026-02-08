@@ -11,7 +11,7 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
     "priceMin": 0,
@@ -40,7 +40,7 @@
       "skin",
       "moisturizer"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
     "priceMin": 0,
@@ -71,7 +71,7 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
     "priceMin": 0,
@@ -101,7 +101,7 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
     "priceMin": 0,
@@ -132,7 +132,7 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
     "priceMin": 0,
@@ -163,11 +163,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 50,
+       "priceMin": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -194,7 +194,7 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
     "priceMin": 200,
@@ -225,11 +225,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -256,11 +256,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 50,
+       "priceMin": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -279,19 +279,20 @@
   {
     "id": "hero-cosmetics-b0bpdbyrtz",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Micropoint Large Hydrocolloid Pimple Patches (8 count)",
+    "name": "מדבקות Micropoint Large לטיפול ממוקד בפצעונים בשלב מוקדם",
     "size": "8 יחידות",
-    "categories": [
+    "categories": [ 
+      "face",
       "skin",
       "acne",
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -299,7 +300,7 @@
         "url": "https://www.amazon.com/dp/B0BPDBYRTZ?tag=nocrueltyil-20",
         "asin": "B0BPDBYRTZ",
         "currency": "USD",
-        "priceUSD": 10.79,
+        "priceUSD": 10.97,
             "freeShipOver": 49
       }
     ],
@@ -307,12 +308,11 @@
     "isMen": false,
     "isDiscounted": true,
     "image": "assets/img/products/B0BPDBYRTZ.jpg",
-    "freeShipToIsrael": true
   },
   {
     "id": "hero-cosmetics-b0dvj7blq7",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Invisible+ Patch (72 count)",
+    "name": "Mighty Patch™ Invisible+ מדבקות הפלא השקופות לטיפול ביום",
     "size": "72 יחידות",
     "categories": [
       "skin",
@@ -320,28 +320,26 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 250,
-    "priceMax": 300,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DVJ7BLQ7?tag=nocrueltyil-20",
+        "url": "https://amzn.to/3M8MVWl",
         "asin": "B0DVJ7BLQ7",
         "currency": "USD",
-        "priceUSD": 293.99
+        "priceUSD": 29.97
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
     "image": "assets/img/products/B0DVJ7BLQ7.jpg",
-    "freeShipOver": 49,
-    "freeShipToIsrael": true
-  },
+    "freeShipOver": 49  },
   {
     "id": "hero-cosmetics-b07kjxfjhf",
     "brand": "Hero Cosmetics",
@@ -354,7 +352,7 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
     "priceMin": 150,
@@ -386,11 +384,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 50,
+       "priceMin": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -409,7 +407,7 @@
   {
     "id": "hero-cosmetics-b0d38dmbpq",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Mini Invisible+ Patches (30 count)",
+    "name": "Mighty Patch Mini Invisible+ – מדבקות פצעונים שקופות ודקיקות במיוחד",
     "size": "30 יחידות",
     "categories": [
       "skin",
@@ -417,11 +415,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -429,16 +427,14 @@
         "url": "https://www.amazon.com/dp/B0D38DMBPQ?tag=nocrueltyil-20",
         "asin": "B0D38DMBPQ",
         "currency": "USD",
-        "priceUSD": 129.6
+        "priceUSD": 13.22
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": true,
     "image": "assets/img/products/B0D38DMBPQ.jpg",
-    "freeShipOver": 49,
-    "freeShipToIsrael": true
-  },
+    "freeShipOver": 49  },
   {
     "id": "hero-cosmetics-b0bs49yw8z",
     "brand": "Hero Cosmetics",
@@ -450,11 +446,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -467,7 +463,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0BS49YW8Z.jpg"
   },
   {
@@ -482,11 +478,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -505,7 +501,7 @@
   {
     "id": "hero-cosmetics-b085p3typs",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Variety Pack (26 count)",
+    "name": "Mighty Patch™ Variety Pack מארז המדבקות המשולב לטיפול בכל סוגי הפצעונים",
     "size": "26 יחידות",
     "categories": [
       "skin",
@@ -513,11 +509,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+       "priceMin": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -525,20 +521,19 @@
         "url": "https://www.amazon.com/dp/B085P3TYPS?tag=nocrueltyil-20",
         "asin": "B085P3TYPS",
         "currency": "USD",
-        "priceUSD": 137.02
+        "priceUSD": 13.97
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
     "image": "assets/img/products/B085P3TYPS.jpg",
-    "freeShipOver": 49,
-    "freeShipToIsrael": true
+    "freeShipOver": 49
   },
   {
     "id": "hero-cosmetics-b0b16vd9rq",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Face Patch XL Hydrocolloid Face Mask (5 count)",
+    "name": "Mighty Patch™ Face – מארז 5 מדבקות XL לפנים",
     "size": "5 יחידות",
     "categories": [
       "skin",
@@ -547,11 +542,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 150,
-    "priceMax": 200,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -559,20 +554,19 @@
         "url": "https://www.amazon.com/dp/B0B16VD9RQ?tag=nocrueltyil-20",
         "asin": "B0B16VD9RQ",
         "currency": "USD",
-        "priceUSD": 195.94
+        "priceUSD": 19.97
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
     "image": "assets/img/products/B0B16VD9RQ.jpg",
-    "freeShipOver": 49,
-    "freeShipToIsrael": true
+    "freeShipOver": 49
   },
   {
     "id": "hero-cosmetics-b0dvhvb9dy",
     "brand": "Hero Cosmetics",
-    "name": "Mighty Patch Day and Night Patches Duo Pack (36 count)",
+    "name": "Mighty Patch™ Day & Night מארז משולב לטיפול יום ולילה ",
     "size": "36 יחידות",
     "categories": [
       "skin",
@@ -581,11 +575,11 @@
       "spot-treatment",
       "set"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 150,
-    "priceMax": 200,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -593,15 +587,14 @@
         "url": "https://www.amazon.com/dp/B0DVHVB9DY?tag=nocrueltyil-20",
         "asin": "B0DVHVB9DY",
         "currency": "USD",
-        "priceUSD": 186.3
+        "priceUSD": 18.99
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
     "image": "assets/img/products/B0DVHVB9DY.jpg",
-    "freeShipOver": 49,
-    "freeShipToIsrael": true
+    "freeShipOver": 49
   },
   {
     "id": "hero-cosmetics-b0bmm44hbf",
@@ -615,7 +608,7 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
     "priceMin": 150,
@@ -647,11 +640,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -670,17 +663,17 @@
   {
     "id": "hero-cosmetics-b0fg655345",
     "brand": "Hero Cosmetics",
-    "name": "Dark Spot Correct Spot-Fading Vitamin C + Hyaluronic Acid Serum (10 ml)",
+    "name": "סרום ויטמין C להבהרת כתמים (15%) – שיפור ניכר במראה סימני פוסט-אקנה תוך 7 ימים בלבד",
     "size": "10 מ\"ל",
     "categories": [
       "skin",
       "serum"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 150,
-    "priceMax": 200,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -688,15 +681,14 @@
         "url": "https://www.amazon.com/dp/B0FG655345?tag=nocrueltyil-20",
         "asin": "B0FG655345",
         "currency": "USD",
-        "priceUSD": 195.94
+        "priceUSD": 19.97
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
     "image": "assets/img/products/B0FG655345.jpg",
-    "freeShipOver": 49,
-    "freeShipToIsrael": true
+    "freeShipOver": 49
   },
   {
     "id": "hero-cosmetics-b0cczmsj4t",
@@ -709,11 +701,11 @@
       "patch",
       "spot-treatment"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -721,7 +713,7 @@
         "url": "https://www.amazon.com/dp/B0CCZMSJ4T?tag=nocrueltyil-20",
         "asin": "B0CCZMSJ4T",
         "currency": "USD",
-        "priceUSD": 147.04
+        "priceUSD": 14.99
       }
     ],
     "isKids": false,
@@ -738,11 +730,11 @@
       "skin",
       "moisturizer"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 50,
+       "priceMin": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -768,11 +760,11 @@
       "eye",
       "moisturizer"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -780,7 +772,7 @@
         "url": "https://www.amazon.com/dp/B0CGMG1L61?tag=nocrueltyil-20",
         "asin": "B0CGMG1L61",
         "currency": "USD",
-        "priceUSD": 117.64
+        "priceUSD": 11.99
       }
     ],
     "isKids": false,
@@ -798,11 +790,11 @@
       "cleanser",
       "moisturizer"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -810,7 +802,7 @@
         "url": "https://www.amazon.com/dp/B0CRWWSCJ5?tag=nocrueltyil-20",
         "asin": "B0CRWWSCJ5",
         "currency": "USD",
-        "priceUSD": 105.85
+        "priceUSD": 10.79
       }
     ],
     "isKids": false,
@@ -821,17 +813,17 @@
   {
     "id": "hero-cosmetics-b0crlgx6s6",
     "brand": "Hero Cosmetics",
-    "name": "Glow Balm Radiant Skin Stick (0.4 oz)",
+    "name": "סטיק "Glow Balm" למראה עור קורן וזוהר",
     "size": "11 גרם",
     "categories": [
       "skin",
       "moisturizer"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
@@ -839,7 +831,7 @@
         "url": "https://www.amazon.com/dp/B0CRLGX6S6?tag=nocrueltyil-20",
         "asin": "B0CRLGX6S6",
         "currency": "USD",
-        "priceUSD": 107.78
+        "priceUSD": 10.99
       }
     ],
     "isKids": false,
@@ -856,11 +848,11 @@
       "skin",
       "moisturizer"
     ],
-    "isVegan": null,
+    "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "priceMin": 50,
+       "priceMin": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -1273,7 +1265,7 @@
   {
     "id": "byoma-b0csdxl86l",
     "brand": "BYOMA",
-    "name": "BYOMA Milky Moisture Cleanser (175ml)",
+    "name": "תרחיץ פנים חלבי ומזין לניקוי עדין והרגעה לעור יבש ורגיש",
     "size": "175 מ\"ל",
     "categories": [
       "skin",
@@ -1298,13 +1290,13 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDXL86L.jpg"
   },
   {
     "id": "byoma-b0c7c8yl9d",
     "brand": "BYOMA",
-    "name": "BYOMA Milky Oil Cleanser (100ml)",
+    "name": "תרחיץ שמן חלבי ומזין – לניקוי עמוק, לחות אינטנסיבית ושיקום מחסום העור",
     "size": "100 מ\"ל",
     "categories": [
       "skin",
@@ -1366,7 +1358,7 @@
   {
     "id": "byoma-b0c7cb452s",
     "brand": "BYOMA",
-    "name": "BYOMA Melting Balm Facial Cleanser (60g)",
+    "name": "באלם ניקוי נמס – במרקם חמאה עשיר, לניקוי עמוק והזנה ללא שאריות שמן",
     "size": "60 גרם",
     "categories": [
       "skin",
@@ -1398,7 +1390,7 @@
   {
     "id": "byoma-b0fm8tcgf1",
     "brand": "BYOMA",
-    "name": "BYOMA Blemish Clearing Cleanser (175ml)",
+    "name": "תרחיץ פנים לטיפול בפגמים – לעור נוטה לאקנה, מרגיע ומעניק לחות",
     "size": "175 מ\"ל",
     "categories": [
       "skin",
@@ -1428,8 +1420,8 @@
   {
     "id": "byoma-b0c7c8d9ls",
     "brand": "BYOMA",
-    "name": "BYOMA Balancing Face Mist (100ml)",
-    "size": "100 מ\"ל",
+    "name": "ספריי פנים מאזן (100 מ"ל) – טונר pH מאוזן עם סרמידים ופרוביוטיקה",
+    "size": "100ml",
     "categories": [
       "skin",
       "face",
@@ -1453,7 +1445,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0C7C8D9LS.jpg"
   },
   {
@@ -1489,7 +1481,7 @@
   {
     "id": "byoma-b0csdws3hj",
     "brand": "BYOMA",
-    "name": "BYOMA Hydrating Milky Toner (150ml)",
+    "name": "טונר חלבי מזין לעור יבש – לחות מקסימלית, הרגעת אדמומיות ושיקום מחסום העור",
     "size": "150 מ\"ל",
     "categories": [
       "skin",
@@ -1519,7 +1511,7 @@
   {
     "id": "byoma-b0fm8t7lch",
     "brand": "BYOMA",
-    "name": "BYOMA Blemish Redness Relief Soothing Toner (100ml)",
+    "name": "ספריי טונר להרגעת אדמומיות – לעור נוטה לאקנה, מרגיע יובש ומחזק את מחסום העור",
     "size": "100 מ\"ל",
     "categories": [
       "skin",
@@ -1579,7 +1571,7 @@
   {
     "id": "byoma-b0dr9v1l1r",
     "brand": "BYOMA",
-    "name": "BYOMA Barrier Repair Eye Cream (20ml)",
+    "name": "קרם עיניים לשיקום מחסום העור – לחות אינטנסיבית, מיצוק ושיפור האלסטיות",
     "size": "20 מ\"ל",
     "categories": [
       "skin",
@@ -1604,7 +1596,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0DR9V1L1R.jpg"
   },
   {
@@ -1670,7 +1662,7 @@
   {
     "id": "byoma-b0fm8wqkkv",
     "brand": "BYOMA",
-    "name": "BYOMA Blemish Control Moisturiser (50ml)",
+    "name": "קרם לחות לטיפול בפגמי עור פורמולה קלילה נטולת שמן לעור נוטה לאקנה",
     "size": "50 מ\"ל",
     "categories": [
       "skin",
@@ -1759,8 +1751,8 @@
   {
     "id": "byoma-b0fm8xg9zj",
     "brand": "BYOMA",
-    "name": "BYOMA Blemish Clearing Paste",
-    "size": "",
+    "name": "משחה לטיפול ממוקד בפגמי עור – לעור רגיש, להרגעת אדמומיות וחידוש המראה",
+    "size": "30 g",
     "categories": [
       "skin",
       "vegan"
@@ -1818,7 +1810,7 @@
   {
     "id": "byoma-b0c7c8s8ft",
     "brand": "BYOMA",
-    "name": "BYOMA Hydrating Recovery Oil (30ml)",
+    "name": "שמן שיקום ומילוי לחות – מזין, מבהיר ומאזן ללא סתימת נקבוביות",
     "size": "30 מ\"ל",
     "categories": [
       "skin",
@@ -1842,13 +1834,13 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0C7C8S8FT.jpg"
   },
   {
     "id": "byoma-b0c7c88zsk",
     "brand": "BYOMA",
-    "name": "BYOMA Hydrating Serum (30ml)",
+    "name": "סרום לחות אינטנסיבי – למראה עור זוהר ורווי בלחות (Dewy Skin)",
     "size": "30 מ\"ל",
     "categories": [
       "skin",
@@ -1878,7 +1870,7 @@
   {
     "id": "byoma-b0c7c7zbg9",
     "brand": "BYOMA",
-    "name": "BYOMA Brightening Serum (30ml)",
+    "name": "סרום הבהרה למראה עור זוהר (Glow) עם חומצה היאלורונית וניאצינמיד",
     "size": "30 מ\"ל",
     "categories": [
       "skin",
@@ -2000,7 +1992,7 @@
   {
     "id": "byoma-b0csdxrtnd",
     "brand": "BYOMA",
-    "name": "BYOMA Brightening Body Lotion (400ml)",
+    "name": "תחליב גוף להבהרה לעור עמום ומיובש",
     "size": "400 מ\"ל",
     "categories": [
       "skin",
@@ -2024,7 +2016,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDXRTND.jpg"
   },
   {
@@ -2060,7 +2052,7 @@
   {
     "id": "byoma-b0csdy6h9f",
     "brand": "BYOMA",
-    "name": "BYOMA Hydrating Body Lotion (400ml)",
+    "name": "תחליב גוף מזין לעור רגיל עד יבש",
     "size": "400 מ\"ל",
     "categories": [
       "skin",
@@ -2084,7 +2076,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDY6H9F.jpg"
   },
   {
@@ -2242,7 +2234,7 @@
   {
     "id": "byoma-b0csdxhtj7",
     "brand": "BYOMA",
-    "name": "BYOMA Brightening Body Wash (400ml)",
+    "name": "תרחיץ גוף להבהרה לטיפול בעור עמום ומיובש, עם ניאצינמיד וחומצה אזלאית",
     "size": "400 מ\"ל",
     "categories": [
       "skin",
@@ -2266,7 +2258,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDXHTJ7.jpg"
   },
   {
@@ -2393,7 +2385,7 @@
   {
     "id": "byoma-b0fn5bqckj",
     "brand": "BYOMA",
-    "name": "BYOMA Milky Way Hydrating Heroes 3-Piece Kit",
+    "name": "מארז "גיבורי הלחות" Milky Way (קיט 3 חלקים) – לשיקום ושמירה על מחסום העור",
     "size": "ערכה",
     "categories": [
       "skin",
@@ -2453,8 +2445,8 @@
   {
     "id": "byoma-b0fgdqy4ny",
     "brand": "BYOMA",
-    "name": "BYOMA Body Trial 6-Piece Kit",
-    "size": "ערכה",
+    "name": "מארז גוף 6 חלקים להתנסות: סדרת לחות, הבהרה והרגעה ",
+    "size": "6 X 100ml",
     "categories": [
       "skin",
       "body",
@@ -2464,8 +2456,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2484,7 +2476,7 @@
   {
     "id": "byoma-b0fn821kcp",
     "brand": "BYOMA",
-    "name": "BYOMA Galactic Liptide Lip Oil (5ml)",
+    "name": "שמן שפתיים Galactic Liptide – גלוס ללא תחושת דביקות עם פפטידים ושמן אבוקדו",
     "size": "5 מ\"ל",
     "categories": [
       "skin",
@@ -2515,8 +2507,8 @@
   {
     "id": "byoma-b0c7c92zp9",
     "brand": "BYOMA",
-    "name": "BYOMA Balancing Face Mist Refill (100ml)",
-    "size": "100 מ\"ל",
+    "name": "מילוי לספריי פנים מאזן (Refill) – טונר pH מאוזן עם סרמידים ופרוביוטיקה",
+    "size": "100ml",
     "categories": [
       "skin",
       "face",
@@ -2578,7 +2570,7 @@
     "id": "byoma-b0d6zgwb7k",
     "brand": "BYOMA",
     "name": "BYOMA Full Routine Bundle",
-    "size": "באנדל",
+    "size": "מארז",
     "categories": [
       "skin",
       "set",
@@ -2608,7 +2600,7 @@
     "id": "byoma-b0d83zwn4y",
     "brand": "BYOMA",
     "name": "BYOMA Creamy Jelly Cleanser + Hydrating Serum + Moisturising Gel Cream Bundle",
-    "size": "באנדל",
+    "size": "מארז",
     "categories": [
       "skin",
       "cleanser",
@@ -2641,7 +2633,7 @@
     "id": "byoma-b0db69tslb",
     "brand": "BYOMA",
     "name": "BYOMA Hydrating Trio Bundle",
-    "size": "באנדל",
+    "size": "מארז",
     "categories": [
       "skin",
       "set",
@@ -2670,8 +2662,8 @@
   {
     "id": "byoma-b0d842wc8r",
     "brand": "BYOMA",
-    "name": "BYOMA Melting Balm Cleanser + Creamy Jelly Cleanser Bundle",
-    "size": "באנדל",
+    "name": "סט ניקוי כפול BYOMA: באלם להמסת איפור + תרחיץ ג'ל קרמי",
+    "size": "מארז",
     "categories": [
       "skin",
       "cleanser",
@@ -2696,14 +2688,14 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0D842WC8R.jpg"
   },
   {
     "id": "byoma-b0d6gydvl5",
     "brand": "BYOMA",
     "name": "BYOMA Sensitive Retinol Oil + Barrier Repair Treatment Bundle",
-    "size": "באנדל",
+    "size": "מארז",
     "categories": [
       "skin",
       "oil",
@@ -2733,8 +2725,8 @@
   {
     "id": "byoma-b0dcwc1ygg",
     "brand": "BYOMA",
-    "name": "BYOMA Hydrating Milky Toner + Milky Moisture Cleanser Bundle",
-    "size": "באנדל",
+    "name": "סט BYOMA לניקוי ולחות: תרחיץ מילקי + טונר חלבי",
+    "size": "מארז",
     "categories": [
       "skin",
       "cleanser",
@@ -2746,8 +2738,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+       "priceMin": 100,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2760,14 +2752,14 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0DCWC1YGG.jpg"
   },
   {
     "id": "byoma-b0dcwcbltw",
     "brand": "BYOMA",
-    "name": "BYOMA Brightening Serum + Brightening Toner Bundle",
-    "size": "באנדל",
+    "name": "סט BYOMA להארה וחידוש הפנים: טונר (150 מ"ל) + סרום (30 מ"ל)",
+    "size": "מארז",
     "categories": [
       "skin",
       "toner",
@@ -2798,8 +2790,8 @@
   {
     "id": "byoma-b0d6gv8d58",
     "brand": "BYOMA",
-    "name": "BYOMA Sensitive Body Wash + Sensitive Body Lotion Bundle",
-    "size": "באנדל",
+    "name": "סט BYOMA להבהרה וחידוש הגוף: תרחיץ + תחליב (400 מ"ל)",
+    "size": "מארז",
     "categories": [
       "skin",
       "body",
@@ -2809,8 +2801,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-uk",
@@ -2823,14 +2815,14 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0D6GV8D58.jpg"
   },
   {
     "id": "byoma-b0d8wpdlgq",
     "brand": "BYOMA",
-    "name": "BYOMA Brightening Body Wash + Brightening Body Lotion Bundle",
-    "size": "באנדל",
+    "name": "סט BYOMA להבהרה וחידוש הגוף: תרחיץ + תחליב (400 מ"ל)",
+    "size": "מארז",
     "categories": [
       "skin",
       "body",
@@ -2861,7 +2853,7 @@
     "id": "byoma-b0d8wnp97b",
     "brand": "BYOMA",
     "name": "BYOMA Smoothing Polish + Body Serum Bundle",
-    "size": "באנדל",
+    "size": "מארז",
     "categories": [
       "skin",
       "body",
@@ -2893,7 +2885,7 @@
     "id": "byoma-b0db6bwscw",
     "brand": "BYOMA",
     "name": "BYOMA Nourishing Face & Body Oil Bundle",
-    "size": "באנדל",
+    "size": "מארז",
     "categories": [
       "skin",
       "body",
