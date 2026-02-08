@@ -65,7 +65,11 @@
       "collagen peptides",
       "קולגן",
       "פפטידי קולגן",
-      "קולגן מפורק"
+      "קולגן מפורק",
+      "soluble fish collagen",
+      "hydrolyzed marine collagen",
+      "marine collagen",
+      "fish collagen"
     ],
     "status": "רכיב מן החי",
     "why": "קולגן מופק לרוב מעור/עצמות/רקמות של בעלי חיים, ולכן בדרך כלל אינו טבעוני."
@@ -186,7 +190,9 @@
       "ha",
       "חומצה היאלורונית",
       "סודיום היאלורונט",
-      "היאלורונן"
+      "היאלורונן",
+      "hydrolyzed chicken cartilage extract",
+      "chicken cartilage extract"
     ],
     "status": "תלוי מקור",
     "why": "חומצה היאלורונית יכולה להיות מתסיסה מיקרוביאלית (נפוץ) או ממקור בעלי חיים. כדי לוודא טבעוני—בדקי הצהרת מקור."
@@ -238,7 +244,10 @@
       "שומן צמר",
       "אלכוהול לנולין",
       "איזופרופיל לנולט",
-      "אמרכול"
+      "אמרכול",
+      "peg lanolin",
+      "lanolin derivatives",
+      "lanolin derivative"
     ],
     "status": "רכיב מן החי",
     "why": "לנולין (Wool Wax/Fat) מופק מצמר כבשים ולכן אינו טבעוני."
@@ -314,7 +323,8 @@
       "פרפיום",
       "פארפיום",
       "ארומה",
-      "פרגרנס"
+      "פרגרנס",
+      "musk ambrette"
     ],
     "status": "תלוי מקור",
     "why": "“Fragrance/Parfum” הוא מונח כללי שיכול לכלול רכיבים מן החי (למשל castoreum) או סינתטיים/צמחיים—נדרש בירור."
@@ -326,7 +336,8 @@
       "propolis",
       "bee propolis",
       "פרופוליס",
-      "פרופוליס דבורים"
+      "פרופוליס דבורים",
+      "propolis cera"
     ],
     "status": "רכיב מן החי",
     "why": "פרופוליס נאסף ומיוצר על ידי דבורים ולכן אינו טבעוני."
@@ -356,7 +367,10 @@
       "e904",
       "שלאק",
       "ציפוי שרפי",
-      "E904"
+      "E904",
+      "shellac wax",
+      "shellac cera",
+      "shellac wax/cera"
     ],
     "status": "רכיב מן החי",
     "why": "שלאק הוא הפרשה שרפית של חרק (E904) ומשמש לציפוי/ברק—לכן אינו טבעוני."
@@ -435,7 +449,8 @@
       "אלבומין",
       "חלבון ביצה",
       "אבקת חלבון ביצה",
-      "חלבון חלבון ביצה"
+      "חלבון חלבון ביצה",
+      "hydrolyzed albumen"
     ],
     "status": "רכיב מן החי",
     "why": "אלבומין/אלבומן הם חלבוני ביצה (או לעיתים חלבון בסרום/חלב), ולכן לרוב אינם טבעוניים."
@@ -472,7 +487,9 @@
       "castor",
       "beaver castor",
       "קסטוריום",
-      "קסטור"
+      "קסטור",
+      "castoreum oil",
+      "castoreum 2"
     ],
     "status": "תלוי מקור",
     "why": "קסטוריום הוא חומר ריחני שיכול להיות ממקור בונים אך לעיתים קרובות סינתטי. ללא הצהרה—נדרש בירור."
@@ -484,7 +501,8 @@
       "civet",
       "civetone",
       "סיבט",
-      "סיבטון"
+      "סיבטון",
+      "civet oil"
     ],
     "status": "תלוי מקור",
     "why": "Civetone/סיבט יכול להיות ממקור בעלי חיים (סיבט) או סינתטי. אם המוצר טבעוני—חפשי הצהרת מקור."
@@ -535,7 +553,8 @@
       "chitosan",
       "chitin",
       "כיטוזן",
-      "כיטין"
+      "כיטין",
+      "hydrolyzed chitosan"
     ],
     "status": "תלוי מקור",
     "why": "כיטוזן מופק לרוב משריון סרטנים, אך קיימים מקורות אחרים (למשל פטריות). בלי ציון—נדרש אימות."
@@ -550,7 +569,9 @@
       "afterbirth",
       "תמצית שליה",
       "שליה",
-      "חלבון שליה"
+      "חלבון שליה",
+      "hydrolyzed placental extract",
+      "hydrolyzed placenta extract"
     ],
     "status": "רכיב מן החי",
     "why": "תמציות שליה מופקות מרקמות בעלי חיים ולכן אינן טבעוניות."
@@ -703,5 +724,725 @@
     ],
     "status": "טבעוני",
     "why": "מיקה היא מינרל טבעי (או סינתטי) ולכן טבעונית, אך לעיתים יש היבטי כרייה אתיים שאינם קשורים לטבעונות."
+  },
+  {
+    "name": "Bee Pollen",
+    "he": "אבקת דבורים (פולן)",
+    "keys": [
+      "bee pollen",
+      "pollen",
+      "pollen extract",
+      "pollen/pollen extract",
+      "אבקת דבורים",
+      "פולן",
+      "תמצית פולן"
+    ],
+    "status": "רכיב מן החי",
+    "why": "אבקת דבורים (Pollen) נאספת/מעובדת על ידי דבורים ומשמשת להזנתן, ולכן אינה טבעונית."
+  },
+  {
+    "name": "Royal Jelly",
+    "he": "מזון מלכות",
+    "keys": [
+      "royal jelly",
+      "r.j. extract",
+      "rj extract",
+      "royal jelly extract",
+      "מזון מלכות",
+      "תמצית מזון מלכות"
+    ],
+    "status": "רכיב מן החי",
+    "why": "מזון מלכות מופרש על ידי דבורים ומשמש להזנת המלכה והזחלים, ולכן אינו טבעוני."
+  },
+  {
+    "name": "Bee Venom",
+    "he": "ארס דבורים",
+    "keys": [
+      "bee venom",
+      "bee venom extract",
+      "ארס דבורים",
+      "תמצית ארס דבורים"
+    ],
+    "status": "רכיב מן החי",
+    "why": "ארס דבורים נאסף מדבורים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Bee Larva Extract",
+    "he": "תמצית זחל דבורה",
+    "keys": [
+      "bee larva extract",
+      "hydrolyzed bee larva extract",
+      "queen bee larva",
+      "queen bee larva extract",
+      "תמצית זחל דבורה",
+      "זחל דבורה",
+      "זחל מלכת דבורים"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמציות/חלבונים מזחלי דבורים הן ממקור בעלי חיים ולכן אינן טבעוניות."
+  },
+  {
+    "name": "Nectar",
+    "he": "צוף",
+    "keys": [
+      "nectar",
+      "צוף"
+    ],
+    "status": "תלוי מקור",
+    "why": "INCI \"Nectar\" יכול להתייחס לצוף צמחי/תמצית צמחית (טבעוני) או לרכיב שמקורו באיסוף/עיבוד הקשור לדבורים. אם חשוב \"טבעוני\"—צריך אימות מקור."
+  },
+  {
+    "name": "Beetle Larva Extract",
+    "he": "תמצית זחל חיפושית",
+    "keys": [
+      "beetle larva extract",
+      "beetle larva",
+      "תמצית זחל חיפושית",
+      "זחל חיפושית"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמצית זחל חיפושית מופקת מחרקים ולכן אינה טבעונית."
+  },
+  {
+    "name": "Mealworm Larva Extract (Tenebrio molitor)",
+    "he": "תמצית זחל קמחית (Tenebrio molitor)",
+    "keys": [
+      "mealworm larva extract",
+      "tenebrio molitor",
+      "tenebrio molitor larva extract",
+      "תמצית זחל קמחית",
+      "טנבריו מוליטור"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמצית זחל קמחית מופקת מחרקים ולכן אינה טבעונית."
+  },
+  {
+    "name": "Bombyx Mori Extract (Silkworm)",
+    "he": "תמצית טוואי משי (Bombyx mori)",
+    "keys": [
+      "bombyx mori extract",
+      "silkworm extract",
+      "תמצית טוואי משי",
+      "בומביקס מורי"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמצית טוואי משי מופקת מזחלי טוואי המשי ולכן אינה טבעונית."
+  },
+  {
+    "name": "Snail Secretion Filtrate (Snail Mucin)",
+    "he": "פילטרט הפרשת חלזונות (ריר חלזונות)",
+    "keys": [
+      "snail secretion filtrate",
+      "snail mucus filtrate",
+      "snail slime extract",
+      "snail slime",
+      "snail secretion",
+      "snail slime extract/snail secretion filtrate",
+      "snail mucin",
+      "helix aspersa extract",
+      "helix aspersa",
+      "elicina",
+      "elicina®",
+      "snail slime extract",
+      "snail secretion filtrate",
+      "פילטרט ריר חלזונות",
+      "ריר חלזונות",
+      "תמצית ריר חלזונות",
+      "תמצית חלזון הליקס אספרסה"
+    ],
+    "status": "רכיב מן החי",
+    "why": "ריר/הפרשות חלזונות נאספים מחלזונות ולכן אינם טבעוניים."
+  },
+  {
+    "name": "Snail Egg Extract",
+    "he": "תמצית ביצי חלזון",
+    "keys": [
+      "snail egg extract",
+      "snail egg",
+      "תמצית ביצי חלזון",
+      "ביצי חלזון"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמצית ביצי חלזון היא ממקור בעלי חיים ולכן אינה טבעונית."
+  },
+  {
+    "name": "Snail Extract (General)",
+    "he": "תמצית חלזון",
+    "keys": [
+      "snail extract",
+      "pomacea canaliculata",
+      "pomacea canaliculata snail extract",
+      "תמצית חלזון",
+      "פומצאה קנאליקולטה"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמציות חלזון מופקות מחלזונות ולכן אינן טבעוניות."
+  },
+  {
+    "name": "Spider Polypeptide-1",
+    "he": "פוליפפטיד עכביש-1",
+    "keys": [
+      "spider polypeptide-1",
+      "sp-4",
+      "spider peptides",
+      "spider peptide",
+      "פוליפפטיד עכביש-1",
+      "פפטיד עכביש"
+    ],
+    "status": "תלוי מקור",
+    "why": "פוליפפטידים שמקורם בקורי עכביש יכולים להגיע מחומרים ממקור חי או מייצור ביוטכנולוגי/סינתטי. בלי הצהרה—נדרש אימות."
+  },
+  {
+    "name": "Spider Web Extract",
+    "he": "תמצית קורי עכביש",
+    "keys": [
+      "spider web extract",
+      "spider web",
+      "קורי עכביש",
+      "תמצית קורי עכביש"
+    ],
+    "status": "תלוי מקור",
+    "why": "תמציות/חלבונים מקורי עכביש עלולים להיות ממקור בעלי חיים או מתחליפים ביוטכנולוגיים. כדי לוודא טבעוני—צריך אימות מקור."
+  },
+  {
+    "name": "Hydrolyzed Spider Web",
+    "he": "קורי עכביש מפורקים",
+    "keys": [
+      "hydrolyzed spider web",
+      "hydrolyzed spider web extract",
+      "קורי עכביש מפורקים",
+      "תמצית קורי עכביש מפורקת"
+    ],
+    "status": "תלוי מקור",
+    "why": "קורי עכביש מפורקים יכולים להיות ממקור חי או מייצור חלופי. נדרש אימות אם חשוב \"טבעוני\"."
+  },
+  {
+    "name": "Bear Oil",
+    "he": "שמן דוב",
+    "keys": [
+      "bear oil",
+      "bear fat",
+      "שמן דוב",
+      "שומן דוב"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן/שומן דוב מופק מבעלי חיים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Amniotic Fluid",
+    "he": "מי שפיר",
+    "keys": [
+      "amniotic fluid",
+      "bovine amniotic fluid",
+      "מי שפיר",
+      "מי שפיר בקר"
+    ],
+    "status": "רכיב מן החי",
+    "why": "מי שפיר (כולל מי שפיר בקר) הם נוזל גוף ממקור בעלי חיים ולכן אינם טבעוניים."
+  },
+  {
+    "name": "Bile / Gall Extract",
+    "he": "מרה (גאל)",
+    "keys": [
+      "bile",
+      "gall",
+      "bovine bile",
+      "gall extract",
+      "מרה",
+      "גאל",
+      "תמצית מרה"
+    ],
+    "status": "רכיב מן החי",
+    "why": "מיצי מרה/גאל מופקים מבעלי חיים ולכן אינם טבעוניים."
+  },
+  {
+    "name": "Buffalo Fat",
+    "he": "שומן תאו",
+    "keys": [
+      "buffalo fat",
+      "שומן תאו"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שומן תאו הוא שומן מן החי ולכן אינו טבעוני."
+  },
+  {
+    "name": "Milk (General)",
+    "he": "חלב",
+    "keys": [
+      "lac",
+      "milk",
+      "milk extract",
+      "חלב",
+      "תמצית חלב",
+      "lac/milk"
+    ],
+    "status": "רכיב מן החי",
+    "why": "חלב ונגזרותיו מקורם ביונקים ולכן אינם טבעוניים."
+  },
+  {
+    "name": "Camel Milk",
+    "he": "חלב גמל",
+    "keys": [
+      "camel milk",
+      "camel milk extract",
+      "חלב גמל",
+      "תמצית חלב גמל"
+    ],
+    "status": "רכיב מן החי",
+    "why": "חלב גמל הוא חלב יונקים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Yak Milk",
+    "he": "חלב יאק",
+    "keys": [
+      "yak milk",
+      "חלב יאק"
+    ],
+    "status": "רכיב מן החי",
+    "why": "חלב יאק הוא חלב יונקים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Donkey Milk (Equus asinus lac)",
+    "he": "חלב חמור",
+    "keys": [
+      "donkey milk",
+      "equus asinus lac",
+      "equus asinus lac/donkey milk",
+      "חלב חמור",
+      "אקוווס אסינוס לאק"
+    ],
+    "status": "רכיב מן החי",
+    "why": "חלב חמור הוא חלב יונקים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Mare Milk (Equae lac)",
+    "he": "חלב סוסה",
+    "keys": [
+      "mare milk",
+      "equae lac",
+      "equae lac/mare milk",
+      "חלב סוסה",
+      "אקוואה לאק"
+    ],
+    "status": "רכיב מן החי",
+    "why": "חלב סוסה הוא חלב יונקים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Donkey Oil",
+    "he": "שמן חמור",
+    "keys": [
+      "donkey oil",
+      "donkey oil extract",
+      "שמן חמור",
+      "תמצית שמן חמור"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן/שומן חמור מופקים מבעלי חיים ולכן אינם טבעוניים."
+  },
+  {
+    "name": "Horse Oil / Horse Fat",
+    "he": "שמן/שומן סוס",
+    "keys": [
+      "horse oil",
+      "horse fat",
+      "horse tissue extract",
+      "equine tissue extract",
+      "שמן סוס",
+      "שומן סוס",
+      "תמצית רקמת סוס"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן/שומן/תמציות מרקמות סוס הם ממקור בעלי חיים ולכן אינם טבעוניים."
+  },
+  {
+    "name": "Duck Embryo Extract",
+    "he": "תמצית עובר ברווז",
+    "keys": [
+      "duck embryo extract",
+      "duck embryo",
+      "תמצית עובר ברווז",
+      "עובר ברווז"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמצית עובר ברווז מופקת מבעלי חיים ולכן אינה טבעונית."
+  },
+  {
+    "name": "Duck Fat",
+    "he": "שומן ברווז",
+    "keys": [
+      "duck fat",
+      "שומן ברווז"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שומן ברווז הוא שומן מן החי ולכן אינו טבעוני."
+  },
+  {
+    "name": "Emu Oil",
+    "he": "שמן אמו",
+    "keys": [
+      "emu oil",
+      "שמן אמו"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן אמו מופק מעופות אמו ולכן אינו טבעוני."
+  },
+  {
+    "name": "Mink Oil",
+    "he": "שמן מינק",
+    "keys": [
+      "mink oil",
+      "mustela oil",
+      "mustele oil",
+      "שמן מינק",
+      "מוסטלה אויל"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן מינק מופק מבעלי חיים (מינק) ולכן אינו טבעוני."
+  },
+  {
+    "name": "Ostrich Egg Yolk Extract",
+    "he": "תמצית חלמון ביצת יען",
+    "keys": [
+      "ostrich egg yolk extract",
+      "ostrich egg",
+      "ostrich egg extract",
+      "תמצית חלמון ביצת יען",
+      "ביצת יען"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמציות ביצת יען הן ממקור ביצים ולכן אינן טבעוניות."
+  },
+  {
+    "name": "Ostrich Oil",
+    "he": "שמן יען",
+    "keys": [
+      "ostrich oil",
+      "שמן יען"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן יען מופק מבעלי חיים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Goat Butter (Caprae Butyrum)",
+    "he": "חמאת עיזים",
+    "keys": [
+      "caprae butyrum",
+      "goat butter",
+      "חמאת עיזים",
+      "קפרה בוטירום"
+    ],
+    "status": "רכיב מן החי",
+    "why": "חמאת עיזים היא מוצר חלב ולכן אינה טבעונית."
+  },
+  {
+    "name": "Sheep Milk",
+    "he": "חלב כבשים",
+    "keys": [
+      "sheep milk",
+      "חלב כבשים"
+    ],
+    "status": "רכיב מן החי",
+    "why": "חלב כבשים הוא חלב יונקים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Goat Milk (Caprae Lac)",
+    "he": "חלב עז",
+    "keys": [
+      "goat milk",
+      "caprae lac",
+      "caprae lac extract",
+      "חלב עז",
+      "קפרה לאק",
+      "תמצית חלב עז"
+    ],
+    "status": "רכיב מן החי",
+    "why": "חלב עז הוא חלב יונקים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Crocodile Oil",
+    "he": "שמן תנין",
+    "keys": [
+      "crocodile oil",
+      "שמן תנין"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן תנין מופק מזוחלים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Snake Oil",
+    "he": "שמן נחש",
+    "keys": [
+      "snake oil",
+      "שמן נחש"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן נחש מופק מבעלי חיים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Mamushi Oil",
+    "he": "שמן ממושי",
+    "keys": [
+      "mamushi oil",
+      "agkistrodon halys blomhoffi",
+      "mamushi",
+      "שמן ממושי",
+      "אגקיסטרודון הליס בלומהופפי"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן ממושי מופק מנחש ממושי ולכן אינו טבעוני."
+  },
+  {
+    "name": "Viper Venom / Snake Venom",
+    "he": "ארס צפע/נחש",
+    "keys": [
+      "viper venom",
+      "snake venom",
+      "viper venom extract",
+      "snake venom extract",
+      "ארס צפע",
+      "ארס נחש",
+      "תמצית ארס צפע"
+    ],
+    "status": "רכיב מן החי",
+    "why": "ארס נחש/צפע נאסף מבעלי חיים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Hydrogenated Lard",
+    "he": "שומן חזיר מוקשה",
+    "keys": [
+      "hydrogenated lard",
+      "lard",
+      "שומן חזיר מוקשה",
+      "לארד",
+      "שומן חזיר"
+    ],
+    "status": "רכיב מן החי",
+    "why": "Lard הוא שומן חזיר (או שומן מן החי) ולכן אינו טבעוני."
+  },
+  {
+    "name": "Magnesium Stearate",
+    "he": "מגנזיום סטאראט",
+    "keys": [
+      "magnesium stearate",
+      "mg stearate",
+      "מגנזיום סטאראט"
+    ],
+    "status": "תלוי מקור",
+    "why": "Magnesium Stearate מיוצר מחומצה סטארית שיכולה להיות ממקור צמחי או מן החי. אם לא מצוין—נדרש אימות מקור."
+  },
+  {
+    "name": "Sepia Extract",
+    "he": "תמצית סביה (דיו דיונון)",
+    "keys": [
+      "sepia extract",
+      "cuttlefish extract",
+      "תמצית סביה",
+      "דיו דיונון"
+    ],
+    "status": "רכיב מן החי",
+    "why": "Sepia/Cuttlefish מקורם בבעלי חיים ימיים ולכן אינם טבעוניים."
+  },
+  {
+    "name": "Fish Cartilage Extract",
+    "he": "תמצית סחוס דגים",
+    "keys": [
+      "fish cartilage extract",
+      "תמצית סחוס דגים",
+      "סחוס דגים"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמצית סחוס דגים מופקת מדגים ולכן אינה טבעונית."
+  },
+  {
+    "name": "DNA / Hydrolyzed DNA",
+    "he": "דנ״א (DNA) / דנ״א מפורק",
+    "keys": [
+      "dna",
+      "hydrolyzed dna",
+      "דנ\"א",
+      "DNA מפורק",
+      "דנ״א מפורק"
+    ],
+    "status": "תלוי מקור",
+    "why": "DNA במוצרים יכול להיות ממקור בעלי חיים או מיוצר באופן סינתטי/ביוטכנולוגי. בלי הצהרת מקור—נדרש אימות."
+  },
+  {
+    "name": "Cod Liver Oil",
+    "he": "שמן כבד בקלה",
+    "keys": [
+      "cod liver oil",
+      "שמן כבד בקלה",
+      "שמן כבד דג"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן כבד בקלה מופק מדגים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Fish Oil",
+    "he": "שמן דגים",
+    "keys": [
+      "fish oil",
+      "hydrogenated fish oil",
+      "שמן דגים",
+      "שמן דגים מוקשה"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן דגים מופק מדגים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Shark Liver Oil",
+    "he": "שמן כבד כריש",
+    "keys": [
+      "shark liver oil",
+      "שמן כבד כריש"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן כבד כריש מופק מכרישים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Salmon Egg Extract",
+    "he": "תמצית ביצי סלמון",
+    "keys": [
+      "salmon egg",
+      "salmon egg extract",
+      "תמצית ביצי סלמון",
+      "ביצי סלמון"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמצית ביצי דגים (סלמון) היא ממקור בעלי חיים ולכן אינה טבעונית."
+  },
+  {
+    "name": "Shark Fin Extract",
+    "he": "תמצית סנפיר כריש",
+    "keys": [
+      "shark fin extract",
+      "isurus oxyrinchus",
+      "תמצית סנפיר כריש",
+      "סנפיר כריש"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמצית סנפיר כריש מופקת מבעלי חיים ימיים ולכן אינה טבעונית."
+  },
+  {
+    "name": "Hydrolyzed Salmon Ovary Extract",
+    "he": "תמצית שחלות סלמון מפורקת",
+    "keys": [
+      "hydrolyzed salmon ovary extract",
+      "salmon ovary extract",
+      "תמצית שחלות סלמון מפורקת",
+      "שחלות סלמון"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמציות רבייה של דגים הן ממקור בעלי חיים ולכן אינן טבעוניות."
+  },
+  {
+    "name": "Spermidine",
+    "he": "ספרמידין",
+    "keys": [
+      "spermidine",
+      "sperm",
+      "semen extract",
+      "ספרמידין"
+    ],
+    "status": "תלוי מקור",
+    "why": "Spermidine יכול להיות מיוצר סינתטית/מתסיסה או ממקורות ביולוגיים. אם נדרש \"טבעוני\"—מומלץ אימות מקור."
+  },
+  {
+    "name": "Plankton Extract",
+    "he": "תמצית פלנקטון",
+    "keys": [
+      "plankton extract",
+      "plankton",
+      "תמצית פלנקטון",
+      "פלנקטון"
+    ],
+    "status": "תלוי מקור",
+    "why": "תמציות פלנקטון מגיעות ממיקרואורגניזמים ימיים. לרוב אינן \"בעלי חיים\" קלאסיים, אבל תלוי בהגדרת טבעונות ובמקור—כדאי לבדוק."
+  },
+  {
+    "name": "Jellyfish Extract",
+    "he": "תמצית מדוזה",
+    "keys": [
+      "jellyfish extract",
+      "jellyfish",
+      "תמצית מדוזה",
+      "מדוזה"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמצית מדוזה מופקת מבעלי חיים ימיים ולכן אינה טבעונית."
+  },
+  {
+    "name": "Sponge Extract",
+    "he": "תמצית ספוג",
+    "keys": [
+      "sponge extract",
+      "sponge",
+      "תמצית ספוג",
+      "ספוג"
+    ],
+    "status": "רכיב מן החי",
+    "why": "ספוגים הם בעלי חיים ימיים, ולכן תמציות ספוג אינן טבעוניות."
+  },
+  {
+    "name": "Hydrolyzed Sponge Extract",
+    "he": "תמצית ספוג מפורקת",
+    "keys": [
+      "hydrolyzed sponge",
+      "hydrolyzed sponge extract",
+      "תמצית ספוג מפורקת",
+      "ספוג מפורק"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמציות ספוג מפורקות מקורן בספוגים (בעלי חיים ימיים) ולכן אינן טבעוניות."
+  },
+  {
+    "name": "Seal Oil",
+    "he": "שמן כלב ים",
+    "keys": [
+      "seal oil",
+      "seal fatty tissue",
+      "שמן כלב ים"
+    ],
+    "status": "רכיב מן החי",
+    "why": "שמן כלב ים מופק מיונקים ימיים ולכן אינו טבעוני."
+  },
+  {
+    "name": "Starfish Extract",
+    "he": "תמצית כוכב ים",
+    "keys": [
+      "starfish extract",
+      "hydrolyzed starfish extract",
+      "starfish powder",
+      "תמצית כוכב ים",
+      "כוכב ים"
+    ],
+    "status": "רכיב מן החי",
+    "why": "תמציות כוכב ים מופקות מבעלי חיים ימיים ולכן אינן טבעוניות."
+  },
+  {
+    "name": "Sodium Tallowate",
+    "he": "סודיום טאלואט",
+    "keys": [
+      "sodium tallowate",
+      "tallowate",
+      "sodium tallowate (tallow)",
+      "סודיום טאלואט",
+      "טאלואט"
+    ],
+    "status": "רכיב מן החי",
+    "why": "Sodium Tallowate הוא מלח של חומצות שומן משומן מן החי (Tallow) המשמש לעיתים בסבונים—לכן אינו טבעוני."
+  },
+  {
+    "name": "Buffalo Milk",
+    "he": "חלב באפלו/תאו",
+    "keys": [
+      "buffalo milk",
+      "whole dry buffalo milk",
+      "חלב תאו",
+      "חלב באפלו",
+      "אבקת חלב תאו"
+    ],
+    "status": "רכיב מן החי",
+    "why": "חלב תאו/באפלו הוא חלב יונקים ולכן אינו טבעוני."
   }
 ]
