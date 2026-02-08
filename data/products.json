@@ -1,8 +1,8 @@
 [
   {
-    "id": "acure-b003z4mcja",
+    "id": "acure-b0dzdddj4z",
     "brand": "acure",
-    "name": "ACURE Radically Rejuvenating Cream Packaging",
+    "name": "Acure Vivacious Shampoo Conditioner Set",
     "size": null,
     "categories": [],
     "isVegan": true,
@@ -14,14 +14,250 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B003Z4MCJA?tag=nocrueltyil-20",
-        "asin": "B003Z4MCJA",
+        "url": "https://www.amazon.com/dp/B0DZDDDJ4Z?tag=nocrueltyil-20",
+        "asin": "B0DZDDDJ4Z",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
-    "isKids": false
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
+  },
+  {
+    "id": "acure-b09myc86pg",
+    "brand": "acure",
+    "name": "ACURE Brightening Night Cream Pack",
+    "size": null,
+    "categories": [],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B09MYC86PG?tag=nocrueltyil-20",
+        "asin": "B09MYC86PG",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
+  },
+  {
+    "id": "acure-b09l5ggn1z",
+    "brand": "acure",
+    "name": "Acure Brightening Facial Scrub Pack",
+    "size": null,
+    "categories": [],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B09L5GGN1Z?tag=nocrueltyil-20",
+        "asin": "B09L5GGN1Z",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
+  },
+  {
+    "id": "acure-b00yz1j3fi",
+    "brand": "acure",
+    "name": "סקראב פנים מבהיר (פילינג) לשטיפת פנים",
+    "size": "4 fl oz",
+    "categories": [
+      "טיפוח עור",
+      "פנים",
+      "פילינג",
+      "ניקוי"
+    ],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B00YZ1J3FI?tag=nocrueltyil-20",
+        "asin": "B00YZ1J3FI",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "image": "assets/img/products/B00YZ1J3FI.jpg",
+    "isDiscounted": false
+  },
+  {
+    "id": "acure-b082g1vnq6",
+    "brand": "acure",
+    "name": "ACURE Brightening Vitamin Ferulic Serum",
+    "size": null,
+    "categories": [],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B082G1VNQ6?tag=nocrueltyil-20",
+        "asin": "B082G1VNQ6",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
+  },
+  {
+    "id": "acure-b082yfmntk",
+    "brand": "acure",
+    "name": "Acure Radically Rejuvenating Bakuchiol Anti Aging",
+    "size": null,
+    "categories": [],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B082YFMNTK?tag=nocrueltyil-20",
+        "asin": "B082YFMNTK",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
+  },
+  {
+    "id": "acure-b0040zhuh2",
+    "brand": "acure",
+    "name": "סרום זוהר מבהיר (Brightening Glow Serum) (האריזה עשויה להשתנות)",
+    "size": "1 fl oz",
+    "categories": [
+      "טיפוח עור",
+      "פנים",
+      "סרום",
+      "הבהרה"
+    ],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0040ZHUH2?tag=nocrueltyil-20",
+        "asin": "B0040ZHUH2",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "image": "assets/img/products/B0040ZHUH2.jpg",
+    "isDiscounted": false
+  },
+  {
+    "id": "acure-b0bdzl7qgl",
+    "brand": "acure",
+    "name": "Acure Rejuvenating Whipped Night Facial",
+    "size": null,
+    "categories": [],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0BDZL7QGL?tag=nocrueltyil-20",
+        "asin": "B0BDZL7QGL",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
+  },
+  {
+    "id": "acure-b0cmz87h5j",
+    "brand": "acure",
+    "name": "Acure Resilience Visibly Brighten Hydrate",
+    "size": null,
+    "categories": [],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CMZ87H5J?tag=nocrueltyil-20",
+        "asin": "B0CMZ87H5J",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
   },
   {
     "id": "acure-b003z4qgre",
@@ -48,107 +284,18 @@
         "asin": "B003Z4QGRE",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B003Z4QGRE.jpg"
+    "image": "assets/img/products/B003Z4QGRE.jpg",
+    "isDiscounted": false
   },
   {
-    "id": "acure-b003z4qhp0",
+    "id": "acure-b0cmz58smt",
     "brand": "acure",
-    "name": "קרם יום מבהיר (האריזה עשויה להשתנות)",
-    "size": "1.7 fl oz",
-    "categories": [
-      "טיפוח עור",
-      "פנים",
-      "קרם יום",
-      "לחות",
-      "הבהרה"
-    ],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B003Z4QHP0?tag=nocrueltyil-20",
-        "asin": "B003Z4QHP0",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "image": "assets/img/products/B003Z4QHP0.jpg"
-  },
-  {
-    "id": "acure-b0040zhuh2",
-    "brand": "acure",
-    "name": "סרום זוהר מבהיר (Brightening Glow Serum) (האריזה עשויה להשתנות)",
-    "size": "1 fl oz",
-    "categories": [
-      "טיפוח עור",
-      "פנים",
-      "סרום",
-      "הבהרה"
-    ],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0040ZHUH2?tag=nocrueltyil-20",
-        "asin": "B0040ZHUH2",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "image": "assets/img/products/B0040ZHUH2.jpg"
-  },
-  {
-    "id": "acure-b004dtq9l8",
-    "brand": "acure",
-    "name": "שמן ארגן אורגני לשיער ולעור (כבישה קרה)",
-    "size": "1 fl oz",
-    "categories": [
-      "טיפוח עור",
-      "שיער",
-      "שמן",
-      "טיפול"
-    ],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B004DTQ9L8?tag=nocrueltyil-20",
-        "asin": "B004DTQ9L8",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "image": "assets/img/products/B004DTQ9L8.jpg"
-  },
-  {
-    "id": "acure-b0071hie94",
-    "brand": "acure",
-    "name": "Acure Organics Dry Shampoo Powder",
+    "name": "ACURE Revitabond Support Hair Mask",
     "size": null,
     "categories": [],
     "isVegan": true,
@@ -160,26 +307,25 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0071HIE94?tag=nocrueltyil-20",
-        "asin": "B0071HIE94",
+        "url": "https://www.amazon.com/dp/B0CMZ58SMT?tag=nocrueltyil-20",
+        "asin": "B0CMZ58SMT",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
-    "isKids": false
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
   },
   {
-    "id": "acure-b00b4c35iw",
+    "id": "acure-b003z4mcja",
     "brand": "acure",
-    "name": "קרם ניקוי מרגיע לפנים (Seriously Soothing Cleansing Cream)",
-    "size": "4 fl oz",
-    "categories": [
-      "טיפוח עור",
-      "פנים",
-      "ניקוי",
-      "קרם ניקוי"
-    ],
+    "name": "ACURE Radically Rejuvenating Cream Packaging",
+    "size": null,
+    "categories": [],
     "isVegan": true,
     "isPeta": true,
     "isLB": true,
@@ -189,15 +335,74 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B00B4C35IW?tag=nocrueltyil-20",
-        "asin": "B00B4C35IW",
+        "url": "https://www.amazon.com/dp/B003Z4MCJA?tag=nocrueltyil-20",
+        "asin": "B003Z4MCJA",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B00B4C35IW.jpg"
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
+  },
+  {
+    "id": "acure-b0dhjh8534",
+    "brand": "acure",
+    "name": "Acure Zombie Cell Clarifying Mask",
+    "size": null,
+    "categories": [],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DHJH8534?tag=nocrueltyil-20",
+        "asin": "B0DHJH8534",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
+  },
+  {
+    "id": "acure-b0cmz1g5f9",
+    "brand": "acure",
+    "name": "Acure Revitabond Smoothing Serum 1 7",
+    "size": null,
+    "categories": [],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CMZ1G5F9?tag=nocrueltyil-20",
+        "asin": "B0CMZ1G5F9",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
   },
   {
     "id": "acure-b00gcylkc0",
@@ -224,22 +429,24 @@
         "asin": "B00GCYLKC0",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B00GCYLKC0.jpg"
+    "image": "assets/img/products/B00GCYLKC0.jpg",
+    "isDiscounted": false
   },
   {
-    "id": "acure-b00yz1j3fi",
+    "id": "acure-b0cmzjvn9k",
     "brand": "acure",
-    "name": "סקראב פנים מבהיר (פילינג) לשטיפת פנים",
-    "size": "4 fl oz",
+    "name": "מרכך בונדינג לחיזוק ושיקום שיער",
+    "size": "8 fl oz",
     "categories": [
-      "טיפוח עור",
-      "פנים",
-      "פילינג",
-      "ניקוי"
+      "שיער",
+      "מרכך",
+      "חיזוק",
+      "שיקום"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -250,26 +457,28 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B00YZ1J3FI?tag=nocrueltyil-20",
-        "asin": "B00YZ1J3FI",
+        "url": "https://www.amazon.com/dp/B0CMZJVN9K?tag=nocrueltyil-20",
+        "asin": "B0CMZJVN9K",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B00YZ1J3FI.jpg"
+    "image": "assets/img/products/B0CMZJVN9K.jpg",
+    "isDiscounted": false
   },
   {
-    "id": "acure-b01b4hwfo6",
+    "id": "acure-b0b6q6bshc",
     "brand": "acure",
-    "name": "סקראב פנים מבהיר (פילינג) – שטיפת פנים עם אצות וחרסית ירוקה",
-    "size": "4 fl oz",
+    "name": "קרם יום מרגיע (Seriously Soothing) ללא פרבנים",
+    "size": "1.7 fl oz",
     "categories": [
       "טיפוח עור",
       "פנים",
-      "פילינג",
-      "ניקוי"
+      "קרם יום",
+      "מרגיע"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -280,25 +489,27 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B01B4HWFO6?tag=nocrueltyil-20",
-        "asin": "B01B4HWFO6",
+        "url": "https://www.amazon.com/dp/B0B6Q6BSHC?tag=nocrueltyil-20",
+        "asin": "B0B6Q6BSHC",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B01B4HWFO6.jpg"
+    "image": "assets/img/products/B0B6Q6BSHC.jpg",
+    "isDiscounted": false
   },
   {
-    "id": "acure-b078zhplnr",
+    "id": "acure-b082ygk39w",
     "brand": "acure",
-    "name": "שמפו אולטרה-לחות עם שמן ארגן (האריזה עשויה להשתנות)",
+    "name": "שמפו לנפח (Vivacious Volume)",
     "size": "8 fl oz",
     "categories": [
       "שיער",
       "שמפו",
-      "לחות"
+      "נפח"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -309,39 +520,17 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B078ZHPLNR?tag=nocrueltyil-20",
-        "asin": "B078ZHPLNR",
+        "url": "https://www.amazon.com/dp/B082YGK39W?tag=nocrueltyil-20",
+        "asin": "B082YGK39W",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B078ZHPLNR.jpg"
-  },
-  {
-    "id": "acure-b078zxvhrr",
-    "brand": "acure",
-    "name": "Acure Under Hydrogels Radically Rejuvenating",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B078ZXVHRR?tag=nocrueltyil-20",
-        "asin": "B078ZXVHRR",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
+    "image": "assets/img/products/B082YGK39W.jpg",
+    "isDiscounted": false
   },
   {
     "id": "acure-b07nj4h5s3",
@@ -368,11 +557,204 @@
         "asin": "B07NJ4H5S3",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B07NJ4H5S3.jpg"
+    "image": "assets/img/products/B07NJ4H5S3.jpg",
+    "isDiscounted": false
+  },
+  {
+    "id": "acure-b082yfn2zk",
+    "brand": "acure",
+    "name": "שמפו לניקוי עמוק והבהרה (Curiously Clarifying)",
+    "size": "8 fl oz",
+    "categories": [
+      "שיער",
+      "שמפו",
+      "ניקוי עמוק"
+    ],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B082YFN2ZK?tag=nocrueltyil-20",
+        "asin": "B082YFN2ZK",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "image": "assets/img/products/B082YFN2ZK.jpg",
+    "isDiscounted": false
+  },
+  {
+    "id": "acure-b003z4qhp0",
+    "brand": "acure",
+    "name": "קרם יום מבהיר (האריזה עשויה להשתנות)",
+    "size": "1.7 fl oz",
+    "categories": [
+      "טיפוח עור",
+      "פנים",
+      "קרם יום",
+      "לחות",
+      "הבהרה"
+    ],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B003Z4QHP0?tag=nocrueltyil-20",
+        "asin": "B003Z4QHP0",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "image": "assets/img/products/B003Z4QHP0.jpg",
+    "isDiscounted": false
+  },
+  {
+    "id": "acure-b00b4c35iw",
+    "brand": "acure",
+    "name": "קרם ניקוי מרגיע לפנים (Seriously Soothing Cleansing Cream)",
+    "size": "4 fl oz",
+    "categories": [
+      "טיפוח עור",
+      "פנים",
+      "ניקוי",
+      "קרם ניקוי"
+    ],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B00B4C35IW?tag=nocrueltyil-20",
+        "asin": "B00B4C35IW",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "image": "assets/img/products/B00B4C35IW.jpg",
+    "isDiscounted": false
+  },
+  {
+    "id": "acure-b004dtq9l8",
+    "brand": "acure",
+    "name": "שמן ארגן אורגני לשיער ולעור (כבישה קרה)",
+    "size": "1 fl oz",
+    "categories": [
+      "טיפוח עור",
+      "שיער",
+      "שמן",
+      "טיפול"
+    ],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B004DTQ9L8?tag=nocrueltyil-20",
+        "asin": "B004DTQ9L8",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "image": "assets/img/products/B004DTQ9L8.jpg",
+    "isDiscounted": false
+  },
+  {
+    "id": "acure-b082yg4lnc",
+    "brand": "acure",
+    "name": "מרכך להחלקה וריכוך (Simply Smoothing)",
+    "size": "8 fl oz",
+    "categories": [
+      "שיער",
+      "מרכך",
+      "החלקה",
+      "נוגד פריז"
+    ],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B082YG4LNC?tag=nocrueltyil-20",
+        "asin": "B082YG4LNC",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "image": "assets/img/products/B082YG4LNC.jpg",
+    "isDiscounted": false
+  },
+  {
+    "id": "acure-b082yh2cd8",
+    "brand": "acure",
+    "name": "מרכך לניקוי והבהרה (Curiously Clarifying)",
+    "size": "8 fl oz",
+    "categories": [
+      "שיער",
+      "מרכך",
+      "ניקוי עמוק"
+    ],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B082YH2CD8?tag=nocrueltyil-20",
+        "asin": "B082YH2CD8",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "image": "assets/img/products/B082YH2CD8.jpg",
+    "isDiscounted": false
   },
   {
     "id": "acure-b07px9cgd5",
@@ -399,16 +781,18 @@
         "asin": "B07PX9CGD5",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B07PX9CGD5.jpg"
+    "image": "assets/img/products/B07PX9CGD5.jpg",
+    "isDiscounted": false
   },
   {
-    "id": "acure-b082g1vnq6",
+    "id": "acure-b078zxvhrr",
     "brand": "acure",
-    "name": "ACURE Brightening Vitamin Ferulic Serum",
+    "name": "Acure Under Hydrogels Radically Rejuvenating",
     "size": null,
     "categories": [],
     "isVegan": true,
@@ -420,79 +804,25 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B082G1VNQ6?tag=nocrueltyil-20",
-        "asin": "B082G1VNQ6",
+        "url": "https://www.amazon.com/dp/B078ZXVHRR?tag=nocrueltyil-20",
+        "asin": "B078ZXVHRR",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b082yfmntk",
-    "brand": "acure",
-    "name": "Acure Radically Rejuvenating Bakuchiol Anti Aging",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B082YFMNTK?tag=nocrueltyil-20",
-        "asin": "B082YFMNTK",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b082yfn2zk",
-    "brand": "acure",
-    "name": "שמפו לניקוי עמוק והבהרה (Curiously Clarifying)",
-    "size": "8 fl oz",
-    "categories": [
-      "שיער",
-      "שמפו",
-      "ניקוי עמוק"
-    ],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B082YFN2ZK?tag=nocrueltyil-20",
-        "asin": "B082YFN2ZK",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B082YFN2ZK.jpg"
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
   },
   {
-    "id": "acure-b082yg4lnc",
+    "id": "acure-b0071hie94",
     "brand": "acure",
-    "name": "מרכך להחלקה וריכוך (Simply Smoothing)",
-    "size": "8 fl oz",
-    "categories": [
-      "שיער",
-      "מרכך",
-      "החלקה",
-      "נוגד פריז"
-    ],
+    "name": "Acure Organics Dry Shampoo Powder",
+    "size": null,
+    "categories": [],
     "isVegan": true,
     "isPeta": true,
     "isLB": true,
@@ -502,301 +832,18 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B082YG4LNC?tag=nocrueltyil-20",
-        "asin": "B082YG4LNC",
+        "url": "https://www.amazon.com/dp/B0071HIE94?tag=nocrueltyil-20",
+        "asin": "B0071HIE94",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B082YG4LNC.jpg"
-  },
-  {
-    "id": "acure-b082ygk39w",
-    "brand": "acure",
-    "name": "שמפו לנפח (Vivacious Volume)",
-    "size": "8 fl oz",
-    "categories": [
-      "שיער",
-      "שמפו",
-      "נפח"
-    ],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B082YGK39W?tag=nocrueltyil-20",
-        "asin": "B082YGK39W",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "image": "assets/img/products/B082YGK39W.jpg"
-  },
-  {
-    "id": "acure-b082yh2cd8",
-    "brand": "acure",
-    "name": "מרכך לניקוי והבהרה (Curiously Clarifying)",
-    "size": "8 fl oz",
-    "categories": [
-      "שיער",
-      "מרכך",
-      "ניקוי עמוק"
-    ],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B082YH2CD8?tag=nocrueltyil-20",
-        "asin": "B082YH2CD8",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "image": "assets/img/products/B082YH2CD8.jpg"
-  },
-  {
-    "id": "acure-b09l5ggn1z",
-    "brand": "acure",
-    "name": "Acure Brightening Facial Scrub Pack",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B09L5GGN1Z?tag=nocrueltyil-20",
-        "asin": "B09L5GGN1Z",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b09myc86pg",
-    "brand": "acure",
-    "name": "ACURE Brightening Night Cream Pack",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B09MYC86PG?tag=nocrueltyil-20",
-        "asin": "B09MYC86PG",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b0b6q6bshc",
-    "brand": "acure",
-    "name": "קרם יום מרגיע (Seriously Soothing) ללא פרבנים",
-    "size": "1.7 fl oz",
-    "categories": [
-      "טיפוח עור",
-      "פנים",
-      "קרם יום",
-      "מרגיע"
-    ],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0B6Q6BSHC?tag=nocrueltyil-20",
-        "asin": "B0B6Q6BSHC",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "image": "assets/img/products/B0B6Q6BSHC.jpg"
-  },
-  {
-    "id": "acure-b0bdzl7qgl",
-    "brand": "acure",
-    "name": "Acure Rejuvenating Whipped Night Facial",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0BDZL7QGL?tag=nocrueltyil-20",
-        "asin": "B0BDZL7QGL",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b0cmz1g5f9",
-    "brand": "acure",
-    "name": "Acure Revitabond Smoothing Serum 1 7",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CMZ1G5F9?tag=nocrueltyil-20",
-        "asin": "B0CMZ1G5F9",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b0cmz44q3l",
-    "brand": "acure",
-    "name": "Acure Radiance Overnight Wrinkles Lackluster",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CMZ44Q3L?tag=nocrueltyil-20",
-        "asin": "B0CMZ44Q3L",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b0cmz58smt",
-    "brand": "acure",
-    "name": "ACURE Revitabond Support Hair Mask",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CMZ58SMT?tag=nocrueltyil-20",
-        "asin": "B0CMZ58SMT",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b0cmz87h5j",
-    "brand": "acure",
-    "name": "Acure Resilience Visibly Brighten Hydrate",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CMZ87H5J?tag=nocrueltyil-20",
-        "asin": "B0CMZ87H5J",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b0cmzjvn9k",
-    "brand": "acure",
-    "name": "מרכך בונדינג לחיזוק ושיקום שיער",
-    "size": "8 fl oz",
-    "categories": [
-      "שיער",
-      "מרכך",
-      "חיזוק",
-      "שיקום"
-    ],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CMZJVN9K?tag=nocrueltyil-20",
-        "asin": "B0CMZJVN9K",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false,
-    "image": "assets/img/products/B0CMZJVN9K.jpg"
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
   },
   {
     "id": "acure-b0cxqz3d4t",
@@ -817,15 +864,19 @@
         "asin": "B0CXQZ3D4T",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
-    "isKids": false
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
   },
   {
-    "id": "acure-b0czg4vcyk",
+    "id": "acure-b0cmz44q3l",
     "brand": "acure",
-    "name": "Acure Invisible Sunscreen Stick Vitamin",
+    "name": "Acure Radiance Overnight Wrinkles Lackluster",
     "size": null,
     "categories": [],
     "isVegan": true,
@@ -837,38 +888,18 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CZG4VCYK?tag=nocrueltyil-20",
-        "asin": "B0CZG4VCYK",
+        "url": "https://www.amazon.com/dp/B0CMZ44Q3L?tag=nocrueltyil-20",
+        "asin": "B0CMZ44Q3L",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b0czg69np7",
-    "brand": "acure",
-    "name": "Acure Mineral Sunscreen Squalane Oxide",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CZG69NP7?tag=nocrueltyil-20",
-        "asin": "B0CZG69NP7",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
   },
   {
     "id": "acure-b0dhj73pqw",
@@ -889,15 +920,19 @@
         "asin": "B0DHJ73PQW",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
-    "isKids": false
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
   },
   {
-    "id": "acure-b0dhjh8534",
+    "id": "acure-b0czg69np7",
     "brand": "acure",
-    "name": "Acure Zombie Cell Clarifying Mask",
+    "name": "Acure Mineral Sunscreen Squalane Oxide",
     "size": null,
     "categories": [],
     "isVegan": true,
@@ -909,38 +944,18 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DHJH8534?tag=nocrueltyil-20",
-        "asin": "B0DHJH8534",
+        "url": "https://www.amazon.com/dp/B0CZG69NP7?tag=nocrueltyil-20",
+        "asin": "B0CZG69NP7",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
-    "isKids": false
-  },
-  {
-    "id": "acure-b0dzdddj4z",
-    "brand": "acure",
-    "name": "Acure Vivacious Shampoo Conditioner Set",
-    "size": null,
-    "categories": [],
-    "isVegan": true,
-    "isPeta": true,
-    "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DZDDDJ4Z?tag=nocrueltyil-20",
-        "asin": "B0DZDDDJ4Z",
-        "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null
-      }
-    ],
-    "isKids": false
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
   },
   {
     "id": "acure-b0fsx3n7nv",
@@ -961,9 +976,104 @@
         "asin": "B0FSX3N7NV",
         "currency": "USD",
         "priceUSD": null,
-        "freeShipOver": null
+        "freeShipOver": 49,
+        "isDiscounted": false
       }
     ],
-    "isKids": false
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
+  },
+  {
+    "id": "acure-b0czg4vcyk",
+    "brand": "acure",
+    "name": "Acure Invisible Sunscreen Stick Vitamin",
+    "size": null,
+    "categories": [],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CZG4VCYK?tag=nocrueltyil-20",
+        "asin": "B0CZG4VCYK",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": null
+  },
+  {
+    "id": "acure-b01b4hwfo6",
+    "brand": "acure",
+    "name": "סקראב פנים מבהיר (פילינג) – שטיפת פנים עם אצות וחרסית ירוקה",
+    "size": "4 fl oz",
+    "categories": [
+      "טיפוח עור",
+      "פנים",
+      "פילינג",
+      "ניקוי"
+    ],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B01B4HWFO6?tag=nocrueltyil-20",
+        "asin": "B01B4HWFO6",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "image": "assets/img/products/B01B4HWFO6.jpg",
+    "isDiscounted": false
+  },
+  {
+    "id": "acure-b078zhplnr",
+    "brand": "acure",
+    "name": "שמפו אולטרה-לחות עם שמן ארגן (האריזה עשויה להשתנות)",
+    "size": "8 fl oz",
+    "categories": [
+      "שיער",
+      "שמפו",
+      "לחות"
+    ],
+    "isVegan": true,
+    "isPeta": true,
+    "isLB": true,
+    "priceMin": null,
+    "priceMax": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B078ZHPLNR?tag=nocrueltyil-20",
+        "asin": "B078ZHPLNR",
+        "currency": "USD",
+        "priceUSD": null,
+        "freeShipOver": 49,
+        "isDiscounted": false
+      }
+    ],
+    "isKids": false,
+    "image": "assets/img/products/B078ZHPLNR.jpg",
+    "isDiscounted": false
   }
 ]
