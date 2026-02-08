@@ -1,5 +1,1565 @@
 [
   {
+    "id": "grace-stella-b0cycfrzkd",
+    "brand": "grace & stella",
+    "name": "Grace Stella Patches Birthday Bridesmaid",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CYCFRZKD",
+        "asin": "B0CYCFRZKD",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b01dz7c502",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Under",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B01DZ7C502",
+        "asin": "B01DZ7C502",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b09tppz11j",
+    "brand": "grace & stella",
+    "name": "Grace Stella Blue Pairs Cruelty Free",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B09TPPZ11J",
+        "asin": "B09TPPZ11J",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0bnqvncm3",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Under",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0BNQVNCM3",
+        "asin": "B0BNQVNCM3",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dw4k7ssj",
+    "brand": "grace & stella",
+    "name": "Grace Stella Under Mask Variety",
+    "productType": "mask",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DW4K7SSJ",
+        "asin": "B0DW4K7SSJ",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dscndz28",
+    "brand": "grace & stella",
+    "name": "Grace Stella Patches Circles Puffiness",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DSCNDZ28",
+        "asin": "B0DSCNDZ28",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cpt8w3rv",
+    "brand": "grace & stella",
+    "name": "Grace Stella Purple Treatment Gels",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CPT8W3RV",
+        "asin": "B0CPT8W3RV",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0d5yqv86x",
+    "brand": "grace & stella",
+    "name": "Grace Stella Patches Restoring Hyaluronic",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0D5YQV86X",
+        "asin": "B0D5YQV86X",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0d5ysvqnj",
+    "brand": "grace & stella",
+    "name": "Grace Stella Patches Restoring Hyaluronic",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0D5YSVQNJ",
+        "asin": "B0D5YSVQNJ",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cv1fzdst",
+    "brand": "grace & stella",
+    "name": "Grace Stella Under Masks Circles",
+    "productType": "mask",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CV1FZDST",
+        "asin": "B0CV1FZDST",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cv8ntvhq",
+    "brand": "grace & stella",
+    "name": "Grace Stella Under Masks Circles",
+    "productType": "mask",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CV8NTVHQ",
+        "asin": "B0CV8NTVHQ",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dsg6988y",
+    "brand": "grace & stella",
+    "name": "Grace Stella Peptide Patches Niacinamide",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DSG6988Y",
+        "asin": "B0DSG6988Y",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dsg99cdp",
+    "brand": "grace & stella",
+    "name": "Grace Stella Peptide Patches Niacinamide",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DSG99CDP",
+        "asin": "B0DSG99CDP",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dsg9z9hr",
+    "brand": "grace & stella",
+    "name": "Grace Stella Caffeine Under Patches",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DSG9Z9HR",
+        "asin": "B0DSG9Z9HR",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0d2z76wkg",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Hyaluronic",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0D2Z76WKG",
+        "asin": "B0D2Z76WKG",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dsjnprml",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Hyaluronic",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DSJNPRML",
+        "asin": "B0DSJNPRML",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0d9pmvr92",
+    "brand": "grace & stella",
+    "name": "Grace Stella Caffeine Serum Puffing",
+    "productType": "serum",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0D9PMVR92",
+        "asin": "B0D9PMVR92",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0d94tjmrt",
+    "brand": "grace & stella",
+    "name": "Grace Stella Caffeine Eye Cream",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0D94TJMRT",
+        "asin": "B0D94TJMRT",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dkvvk2dq",
+    "brand": "grace & stella",
+    "name": "Grace Stella Under Brightener Stick",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DKVVK2DQ",
+        "asin": "B0DKVVK2DQ",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cvbglz5s",
+    "brand": "grace & stella",
+    "name": "Grace Stella Stick Reduce Circles",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CVBGLZ5S",
+        "asin": "B0CVBGLZ5S",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cpjlvfrl",
+    "brand": "grace & stella",
+    "name": "Grace Stella Pimple Patches Round",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CPJLVFRL",
+        "asin": "B0CPJLVFRL",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cpjmsnl1",
+    "brand": "grace & stella",
+    "name": "Grace Stella Pimple Patches Multishape",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CPJMSNL1",
+        "asin": "B0CPJMSNL1",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cpjpgctp",
+    "brand": "grace & stella",
+    "name": "Grace Stella Pimple Patches Heart",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CPJPGCTP",
+        "asin": "B0CPJPGCTP",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cws2hp4q",
+    "brand": "grace & stella",
+    "name": "Grace Stella Pimple Patches Round",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CWS2HP4Q",
+        "asin": "B0CWS2HP4Q",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cws1cks7",
+    "brand": "grace & stella",
+    "name": "Grace Stella Pimple Patches Multishape",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CWS1CKS7",
+        "asin": "B0CWS1CKS7",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cws1typ4",
+    "brand": "grace & stella",
+    "name": "Grace Stella Pimple Patches Heart",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CWS1TYP4",
+        "asin": "B0CWS1TYP4",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dxr4yyp3",
+    "brand": "grace & stella",
+    "name": "Grace Stella Winning Pimple Patches",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DXR4YYP3",
+        "asin": "B0DXR4YYP3",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dxrnxzcb",
+    "brand": "grace & stella",
+    "name": "Grace Stella Hydrocolloid Covers Multishape",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DXRNXZCB",
+        "asin": "B0DXRNXZCB",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dxrrh8gf",
+    "brand": "grace & stella",
+    "name": "Grace Stella Hydrocolloid Covers Heart",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DXRRH8GF",
+        "asin": "B0DXRRH8GF",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dxqv5fmy",
+    "brand": "grace & stella",
+    "name": "Grace Stella Hydrocolloid Covers Clear",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DXQV5FMY",
+        "asin": "B0DXQV5FMY",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dxqqt52n",
+    "brand": "grace & stella",
+    "name": "Grace Stella Hydrocolloid Covers Multishape",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DXQQT52N",
+        "asin": "B0DXQQT52N",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dxr97vxf",
+    "brand": "grace & stella",
+    "name": "Grace Stella Winning Pimple Patches",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DXR97VXF",
+        "asin": "B0DXR97VXF",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0f1w88fnw",
+    "brand": "grace & stella",
+    "name": "Grace Stella Winning Multi Size Patches",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0F1W88FNW",
+        "asin": "B0F1W88FNW",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0f1wvsy1j",
+    "brand": "grace & stella",
+    "name": "Grace Stella Winning Multi Size Patches",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0F1WVSY1J",
+        "asin": "B0F1WVSY1J",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cycljdst",
+    "brand": "grace & stella",
+    "name": "Grace Stella Dew Tox Chill Skin",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CYCLJDST",
+        "asin": "B0CYCLJDST",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cyckzcf7",
+    "brand": "grace & stella",
+    "name": "Grace Stella Beauty Gift Set",
+    "productType": "set",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CYCKZCF7",
+        "asin": "B0CYCKZCF7",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cwr26p8p",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Foot Peeling",
+    "productType": "foot_care",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CWR26P8P",
+        "asin": "B0CWR26P8P",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cwrp87pt",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Foot Peeling",
+    "productType": "foot_care",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CWRP87PT",
+        "asin": "B0CWRP87PT",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cwrgkxhp",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Foot Peeling",
+    "productType": "foot_care",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CWRGKXHP",
+        "asin": "B0CWRGKXHP",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cwrjqd6q",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Foot Peeling",
+    "productType": "foot_care",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CWRJQD6Q",
+        "asin": "B0CWRJQD6Q",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0bryl3xl2",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Butter",
+    "productType": "balm",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0BRYL3XL2",
+        "asin": "B0BRYL3XL2",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0cvm7qzb9",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Butter",
+    "productType": "balm",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CVM7QZB9",
+        "asin": "B0CVM7QZB9",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0csdw3p39",
+    "brand": "grace & stella",
+    "name": "Grace Stella Cleansing Balm Makeup",
+    "productType": "balm",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CSDW3P39",
+        "asin": "B0CSDW3P39",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0csdvkk3n",
+    "brand": "grace & stella",
+    "name": "Grace Stella Cleansing Balm Makeup",
+    "productType": "balm",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CSDVKK3N",
+        "asin": "B0CSDVKK3N",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b07yp1z77f",
+    "brand": "grace & stella",
+    "name": "Grace Stella Award Winning Hydrating",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B07YP1Z77F",
+        "asin": "B07YP1Z77F",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b07csbynwg",
+    "brand": "grace & stella",
+    "name": "Grace Stella Co Collection Facial",
+    "productType": "set",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B07CSBYNWG",
+        "asin": "B07CSBYNWG",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b01my4l8bv",
+    "brand": "grace & stella",
+    "name": "Grace Stella Wrinkle Pads Patches",
+    "productType": "patch",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B01MY4L8BV",
+        "asin": "B01MY4L8BV",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0f6ts5hvh",
+    "brand": "grace & stella",
+    "name": "Grace Stella Hypochlorous Acid Spray",
+    "productType": "spray",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0F6TS5HVH",
+        "asin": "B0F6TS5HVH",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0f6x8bzm5",
+    "brand": "grace & stella",
+    "name": "Grace Stella Hypochlorous Acid Spray",
+    "productType": "spray",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0F6X8BZM5",
+        "asin": "B0F6X8BZM5",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0dq17j5yw",
+    "brand": "grace & stella",
+    "name": "Grace Stella Disposable Facial Towels",
+    "productType": "other",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DQ17J5YW",
+        "asin": "B0DQ17J5YW",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0fjsnwnlw",
+    "brand": "grace & stella",
+    "name": "Grace Stella Brightener Cooling Rollerball",
+    "productType": "tool",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0FJSNWNLW",
+        "asin": "B0FJSNWNLW",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
+    "id": "grace-stella-b0fjsq3f1v",
+    "brand": "grace & stella",
+    "name": "Grace Stella Brightener Quartz Rollerball",
+    "productType": "tool",
+    "categories": [],
+    "isVegan": true,
+    "isCrueltyFree": true,
+    "priceMin": null,
+    "priceMax": null,
+    "isDiscounted": null,
+    "discountPct": null,
+    "listPriceUSD": null,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0FJSQ3F1V",
+        "asin": "B0FJSQ3F1V",
+        "currency": "USD",
+        "priceUSD": null,
+        "listPriceUSD": null,
+        "discountPct": null,
+        "isDiscounted": null,
+        "freeShipOver": 49,
+        "freeShipToIsrael": null
+      }
+    ],
+    "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
+  },
+  {
     "id": "acure-b0dzdddj4z",
     "brand": "acure",
     "name": "Acure Vivacious Shampoo Conditioner Set",
