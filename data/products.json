@@ -28,7 +28,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0DHXYW6XM.jpg"
   },
   {
@@ -118,7 +118,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0F8P8LYCW.jpg"
   },
   {
@@ -896,7 +896,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B003VJQKSS.jpg"
   },
   {
@@ -927,7 +927,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B003VJXUM2.jpg"
   },
   {
@@ -958,7 +958,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B003VJXUFO.jpg"
   },
   {
@@ -988,7 +988,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B003VJXUK4.jpg"
   },
   {
@@ -1048,7 +1048,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B003VJTRFQ.jpg"
   },
   {
@@ -1139,7 +1139,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0BTYCFCK7.jpg"
   },
   {
@@ -1169,7 +1169,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0BXPHYQGC.jpg"
   },
   {
@@ -1352,7 +1352,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0BTYBVLFW.jpg"
   },
   {
@@ -1656,7 +1656,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0BJ74DJXG.jpg"
   },
   {
@@ -1716,7 +1716,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0BZX2RLNX.jpg"
   },
   {
@@ -1745,7 +1745,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDVQBZK.jpg"
   },
   {
@@ -1804,7 +1804,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDWY381.jpg"
   },
   {
@@ -1924,7 +1924,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0C7C8BZLM.jpg"
   },
   {
@@ -2046,7 +2046,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDWP9SY.jpg"
   },
   {
@@ -2107,7 +2107,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDXLPDP.jpg"
   },
   {
@@ -2137,7 +2137,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDXPF98.jpg"
   },
   {
@@ -2168,7 +2168,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDYN1Z6.jpg"
   },
   {
@@ -2198,7 +2198,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDY4JY3.jpg"
   },
   {
@@ -2288,7 +2288,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0CSDXHTH9.jpg"
   },
   {
@@ -2319,7 +2319,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0FN7QM1VP.jpg"
   },
   {
@@ -2349,7 +2349,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0FN4M2WGY.jpg"
   },
   {
@@ -2563,7 +2563,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0C7CBDHFJ.jpg"
   },
   {
@@ -2593,7 +2593,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0D6ZGWB7K.jpg"
   },
   {
@@ -2626,7 +2626,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0D83ZWN4Y.jpg"
   },
   {
@@ -2656,7 +2656,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0DB69TSLB.jpg"
   },
   {
@@ -2719,7 +2719,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0D6GYDVL5.jpg"
   },
   {
@@ -2846,7 +2846,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0D8WPDLGQ.jpg"
   },
   {
@@ -2878,7 +2878,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0D8WNP97B.jpg"
   },
   {
@@ -2911,7 +2911,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0DB6BWSCW.jpg"
   }
 ]
