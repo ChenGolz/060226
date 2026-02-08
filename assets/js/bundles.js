@@ -14,7 +14,7 @@
 (function(){
   'use strict';
 
-  try { window.KBWG_BUNDLES_BUILD = '2026-02-08-v25'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
+  try { window.KBWG_BUNDLES_BUILD = '2026-02-06-v24'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
 
   var PRODUCTS_PATH = 'data/products.json';
   var BRANDS_PATH = 'data/intl-brands.json';
@@ -332,43 +332,35 @@
     };
   }
 
-  function hasFreeShippingToIsrael(product, offer){
-    var o = offer || {};
-    var p = product || {};
-    // Support multiple possible field names (your JSON may vary)
-    return (
-      isTrueFlag(o.freeShippingToIsrael) ||
-      isTrueFlag(o.freeshippingtoisrael) ||
-      isTrueFlag(o.freeShipToIsrael) ||
-      isTrueFlag(o.freeShipToIL) ||
-      isTrueFlag(o.freeShipToIsr) ||
-      isTrueFlag(p.freeShippingToIsrael) ||
-      isTrueFlag(p.freeshippingtoisrael) ||
-      isTrueFlag(p.freeShipToIsrael) ||
-      isTrueFlag(p.freeShipToIL) ||
-      isTrueFlag(p.freeShipToIsr)
-    );
-  }
-
-
-
-    function offerFreeShip49(product){
+  function offerFreeShip49(product){
     if(!product || !Array.isArray(product.offers)) return null;
 
-    // collect eligible offers (ONLY freeShipOver === 49; exclude "free shipping to Israel" tagged items)
+    // Only include offers with free shipping over $49 (and NOT freeShipToIsrael:true)
+    // We intentionally exclude offers without freeShipOver, even if they might be free shipping in other ways.
     var eligAmazon = [];
     var eligAny = [];
+
+    function hasFreeShipToIsrael(o){
+      if(!o) return false;
+      return isTrueFlag(o.freeShipToIsrael)
+        || isTrueFlag(o.freeShippingToIsrael)
+        || isTrueFlag(o.freeShipToisrael)
+        || isTrueFlag(o.freeshippingtoisrael)
+        || isTrueFlag(o.freeShipIL)
+        || isTrueFlag(o.freeShipIsrael);
+    }
 
     for(var i=0;i<product.offers.length;i++){
       var o = product.offers[i];
       if(!o || !o.url || !isNum(o.priceUSD)) continue;
 
-      // Exclude any item explicitly marked as free shipping to Israel
-      if(hasFreeShippingToIsrael(product, o)) continue;
+      // Exclude any "freeShipToIsrael" marked offers/products (any variant key)
+      if(hasFreeShipToIsrael(o) || (product && hasFreeShipToIsrael(product))) continue;
 
-      // Must have freeShipOver = 49 either on offer or on product
       var fsRaw = (o.freeShipOver != null) ? o.freeShipOver : (product && product.freeShipOver != null ? product.freeShipOver : null);
       var fs = Number(fsRaw);
+
+      // Must explicitly have freeShipOver === 49
       if(!isFinite(fs) || fs !== FREE_SHIP_OVER_USD) continue;
 
       // normalize
@@ -397,6 +389,8 @@
     // 2) Any eligible offer (campaign first)
     return pickBest(eligAny);
   }
+
+
 
   function eligibleProduct(p){
     var o = offerFreeShip49(p);
@@ -1221,511 +1215,404 @@
   }
 
   // ===== Bundles builder =====
+
   function buildBundlesFromPool(allEligible){
-  // Build the 10 curated bundles (plus custom builder is added elsewhere).
-  // IMPORTANT:
-  //  - Each curated bundle uses keyword-based matching (Hebrew/English) AND slot-based product types.
-  //  - Each product type appears at most once per bundle (slots are unique; fillers also avoid type repeats).
-  //  - We still keep the app invariant: a product appears in at most ONE bundle globally (so swap logic stays consistent).
+    // Build preset bundles first (only if we can reach $52–$60), then generate many more bundles
+    // from the remaining eligible products. Each bundle:
+    //  - Only uses products with freeShipOver === 49 (already filtered in eligibleProduct)
+    //  - Total is between BUNDLE_MIN and BUNDLE_MAX
+    //  - Maximizes number of products inside the range
+    //  - Never contains the same product-type twice (e.g., no 2 shampoos, no 2 patches)
+    var pool = allEligible.slice().sort(function(a,b){ return (a._priceUSD||0) - (b._priceUSD||0); });
 
-  var pool = allEligible.slice().sort(function(a,b){ return (a._priceUSD||0) - (b._priceUSD||0); });
+    function cheapestFirst(a,b){
+      var ac = (a && a._offer && a._offer.url && isCampaignUrl(a._offer.url)) ? 1 : 0;
+      var bc = (b && b._offer && b._offer.url && isCampaignUrl(b._offer.url)) ? 1 : 0;
+      if(ac !== bc) return bc - ac;
+      return (a._priceUSD||0) - (b._priceUSD||0);
+    }
 
-  function takeItems(items){
-    (items || []).forEach(function(it){
-      var idx = pool.findIndex(function(p){ return p._id === it._id; });
-      if(idx >= 0) pool.splice(idx, 1);
-    });
-  }
-
-  function toBundle(id, title, subtitle, items){
-    return { id: id, title: title, subtitle: subtitle, items: (items || []).slice() };
-  }
-
-  function kwRegexPred(re){
-    return function(p){
+    function typeKey(p){
       var n = (p && p._name) ? String(p._name) : '';
-      return re.test(n);
-    };
-  }
+      var low = n.toLowerCase();
+      // helper for name matching (he/en)
+      function hasRx(rx){ try{ return rx.test(n) || rx.test(low); }catch(e){ return false; } }
 
-  function hasName(p, re){
-    var n = (p && p._name) ? String(p._name) : '';
-    return re.test(n);
-  }
+      // Patches — ALL patches share one type (per user request)
+      if(hasAnyCat(p,['patch']) || /מדבקות/.test(n) || /\bpatch(es)?\b/i.test(n)) return 'patch';
 
-  // Slot/type predicates (best-effort, works even if categories are missing in data)
-  function isFaceCleanser(p){
-    if(!p) return false;
-    var n = p._name || '';
-    if(isFace(p) && (/\bcleanser\b|\bwash\b|\bfoam\b|\bfoaming\b|\bgel\b|\bsoap\b/i.test(n) || /(תרחיץ|סבון|ניקוי|מקציף|ג׳ל ניקוי|קצף ניקוי)/.test(n))) return true;
-    // sometimes "cleansing" isn't tagged as face
-    return (/\bcleanser\b|\bface wash\b|\bcleansing\b/i.test(n) || /(תרחיץ|סבון פנים|ניקוי פנים)/.test(n));
-  }
+      // Makeup removal & cleansing (detect before general makeup)
+      if(/מיסלר/.test(n) || /\bmicellar\b/i.test(n)) return 'micellar';
+      if(/מסיר/.test(n) || /\bremover\b/i.test(n)) return (/עיניים/.test(n) || /\beye\b/i.test(n)) ? 'eye-remover' : 'makeup-remover';
+      if(/מגבונ/.test(n) || /\bwipes?\b/i.test(n)) return 'wipes';
 
-  function isFaceToner(p){
-    if(!p) return false;
-    var n = p._name || '';
-    return (/\btoner\b|\bastringent\b|\bskin toner\b/i.test(n) || /(מי פנים|טונר)/.test(n));
-  }
+      // Sun / SPF
+      if(hasAnyCat(p,['sun','spf','sunscreen','suncare']) || /\bspf\b/i.test(n) || /\bsunscreen\b/i.test(n)){
+        if(/שפתון|lip balm|lipstick|ליפ\b|balm\b/i.test(n) && (/\bspf\b/i.test(n) || /\bsun\b/i.test(n))) return 'lip-spf';
+        if(/ספריי|spray\b/i.test(n)) return 'sun-spray';
+        if(/אפטר\s*סאן|after\s*sun/i.test(n)) return 'after-sun';
+        // keep one sunscreen type (avoid 2 SPF items in one bundle)
+        return 'sunscreen';
+      }
 
-  function isFaceMoisturizer(p){
-    return isFaceCream(p) || (isFace(p) && (/\bmoisturizer\b|\bcream\b|\blotion\b/i.test(p._name||'') || /(קרם לחות|לחות)/.test(p._name||'')));
-  }
+      // Hair
+      if(isHair(p)){
+        if(hasAnyCat(p,['shampoo']) || /שמפו/.test(n) || /\bshampoo\b/i.test(n)){
+          if(hasAnyCat(p,['shampoo-conditioner']) || /מרכך/.test(n) || /\bconditioner\b/i.test(n) || /שמפו\s*ומ(?:ר|R)כך/.test(n)) return 'shampoo-conditioner';
+          return 'shampoo';
+        }
+        if(hasAnyCat(p,['conditioner']) || /מרכך/.test(n) || /\bconditioner\b/i.test(n)) return 'conditioner';
+        if((hasAnyCat(p,['mask']) && isHair(p)) || (/מסכה/.test(n) || /\bmask\b|\bmasque\b/i.test(n))) return 'hair-mask';
+        if((hasAnyCat(p,['serum']) && isHair(p)) || /סרום/.test(n) || /\bserum\b/i.test(n) || /oil\b|שמן/.test(low)) return 'hair-serum';
+        if(/גלייז|glaze\b|gel\b|g[’'`]?el\b|מוס|mousse\b|spray\b|ספריי/.test(n)) return 'hair-styling';
+        if(/קרם/.test(n) || /\bcream\b|\blotion\b|\bleave[-\s]?in\b/i.test(n)) return 'hair-cream';
+        return 'hair-other';
+      }
 
-  function isClayMask(p){
-    if(!p) return false;
-    var n = p._name || '';
-    return (/\bclay\b|\bmud\b/i.test(n) || /(חימר|בוץ)/.test(n)) && (isFaceMask(p) || isFace(p) || /פנים/.test(n));
-  }
+      // Makeup
+      if(isMakeup(p)){
+        if(/פריימר/.test(n) || /\bprimer\b/i.test(n)) return 'primer';
+        if(/מייק/.test(n) || /מייק-?אפ/.test(n) || /\bfoundation\b/i.test(n)) return 'foundation';
+        if(/קונסילר/.test(n) || /\bconcealer\b/i.test(n)) return 'concealer';
+        if(/פודרה/.test(n) || /\bpowder\b/i.test(n)) return 'powder';
+        if(/ספריי\s*מקבע|מקבע/.test(n) || /\bsetting\s*spray\b|\bfix(ing)?\s*spray\b/i.test(n)) return 'setting-spray';
+        if(/אייליינר/.test(n) || /\beyeliner\b/i.test(n)) return 'eyeliner';
+        if(/מסקרה/.test(n) || /\bmascara\b/i.test(n)) return 'mascara';
+        if(/שפתון|גלוס|lipstick|gloss|lip\b/i.test(n)) return 'lip-makeup';
+        return 'makeup-other';
+      }
 
-  function isHairSerum(p){
-    if(!p) return false;
-    var n = p._name || '';
-    return (/\bserum\b/i.test(n) || /סרום/.test(n)) && (isHair(p) || /שיער/.test(n));
-  }
+      // Face / skincare (not hair/makeup already)
+      if(isFace(p)){
+        if(hasAnyCat(p,['cleanser','soap']) || /סבון|תרחיץ/.test(n) || /\bcleanser\b|\bwash\b|\bsoap\b/i.test(n)){
+          if(/מקציף/.test(n) || /\bfoam\b/i.test(n)) return 'cleanser-foam';
+          return 'cleanser';
+        }
+        if(hasAnyCat(p,['toner']) || /מי\s*פנים/.test(n) || /\btoner\b/i.test(n)) return 'toner';
+        if(hasAnyCat(p,['serum']) || /סרום/.test(n) || /\bserum\b/i.test(n)) return 'serum';
+        if(hasAnyCat(p,['mask']) || /מסכה/.test(n) || /\bmask\b|\bmasque\b/i.test(n)){
+          if(/חימר/.test(n) || /\bclay\b/i.test(n)) return 'clay-mask';
+          return 'face-mask';
+        }
+        if(hasAnyCat(p,['moisturizer','cream']) || /קרם\s*לחות/.test(n) || /\bmoisturizer\b|\bcream\b/i.test(n)) return 'moisturizer';
+        if(/עיניים/.test(n) || /\beye\b/i.test(n) || hasAnyCat(p,['eyes','eye'])) return 'eye-care';
+        return 'skincare-other';
+      }
 
-  function isHairCream(p){
-    if(!p) return false;
-    var n = p._name || '';
-    return (/\bcream\b|\bleave[-\s]*in\b|\bmoisturizing\b/i.test(n) || /(קרם|לחות)/.test(n)) && (isHair(p) || /שיער/.test(n));
-  }
+      // Body / hygiene
+      if(isBody(p) || isTeeth(p)){
+        if(/ידיים/.test(n) || /\bhand\b/i.test(n)) return 'hand-cream';
+        if(/רגליים/.test(n) || /\bfoot\b/i.test(n)) return 'foot-cream';
+        if(/דאודורנט/.test(n) || /\bdeodorant\b/i.test(n)) return 'deodorant';
+        if(/סבון|רחצה|מקלחת/.test(n) || /\bbody\s*wash\b|\bwash\b|\bsoap\b|\bshower\b/i.test(n)) return 'body-wash';
+        if(/קרם/.test(n) || /\blotion\b|\bcream\b/i.test(n)) return 'body-cream';
+        if(isTeeth(p)) return 'teeth';
+        return 'body-other';
+      }
 
-  function isHairGlaze(p){
-    if(!p) return false;
-    var n = p._name || '';
-    return (/\bglaze\b|\bgel\b|\bjelly\b|\bdefining\b|\bstyle\b/i.test(n) || /(גלייז|גלייז׳|ג׳ל|ג׳לי|סטיילינג|לעיצוב)/.test(n)) && (isHair(p) || /שיער/.test(n));
-  }
-
-  function isSpotTreatment(p){
-    if(!p) return false;
-    var n = p._name || '';
-    var acne = (/\bacne\b|\bpimple\b|\bblemish\b|\bzit\b|\bspot\b/i.test(n) || /(אקנה|פצעון|פצעונים|נקודתי|ייבוש)/.test(n));
-    var topical = (/\bgel\b|\bcream\b|\bserum\b|\blotion\b/i.test(n) || /(קרם|ג׳ל|סרום)/.test(n));
-    return acne && topical;
-  }
-
-  function isPimplePatch(p){
-    if(!p) return false;
-    var n = p._name || '';
-    var patch = (/\bpatch(es)?\b|\bsticker(s)?\b/i.test(n) || /(מדבקה|מדבקות|פלסטר)/.test(n));
-    var acne = (/\bacne\b|\bpimple\b|\bblemish\b|\bzit\b/i.test(n) || /(אקנה|פצעון|פצעונים)/.test(n));
-    return patch && acne;
-  }
-
-  function isNightPatch(p){
-    if(!p) return false;
-    var n = p._name || '';
-    return isPimplePatch(p) && (/\bovernight\b|\bnight\b/i.test(n) || /לילה/.test(n));
-  }
-
-  function isClearPatch(p){
-    if(!p) return false;
-    var n = p._name || '';
-    return isPimplePatch(p) && (/\bclear\b|\binvisible\b|\btransparent\b/i.test(n) || /(שקוף|שקופה)/.test(n));
-  }
-
-  function isPrimer(p){
-    return /\bprimer\b/i.test(p._name||'') || /פריימר/.test(p._name||'');
-  }
-  function isFoundation(p){
-    var n = p._name || '';
-    if(/\bconcealer\b/i.test(n) || /קונסילר/.test(n)) return false;
-    return /\bfoundation\b|\bmake[-\s]*up\b/i.test(n) || /(מייק|מייק\W?אפ|מייק\-אפ)/.test(n);
-  }
-  function isConcealer(p){
-    return /\bconcealer\b/i.test(p._name||'') || /קונסילר/.test(p._name||'');
-  }
-  function isPowder(p){
-    return /\bpowder\b|\bpoudre\b/i.test(p._name||'') || /(פודרה|אבקה)/.test(p._name||'');
-  }
-  function isSettingSpray(p){
-    var n = p._name || '';
-    return /\bsetting\b.*\bspray\b|\bfix(ing)?\b.*\bspray\b|\bsetting mist\b/i.test(n) || /(ספריי מקבע|ספריי|מקבע)/.test(n);
-  }
-
-  function isLipBalm(p){
-    var n = p._name || '';
-    return /\blip\b.*\bbalm\b|\blip balm\b/i.test(n) || /(שפתון|באלם|שפתיים)/.test(n);
-  }
-
-  function isSunscreenFace(p){
-    var n = p._name || '';
-    var sun = hasCat(p,'sun') || /\bspf\b|\bsunscreen\b|\bsun screen\b|\bsunblock\b/i.test(n) || /(קרם הגנה|הגנה מהשמש|שמש)/.test(n);
-    var face = isFace(p) || /\bface\b/i.test(n) || /פנים/.test(n);
-    return sun && face;
-  }
-  function isSunscreenBodySpray(p){
-    var n = p._name || '';
-    var sun = hasCat(p,'sun') || /\bspf\b|\bsunscreen\b|\bsun screen\b|\bsunblock\b/i.test(n) || /(קרם הגנה|הגנה מהשמש|שמש)/.test(n);
-    var spray = /\bspray\b|\baerosol\b/i.test(n) || /ספריי/.test(n);
-    var body = isBody(p) || /\bbody\b/i.test(n) || /גוף/.test(n);
-    return sun && spray && body;
-  }
-  function isAfterSun(p){
-    var n = p._name || '';
-    return /\bafter\s*sun\b|\baftersun\b|\bsoothing\b|\baloe\b/i.test(n) || /(אפטר סאן|אפטרא? סאן|אחרי שמש|אלוורה|מרגיע)/.test(n);
-  }
-
-  function isMicellar(p){
-    var n = p._name || '';
-    return /\bmicellar\b/i.test(n) || /(מיסלרי|מיצלרי)/.test(n);
-  }
-  function isEyeRemover(p){
-    var n = p._name || '';
-    return /\beye\b.*\bmakeup\b.*\bremover\b|\beye makeup remover\b/i.test(n) || /(מסיר איפור עיניים|עיניים)/.test(n) && /(מסיר|רימובר)/i.test(n);
-  }
-  function isWipes(p){
-    var n = p._name || '';
-    return /\bwipes?\b/i.test(n) || /(מגבונים)/.test(n);
-  }
-  function isFoamingFaceWash(p){
-    var n = p._name || '';
-    return isFaceCleanser(p) && (/\bfoam\b|\bfoaming\b/i.test(n) || /(מקציף|קצף)/.test(n));
-  }
-
-  function isBaby(p){
-    return isKids(p) || /\bbaby\b|\binfant\b/i.test(p._name||'') || /(תינוק|לתינוק|בייבי)/.test(p._name||'');
-  }
-
-  function isDiaperCream(p){
-    var n = p._name || '';
-    return /(משחת החתלה|החתלה)/.test(n) || /\bdiaper\b.*\bcream\b|\bnappy\b/i.test(n);
-  }
-  function isBabySoap(p){
-    var n = p._name || '';
-    return isBaby(p) && (/(אל-סבון|אל סבון|סבון)/.test(n) || /\bsoap\b|\bbody wash\b/i.test(n));
-  }
-  function isBabyShampoo(p){
-    var n = p._name || '';
-    return isBaby(p) && (/(שמפו)/.test(n) || /\bshampoo\b/i.test(n));
-  }
-  function isBabyLotion(p){
-    var n = p._name || '';
-    return isBaby(p) && (/(תחליב|לושן|קרם גוף)/.test(n) || /\blotion\b|\bbody lotion\b/i.test(n));
-  }
-
-  // Body-care
-  function isBodyWash(p){
-    var n = p._name || '';
-    return isBody(p) && (/\bbody wash\b|\bshower\b|\bsoap\b/i.test(n) || /(סבון גוף|סבון|רחצה|מקלחת)/.test(n));
-  }
-  function isBodyCream(p){
-    var n = p._name || '';
-    return isBody(p) && (/\bbody\b.*\bcream\b|\blotion\b/i.test(n) || /(קרם גוף|תחליב גוף)/.test(n));
-  }
-  function isHandCream(p){
-    var n = p._name || '';
-    return /\bhand\b.*\bcream\b/i.test(n) || /(קרם ידיים)/.test(n);
-  }
-  function isFootCream(p){
-    var n = p._name || '';
-    return /\bfoot\b.*\bcream\b/i.test(n) || /(קרם רגליים)/.test(n);
-  }
-
-  // Men-care
-  function isMenKW(p){
-    return isMen(p) || /\bmen\b|\bmens\b/i.test(p._name||'') || /(לגבר|לגברים|גברים)/.test(p._name||'');
-  }
-  function isMenFaceWash(p){
-    return isMenKW(p) && isFaceCleanser(p);
-  }
-  function isMenMoisturizer(p){
-    return isMenKW(p) && isFaceMoisturizer(p);
-  }
-  function isMenSunscreen(p){
-    return isMenKW(p) && (hasCat(p,'sun') || /\bspf\b|\bsunscreen\b/i.test(p._name||'') || /(קרם הגנה)/.test(p._name||''));
-  }
-
-  // Salt-free (after straightening)
-  var KW_SALT_FREE = kwRegexPred(/(ללא\s*מלח|ללא\s*מלחים|salt[-\s]*free)/i);
-  var KW_CURLS = kwRegexPred(/(תלתלים|\bcurls?\b)/i);
-  var KW_OILY = kwRegexPred(/(עור\s*שמן|שמן\b|\boily\b|\bsebum\b|\boil\s*control\b|\bshine\b)/i);
-  var KW_ACNE = kwRegexPred(/(פצעון|פצעונים|אקנה|\bacne\b|\bpimple\b|\bblemish\b|\bzit\b)/i);
-  var KW_MAKEUP_BASE = kwRegexPred(/(מייק|מייק\W?אפ|מייק\-אפ|\bmake[-\s]*up\b|\bfoundation\b|\bprimer\b|\bconcealer\b|\bsetting\b|\bpowder\b)/i);
-  var KW_MEN = kwRegexPred(/(לגבר|לגברים|גברים|\bmen\b|\bmens\b|men's)/i);
-  var KW_BABY = kwRegexPred(/(תינוק|לתינוק|בייבי|ילדים|לילדים|\bbaby\b|\binfant\b|\bkids?\b)/i);
-  var KW_BODY = kwRegexPred(/(גוף|קרם גוף|סבון גוף|ידיים|רגליים|\bbody\b|\bhand\b|\bfoot\b|\bsoap\b|\blotion\b|\bwash\b)/i);
-  var KW_REMOVAL = kwRegexPred(/(מסיר|מיסלרי|מיצלרי|מגבונים|\bmicellar\b|\bremover\b|\bwipes?\b)/i);
-  var KW_SUN = kwRegexPred(/(spf|sunscreen|sun screen|sunblock|שמש|קרם הגנה|הגנה מהשמש|אפטר סאן|after\s*sun)/i);
-
-  // Infer a coarse product type (used to prevent duplicates in fillers)
-  function inferType(p){
-    if(!p) return 'other';
-    if(isShampoo(p) || /שמפו/.test(p._name||'')) return 'shampoo';
-    if(isConditioner(p) || /מרכך/.test(p._name||'')) return 'conditioner';
-    if(isHairMask(p) || /מסכה/.test(p._name||'') && isHair(p)) return 'hair-mask';
-    if(isHairSerum(p)) return 'hair-serum';
-    if(isHairCream(p)) return 'hair-cream';
-    if(isHairGlaze(p)) return 'hair-glaze';
-
-    if(isFaceCleanser(p)) return 'face-cleanser';
-    if(isFaceToner(p)) return 'face-toner';
-    if(isFaceMoisturizer(p)) return 'face-moisturizer';
-    if(isClayMask(p)) return 'clay-mask';
-    if(isSpotTreatment(p)) return 'spot-treatment';
-    if(isNightPatch(p)) return 'patch-night';
-    if(isPimplePatch(p)) return 'patch';
-    if(isPrimer(p)) return 'primer';
-    if(isFoundation(p)) return 'foundation';
-    if(isConcealer(p)) return 'concealer';
-    if(isPowder(p)) return 'powder';
-    if(isSettingSpray(p)) return 'setting-spray';
-
-    if(isBabySoap(p)) return 'baby-soap';
-    if(isBabyShampoo(p)) return 'baby-shampoo';
-    if(isBabyLotion(p)) return 'baby-lotion';
-    if(isDiaperCream(p)) return 'diaper-cream';
-
-    if(isBodyWash(p)) return 'body-wash';
-    if(isBodyCream(p)) return 'body-cream';
-    if(isHandCream(p)) return 'hand-cream';
-    if(isFootCream(p)) return 'foot-cream';
-
-    if(isSunscreenFace(p)) return 'sunscreen-face';
-    if(isSunscreenBodySpray(p)) return 'sunscreen-body-spray';
-    if(isLipBalm(p) && /\bspf\b/i.test(p._name||'') || /(SPF)/i.test(p._name||'')) return 'spf-lip';
-    if(isAfterSun(p)) return 'after-sun';
-
-    if(isMicellar(p)) return 'micellar';
-    if(isEyeRemover(p)) return 'eye-remover';
-    if(isWipes(p)) return 'wipes';
-
-    // fallback coarse type
-    if(isHair(p)) return 'hair-other';
-    if(isFace(p)) return 'face-other';
-    if(isBody(p)) return 'body-other';
-    return 'other';
-  }
-
-  function pickBestOne(cands){
-    if(!cands || !cands.length) return null;
-    cands.sort(function(a,b){
-      var au = (a && a._offer && a._offer.url) ? a._offer.url : '';
-      var bu = (b && b._offer && b._offer.url) ? b._offer.url : '';
-      var ac = isCampaignUrl(au) ? 1 : 0;
-      var bc = isCampaignUrl(bu) ? 1 : 0;
-      if(ac !== bc) return bc - ac;
-      return (a._priceUSD||0) - (b._priceUSD||0);
-    });
-    return cands[0];
-  }
-
-  function pickSlot(poolArr, kwPred, slotPred, usedIds, usedTypes, typeKey){
-    var cands = [];
-    for(var i=0;i<poolArr.length;i++){
-      var p = poolArr[i];
-      if(!p) continue;
-      if(usedIds[p._id]) continue;
-      if(typeKey && usedTypes[typeKey]) continue;
-      if(!kwPred(p)) continue;
-      if(!slotPred(p)) continue;
-      cands.push(p);
-    }
-    var best = pickBestOne(cands);
-    if(!best) return null;
-    usedIds[best._id] = 1;
-    if(typeKey) usedTypes[typeKey] = 1;
-    return best;
-  }
-
-  function greedyFill(poolArr, kwPred, usedIds, usedTypes, totalRef){
-    var total = totalRef.total;
-    if(total >= BUNDLE_MIN - 1e-9) return;
-
-    // candidates: keyword-matching only
-    var cands = poolArr.filter(function(p){ return p && !usedIds[p._id] && kwPred(p); });
-    cands.sort(function(a,b){
-      var au = (a && a._offer && a._offer.url) ? a._offer.url : '';
-      var bu = (b && b._offer && b._offer.url) ? b._offer.url : '';
-      var ac = isCampaignUrl(au) ? 1 : 0;
-      var bc = isCampaignUrl(bu) ? 1 : 0;
-      if(ac !== bc) return bc - ac;
-      return (a._priceUSD||0) - (b._priceUSD||0);
-    });
-
-    for(var i=0;i<cands.length;i++){
-      var p = cands[i];
-      var tk = inferType(p);
-      if(usedTypes[tk]) continue;
-      if(total + (p._priceUSD||0) > BUNDLE_MAX + 1e-9) continue;
-      usedIds[p._id] = 1;
-      usedTypes[tk] = 1;
-      total += (p._priceUSD||0);
-      totalRef.items.push(p);
-      totalRef.total = total;
-      if(total >= BUNDLE_MIN - 1e-9) break;
-    }
-  }
-
-  // Template definitions (10 bundles)
-  // NOTE: subtitles stay short; the UI already shows totals + free-ship tag.
-  var templates = [
-    {
-      id: 'bundle-curls',
-      title: 'חבילת "תלתלים מוגדרים"',
-      subtitle: 'כל המוצרים כוללים "תלתלים" או "curls". כל סוג מוצר מופיע פעם אחת.',
-      kwPred: KW_CURLS,
-      slots: [
-        { key:'shampoo', label:'שמפו לתלתלים', pred:function(p){ return (isShampoo(p) || /שמפו/.test(p._name||'')) && isHair(p); } },
-        { key:'conditioner', label:'מרכך לתלתלים', pred:function(p){ return (isConditioner(p) || /מרכך/.test(p._name||'')) && isHair(p); } },
-        { key:'hair-mask', label:'מסכה לתלתלים', pred:function(p){ return isHairMask(p) || (/מסכה/.test(p._name||'') && isHair(p)); } },
-        { key:'hair-cream', label:'קרם לחות לתלתלים', pred:function(p){ return isHairCream(p); } },
-        { key:'hair-glaze', label:'גלייז לתלתלים', pred:function(p){ return isHairGlaze(p); } }
-      ]
-    },
-    {
-      id: 'bundle-saltfree',
-      title: 'חבילת "שיקום לאחר החלקה"',
-      subtitle: 'כל המוצרים כוללים "ללא מלחים" / "salt-free". כל סוג מוצר מופיע פעם אחת.',
-      kwPred: KW_SALT_FREE,
-      slots: [
-        { key:'shampoo', label:'שמפו ללא מלחים', pred:function(p){ return (isShampoo(p) || /שמפו/.test(p._name||'')) && isHair(p); } },
-        { key:'conditioner', label:'מרכך ללא מלחים', pred:function(p){ return (isConditioner(p) || /מרכך/.test(p._name||'')) && isHair(p); } },
-        { key:'hair-mask', label:'מסכה ללא מלחים', pred:function(p){ return isHairMask(p) || (/מסכה/.test(p._name||'') && isHair(p)); } },
-        { key:'hair-serum', label:'סרום ללא מלחים', pred:function(p){ return isHairSerum(p); } }
-      ]
-    },
-    {
-      id: 'bundle-oily',
-      title: 'חבילת "איזון עור שמן"',
-      subtitle: 'כל המוצרים כוללים מילות מפתח לעור שמן (oily / שמן). כל סוג מוצר מופיע פעם אחת.',
-      kwPred: KW_OILY,
-      slots: [
-        { key:'face-cleanser', label:'סבון פנים לעור שמן', pred:function(p){ return isFaceCleanser(p); } },
-        { key:'face-toner', label:'מי פנים לעור שמן', pred:function(p){ return isFaceToner(p); } },
-        { key:'face-moisturizer', label:'קרם לחות לעור שמן', pred:function(p){ return isFaceMoisturizer(p); } },
-        { key:'clay-mask', label:'מסכת חימר לעור שמן', pred:function(p){ return isClayMask(p); } }
-      ]
-    },
-    {
-      id: 'bundle-acne',
-      title: 'חבילת "טיפול נקודתי בפצעונים"',
-      subtitle: 'כל המוצרים כוללים מילות מפתח לפצעונים (acne / פצעונים). כל סוג מוצר מופיע פעם אחת.',
-      kwPred: KW_ACNE,
-      slots: [
-        { key:'face-cleanser', label:'תרחיץ פנים לעור בעייתי', pred:function(p){ return isFaceCleanser(p); } },
-        { key:'spot-treatment', label:'קרם נקודתי לייבוש פצעונים', pred:function(p){ return isSpotTreatment(p); } },
-        { key:'patch', label:'מדבקות שקופות לפצעונים', pred:function(p){ return isClearPatch(p) || isPimplePatch(p); } },
-        { key:'patch-night', label:'מדבקות לילה לפצעונים', pred:function(p){ return isNightPatch(p) || isPimplePatch(p); } }
-      ]
-    },
-    {
-      id: 'bundle-makeup-base',
-      title: 'חבילת "בסיס מייק-אפ מושלם"',
-      subtitle: 'כל סוג מוצר מופיע פעם אחת (פריימר/מייק-אפ/קונסילר/פודרה/מקבע).',
-      kwPred: KW_MAKEUP_BASE,
-      slots: [
-        { key:'primer', label:'פריימר למייק-אפ', pred:function(p){ return isPrimer(p); } },
-        { key:'foundation', label:'מייק-אפ נוזלי', pred:function(p){ return isFoundation(p); } },
-        { key:'concealer', label:'קונסילר למייק-אפ', pred:function(p){ return isConcealer(p); } },
-        { key:'powder', label:'פודרה לקיבוע המייק-אפ', pred:function(p){ return isPowder(p); } },
-        { key:'setting-spray', label:'ספריי מקבע למייק-אפ', pred:function(p){ return isSettingSpray(p); } }
-      ]
-    },
-    {
-      id: 'bundle-men-face',
-      title: 'חבילת "טיפוח פנים לגבר"',
-      subtitle: 'כל המוצרים כוללים מילות מפתח לגברים (men / לגבר). כל סוג מוצר מופיע פעם אחת.',
-      kwPred: KW_MEN,
-      slots: [
-        { key:'face-cleanser', label:'סבון פנים לגבר', pred:function(p){ return isMenFaceWash(p) || isFaceCleanser(p); } },
-        { key:'face-moisturizer', label:'קרם לחות לגבר', pred:function(p){ return isMenMoisturizer(p) || isFaceMoisturizer(p); } },
-        { key:'sunscreen-face', label:'קרם הגנה לגבר', pred:function(p){ return isMenSunscreen(p) || isSunscreenFace(p); } },
-        { key:'lip', label:'שפתון לחות לגבר', pred:function(p){ return isLipBalm(p); } }
-      ]
-    },
-    {
-      id: 'bundle-baby',
-      title: 'חבילת "הגנה לתינוק"',
-      subtitle: 'כל המוצרים כוללים מילות מפתח לתינוקות/ילדים (baby / תינוק). כל סוג מוצר מופיע פעם אחת.',
-      kwPred: KW_BABY,
-      slots: [
-        { key:'baby-soap', label:'אל-סבון לתינוק', pred:function(p){ return isBabySoap(p); } },
-        { key:'baby-shampoo', label:'שמפו לתינוק', pred:function(p){ return isBabyShampoo(p); } },
-        { key:'baby-lotion', label:'תחליב גוף לתינוק', pred:function(p){ return isBabyLotion(p); } },
-        { key:'diaper-cream', label:'משחת החתלה לתינוק', pred:function(p){ return isDiaperCream(p); } }
-      ]
-    },
-    {
-      id: 'bundle-body-care',
-      title: 'חבילת "פינוק וטיפוח הגוף"',
-      subtitle: 'כל סוג מוצר מופיע פעם אחת (סבון גוף / קרם גוף / ידיים / רגליים).',
-      kwPred: KW_BODY,
-      slots: [
-        { key:'body-wash', label:'סבון גוף טיפולי', pred:function(p){ return isBodyWash(p); } },
-        { key:'body-cream', label:'קרם גוף מזין', pred:function(p){ return isBodyCream(p); } },
-        { key:'hand-cream', label:'קרם ידיים טיפולי', pred:function(p){ return isHandCream(p); } },
-        { key:'foot-cream', label:'קרם רגליים טיפולי', pred:function(p){ return isFootCream(p); } }
-      ]
-    },
-    {
-      id: 'bundle-makeup-removal',
-      title: 'חבילת "ניקוי והסרת איפור"',
-      subtitle: 'כל סוג מוצר מופיע פעם אחת (מיסלרי / עיניים / סבון מקציף / מגבונים).',
-      kwPred: KW_REMOVAL,
-      slots: [
-        { key:'micellar', label:'מים מיסלריים להסרת איפור', pred:function(p){ return isMicellar(p); } },
-        { key:'eye-remover', label:'מסיר איפור עיניים', pred:function(p){ return isEyeRemover(p); } },
-        { key:'face-cleanser', label:'סבון פנים מקציף', pred:function(p){ return isFoamingFaceWash(p); } },
-        { key:'wipes', label:'מגבוני הסרת איפור', pred:function(p){ return isWipes(p); } }
-      ]
-    },
-    {
-      id: 'bundle-sun',
-      title: 'חבילת "הגנה מהשמש"',
-      subtitle: 'כל סוג מוצר מופיע פעם אחת (SPF לפנים/ספריי לגוף/שפתון SPF/אפטר סאן).',
-      kwPred: KW_SUN,
-      slots: [
-        { key:'sunscreen-face', label:'קרם הגנה לפנים (SPF)', pred:function(p){ return isSunscreenFace(p); } },
-        { key:'sunscreen-body-spray', label:'ספריי הגנה לגוף', pred:function(p){ return isSunscreenBodySpray(p); } },
-        { key:'spf-lip', label:'שפתון עם הגנה מהשמש', pred:function(p){ return isLipBalm(p) && (/\bspf\b/i.test(p._name||'') || /(SPF)/i.test(p._name||'') || /שמש|הגנה/.test(p._name||'')); } },
-        { key:'after-sun', label:'קרם "אפטר סאן"', pred:function(p){ return isAfterSun(p); } }
-      ]
-    }
-  ];
-
-  // Build bundles sequentially from the same pool to preserve global uniqueness.
-  // We still attempt to land in the $52–$60 range by adding fillers of NEW types (keyword-matching only).
-  var bundles = [];
-
-  for(var t=0;t<templates.length;t++){
-    var tpl = templates[t];
-
-    var usedIds = {};
-    var usedTypes = {};
-    var items = [];
-
-    // pick one per slot
-    for(var s=0;s<tpl.slots.length;s++){
-      var slot = tpl.slots[s];
-      var picked = pickSlot(pool, tpl.kwPred, slot.pred, usedIds, usedTypes, slot.key);
-      if(picked) items.push(picked);
+      return 'other';
     }
 
-    // optional fill to reach bundle range (without repeating types)
-    var totalRef = { items: items, total: sumUSD(items) };
-    if(totalRef.total < BUNDLE_MIN - 1e-9){
-      greedyFill(pool, tpl.kwPred, usedIds, usedTypes, totalRef);
-      items = totalRef.items;
+    function repsByType(list, usedTypes){
+      var best = {};
+      for(var i=0;i<list.length;i++){
+        var p = list[i];
+        var t = typeKey(p);
+        if(usedTypes && usedTypes[t]) continue;
+        if(!best[t] || (p._priceUSD||0) < (best[t]._priceUSD||0)) best[t] = p;
+      }
+      return Object.keys(best).map(function(k){ return best[k]; }).sort(cheapestFirst);
     }
 
-    // Sort for nicer display
-    items.sort(function(a,b){ return (a._priceUSD||0) - (b._priceUSD||0); });
-
-    // Create the bundle card even if partial (so you always see all 10).
-    // If empty, UI will show "לא נמצאו..." and it won't remove anything from the pool.
-    var sub = tpl.subtitle || '';
-    if(items.length && sumUSD(items) < FREE_SHIP_OVER_USD - 1e-9){
-      sub = (sub ? (sub + ' ') : '') + '⚠️ ייתכן שתצטרכו להוסיף מוצר נוסף כדי לעבור את $' + FREE_SHIP_OVER_USD + '.';
+    function takeItems(items){
+      var used = {};
+      for(var i=0;i<items.length;i++){
+        if(items[i] && items[i]._id) used[items[i]._id] = 1;
+      }
+      pool = pool.filter(function(p){ return !used[p._id]; });
     }
-    bundles.push(toBundle(tpl.id, tpl.title, sub, items));
 
-    // Remove used items globally so products don't appear in more than one bundle.
-    if(items && items.length) takeItems(items);
+    function toBundle(id, title, subtitle, items){
+      return { id: id, title: title, subtitle: subtitle, items: items.slice() };
+    }
+
+    function solveTheme(cfg){
+      var list = pool.filter(function(p){
+        if(cfg.excludeKids && isKids(p)) return false;
+        if(cfg.onlyKids && !isKids(p)) return false;
+        return cfg.themePred ? cfg.themePred(p) : true;
+      });
+      var reps = repsByType(list, null);
+      var pick = bestSubset(reps, BUNDLE_MIN, BUNDLE_MAX, { preferCloserTo: MORE_MERRIER_PREFER_MAX });
+      if(!pick || pick.length < BUNDLE_MIN_ITEMS) return null;
+      takeItems(pick);
+      return toBundle(cfg.id, cfg.title, cfg.subtitle, pick);
+    }
+
+    function solveAnchored(cfg){
+      var anchors = pool.filter(function(p){
+        if(cfg.excludeKids && isKids(p)) return false;
+        if(cfg.onlyKids && !isKids(p)) return false;
+        return cfg.anchorPred ? cfg.anchorPred(p) : false;
+      }).sort(cheapestFirst);
+
+      if(!anchors.length) return null;
+
+      // pick the cheapest anchor
+      var items = [anchors[0]];
+      var usedTypes = {};
+      usedTypes[typeKey(anchors[0])] = 1;
+
+      var baseSum = sumUSD(items);
+      if(baseSum > BUNDLE_MAX) return null;
+
+      var remMin = BUNDLE_MIN - baseSum; if(remMin < 0) remMin = 0;
+      var remMax = BUNDLE_MAX - baseSum;
+
+      // 1) Fill from the themed pool first
+      var themedList = pool.filter(function(p){
+        if(p._id === anchors[0]._id) return false;
+        if(cfg.excludeKids && isKids(p)) return false;
+        if(cfg.onlyKids && !isKids(p)) return false;
+        return cfg.themePred ? cfg.themePred(p) : true;
+      });
+      var themedReps = repsByType(themedList, usedTypes);
+      var fill = bestSubset(themedReps, remMin, remMax, { preferCloserTo: (BUNDLE_TARGET - baseSum) });
+      if(fill && fill.length){
+        for(var i=0;i<fill.length;i++){
+          items.push(fill[i]);
+          usedTypes[typeKey(fill[i])] = 1;
+        }
+      }
+
+      // 2) If still below the minimum, broaden fill
+      var total = sumUSD(items);
+      if(total < BUNDLE_MIN - 1e-9){
+        var remMin2 = BUNDLE_MIN - total; if(remMin2 < 0) remMin2 = 0;
+        var remMax2 = BUNDLE_MAX - total;
+
+        var broadList = pool.filter(function(p){
+          if(items.some(function(x){ return x._id === p._id; })) return false;
+          if(cfg.excludeKids && isKids(p)) return false;
+          if(cfg.onlyKids && !isKids(p)) return false;
+          return cfg.fillPred ? cfg.fillPred(p) : (!isKids(p));
+        });
+        var broadReps = repsByType(broadList, usedTypes);
+        var fill2 = bestSubset(broadReps, remMin2, remMax2, { preferCloserTo: (BUNDLE_TARGET - total) });
+        if(fill2 && fill2.length){
+          for(var j=0;j<fill2.length;j++){
+            items.push(fill2[j]);
+            usedTypes[typeKey(fill2[j])] = 1;
+          }
+        }
+      }
+
+      total = sumUSD(items);
+      if(items.length < BUNDLE_MIN_ITEMS) return null;
+      if(total < BUNDLE_MIN - 1e-9 || total > BUNDLE_MAX + 1e-9) return null;
+
+      takeItems(items);
+      return toBundle(cfg.id, cfg.title, cfg.subtitle, items);
+    }
+
+    // ===== Preset bundles (your 10 categories) =====
+    var presets = [
+      {
+        id: 'preset-curls',
+        title: 'חבילת "תלתלים מוגדרים"',
+        subtitle: 'מוצרים בסגנון תלתלים/הגדרה (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
+        excludeKids: true,
+        anchorPred: function(p){ return /(תלתלים|\bcurls?\b)/i.test(p._name || ''); },
+        themePred: function(p){ return isHair(p); },
+        fillPred: function(p){ return isHair(p) && !isKids(p); }
+      },
+      {
+        id: 'preset-nosalt',
+        title: 'חבילת "שיקום לאחר החלקה"',
+        subtitle: 'מוצרים ללא מלחים/ללא סולפטים (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
+        excludeKids: true,
+        anchorPred: function(p){ return /(ללא\s*מלח|ללא\s*מלחים|salt[-\s]*free|no\s*salt|ללא\s*סולפטים|sulfate[-\s]*free)/i.test(p._name || ''); },
+        themePred: function(p){ return isHair(p); },
+        fillPred: function(p){ return isHair(p) && !isKids(p); }
+      },
+      {
+        id: 'preset-oily',
+        title: 'חבילת "איזון עור שמן"',
+        subtitle: 'מוצרים לעור שמן/מעורב (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
+        excludeKids: true,
+        anchorPred: function(p){ return /(עור\s*שמן|\boily\b)/i.test(p._name || ''); },
+        themePred: function(p){ return isFace(p); },
+        fillPred: function(p){ return isFace(p) && !isKids(p); }
+      },
+      {
+        id: 'preset-acne',
+        title: 'חבילת "טיפול נקודתי בפצעונים"',
+        subtitle: 'מוצרים בסגנון אקנה/פצעונים (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
+        excludeKids: true,
+        anchorPred: function(p){ return /(פצעונים|אקנה|\bacne\b|pimple)/i.test(p._name || '') || hasAnyCat(p,['acne','spot-treatment','patch']); },
+        themePred: function(p){ return isFace(p); },
+        fillPred: function(p){ return isFace(p) && !isKids(p); }
+      },
+      {
+        id: 'preset-makeup-base',
+        title: 'חבילת "בסיס מייק-אפ מושלם"',
+        subtitle: 'פריימר/מייקאפ/קונסילר/פודרה/מקבע (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
+        excludeKids: true,
+        anchorPred: function(p){
+          var t = typeKey(p);
+          return (t === 'primer' || t === 'foundation' || t === 'concealer' || t === 'powder' || t === 'setting-spray');
+        },
+        themePred: function(p){ return isMakeup(p); },
+        fillPred: function(p){ return isMakeup(p) && !isKids(p); }
+      },
+      {
+        id: 'preset-men',
+        title: 'חבילת "טיפוח פנים לגבר"',
+        subtitle: 'מוצרים לגבר + מילוי חכם לטווח $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
+        excludeKids: true,
+        anchorPred: function(p){ return isMen(p) || hasAnyCat(p,['men']); },
+        themePred: function(p){ return isMen(p) || isFace(p) || isBody(p); },
+        fillPred: function(p){ return !isKids(p); }
+      },
+      {
+        id: 'preset-baby',
+        title: 'חבילת "הגנה לתינוק"',
+        subtitle: 'מוצרים לתינוק/ילדים (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
+        onlyKids: false, // allow fill if needed, but keep at least one kids anchor
+        anchorPred: function(p){ return isKids(p); },
+        themePred: function(p){ return isKids(p); },
+        fillPred: function(p){ return !isKids(p); }
+      },
+      {
+        id: 'preset-body',
+        title: 'חבילת "פינוק וטיפוח הגוף"',
+        subtitle: 'מוצרי גוף/היגיינה (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
+        excludeKids: true,
+        themePred: function(p){ return (isBody(p) || isTeeth(p)) && !isKids(p); }
+      },
+      {
+        id: 'preset-removal',
+        title: 'חבילת "ניקוי והסרת איפור"',
+        subtitle: 'מוצרים לניקוי/הסרה (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
+        excludeKids: true,
+        anchorPred: function(p){
+          return /מיסלר|מסיר\s*איפור|מסיר|remover|micellar/i.test(p._name || '');
+        },
+        themePred: function(p){
+          // prefer cleansing/removal/face
+          return /מיסלר|מסיר|remover|micellar|cleanser|wash|סבון|תרחיץ/i.test(p._name || '') || isFace(p);
+        },
+        fillPred: function(p){ return !isKids(p); }
+      },
+      {
+        id: 'preset-sun',
+        title: 'חבילת "הגנה מהשמש"',
+        subtitle: 'מוצרי SPF/הגנה מהשמש (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
+        excludeKids: true,
+        anchorPred: function(p){ return hasAnyCat(p,['sun','spf','sunscreen']) || /\bspf\b|\bsunscreen\b/i.test(p._name || ''); },
+        themePred: function(p){ return hasAnyCat(p,['sun','spf','sunscreen']) || /\bspf\b|\bsunscreen\b/i.test(p._name || ''); },
+        fillPred: function(p){ return !isKids(p); }
+      }
+    ];
+
+    var bundles = [];
+    for(var pi=0; pi<presets.length; pi++){
+      var cfg = presets[pi];
+      var b = null;
+      if(cfg.anchorPred) b = solveAnchored(cfg);
+      else b = solveTheme(cfg);
+      if(b) bundles.push(b);
+    }
+
+    // ===== Extra bundles (maximize usage + keep types unique inside each bundle) =====
+    var idxFace = 1, idxMakeup = 1, idxHair = 1, idxBody = 1, idxKids = 1, idxMen = 1, idxAuto = 1, idxSun = 1;
+    var guard = 0;
+    while(guard++ < 9999 && bundles.length < (MAX_EXTRA_BUNDLES + 50)){
+      var made = false;
+
+      var bFace = solveTheme({
+        id: 'bundle-face-' + (idxFace++),
+        title: 'עוד חבילת טיפוח פנים',
+        subtitle: 'נבנתה אוטומטית (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
+        excludeKids: true,
+        themePred: function(p){ return isFace(p) && !isKids(p); }
+      });
+      if(bFace){ bundles.push(bFace); made = true; }
+
+      var bMake = solveTheme({
+        id: 'bundle-makeup-' + (idxMakeup++),
+        title: 'עוד חבילת איפור',
+        subtitle: 'נבנתה אוטומטית (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
+        excludeKids: true,
+        themePred: function(p){ return isMakeup(p) && !isKids(p); }
+      });
+      if(bMake){ bundles.push(bMake); made = true; }
+
+      var bHair = solveTheme({
+        id: 'bundle-hair-' + (idxHair++),
+        title: 'עוד חבילת שיער',
+        subtitle: 'נבנתה אוטומטית (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
+        excludeKids: true,
+        themePred: function(p){ return isHair(p) && !isKids(p); }
+      });
+      if(bHair){ bundles.push(bHair); made = true; }
+
+      var bBody = solveTheme({
+        id: 'bundle-body-' + (idxBody++),
+        title: 'עוד חבילת גוף והיגיינה',
+        subtitle: 'נבנתה אוטומטית (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
+        excludeKids: true,
+        themePred: function(p){ return (isBody(p) || isTeeth(p)) && !isKids(p); }
+      });
+      if(bBody){ bundles.push(bBody); made = true; }
+
+      var bKids = solveTheme({
+        id: 'bundle-kids-' + (idxKids++),
+        title: 'עוד חבילת ילדים/תינוקות',
+        subtitle: 'נבנתה אוטומטית (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
+        onlyKids: true,
+        themePred: function(p){ return isKids(p); }
+      });
+      if(bKids){ bundles.push(bKids); made = true; }
+
+      var bMen = solveAnchored({
+        id: 'bundle-men-' + (idxMen++),
+        title: 'עוד חבילת לגבר',
+        subtitle: 'נבנתה אוטומטית (כוללת לפחות מוצר אחד לגבר) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
+        excludeKids: true,
+        anchorPred: function(p){ return isMen(p) || hasAnyCat(p,['men']); },
+        themePred: function(p){ return isMen(p) || isFace(p) || isBody(p); },
+        fillPred: function(p){ return !isKids(p); }
+      });
+      if(bMen){ bundles.push(bMen); made = true; }
+
+      var bSun = solveAnchored({
+        id: 'bundle-sun-' + (idxSun++),
+        title: 'עוד חבילת הגנה מהשמש',
+        subtitle: 'נבנתה אוטומטית (כוללת לפחות מוצר SPF אחד) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
+        excludeKids: true,
+        anchorPred: function(p){ return hasAnyCat(p,['sun','spf','sunscreen']) || /\bspf\b|\bsunscreen\b/i.test(p._name || ''); },
+        themePred: function(p){ return hasAnyCat(p,['sun','spf','sunscreen']) || /\bspf\b|\bsunscreen\b/i.test(p._name || ''); },
+        fillPred: function(p){ return !isKids(p); }
+      });
+      if(bSun){ bundles.push(bSun); made = true; }
+
+      // General auto bundle from remaining non-kids products
+      var bAuto = solveTheme({
+        id: 'bundle-auto-' + (idxAuto++),
+        title: 'עוד חבילה',
+        subtitle: 'נבנתה אוטומטית מהמוצרים שנותרו (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
+        excludeKids: true,
+        themePred: function(p){ return !isKids(p); }
+      });
+      if(bAuto){ bundles.push(bAuto); made = true; }
+
+      if(!made) break;
+    }
+
+    return { bundles: bundles, unused: pool.slice() };
   }
 
-  return { bundles: bundles, unused: pool.slice() };
-}
 
   // ===== Rendering =====
   function render(){
@@ -3576,7 +3463,7 @@ card.addEventListener('click', choose);
 
     // Put custom builder first
     STATE.custom.items = STATE.custom.items || [];
-    STATE.bundles = [STATE.custom].concat((built.bundles || []).slice(0, 4));
+    STATE.bundles = [STATE.custom].concat((built.bundles || []));
     STATE.viewLimit = kbPerPage('bundles');
     STATE.pool = built.unused;
 
