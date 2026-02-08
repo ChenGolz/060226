@@ -197,8 +197,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 200,
-    "priceMax": 250,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -206,7 +206,7 @@
         "url": "https://www.amazon.com/dp/B07B4KQVK6?tag=nocrueltyil-20",
         "asin": "B07B4KQVK6",
         "currency": "USD",
-        "priceUSD": 215.5
+        "priceUSD": 21.97
       }
     ],
     "isKids": false,
@@ -356,8 +356,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 150,
-    "priceMax": 200,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -365,7 +365,7 @@
         "url": "https://www.amazon.com/dp/B07KJXFJHF?tag=nocrueltyil-20",
         "asin": "B07KJXFJHF",
         "currency": "USD",
-        "priceUSD": 176.25
+        "priceUSD": 17.97
       }
     ],
     "isKids": false,
@@ -613,8 +613,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 150,
-    "priceMax": 200,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -622,7 +622,7 @@
         "url": "https://www.amazon.com/dp/B0BMM44HBF?tag=nocrueltyil-20",
         "asin": "B0BMM44HBF",
         "currency": "USD",
-        "priceUSD": 176.25
+        "priceUSD": 17.97
       }
     ],
     "isKids": false,
