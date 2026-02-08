@@ -3406,11 +3406,92 @@ card.addEventListener('click', choose);
   }
 
   // ===== Data loading =====
+  // Resolve URLs correctly when Weglot serves pages under /en/... (or when hosted under a subpath).
+  function resolveFromBase(rel){
+    try{
+      if(!rel) return rel;
+      if(typeof window.__kbwgResolveFromSiteBase === 'function') return window.__kbwgResolveFromSiteBase(rel);
+
+      var p = String(rel).replace(/^\.\//, '');
+      if(/^https?:\/\//i.test(p)) return p;
+
+      // Guess base from current script URL
+      var src = '';
+      try{ src = (document.currentScript && document.currentScript.src) ? document.currentScript.src : ''; }catch(e){ src = ''; }
+      if(!src){
+        var scripts = document.getElementsByTagName('script');
+        for(var i=scripts.length-1;i>=0;i--){
+          var ssrc = scripts[i] && scripts[i].src ? String(scripts[i].src) : '';
+          if(ssrc.indexOf('bundles') !== -1){ src = ssrc; break; }
+        }
+      }
+      if(!src) return p;
+
+      var u = new URL(src, location.href);
+      var pathname = u.pathname || '/';
+      var idx = pathname.indexOf('/assets/js/');
+      var base = idx >= 0 ? pathname.slice(0, idx) : pathname.replace(/\/[^\/]+$/, '');
+      base = base.replace(/\/+$/, '');
+
+      var parts = base.split('/').filter(Boolean);
+      var langs = { en:1, he:1, iw:1, ar:1, fr:1, es:1, de:1, ru:1 };
+      if(parts.length && langs[parts[parts.length-1]]) parts.pop();
+
+      var root = '/' + parts.join('/');
+      if(root === '/') return '/' + p.replace(/^\//,'');
+      return root + '/' + p.replace(/^\//,'');
+    }catch(e){
+      return rel;
+    }
+  }
+
+  function parseJsonSafely(text, url){
+    var raw = String(text || '');
+    if(raw && raw.charCodeAt(0) === 0xFEFF) raw = raw.slice(1);
+
+    var head = raw.slice(0, 120).trim();
+    if(head && head.charAt(0) === '<'){
+      var e = new Error('Response is HTML, not JSON');
+      e.url = url;
+      e.head = head.slice(0, 120);
+      throw e;
+    }
+
+    try{
+      return JSON.parse(raw);
+    }catch(e){
+      // Safe auto-fix: remove trailing commas
+      var fixed = raw.replace(/,(\s*[}\]])/g, '$1');
+      if(fixed !== raw){
+        try{
+          console.warn('[KBWG] JSON parse failed; retrying after removing trailing commas:', url);
+          return JSON.parse(fixed);
+        }catch(_e){}
+      }
+
+      try{
+        console.error('[KBWG] JSON parse error for', url, e && e.message);
+        var mm = /position\s+(\d+)/i.exec(String(e && e.message || ''));
+        if(mm){
+          var pos = parseInt(mm[1],10);
+          var from = Math.max(0, pos-140);
+          var to = Math.min(raw.length, pos+140);
+          console.error('[KBWG] Context around error:', raw.slice(from, to));
+        }else{
+          console.error('[KBWG] First 300 chars:', raw.slice(0, 300));
+        }
+      }catch(_e2){}
+      throw e;
+    }
+  }
+
   async function fetchJson(path){
-    var url = path + (path.indexOf('?')>-1 ? '&' : '?') + 'v=' + Date.now();
+    var baseUrl = resolveFromBase(path);
+    var url = baseUrl + (baseUrl.indexOf('?')>-1 ? '&' : '?') + 'v=' + Date.now();
     var res = await fetch(url, { cache: 'no-store' });
-    if(!res.ok) throw new Error('Failed to load ' + path + ' (' + res.status + ')');
-    return await res.json();
+    if(!res.ok) throw new Error('Failed to load ' + baseUrl + ' (' + res.status + ')');
+    var txt = await res.text();
+    return parseJsonSafely(txt, baseUrl);
   }
 
   function computeCategories(all){
@@ -3430,7 +3511,14 @@ card.addEventListener('click', choose);
     try { brandsRaw = await fetchJson(BRANDS_PATH); } catch(e) { brandsRaw = []; }
     BRAND_INDEX = buildBrandIndex(brandsRaw);
 
-    var productsRaw = await fetchJson(PRODUCTS_PATH);
+    var productsRaw = [];
+    try{
+      productsRaw = await fetchJson(PRODUCTS_PATH);
+    }catch(e){
+      console.warn('[KBWG] Could not load products.json', e);
+      grid.innerHTML = '<div class="emptyState"><h3>שגיאה בטעינת מוצרים</h3><p>הקובץ <code>data/products.json</code> לא נטען או לא JSON תקין. בדקו את ה-Console לפרטים (URL + קטע מהשורה הבעייתית).</p></div>';
+      return;
+    }
 
     var eligible = [];
     for(var i=0;i<(productsRaw||[]).length;i++){

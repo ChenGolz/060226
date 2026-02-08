@@ -80,11 +80,54 @@ try { window.KBWG_PRODUCTS_BUILD = '2026-02-07-v27'; console.info('[KBWG] KBWG_P
     return u + (u.indexOf('?') > -1 ? '&' : '?') + 'v=' + Date.now();
   }
 
+  function parseJsonSafely(text, url){
+    var raw = String(text || '');
+    // Strip UTF-8 BOM if present
+    if(raw && raw.charCodeAt(0) === 0xFEFF) raw = raw.slice(1);
+
+    // Quick HTML detection (often means a 404 page or redirect)
+    var head = raw.slice(0, 120).trim();
+    if(head && head.charAt(0) === '<'){
+      var e = new Error('Response is HTML, not JSON');
+      e.url = url;
+      e.head = head.slice(0, 120);
+      throw e;
+    }
+
+    try{
+      return JSON.parse(raw);
+    }catch(e){
+      // Try one safe auto-fix: remove trailing commas (common hand-edit mistake)
+      var fixed = raw.replace(/,(\s*[}\]])/g, '$1');
+      if(fixed !== raw){
+        try{
+          console.warn('[products-json-loader] JSON parse failed; retrying after removing trailing commas:', url);
+          return JSON.parse(fixed);
+        }catch(_e){}
+      }
+
+      // Helpful diagnostics
+      try{
+        console.error('[products-json-loader] JSON parse error for', url, e && e.message);
+        var mm = /position\s+(\d+)/i.exec(String(e && e.message || ''));
+        if(mm){
+          var pos = parseInt(mm[1], 10);
+          var from = Math.max(0, pos - 140);
+          var to = Math.min(raw.length, pos + 140);
+          console.error('[products-json-loader] Context around error:', raw.slice(from, to));
+        }else{
+          console.error('[products-json-loader] First 300 chars:', raw.slice(0, 300));
+        }
+      }catch(_e2){}
+      throw e;
+    }
+  }
+
   function fetchJson(path) {
     var url = withCacheBust(path);
     return fetch(url, { cache: 'no-store' }).then(function (r) {
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return r.json();
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' for ' + url);
+      return r.text().then(function (t) { return parseJsonSafely(t, url); });
     });
   }
 
