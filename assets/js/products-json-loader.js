@@ -1,5 +1,5 @@
-// Build: 2026-02-06-v23
-try { window.KBWG_PRODUCTS_BUILD = '2026-02-06-v23'; console.info('[KBWG] KBWG_PRODUCTS_BUILD ' + window.KBWG_PRODUCTS_BUILD); } catch(e) {}
+// Build: 2026-02-07-v27
+try { window.KBWG_PRODUCTS_BUILD = '2026-02-07-v27'; console.info('[KBWG] KBWG_PRODUCTS_BUILD ' + window.KBWG_PRODUCTS_BUILD); } catch(e) {}
 
 /*
   Loads products from data/products.json (+ loads intl brands from data/intl-brands.json),
@@ -239,7 +239,7 @@ try { window.KBWG_PRODUCTS_BUILD = '2026-02-06-v23'; console.info('[KBWG] KBWG_P
     })
     .finally(function () {
       // The main page logic expects window.PRODUCTS to exist.
-      loadScript(resolveFromBase('assets/js/products.js?v=2026-02-06-v25')).catch(function (e) {
+      loadScript(resolveFromBase('assets/js/products.js?v=2026-02-07-v27')).catch(function (e) {
         console.error('[products-json-loader] Could not start products.js', e);
       });
     });

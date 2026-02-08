@@ -1019,7 +1019,7 @@ function normalizeProduct(p) {
 
     const offers = p.offers.filter(Boolean);
 
-    // Prefer explicit "free shipping to Israel" offers first
+    // Prefer freeShipOver=49 first, then explicit free shipping to Israel
     const freeToIsrael = offers.filter((o) => isTrueFlag(o.freeShipToIsrael));
 
     function pickMinThreshold(list){
@@ -1350,9 +1350,63 @@ function normalizeProduct(p) {
     return Number.isFinite(t) ? t : 0;
   }
 
-  function sortList(list) {
+  
+
+// Shipping-priority rank for default sorting:
+// 0 = Free shipping over $49
+// 1 = Free shipping to Israel (explicit)
+// 2 = All other cases
+function shippingRank(p) {
+  try {
+    const offers = Array.isArray(p?.offers) ? p.offers : [];
+    const min = getProductMinFreeShip(p);
+
+    // First priority: Amazon-style "FREE delivery to Israel on $49 of eligible items"
+    if (min === 49) return 0;
+
+    // Second priority: explicit "freeShipToIsrael: true" (product-level or offer-level)
+    const hasFreeToIL =
+      offers.some(o => isTrueFlag(o?.freeShipToIsrael)) ||
+      isTrueFlag(p?.freeShipToIsrael);
+
+    if (hasFreeToIL) return 1;
+
+    return 2;
+  } catch (e) {
+    return 2;
+  }
+}
+
+function sortByShippingThenPrice(list) {
+  list.sort((a, b) => {
+    const ra = shippingRank(a);
+    const rb = shippingRank(b);
+    if (ra !== rb) return ra - rb;
+
+    // secondary: cheapest first
+    const pa = Number(a.priceMin ?? a.priceRangeMin ?? Infinity);
+    const pb = Number(b.priceMin ?? b.priceRangeMin ?? Infinity);
+    if (pa !== pb) return pa - pb;
+
+    // tertiary: newest first
+    const diff = updatedTs(b.updated) - updatedTs(a.updated);
+    if (diff) return diff;
+
+    return (
+      String(a.brand || "").localeCompare(String(b.brand || ""), "he") ||
+      String(a.name || "").localeCompare(String(b.name || ""), "he")
+    );
+  });
+}
+
+function sortList(list) {
     const v = sortSel?.value || "updated";
 
+
+    if (v === "shipping") {
+      sortByShippingThenPrice(list);
+      return;
+    }
     if (v === "price-low") {
       list.sort((a, b) => {
         const pa = Number(a.priceMin ?? a.priceRangeMin ?? Infinity);
@@ -1382,14 +1436,19 @@ function normalizeProduct(p) {
     }
 
     list.sort((a, b) => {
-      const diff = updatedTs(b.updated) - updatedTs(a.updated);
-      if (diff) return diff;
-      return (
-        String(a.brand || "").localeCompare(String(b.brand || ""), "he") ||
-        String(a.name || "").localeCompare(String(b.name || ""), "he")
-      );
-    });
-  }
+  // ✅ shipping priority first (freeShipOver 49 -> freeShipToIsrael -> others)
+  const ra = shippingRank(a);
+  const rb = shippingRank(b);
+  if (ra !== rb) return ra - rb;
+
+  const diff = updatedTs(b.updated) - updatedTs(a.updated);
+  if (diff) return diff;
+  return (
+    String(a.brand || "").localeCompare(String(b.brand || ""), "he") ||
+    String(a.name || "").localeCompare(String(b.name || ""), "he")
+  );
+});
+}
 
   function tag(label) {
     const s = document.createElement("span");
@@ -1511,17 +1570,6 @@ const frag = document.createDocumentFragment();
       if (p.isVegan) approvals.push("Vegan");
       if (p.isLB) approvals.push("Leaping Bunny");
 
-      const bestOffer = getOfferWithMinFreeShip(p);
-      if (bestOffer) {
-        const fsText = formatFreeShipText(bestOffer);
-        if (fsText) {
-          const fs = document.createElement("span");
-          fs.className = "pMetaPill pMetaPill--freeShip";
-          fs.textContent = fsText;
-          meta.appendChild(fs);
-        }
-      }
-
       header.appendChild(titleWrap);
       header.appendChild(meta);
 
@@ -1537,7 +1585,23 @@ const frag = document.createDocumentFragment();
       offerList.className = "offerList";
 
       const offers = Array.isArray(p.offers) ? p.offers : [];
-      offers.forEach((o) => {
+      const offersSorted = offers
+        .map((o, i) => ({ o, i }))
+        .sort((a, b) => {
+          const rank = (x) => {
+            const v = (typeof x?.freeShipOver === "number" && Number.isFinite(x.freeShipOver)) ? x.freeShipOver : null;
+            if (v === 49) return 0;
+            if (isTrueFlag(x?.freeShipToIsrael)) return 1;
+            return 2;
+          };
+          const ra = rank(a.o);
+          const rb = rank(b.o);
+          if (ra !== rb) return ra - rb;
+          return a.i - b.i;
+        })
+        .map((x) => x.o);
+
+      offersSorted.forEach((o) => {
         const row = document.createElement("div");
         row.className = "offer";
 
