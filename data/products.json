@@ -458,8 +458,8 @@
     "categories": [],
     "isVegan": true,
     
-    "priceMin": null,
-    "priceMax": null,
+    "priceMin": 50,
+    "priceMax": 100,
     "isDiscounted": null,
     "discountPct": null,
     "listPriceUSD": null,
@@ -470,10 +470,10 @@
         "url": "https://www.amazon.com/dp/B0DSJNPRML",
         "asin": "B0DSJNPRML",
         "currency": "USD",
-        "priceUSD": null,
+        "priceUSD": 17.09,
         "listPriceUSD": null,
         "discountPct": null,
-        "isDiscounted": null,
+        "isDiscounted": true,
        "freeshipover":49
        
       }
@@ -1058,8 +1058,8 @@
     "categories": [],
     "isVegan": true,
     
-    "priceMin": null,
-    "priceMax": null,
+    "priceMin": 50,
+    "priceMax": 100,
     "isDiscounted": null,
     "discountPct": null,
     "listPriceUSD": null,
@@ -1070,7 +1070,7 @@
         "url": "https://www.amazon.com/dp/B0CYCKZCF7",
         "asin": "B0CYCKZCF7",
         "currency": "USD",
-        "priceUSD": null,
+        "priceUSD": 29.95,
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
@@ -1544,7 +1544,7 @@
         "url": "https://www.amazon.com/dp/B0FJSQ3F1V",
         "asin": "B0FJSQ3F1V",
         "currency": "USD",
-        "priceUSD": null,
+        "priceUSD": 12.95,
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
@@ -2230,8 +2230,8 @@
     "isVegan": true,
     "isPeta": true,
     "isLB": true,
-    "priceMin": null,
-    "priceMax": null,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -2239,14 +2239,12 @@
         "url": "https://www.amazon.com/dp/B004DTQ9L8?tag=nocrueltyil-20",
         "asin": "B004DTQ9L8",
         "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null,
-        "isDiscounted": false
-      }
+        "priceUSD": 15.19,
+        "freeShipOver": 49      }
     ],
     "isKids": false,
     "image": "assets/img/products/B004DTQ9L8.jpg",
-    "isDiscounted": false
+    "isDiscounted": true
   },
   {
     "id": "acure-b082yg4lnc",
