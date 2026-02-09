@@ -17,6 +17,8 @@
     </div>
 
     <nav aria-label="ניווט ראשי" class="nav">
+      <a href="index.html">בית</a>
+
       <details class="navGroup">
         <summary>
           מוצרים
@@ -76,7 +78,7 @@
 
       <details class="navGroup">
         <summary>
-          בקרוב
+          קהילה
           <span class="navChevron" aria-hidden="true">▾</span>
         </summary>
         <div class="navDrop" role="menu" aria-label="קהילה ועשייה טובה">
@@ -135,6 +137,8 @@
       width: 44px;
       height: 44px;
       border-radius: 14px;
+      /* Bigger top-menu titles (desktop + mobile), responsive */
+      font-size: clamp(1.05rem, 0.35vw + 1rem, 1.22rem);
       align-items: center;
       justify-content: center;
       text-decoration: none;
