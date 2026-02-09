@@ -24,7 +24,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -54,7 +54,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -84,7 +84,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -114,7 +114,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -144,7 +144,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -174,7 +174,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -204,7 +204,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -234,7 +234,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -263,8 +263,8 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
+       "freeshipover": 49
        
-        "freeShipToIsrael": null
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -293,8 +293,9 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
+              "freeshipover": 49
+
        
-        "freeShipToIsrael": null
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -324,7 +325,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -354,7 +355,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -384,7 +385,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -414,7 +415,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -444,7 +445,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -474,7 +475,7 @@
         "discountPct": null,
         "isDiscounted": null,
        "freeshipover":49
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -504,7 +505,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -534,7 +535,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -564,7 +565,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -594,7 +595,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -624,7 +625,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -654,7 +655,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -684,7 +685,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -714,7 +715,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -744,7 +745,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -774,7 +775,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -804,7 +805,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -833,8 +834,8 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
+       "freeshipover": 49
        
-        "freeShipToIsrael": null
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -864,7 +865,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -894,7 +895,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -924,7 +925,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -954,7 +955,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -984,7 +985,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1014,7 +1015,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1043,8 +1044,8 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
+       "freeshipover": 49
        
-        "freeShipToIsrael": null
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1074,7 +1075,7 @@
         "discountPct": null,
         "isDiscounted": null,
               "freeshipover":49
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1103,7 +1104,7 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1132,7 +1133,7 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1161,7 +1162,7 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1190,7 +1191,7 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1219,7 +1220,7 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1248,7 +1249,7 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1278,7 +1279,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1308,7 +1309,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1338,7 +1339,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1367,8 +1368,8 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
+       "freeshipover": 49
        
-        "freeShipToIsrael": null
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1398,7 +1399,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1428,7 +1429,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1458,7 +1459,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1488,7 +1489,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1518,7 +1519,7 @@
         "discountPct": null,
         "isDiscounted": null,
        
-        "freeShipToIsrael": null
+       
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
@@ -1547,8 +1548,8 @@
         "listPriceUSD": null,
         "discountPct": null,
         "isDiscounted": null,
+       "freeshipover": 49
        
-        "freeShipToIsrael": null
       }
     ],
     "notes": "freeShipOver forced to 49 per KBWG; price/discount need fill from scrape"
