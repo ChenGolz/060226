@@ -99,6 +99,64 @@
 
 /* Hero buttons: allow wrapping on mobile */
 .heroActions{ flex-wrap: wrap; gap: 10px; }
+
+
+/* Home quick cards: bigger titles + nicer cards (match top shortcuts) */
+.panel.filter-panel .sectionTitle{ text-align:center; font-size: 1.28rem; font-weight: 900; letter-spacing: -.01em; }
+.panel.filter-panel .sectionLead{ text-align:center; font-size: 0.98rem; }
+
+.panel.filter-panel .cardsGrid.homeGrid{
+  display:grid;
+  gap:12px;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  align-items:stretch;
+}
+@media (max-width: 520px){
+  .panel.filter-panel .cardsGrid.homeGrid{ grid-template-columns: 1fr; }
+}
+
+.panel.filter-panel .miniCard{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  text-align:center;
+  gap:6px;
+  padding:14px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(15,23,42,.10);
+  background: rgba(255,255,255,.86);
+  box-shadow: 0 8px 22px rgba(15,23,42,.05);
+  text-decoration:none;
+  color: inherit;
+  transition: transform .12s ease, box-shadow .12s ease;
+  min-height: 132px;
+}
+.panel.filter-panel .miniCard:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(15,23,42,.09);
+}
+
+.panel.filter-panel .miniCardIcon{
+  width:46px;
+  height:46px;
+  border-radius: 14px;
+  background: rgba(2,132,199,.10);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 24px; /* for emoji icons */
+  flex: 0 0 auto;
+}
+.panel.filter-panel .miniIcon{ width: 34px; height: 34px; }
+
+.panel.filter-panel .miniCardTitle{ font-size: 1.12rem; font-weight: 900; line-height: 1.2; margin-top: 2px; }
+.panel.filter-panel .miniCardText{ font-size: 0.95rem; color: rgba(15,23,42,.72); font-weight: 700; }
+
+.panel.filter-panel .miniCard.isPrimary{
+  border-color: rgba(2,132,199,.28);
+  background: rgba(2,132,199,.06);
+}
 </style>
 </head>
 <body>
@@ -123,7 +181,7 @@
 <div class="trust-badge"><span class="icon">🌿</span> טבעוני</div>
 <div class="trust-badge"><span class="icon">🐇</span> Leaping Bunny</div>
 </div>
-<div class="actions heroActions"><a class="btn primary" href="products.html">חיפוש מוצרים</a><a class="btn ghost" href="bundles.html">באנדלים</a><a class="btn ghost" href="todays-top-deals.html">דילים היום</a></div><form autocomplete="off" class="search-wrapper" id="homeSearchForm"><input aria-label="חיפוש מוצר" id="homeSearchInput" placeholder="חפשי מוצר… (לדוגמה: קרם פנים, שמפו, מסקרה)" type="search"/><button aria-label="חיפוש" class="search-btn" type="submit">🔎</button></form></div>
+<div class="actions heroActions"><a class="btn primary" href="products.html">חיפוש מוצרים</a><a class="btn ghost" href="bundles.html">חבילות</a><a class="btn ghost" href="todays-top-deals.html">דילים היום</a></div><form autocomplete="off" class="search-wrapper" id="homeSearchForm"><input aria-label="חיפוש מוצר" id="homeSearchInput" placeholder="חפשי מוצר… (לדוגמה: קרם פנים, שמפו, מסקרה)" type="search"/><button aria-label="חיפוש" class="search-btn" type="submit">🔎</button></form></div>
 </div>
 </section>
 <section class="panel" aria-label="קיצורי דרך חשובים">
@@ -139,7 +197,7 @@
           <div class="featureTop">
             <div class="featureIcon" aria-hidden="true">📦</div>
             <div class="featureMeta">
-              <div class="featureTitle">באנדלים למשלוח חינם לישראל</div>
+              <div class="featureTitle">חבילות מומלצות המזכות במשלוח חינם מאמזון US</div>
               <p class="featureText">סטים מוכנים מאמזון ארה״ב — משלוח חינם לישראל מעל $49.</p>
             </div>
           </div>
