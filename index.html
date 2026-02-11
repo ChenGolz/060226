@@ -2,6 +2,15 @@
 
 <html dir="rtl" lang="he">
 <head>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947CLPDP2H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947CLPDP2H');
+</script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>לקנות ללא אכזריות | NoCrueltyIL</title>
@@ -15,7 +24,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="assets/css/styles.css?v=2026-02-03-v24" rel="stylesheet"/><link href="assets/css/home.css?v=2026-02-03-v24" rel="stylesheet"/>
+<link href="assets/css/styles.css?v=2026-02-10-v4" rel="stylesheet"/><link href="assets/css/home.css?v=2026-02-10-v4" rel="stylesheet"/>
 <link href="assets/img/logo.png" rel="icon" type="image/png"/>
 <style>
 /* בית-only notice banner */
@@ -41,6 +50,55 @@
   /* Icon mini-cards (PNG icons) */
   .miniCardIcon{ display:flex; align-items:center; justify-content:center; }
   .miniIcon{ width: 34px; height: 34px; display:block; }
+
+/* Featured big shortcuts */
+.homeFeatured .sectionHead{ text-align:center; margin-bottom: 12px; }
+.featureGrid{ display:grid; gap:12px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+.featureCard{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding:14px;
+  border-radius: 16px;
+  border: 1px solid rgba(15,23,42,.10);
+  background: rgba(255,255,255,.82);
+  box-shadow: 0 8px 22px rgba(15,23,42,.06);
+  text-decoration:none;
+  color: inherit;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.featureCard:hover{ transform: translateY(-1px); box-shadow: 0 12px 26px rgba(15,23,42,.10); }
+.featureTop{ display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
+.featureIcon{
+  width:44px; height:44px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius: 14px;
+  background: rgba(2,132,199,.10);
+  font-size: 22px;
+  flex: 0 0 auto;
+}
+.featureMeta{ display:flex; flex-direction:column; gap:4px; min-width: 0; }
+.featureTitle{ font-weight: 800; font-size: 1.08rem; line-height:1.2; }
+.featureText{ margin:0; color: rgba(15,23,42,.72); font-weight: 600; font-size: 0.95rem; }
+.featureCTA{
+  margin-top:auto;
+  display:flex; align-items:center; justify-content:center;
+  padding: 9px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(15,23,42,.14);
+  font-weight: 800;
+  background: rgba(15,23,42,.04);
+}
+.featureCard.isPrimary{ border-color: rgba(2,132,199,.28); background: rgba(2,132,199,.05); }
+.featureCard.isHot{ border-color: rgba(245,158,11,.30); background: rgba(245,158,11,.08); }
+.featureCard.isMap{ border-color: rgba(16,185,129,.28); background: rgba(16,185,129,.06); }
+@media (max-width: 520px){
+  .featureGrid{ grid-template-columns: 1fr; }
+  .featureCard{ padding: 13px; }
+}
+
+/* Hero buttons: allow wrapping on mobile */
+.heroActions{ flex-wrap: wrap; gap: 10px; }
 </style>
 </head>
 <body>
@@ -65,8 +123,75 @@
 <div class="trust-badge"><span class="icon">🌿</span> טבעוני</div>
 <div class="trust-badge"><span class="icon">🐇</span> Leaping Bunny</div>
 </div>
-<div class="actions heroActions"><a class="btn primary" href="products.html">חיפוש מוצרים</a><a class="btn ghost" href="vegan-in-israel.html">טבעוני בישראל</a></div><form autocomplete="off" class="search-wrapper" id="homeSearchForm"><input aria-label="חיפוש מוצר" id="homeSearchInput" placeholder="חפשי מוצר… (לדוגמה: קרם פנים, שמפו, מסקרה)" type="search"/><button aria-label="חיפוש" class="search-btn" type="submit">🔎</button></form></div>
+<div class="actions heroActions"><a class="btn primary" href="products.html">חיפוש מוצרים</a><a class="btn ghost" href="bundles.html">באנדלים</a><a class="btn ghost" href="todays-top-deals.html">דילים היום</a></div><form autocomplete="off" class="search-wrapper" id="homeSearchForm"><input aria-label="חיפוש מוצר" id="homeSearchInput" placeholder="חפשי מוצר… (לדוגמה: קרם פנים, שמפו, מסקרה)" type="search"/><button aria-label="חיפוש" class="search-btn" type="submit">🔎</button></form></div>
 </div>
+</section>
+<section class="panel" aria-label="קיצורי דרך חשובים">
+  <div class="wrap">
+    <div class="contentCard homeFeatured">
+      <div class="sectionHead">
+        <h2 class="sectionTitle">הכי שימושי עכשיו</h2>
+        <p class="muted sectionLead">כניסה מהירה לדפים שהכי עוזרים בקנייה ובחיים הטבעוניים.</p>
+      </div>
+
+      <div class="featureGrid" aria-label="קיצורי דרך מובלטים">
+        <a class="featureCard isPrimary" href="bundles.html">
+          <div class="featureTop">
+            <div class="featureIcon" aria-hidden="true">📦</div>
+            <div class="featureMeta">
+              <div class="featureTitle">באנדלים למשלוח חינם</div>
+              <p class="featureText">סטים מוכנים — מותאם למשלוח חינם מעל $49.</p>
+            </div>
+          </div>
+          <div class="featureCTA">לפתיחה</div>
+        </a>
+
+        <a class="featureCard isHot" href="todays-top-deals.html">
+          <div class="featureTop">
+            <div class="featureIcon" aria-hidden="true">🔥</div>
+            <div class="featureMeta">
+              <div class="featureTitle">דילים חמים היום</div>
+              <p class="featureText">מבצעים שמתעדכנים — כולל משלוח לישראל.</p>
+            </div>
+          </div>
+          <div class="featureCTA">לכל הדילים</div>
+        </a>
+
+        <a class="featureCard" href="recommended-brands.html">
+          <div class="featureTop">
+            <div class="featureIcon" aria-hidden="true">🌍</div>
+            <div class="featureMeta">
+              <div class="featureTitle">מותגים מומלצים בחו״ל</div>
+              <p class="featureText">רשימת מותגים מסודרת + קישורי קנייה.</p>
+            </div>
+          </div>
+          <div class="featureCTA">לרשימה</div>
+        </a>
+
+        <a class="featureCard isMap" href="vegan-in-israel.html">
+          <div class="featureTop">
+            <div class="featureIcon" aria-hidden="true">📍</div>
+            <div class="featureMeta">
+              <div class="featureTitle">טבעוני בישראל</div>
+              <p class="featureText">מדריך + מפה: איפה אוכלים ומה קונים.</p>
+            </div>
+          </div>
+          <div class="featureCTA">למדריך</div>
+        </a>
+
+        <a class="featureCard isMap" href="hidden-gems-map.html">
+          <div class="featureTop">
+            <div class="featureIcon" aria-hidden="true">💎</div>
+            <div class="featureMeta">
+              <div class="featureTitle">Hidden Gems</div>
+              <p class="featureText">מפת מקומות ששווה להכיר — קהילה ממליצה.</p>
+            </div>
+          </div>
+          <div class="featureCTA">למפה</div>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="panel filter-panel">
   <div class="wrap">
@@ -86,6 +211,26 @@
     <div class="miniCardTitle">בודק רכיבים</div>
     <div class="miniCardText">בדיקה מהירה</div>
   </a>
+
+<a class="miniCard" href="bundles.html">
+  <div class="miniCardIcon">📦</div>
+  <div class="miniCardTitle">באנדלים</div>
+  <div class="miniCardText">סטים למשלוח חינם</div>
+</a>
+
+<a class="miniCard" href="recommended-brands.html">
+  <div class="miniCardIcon">🌍</div>
+  <div class="miniCardTitle">מותגים בחו״ל</div>
+  <div class="miniCardText">רשימת מותגים + קישורים</div>
+</a>
+
+<a class="miniCard" href="hidden-gems-map.html">
+  <div class="miniCardIcon">💎</div>
+  <div class="miniCardTitle">Hidden Gems</div>
+  <div class="miniCardText">מפת מקומות מומלצים</div>
+</a>
+
+
 
   <a class="miniCard" href="todays-top-deals.html">
     <div class="miniCardIcon"><img class="miniIcon" src="assets/img/icons/tag-flame.png" alt="" loading="lazy" decoding="async"/></div>
