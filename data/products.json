@@ -1,266 +1,147 @@
 [
   {
-    "id": "dphue-b01nahor2c",
-    "brand": "dpHUE",
-    "name": "שטיפת שיער בחומץ תפוחים של dpHUE, 8.5oz",
-    "size": "8.5 oz",
+    "id": "dae-b0cynpg1cr",
+    "brand": "DAE",
+    "name": "סט זוגי סיגנצ'ר (שמפו ומרכך)",
+    "size": "20 fl oz (pack of 1)",
     "categories": [
       "hair",
       "Beauty & Personal Care",
       "Hair Care",
-      "Shampoo & Conditioner",
-      "Shampoo Alternative",
-      "Hair Rinse",
-      "Scalp Cleanser",
-      "Clarifying Treatment",
-      "Post-Workout Hair Care",
-      "Color-Safe",
-      "Scalp Care"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B01NAHOR2C?tag=nocrueltyil-20",
-        "asin": "B01NAHOR2C",
-        "currency": "USD",
-        "priceUSD": 37.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B01NAHOR2C.jpg"
-  },
-  {
-    "id": "dphue-b0992mhhrr",
-    "brand": "dpHUE",
-    "name": "שטיפת שיער לייט בחומץ תפוחים של dpHUE, 8.5oz",
-    "size": "8.5 oz",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Shampoo & Conditioner",
-      "Shampoo Alternative",
-      "Hair Rinse",
-      "Scalp Cleanser",
-      "Fine Hair",
-      "Clarifying Treatment",
-      "Post-Workout Hair Care",
-      "Color-Safe",
-      "Scalp Care"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0992MHHRR?tag=nocrueltyil-20",
-        "asin": "B0992MHHRR",
-        "currency": "USD",
-        "priceUSD": 37.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0992MHHRR.jpg"
-  },
-  {
-    "id": "dphue-b07fcwzf7r",
-    "brand": "dpHUE",
-    "name": "טיפול שמן Color Fresh Oil Therapy של dpHUE, 3oz",
-    "size": "3 fl oz",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Hair Treatments",
-      "Hair Oil",
-      "Argan Oil",
-      "Shine",
-      "Frizz Control",
-      "All Hair Types"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B07FCWZF7R?tag=nocrueltyil-20",
-        "asin": "B07FCWZF7R",
-        "currency": "USD",
-        "priceUSD": 36.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B07FCWZF7R.jpg"
-  },
-  {
-    "id": "dphue-b07hxtfffh4",
-    "brand": "dpHUE",
-    "name": "שטיפת שיער בחומץ תפוחים של dpHUE, 20oz",
-    "size": "20 oz",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Shampoo & Conditioner",
-      "Shampoo Alternative",
-      "Hair Rinse",
-      "Scalp Cleanser",
-      "Clarifying Treatment",
-      "Post-Workout Hair Care",
-      "Color-Safe",
-      "Scalp Care"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 150,
-    "priceMax": 200,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B07HXTFFH4?tag=nocrueltyil-20",
-        "asin": "B07HXTFFH4",
-        "currency": "USD",
-        "priceUSD": 64.0,
-        "freeShipToIsrael": true
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B07HXTFFH4.jpg"
-  },
-  {
-    "id": "dphue-b09srwllx7",
-    "brand": "dpHUE",
-    "name": "שטיפת שיער לייט בחומץ תפוחים של dpHUE, 20oz",
-    "size": "20 oz",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Shampoo & Conditioner",
-      "Shampoo Alternative",
-      "Hair Rinse",
-      "Scalp Cleanser",
-      "Fine Hair",
-      "Clarifying Treatment",
-      "Post-Workout Hair Care",
-      "Color-Safe",
-      "Scalp Care"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 150,
-    "priceMax": 200,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B09SRWLLX7?tag=nocrueltyil-20",
-        "asin": "B09SRWLLX7",
-        "currency": "USD",
-        "priceUSD": 64.0,
-         "freeShipToIsrael": true
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B09SRWLLX7.jpg"
-  },
-  {
-    "id": "dphue-b09sshm5hj",
-    "brand": "dpHUE",
-    "name": "שטיפת שיער בחומץ תפוחים של dpHUE, 8.5oz – מארז 2",
-    "size": "8.5 oz x 2",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Shampoo & Conditioner",
-      "Shampoo Alternative",
-      "Hair Rinse",
-      "Scalp Cleanser",
-      "Clarifying Treatment",
-      "Post-Workout Hair Care",
-      "Color-Safe",
-      "Scalp Care",
-      "Value Pack"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 200,
-    "priceMax": 250,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B09SSHM5HJ?tag=nocrueltyil-20",
-        "asin": "B09SSHM5HJ",
-        "currency": "USD",
-        "priceUSD": 68.4,
-        "freeShipToIsrael": true
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B09SSHM5HJ.jpg"
-  },
-  {
-    "id": "dphue-b085sz34k8",
-    "brand": "dpHUE",
-    "name": "שמפו מרגיע ACV של dpHUE, 8.5oz",
-    "size": "8.5 oz",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Shampoo & Conditioner",
       "Shampoo",
-      "Dry Scalp",
-      "Scalp Care",
-      "Color-Treated Hair",
-      "Sulfate-Free"
+      "Conditioner",
+      "Hair Sets",
+      "Frizz Control",
+      "Moisturizing"
     ],
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
+    "rating": 4.4,
+    "ratingCount": 753,
+    "boughtPastMonth": "900+",
+    "priceMin": 150,
+    "priceMax": 200,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CYNPG1CR?tag=nocrueltyil-20",
+        "asin": "B0CYNPG1CR",
+        "currency": "USD",
+        "priceUSD": 56.0
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0CYNPG1CR.jpg"
+  },
+  {
+    "id": "dae-b0d3mdjsrg",
+    "brand": "DAE",
+    "name": "אבקת שמפו יבש Fairy Duster – ללא אירוסול, סופגת שומן ומרעננת שורשים",
+    "size": "1.06 oz (pack of 1)",
+    "categories": [
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Dry Shampoo",
+      "Powder",
+      "Oil Control",
+      "Refresh Roots"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.4,
+    "ratingCount": 831,
+    "boughtPastMonth": "4K+",
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B085SZ34K8?tag=nocrueltyil-20",
-        "asin": "B085SZ34K8",
+        "url": "https://www.amazon.com/dp/B0D3MDJSRG?tag=nocrueltyil-20",
+        "asin": "B0D3MDJSRG",
+        "currency": "USD",
+        "priceUSD": 30.0,
+        "freeShipOver": 49
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0D3MDJSRG.jpg"
+  },
+  {
+    "id": "dae-b0d9379sbp",
+    "brand": "DAE",
+    "name": "מרכך ללא שטיפה Mirage Mist – מתיר קשרים, מזין ומגן מחום",
+    "size": "5 oz (pack of 1)",
+    "categories": [
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Leave-In Conditioner",
+      "Detangler",
+      "Heat Protection",
+      "Frizz Control"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.4,
+    "ratingCount": 213,
+    "boughtPastMonth": "900+",
+    "priceMin": 50,
+    "priceMax": 100,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0D9379SBP?tag=nocrueltyil-20",
+        "asin": "B0D9379SBP",
+        "currency": "USD",
+        "priceUSD": 30.0,
+        "freeShipOver": 49
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0D9379SBP.jpg"
+  },
+  {
+    "id": "dae-b09j1mglbt",
+    "brand": "DAE",
+    "name": "מסכת לחות Monsoon – הזנה אינטנסיבית, ברק וחלקות, מחזקת ומסייעת למניעת נזק",
+    "size": "8 oz (pack of 1)",
+    "categories": [
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair Mask",
+      "Deep Conditioner",
+      "Hair Treatment",
+      "Hydration",
+      "Damage Care"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.4,
+    "ratingCount": 287,
+    "boughtPastMonth": "100+",
+    "priceMin": 50,
+    "priceMax": 100,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B09J1MGLBT?tag=nocrueltyil-20",
+        "asin": "B09J1MGLBT",
         "currency": "USD",
         "priceUSD": 32.0,
         "freeShipOver": 49
@@ -269,146 +150,446 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B085SZ34K8.jpg"
+    "image": "assets/img/products/B09J1MGLBT.jpg"
   },
   {
-    "id": "dphue-b0b8lfyhrm",
-    "brand": "dpHUE",
-    "name": "סרום יומי לקרקפת ACV של dpHUE, 1.7oz",
-    "size": "1.7 fl oz",
+    "id": "dae-b09j1l5kxf",
+    "brand": "DAE",
+    "name": "שמן שיער אגס קוצני – מחליק פריז, מעניק לחות, מפחית שבירה, מתיר קשרים ומוסיף ברק",
+    "size": "1.7 fl oz (pack of 1)",
     "categories": [
       "hair",
       "Beauty & Personal Care",
       "Hair Care",
-      "Hair & Scalp Treatments",
-      "Scalp Serum",
-      "Scalp Care",
-      "Hyaluronic Acid",
-      "Hair Growth Support"
+      "Hair Oil",
+      "Frizz Control",
+      "Shine",
+      "Breakage Care",
+      "Detangler"
     ],
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
+    "rating": 4.3,
+    "ratingCount": 409,
+    "boughtPastMonth": "200+",
     "priceMin": 100,
     "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0B8LFYHRM?tag=nocrueltyil-20",
-        "asin": "B0B8LFYHRM",
+        "url": "https://www.amazon.com/dp/B09J1L5KXF?tag=nocrueltyil-20",
+        "asin": "B09J1L5KXF",
         "currency": "USD",
-        "priceUSD": 49.0,
-        "freeShipToIsrael": true
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0B8LFYHRM.jpg"
-  },
-  {
-    "id": "dphue-b0c3wlc3n5",
-    "brand": "dpHUE",
-    "name": "דיטוקס פילינג לקרקפת ACV של dpHUE, 4oz",
-    "size": "4 oz",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Hair & Scalp Treatments",
-      "Scalp Detox",
-      "Exfoliating Treatment",
-      "Scalp Care",
-      "Salicylic Acid",
-      "Niacinamide",
-      "Color-Safe"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0C3WLC3N5?tag=nocrueltyil-20",
-        "asin": "B0C3WLC3N5",
-        "currency": "USD",
-        "priceUSD": 35.0,
+        "priceUSD": 38.0,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C3WLC3N5.jpg"
+    "image": "assets/img/products/B09J1L5KXF.jpg"
   },
   {
-    "id": "dphue-b07l9gnh7j",
-    "brand": "dpHUE",
-    "name": "מסכת שיער בחומץ תפוחים של dpHUE, 9oz",
-    "size": "9 oz",
+    "id": "dae-b0flb59f28",
+    "brand": "DAE",
+    "name": "סט רחצה Freshly Squeezed",
+    "size": "8.33 oz (set)",
     "categories": [
       "hair",
       "Beauty & Personal Care",
       "Hair Care",
-      "Hair Treatments",
-      "Hair Mask",
-      "Deep Conditioning",
+      "Shampoo",
+      "Conditioner",
+      "Hair Sets",
+      "Frizz Control"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.4,
+    "ratingCount": 753,
+    "boughtPastMonth": "50+",
+    "priceMin": 100,
+    "priceMax": 150,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0FLB59F28?tag=nocrueltyil-20",
+        "asin": "B0FLB59F28",
+        "currency": "USD",
+        "priceUSD": 48.0,
+        "freeShipOver": 49
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0FLB59F28.jpg"
+  },
+  {
+    "id": "dae-b0cbqsfybm",
+    "brand": "DAE",
+    "name": "מרכך סיגנצ'ר – מעניק לחות ומגן, מרגיע פריז ונועל לחות",
+    "size": "32 oz (pack of 1)",
+    "categories": [
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Conditioner",
+      "Moisturizing",
+      "Frizz Control",
+      "Color Care"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.6,
+    "ratingCount": 421,
+    "boughtPastMonth": "100+",
+    "priceMin": 200,
+    "priceMax": 250,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CBQSFYBM?tag=nocrueltyil-20",
+        "asin": "B0CBQSFYBM",
+        "currency": "USD",
+        "priceUSD": 68.0
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0CBQSFYBM.jpg"
+  },
+  {
+    "id": "dae-b0c7wn6whk",
+    "brand": "DAE",
+    "name": "שמפו סיגנצ'ר – מנקה ומעניק לחות לשיער יבש ולקרקפת",
+    "size": "32 oz (pack of 1)",
+    "categories": [
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoo",
+      "Moisturizing",
       "Dry Hair",
-      "Damaged Hair",
-      "Color-Treated Hair"
+      "Scalp Care"
     ],
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 100,
-    "priceMax": 150,
+    "rating": 4.4,
+    "ratingCount": 753,
+    "boughtPastMonth": "100+",
+    "priceMin": 200,
+    "priceMax": 250,
     "offers": [
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B07L9GNH7J?tag=nocrueltyil-20",
-        "asin": "B07L9GNH7J",
+        "url": "https://www.amazon.com/dp/B0C7WN6WHK?tag=nocrueltyil-20",
+        "asin": "B0C7WN6WHK",
         "currency": "USD",
-        "priceUSD": 45.0,
+        "priceUSD": 68.0
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0C7WN6WHK.jpg"
+  },
+  {
+    "id": "dae-b0f5s1pvbh",
+    "brand": "DAE",
+    "name": "סבון גוף Beaming סיגנצ'ר – מרכך, מזין ונועל לחות",
+    "size": "10 oz (pack of 1)",
+    "categories": [
+      "body",
+      "Beauty & Personal Care",
+      "Personal Care",
+      "Body Wash",
+      "Hydrating",
+      "Moisturizing"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.4,
+    "ratingCount": 48,
+    "boughtPastMonth": "50+",
+    "priceMin": 50,
+    "priceMax": 100,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0F5S1PVBH?tag=nocrueltyil-20",
+        "asin": "B0F5S1PVBH",
+        "currency": "USD",
+        "priceUSD": 24.0,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B07L9GNH7J.jpg"
+    "image": "assets/img/products/B0F5S1PVBH.jpg"
   },
   {
-    "id": "dphue-b0767r87kb",
-    "brand": "dpHUE",
-    "name": "סקראב לקרקפת בחומץ תפוחים ומלח הימלאיה ורוד של dpHUE, 9oz",
-    "size": "9 oz",
+    "id": "dae-b0c95by86y",
+    "brand": "DAE",
+    "name": "נר אגס קוצני – יציקה ידנית, 100% סויה, מיוצר מקומית",
+    "size": "10 oz (approx.)",
     "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Hair & Scalp Treatments",
-      "Scalp Scrub",
-      "Exfoliating Scrub",
-      "Scalp Care",
-      "Pink Himalayan Salt",
-      "Dry Scalp"
+      "home",
+      "Home & Kitchen",
+      "Home Fragrance",
+      "Candles",
+      "Soy Candles",
+      "Scented Candles"
     ],
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
+    "rating": 4.2,
+    "ratingCount": 11,
+    "boughtPastMonth": null,
     "priceMin": 100,
     "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0767R87KB?tag=nocrueltyil-20",
-        "asin": "B0767R87KB",
+        "url": "https://www.amazon.com/dp/B0C95BY86Y?tag=nocrueltyil-20",
+        "asin": "B0C95BY86Y",
+        "currency": "USD",
+        "priceUSD": 34.0,
+        "freeShipOver": 49
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0C95BY86Y.jpg"
+  },
+  {
+    "id": "dae-b0cbqpsbf1",
+    "brand": "DAE",
+    "name": "מברשת Vegанית להתרת קשרים ולעיצוב – מפחיתה שבירה ומעסה את הקרקפת",
+    "size": "1 count",
+    "categories": [
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair Tools",
+      "Brushes",
+      "Detangling",
+      "Scalp Massage"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.7,
+    "ratingCount": 179,
+    "boughtPastMonth": "1K+",
+    "priceMin": 50,
+    "priceMax": 100,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CBQPSBF1?tag=nocrueltyil-20",
+        "asin": "B0CBQPSBF1",
+        "currency": "USD",
+        "priceUSD": 26.0
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0CBQPSBF1.jpg"
+  },
+
+  {
+    "id": "eadem-b0cbt2zpsc",
+    "brand": "EADEM",
+    "name": "באלם ניקוי לחותי Dew Dream להסרת איפור – עם מורינגה וטייגר גראס",
+    "size": "3.4 oz",
+    "categories": [
+      "face",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Cleansers",
+      "Makeup Removers",
+      "Cleansing Balms",
+      "Hydrating"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.6,
+    "ratingCount": 57,
+    "boughtPastMonth": null,
+    "priceMin": 100,
+    "priceMax": 150,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CBT2ZPSC?tag=nocrueltyil-20",
+        "asin": "B0CBT2ZPSC",
+        "currency": "USD",
+        "priceUSD": 34.0,
+        "freeShipOver": 49
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B0CBT2ZPSC.jpg"
+  },
+  {
+    "id": "eadem-b0dfrl3ghb",
+    "brand": "EADEM",
+    "name": "באלם מרכך לשפתיים Le Chouchou – באטר מוצ'י",
+    "size": "0.5 oz",
+    "categories": [
+      "lips",
+      "Beauty & Personal Care",
+      "Lip Care",
+      "Lip Balm",
+      "Lip Mask",
+      "Lip Gloss"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.5,
+    "ratingCount": 1000,
+    "boughtPastMonth": "8K+",
+    "priceMin": 50,
+    "priceMax": 100,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DFRL3GHB?tag=nocrueltyil-20",
+        "asin": "B0DFRL3GHB",
+        "currency": "USD",
+        "priceUSD": 24.0
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B0DFRL3GHB.jpg"
+  },
+  {
+    "id": "eadem-b0dfs4bcfb",
+    "brand": "EADEM",
+    "name": "באלם מרכך לשפתיים Le Chouchou – רוטב תאנים",
+    "size": "0.5 oz",
+    "categories": [
+      "lips",
+      "Beauty & Personal Care",
+      "Lip Care",
+      "Lip Balm",
+      "Lip Mask",
+      "Lip Gloss"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.5,
+    "ratingCount": 1000,
+    "boughtPastMonth": "2K+",
+    "priceMin": 50,
+    "priceMax": 100,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DFS4BCFB?tag=nocrueltyil-20",
+        "asin": "B0DFS4BCFB",
+        "currency": "USD",
+        "priceUSD": 24.0
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B0DFS4BCFB.jpg"
+  },
+  {
+    "id": "eadem-b0dfrqgv7s",
+    "brand": "EADEM",
+    "name": "באלם מרכך לשפתיים Le Chouchou – בובה באונס",
+    "size": "0.5 oz",
+    "categories": [
+      "lips",
+      "Beauty & Personal Care",
+      "Lip Care",
+      "Lip Balm",
+      "Lip Mask",
+      "Lip Gloss"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.5,
+    "ratingCount": 1000,
+    "boughtPastMonth": "1K+",
+    "priceMin": 50,
+    "priceMax": 100,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DFRQGV7S?tag=nocrueltyil-20",
+        "asin": "B0DFRQGV7S",
+        "currency": "USD",
+        "priceUSD": 24.0
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B0DFRQGV7S.jpg"
+  },
+  {
+    "id": "eadem-b0dfrl82ks",
+    "brand": "EADEM",
+    "name": "טונר עדין לקילוף AHA + PHA במרקם חלבי – Cashmere Peel",
+    "size": "5.0 oz",
+    "categories": [
+      "face",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Toners",
+      "Exfoliating Toners",
+      "AHA",
+      "PHA",
+      "Pore Care"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.5,
+    "ratingCount": 87,
+    "boughtPastMonth": "300+",
+    "priceMin": 100,
+    "priceMax": 150,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0DFRL82KS?tag=nocrueltyil-20",
+        "asin": "B0DFRL82KS",
         "currency": "USD",
         "priceUSD": 42.0,
         "freeShipOver": 49
@@ -416,190 +597,82 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0767R87KB.jpg"
+    "isDiscounted": true,
+    "image": "assets/img/products/B0DFRL82KS.jpg"
   },
   {
-    "id": "dphue-b09sry79s6",
-    "brand": "dpHUE",
-    "name": "מרכך קליל בחומץ תפוחים של dpHUE, 8.5oz",
-    "size": "8.5 fl oz",
+    "id": "eadem-b0dhyjzs15",
+    "brand": "EADEM",
+    "name": "סרום רולר לטיפול בשערות חודרניות Smooth Slate – מפחית גבשושיות ומאט צמיחה מחדש",
+    "size": "1.69 fl oz",
     "categories": [
-      "hair",
+      "body",
       "Beauty & Personal Care",
-      "Hair Care",
-      "Shampoo & Conditioner",
-      "Conditioner",
-      "Lightweight Conditioner",
-      "Color Protection",
-      "Shine",
-      "All Hair Types"
+      "Personal Care",
+      "Ingrown Hair",
+      "Serum",
+      "AHA",
+      "Dark Spots Care"
     ],
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B09SRY79S6?tag=nocrueltyil-20",
-        "asin": "B09SRY79S6",
-        "currency": "USD",
-        "priceUSD": 32.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B09SRY79S6.jpg"
-  },
-  {
-    "id": "dphue-b0fjsd8smf",
-    "brand": "dpHUE",
-    "name": "מרכך ללא שטיפה Wonderworks בחומץ תפוחים של dpHUE",
-    "size": "6.5 fl oz",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Hair Treatments",
-      "Leave-In Conditioner",
-      "Detangling",
-      "Frizz Control",
-      "Heat Protection",
-      "Shine"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0FJSD8SMF?tag=nocrueltyil-20",
-        "asin": "B0FJSD8SMF",
-        "currency": "USD",
-        "priceUSD": 32.59,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0FJSD8SMF.jpg"
-  },
-  {
-    "id": "dphue-b0c3wk8jlf",
-    "brand": "dpHUE",
-    "name": "שמפו מחייה ACV עם חומצה היאלורונית של dpHUE, 8.5oz",
-    "size": "8.5 oz",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Shampoo & Conditioner",
-      "Shampoo",
-      "Scalp Care",
-      "Hyaluronic Acid",
-      "Hair Growth Support",
-      "Color-Safe"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0C3WK8JLF?tag=nocrueltyil-20",
-        "asin": "B0C3WK8JLF",
-        "currency": "USD",
-        "priceUSD": 32.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0C3WK8JLF.jpg"
-  },
-  {
-    "id": "dphue-b09wswgs66",
-    "brand": "dpHUE",
-    "name": "סקראב לקרקפת בחומץ תפוחים של dpHUE, 9oz – מארז 2",
-    "size": "9 oz x 2",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Hair & Scalp Treatments",
-      "Scalp Scrub",
-      "Exfoliating Scrub",
-      "Scalp Care",
-      "Value Pack"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 200,
-    "priceMax": 250,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B09WSWGS66?tag=nocrueltyil-20",
-        "asin": "B09WSWGS66",
-        "currency": "USD",
-        "priceUSD": 75.6,
-        "freeShipToIsrael": true
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B09WSWGS66.jpg"
-  },
-  {
-    "id": "dphue-b0ddl88g5z",
-    "brand": "dpHUE",
-    "name": "צבע שיער Color Dream חום כהה של dpHUE (קבוע למחצה)",
-    "size": "4 oz",
-    "categories": [
-      "hair",
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Hair Coloring Products",
-      "Demi-Permanent Hair Color",
-      "Hair Dye",
-      "Dark Brown",
-      "At-Home Color"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
+    "rating": 4.3,
+    "ratingCount": 49,
+    "boughtPastMonth": "50+",
     "priceMin": 100,
     "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DDL88G5Z?tag=nocrueltyil-20",
-        "asin": "B0DDL88G5Z",
+        "url": "https://www.amazon.com/dp/B0DHYJZS15?tag=nocrueltyil-20",
+        "asin": "B0DHYJZS15",
         "currency": "USD",
-        "priceUSD": 33.0,
+        "priceUSD": 36.0,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0DDL88G5Z.jpg"
+    "isDiscounted": true,
+    "image": "assets/img/products/B0DHYJZS15.jpg"
+  },
+  {
+    "id": "eadem-b0f9r34glj",
+    "brand": "EADEM",
+    "name": "The Chisel – כלי גואשה ורולר ג'ייד לעיצוב ופיסול הפנים",
+    "size": "1 count",
+    "categories": [
+      "face",
+      "Beauty & Personal Care",
+      "Skincare Tools",
+      "Gua Sha",
+      "Jade Roller",
+      "Facial Massage",
+      "Sculpting"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "rating": 4.4,
+    "ratingCount": 24,
+    "boughtPastMonth": null,
+    "priceMin": 100,
+    "priceMax": 150,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0F9R34GLJ?tag=nocrueltyil-20",
+        "asin": "B0F9R34GLJ",
+        "currency": "USD",
+        "priceUSD": 39.0
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": true,
+    "image": "assets/img/products/B0F9R34GLJ.jpg"
   }
 ]
