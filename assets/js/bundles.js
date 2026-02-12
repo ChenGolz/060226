@@ -424,6 +424,15 @@ function eligibleProduct(p){
 
     haircare: 'hair',
     'hair-care': 'hair',
+    'hair mask': 'hair-mask',
+    'hairmask': 'hair-mask',
+    'scalp mask': 'hair-mask',
+
+    'face mask': 'mask',
+    'face-mask': 'mask',
+    'facemask': 'mask',
+    'sheet mask': 'mask',
+    'sheet-mask': 'mask',
 
     mens: 'mens-care',
     men: 'mens-care',
@@ -475,6 +484,56 @@ function eligibleProduct(p){
     return false;
   }
 
+  // ===== Mask disambiguation helpers =====
+  // We have a generic "mask" category in data, but masks can be hair / face / body.
+  // Rule of thumb:
+  // - explicit category wins (hair / face / body)
+  // - otherwise, use name + category text to infer where the mask belongs
+  function textHay(p){
+    return normalizeText((p && p._name ? p._name : '') + ' ' + ((p && p._categories) ? p._categories.join(' ') : ''));
+  }
+
+  var RE_MASK_ANY = /\bmask\b|\bmasque\b|מסכה/i;
+
+  // Strong indicators (prefer these over generic context)
+  var RE_HAIR_MASK_STRONG =
+    /\bhair\s*mask\b|\bscalp\s*mask\b|\bcondition(ing)?\s*mask\b|\bdeep\s*conditioning\b|\bmask\s*(for|to)\s*hair\b|מסכת\s*שיער|מסכה\s*לשיער|מסכה\s*לקרקפת/i;
+
+  var RE_FACE_MASK_STRONG =
+    /\bface\s*mask\b|\bfacial\s*mask\b|\bsheet\s*mask\b|\bclay\s*mask\b|\bmud\s*mask\b|\bpeel[- ]?off\b|\bsleeping\s*mask\b|\bcharcoal\b|\bpore\b|\bacne\b|מסכת\s*פנים|מסכה\s*לפנים/i;
+
+  // Softer context hints (used only if strong indicators are absent)
+  var RE_HAIR_CTX = /\bhair\b|\bscalp\b|\bshampoo\b|\bconditioner\b|\bstyling\b|\bcurl\b|\bkeratin\b|\bbond\b|\bsplit\s*end\b|שיער|קרקפת|שמפו|מרכך|תלתל|קרטין/i;
+  var RE_FACE_CTX = /\bface\b|\bfacial\b|\bskin\b|\bskincare\b|\bserum\b|\btoner\b|\bcleanser\b|\bmoisturi[sz]er\b|\bcream\b|פנים|עור|סרום|טונר|קרם\s*פנים/i;
+
+  function maskKind(p){
+    if(!p) return null;
+    var hay = textHay(p);
+    var isMask = hasCat(p,'mask') || RE_MASK_ANY.test(hay);
+    if(!isMask) return null;
+
+    // Explicit categories/subcategories win
+    if(hasCat(p,'face')) return 'face';
+    if(hasCat(p,'body') || hasAnyCat(p,['hand','foot'])) return 'body';
+    if(hasCat(p,'hair') || hasAnyCat(p,['shampoo','conditioner','hair-mask','scalp','styling'])) return 'hair';
+
+    // Strong name indicators
+    if(RE_HAIR_MASK_STRONG.test(hay)) return 'hair';
+    if(RE_FACE_MASK_STRONG.test(hay)) return 'face';
+
+    // Softer context inference
+    var hairCtx = RE_HAIR_CTX.test(hay);
+    var faceCtx = RE_FACE_CTX.test(hay);
+
+    if(hairCtx && !faceCtx) return 'hair';
+    if(faceCtx && !hairCtx) return 'face';
+
+    // ambiguous: don't auto-assign
+    return null;
+  }
+
+
+
   function isKids(p){
     // user requirement: ילדים/לילדים in the name => kids/family
     return /(ילדים|לילדים|ילד|לתינוק|תינוק|בייבי)/.test(p._name || '') || /\bkids?\b|\bbaby\b|\btoddler\b/i.test(p._name || '') || (hasCat(p,'baby') || hasCat(p,'kids'));
@@ -485,8 +544,8 @@ function eligibleProduct(p){
   if(hasCat(p,'mens-care') || hasCat(p,'men') || hasCat(p,'mens') ) return true;
   var n = (p._name || '');
   var c = (Array.isArray(p._categories) ? p._categories.join(' ') : '');
-  return /men/i.test(n) || /mens/i.test(n) || /men's/i.test(n) || /גברים|לגבר|לגברים/.test(n) ||
-         /men/i.test(c) || /mens/i.test(c) || /גברים|לגבר|לגברים/.test(c);
+  return /\bmen\b/i.test(n) || /\bmens\b/i.test(n) || /men's/i.test(n) || /גברים|לגבר|לגברים/.test(n) ||
+         /\bmen\b/i.test(c) || /\bmens\b/i.test(c) || /גברים|לגבר|לגברים/.test(c);
 }
 
   function isMakeup(p){
@@ -495,17 +554,26 @@ function eligibleProduct(p){
   }
 
   function isHair(p){
-  // Hair bundle: treat shampoo/conditioner/mask/styling/scalp as hair too
+  // Hair products (avoid treating generic "mask" as hair; masks are disambiguated via maskKind)
   if(hasCat(p,'hair')) return true;
-  if(hasAnyCat(p,['shampoo','conditioner','hair-mask','mask','scalp','styling','haircare'])) return true;
-  return /hair/i.test(p._name || '') || /שמפו|מרכך|מסכה|שיער|קרקפת/.test(p._name || '');
+  if(hasAnyCat(p,['shampoo','conditioner','hair-mask','scalp','styling'])) return true;
+
+  var hay = textHay(p);
+  if(/\bhair\b|\bscalp\b|\bshampoo\b|\bconditioner\b/i.test(hay)) return true;
+  if(/שמפו|מרכך|שיער|קרקפת/.test(hay)) return true;
+
+  // If it's a mask, accept it as hair only when we can confidently infer it
+  return maskKind(p) === 'hair';
 }
+
   function isShampoo(p){ return hasCat(p,'shampoo') || /\bshampoo\b/i.test(p._name || ''); }
   function isConditioner(p){ return hasCat(p,'conditioner') || /\bconditioner\b/i.test(p._name || ''); }
   function isHairMask(p){
-    if(hasAnyCat(p,['mask']) && isHair(p)) return true;
-    return (/\bmask\b|\bmasque\b/i.test(p._name || '') && isHair(p));
+    // Hair mask is either explicitly tagged, or inferred from name/categories
+    if(hasCat(p,'hair-mask')) return true;
+    return maskKind(p) === 'hair';
   }
+
 
   function isFace(p){ return hasCat(p,'face') || /\bface\b/i.test(p._name || '') || /פנים/.test(p._name || ''); }
   function isFaceCream(p){
@@ -517,9 +585,10 @@ function eligibleProduct(p){
     return (/\bserum\b/i.test(p._name || '') && isFace(p));
   }
   function isFaceMask(p){
-    if(hasCat(p,'mask') && isFace(p)) return true;
-    return (/\bmask\b/i.test(p._name || '') && isFace(p));
+    // Face masks: only when explicitly face-related, not generic "mask"
+    return maskKind(p) === 'face';
   }
+
 
   function isBody(p){
     // Body & hygiene products
@@ -1422,7 +1491,7 @@ function buildBundlesFromPool(allEligible){
   // Slot predicates
   function slotShampoo(p){ return isShampoo(p) || /שמפו/.test(p._name||''); }
   function slotConditioner(p){ return isConditioner(p) || /מרכך/.test(p._name||''); }
-  function slotHairMask(p){ return isHairMask(p) || (/מסכה|mask|masque/i.test(p._name||'') && isHairBundle(p)); }
+  function slotHairMask(p){ return isHairMask(p); }
 
   function slotLipstick(p){ return hasAnyCat(p,['lipstick','lips','gloss']) || /lipstick|gloss|lip\b/i.test(p._name||'') || /שפתון|ליפסטיק|גלוס/.test(p._name||''); }
   function slotMascara(p){ return hasAnyCat(p,['mascara','eyes']) || /mascara|lash|eyeliner/i.test(p._name||'') || /מסקרה|ריסים|אייליינר/.test(p._name||''); }
