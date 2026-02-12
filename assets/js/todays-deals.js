@@ -270,9 +270,21 @@
     sun: 'שמש',
     teeth: 'שיניים',
     baby: 'ילדים',
-    'mens-care': 'גברים'
-  };
-  var CATEGORY_PRIORITY = ['makeup','hair','body','sun','teeth','fragrance','baby','mens-care','face'];
+    'mens-care': 'גברים',
+    "health": "\u05d1\u05e8\u05d9\u05d0\u05d5\u05ea"
+};
+  var CATEGORY_PRIORITY = [
+    "makeup",
+    "hair",
+    "body",
+    "sun",
+    "teeth",
+    "fragrance",
+    "baby",
+    "mens-care",
+    "health",
+    "face"
+  ];
   var CATEGORY_SYNONYMS = {
     skincare: 'face',
     cleanser: 'face',
@@ -283,8 +295,17 @@
     suncare: 'sun',
     spf: 'sun',
     oral: 'teeth',
-    dental: 'teeth'
-  };
+    dental: 'teeth',
+    "skin": "face",
+    "skincare": "face",
+    "cleaning": "health",
+    "household": "health",
+    "hygiene": "health",
+    "paper": "health",
+    "wipes": "health",
+    "laundry": "health",
+    "dish": "health"
+};
 
   function getPrimaryCategoryKey(p) {
     var cats = getCatsRaw(p);
@@ -638,7 +659,11 @@ function formatFreeShipText(o) {
     var productsPath = resolveFromBase('data/products.json');
     var brandsPath = resolveFromBase('data/intl-brands.json');
 
-    function withCacheBust(url){ return url + (url.indexOf('?')>-1 ? '&' : '?') + 'v=' + Date.now(); }
+    function withCacheBust(url){
+      var v = String(window.KBWG_BUILD || '2026-02-11-v1');
+      if (/[?&]v=/.test(url)) return url;
+      return url + (url.indexOf('?')>-1 ? '&' : '?') + 'v=' + encodeURIComponent(v || String(Date.now()));
+    }
 
     var productsReq = fetch(withCacheBust(productsPath), { cache: 'no-store' }).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);

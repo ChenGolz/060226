@@ -2,8 +2,55 @@
 // Shared layout injector (header + footer) for KBWG static pages
 // Loads partials/header.html into #siteHeaderMount and partials/footer.html into #siteFooterMount
 (function () {
+// ============================================================
+// KBWG single version + fetch helpers
+// Update KBWG_BUILD below to bust cache for ALL pages + JSON.
+// ============================================================
+const KBWG_BUILD = '2026-02-11-v1';
+window.KBWG_BUILD = window.KBWG_BUILD || KBWG_BUILD;
+window.KBWG_VER = window.KBWG_VER || window.KBWG_BUILD;
 
-const KBWG_LAYOUT_BUILD = '2026-02-04-v20';
+// Adds ?v=KBWG_BUILD to same-origin data/partials/json requests (keeps existing v=).
+window.kbwgAddV = window.kbwgAddV || function(u){
+  try{
+    const url = new URL(u, location.href);
+    if (url.origin !== location.origin) return u;
+    if (url.searchParams.has('v')) return url.toString();
+    url.searchParams.set('v', String(window.KBWG_BUILD || KBWG_BUILD));
+    return url.toString();
+  }catch(e){
+    // relative URL fallback
+    if (/[?&]v=/.test(u)) return u;
+    const join = (u.indexOf('?')>-1) ? '&' : '?';
+    return u + join + 'v=' + encodeURIComponent(String(window.KBWG_BUILD || KBWG_BUILD));
+  }
+};
+
+// Safe fetch wrapper: forces cache:no-store for same-origin JSON + partials.
+window.kbwgFetch = window.kbwgFetch || function(input, init){
+  const orig = fetch;
+  try{
+    const urlStr = (typeof input === 'string') ? input : (input && input.url) ? input.url : '';
+    if (!urlStr) return orig(input, init);
+    const url = new URL(urlStr, location.href);
+    const same = (url.origin === location.origin);
+    const isData = same && (
+      url.pathname.includes('/data/') ||
+      url.pathname.includes('/partials/') ||
+      url.pathname.endsWith('.json') ||
+      url.pathname.endsWith('.html')
+    );
+    if(!isData) return orig(input, init);
+    const busted = window.kbwgAddV(url.toString());
+    const opts = Object.assign({}, init || {}, { cache: 'no-store' });
+    return orig(busted, opts);
+  }catch(e){
+    return orig(input, init);
+  }
+};
+
+
+const KBWG_LAYOUT_BUILD = String(window.KBWG_BUILD || '2026-02-11-v1');
 const KBWG_HEADER_KEY = 'kbwg_header_' + KBWG_LAYOUT_BUILD;
 const KBWG_FOOTER_KEY = 'kbwg_footer_' + KBWG_LAYOUT_BUILD;
 
@@ -43,7 +90,7 @@ const scriptEl = document.currentScript;
 
   // 2) Always try to fetch the latest (avoid 'stuck' header/footer)
   try {
-    const res = await fetch(url, { cache: 'no-store' });
+    const res = await window.kbwgFetch(url, { cache: 'no-store' });
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const html = await res.text();
 

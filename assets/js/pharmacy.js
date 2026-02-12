@@ -143,7 +143,7 @@
   async function init(){
     try{
       const url = new URL('data/pharmacy.json', location.href);
-      const v = String(window.KBWG_BUILD || '2026-02-04-v16') + '-' + Date.now();
+      const v = String(window.KBWG_BUILD || '2026-02-11-v1');
       url.searchParams.set('v', v);
 
       const res = await fetch(url.toString(), { cache: 'no-store' });

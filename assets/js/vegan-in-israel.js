@@ -3,7 +3,7 @@
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
-  const DATA_URL = 'data/vegan-in-israel.json?v=2026-02-02-v19';
+  const DATA_URL = (window.kbwgAddV ? window.kbwgAddV('data/vegan-in-israel.json') : ('data/vegan-in-israel.json?v=' + encodeURIComponent(String(window.KBWG_BUILD || '2026-02-11-v1'))));
   const STATE = {
     listPage: 1,
     listPer: 0,
@@ -476,7 +476,7 @@ function wireViewToggle() {
 
   async function load() {
     try {
-      const res = await fetch(DATA_URL, { cache: 'force-cache' });
+      const res = await window.kbwgFetch(DATA_URL, { cache: 'no-store' });
       if (!res.ok) throw new Error('Bad response');
       const json = await res.json();
       STATE.places = (json.places || []).map(p => ({

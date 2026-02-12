@@ -4,7 +4,7 @@
 (function () {
   'use strict';
 
-  const BUILD = '2026-02-05-v25';
+  const BUILD = String(window.KBWG_BUILD || '2026-02-11-v1');
   console.log('[KBWG] Ingredient Detective build', BUILD);
 
   function siteBaseFromScript(){
@@ -107,7 +107,7 @@ const DB_URL = addParam(resolveFromBase('data/ingredient-db.json'), 'v', BUILD);
 
   async function loadDb() {
     try {
-      const res = await fetch(DB_URL, { cache: 'force-cache' });
+      const res = await window.kbwgFetch(DB_URL, { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
       const list = Array.isArray(json) ? json : (json.ingredients || []);

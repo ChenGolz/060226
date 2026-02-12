@@ -641,8 +641,9 @@ function normalizeProduct(p) {
     sun: "שמש",
     teeth: "שיניים",
     baby: "ילדים",
-    "mens-care": "גברים"
-  };
+    "mens-care": "גברים",
+    "health": "\u05d1\u05e8\u05d9\u05d0\u05d5\u05ea"
+};
 
   // סדר עדיפות לקטגוריה ראשית (כדי להימנע מ"אחר" כשיש רמזים ברורים)
   const CATEGORY_PRIORITY = [
@@ -654,6 +655,7 @@ function normalizeProduct(p) {
     "fragrance",
     "baby",
     "mens-care",
+    "health",
     "face"
   ];
 
@@ -668,8 +670,17 @@ function normalizeProduct(p) {
     suncare: "sun",
     spf: "sun",
     oral: "teeth",
-    dental: "teeth"
-  };
+    dental: "teeth",
+    "skin": "face",
+    "skincare": "face",
+    "cleaning": "health",
+    "household": "health",
+    "hygiene": "health",
+    "paper": "health",
+    "wipes": "health",
+    "laundry": "health",
+    "dish": "health"
+};
 
   function getPrimaryCategoryKey(p) {
     const cats = getCatsRaw(p);
@@ -746,6 +757,10 @@ function normalizeProduct(p) {
 
     if (isTeeth) {
       return "הלבנה וטיפוח השיניים";
+    }
+
+    if (catKey === "health") {
+      return "בריאות";
     }
 
     const isMen =
@@ -1222,6 +1237,7 @@ function normalizeProduct(p) {
         "עיצוב שיער",
         "הגנה מהשמש",
         "בשמים",
+        "בריאות",
         "טיפוח לגבר"
       ];
 

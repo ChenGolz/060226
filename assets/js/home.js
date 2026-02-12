@@ -213,8 +213,8 @@
     var productsGrid = qs('#homeProductsGrid');
     if (!dealsGrid && !productsGrid) return;
 
-    var productsUrl = 'data/products.json?v=2026-02-02-v19';
-    fetch(productsUrl, { cache: 'force-cache' })
+    var productsUrl = (window.kbwgAddV ? window.kbwgAddV('data/products.json') : ('data/products.json?v=' + encodeURIComponent(String(window.KBWG_BUILD || '2026-02-11-v1'))));
+    window.kbwgFetch(productsUrl, { cache: 'no-store' })
       .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
       .then(function(data){
         var list = Array.isArray(data) ? data : (Array.isArray(data.products) ? data.products : []);
