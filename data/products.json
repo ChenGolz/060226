@@ -18,8 +18,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -227,8 +227,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -335,8 +335,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -402,8 +402,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -1144,7 +1144,8 @@
         "url": "https://www.amazon.com/dp/B0DZQCY8D9?tag=nocrueltyil-20",
         "asin": "B0DZQCY8D9",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 95,
+        "freeShipToIsrael": true
       }
     ],
     "isKids": false,
@@ -1242,7 +1243,8 @@
         "url": "https://www.amazon.com/dp/B0DGVN8S1L?tag=nocrueltyil-20",
         "asin": "B0DGVN8S1L",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 31.36,
+        "
       }
     ],
     "isKids": false,
@@ -1278,7 +1280,8 @@
         "url": "https://www.amazon.com/dp/B09YZ2HQS4?tag=nocrueltyil-20",
         "asin": "B09YZ2HQS4",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 16,
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -1310,7 +1313,8 @@
         "url": "https://www.amazon.com/dp/B0B5MGD38Y?tag=nocrueltyil-20",
         "asin": "B0B5MGD38Y",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 6,
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -1322,7 +1326,7 @@
     "id": "e-l-f-b0f8vkqkjt",
     "brand": "e.l.f.",
     "name": "מוצר שפתיים Glossy Shades עמיד",
-    "size": null,
+    "size": 4ml,
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
@@ -1343,7 +1347,8 @@
         "url": "https://www.amazon.com/dp/B0F8VKQKJT?tag=nocrueltyil-20",
         "asin": "B0F8VKQKJT",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 22.80,
+        "freeShipOver":49
       }
     ],
     "isKids": false,
@@ -1376,7 +1381,8 @@
         "url": "https://www.amazon.com/dp/B0G1H2DCF6?tag=nocrueltyil-20",
         "asin": "B0G1H2DCF6",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 9,
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -1409,7 +1415,8 @@
         "url": "https://www.amazon.com/dp/B0BSP47BS4?tag=nocrueltyil-20",
         "asin": "B0BSP47BS4",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 13,
+                "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -1433,8 +1440,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -1442,7 +1449,8 @@
         "url": "https://www.amazon.com/dp/B0D3HNFJ8R?tag=nocrueltyil-20",
         "asin": "B0D3HNFJ8R",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 31,
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -1477,7 +1485,8 @@
         "url": "https://www.amazon.com/dp/B082YTKDXQ?tag=nocrueltyil-20",
         "asin": "B082YTKDXQ",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 16,
+         "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -1511,7 +1520,8 @@
         "url": "https://www.amazon.com/dp/B0CRGXKSD9?tag=nocrueltyil-20",
         "asin": "B0CRGXKSD9",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 11.84,
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -1608,7 +1618,8 @@
         "url": "https://www.amazon.com/dp/B07ZVWYBY7?tag=nocrueltyil-20",
         "asin": "B07ZVWYBY7",
         "currency": "USD",
-        "priceUSD": null
+        "priceUSD": 10.13,
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
