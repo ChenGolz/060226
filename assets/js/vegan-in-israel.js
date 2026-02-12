@@ -3,7 +3,9 @@
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
-  const DATA_URL = (window.kbwgAddV ? window.kbwgAddV('data/vegan-in-israel.json') : ('data/vegan-in-israel.json?v=' + encodeURIComponent(String(window.KBWG_BUILD || '2026-02-11-v1'))));
+  const DATA_PATH = 'data/vegan-in-israel.json';
+  const BUILD = (window.KBWG_BUILD || window.KBWG_SITE_BUILD || window.KBWG_PRODUCTS_BUILD || '').toString();
+  const DATA_URL = BUILD ? `${DATA_PATH}?v=${encodeURIComponent(BUILD)}` : DATA_PATH;
   const STATE = {
     listPage: 1,
     listPer: 0,
@@ -20,6 +22,71 @@
     map: null,
     markers: []
   };
+
+  const I18N = {
+    he: {
+      maps: 'מפות',
+      website: 'אתר',
+      instagram: 'אינסטגרם',
+      showOnMap: 'הצג במפה',
+      openInMaps: 'פתח במפות',
+      loading: 'טוען…',
+      noMatchTitle: 'לא מצאנו התאמה',
+      noMatchText: 'נסו לשנות חיפוש/אזור או להסיר פילטרים.',
+      allIsrael: 'כל הארץ',
+      prev: 'הקודם',
+      next: 'הבא',
+      page: 'עמוד',
+      of: 'מתוך',
+      noResults: 'אין תוצאות',
+      showing: 'מציגים'
+    },
+    en: {
+      maps: 'Maps',
+      website: 'Website',
+      instagram: 'Instagram',
+      showOnMap: 'Show on map',
+      openInMaps: 'Open in Maps',
+      loading: 'Loading…',
+      noMatchTitle: 'No matches found',
+      noMatchText: 'Try adjusting your search/region or removing filters.',
+      allIsrael: 'All Israel',
+      prev: 'Previous',
+      next: 'Next',
+      page: 'Page',
+      of: 'of',
+      noResults: 'No results',
+      showing: 'Showing'
+    }
+  };
+
+  function getLang() {
+    // Prefer Weglot if available
+    try {
+      if (window.Weglot && typeof Weglot.getCurrentLang === 'function') {
+        const wl = String(Weglot.getCurrentLang() || '').toLowerCase();
+        if (wl.startsWith('en')) return 'en';
+        if (wl.startsWith('he')) return 'he';
+      }
+    } catch {}
+    const l = String(document.documentElement.getAttribute('lang') || 'he').toLowerCase();
+    return l.startsWith('en') ? 'en' : 'he';
+  }
+
+  function isHe() { return getLang() === 'he'; }
+
+  function t(key) {
+    const lang = getLang();
+    return (I18N[lang] && I18N[lang][key]) || I18N.he[key] || key;
+  }
+
+  function ensureDirByLang() {
+    const lang = getLang();
+    const want = (lang === 'en') ? 'ltr' : 'rtl';
+    if (document.documentElement.getAttribute('dir') !== want) {
+      document.documentElement.setAttribute('dir', want);
+    }
+  }
 
   function normalize(str) {
     return (str || '')
@@ -211,21 +278,15 @@ function wireViewToggle() {
   }
 
   function formatAddress(p) {
-    return (document.documentElement.lang === 'he' || document.documentElement.dir === 'rtl')
-      ? (p.address_he || p.address || '')
-      : (p.address || p.address_he || '');
+    return isHe() ? (p.address_he || p.address || '') : (p.address || p.address_he || '');
   }
 
   function formatName(p) {
-    return (document.documentElement.lang === 'he' || document.documentElement.dir === 'rtl')
-      ? (p.name_he || p.name || '')
-      : (p.name || p.name_he || '');
+    return isHe() ? (p.name_he || p.name || '') : (p.name || p.name_he || '');
   }
 
   function formatNotes(p) {
-    return (document.documentElement.lang === 'he' || document.documentElement.dir === 'rtl')
-      ? (p.notes_he || '')
-      : (p.notes_en || p.notes_he || '');
+    return isHe() ? (p.notes_he || '') : (p.notes_en || p.notes_he || '');
   }
 
   function mapQueryLink(p) {
@@ -253,10 +314,10 @@ function wireViewToggle() {
   }
 
   function typeLabel(p) {
-    if (document.documentElement.lang === 'he' || document.documentElement.dir === 'rtl') {
+    if (isHe()) {
       return p.typeLabel_he || (p.type === 'shop' ? 'חנות' : 'מסעדה');
     }
-    return p.type === 'shop' ? 'Shop' : 'Restaurant';
+    return p.typeLabel_en || (p.type === 'shop' ? 'Shop' : 'Restaurant');
   }
 
   function renderList() {
@@ -278,8 +339,8 @@ function wireViewToggle() {
       
       grid.innerHTML = `
         <div class="contentCard" style="grid-column:1/-1;">
-          <h3 style="margin:0 0 .25rem;">לא מצאנו התאמה</h3>
-          <p style="margin:0;">נסו לשנות חיפוש/אזור או להסיר פילטרים.</p>
+          <h3 style="margin:0 0 .25rem;">${escapeHtml(t('noMatchTitle'))}</h3>
+          <p style="margin:0;">${escapeHtml(t('noMatchText'))}</p>
         </div>`;
       return;
     }
@@ -288,8 +349,8 @@ function wireViewToggle() {
       const name = formatName(p);
       const addr = formatAddress(p);
       const notes = formatNotes(p);
-      const city = (document.documentElement.lang === 'he' || document.documentElement.dir === 'rtl') ? (p.city_he || p.city) : (p.city || p.city_he);
-      const region = (document.documentElement.lang === 'he' || document.documentElement.dir === 'rtl') ? (p.region_he || p.region) : (p.region || p.region_he);
+      const city = isHe() ? (p.city_he || p.city) : (p.city || p.city_he);
+      const region = isHe() ? (p.region_he || p.region) : (p.region || p.region_he);
 
       const pills = [
         pill(typeLabel(p)),
@@ -297,9 +358,9 @@ function wireViewToggle() {
         region ? pill(region) : '',
       ].join('');
 
-      const siteLink = p.website ? `<a class="btnSmall" href="${p.website}" target="_blank" rel="noopener">אתר</a>` : '';
-      const igLink = p.instagram ? `<a class="btnSmall" href="${p.instagram}" target="_blank" rel="noopener">אינסטגרם</a>` : '';
-      const mapsLink = `<a class="btnSmall" href="${mapQueryLink(p)}" target="_blank" rel="noopener">מפות</a>`;
+      const siteLink = p.website ? `<a class="btnSmall" href="${p.website}" target="_blank" rel="noopener">${escapeHtml(t('website'))}</a>` : '';
+      const igLink = p.instagram ? `<a class="btnSmall" href="${p.instagram}" target="_blank" rel="noopener">${escapeHtml(t('instagram'))}</a>` : '';
+      const mapsLink = `<a class="btnSmall" href="${mapQueryLink(p)}" target="_blank" rel="noopener">${escapeHtml(t('maps'))}</a>`;
 
       return `
         <article class="placeCard contentCard">
@@ -315,7 +376,7 @@ function wireViewToggle() {
             ${mapsLink}
             ${siteLink}
             ${igLink}
-            <button class="btnSmall btnGhost" data-focus="${p.id}">הצג במפה</button>
+            <button class="btnSmall btnGhost" data-focus="${p.id}">${escapeHtml(t('showOnMap'))}</button>
           </div>
         </article>`;
     }).join('');
@@ -360,7 +421,7 @@ function wireViewToggle() {
         <div style="min-width:180px;">
           <strong>${escapeHtml(formatName(p))}</strong><br/>
           <small>${escapeHtml(formatAddress(p))}</small><br/>
-          <a href="${mapQueryLink(p)}" target="_blank" rel="noopener">פתח במפות</a>
+          <a href="${mapQueryLink(p)}" target="_blank" rel="noopener">${escapeHtml(t('openInMaps'))}</a>
         </div>
       `);
       marker.__placeId = p.id;
@@ -463,7 +524,7 @@ function wireViewToggle() {
         if (GEO.running) return;
         const prev = loadCoords.textContent;
         loadCoords.disabled = true;
-        loadCoords.textContent = 'טוען…';
+        loadCoords.textContent = t('loading');
         try {
           await geocodeMissing(); // progressive render inside
         } finally {
@@ -476,7 +537,8 @@ function wireViewToggle() {
 
   async function load() {
     try {
-      const res = await window.kbwgFetch(DATA_URL, { cache: 'no-store' });
+      ensureDirByLang();
+      const res = await fetch(DATA_URL, { cache: 'no-store' });
       if (!res.ok) throw new Error('Bad response');
       const json = await res.json();
       STATE.places = (json.places || []).map(p => ({
@@ -499,19 +561,31 @@ function wireViewToggle() {
       .sort((a, b) => a.localeCompare(b));
 
     function regionLabelKey(key) {
-      switch (key) {
-        case 'jerusalem': return 'ירושלים';
-        case 'center': return 'מרכז';
-        case 'south': return 'דרום';
-        case 'north': return 'צפון';
-        case 'online': return 'אונליין';
-        default: return key || '';
+      const k = String(key || '').toLowerCase();
+      if (isHe()) {
+        switch (k) {
+          case 'jerusalem': return 'ירושלים';
+          case 'center': return 'מרכז';
+          case 'south': return 'דרום';
+          case 'north': return 'צפון';
+          case 'online': return 'אונליין';
+          default: return key || '';
+        }
+      }
+      // English labels
+      switch (k) {
+        case 'jerusalem': return 'Jerusalem';
+        case 'center': return 'Center';
+        case 'south': return 'South';
+        case 'north': return 'North';
+        case 'online': return 'Online';
+        default: return (k ? (k.charAt(0).toUpperCase() + k.slice(1)) : '');
       }
     }
 
     if (region) {
       region.innerHTML = [
-        `<option value="all">כל הארץ</option>`,
+        `<option value="all">${escapeHtml(t('allIsrael'))}</option>`,
         ...regions.map(r => `<option value="${r}">${escapeHtml(regionLabelKey(r))}</option>`)
       ].join('');
     }
@@ -525,6 +599,28 @@ function wireViewToggle() {
     wireViewToggle();
 
     if (shouldRenderMapNow() && !STATE.map) renderMap({ fit: true });
+
+    // Re-render dynamic content when language changes (e.g. Weglot switch)
+    let __lastLang = getLang();
+    const __langObserver = new MutationObserver(() => {
+      const now = getLang();
+      if (now === __lastLang) return;
+      __lastLang = now;
+      ensureDirByLang();
+
+      // Rebuild region dropdown labels
+      if (region) {
+        region.innerHTML = [
+          `<option value="all">${escapeHtml(t('allIsrael'))}</option>`,
+          ...regions.map(r => `<option value="${r}">${escapeHtml(regionLabelKey(r))}</option>`)
+        ].join('');
+        region.value = STATE.filter.region || 'all';
+      }
+
+      renderList();
+      if (shouldRenderMapNow()) renderMap({ fit: true });
+    });
+    __langObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
   }
 
   function escapeHtml(str) {
@@ -580,9 +676,9 @@ function wireViewToggle() {
     var nextDisabled = page >= totalPages;
 
     pagerEl.innerHTML = ''
-      + '<button class="btnSmall btnGhost" type="button" ' + (prevDisabled ? 'disabled aria-disabled="true"' : '') + ' data-kbprev>הקודם</button>'
-      + '<span class="kbPagerInfo">עמוד ' + page + ' מתוך ' + totalPages + '</span>'
-      + '<button class="btnSmall btnGhost" type="button" ' + (nextDisabled ? 'disabled aria-disabled="true"' : '') + ' data-kbnext>הבא</button>';
+      + '<button class="btnSmall btnGhost" type="button" ' + (prevDisabled ? 'disabled aria-disabled="true"' : '') + ' data-kbprev>' + escapeHtml(t('prev')) + '</button>'
+      + '<span class="kbPagerInfo">' + escapeHtml(t('page')) + ' ' + page + ' ' + escapeHtml(t('of')) + ' ' + totalPages + '</span>'
+      + '<button class="btnSmall btnGhost" type="button" ' + (nextDisabled ? 'disabled aria-disabled="true"' : '') + ' data-kbnext>' + escapeHtml(t('next')) + '</button>';
 
     var prevBtn = pagerEl.querySelector('[data-kbprev]');
     var nextBtn = pagerEl.querySelector('[data-kbnext]');
@@ -591,10 +687,10 @@ function wireViewToggle() {
   }
 
   function kbRangeText(page, totalItems, perPage){
-    if(!totalItems) return 'אין תוצאות';
+    if(!totalItems) return t('noResults');
     var start = (page-1)*perPage + 1;
     var end = Math.min(totalItems, page*perPage);
-    return 'מציגים ' + start + '–' + end + ' מתוך ' + totalItems;
+    return t('showing') + ' ' + start + '–' + end + ' ' + t('of') + ' ' + totalItems;
   }
 
 
