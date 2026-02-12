@@ -145,7 +145,8 @@
         "url": "https://www.amazon.com/dp/B07HXTFFH4?tag=nocrueltyil-20",
         "asin": "B07HXTFFH4",
         "currency": "USD",
-        "priceUSD": 64.0
+        "priceUSD": 64.0,
+        "freeShipToIsrael": true
       }
     ],
     "isKids": false,
@@ -184,7 +185,8 @@
         "url": "https://www.amazon.com/dp/B09SRWLLX7?tag=nocrueltyil-20",
         "asin": "B09SRWLLX7",
         "currency": "USD",
-        "priceUSD": 64.0
+        "priceUSD": 64.0,
+         "freeShipToIsrael": true
       }
     ],
     "isKids": false,
@@ -223,7 +225,8 @@
         "url": "https://www.amazon.com/dp/B09SSHM5HJ?tag=nocrueltyil-20",
         "asin": "B09SSHM5HJ",
         "currency": "USD",
-        "priceUSD": 68.4
+        "priceUSD": 68.4,
+        "freeShipToIsrael": true
       }
     ],
     "isKids": false,
@@ -295,7 +298,8 @@
         "url": "https://www.amazon.com/dp/B0B8LFYHRM?tag=nocrueltyil-20",
         "asin": "B0B8LFYHRM",
         "currency": "USD",
-        "priceUSD": 49.0
+        "priceUSD": 49.0,
+        "freeShipToIsrael": true
       }
     ],
     "isKids": false,
@@ -553,7 +557,8 @@
         "url": "https://www.amazon.com/dp/B09WSWGS66?tag=nocrueltyil-20",
         "asin": "B09WSWGS66",
         "currency": "USD",
-        "priceUSD": 75.6
+        "priceUSD": 75.6,
+        "freeShipToIsrael": true
       }
     ],
     "isKids": false,
