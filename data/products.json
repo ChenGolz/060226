@@ -1,56 +1,24 @@
 [
   {
-    "id": "e-l-f-b08t7dszyd",
-    "brand": "e.l.f.",
-    "name": "ערכת מיני טיפוח Hydrated Ever After ללחות (גדלים ידידותיים לטיסה) – Holy Hydration!",
-    "size": "5-piece mini kit",
+    "id": "hairitage-b0cvskkqn2",
+    "brand": "Hairitage",
+    "name": "סט שמפו ומרכך ביוטין + שמן קיק – נפח + לחות (ללא סולפטים, בטוח לשיער צבוע)",
+    "size": "21 fl oz (pack of 2)",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Skincare",
-      "skin",
-      "moisturizer",
-      "sets",
-      "kits",
-      "travel",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B08T7DSZYD?tag=nocrueltyil-20",
-        "asin": "B08T7DSZYD",
-        "currency": "USD",
-        "priceUSD": 21.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B08T7DSZYD.jpg"
-  },
-  {
-    "id": "e-l-f-b07zvxk5k9",
-    "brand": "e.l.f.",
-    "name": "ערכת לחות Jet Set בגודל נסיעות (סט טיפוח לחות – 5 פריטים) – Holy Hydration!",
-    "size": "5-piece travel kit",
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "moisturizer",
-      "sets",
-      "kits",
-      "travel",
-      "face"
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Shampoo",
+      "Conditioner",
+      "hair",
+      "shampoo",
+      "conditioner",
+      "set",
+      "volume",
+      "moisture",
+      "color-safe",
+      "sulfate-free"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -61,32 +29,120 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B07ZVXK5K9?tag=nocrueltyil-20",
-        "asin": "B07ZVXK5K9",
+        "url": "https://www.amazon.com/dp/B0CVSKKQN2?tag=nocrueltyil-20",
+        "asin": "B0CVSKKQN2",
         "currency": "USD",
-        "priceUSD": 17.05,
+        "priceUSD": 26.88,
+        "freeShipOver": 49
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0CVSKKQN2.jpg"
+  },
+  {
+    "id": "hairitage-b0cvskc326",
+    "brand": "Hairitage",
+    "name": "סט שמפו ומרכך לחות יומיומי עדין – חיזוק קשרים ותיקון קצוות מפוצלים עם שמן חוחובה (נגד פריז, בטוח לשיער צבוע) ניחוח דובדבן + ענבר",
+    "size": "21 oz (2-pack)",
+    "categories": [
+      "Beauty & Personal Care",
+      "Personal Care",
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Shampoo",
+      "Conditioner",
+      "hair",
+      "shampoo",
+      "conditioner",
+      "set",
+      "moisture",
+      "repair",
+      "anti-frizz",
+      "color-safe"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CVSKC326?tag=nocrueltyil-20",
+        "asin": "B0CVSKC326",
+        "currency": "USD",
+        "priceUSD": 27.16,
+        "freeShipOver": 49
+      }
+    ],
+    "isKids": false,
+    "isMen": false,
+    "isDiscounted": false,
+    "image": "assets/img/products/B0CVSKC326.jpg"
+  },
+  {
+    "id": "hairitage-b0crzc14pm",
+    "brand": "Hairitage",
+    "name": "מסלסל 3 חביות לגלי חוף ותלתלים (וויבר לשיער)",
+    "size": "1 count",
+    "categories": [
+      "Beauty & Personal Care",
+      "Personal Care",
+      "Hair Care",
+      "Hair Styling Tools",
+      "Curling Irons",
+      "Wavers",
+      "hair",
+      "styling",
+      "curling-iron",
+      "waver",
+      "beach-waves"
+    ],
+    "isVegan": true,
+    "isPeta": null,
+    "isLB": null,
+    "priceMin": 0,
+    "priceMax": 50,
+    "offers": [
+      {
+        "store": "amazon-us",
+        "storeLabel": "Amazon ארה\"ב",
+        "url": "https://www.amazon.com/dp/B0CRZC14PM?tag=nocrueltyil-20",
+        "asin": "B0CRZC14PM",
+        "currency": "USD",
+        "priceUSD": 32.58,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": true,
-    "image": "assets/img/products/B07ZVXK5K9.jpg"
+    "image": "assets/img/products/B0CRZC14PM.jpg"
   },
   {
-    "id": "e-l-f-b01d1dr514",
-    "brand": "e.l.f.",
-    "name": "קרם עיניים Holy Hydration! (עם חומצה היאלורונית)",
-    "size": "0.53 fl oz",
+    "id": "hairitage-b0dtx6vy3h",
+    "brand": "Hairitage",
+    "name": "סט שמפו ומרכך לשיקום נזקים עם ביוטין – עיבוי + נפח (שמן קיק + חלבון אורז)",
+    "size": "13 fl oz (pack of 2)",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Skincare",
-      "eye-care",
-      "eye-cream",
-      "skin",
-      "moisturizer",
-      "face"
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Shampoo",
+      "Conditioner",
+      "hair",
+      "shampoo",
+      "conditioner",
+      "set",
+      "repair",
+      "thickening",
+      "volumizing",
+      "color-safe",
+      "sulfate-free"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -97,30 +153,37 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B01D1DR514?tag=nocrueltyil-20",
-        "asin": "B01D1DR514",
+        "url": "https://www.amazon.com/dp/B0DTX6VY3H?tag=nocrueltyil-20",
+        "asin": "B0DTX6VY3H",
         "currency": "USD",
-        "priceUSD": 10.97,
+        "priceUSD": 19.54,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B01D1DR514.jpg"
+    "image": "assets/img/products/B0DTX6VY3H.jpg"
   },
   {
-    "id": "e-l-f-b015xii6q8",
-    "brand": "e.l.f.",
-    "name": "קרם לילה מזין Holy Hydration!",
-    "size": "1.76 oz",
+    "id": "hairitage-b0cw28cqlr",
+    "brand": "Hairitage",
+    "name": "מארז קרם תלתלים + מרכך ללא שטיפה – קרם הגדרת תלתלים עם שמן חוחובה + לייב-אין עם שמן קוקוס וחמאת שיאה",
+    "size": "0.5 oz (pack of 2)",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Skincare",
-      "skin",
-      "moisturizer",
-      "face"
+      "Hair Care",
+      "Styling Products",
+      "Curl Creams",
+      "Leave-In Conditioners",
+      "Curly Hair",
+      "hair",
+      "styling",
+      "curl-cream",
+      "leave-in",
+      "definition",
+      "moisturizing"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -131,30 +194,36 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B015XII6Q8?tag=nocrueltyil-20",
-        "asin": "B015XII6Q8",
+        "url": "https://www.amazon.com/dp/B0CW28CQLR?tag=nocrueltyil-20",
+        "asin": "B0CW28CQLR",
         "currency": "USD",
-        "priceUSD": 14.5,
+        "priceUSD": 20.2,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B015XII6Q8.jpg"
+    "image": "assets/img/products/B0CW28CQLR.jpg"
   },
   {
-    "id": "e-l-f-b0f3jcdfvt",
-    "brand": "e.l.f.",
-    "name": "סרום Bright Icon ויטמין C + E + חומצה פרולית",
-    "size": "1 fl oz",
+    "id": "hairitage-b0crzcwtvl",
+    "brand": "Hairitage",
+    "name": "מברשת פן/מייבש שיער One Step לנפח ולעיצוב (להחלקה + סלסול)",
+    "size": "1 count",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Skincare",
-      "skin",
-      "serum",
-      "face"
+      "Hair Care",
+      "Hair Styling Tools",
+      "Blow Dryer Brushes",
+      "Hot Air Brushes",
+      "hair",
+      "styling",
+      "blowout",
+      "dryer-brush",
+      "volumizer",
+      "anti-frizz"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -165,30 +234,38 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0F3JCDFVT?tag=nocrueltyil-20",
-        "asin": "B0F3JCDFVT",
+        "url": "https://www.amazon.com/dp/B0CRZCWTVL?tag=nocrueltyil-20",
+        "asin": "B0CRZCWTVL",
         "currency": "USD",
-        "priceUSD": 16.97,
+        "priceUSD": 32.49,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0F3JCDFVT.jpg"
+    "image": "assets/img/products/B0CRZCWTVL.jpg"
   },
   {
-    "id": "e-l-f-b0g1h58ggb",
-    "brand": "e.l.f.",
-    "name": "סטיק שמן שפתיים Glow Reviver Slipstick – גוון Mauve Mentality",
-    "size": "0.11 oz",
+    "id": "hairitage-b0cvsklbtj",
+    "brand": "Hairitage",
+    "name": "סט שמפו ומרכך Down to the Basics – קמומיל + שמן זרעי חמנייה (מרכך לחות, בטוח לשיער צבוע)",
+    "size": "6.5 oz (pack of 2)",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Makeup",
-      "lips",
-      "lip-care",
-      "lip-oil"
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Shampoo",
+      "Conditioner",
+      "hair",
+      "shampoo",
+      "conditioner",
+      "set",
+      "sensitive-scalp",
+      "fragrance-free",
+      "color-safe",
+      "hydrating"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -199,67 +276,79 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0G1H58GGB?tag=nocrueltyil-20",
-        "asin": "B0G1H58GGB",
+        "url": "https://www.amazon.com/dp/B0CVSKLBTJ?tag=nocrueltyil-20",
+        "asin": "B0CVSKLBTJ",
         "currency": "USD",
-        "priceUSD": 10.0,
+        "priceUSD": 23.2,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0G1H58GGB.jpg"
+    "image": "assets/img/products/B0CVSKLBTJ.jpg"
   },
   {
-    "id": "e-l-f-b0f3jc7mns",
-    "brand": "e.l.f.",
-    "name": "פריימר Power Grip בגודל ג׳מבו",
-    "size": "2.5 oz",
+    "id": "hairitage-b0crzdrn8f",
+    "brand": "Hairitage",
+    "name": "מחליק/מסלסל 2 ב-1 קרמי עם טורמלין – 1.25 אינץ׳ (Airflow Styler)",
+    "size": "1.25 inch",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Makeup",
-      "face",
-      "primer",
-      "face-primer"
+      "Hair Care",
+      "Hair Styling Tools",
+      "Flat Irons",
+      "Hair Straighteners",
+      "Curling Irons",
+      "hair",
+      "styling",
+      "flat-iron",
+      "straightener",
+      "2-in-1"
     ],
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 50,
-    "priceMax": 100,
+    "priceMin": 0,
+    "priceMax": 50,
     "offers": [
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0F3JC7MNS?tag=nocrueltyil-20",
-        "asin": "B0F3JC7MNS",
+        "url": "https://www.amazon.com/dp/B0CRZDRN8F?tag=nocrueltyil-20",
+        "asin": "B0CRZDRN8F",
         "currency": "USD",
-        "priceUSD": 25.0,
+        "priceUSD": 39.66,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0F3JC7MNS.jpg"
+    "image": "assets/img/products/B0CRZDRN8F.jpg"
   },
   {
-    "id": "e-l-f-b0g1h271xh",
-    "brand": "e.l.f.",
-    "name": "ערכת Dew-O בגודל נסיעות: Thirst Burst (טונר פילינג + טיפות סרום לחות)",
-    "size": "2-piece travel set",
+    "id": "hairitage-b0cvsjypvq",
+    "brand": "Hairitage",
+    "name": "סט שמפו ומרכך סגול Pass on the Brass לנטרול גוונים צהובים/כתמתמים (לבלונד ואפור)",
+    "size": "6.5 oz (pack of 2)",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Skincare",
-      "skin",
-      "serum",
-      "sets",
-      "kits",
-      "travel",
-      "face"
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Shampoo",
+      "Conditioner",
+      "Purple Shampoo",
+      "Toning",
+      "hair",
+      "shampoo",
+      "conditioner",
+      "set",
+      "blonde",
+      "gray",
+      "color-treated"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -270,30 +359,36 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0G1H271XH?tag=nocrueltyil-20",
-        "asin": "B0G1H271XH",
+        "url": "https://www.amazon.com/dp/B0CVSJYPVQ?tag=nocrueltyil-20",
+        "asin": "B0CVSJYPVQ",
         "currency": "USD",
-        "priceUSD": 10.0,
+        "priceUSD": 23.62,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0G1H271XH.jpg"
+    "image": "assets/img/products/B0CVSJYPVQ.jpg"
   },
   {
-    "id": "e-l-f-b0g1h35js1",
-    "brand": "e.l.f.",
-    "name": "קרם Barrier Goals מיני – Holy Hydration!",
-    "size": "mini",
+    "id": "hairitage-b0f153gyh6",
+    "brand": "Hairitage",
+    "name": "מברשת סלסול מחוממת 1.5 אינץ׳ (מברשת עגולה תרמית) – תלתלים בקלות וגימור נגד פריז",
+    "size": "1.5 inch",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Skincare",
-      "skin",
-      "moisturizer",
-      "face"
+      "Hair Care",
+      "Hair Styling Tools",
+      "Hot Brushes",
+      "Thermal Brushes",
+      "hair",
+      "styling",
+      "heated-brush",
+      "thermal-brush",
+      "curling-brush",
+      "blowout"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -304,67 +399,35 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0G1H35JS1?tag=nocrueltyil-20",
-        "asin": "B0G1H35JS1",
+        "url": "https://www.amazon.com/dp/B0F153GYH6?tag=nocrueltyil-20",
+        "asin": "B0F153GYH6",
         "currency": "USD",
-        "priceUSD": 7.19,
+        "priceUSD": 39.12,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0G1H35JS1.jpg"
+    "isDiscounted": true,
+    "image": "assets/img/products/B0F153GYH6.jpg"
   },
   {
-    "id": "e-l-f-b0fpm58qtm",
-    "brand": "e.l.f.",
-    "name": "ערכת טיפוח Wake the e.l.f. Up בגודל נסיעות",
-    "size": "4-piece travel kit",
+    "id": "hairitage-b0crzdcPwr",
+    "brand": "Hairitage",
+    "name": "מברשת החלקה קרמית מחוממת לפן – נפח + החלקה (נגד פריז) לעיצוב מהיר",
+    "size": "50 watts",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Skincare",
-      "skin",
-      "moisturizer",
-      "sets",
-      "kits",
-      "travel",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0FPM58QTM?tag=nocrueltyil-20",
-        "asin": "B0FPM58QTM",
-        "currency": "USD",
-        "priceUSD": 20.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0FPM58QTM.jpg"
-  },
-  {
-    "id": "e-l-f-b0dh62626h",
-    "brand": "e.l.f.",
-    "name": "שמן שפתיים Glow Reviver – גוון Candy Coded",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "lips",
-      "lip-care",
-      "lip-oil"
+      "Hair Care",
+      "Hair Styling Tools",
+      "Straightening Brushes",
+      "Hot Brushes",
+      "hair",
+      "styling",
+      "straightening-brush",
+      "blowout",
+      "anti-frizz"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -375,1033 +438,32 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DH62626H?tag=nocrueltyil-20",
-        "asin": "B0DH62626H",
+        "url": "https://www.amazon.com/dp/B0CRZDCPWR?tag=nocrueltyil-20",
+        "asin": "B0CRZDCPWR",
         "currency": "USD",
-        "priceUSD": 10.2
+        "priceUSD": 35.9
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DH62626H.jpg"
+    "image": "assets/img/products/B0CRZDCPWR.jpg"
   },
   {
-    "id": "e-l-f-b0bsr4qyp4",
-    "brand": "e.l.f.",
-    "name": "סרום רטינואיד לילה מתקדם Youth Boosting",
-    "size": "1 fl oz",
+    "id": "strike-a-pose-b0cxsc8zkd",
+    "brand": "Strike A Pose",
+    "name": "מראת יד מתקפלת Strike A Pose עם ידית מתכווננת (כולל מצב עמידה)",
+    "size": "1 count",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Skincare",
-      "skin",
-      "serum",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0BSR4QYP4?tag=nocrueltyil-20",
-        "asin": "B0BSR4QYP4",
-        "currency": "USD",
-        "priceUSD": 23.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0BSR4QYP4.jpg"
-  },
-  {
-    "id": "e-l-f-b0d3hn49xg",
-    "brand": "e.l.f.",
-    "name": "שמן לילה Blue-ty Sleep מסדרת Youth Boosting",
-    "size": "1 fl oz",
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "face-oil",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0D3HN49XG?tag=nocrueltyil-20",
-        "asin": "B0D3HN49XG",
-        "currency": "USD",
-        "priceUSD": 19.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0D3HN49XG.jpg"
-  },
-  {
-    "id": "e-l-f-b0b5mg15b2",
-    "brand": "e.l.f.",
-    "name": "Halo Glow Liquid Filter – גוון 1 Fair",
-    "size": "1.06 fl oz (31.5 ml)",
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "face",
-      "complexion",
-      "glow"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0B5MG15B2?tag=nocrueltyil-20",
-        "asin": "B0B5MG15B2",
-        "currency": "USD",
-        "priceUSD": 15.0,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0B5MG15B2.jpg"
-  },
-  {
-    "id": "e-l-f-b09xmyftb7",
-    "brand": "e.l.f.",
-    "name": "פריימר Power Grip",
-    "size": "0.811 fl oz (24 ml)",
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "face",
-      "primer",
-      "face-primer"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B09XMYFTB7?tag=nocrueltyil-20",
-        "asin": "B09XMYFTB7",
-        "currency": "USD",
-        "priceUSD": 12.56
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B09XMYFTB7.jpg"
-  },
-  {
-    "id": "e-l-f-b0dhrqxych",
-    "brand": "e.l.f.",
-    "name": "טיפות סרום לחות Thirst Burst Drops",
-    "size": "30 ml",
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "serum",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DHRQXYCH?tag=nocrueltyil-20",
-        "asin": "B0DHRQXYCH",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0DHRQXYCH.jpg"
-  },
-  {
-    "id": "e-l-f-b07zqzvmrx",
-    "brand": "e.l.f.",
-    "name": "קרם פנים Holy Hydration",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "moisturizer",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B07ZQZVMRX?tag=nocrueltyil-20",
-        "asin": "B07ZQZVMRX",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B07ZQZVMRX.jpg"
-  },
-  {
-    "id": "e-l-f-b08127sc4g",
-    "brand": "e.l.f.",
-    "name": "קרם לחות מזין עם חומצה היאלורונית",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "moisturizer",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B08127SC4G?tag=nocrueltyil-20",
-        "asin": "B08127SC4G",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B08127SC4G.jpg"
-  },
-  {
-    "id": "e-l-f-b08tqtt8lk",
-    "brand": "e.l.f.",
-    "name": "בלם/מסיר איפור נמס לניקוי Hydration Melting",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "cleanser",
-      "makeup-remover",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B08TQTT8LK?tag=nocrueltyil-20",
-        "asin": "B08TQTT8LK",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B08TQTT8LK.jpg"
-  },
-  {
-    "id": "e-l-f-b0cpfxrqlk",
-    "brand": "e.l.f.",
-    "name": "מייקאפ מתקן ומעניק לחות (Hydrating Correcting Foundation)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "face",
-      "foundation",
-      "complexion"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CPFXRQLK?tag=nocrueltyil-20",
-        "asin": "B0CPFXRQLK",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0CPFXRQLK.jpg"
-  },
-  {
-    "id": "e-l-f-b0cxqr14j3",
-    "brand": "e.l.f.",
-    "name": "מוצר קיבוע (סטינג) עם חומצה היאלורונית",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "makeup",
-      "setting"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CXQR14J3?tag=nocrueltyil-20",
-        "asin": "B0CXQR14J3",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0CXQR14J3.jpg"
-  },
-  {
-    "id": "e-l-f-b0b5mg6phq",
-    "brand": "e.l.f.",
-    "name": "מוצר לעור פנים עם אפקט Soft-Focus וחומצה היאלורונית",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "face",
-      "complexion",
-      "glow"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0B5MG6PHQ?tag=nocrueltyil-20",
-        "asin": "B0B5MG6PHQ",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0B5MG6PHQ.jpg"
-  },
-  {
-    "id": "e-l-f-b0dhrqgsmy",
-    "brand": "e.l.f.",
-    "name": "סטיק הגנה מהשמש Suntouchable Invisi-Stick",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "sun-care",
-      "sunscreen",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DHRQGSMY?tag=nocrueltyil-20",
-        "asin": "B0DHRQGSMY",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0DHRQGSMY.jpg"
-  },
-  {
-    "id": "e-l-f-b0g1h91lgm",
-    "brand": "e.l.f.",
-    "name": "מוצר Brew-tiful להפחתת נפיחות/מראה עייפות",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "eye-care",
-      "eye-cream",
-      "face",
-      "skin"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0G1H91LGM?tag=nocrueltyil-20",
-        "asin": "B0G1H91LGM",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0G1H91LGM.jpg"
-  },
-  {
-    "id": "e-l-f-b0cbr3krmb",
-    "brand": "e.l.f.",
-    "name": "קרם הגנה Suntouchable עם חומצה היאלורונית",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "sun-care",
-      "sunscreen",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CBR3KRMB?tag=nocrueltyil-20",
-        "asin": "B0CBR3KRMB",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0CBR3KRMB.jpg"
-  },
-  {
-    "id": "e-l-f-b0cpfvqc5m",
-    "brand": "e.l.f.",
-    "name": "קרם לחות קליל (Lightweight Hydration Moisturizer)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "moisturizer",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CPFVQC5M?tag=nocrueltyil-20",
-        "asin": "B0CPFVQC5M",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0CPFVQC5M.jpg"
-  },
-  {
-    "id": "e-l-f-b0cbr2tj82",
-    "brand": "e.l.f.",
-    "name": "קרם הגנה Suntouchable עם חומצה היאלורונית (דגם נוסף)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "sun-care",
-      "sunscreen",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CBR2TJ82?tag=nocrueltyil-20",
-        "asin": "B0CBR2TJ82",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0CBR2TJ82.jpg"
-  },
-  {
-    "id": "e-l-f-b07nsh2b4d",
-    "brand": "e.l.f.",
-    "name": "פריימר Poreless Putty (Skin Perfecting)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "face",
-      "primer",
-      "face-primer"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B07NSH2B4D?tag=nocrueltyil-20",
-        "asin": "B07NSH2B4D",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B07NSH2B4D.jpg"
-  },
-  {
-    "id": "e-l-f-b0b5mfc5dw",
-    "brand": "e.l.f.",
-    "name": "מי הרגעה לפצעונים Blemish Breakthrough Calming Water",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "acne",
-      "blemish-care",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0B5MFC5DW?tag=nocrueltyil-20",
-        "asin": "B0B5MFC5DW",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0B5MFC5DW.jpg"
-  },
-  {
-    "id": "e-l-f-b0g1gzs1rv",
-    "brand": "e.l.f.",
-    "name": "פילינג לחות Pore-fecting (Hydrating Exfoliating)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0G1GZS1RV?tag=nocrueltyil-20",
-        "asin": "B0G1GZS1RV",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0G1GZS1RV.jpg"
-  },
-  {
-    "id": "e-l-f-b07cs2zkq3",
-    "brand": "e.l.f.",
-    "name": "פלטת צלליות Nude Rose",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "eyes",
-      "eyeshadow"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B07CS2ZKQ3?tag=nocrueltyil-20",
-        "asin": "B07CS2ZKQ3",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B07CS2ZKQ3.jpg"
-  },
-  {
-    "id": "e-l-f-b0c6cb2h86",
-    "brand": "e.l.f.",
-    "name": "מוצר פיסול טבעי לבנייה (Naturally Sculpted Buildable)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "face",
-      "complexion"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0C6CB2H86?tag=nocrueltyil-20",
-        "asin": "B0C6CB2H86",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0C6CB2H86.jpg"
-  },
-  {
-    "id": "e-l-f-b0crr1sjy7",
-    "brand": "e.l.f.",
-    "name": "פריימר Jelly Pop שקוף (1.01 Clear)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "face",
-      "primer",
-      "face-primer"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CRR1SJY7?tag=nocrueltyil-20",
-        "asin": "B0CRR1SJY7",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0CRR1SJY7.jpg"
-  },
-  {
-    "id": "e-l-f-b0dzqcy8d9",
-    "brand": "e.l.f.",
-    "name": "מארז/לוח חגים Essentials",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "Skincare",
-      "sets",
-      "kits",
-      "travel",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DZQCY8D9?tag=nocrueltyil-20",
-        "asin": "B0DZQCY8D9",
-        "currency": "USD",
-        "priceUSD": 95,
-        "freeShipToIsrael": true
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0DZQCY8D9.jpg"
-  },
-  {
-    "id": "e-l-f-b09857wsxc",
-    "brand": "e.l.f.",
-    "name": "קרם לחות אולטרה Hydration (Ultra Hydrating)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "moisturizer",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B09857WSXC?tag=nocrueltyil-20",
-        "asin": "B09857WSXC",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B09857WSXC.jpg"
-  },
-  {
-    "id": "e-l-f-b0dhrr3xw8",
-    "brand": "e.l.f.",
-    "name": "אבקת/מוצר גימור אולטרה-דק Soft-Focus",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "makeup",
-      "setting"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DHRR3XW8?tag=nocrueltyil-20",
-        "asin": "B0DHRR3XW8",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0DHRR3XW8.jpg"
-  },
-  {
-    "id": "e-l-f-b0dgvn8s1l",
-    "brand": "e.l.f.",
-    "name": "גלוס Reviver בעל ברק גבוה (לא דביק)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "lips",
-      "lip-care",
-      "lip-oil"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0DGVN8S1L?tag=nocrueltyil-20",
-        "asin": "B0DGVN8S1L",
-        "currency": "USD",
-        "priceUSD": 31.36,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0DGVN8S1L.jpg"
-  },
-  {
-    "id": "e-l-f-b09yz2hqs4",
-    "brand": "e.l.f.",
-    "name": "ערכת Hydration Essentials בגודל ידידותי לטיסה (TSA-Friendly)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "moisturizer",
-      "sets",
-      "kits",
-      "travel",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B09YZ2HQS4?tag=nocrueltyil-20",
-        "asin": "B09YZ2HQS4",
-        "currency": "USD",
-        "priceUSD": 16,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B09YZ2HQS4.jpg"
-  },
-  {
-    "id": "e-l-f-b0b5mgd38y",
-    "brand": "e.l.f.",
-    "name": "צללית One Swipe עמידה לאורך זמן",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "eyes",
-      "eyeshadow"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0B5MGD38Y?tag=nocrueltyil-20",
-        "asin": "B0B5MGD38Y",
-        "currency": "USD",
-        "priceUSD": 6,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0B5MGD38Y.jpg"
-  },
-  {
-    "id": "e-l-f-b0f8vkqkjt",
-    "brand": "e.l.f.",
-    "name": "מוצר שפתיים Glossy Shades עמיד",
-    "size": "4ml",
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "lips",
-      "lip-care",
-      "lip-oil"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0F8VKQKJT?tag=nocrueltyil-20",
-        "asin": "B0F8VKQKJT",
-        "currency": "USD",
-        "priceUSD": 22.80,
-        "freeShipOver":49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0F8VKQKJT.jpg"
-  },
-  {
-    "id": "e-l-f-b0g1h2dcf6",
-    "brand": "e.l.f.",
-    "name": "מוצר שימר מיקרו עמיד (לא מתגבש)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "lips",
-      "lip-care",
-      "lip-oil"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0G1H2DCF6?tag=nocrueltyil-20",
-        "asin": "B0G1H2DCF6",
-        "currency": "USD",
-        "priceUSD": 9,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0G1H2DCF6.jpg"
-  },
-  {
-    "id": "e-l-f-b0bsp47bs4",
-    "brand": "e.l.f.",
-    "name": "סט מברשות לאיפור/ברונזר",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
+      "Beauty Tools",
+      "Mirrors",
+      "Accessories",
+      "hair",
       "tools",
-      "makeup-tools",
-      "brushes"
+      "mirror",
+      "travel"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -1412,66 +474,35 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0BSP47BS4?tag=nocrueltyil-20",
-        "asin": "B0BSP47BS4",
+        "url": "https://www.amazon.com/dp/B0CXSC8ZKD?tag=nocrueltyil-20",
+        "asin": "B0CXSC8ZKD",
         "currency": "USD",
-        "priceUSD": 13,
-                "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0BSP47BS4.jpg"
-  },
-  {
-    "id": "e-l-f-b0d3hnfj8r",
-    "brand": "e.l.f.",
-    "name": "סט מברשות למייקאפ וצלליות",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "tools",
-      "makeup-tools",
-      "brushes"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 50,
-    "priceMax": 100,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0D3HNFJ8R?tag=nocrueltyil-20",
-        "asin": "B0D3HNFJ8R",
-        "currency": "USD",
-        "priceUSD": 31,
+        "priceUSD": 18.37,
         "freeShipOver": 49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0D3HNFJ8R.jpg"
+    "image": "assets/img/products/B0CXSC8ZKD.jpg"
   },
   {
-    "id": "e-l-f-b082ytkdxq",
-    "brand": "e.l.f.",
-    "name": "מארז קולקציה – צלליות ומייקאפ",
-    "size": null,
+    "id": "hairitage-b0d54pt4nt",
+    "brand": "Hairitage",
+    "name": "מחליק שיער לשליטה בפריז – קרמי עם טורמלין (מתח כפול, כיבוי אוטומטי)",
+    "size": "1 count",
     "categories": [
       "Beauty & Personal Care",
       "Personal Care",
-      "Makeup",
-      "Skincare",
-      "sets",
-      "kits",
-      "travel",
-      "face"
+      "Hair Care",
+      "Hair Styling Tools",
+      "Flat Irons",
+      "Hair Straighteners",
+      "hair",
+      "styling",
+      "flat-iron",
+      "straightener",
+      "anti-frizz"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -1482,149 +513,15 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B082YTKDXQ?tag=nocrueltyil-20",
-        "asin": "B082YTKDXQ",
+        "url": "https://www.amazon.com/dp/B0D54PT4NT?tag=nocrueltyil-20",
+        "asin": "B0D54PT4NT",
         "currency": "USD",
-        "priceUSD": 16,
-         "freeShipOver": 49
+        "priceUSD": 17.49
       }
     ],
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B082YTKDXQ.jpg"
-  },
-  {
-    "id": "e-l-f-b0crgxksd9",
-    "brand": "e.l.f.",
-    "name": "קרם הגנה בלתי נראה Suntouchable (ספקטרום רחב)",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Skincare",
-      "skin",
-      "sun-care",
-      "sunscreen",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0CRGXKSD9?tag=nocrueltyil-20",
-        "asin": "B0CRGXKSD9",
-        "currency": "USD",
-        "priceUSD": 11.84,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0CRGXKSD9.jpg"
-  },
-  {
-    "id": "e-l-f-b0d1d8c4z5",
-    "brand": "e.l.f.",
-    "name": "ברונזר Bronzing בגוון Sun-Kissed",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "makeup",
-      "bronzer",
-      "face"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0D1D8C4Z5?tag=nocrueltyil-20",
-        "asin": "B0D1D8C4Z5",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0D1D8C4Z5.jpg"
-  },
-  {
-    "id": "e-l-f-b0f3wtpbm2",
-    "brand": "e.l.f.",
-    "name": "מסקרה Incredi-Curl לנפח ועמידה למריחות",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "eyes",
-      "mascara"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B0F3WTPBM2?tag=nocrueltyil-20",
-        "asin": "B0F3WTPBM2",
-        "currency": "USD",
-        "priceUSD": null
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B0F3WTPBM2.jpg"
-  },
-  {
-    "id": "e-l-f-b07zvwyby7",
-    "brand": "e.l.f.",
-    "name": "אבקת קיבוע Soft-Focus",
-    "size": null,
-    "categories": [
-      "Beauty & Personal Care",
-      "Personal Care",
-      "Makeup",
-      "makeup",
-      "setting"
-    ],
-    "isVegan": true,
-    "isPeta": null,
-    "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
-    "offers": [
-      {
-        "store": "amazon-us",
-        "storeLabel": "Amazon ארה\"ב",
-        "url": "https://www.amazon.com/dp/B07ZVWYBY7?tag=nocrueltyil-20",
-        "asin": "B07ZVWYBY7",
-        "currency": "USD",
-        "priceUSD": 10.13,
-        "freeShipOver": 49
-      }
-    ],
-    "isKids": false,
-    "isMen": false,
-    "isDiscounted": false,
-    "image": "assets/img/products/B07ZVWYBY7.jpg"
+    "image": "assets/img/products/B0D54PT4NT.jpg"
   }
 ]
