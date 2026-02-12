@@ -1,8 +1,8 @@
-// // Build: 2026-02-06-v21
-try { window.KBWG_BRANDS_BUILD = '2026-02-06-v21'; console.info('[KBWG] KBWG_BRANDS_BUILD ' + window.KBWG_BRANDS_BUILD); } catch(e) {}
+// // Build: 2026-02-11-v23
+try { window.KBWG_BRANDS_BUILD = String(window.KBWG_BUILD || '2026-02-11-v1'); console.info('[KBWG] KBWG_BRANDS_BUILD ' + window.KBWG_BRANDS_BUILD); } catch(e) {}
 
 // Resolve URLs correctly when Weglot serves pages under /en/ (or when hosted under a subpath, e.g. GitHub Pages).
-// If you fetch("data/...") from /en/page.html the browser will request /en/data/... (404). We normalize to the true site base.
+// If you window.kbwgFetch("data/...") from /en/page.html the browser will request /en/data/... (404). We normalize to the true site base.
 function __kbwgSiteBaseFromScript(scriptName) {
   try {
     var src = '';
@@ -70,6 +70,8 @@ function __kbwgResolveFromSiteBase(relPath, scriptName) {
       website?: string,
       amazonUk?: string,
       amazonUs?: string,
+      amazonCa?: string,
+      amazonFr?: string,
       categories?: string[],
       badges?: string[],
       vegan?: boolean,
@@ -87,14 +89,14 @@ function __kbwgResolveFromSiteBase(relPath, scriptName) {
 
   // Unified categories – must match the Products page filters.
   var CAT_LABELS = {
-    face: 'טיפוח פנים',
-    hair: 'שיער',
-    body: 'גוף ורחצה',
-    makeup: 'איפור',
-    fragrance: 'בישום',
+    face: "פנים",
+    hair: "שיער",
+    body: "גוף",
+    makeup: "איפור",
+    fragrance: "בישום",
     'mens-care': 'גברים',
-    baby: 'תינוקות',
-    health: 'בריאות'
+    baby: "ילדים",
+    health: "בריאות"
   };
 
   // Map legacy/varied categories from JSON into the unified set.
@@ -111,8 +113,8 @@ function __kbwgResolveFromSiteBase(relPath, scriptName) {
     deodorant: 'body',
     soap: 'body',
     'soap-bars': 'body',
-    sun: 'body',
-    tanning: 'body',
+    sun: 'sun',
+    tanning: 'sun',
     'tattoo-care': 'body',
 
     cosmetics: 'makeup',
@@ -237,7 +239,7 @@ function __kbwgResolveFromSiteBase(relPath, scriptName) {
   }
 
   function bestAmazonLink(b) {
-    return b.amazonUk || b.amazonUs || null;
+    return b.amazonUk || b.amazonFr || b.amazonUs || b.amazonCa || null;
   }
 
   
@@ -276,12 +278,43 @@ function __kbwgParseJsonWithHebrewQuoteFix(rawText, debugLabel, debugUrl) {
   }
 }
 
+function __kbwgWithBust(url) {
+  try {
+    var v = (window.KBWG_BRANDS_BUILD || window.KBWG_BUILD || '').trim();
+    // If build is missing, fall back to a stable day-based key (prevents infinite unique URLs)
+    if (!v) {
+      var d = new Date();
+      v = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+    }
+    // If URL already has v=, keep it.
+    if (/[?&]v=/.test(url)) return url;
+    return url + (url.indexOf('?') > -1 ? '&' : '?') + 'v=' + encodeURIComponent(v);
+  } catch (e) {
+    return url;
+  }
+}
+
 function __kbwgFetchJson(url, debugLabel) {
-  return fetch(url, { cache: 'force-cache' }).then(function (r) {
-    if (!r.ok) throw new Error('Failed to load ' + url + ' (from ' + debugLabel + ')');
+  // Always bypass cache AND add a version key so stale long-lived caches won't bite us (mobile vs desktop).
+  var u1 = __kbwgWithBust(url);
+  return window.kbwgFetch(u1, { cache: 'no-store' }).then(function (r) {
+    if (!r.ok) throw new Error('Failed to load ' + u1 + ' (from ' + debugLabel + ')');
     return r.text().then(function (txt) {
-      return __kbwgParseJsonWithHebrewQuoteFix(txt, debugLabel, url);
+      return __kbwgParseJsonWithHebrewQuoteFix(txt, debugLabel, u1);
     });
+  }).catch(function (err) {
+    // One more try with a hard cache-bust if something odd is cached (e.g., an old 2-brand file).
+    try {
+      var u2 = url + (url.indexOf('?') > -1 ? '&' : '?') + 'v=' + Date.now();
+      return window.kbwgFetch(u2, { cache: 'no-store' }).then(function (r2) {
+        if (!r2.ok) throw new Error('Failed to load ' + u2 + ' (retry from ' + debugLabel + ')');
+        return r2.text().then(function (txt2) {
+          return __kbwgParseJsonWithHebrewQuoteFix(txt2, debugLabel, u2);
+        });
+      });
+    } catch (e2) {
+      throw err;
+    }
   });
 }
 
@@ -934,9 +967,11 @@ function stopLinkPropagation(el) {
     }
 
     addLink('אתר המותג', brand.website || null, 'brandLink--site');
-    addLink('אמזון UK', brand.amazonUk || null, 'brandLink--amazon');
-    addLink('אמזון US', brand.amazonUs || null, 'brandLink--amazon');
+    addLink('Amazon UK', brand.amazonUk || null, 'brandLink--amazon');
+    addLink('Amazon FR', brand.amazonFr || null, 'brandLink--amazon');
+    addLink('Amazon US', brand.amazonUs || null, 'brandLink--amazon');
 
+    addLink('Amazon CA', brand.amazonCa || null, 'brandLink--amazon');
     top.appendChild(header);
     if (badgesWrap.childNodes.length) top.appendChild(badgesWrap);
     if (links.childNodes.length) top.appendChild(links);
@@ -1169,6 +1204,14 @@ function stopLinkPropagation(el) {
       .then(function (arr) {
         var brands = arr[0];
         var products = arr[1];
+
+        // If we got a suspiciously small list (usually stale cached JSON on some devices),
+        // force a hard reload of the brands JSON once.
+        if (Array.isArray(brands) && brands.length > 0 && brands.length < 50 && !window.__kbwgBrandsRetryDone) {
+          window.__kbwgBrandsRetryDone = true;
+          return __kbwgFetchJson(jsonUrl + (jsonUrl.indexOf('?')>-1?'&':'?') + 'v=' + Date.now(), jsonPath)
+            .then(function (freshBrands) { arr[0] = freshBrands; return arr; });
+        }
 
         products = Array.isArray(products) ? products : [];
         var idx = buildTypesIndexFromProducts(products);

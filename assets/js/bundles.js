@@ -14,7 +14,7 @@
 (function(){
   'use strict';
 
-  try { window.KBWG_BUNDLES_BUILD = '2026-02-06-v24'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
+  try { window.KBWG_BUNDLES_BUILD = '2026-02-11-v8'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
 
   var PRODUCTS_PATH = 'data/products.json';
   var BRANDS_PATH = 'data/intl-brands.json';
@@ -59,7 +59,7 @@
   var TAX_THRESHOLD_USD = 150;
 
   var BUNDLE_MIN = 52.00;
-  var BUNDLE_MAX = 60.00;
+  var BUNDLE_MAX = 65.00;
   var BUNDLE_MIN_ITEMS = 3;
   var MORE_MERRIER_PREFER_MAX = 55.00;
   // יעד פנימי לאיזון חבילות (איפה נעדיף לנחות בתוך הטווח)
@@ -332,67 +332,52 @@
     };
   }
 
-  function offerFreeShip49(product){
-    if(!product || !Array.isArray(product.offers)) return null;
 
-    // Only include offers with free shipping over $49 (and NOT freeShipToIsrael:true)
-    // We intentionally exclude offers without freeShipOver, even if they might be free shipping in other ways.
-    var eligAmazon = [];
-    var eligAny = [];
+  
+function offerFreeShip49(product){
+  // STRICT: only offers with freeShipOver === 49 are eligible for bundles page
+  if(!product || !Array.isArray(product.offers)) return null;
 
-    function hasFreeShipToIsrael(o){
-      if(!o) return false;
-      return isTrueFlag(o.freeShipToIsrael)
-        || isTrueFlag(o.freeShippingToIsrael)
-        || isTrueFlag(o.freeShipToisrael)
-        || isTrueFlag(o.freeshippingtoisrael)
-        || isTrueFlag(o.freeShipIL)
-        || isTrueFlag(o.freeShipIsrael);
-    }
+  var eligAmazon = [];
+  var eligAny = [];
 
-    for(var i=0;i<product.offers.length;i++){
-      var o = product.offers[i];
-      if(!o || !o.url || !isNum(o.priceUSD)) continue;
+  for(var i=0;i<product.offers.length;i++){
+    var o = product.offers[i];
+    if(!o || !o.url || !isNum(o.priceUSD)) continue;
 
-      // Exclude any "freeShipToIsrael" marked offers/products (any variant key)
-      if(hasFreeShipToIsrael(o) || (product && hasFreeShipToIsrael(product))) continue;
+    var fsRaw = (o.freeShipOver != null) ? o.freeShipOver : (product && product.freeShipOver != null ? product.freeShipOver : null);
+    var fs = Number(fsRaw);
+    if(!isFinite(fs) || fs !== FREE_SHIP_OVER_USD) continue;
 
-      var fsRaw = (o.freeShipOver != null) ? o.freeShipOver : (product && product.freeShipOver != null ? product.freeShipOver : null);
-      var fs = Number(fsRaw);
+    // normalize
+    o.freeShipOver = fs;
 
-      // Must explicitly have freeShipOver === 49
-      if(!isFinite(fs) || fs !== FREE_SHIP_OVER_USD) continue;
-
-      // normalize
-      o.freeShipOver = fs;
-
-      if(o.store === 'amazon-us') eligAmazon.push(o);
-      eligAny.push(o);
-    }
-
-    function pickBest(list){
-      if(!list.length) return null;
-      // prioritize "campaign" urls, then lower price
-      list.sort(function(a,b){
-        var ac = isCampaignUrl(a.url) ? 1 : 0;
-        var bc = isCampaignUrl(b.url) ? 1 : 0;
-        if(ac !== bc) return bc - ac;
-        return a.priceUSD - b.priceUSD;
-      });
-      return list[0];
-    }
-
-    // 1) Prefer Amazon US eligible offer (campaign first)
-    var bestA = pickBest(eligAmazon);
-    if(bestA) return bestA;
-
-    // 2) Any eligible offer (campaign first)
-    return pickBest(eligAny);
+    if(o.store === 'amazon-us') eligAmazon.push(o);
+    eligAny.push(o);
   }
 
+  function pickBest(list){
+    if(!list.length) return null;
+    // prioritize "campaign" urls, then lower price
+    list.sort(function(a,b){
+      var ac = isCampaignUrl(a.url) ? 1 : 0;
+      var bc = isCampaignUrl(b.url) ? 1 : 0;
+      if(ac !== bc) return bc - ac;
+      return a.priceUSD - b.priceUSD;
+    });
+    return list[0];
+  }
+
+  // 1) Prefer Amazon US eligible offer (campaign first)
+  var bestA = pickBest(eligAmazon);
+  if(bestA) return bestA;
+
+  // 2) Any eligible offer (campaign first)
+  return pickBest(eligAny);
+}
 
 
-  function eligibleProduct(p){
+function eligibleProduct(p){
     var o = offerFreeShip49(p);
     if(!o) return null;
 
@@ -401,6 +386,7 @@
 
     return {
       _id: p.id || ((p.brand||'') + '::' + (p.name||'')),
+      id: (p.id || ((p.brand||'') + '::' + (p.name||''))),
       _brand: p.brand || '',
       _name: p.name || '',
       _image: p.image || '',
@@ -495,16 +481,25 @@
   }
 
   function isMen(p){
-    // requirement: name has the word men
-    return /\bmen\b/i.test(p._name || '') || /\bmens\b/i.test(p._name || '') || /men's/i.test(p._name || '') || /לגבר|לגברים|גברים/.test(p._name || '');
-  }
+  // Men bundle: match by name OR categories
+  if(hasCat(p,'mens-care') || hasCat(p,'men') || hasCat(p,'mens') ) return true;
+  var n = (p._name || '');
+  var c = (Array.isArray(p._categories) ? p._categories.join(' ') : '');
+  return /men/i.test(n) || /mens/i.test(n) || /men's/i.test(n) || /גברים|לגבר|לגברים/.test(n) ||
+         /men/i.test(c) || /mens/i.test(c) || /גברים|לגבר|לגברים/.test(c);
+}
 
   function isMakeup(p){
     if(hasCat(p,'makeup')) return true;
     return /\bmakeup\b|\blip\b|\blipstick\b|\bgloss\b|\bmascara\b|\beyeshadow\b|\bblush\b|\bfoundation\b|\bconcealer\b|\bbrow\b|\bbronzing\b|\bbronzer\b|\bhighlighter\b|\btint(ed)?\b/i.test(p._name || '');
   }
 
-  function isHair(p){ return hasCat(p,'hair') || /\bhair\b/i.test(p._name || ''); }
+  function isHair(p){
+  // Hair bundle: treat shampoo/conditioner/mask/styling/scalp as hair too
+  if(hasCat(p,'hair')) return true;
+  if(hasAnyCat(p,['shampoo','conditioner','hair-mask','mask','scalp','styling','haircare'])) return true;
+  return /hair/i.test(p._name || '') || /שמפו|מרכך|מסכה|שיער|קרקפת/.test(p._name || '');
+}
   function isShampoo(p){ return hasCat(p,'shampoo') || /\bshampoo\b/i.test(p._name || ''); }
   function isConditioner(p){ return hasCat(p,'conditioner') || /\bconditioner\b/i.test(p._name || ''); }
   function isHairMask(p){
@@ -722,7 +717,7 @@
     var title = document.createElement('div');
     title.style.fontWeight = '700';
     title.style.fontSize = '18px';
-    title.textContent = 'הדפדפן חסם פתיחת כמה טאבים';
+    title.textContent = 'פתיחת לינקים';
 
     var close = document.createElement('button');
     close.type = 'button';
@@ -738,7 +733,7 @@
 
     var p = document.createElement('p');
     p.style.margin = '10px 0 12px';
-    p.textContent = 'כדי לפתוח את כולם בלחיצה אחת, צריך לאפשר חלונות קופצים לאתר. בינתיים, הנה כל הלינקים של החבילה:';
+    p.textContent = 'כדי לפתוח את כל הלינקים בבת אחת צריך לאפשר חלונות קופצים לאתר. אפשר קודם להעתיק את כל הלינקים, ואז ללחוץ על “פתיחת כל הלינקים”.';
 
     var actions = document.createElement('div');
     actions.style.display = 'flex';
@@ -756,12 +751,31 @@
 
     var openOneBtn = document.createElement('button');
     openOneBtn.type = 'button';
-    openOneBtn.textContent = 'לפתוח לינק ראשון';
+    openOneBtn.textContent = 'פתיחת לינק ראשון';
     openOneBtn.style.border = '1px solid #ddd';
     openOneBtn.style.borderRadius = '10px';
     openOneBtn.style.padding = '8px 10px';
     openOneBtn.style.cursor = 'pointer';
 
+
+    var openAllBtn = document.createElement('button');
+    openAllBtn.type = 'button';
+    openAllBtn.textContent = 'פתיחת כל הלינקים';
+    openAllBtn.style.border = '1px solid #111';
+    openAllBtn.style.background = '#111';
+    openAllBtn.style.color = '#fff';
+    openAllBtn.style.borderRadius = '10px';
+    openAllBtn.style.padding = '8px 10px';
+    openAllBtn.style.cursor = 'pointer';
+
+    var status = document.createElement('div');
+    status.id = 'kbwgLinksStatus';
+    status.style.margin = '6px 0 12px';
+    status.style.fontSize = '13px';
+    status.style.color = '#666';
+
+
+    actions.appendChild(openAllBtn);
     actions.appendChild(copyBtn);
     actions.appendChild(openOneBtn);
 
@@ -773,6 +787,7 @@
     box.appendChild(h);
     box.appendChild(p);
     box.appendChild(actions);
+    box.appendChild(status);
     box.appendChild(list);
     overlay.appendChild(box);
 
@@ -782,12 +797,14 @@
 
     document.body.appendChild(overlay);
 
-    overlay._setLinks = function(items){
+    overlay._setLinks = function(items, modalTitle){
       var links = (items || []).map(function(x){
         if(typeof x === 'string') return { url: x, label: x };
         if(!x) return null;
         return { url: x.url || x.href || '', label: x.label || x.name || x.title || x.url || x.href || '' };
       }).filter(function(l){ return l && l.url; });
+
+      if(modalTitle){ title.textContent = String(modalTitle); }
 
       list.innerHTML = '';
       var text = links.map(function(l){ return l.url; }).join('\n');
@@ -813,6 +830,22 @@
       openOneBtn.onclick = function(){
         if(links && links.length) window.open(ensureAmazonComTag(links[0].url), '_blank', 'noopener');
       };
+
+
+      openAllBtn.onclick = function(){
+        if(!links || !links.length) return;
+        var opened = 0;
+        for(var i=0;i<links.length;i++){
+          var w = window.open(ensureAmazonComTag(links[i].url), '_blank', 'noopener');
+          if(!w){
+            status.textContent = 'הדפדפן חסם פתיחה אחרי ' + opened + ' טאבים. יש לאפשר חלונות קופצים לאתר ולנסות שוב.';
+            return;
+          }
+          opened++;
+        }
+        status.textContent = 'נפתחו ' + opened + ' טאבים ✓';
+      };
+
 
       links.forEach(function(l){
         var a = document.createElement('a');
@@ -950,7 +983,7 @@
 
   function openAllLinks(items, title){
     var links = [];
-    for(var i=0;i<items.length;i++){
+    for(var i=0;i<(items||[]).length;i++){
       var it = items[i];
       var u = it && it._offer && it._offer.url;
       if(!u) continue;
@@ -959,7 +992,12 @@
       label += (it._name || u);
       links.push({ url: u, label: label });
     }
-    openLinkHub(links, title || 'פתיחת לינקים');
+    if(!links.length) return;
+
+    // Show a popup first (copy links + enable popups), then let the user open all.
+    var modal = ensureLinksModal();
+    modal._setLinks(links, title || 'פתיחת לינקים');
+    modal.style.display = 'block';
   }
 
   // ===== App state =====
@@ -1215,404 +1253,231 @@
   }
 
   // ===== Bundles builder =====
+  
+function buildBundlesFromPool(allEligible){
+  // Build ONLY the 4 requested bundles (plus the custom builder handled elsewhere).
+  // Strict: allEligible already filtered to offers with freeShipOver === 49.
 
-  function buildBundlesFromPool(allEligible){
-    // Build preset bundles first (only if we can reach $52–$60), then generate many more bundles
-    // from the remaining eligible products. Each bundle:
-    //  - Only uses products with freeShipOver === 49 (already filtered in eligibleProduct)
-    //  - Total is between BUNDLE_MIN and BUNDLE_MAX
-    //  - Maximizes number of products inside the range
-    //  - Never contains the same product-type twice (e.g., no 2 shampoos, no 2 patches)
-    var pool = allEligible.slice().sort(function(a,b){ return (a._priceUSD||0) - (b._priceUSD||0); });
+  var pool = allEligible.slice().sort(function(a,b){ return (a._priceUSD||0) - (b._priceUSD||0); });
 
-    function cheapestFirst(a,b){
-      var ac = (a && a._offer && a._offer.url && isCampaignUrl(a._offer.url)) ? 1 : 0;
-      var bc = (b && b._offer && b._offer.url && isCampaignUrl(b._offer.url)) ? 1 : 0;
+  function pid(p){ return p && (p._id || p.id || (p._raw && p._raw.id) || (p._brand+'::'+p._name)); }
+  function isCamp(p){ return !!(p && p._offer && isCampaignUrl(p._offer.url)); }
+
+  function removeUsed(items){
+    var used = {};
+    items.forEach(function(it){ used[pid(it)] = true; });
+    pool = pool.filter(function(p){ return !used[pid(p)]; });
+  }
+
+  function toBundle(id, title, subtitle, items){
+    return { id: id, title: title, subtitle: subtitle, items: items.slice() };
+  }
+
+  function bestCandidates(list, k, preferCampaign){
+    var arr = (list || []).slice();
+    if(preferCampaign){
+      var camp = arr.filter(isCamp);
+      if(camp.length) arr = camp;
+    }
+    arr.sort(function(a,b){
+      var ap = a._priceUSD || 0;
+      var bp = b._priceUSD || 0;
+      if(ap !== bp) return ap - bp;
+      // tie-break: campaign
+      var ac = isCamp(a)?1:0, bc=isCamp(b)?1:0;
       if(ac !== bc) return bc - ac;
-      return (a._priceUSD||0) - (b._priceUSD||0);
+      return String(a._name||'').localeCompare(String(b._name||''), 'en', {sensitivity:'base'});
+    });
+    return arr.slice(0, k || 12);
+  }
+
+  function fillToRange(baseItems, themePred){
+    var items = baseItems.slice();
+    var used = {};
+    items.forEach(function(it){ used[pid(it)] = true; });
+
+    function total(){ return sumUSD(items); }
+
+    // Prefer campaign fillers first, then cheapest, within the theme.
+    var fillers = pool.filter(function(p){ return !used[pid(p)] && themePred(p); });
+
+    // two-pass: campaign then any
+    var passLists = [fillers.filter(isCamp), fillers];
+    for(var pass=0; pass<passLists.length; pass++){
+      passLists[pass].sort(function(a,b){ return (a._priceUSD||0) - (b._priceUSD||0); });
     }
 
-    function typeKey(p){
-      var n = (p && p._name) ? String(p._name) : '';
-      var low = n.toLowerCase();
-      // helper for name matching (he/en)
-      function hasRx(rx){ try{ return rx.test(n) || rx.test(low); }catch(e){ return false; } }
-
-      // Patches — ALL patches share one type (per user request)
-      if(hasAnyCat(p,['patch']) || /מדבקות/.test(n) || /\bpatch(es)?\b/i.test(n)) return 'patch';
-
-      // Makeup removal & cleansing (detect before general makeup)
-      if(/מיסלר/.test(n) || /\bmicellar\b/i.test(n)) return 'micellar';
-      if(/מסיר/.test(n) || /\bremover\b/i.test(n)) return (/עיניים/.test(n) || /\beye\b/i.test(n)) ? 'eye-remover' : 'makeup-remover';
-      if(/מגבונ/.test(n) || /\bwipes?\b/i.test(n)) return 'wipes';
-
-      // Sun / SPF
-      if(hasAnyCat(p,['sun','spf','sunscreen','suncare']) || /\bspf\b/i.test(n) || /\bsunscreen\b/i.test(n)){
-        if(/שפתון|lip balm|lipstick|ליפ\b|balm\b/i.test(n) && (/\bspf\b/i.test(n) || /\bsun\b/i.test(n))) return 'lip-spf';
-        if(/ספריי|spray\b/i.test(n)) return 'sun-spray';
-        if(/אפטר\s*סאן|after\s*sun/i.test(n)) return 'after-sun';
-        // keep one sunscreen type (avoid 2 SPF items in one bundle)
-        return 'sunscreen';
-      }
-
-      // Hair
-      if(isHair(p)){
-        if(hasAnyCat(p,['shampoo']) || /שמפו/.test(n) || /\bshampoo\b/i.test(n)){
-          if(hasAnyCat(p,['shampoo-conditioner']) || /מרכך/.test(n) || /\bconditioner\b/i.test(n) || /שמפו\s*ומ(?:ר|R)כך/.test(n)) return 'shampoo-conditioner';
-          return 'shampoo';
-        }
-        if(hasAnyCat(p,['conditioner']) || /מרכך/.test(n) || /\bconditioner\b/i.test(n)) return 'conditioner';
-        if((hasAnyCat(p,['mask']) && isHair(p)) || (/מסכה/.test(n) || /\bmask\b|\bmasque\b/i.test(n))) return 'hair-mask';
-        if((hasAnyCat(p,['serum']) && isHair(p)) || /סרום/.test(n) || /\bserum\b/i.test(n) || /oil\b|שמן/.test(low)) return 'hair-serum';
-        if(/גלייז|glaze\b|gel\b|g[’'`]?el\b|מוס|mousse\b|spray\b|ספריי/.test(n)) return 'hair-styling';
-        if(/קרם/.test(n) || /\bcream\b|\blotion\b|\bleave[-\s]?in\b/i.test(n)) return 'hair-cream';
-        return 'hair-other';
-      }
-
-      // Makeup
-      if(isMakeup(p)){
-        if(/פריימר/.test(n) || /\bprimer\b/i.test(n)) return 'primer';
-        if(/מייק/.test(n) || /מייק-?אפ/.test(n) || /\bfoundation\b/i.test(n)) return 'foundation';
-        if(/קונסילר/.test(n) || /\bconcealer\b/i.test(n)) return 'concealer';
-        if(/פודרה/.test(n) || /\bpowder\b/i.test(n)) return 'powder';
-        if(/ספריי\s*מקבע|מקבע/.test(n) || /\bsetting\s*spray\b|\bfix(ing)?\s*spray\b/i.test(n)) return 'setting-spray';
-        if(/אייליינר/.test(n) || /\beyeliner\b/i.test(n)) return 'eyeliner';
-        if(/מסקרה/.test(n) || /\bmascara\b/i.test(n)) return 'mascara';
-        if(/שפתון|גלוס|lipstick|gloss|lip\b/i.test(n)) return 'lip-makeup';
-        return 'makeup-other';
-      }
-
-      // Face / skincare (not hair/makeup already)
-      if(isFace(p)){
-        if(hasAnyCat(p,['cleanser','soap']) || /סבון|תרחיץ/.test(n) || /\bcleanser\b|\bwash\b|\bsoap\b/i.test(n)){
-          if(/מקציף/.test(n) || /\bfoam\b/i.test(n)) return 'cleanser-foam';
-          return 'cleanser';
-        }
-        if(hasAnyCat(p,['toner']) || /מי\s*פנים/.test(n) || /\btoner\b/i.test(n)) return 'toner';
-        if(hasAnyCat(p,['serum']) || /סרום/.test(n) || /\bserum\b/i.test(n)) return 'serum';
-        if(hasAnyCat(p,['mask']) || /מסכה/.test(n) || /\bmask\b|\bmasque\b/i.test(n)){
-          if(/חימר/.test(n) || /\bclay\b/i.test(n)) return 'clay-mask';
-          return 'face-mask';
-        }
-        if(hasAnyCat(p,['moisturizer','cream']) || /קרם\s*לחות/.test(n) || /\bmoisturizer\b|\bcream\b/i.test(n)) return 'moisturizer';
-        if(/עיניים/.test(n) || /\beye\b/i.test(n) || hasAnyCat(p,['eyes','eye'])) return 'eye-care';
-        return 'skincare-other';
-      }
-
-      // Body / hygiene
-      if(isBody(p) || isTeeth(p)){
-        if(/ידיים/.test(n) || /\bhand\b/i.test(n)) return 'hand-cream';
-        if(/רגליים/.test(n) || /\bfoot\b/i.test(n)) return 'foot-cream';
-        if(/דאודורנט/.test(n) || /\bdeodorant\b/i.test(n)) return 'deodorant';
-        if(/סבון|רחצה|מקלחת/.test(n) || /\bbody\s*wash\b|\bwash\b|\bsoap\b|\bshower\b/i.test(n)) return 'body-wash';
-        if(/קרם/.test(n) || /\blotion\b|\bcream\b/i.test(n)) return 'body-cream';
-        if(isTeeth(p)) return 'teeth';
-        return 'body-other';
-      }
-
-      return 'other';
-    }
-
-    function repsByType(list, usedTypes){
-      var best = {};
-      for(var i=0;i<list.length;i++){
-        var p = list[i];
-        var t = typeKey(p);
-        if(usedTypes && usedTypes[t]) continue;
-        if(!best[t] || (p._priceUSD||0) < (best[t]._priceUSD||0)) best[t] = p;
-      }
-      return Object.keys(best).map(function(k){ return best[k]; }).sort(cheapestFirst);
-    }
-
-    function takeItems(items){
-      var used = {};
-      for(var i=0;i<items.length;i++){
-        if(items[i] && items[i]._id) used[items[i]._id] = 1;
-      }
-      pool = pool.filter(function(p){ return !used[p._id]; });
-    }
-
-    function toBundle(id, title, subtitle, items){
-      return { id: id, title: title, subtitle: subtitle, items: items.slice() };
-    }
-
-    function solveTheme(cfg){
-      var list = pool.filter(function(p){
-        if(cfg.excludeKids && isKids(p)) return false;
-        if(cfg.onlyKids && !isKids(p)) return false;
-        return cfg.themePred ? cfg.themePred(p) : true;
-      });
-      var reps = repsByType(list, null);
-      var pick = bestSubset(reps, BUNDLE_MIN, BUNDLE_MAX, { preferCloserTo: MORE_MERRIER_PREFER_MAX });
-      if(!pick || pick.length < BUNDLE_MIN_ITEMS) return null;
-      takeItems(pick);
-      return toBundle(cfg.id, cfg.title, cfg.subtitle, pick);
-    }
-
-    function solveAnchored(cfg){
-      var anchors = pool.filter(function(p){
-        if(cfg.excludeKids && isKids(p)) return false;
-        if(cfg.onlyKids && !isKids(p)) return false;
-        return cfg.anchorPred ? cfg.anchorPred(p) : false;
-      }).sort(cheapestFirst);
-
-      if(!anchors.length) return null;
-
-      // pick the cheapest anchor
-      var items = [anchors[0]];
-      var usedTypes = {};
-      usedTypes[typeKey(anchors[0])] = 1;
-
-      var baseSum = sumUSD(items);
-      if(baseSum > BUNDLE_MAX) return null;
-
-      var remMin = BUNDLE_MIN - baseSum; if(remMin < 0) remMin = 0;
-      var remMax = BUNDLE_MAX - baseSum;
-
-      // 1) Fill from the themed pool first
-      var themedList = pool.filter(function(p){
-        if(p._id === anchors[0]._id) return false;
-        if(cfg.excludeKids && isKids(p)) return false;
-        if(cfg.onlyKids && !isKids(p)) return false;
-        return cfg.themePred ? cfg.themePred(p) : true;
-      });
-      var themedReps = repsByType(themedList, usedTypes);
-      var fill = bestSubset(themedReps, remMin, remMax, { preferCloserTo: (BUNDLE_TARGET - baseSum) });
-      if(fill && fill.length){
-        for(var i=0;i<fill.length;i++){
-          items.push(fill[i]);
-          usedTypes[typeKey(fill[i])] = 1;
-        }
-      }
-
-      // 2) If still below the minimum, broaden fill
-      var total = sumUSD(items);
-      if(total < BUNDLE_MIN - 1e-9){
-        var remMin2 = BUNDLE_MIN - total; if(remMin2 < 0) remMin2 = 0;
-        var remMax2 = BUNDLE_MAX - total;
-
-        var broadList = pool.filter(function(p){
-          if(items.some(function(x){ return x._id === p._id; })) return false;
-          if(cfg.excludeKids && isKids(p)) return false;
-          if(cfg.onlyKids && !isKids(p)) return false;
-          return cfg.fillPred ? cfg.fillPred(p) : (!isKids(p));
-        });
-        var broadReps = repsByType(broadList, usedTypes);
-        var fill2 = bestSubset(broadReps, remMin2, remMax2, { preferCloserTo: (BUNDLE_TARGET - total) });
-        if(fill2 && fill2.length){
-          for(var j=0;j<fill2.length;j++){
-            items.push(fill2[j]);
-            usedTypes[typeKey(fill2[j])] = 1;
+    var tries = 0;
+    while(total() < BUNDLE_MIN && tries < 200){
+      tries++;
+      var added = null;
+      // choose the cheapest candidate that keeps us <= BUNDLE_MAX
+      for(var pass2=0; pass2<passLists.length && !added; pass2++){
+        var arr = passLists[pass2];
+        for(var i=0;i<arr.length;i++){
+          var p = arr[i];
+          if(used[pid(p)]) continue;
+          var next = total() + (p._priceUSD||0);
+          if(next <= BUNDLE_MAX + 1e-9){
+            added = p;
+            break;
           }
         }
       }
-
-      total = sumUSD(items);
-      if(items.length < BUNDLE_MIN_ITEMS) return null;
-      if(total < BUNDLE_MIN - 1e-9 || total > BUNDLE_MAX + 1e-9) return null;
-
-      takeItems(items);
-      return toBundle(cfg.id, cfg.title, cfg.subtitle, items);
+      if(!added) break;
+      items.push(added);
+      used[pid(added)] = true;
     }
 
-    // ===== Preset bundles (your 10 categories) =====
-    var presets = [
-      {
-        id: 'preset-curls',
-        title: 'חבילת "תלתלים מוגדרים"',
-        subtitle: 'מוצרים בסגנון תלתלים/הגדרה (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
-        excludeKids: true,
-        anchorPred: function(p){ return /(תלתלים|\bcurls?\b)/i.test(p._name || ''); },
-        themePred: function(p){ return isHair(p); },
-        fillPred: function(p){ return isHair(p) && !isKids(p); }
-      },
-      {
-        id: 'preset-nosalt',
-        title: 'חבילת "שיקום לאחר החלקה"',
-        subtitle: 'מוצרים ללא מלחים/ללא סולפטים (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
-        excludeKids: true,
-        anchorPred: function(p){ return /(ללא\s*מלח|ללא\s*מלחים|salt[-\s]*free|no\s*salt|ללא\s*סולפטים|sulfate[-\s]*free)/i.test(p._name || ''); },
-        themePred: function(p){ return isHair(p); },
-        fillPred: function(p){ return isHair(p) && !isKids(p); }
-      },
-      {
-        id: 'preset-oily',
-        title: 'חבילת "איזון עור שמן"',
-        subtitle: 'מוצרים לעור שמן/מעורב (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
-        excludeKids: true,
-        anchorPred: function(p){ return /(עור\s*שמן|\boily\b)/i.test(p._name || ''); },
-        themePred: function(p){ return isFace(p); },
-        fillPred: function(p){ return isFace(p) && !isKids(p); }
-      },
-      {
-        id: 'preset-acne',
-        title: 'חבילת "טיפול נקודתי בפצעונים"',
-        subtitle: 'מוצרים בסגנון אקנה/פצעונים (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
-        excludeKids: true,
-        anchorPred: function(p){ return /(פצעונים|אקנה|\bacne\b|pimple)/i.test(p._name || '') || hasAnyCat(p,['acne','spot-treatment','patch']); },
-        themePred: function(p){ return isFace(p); },
-        fillPred: function(p){ return isFace(p) && !isKids(p); }
-      },
-      {
-        id: 'preset-makeup-base',
-        title: 'חבילת "בסיס מייק-אפ מושלם"',
-        subtitle: 'פריימר/מייקאפ/קונסילר/פודרה/מקבע (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
-        excludeKids: true,
-        anchorPred: function(p){
-          var t = typeKey(p);
-          return (t === 'primer' || t === 'foundation' || t === 'concealer' || t === 'powder' || t === 'setting-spray');
-        },
-        themePred: function(p){ return isMakeup(p); },
-        fillPred: function(p){ return isMakeup(p) && !isKids(p); }
-      },
-      {
-        id: 'preset-men',
-        title: 'חבילת "טיפוח פנים לגבר"',
-        subtitle: 'מוצרים לגבר + מילוי חכם לטווח $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
-        excludeKids: true,
-        anchorPred: function(p){ return isMen(p) || hasAnyCat(p,['men']); },
-        themePred: function(p){ return isMen(p) || isFace(p) || isBody(p); },
-        fillPred: function(p){ return !isKids(p); }
-      },
-      {
-        id: 'preset-baby',
-        title: 'חבילת "הגנה לתינוק"',
-        subtitle: 'מוצרים לתינוק/ילדים (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
-        onlyKids: false, // allow fill if needed, but keep at least one kids anchor
-        anchorPred: function(p){ return isKids(p); },
-        themePred: function(p){ return isKids(p); },
-        fillPred: function(p){ return !isKids(p); }
-      },
-      {
-        id: 'preset-body',
-        title: 'חבילת "פינוק וטיפוח הגוף"',
-        subtitle: 'מוצרי גוף/היגיינה (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
-        excludeKids: true,
-        themePred: function(p){ return (isBody(p) || isTeeth(p)) && !isKids(p); }
-      },
-      {
-        id: 'preset-removal',
-        title: 'חבילת "ניקוי והסרת איפור"',
-        subtitle: 'מוצרים לניקוי/הסרה (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
-        excludeKids: true,
-        anchorPred: function(p){
-          return /מיסלר|מסיר\s*איפור|מסיר|remover|micellar/i.test(p._name || '');
-        },
-        themePred: function(p){
-          // prefer cleansing/removal/face
-          return /מיסלר|מסיר|remover|micellar|cleanser|wash|סבון|תרחיץ/i.test(p._name || '') || isFace(p);
-        },
-        fillPred: function(p){ return !isKids(p); }
-      },
-      {
-        id: 'preset-sun',
-        title: 'חבילת "הגנה מהשמש"',
-        subtitle: 'מוצרי SPF/הגנה מהשמש (סה״כ $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0) + ')',
-        excludeKids: true,
-        anchorPred: function(p){ return hasAnyCat(p,['sun','spf','sunscreen']) || /\bspf\b|\bsunscreen\b/i.test(p._name || ''); },
-        themePred: function(p){ return hasAnyCat(p,['sun','spf','sunscreen']) || /\bspf\b|\bsunscreen\b/i.test(p._name || ''); },
-        fillPred: function(p){ return !isKids(p); }
-      }
-    ];
-
-    var bundles = [];
-    for(var pi=0; pi<presets.length; pi++){
-      var cfg = presets[pi];
-      var b = null;
-      if(cfg.anchorPred) b = solveAnchored(cfg);
-      else b = solveTheme(cfg);
-      if(b) bundles.push(b);
-    }
-
-    // ===== Extra bundles (maximize usage + keep types unique inside each bundle) =====
-    var idxFace = 1, idxMakeup = 1, idxHair = 1, idxBody = 1, idxKids = 1, idxMen = 1, idxAuto = 1, idxSun = 1;
-    var guard = 0;
-    while(guard++ < 9999 && bundles.length < (MAX_EXTRA_BUNDLES + 50)){
-      var made = false;
-
-      var bFace = solveTheme({
-        id: 'bundle-face-' + (idxFace++),
-        title: 'עוד חבילת טיפוח פנים',
-        subtitle: 'נבנתה אוטומטית (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
-        excludeKids: true,
-        themePred: function(p){ return isFace(p) && !isKids(p); }
-      });
-      if(bFace){ bundles.push(bFace); made = true; }
-
-      var bMake = solveTheme({
-        id: 'bundle-makeup-' + (idxMakeup++),
-        title: 'עוד חבילת איפור',
-        subtitle: 'נבנתה אוטומטית (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
-        excludeKids: true,
-        themePred: function(p){ return isMakeup(p) && !isKids(p); }
-      });
-      if(bMake){ bundles.push(bMake); made = true; }
-
-      var bHair = solveTheme({
-        id: 'bundle-hair-' + (idxHair++),
-        title: 'עוד חבילת שיער',
-        subtitle: 'נבנתה אוטומטית (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
-        excludeKids: true,
-        themePred: function(p){ return isHair(p) && !isKids(p); }
-      });
-      if(bHair){ bundles.push(bHair); made = true; }
-
-      var bBody = solveTheme({
-        id: 'bundle-body-' + (idxBody++),
-        title: 'עוד חבילת גוף והיגיינה',
-        subtitle: 'נבנתה אוטומטית (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
-        excludeKids: true,
-        themePred: function(p){ return (isBody(p) || isTeeth(p)) && !isKids(p); }
-      });
-      if(bBody){ bundles.push(bBody); made = true; }
-
-      var bKids = solveTheme({
-        id: 'bundle-kids-' + (idxKids++),
-        title: 'עוד חבילת ילדים/תינוקות',
-        subtitle: 'נבנתה אוטומטית (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
-        onlyKids: true,
-        themePred: function(p){ return isKids(p); }
-      });
-      if(bKids){ bundles.push(bKids); made = true; }
-
-      var bMen = solveAnchored({
-        id: 'bundle-men-' + (idxMen++),
-        title: 'עוד חבילת לגבר',
-        subtitle: 'נבנתה אוטומטית (כוללת לפחות מוצר אחד לגבר) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
-        excludeKids: true,
-        anchorPred: function(p){ return isMen(p) || hasAnyCat(p,['men']); },
-        themePred: function(p){ return isMen(p) || isFace(p) || isBody(p); },
-        fillPred: function(p){ return !isKids(p); }
-      });
-      if(bMen){ bundles.push(bMen); made = true; }
-
-      var bSun = solveAnchored({
-        id: 'bundle-sun-' + (idxSun++),
-        title: 'עוד חבילת הגנה מהשמש',
-        subtitle: 'נבנתה אוטומטית (כוללת לפחות מוצר SPF אחד) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
-        excludeKids: true,
-        anchorPred: function(p){ return hasAnyCat(p,['sun','spf','sunscreen']) || /\bspf\b|\bsunscreen\b/i.test(p._name || ''); },
-        themePred: function(p){ return hasAnyCat(p,['sun','spf','sunscreen']) || /\bspf\b|\bsunscreen\b/i.test(p._name || ''); },
-        fillPred: function(p){ return !isKids(p); }
-      });
-      if(bSun){ bundles.push(bSun); made = true; }
-
-      // General auto bundle from remaining non-kids products
-      var bAuto = solveTheme({
-        id: 'bundle-auto-' + (idxAuto++),
-        title: 'עוד חבילה',
-        subtitle: 'נבנתה אוטומטית מהמוצרים שנותרו (ללא כפילויות סוג) — יעד $' + BUNDLE_MIN.toFixed(0) + '–$' + BUNDLE_MAX.toFixed(0),
-        excludeKids: true,
-        themePred: function(p){ return !isKids(p); }
-      });
-      if(bAuto){ bundles.push(bAuto); made = true; }
-
-      if(!made) break;
-    }
-
-    return { bundles: bundles, unused: pool.slice() };
+    var t = total();
+    if(t >= BUNDLE_MIN - 1e-9 && t <= BUNDLE_MAX + 1e-9) return items;
+    return null;
   }
 
+  function solveSlots(slotPreds, themePred, preferCampaign){
+    // Build combinations of required slots from the cheapest candidates.
+    var candLists = slotPreds.map(function(fn){
+      return bestCandidates(pool.filter(themePred).filter(fn), 10, preferCampaign);
+    });
+    if(candLists.some(function(l){ return !l.length; })) return null;
+
+    // brute force with pruning
+    var best = null;
+    function consider(items){
+      // distinct
+      var ids = {};
+      for(var i=0;i<items.length;i++){
+        var id = pid(items[i]);
+        if(ids[id]) return;
+        ids[id] = true;
+      }
+      var baseSum = sumUSD(items);
+      if(baseSum > BUNDLE_MAX + 1e-9) return;
+
+      // Fill up to range using themed fillers first
+      var filled = fillToRange(items, themePred);
+      if(!filled) return;
+
+      var total = sumUSD(filled);
+      if(total < BUNDLE_MIN - 1e-9 || total > BUNDLE_MAX + 1e-9) return;
+
+      var campCount = filled.reduce(function(acc,p){ return acc + (isCamp(p)?1:0); }, 0);
+      var score = {
+        total: total,
+        camp: campCount,
+        items: filled.length
+      };
+
+      if(!best) { best = {score: score, items: filled}; return; }
+      // Prefer: (1) lower total (cheapest) (2) more campaign (3) fewer items
+      if(score.total < best.score.total - 1e-9) { best = {score: score, items: filled}; return; }
+      if(Math.abs(score.total - best.score.total) < 1e-9){
+        if(score.camp > best.score.camp) { best = {score: score, items: filled}; return; }
+        if(score.camp === best.score.camp && score.items < best.score.items) { best = {score: score, items: filled}; return; }
+      }
+    }
+
+    // iterate combos
+    var A = candLists[0], B = candLists[1], C = candLists[2], D = candLists[3];
+    if(candLists.length === 3){
+      for(var i=0;i<A.length;i++){
+        var ai = A[i]; var s1 = ai._priceUSD||0;
+        if(s1 > BUNDLE_MAX) break;
+        for(var j=0;j<B.length;j++){
+          var bj = B[j]; var s2 = s1 + (bj._priceUSD||0);
+          if(s2 > BUNDLE_MAX) break;
+          for(var k=0;k<C.length;k++){
+            var ck = C[k];
+            consider([ai,bj,ck]);
+          }
+        }
+      }
+    }else if(candLists.length === 4){
+      for(var i2=0;i2<A.length;i2++){
+        var ai2 = A[i2]; var t1 = ai2._priceUSD||0;
+        if(t1 > BUNDLE_MAX) break;
+        for(var j2=0;j2<B.length;j2++){
+          var bj2 = B[j2]; var t2 = t1 + (bj2._priceUSD||0);
+          if(t2 > BUNDLE_MAX) break;
+          for(var k2=0;k2<C.length;k2++){
+            var ck2 = C[k2]; var t3 = t2 + (ck2._priceUSD||0);
+            if(t3 > BUNDLE_MAX) break;
+            for(var l2=0;l2<D.length;l2++){
+              consider([ai2,bj2,ck2,D[l2]]);
+            }
+          }
+        }
+      }
+    }
+
+    return best ? best.items : null;
+  }
+
+  // Theme predicates
+  function isBabyBundle(p){ return isKids(p) || hasCat(p,'baby') || /baby|kids/i.test(p._name||'') || /ילדים|תינוק|לתינוק|בייבי|לילדים/.test(p._name||''); }
+  function isMenBundle(p){ return isMen(p) || hasCat(p,'mens-care') || /men|mens/i.test(p._name||'') || /גברים|לגבר|לגברים/.test(p._name||''); }
+  function isHairBundle(p){ return isHair(p) || isShampoo(p) || isConditioner(p) || isHairMask(p); }
+  function isMakeupBundle(p){ return isMakeup(p) || hasCat(p,'makeup'); }
+
+  // Slot predicates
+  function slotShampoo(p){ return isShampoo(p) || /שמפו/.test(p._name||''); }
+  function slotConditioner(p){ return isConditioner(p) || /מרכך/.test(p._name||''); }
+  function slotHairMask(p){ return isHairMask(p) || (/מסכה|mask|masque/i.test(p._name||'') && isHairBundle(p)); }
+
+  function slotLipstick(p){ return hasAnyCat(p,['lipstick','lips','gloss']) || /lipstick|gloss|lip\b/i.test(p._name||'') || /שפתון|ליפסטיק|גלוס/.test(p._name||''); }
+  function slotMascara(p){ return hasAnyCat(p,['mascara','eyes']) || /mascara|lash|eyeliner/i.test(p._name||'') || /מסקרה|ריסים|אייליינר/.test(p._name||''); }
+  function slotPrimerShimmerBlush(p){
+    return hasAnyCat(p,['primer','blush','shimmer','highlighter','bronzer']) ||
+           /primer|blush|shimmer|highlighter|bronzer/i.test(p._name||'') ||
+           /פריימר|סומק|שימר|היילייטר|ברונזר/.test(p._name||'');
+  }
+  function slotBaseMakeup(p){
+    return hasAnyCat(p,['foundation','concealer','powder','eyeshadow','palette']) ||
+           /foundation|concealer|powder|eyeshadow|palette/i.test(p._name||'') ||
+           /מייקאפ|פאודר|קונסילר|צלליות|פלטה/.test(p._name||'') ||
+           isMakeup(p);
+  }
+
+  function slotAnyBaby(p){ return isBabyBundle(p); }
+  function slotAnyMen(p){ return isMenBundle(p); }
+
+  var bundles = [];
+
+  // 1) Hair bundle: Shampoo + Conditioner + Hair mask
+  var hairItems = solveSlots([slotShampoo, slotConditioner, slotHairMask], isHairBundle, true) ||
+                  solveSlots([slotShampoo, slotConditioner, slotHairMask], isHairBundle, false);
+  if(hairItems){
+    bundles.push(toBundle('bundle-hair', 'חבילת שיער', 'שמפו + מרכך + מסכת שיער (משלוח חינם מעל $49)', hairItems));
+    removeUsed(hairItems);
+  }
+
+  // 2) Baby bundle: 3 baby/kids items
+  var babyItems = solveSlots([slotAnyBaby, slotAnyBaby, slotAnyBaby], isBabyBundle, true) ||
+                  solveSlots([slotAnyBaby, slotAnyBaby, slotAnyBaby], isBabyBundle, false);
+  if(babyItems){
+    bundles.push(toBundle('bundle-baby', 'חבילת תינוקות/ילדים', '3 מוצרים לתינוקות/ילדים (משלוח חינם מעל $49)', babyItems));
+    removeUsed(babyItems);
+  }
+
+  // 3) Men bundle: 3 men items
+  var menItems = solveSlots([slotAnyMen, slotAnyMen, slotAnyMen], isMenBundle, true) ||
+                 solveSlots([slotAnyMen, slotAnyMen, slotAnyMen], isMenBundle, false);
+  if(menItems){
+    bundles.push(toBundle('bundle-men', 'חבילת גברים', '3 מוצרים לגבר (משלוח חינם מעל $49)', menItems));
+    removeUsed(menItems);
+  }
+
+  // 4) Makeup bundle: base + primer/shimmer/blush + lipstick + mascara (and fill to price range)
+  var makeupItems = solveSlots([slotBaseMakeup, slotPrimerShimmerBlush, slotLipstick, slotMascara], isMakeupBundle, true) ||
+                    solveSlots([slotBaseMakeup, slotPrimerShimmerBlush, slotLipstick, slotMascara], isMakeupBundle, false);
+  if(makeupItems){
+    bundles.push(toBundle('bundle-makeup', 'חבילת איפור', 'מוצרי איפור (משלוח חינם מעל $49)', makeupItems));
+    removeUsed(makeupItems);
+  }
+
+  // Return only these bundles; leave remaining products for the custom builder pool.
+  return { bundles: bundles, unused: pool.slice() };
+}
 
   // ===== Rendering =====
   function render(){
@@ -3406,92 +3271,11 @@ card.addEventListener('click', choose);
   }
 
   // ===== Data loading =====
-  // Resolve URLs correctly when Weglot serves pages under /en/... (or when hosted under a subpath).
-  function resolveFromBase(rel){
-    try{
-      if(!rel) return rel;
-      if(typeof window.__kbwgResolveFromSiteBase === 'function') return window.__kbwgResolveFromSiteBase(rel);
-
-      var p = String(rel).replace(/^\.\//, '');
-      if(/^https?:\/\//i.test(p)) return p;
-
-      // Guess base from current script URL
-      var src = '';
-      try{ src = (document.currentScript && document.currentScript.src) ? document.currentScript.src : ''; }catch(e){ src = ''; }
-      if(!src){
-        var scripts = document.getElementsByTagName('script');
-        for(var i=scripts.length-1;i>=0;i--){
-          var ssrc = scripts[i] && scripts[i].src ? String(scripts[i].src) : '';
-          if(ssrc.indexOf('bundles') !== -1){ src = ssrc; break; }
-        }
-      }
-      if(!src) return p;
-
-      var u = new URL(src, location.href);
-      var pathname = u.pathname || '/';
-      var idx = pathname.indexOf('/assets/js/');
-      var base = idx >= 0 ? pathname.slice(0, idx) : pathname.replace(/\/[^\/]+$/, '');
-      base = base.replace(/\/+$/, '');
-
-      var parts = base.split('/').filter(Boolean);
-      var langs = { en:1, he:1, iw:1, ar:1, fr:1, es:1, de:1, ru:1 };
-      if(parts.length && langs[parts[parts.length-1]]) parts.pop();
-
-      var root = '/' + parts.join('/');
-      if(root === '/') return '/' + p.replace(/^\//,'');
-      return root + '/' + p.replace(/^\//,'');
-    }catch(e){
-      return rel;
-    }
-  }
-
-  function parseJsonSafely(text, url){
-    var raw = String(text || '');
-    if(raw && raw.charCodeAt(0) === 0xFEFF) raw = raw.slice(1);
-
-    var head = raw.slice(0, 120).trim();
-    if(head && head.charAt(0) === '<'){
-      var e = new Error('Response is HTML, not JSON');
-      e.url = url;
-      e.head = head.slice(0, 120);
-      throw e;
-    }
-
-    try{
-      return JSON.parse(raw);
-    }catch(e){
-      // Safe auto-fix: remove trailing commas
-      var fixed = raw.replace(/,(\s*[}\]])/g, '$1');
-      if(fixed !== raw){
-        try{
-          console.warn('[KBWG] JSON parse failed; retrying after removing trailing commas:', url);
-          return JSON.parse(fixed);
-        }catch(_e){}
-      }
-
-      try{
-        console.error('[KBWG] JSON parse error for', url, e && e.message);
-        var mm = /position\s+(\d+)/i.exec(String(e && e.message || ''));
-        if(mm){
-          var pos = parseInt(mm[1],10);
-          var from = Math.max(0, pos-140);
-          var to = Math.min(raw.length, pos+140);
-          console.error('[KBWG] Context around error:', raw.slice(from, to));
-        }else{
-          console.error('[KBWG] First 300 chars:', raw.slice(0, 300));
-        }
-      }catch(_e2){}
-      throw e;
-    }
-  }
-
   async function fetchJson(path){
-    var baseUrl = resolveFromBase(path);
-    var url = baseUrl + (baseUrl.indexOf('?')>-1 ? '&' : '?') + 'v=' + Date.now();
+    var url = path + (path.indexOf('?')>-1 ? '&' : '?') + 'v=' + Date.now();
     var res = await fetch(url, { cache: 'no-store' });
-    if(!res.ok) throw new Error('Failed to load ' + baseUrl + ' (' + res.status + ')');
-    var txt = await res.text();
-    return parseJsonSafely(txt, baseUrl);
+    if(!res.ok) throw new Error('Failed to load ' + path + ' (' + res.status + ')');
+    return await res.json();
   }
 
   function computeCategories(all){
@@ -3511,14 +3295,7 @@ card.addEventListener('click', choose);
     try { brandsRaw = await fetchJson(BRANDS_PATH); } catch(e) { brandsRaw = []; }
     BRAND_INDEX = buildBrandIndex(brandsRaw);
 
-    var productsRaw = [];
-    try{
-      productsRaw = await fetchJson(PRODUCTS_PATH);
-    }catch(e){
-      console.warn('[KBWG] Could not load products.json', e);
-      grid.innerHTML = '<div class="emptyState"><h3>שגיאה בטעינת מוצרים</h3><p>הקובץ <code>data/products.json</code> לא נטען או לא JSON תקין. בדקו את ה-Console לפרטים (URL + קטע מהשורה הבעייתית).</p></div>';
-      return;
-    }
+    var productsRaw = await fetchJson(PRODUCTS_PATH);
 
     var eligible = [];
     for(var i=0;i<(productsRaw||[]).length;i++){
@@ -3551,7 +3328,7 @@ card.addEventListener('click', choose);
 
     // Put custom builder first
     STATE.custom.items = STATE.custom.items || [];
-    STATE.bundles = [STATE.custom].concat((built.bundles || []));
+    STATE.bundles = [STATE.custom].concat((built.bundles || []).slice(0, 4));
     STATE.viewLimit = kbPerPage('bundles');
     STATE.pool = built.unused;
 

@@ -9,7 +9,7 @@
   const DATA_URL = (function(){
     // Works on GitHub Pages + local
     const base = document.currentScript?.dataset?.base || '';
-    return base + 'data/hidden-gems.json?v=2026-02-02-v19';
+    return (window.kbwgAddV ? window.kbwgAddV(base + 'data/hidden-gems.json') : (base + 'data/hidden-gems.json?v=' + encodeURIComponent(String(window.KBWG_BUILD || '2026-02-11-v1'))));
   })();
 
   const STATE = {
@@ -255,7 +255,7 @@
 
   async function load(){
     try{
-      const res = await fetch(DATA_URL, { cache: 'force-cache' });
+      const res = await window.kbwgFetch(DATA_URL, { cache: 'no-store' });
       const json = await res.json();
       STATE.items = dedupe(Array.isArray(json) ? json : (json.places || []));
     }catch(e){

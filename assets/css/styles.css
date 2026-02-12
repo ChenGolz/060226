@@ -1,6 +1,33 @@
+/* Global font: Gveret Levin (גברת לוין)
+   Put the webfont files in: assets/fonts/
+   Update the filenames/paths here if yours are different.
+*/
+/*
+  Font: Gveret Levin (גברת לוין)
+  By: AlefAlefAlef — License: SIL Open Font License 1.1
+  Keep the OFL license text in your project if you serve the font files.
+*/
+/*
+  Font: Gveret Levin (גברת לוין)
+  By: AlefAlefAlef — License: SIL Open Font License 1.1
+  Put the webfont file here:
+  /assets/fonts/Gveret Levin AlefAlefAlef Regular.woff2
+*/
+@font-face{
+  font-family: "Gveret Levin";
+  src: url("/assets/fonts/Gveret%20Levin%20AlefAlefAlef%20Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 /* KBWG – full standalone styling (RTL-first) */
 :root{
-  --bg: #f6f7f4;
+  --he-font: "Gveret Levin", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 550;
+  --fw-bold: 600;
+--bg: #f6f7f4;
   --paper: rgba(255,255,255,.85);
   --paper2: rgba(255,255,255,.70);
   --stroke: rgba(20,40,80,.10);
@@ -36,8 +63,9 @@ img{ max-width:100%; height:auto; display:block; }
 .wrap{ width:min(1120px, 100% - 32px); margin-inline:auto; }
 
 .muted{ color: var(--muted); }
-.mini{ font-size: 13px; color: var(--muted2); font-weight: 650; }
-h1,h2,h3{ line-height: 1.15; letter-spacing: .2px; }
+.mini{ font-size: 13px; color: var(--muted2); font-weight: var(--fw-medium); }
+h1,h2,h3{ line-height: 1.15; letter-spacing: .2px; }  font-weight: var(--fw-semibold);
+}
 h1{ font-size: clamp(30px, 4vw, 44px); margin:0 0 10px; }
 h2{ font-size: clamp(20px, 2.6vw, 28px); margin:0 0 10px; }
 h3{ font-size: 18px; margin:0 0 8px; }
@@ -90,7 +118,7 @@ h3{ font-size: 18px; margin:0 0 8px; }
   display:flex; align-items:center; gap:10px; min-width: 220px;
 }
 .logoImg{ width:34px; height:34px; border-radius:10px; border:1px solid var(--stroke); background:rgba(255,255,255,.8); }
-.logoText{ font-weight: 900; letter-spacing:.3px; }
+.logoText{ font-weight: var(--fw-bold); letter-spacing:.3px; }
 
 .nav{
   display:flex;
@@ -106,7 +134,7 @@ h3{ font-size: 18px; margin:0 0 8px; }
   font-size: 14px;
   padding: 6px 10px;
   border-radius: 999px;
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   color: rgba(17,24,39,.78);
 }
 .nav a:hover{
@@ -127,7 +155,7 @@ h3{ font-size: 18px; margin:0 0 8px; }
   border-radius: 999px;
   border: 1px solid var(--stroke2);
   background: rgba(255,255,255,.92);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   cursor:pointer;
   text-decoration:none;
 }
@@ -303,19 +331,19 @@ h3{ font-size: 18px; margin:0 0 8px; }
   border: 1px solid var(--stroke2);
   background: rgba(255,255,255,.92);
   font: inherit;
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   direction:ltr;
 }
 
-.heroCopy p{ margin:0 0 12px; font-weight: 650; }
+.heroCopy p{ margin:0 0 12px; font-weight: var(--fw-medium); }
 
 /* Extra promise line inside the hero/header (replaces the old global notice banner) */
 .heroCopy .heroVeganLine{
   margin-top: 10px;
-  font-weight: 650;
+  font-weight: var(--fw-medium);
   opacity: .96;
 }
-.heroCopy .heroVeganLine b{ font-weight: 800; }
+.heroCopy .heroVeganLine b{ font-weight: var(--fw-semibold); }
 .badgeRow{ display:flex; gap:8px; flex-wrap:wrap; margin-top: 10px; }
 .badge{
   display:inline-flex; align-items:center; justify-content:center;
@@ -323,7 +351,7 @@ h3{ font-size: 18px; margin:0 0 8px; }
   border-radius: 999px;
   background: rgba(255,255,255,.70);
   border: 1px solid var(--stroke);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   font-size: 13px;
   color: rgba(17,24,39,.78);
 }
@@ -356,7 +384,7 @@ h3{ font-size: 18px; margin:0 0 8px; }
   border: 1px solid var(--stroke);
   border-radius: 999px;
   padding: 8px 12px;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   text-align:center;
 }
 
@@ -377,7 +405,7 @@ h3{ font-size: 18px; margin:0 0 8px; }
   border-radius: 16px;
   background: rgba(255,255,255,.75);
   border: 1px solid var(--stroke);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   box-shadow: 0 10px 22px rgba(20,35,60,.06);
   text-align:center;
 }
@@ -418,13 +446,13 @@ h3{ font-size: 18px; margin:0 0 8px; }
   border-radius: 16px;
   background: rgba(255,255,255,.85);
   border: 1px solid var(--stroke);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
 }
-.photoCard .cap small{ display:block; font-weight:800; color: var(--muted); margin-top: 2px; }
+.photoCard .cap small{ display:block; font-weight:var(--fw-semibold); color: var(--muted); margin-top: 2px; }
 
 /* Forms */
 .field{ display:flex; flex-direction:column; gap:6px; flex:1; }
-.label{ font-weight:900; color: rgba(17,24,39,.86); }
+.label{ font-weight:var(--fw-bold); color: rgba(17,24,39,.86); }
 input[type="search"], input[type="text"], select{
   width:100%;
   padding: 11px 12px;
@@ -432,7 +460,7 @@ input[type="search"], input[type="text"], select{
   border: 1px solid var(--stroke2);
   background: rgba(255,255,255,.92);
   font: inherit;
-  font-weight: 700;
+  font-weight: var(--fw-semibold);
 }
 input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible{
   outline: 2px solid rgba(42,91,154,.55);
@@ -447,7 +475,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(240,246,255,.86));
   padding: 8px 12px;
   border-radius: 999px;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   line-height: 1;
   box-shadow: 0 6px 16px rgba(15,23,42,.06);
   transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease, background .12s ease;
@@ -495,21 +523,21 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   border-radius: 999px;
   border: 1px solid var(--stroke);
   background: rgba(255,255,255,.86);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   font-size: 12px;
 }
 .filtersRow{
   display:flex; flex-wrap:wrap; gap:12px; align-items:center;
   margin: 8px 0 12px;
 }
-.check{ display:flex; gap:8px; align-items:center; font-weight: 850; color: rgba(17,24,39,.78); }
+.check{ display:flex; gap:8px; align-items:center; font-weight: var(--fw-bold); color: rgba(17,24,39,.78); }
 .countPill{
   margin-inline-start:auto;
   padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid var(--stroke);
   background: rgba(255,255,255,.78);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
 }
 
 .productCard{
@@ -520,15 +548,15 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   box-shadow: var(--shadow);
 }
 .pTop{ display:flex; justify-content:space-between; gap:12px; align-items:flex-start; }
-.pBrand{ font-weight: 900; color: rgba(17,24,39,.88); }
-.pName{ font-weight: 800; color: rgba(17,24,39,.78); margin-top: 2px; }
+.pBrand{ font-weight: var(--fw-bold); color: rgba(17,24,39,.88); }
+.pName{ font-weight: var(--fw-semibold); color: rgba(17,24,39,.78); margin-top: 2px; }
 .tags{ display:flex; gap:8px; flex-wrap:wrap; margin-top: 10px; }
 .tag{
   padding: 6px 10px;
   border-radius: 999px;
   border: 1px solid var(--stroke);
   background: rgba(255,255,255,.78);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   font-size: 12px;
 }
 .offerList{ display:flex; flex-direction:column; gap:10px; margin-top: 12px; }
@@ -539,8 +567,8 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   border: 1px solid var(--stroke);
   background: rgba(255,255,255,.78);
 }
-.offerMeta{ font-size: 12px; font-weight: 800; color: var(--muted); }
-.offerStore{ font-size: 14px; font-weight: 900; color: rgba(15,23,42,.95); }
+.offerMeta{ font-size: 12px; font-weight: var(--fw-semibold); color: var(--muted); }
+.offerStore{ font-size: 14px; font-weight: var(--fw-bold); color: rgba(15,23,42,.95); }
 
 
 /* ------------------------------------------------------------------
@@ -566,7 +594,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   border: 2px solid rgba(15,23,42,.10);
   background: rgba(255,255,255,.96);
   font: inherit;
-  font-weight: 750;
+  font-weight: var(--fw-semibold);
 }
 .search-wrapper input:focus{ outline:none; border-color: rgba(42,91,154,.55); box-shadow: 0 0 0 4px rgba(42,91,154,.12); }
 .search-btn{
@@ -588,7 +616,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   border-radius: 12px;
   background: rgba(255,255,255,.96);
   font: inherit;
-  font-weight: 750;
+  font-weight: var(--fw-semibold);
 }
 
 /* Toggle pills row (this is the issue in the screenshot) */
@@ -609,7 +637,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   border-radius: 999px;
   border: 1px solid rgba(44,62,80,.18);
   background: rgba(255,255,255,.92);
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   white-space: nowrap;
   line-height: 1;
   unicode-bidi: isolate;
@@ -632,7 +660,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 }
 
 .price-range-row .filter-label{
-  font-weight:800;
+  font-weight:var(--fw-semibold);
   font-size:14px;
 }
 
@@ -678,7 +706,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 }
 
 .freeShipLabel{
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   font-size: 14px;
 }
 
@@ -689,7 +717,7 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   border: 1px solid rgba(15,23,42,.18);
   background: rgba(255,255,255,.96);
   font: inherit;
-  font-weight: 750;
+  font-weight: var(--fw-semibold);
   text-align: center;
 }
 
@@ -713,7 +741,7 @@ html[dir="rtl"] .check-pill{ flex-direction: row; }
   border-radius: 999px;
   border: 1px solid rgba(20,40,80,.12);
   background: rgba(245,248,255,.92);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   font-size: 13px;
 }
 
@@ -722,7 +750,7 @@ html[dir="rtl"] .check-pill{ flex-direction: row; }
   background: transparent;
   color: rgba(42,91,154,.95);
   font: inherit;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   cursor: pointer;
   padding: 6px 8px;
   border-radius: 10px;
@@ -740,7 +768,7 @@ html[dir="rtl"] .check-pill{ flex-direction: row; }
 
 /* Footer */
 .siteFooter{ padding: 18px 0 26px; margin-top: 14px; }
-.siteFooter .muted{ font-weight: 750; }
+.siteFooter .muted{ font-weight: var(--fw-semibold); }
 
 /* Decorative corners */
 .corner{
@@ -774,8 +802,8 @@ html[dir="rtl"] .check-pill{ flex-direction: row; }
   background: linear-gradient(180deg, rgba(170,200,235,.22), rgba(255,255,255,.0));
   border-bottom: 1px solid rgba(20,40,80,.08);
 }
-.monthTitle{ font-size: 18px; font-weight: 900; }
-.monthMeta{ font-size: 13px; font-weight: 800; color: rgba(30,45,70,.72); }
+.monthTitle{ font-size: 18px; font-weight: var(--fw-bold); }
+.monthMeta{ font-size: 13px; font-weight: var(--fw-semibold); color: rgba(30,45,70,.72); }
 .eventList{ padding: 12px 12px 14px; display:flex; flex-direction:column; gap:10px; }
 .eventItem{
   display:flex; gap:12px; align-items:flex-start;
@@ -789,7 +817,7 @@ html[dir="rtl"] .check-pill{ flex-direction: row; }
   display:inline-flex; align-items:center; justify-content:center;
   padding: 6px 10px;
   border-radius: 999px;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   font-size: 13px;
   border: 1px solid rgba(20,40,80,.12);
   background: rgba(245,248,255,.9);
@@ -799,7 +827,7 @@ html[dir="rtl"] .check-pill{ flex-direction: row; }
   display:inline-flex; align-items:center; justify-content:center;
   padding: 5px 10px;
   border-radius: 999px;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   font-size: 12px;
   white-space: nowrap;
   border: 1px solid rgba(20,40,80,.10);
@@ -808,9 +836,9 @@ html[dir="rtl"] .check-pill{ flex-direction: row; }
 .tag-mid  { background: rgba(40,170,140,.14); }
 .tag-note { background: rgba(255,170,60,.16); }
 .eventBody{ flex:1; min-width:0; }
-.eventName{ font-weight: 900; font-size: 15px; margin-bottom: 3px; }
-.eventDesc{ color: rgba(30,45,70,.78); font-weight: 700; font-size: 13px; line-height: 1.45; }
-.noEvents{ padding: 14px; color: rgba(30,45,70,.65); font-weight: 800; font-size: 13px; }
+.eventName{ font-weight: var(--fw-bold); font-size: 15px; margin-bottom: 3px; }
+.eventDesc{ color: rgba(30,45,70,.78); font-weight: var(--fw-semibold); font-size: 13px; line-height: 1.45; }
+.noEvents{ padding: 14px; color: rgba(30,45,70,.65); font-weight: var(--fw-semibold); font-size: 13px; }
 
 
 /* --- v3 polish & fixes --- */
@@ -838,7 +866,7 @@ img{max-width:100%;height:auto}
 /* Footer quote line */
 .footerQuotes{
   margin-top: 10px;
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   font-size: 12px;
   color: rgba(30,45,70,.60);
   display:flex;
@@ -860,7 +888,7 @@ img{max-width:100%;height:auto}
 
 /* Botanical additions */
 .steps{ margin:0; padding-inline-start: 20px; }
-.steps li{ margin: 10px 0; font-weight: 650; color: rgba(17,24,39,.78); }
+.steps li{ margin: 10px 0; font-weight: var(--fw-medium); color: rgba(17,24,39,.78); }
 
 
 /* --- Quote color pills (Botanical Calm + Blue) --- */
@@ -868,7 +896,7 @@ img{max-width:100%;height:auto}
   border-radius: 14px;
   padding: 8px 10px;
   border: 1px solid rgba(17,24,39,.10);
-  font-weight: 850;
+  font-weight: var(--fw-bold);
   font-size: 13px;
 }
 .quotePill.q1{ background: rgba(157,195,230,.18); }     /* sage */
@@ -884,7 +912,7 @@ img{max-width:100%;height:auto}
 /* --- Shopping Calendar: shop chips --- */
 .eventBuy{ display:flex; gap:8px; flex-wrap: wrap; margin-top:10px; }
 .buyChip{ display:inline-flex; align-items:center; padding:6px 10px; border-radius: 999px;
-  border: 1px solid rgba(17,24,39,.12); background: rgba(255,255,255,.7); font-weight: 750; font-size: 12px; }
+  border: 1px solid rgba(17,24,39,.12); background: rgba(255,255,255,.7); font-weight: var(--fw-semibold); font-size: 12px; }
 
 
 
@@ -961,12 +989,12 @@ body::after{
   justify-content: space-between;
   align-items:center;
   gap:10px;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   color: rgba(17,24,39,.78);
 }
 .stripTag{
   font-size: 12px;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   border: 1px solid rgba(17,24,39,.12);
   background: rgba(255,255,255,.70);
   padding: 5px 9px;
@@ -1012,7 +1040,7 @@ body::after{
 .quoteTag{
   border-radius: 999px;
   padding: 8px 12px;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   border: 1px solid rgba(17,24,39,.12);
   background: rgba(255,255,255,.75);
   backdrop-filter: blur(6px);
@@ -1051,13 +1079,13 @@ body::after{
   background: rgba(255,255,255,.80);
   border: 1px solid rgba(17,24,39,.10);
   backdrop-filter: blur(6px);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   color: rgba(17,24,39,.82);
 }
 .communityCard .cap small{
   display:block;
   margin-top: 2px;
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   color: rgba(17,24,39,.60);
 }
 
@@ -1072,7 +1100,7 @@ body::after{
   border: 1px solid rgba(20,40,80,.14);
   background: rgba(255,255,255,.95);
   box-shadow: 0 12px 24px rgba(20,35,60,.10);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   transform: translateY(-140%);
 }
 .skipLink:focus{
@@ -1210,7 +1238,7 @@ body{font-family: var(--he-font);}
 .center-text h1{margin:0 0 6px;font-size:1.55rem;line-height:1.06;}
 .center-text p{margin:0 auto 12px;max-width:720px;font-size:1.02rem;line-height:1.25;opacity:.92;}
 .badgeRow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
-.trust-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.14);padding:6px 14px;border-radius:999px;font-weight:700;font-size:.9rem;}
+.trust-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.14);padding:6px 14px;border-radius:999px;font-weight:var(--fw-semibold);font-size:.9rem;}
 .trust-badge .icon{filter:saturate(1.1);}
 
 .panel.filter-panel{padding-top:0;}
@@ -1223,7 +1251,7 @@ body{font-family: var(--he-font);}
 .miniCard{display:block;text-decoration:none;background:#fff;border:1px solid rgba(31,41,55,.08);border-radius:16px;padding:16px;box-shadow:0 6px 14px rgba(0,0,0,.04);transition:.18s;}
 .miniCard:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.08);}
 .miniCardIcon{font-size:26px;margin-bottom:10px}
-.miniCardTitle{font-weight:800;color:#0f172a;margin-bottom:4px}
+.miniCardTitle{font-weight:var(--fw-semibold);color:#0f172a;margin-bottom:4px}
 .miniCardText{color:#475569;font-size:.95rem}
 
 .infoCard{background:#fff;border:1px solid rgba(31,41,55,.08);border-radius:16px;padding:16px;box-shadow:0 6px 14px rgba(0,0,0,.04);}
@@ -1237,7 +1265,7 @@ body{font-family: var(--he-font);}
 
 .photoCard{margin:16px 0;display:grid;grid-template-columns: minmax(200px,360px) 1fr;gap:14px;align-items:center;background:rgba(255,255,255,.85);border:1px solid rgba(31,41,55,.08);border-radius:18px;padding:12px;}
 .photoCardImg{width:100%;max-height:260px;object-fit:contain;background:rgba(42,91,154,.08);border-radius:14px;padding:8px;}
-.photoCardCap{margin:0;color:#334155;font-weight:700;}
+.photoCardCap{margin:0;color:#334155;font-weight:var(--fw-semibold);}
 @media (max-width: 720px){
   .photoCard{grid-template-columns:1fr;}
   .center-text h1{font-size:1.35rem;}
@@ -1245,24 +1273,24 @@ body{font-family: var(--he-font);}
 }
 
 .searchBlock{max-width:720px;margin:0 auto 14px;}
-.fieldLabel{display:block;font-weight:800;margin-bottom:6px;color:#0f172a;}
+.fieldLabel{display:block;font-weight:var(--fw-semibold);margin-bottom:6px;color:#0f172a;}
 .searchBlock input{width:100%;padding:14px 16px;border-radius:999px;border:2px solid rgba(15,23,42,.10);font-size:1.05rem;}
 .searchBlock input:focus{outline:none;border-color:rgba(42,91,154,.55);box-shadow:0 0 0 4px rgba(42,91,154,.12);}
 .hintText{margin-top:8px;color:#475569;font-size:.95rem;}
 .suggestions{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;}
-.sugBtn{border:none;cursor:pointer;border-radius:999px;padding:8px 12px;background:rgba(42,91,154,.10);color:#0f172a;font-weight:800;}
+.sugBtn{border:none;cursor:pointer;border-radius:999px;padding:8px 12px;background:rgba(42,91,154,.10);color:#0f172a;font-weight:var(--fw-semibold);}
 .sugBtn:hover{background:rgba(42,91,154,.18);}
 .resultGrid{display:grid;gap:12px;margin-top:14px;}
 .resultCard{background:#fff;border:1px solid rgba(31,41,55,.08);border-radius:16px;padding:14px;box-shadow:0 6px 14px rgba(0,0,0,.04);}
 .resultCard h3{margin:0 0 6px;}
 .small{font-size:.9rem}
 .emailRow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
-.btnPrimary{display:inline-flex;align-items:center;justify-content:center;border:none;border-radius:12px;padding:10px 14px;background:var(--accent);color:#fff;text-decoration:none;font-weight:800;cursor:pointer;}
+.btnPrimary{display:inline-flex;align-items:center;justify-content:center;border:none;border-radius:12px;padding:10px 14px;background:var(--accent);color:#fff;text-decoration:none;font-weight:var(--fw-semibold);cursor:pointer;}
 .btnPrimary:hover{background:var(--accent-hover);}
 .btnSmall{padding:8px 12px;border-radius:10px;font-size:.95rem;}
 
 .footerQuotes{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:10px}
-.quotePill{background:rgba(42,91,154,.10);border:1px solid rgba(42,91,154,.15);border-radius:999px;padding:8px 14px;font-weight:800;color:#0f172a;}
+.quotePill{background:rgba(42,91,154,.10);border:1px solid rgba(42,91,154,.15);border-radius:999px;padding:8px 14px;font-weight:var(--fw-semibold);color:#0f172a;}
 
 
 
@@ -1360,7 +1388,7 @@ body{font-family: var(--he-font);}
   border-radius: 12px;
   background: rgba(255,255,255,.92);
   font: inherit;
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   min-width: 180px;
 }
 
@@ -1382,7 +1410,7 @@ body{font-family: var(--he-font);}
   border-radius: 999px;
   background: rgba(255,255,255,.92);
   border: 1px solid rgba(31,41,55,.16);
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   white-space: nowrap;
   line-height: 1;
   unicode-bidi: isolate;
@@ -1410,13 +1438,13 @@ html[dir="rtl"] .check-pill{ flex-direction: row; }
   border-radius: 999px;
   border: 1px solid rgba(31,41,55,.12);
   background: rgba(245,248,255,.9);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
 }
 .btn-link{
   border: none;
   background: none;
   color: rgba(42,91,154,.95);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   cursor: pointer;
   padding: 6px 8px;
   border-radius: 10px;
@@ -1466,12 +1494,13 @@ body{ overflow-x: hidden; }
   border-radius: 999px;
   padding: 8px 10px;
   font: inherit;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   cursor: pointer;
   box-shadow: 0 6px 14px rgba(0,0,0,.04);
 }
 
 .navDrawerHeader{ display:none; }
+.navDrawerSearch{ display:none; }
 
 @media (max-width: 900px){
   /* Ensure drawer is above overlay (header creates stacking context due to backdrop-filter) */
@@ -1546,7 +1575,7 @@ body{ overflow-x: hidden; }
     flex: 0 0 auto;
   }
   .navDrawerLogoText{
-    font-weight: 1000;
+    font-weight: var(--fw-bold);
     letter-spacing: -0.2px;
     color: #0f172a;
     white-space: nowrap;
@@ -1773,8 +1802,8 @@ body{ overflow-x: hidden; }
   align-items: flex-start;
 }
 .pTitleWrap{ min-width: 0; }
-.pBrand{ font-weight: 900; }
-.pName{ font-weight: 850; }
+.pBrand{ font-weight: var(--fw-bold); }
+.pName{ font-weight: var(--fw-bold); }
 .pMeta{
   display: flex;
   gap: 8px;
@@ -1789,7 +1818,7 @@ body{ overflow-x: hidden; }
   border-radius: 999px;
   border: 1px solid rgba(20,40,80,.12);
   background: rgba(255,255,255,.80);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   font-size: 12px;
   white-space: nowrap;
 }
@@ -1800,7 +1829,7 @@ body{ overflow-x: hidden; }
   border-radius: 16px;
   border: 1px dashed rgba(20,40,80,.18);
   background: rgba(255,255,255,.75);
-  font-weight: 850;
+  font-weight: var(--fw-bold);
   color: rgba(17,24,39,.70);
 }
 
@@ -1853,7 +1882,7 @@ body{ overflow-x: hidden; }
 }
 .productsResults .pName{
   font-size: 14px;
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   line-height: 1.35;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -1876,27 +1905,27 @@ body{ overflow-x: hidden; }
 .compareTableWrap{overflow:auto;margin-top:14px;border-radius:16px;border:1px solid rgba(20,40,80,.12);background:rgba(255,255,255,.85);}
 .compareTable{width:100%;border-collapse:separate;border-spacing:0;min-width:720px;}
 .compareTable th,.compareTable td{padding:12px 14px;text-align:right;vertical-align:top;}
-.compareTable thead th{position:sticky;top:0;background:linear-gradient(180deg,rgba(42,91,154,.14),rgba(42,91,154,.06));font-weight:900;color:#0f172a;border-bottom:1px solid rgba(20,40,80,.10);}
+.compareTable thead th{position:sticky;top:0;background:linear-gradient(180deg,rgba(42,91,154,.14),rgba(42,91,154,.06));font-weight:var(--fw-bold);color:#0f172a;border-bottom:1px solid rgba(20,40,80,.10);}
 .compareTable tbody tr:not(:last-child) td{border-bottom:1px solid rgba(20,40,80,.08);}
-.compareTable tbody td:first-child{font-weight:900;color:#0f172a;white-space:nowrap;}
+.compareTable tbody td:first-child{font-weight:var(--fw-bold);color:#0f172a;white-space:nowrap;}
 .compareTable td{color:#334155;}
-.comparePill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:6px 12px;border:1px solid rgba(20,40,80,.14);background:rgba(255,255,255,.85);font-weight:900;}
+.comparePill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:6px 12px;border:1px solid rgba(20,40,80,.14);background:rgba(255,255,255,.85);font-weight:var(--fw-bold);}
 
 /* Israeli brands directory (israeli-brands.html) */
 .brandSearch{max-width:720px;margin:14px auto 0;}
-.brandSearch input{width:100%;padding:14px 16px;border-radius:999px;border:2px solid rgba(15,23,42,.10);font:inherit;font-weight:800;background:rgba(255,255,255,.96);}
+.brandSearch input{width:100%;padding:14px 16px;border-radius:999px;border:2px solid rgba(15,23,42,.10);font:inherit;font-weight:var(--fw-semibold);background:rgba(255,255,255,.96);}
 .brandSearch input:focus{outline:none;border-color:rgba(42,91,154,.55);box-shadow:0 0 0 4px rgba(42,91,154,.12);}
 .brandGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:14px;}
 .brandCard{background:#fff;border:1px solid rgba(31,41,55,.08);border-radius:18px;padding:16px;box-shadow:0 6px 14px rgba(0,0,0,.04);transition:.18s;}
 .brandCard:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.10);}
 .brandTop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;}
-.brandName{font-weight:1000;font-size:1.05rem;color:#0f172a;}
-.brandCat{font-weight:900;color:rgba(42,91,154,.92);}
+.brandName{font-weight: var(--fw-bold);font-size:1.05rem;color:#0f172a;}
+.brandCat{font-weight:var(--fw-bold);color:rgba(42,91,154,.92);}
 .brandDesc{margin:10px 0 0;color:#334155;line-height:1.55;}
 .brandBadges{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
-.brandBadge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;border:1px solid rgba(20,40,80,.12);background:rgba(245,248,255,.75);font-weight:900;font-size:12px;color:#0f172a;}
+.brandBadge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;border:1px solid rgba(20,40,80,.12);background:rgba(245,248,255,.75);font-weight:var(--fw-bold);font-size:12px;color:#0f172a;}
 .brandLinks{margin-top:12px;display:flex;flex-wrap:wrap;gap:10px;}
-.brandLinks a{font-weight:900;}
+.brandLinks a{font-weight:var(--fw-bold);}
 
 /* מוצרים page – premium font + subtle wow, without touching header/hero */
 .page-products main{font-family:"Assistant",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;font-weight:400;}
@@ -1971,7 +2000,7 @@ body{ overflow-x: hidden; }
 .page-products .productCard .pName {
   font-size: 18px;
   line-height: 1.3;
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   color: rgba(15, 23, 42, 0.95);
 }
 
@@ -1988,7 +2017,7 @@ body{ overflow-x: hidden; }
   border-radius: 999px;
   border: 1px solid rgba(20, 40, 80, 0.10);
   background: #ffffff;
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   font-size: 11px;
 }
 
@@ -2049,7 +2078,7 @@ body{ overflow-x: hidden; }
   border-radius: 999px;
   padding: 10px 0;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: var(--fw-semibold);
   border-color: rgba(37, 99, 235, 0.25);
   background: #e5edff;
 }
@@ -2088,7 +2117,7 @@ body{ overflow-x: hidden; }
 }
 
 /* כרטיס הטקסט מעל הפילטרים בדף מוצרים – קטן יותר */
-.panel.filter-panel .contentCard{
+.page-products .panel.filter-panel .contentCard{
   padding: 10px 18px;    /* פחות רווח פנימי – ברירת מחדל הייתה 22px */
   margin-bottom: 18px;   /* פחות מרווח מתחת לכרטיס */
   max-width: 1000px;     /* אפשר להקטין/להגדיל לפי הטעם */
@@ -2097,13 +2126,13 @@ body{ overflow-x: hidden; }
 }
 
 /* כותרת קצת יותר קטנה */
-.panel.filter-panel .contentCard h2{
+.page-products .panel.filter-panel .contentCard h2{
   font-size: 0.8rem;     /* היה גדול יותר – אפשר גם 1.3rem אם תרצי עוד קטן */
   margin-bottom: 4px;
 }
 
 /* טקסט הפסקה קצת יותר קטן וצפוף */
-.panel.filter-panel .contentCard p{
+.page-products .panel.filter-panel .contentCard p{
   font-size: 0.95rem;
   margin: 0;
 }
@@ -2238,7 +2267,7 @@ body{ overflow-x: hidden; }
   align-items:flex-start;
 }
 .brandName{
-  font-weight:800;
+  font-weight:var(--fw-semibold);
   font-size:1.05rem;
   letter-spacing:.02em;
   color:#0f172a;
@@ -2287,7 +2316,7 @@ body{ overflow-x: hidden; }
   gap:0.5rem;
 }
 .brandLinks a{
-  font-weight:700;
+  font-weight:var(--fw-semibold);
   font-size:.8rem;
 }
 
@@ -2320,7 +2349,7 @@ body{ overflow-x: hidden; }
 }
 
 .brandSection__title {
-  font-weight: 700;
+  font-weight: var(--fw-semibold);
   font-size: 0.95rem;
   color: #0f172a;
 }
@@ -2404,7 +2433,7 @@ body{ overflow-x: hidden; }
 /* Big brand name on top, other info below */
 .page-recommended-brands .brandName{
   font-size: 1.55rem;
-  font-weight: 1000;
+  font-weight: var(--fw-bold);
   line-height: 1.15;
   margin: 0;
 }
@@ -2437,7 +2466,7 @@ body{ overflow-x: hidden; }
 .page-recommended-brands .brandLinks a,
 .page-recommended-brands .links a{
   border-radius: 12px;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
   text-decoration: none;
 }
 .page-recommended-brands .brandLinks a.btnPrimary,
@@ -2965,7 +2994,7 @@ body{ overflow-x: hidden; }
     border: 1px solid rgba(15,23,42,.10);
     background: rgba(255,255,255,.92);
     box-shadow: 0 8px 22px rgba(15,23,42,.06);
-    font-weight: 700;
+    font-weight: var(--fw-semibold);
     cursor: pointer;
   }
   .filter-panel .mobileFilterToggle .chev{
@@ -3044,8 +3073,8 @@ body{ overflow-x: hidden; }
   .brandLinks a.btn.small{ flex: 1 1 calc(50% - 8px); justify-content: center; }
 
   /* מוצרים page: the intro card heading was made too small in a previous patch */
-  .panel.filter-panel .contentCard h2{ font-size: 1.05rem; }
-  .panel.filter-panel .contentCard p{ font-size: .95rem; }
+  .page-products .page-products .panel.filter-panel .contentCard h2{ font-size: 1.05rem; }
+  .page-products .page-products .panel.filter-panel .contentCard p{ font-size: .95rem; }
 
   /* Table: remove forced min-width so it can fit without horizontal scrolling */
   .compareTable{ min-width: 0; table-layout: fixed; }
@@ -3313,7 +3342,7 @@ table{ width: 100%; border-collapse: collapse; }
     white-space: nowrap;
   }
   .filter-panel .mobileFilterToggle .mfMeta{
-    font-weight: 650;
+    font-weight: var(--fw-medium);
     opacity: .75;
   }
   .filter-panel .mobileFilterToggle .chev{
@@ -3386,7 +3415,7 @@ table{ width: 100%; border-collapse: collapse; }
 
 
 /* מחיר tier: renders $$$$$ with inactive $ in gray */
-.price-tier{display:inline-flex;gap:.08em;font-weight:700;letter-spacing:.02em;font-family:inherit;user-select:none;}
+.price-tier{display:inline-flex;gap:.08em;font-weight:var(--fw-semibold);letter-spacing:.02em;font-family:inherit;user-select:none;}
 .price-tier .dollar{opacity:.9;}
 .price-tier .dollar.inactive{opacity:.25;filter:grayscale(1);}
 .price-tier--sm{font-size:.92em;}
@@ -3554,7 +3583,7 @@ html, body{ overflow-x: hidden; }
   --tier4:#7c3aed;
   --tier5:#f59e0b;
 }
-.price-tier .dollar{font-weight:1000;}
+.price-tier .dollar{font-weight: var(--fw-bold);}
 .price-tier .dollar.inactive{color:rgba(15,23,42,.22);}
 .price-tier--t1 .dollar:not(.inactive){color:var(--tier1);}
 .price-tier--t2 .dollar:not(.inactive){color:var(--tier2);}
@@ -3570,7 +3599,7 @@ html, body{ overflow-x: hidden; }
   background:linear-gradient(180deg, rgba(157,195,230,.55), rgba(42,91,154,.10));
   border:1px solid rgba(42,91,154,.18);
   color:#0f172a;
-  font-weight:1000;
+  font-weight: var(--fw-bold);
   letter-spacing:.02em;
   box-shadow:0 10px 22px rgba(20,35,60,.08);
 }
@@ -3586,17 +3615,17 @@ html, body{ overflow-x: hidden; }
 .page-deals .dealCard:hover{transform:translateY(-2px);box-shadow:0 22px 44px rgba(20,35,60,.10);border-color:rgba(42,91,154,.22);}
 .page-deals .dealTop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;}
 .page-deals .dealBrandRow{display:flex;gap:12px;align-items:center;}
-.page-deals .dealBrand{font-weight:1000;color:rgba(17,24,39,.92);}
-.page-deals .dealName{font-weight:800;color:rgba(17,24,39,.78);margin-top:2px;line-height:1.35;}
+.page-deals .dealBrand{font-weight: var(--fw-bold);color:rgba(17,24,39,.92);}
+.page-deals .dealName{font-weight:var(--fw-semibold);color:rgba(17,24,39,.78);margin-top:2px;line-height:1.35;}
 .page-deals .dealMeta{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
 .page-deals .dealCta{margin-top:12px;display:flex;justify-content:space-between;gap:12px;align-items:center;}
-.page-deals .dealPrice{font-weight:1000;}
-.page-deals .dealBtn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:14px;border:1px solid rgba(42,91,154,.22);background:rgba(157,195,230,.22);color:#0f172a;font-weight:1000;text-decoration:none;}
+.page-deals .dealPrice{font-weight: var(--fw-bold);}
+.page-deals .dealBtn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:14px;border:1px solid rgba(42,91,154,.22);background:rgba(157,195,230,.22);color:#0f172a;font-weight: var(--fw-bold);text-decoration:none;}
 .page-deals .dealBtn:hover{background:rgba(157,195,230,.32);}
 
 
 /* --- Hebrew RTL enhancements --- */
-:root { --he-font: 'Assistant', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; }
+:root { --he-font: "Gveret Levin", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
 html[dir="rtl"] body { direction: rtl; text-align: right; font-family: var(--he-font); }
 html[dir="rtl"] input, html[dir="rtl"] textarea, html[dir="rtl"] select { font-family: var(--he-font); }
 html[dir="rtl"] .nav, html[dir="rtl"] nav ul { flex-direction: row; }
@@ -3753,7 +3782,7 @@ body.menuOpen .navOverlay{
   /* CTA pill (the "לקנות בלי לפגוע" button) */
   .siteHeader .ctaPill{
     font-size: 13px;
-    font-weight: 700;
+    font-weight: var(--fw-semibold);
     padding: 8px 12px;
     border-radius: 999px;
   }
@@ -3817,7 +3846,7 @@ body.menuOpen .navOverlay{
   /* CTA pill */
   .siteHeader .ctaPill{
     font-size: 13px;
-    font-weight: 700;
+    font-weight: var(--fw-semibold);
     padding: 7px 12px;
     border-radius: 999px;
     white-space: nowrap;
@@ -4209,7 +4238,7 @@ body.menuOpen .navOverlay{
 
 /* Brand line: calmer (less heavy), closer to title */
 .page-products .pBrand{
-  font-weight: 700 !important;
+  font-weight: var(--fw-semibold) !important;
   opacity: .75 !important;
   letter-spacing: .2px;
   margin-top: 2px;
@@ -4243,7 +4272,7 @@ body.menuOpen .navOverlay{
   border: 1px solid rgba(120,160,255,.20) !important;
 }
 .page-products .offerStore{
-  font-weight: 700 !important;
+  font-weight: var(--fw-semibold) !important;
 }
 .page-products .offer .btn{
   border-radius: 999px !important;
@@ -4448,7 +4477,7 @@ input,button,select,textarea{ font-family: inherit; }
   border-radius: 14px;
   border: 1px dashed rgba(42,91,154,.22);
   background: rgba(157,195,230,.14);
-  font-weight: 900;
+  font-weight: var(--fw-bold);
 }
 .homeTeaserEmpty{ padding: 10px 0; text-align:center; }
 
@@ -4493,7 +4522,7 @@ input,button,select,textarea{ font-family: inherit; }
   border: 1px solid rgba(42,91,154,.22);
   background: rgba(157,195,230,.18);
   color: #0f172a;
-  font-weight: 1000;
+  font-weight: var(--fw-bold);
   padding: 8px 10px;
   border-radius: 12px;
   cursor:pointer;
@@ -4502,7 +4531,7 @@ input,button,select,textarea{ font-family: inherit; }
 .pagerNum.is-active{
   background: rgba(42,91,154,.20);
 }
-.pagerEllipsis{ padding: 0 6px; font-weight: 900; color: var(--muted); }
+.pagerEllipsis{ padding: 0 6px; font-weight: var(--fw-bold); color: var(--muted); }
 
 
 /* Sticky header (v13) */
@@ -4565,19 +4594,19 @@ input,button,select,textarea{ font-family: inherit; }
 
 /* Notice banner (v13) — less intrusive */
 .siteNotice{ padding: 8px 0; }
-.siteNotice p{ margin:0; font-weight: 800; font-size: .95rem; }
+.siteNotice p{ margin:0; font-weight: var(--fw-semibold); font-size: .95rem; }
 @media (max-width: 520px){
   .siteNotice p{ font-size: .92rem; }
 }
 
 /* Pharmacy (v15) */
-.pillBtn{ border: 1px solid rgba(42,91,154,.18); background: rgba(157,195,230,.14); color: #0f172a; font-weight: 900; padding: 8px 10px; border-radius: 999px; cursor: pointer; }
+.pillBtn{ border: 1px solid rgba(42,91,154,.18); background: rgba(157,195,230,.14); color: #0f172a; font-weight: var(--fw-bold); padding: 8px 10px; border-radius: 999px; cursor: pointer; }
 .pillBtn.is-active{ background: rgba(42,91,154,.18); border-color: rgba(42,91,154,.26); }
 .phMetaRow{ display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; }
 .phCard{ border: 1px solid rgba(31,41,55,.10); background: rgba(255,255,255,.86); border-radius: 18px; padding: 14px; box-shadow: 0 10px 22px rgba(0,0,0,.04); }
 .phTitle{ margin: 0 0 8px; font-size: 1.06rem; }
 .phBadges,.phStores{ display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
-.pill{ display:inline-flex; align-items:center; padding: 6px 10px; border-radius:999px; font-weight:900; border:1px solid rgba(31,41,55,.10); }
+.pill{ display:inline-flex; align-items:center; padding: 6px 10px; border-radius:999px; font-weight:var(--fw-bold); border:1px solid rgba(31,41,55,.10); }
 .pill--soft{ background: rgba(245,158,11,.10); border-color: rgba(245,158,11,.16); }
 .pill--muted{ background: rgba(148,163,184,.14); border-color: rgba(148,163,184,.20); color: rgba(30,41,59,.86); }
 .phActions{ margin-top: 12px; display:flex; gap:10px; flex-wrap:wrap; }
@@ -4667,7 +4696,7 @@ input,button,select,textarea{ font-family: inherit; }
   margin-top: 6px;
 }
 .hero.heroCompact .heroSearchLine .heroSearchLabel{
-  font-weight: 850;
+  font-weight: var(--fw-bold);
   color: rgba(255,255,255,.88);
   opacity: .95;
 }
@@ -4706,5 +4735,589 @@ input,button,select,textarea{ font-family: inherit; }
   .hero.heroCompact .heroMedia{
     min-height: 130px;
     max-height: 175px;
+  }
+}
+
+/* Moderate emphasis for a single-weight handwriting font */
+strong, b{ font-weight: var(--fw-semibold); }
+
+
+/* Attribution / credits (optional) */
+.credits{
+  font-size: .85rem;
+  color: var(--muted2);
+  text-align: center;
+  padding: 18px 12px;
+}
+.credits a{ color: var(--brand); text-decoration: underline; }
+
+
+/* =========================================================
+   Mobile menu improvements (drawer nav)
+   ========================================================= */
+@media (max-width: 900px){
+  /* Drawer container */
+  .siteHeader .nav{
+    width: min(380px, 92vw);
+    padding: 0;
+    gap: 0;
+    background: #fff;
+  }
+
+  /* Search bar in drawer */
+  .navDrawerSearch{
+    position: sticky;
+    top: 64px; /* just under drawer header */
+    z-index: 2;
+    display: flex;
+    gap: 10px;
+    padding: 10px 12px 12px;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.90));
+    border-bottom: 1px solid rgba(15,23,42,.06);
+    backdrop-filter: blur(6px);
+  }
+  .navDrawerSearchInput{
+    flex: 1;
+    min-height: 46px;
+    border-radius: 14px;
+    border: 1px solid rgba(15,23,42,.12);
+    padding: 0 14px;
+    font: inherit;
+    font-size: 1.05rem;
+    background: rgba(255,255,255,.96);
+  }
+  .navDrawerSearchBtn{
+    min-width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    border: 1px solid rgba(15,23,42,.12);
+    background: rgba(42,91,154,.10);
+    font: inherit;
+    cursor: pointer;
+  }
+  .navDrawerSearchInput:focus{ outline: none; }
+  .navDrawerSearchInput:focus-visible{ box-shadow: 0 0 0 3px rgba(42,91,154,.22); }
+
+  /* Accordion sections */
+  .siteHeader .navGroup{
+    width: 100%;
+    border-bottom: 1px solid rgba(15,23,42,.06);
+    padding: 0;
+    margin: 0;
+  }
+  .siteHeader .navGroup > summary{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 14px 12px;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    font-size: 1.15rem;
+    letter-spacing: -0.2px;
+  }
+  .siteHeader .navGroup[open] > summary{
+    background: rgba(42,91,154,.08);
+  }
+
+  /* Chevron animation (RTL-friendly) */
+  #siteHeader .navChevron{
+    opacity: .70;
+    transform: rotate(180deg); /* point left (RTL) */
+    transition: transform .18s ease;
+    font-size: 1.15rem;
+  }
+  #siteHeader .navGroup[open] .navChevron{ transform: rotate(90deg); } /* down */
+
+  /* Dropdown panel */
+  #siteHeader .navDrop{
+    margin: 8px 12px 14px;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid rgba(42,91,154,.10);
+    background: rgba(42,91,154,.04);
+  }
+  #siteHeader .navDrop a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: right;
+    padding: 12px 12px;
+    border-radius: 14px;
+    background: rgba(255,255,255,.96);
+    border: 1px solid rgba(15,23,42,.06);
+    min-height: 48px;
+    font-size: 1.05rem;
+  }
+  #siteHeader .navDrop a + a{ margin-top: 8px; }
+  #siteHeader .navDrop a:hover{ background: #fff; }
+
+  #siteHeader .navItemIcon{
+    flex: 0 0 auto;
+    width: 1.6em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #siteHeader .navItemLabel{
+    flex: 1;
+  }
+  /* Right-side arrow for links */
+  #siteHeader .navDrop a::after{
+    content: "›";
+    opacity: .55;
+    font-size: 1.2rem;
+    line-height: 1;
+    flex: 0 0 auto;
+    transform: rotate(180deg); /* point left in RTL */
+  }
+
+  /* Remove conflicting pill styles in drawer */
+  .siteHeader .nav > a{
+    width: 100%;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    text-align: right;
+    padding: 14px 12px;
+    font-size: 1.15rem;
+  }
+}
+
+/* --- Mobile menu typography tweaks (no search bar) --- */
+@media (max-width: 768px){
+  /* Bigger section titles + main links */
+  .navDrawer .menuTitle,
+  .navDrawer .menuItem > a,
+  .navDrawer summary{
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+
+  /* Slightly bigger sub-links */
+  .navDrawer .submenu a{
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  /* More comfortable tap area */
+  .navDrawer a,
+  .navDrawer summary{
+    padding: 14px 16px;
+  }
+}
+
+/* --- Force site font everywhere (beats older page-specific rules) --- */
+html, body, main, button, input, select, textarea {
+  font-family: var(--he-font) !important;
+}
+
+/* Some pages set a hard font on main (e.g. .page-products main). Override it: */
+[class^="page-"] main,
+[class*=" page-"] main,
+.page-products main {
+  font-family: var(--he-font) !important;
+}
+
+/* --- Mobile drawer tweaks: hide ANY search bar & make titles bigger --- */
+@media (max-width: 768px){
+  /* Hide any search UI that might still be in the drawer */
+  .navDrawer input[type="search"],
+  .navDrawer input[placeholder*="חיפוש"],
+  .navDrawer form[role="search"],
+  .navDrawer .navSearch,
+  .navDrawer .menuSearch,
+  .navDrawer .searchBar,
+  .navDrawer .drawerSearch,
+  .navDrawer .mobileSearch {
+    display: none !important;
+  }
+
+  /* Bigger titles / main items */
+  .navDrawer summary,
+  .navDrawer .menuTitle,
+  .navDrawer .menuItem > a,
+  .navDrawer .menuList > li > a,
+  .navDrawer .menuList > li > summary{
+    font-size: 1.25rem !important;
+    line-height: 1.35;
+  }
+
+  /* Sub items slightly smaller */
+  .navDrawer .submenu a{
+    font-size: 1.10rem !important;
+    line-height: 1.35;
+  }
+
+  /* Bigger tap targets */
+  .navDrawer a,
+  .navDrawer summary{
+    padding: 16px 16px !important;
+  }
+}
+
+/* --- Mobile drawer typography + spacing (bigger titles, RTL alignment) --- */
+@media (max-width: 900px){
+  /* Hide drawer search if it exists anywhere */
+  .navDrawerSearch{ display:none !important; }
+
+  /* Section headers (details > summary) */
+  .navGroup > summary{
+    font-size: 1.28rem !important;
+    line-height: 1.35;
+    padding: 16px 10px !important;
+    font-weight: var(--fw-bold);
+    text-align: right !important;
+  }
+
+  /* Dropdown links inside sections */
+  .navDrop a{
+    font-size: 1.12rem !important;
+    line-height: 1.35;
+    padding: 14px 12px !important;
+    border-radius: 14px !important;
+    text-align: right !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .navItemIcon{ font-size: 1.15em; }
+  .navItemLabel{ font-size: 1em; }
+
+  /* Any top-level links that are not inside dropdowns */
+  .siteHeader .nav > a{
+    font-size: 1.15rem !important;
+    padding: 14px 12px !important;
+    border-radius: 14px !important;
+    text-align: right !important;
+  }
+
+  /* Chevron: make it clearer + animate open */
+  .navChevron{
+    font-size: 22px;
+    transition: transform .18s ease;
+  }
+  details[open] > summary .navChevron{
+    transform: rotate(90deg);
+  }
+}
+
+/* --- Mobile menu: prevent "jumping" when opening sections --- */
+@media (max-width: 900px){
+  /* Disable scroll anchoring inside the drawer to avoid sudden jumps */
+  .navDrawer,
+  .navDrawer *{
+    overflow-anchor: none;
+  }
+
+  /* Make expanded panels scroll inside themselves instead of pushing the whole menu */
+  .navGroup[open] > .navDrop{
+    max-height: 38vh;
+    overflow-y: auto;
+    padding-inline: 6px;
+    margin-inline: 6px;
+  }
+
+  /* Slightly smaller typography to reduce expansion height */
+  .navGroup > summary{
+    font-size: 1.18rem !important;
+    padding: 14px 10px !important;
+  }
+
+  .navDrop a{
+    font-size: 1.06rem !important;
+    padding: 12px 12px !important;
+  }
+
+  /* Optional: keep scrollbar space stable */
+  .navDrawer{
+    scrollbar-gutter: stable;
+  }
+}
+
+/* --- Mobile drawer: FORCE it to slide in from the RIGHT in RTL --- */
+@media (max-width: 900px){
+  html[dir="rtl"] .siteHeader .nav{
+    right: 0 !important;
+    left: auto !important;
+    inset-inline-end: 0 !important;
+    inset-inline-start: auto !important;
+
+    /* closed state: keep it fully off-screen to the right */
+    transform: translateX(110%) !important;
+  }
+
+  /* open state (support both toggles): header.navOpen OR body.menuOpen */
+  html[dir="rtl"] .siteHeader.navOpen .nav,
+  html[dir="rtl"] body.menuOpen .siteHeader .nav,
+  html[dir="rtl"] body.menuopen .siteHeader .nav{
+    transform: translateX(0) !important;
+  }
+
+  /* (optional) ensure drawer content is RTL aligned */
+  html[dir="rtl"] .siteHeader .nav{
+    direction: rtl;
+    text-align: right;
+  }
+}
+
+/* --- HARD override: drawer must be RIGHT-anchored (even if other CSS sets left:0) --- */
+@media (max-width: 920px){
+  html[dir="rtl"] #siteHeader.siteHeader .nav{
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+
+    right: 0 !important;
+    left: auto !important;
+    inset-inline-end: 0 !important;
+    inset-inline-start: auto !important;
+
+    width: min(320px, 86vw) !important;
+    transform: translateX(110%) !important; /* closed */
+    transition: transform .25s ease !important;
+  }
+
+  html[dir="rtl"] body.menuOpen #siteHeader.siteHeader .nav,
+  html[dir="rtl"] body.menuopen #siteHeader.siteHeader .nav{
+    transform: translateX(0) !important; /* open */
+  }
+
+  /* If any rule tries to open via left positioning, neutralize it */
+  html[dir="rtl"] body.menuOpen #siteHeader.siteHeader .nav,
+  html[dir="rtl"] body.menuopen #siteHeader.siteHeader .nav{
+    right: 0 !important;
+    left: auto !important;
+  }
+}
+
+/* =========================================================
+   Galaxy S9 / Android Chrome drawer "jump" fix
+   - The drawer scroller is .siteHeader .nav (NOT .navDrawer)
+   - Disable scroll anchoring + keep open panels scrolling internally
+   ========================================================= */
+@media (max-width: 920px){
+  /* Prevent Chrome scroll-anchoring from jumping when <details> opens */
+  .siteHeader .nav,
+  .siteHeader .nav *{
+    overflow-anchor: none !important;
+  }
+
+  /* Keep the drawer stable and contain overscroll */
+  .siteHeader .nav{
+    overscroll-behavior: contain;
+    scroll-behavior: auto;
+  }
+
+  /* Make opened panels scroll INSIDE instead of pushing the whole list */
+  .siteHeader .navGroup[open] > .navDrop{
+    max-height: 36vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: auto;
+    padding-inline: 6px;
+    margin-inline: 6px;
+  }
+
+  /* Fix accidental centered text in mobile drawer */
+  .siteHeader .nav a{
+    text-align: right !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Slightly reduce sizes to minimize expansion height */
+  .siteHeader .navGroup > summary{
+    font-size: 1.16rem !important;
+    padding: 14px 10px !important;
+  }
+  .siteHeader .navDrop a{
+    font-size: 1.05rem !important;
+    padding: 12px 12px !important;
+  }
+}
+
+/* --- Mobile drawer: dropdown panels must be IN-FLOW (fix "opens on the left") --- */
+@media (max-width: 920px){
+  /* Header fragment has desktop dropdown styles (position:absolute). Override for mobile. */
+  #siteHeader .navGroup{ position: static !important; }
+  #siteHeader .navDrop{
+    position: static !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transition: none !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* Make dropdown links a single clean row (icon + text + arrow), RTL-friendly */
+  #siteHeader .navDrop a{
+    justify-content: flex-start !important;
+    gap: 10px !important;
+  }
+  #siteHeader .navDrop a::after{
+    margin-inline-start: auto !important; /* push arrow to the left edge in RTL */
+  }
+}
+
+/* =========================================================
+   FINAL mobile dropdown fix (prevents submenu opening "outside" the drawer)
+   Applies to your real structure: #siteHeader .nav > details.navGroup > .navDrop
+   ========================================================= */
+@media (max-width: 920px){
+  /* Drawer container should clip sideways overflow */
+  #siteHeader .nav{
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Ensure each group is a full-width block row */
+  #siteHeader details.navGroup{
+    display: block !important;
+    width: 100% !important;
+    position: static !important;
+  }
+
+  /* Summary should be a full-width "row button" */
+  #siteHeader details.navGroup > summary{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  #siteHeader details.navGroup > summary::-webkit-details-marker{ display:none; }
+
+  /* The dropdown must be in-flow and visible when the group is open */
+  #siteHeader details.navGroup > .navDrop{
+    display: none !important; /* closed */
+    position: static !important;
+    inset: auto !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  #siteHeader details.navGroup[open] > .navDrop{
+    display: grid !important; /* open */
+  }
+
+  /* Kill desktop hover behavior on mobile (can cause weird positioning) */
+  #siteHeader .navGroup:hover > .navDrop,
+  #siteHeader .navGroup:focus-within > .navDrop{
+    position: static !important;
+  }
+}
+
+/* =========================================================
+   Mobile drawer fixes for the REAL element: nav.kbwgDrawerNav
+   - Prevent submenu "splitting" to the left (force in-flow)
+   - Prevent Android/Galaxy scroll-jump when opening sections
+   - Hide accidental duplicate drawer navs if injected twice
+   ========================================================= */
+@media (max-width: 920px){
+  /* If the drawer nav is duplicated, hide the later one */
+  nav.kbwgDrawerNav + nav.kbwgDrawerNav{
+    display: none !important;
+  }
+
+  /* Make the drawer a stable scroll container */
+  nav.kbwgDrawerNav{
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    overscroll-behavior: contain;
+    scroll-behavior: auto;
+    direction: rtl;
+    text-align: right;
+    contain: layout paint;
+    scrollbar-gutter: stable;
+  }
+
+  /* Disable scroll anchoring inside the drawer to stop "jumping" */
+  nav.kbwgDrawerNav,
+  nav.kbwgDrawerNav *{
+    overflow-anchor: none !important;
+  }
+
+  /* --- Dropdown behavior: keep panels IN-FLOW (do NOT override visibility rules) --- */
+  nav.kbwgDrawerNav details.navGroup{
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+  }
+  nav.kbwgDrawerNav details.navGroup > summary{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    scroll-margin-top: 90px;
+  }
+  nav.kbwgDrawerNav details.navGroup > summary::-webkit-details-marker{ display:none; }
+
+  nav.kbwgDrawerNav details.navGroup > .navDrop{
+    position: static !important;
+    inset: auto !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Neutralize desktop hover/focus dropdown triggers on mobile */
+  nav.kbwgDrawerNav .navGroup:hover > .navDrop,
+  nav.kbwgDrawerNav .navGroup:focus-within > .navDrop{
+    position: static !important;
+    transform: none !important;
+  }
+}@media (max-width: 920px){
+  /* v3: do NOT hide a second injected drawer nav (it can appear when menu updates) */
+  nav.kbwgDrawerNav + nav.kbwgDrawerNav{
+    display: flex !important;
+  }
+}
+
+@media (max-width: 920px){
+  /* v3: Any dropdown/flyout inside the drawer must stay inside the drawer */
+  nav.kbwgDrawerNav .navDrop,
+  nav.kbwgDrawerNav .navDropdown,
+  nav.kbwgDrawerNav .dropdown,
+  nav.kbwgDrawerNav [class*="Drop"],
+  nav.kbwgDrawerNav [class*="dropdown"],
+  nav.kbwgDrawerNav [class*="flyout"]{
+    position: static !important;
+    inset: auto !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Keep everything within drawer width so nothing can render "on the left" */
+  nav.kbwgDrawerNav *{
+    max-width: 100%;
   }
 }

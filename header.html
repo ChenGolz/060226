@@ -17,85 +17,90 @@
     </div>
 
     <nav aria-label="ניווט ראשי" class="nav">
-      <a href="index.html">בית</a>
-
-      <details class="navGroup">
+      <div class="navDrawerHeader">
+        <a class="navDrawerLogo" href="index.html" aria-label="דף הבית">
+          <img class="navDrawerLogoImg" src="assets/img/logo.png" width="36" height="36" alt=""/>
+          <span class="navDrawerLogoText">לקנות ללא אכזריות</span>
+        </a>
+        <button class="navDrawerClose" type="button" aria-label="סגור תפריט" title="סגור">×</button>
+      </div>
+<details class="navGroup">
         <summary>
           מוצרים
-          <span class="navChevron" aria-hidden="true">▾</span>
+          <span class="navChevron" aria-hidden="true">›</span>
         </summary>
         <div class="navDrop" role="menu" aria-label="מוצרים מומלצים">
-          <a href="products.html" role="menuitem">🛍️ חיפוש מוצרים</a>
-          <a href="bundles.html" role="menuitem">🎁 מארזים</a>
+          <a href="products.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🛍️</span><span class="navItemLabel">חיפוש מוצרים</span></a>
+          <a href="bundles.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🎁</span><span class="navItemLabel">מארזים</span></a>
         </div>
       </details>
 
       <details class="navGroup">
         <summary>
           מותגים
-          <span class="navChevron" aria-hidden="true">▾</span>
+          <span class="navChevron" aria-hidden="true">›</span>
         </summary>
         <div class="navDrop" role="menu" aria-label="מותגים מומלצים">
-          <a href="israeli-brands.html" role="menuitem">🇮🇱 מותגים בישראל</a>
-          <a href="recommended-brands.html" role="menuitem">🌍 מותגים מחו״ל</a>
+          <a href="israeli-brands.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🇮🇱</span><span class="navItemLabel">מותגים בישראל</span></a>
+          <a href="recommended-brands.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🌍</span><span class="navItemLabel">מותגים מחו״ל</span></a>
         </div>
       </details>
 
       <details class="navGroup navGroupDeals">
         <summary>
           דילים
-          <span class="navChevron" aria-hidden="true">▾</span>
+          <span class="navChevron" aria-hidden="true">›</span>
         </summary>
         <div class="navDrop" role="menu" aria-label="דילים ומבצעים">
-          <a href="todays-top-deals.html" role="menuitem">🔥 דילים היום</a>
-          <a href="shopping-calendar.html" role="menuitem">📅 לוח מבצעים</a>
+          <a href="todays-top-deals.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🔥</span><span class="navItemLabel">דילים היום</span></a>
+          <a href="shopping-calendar.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">📅</span><span class="navItemLabel">לוח מבצעים</span></a>
         </div>
       </details>
 
       <details class="navGroup">
         <summary>
           כלים
-          <span class="navChevron" aria-hidden="true">▾</span>
+          <span class="navChevron" aria-hidden="true">›</span>
         </summary>
         <div class="navDrop" role="menu" aria-label="כלים לקנייה חכמה">
-          <a href="ingredient-detective.html" role="menuitem">🧪 בודק רכיבים</a>
-          <a href="pharmacy.html" role="menuitem">🧴 בפארם</a>
-          <a href="amazon-info.html" role="menuitem">🛒 קנייה באמזון</a>
+          <a href="ingredient-detective.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🧪</span><span class="navItemLabel">בודק רכיבים</span></a>
+          <a href="pharmacy.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🧴</span><span class="navItemLabel">בפארם</span></a>
+          <a href="amazon-info.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🛒</span><span class="navItemLabel">קנייה באמזון</span></a>
         </div>
       </details>
 
       <details class="navGroup">
         <summary>
           מדריכים
-          <span class="navChevron" aria-hidden="true">▾</span>
+          <span class="navChevron" aria-hidden="true">›</span>
         </summary>
         <div class="navDrop" role="menu" aria-label="מדריכים ומפות">
-          <a href="vegan-in-israel.html" role="menuitem">🗺️ טבעוני בישראל</a>
-          <a href="hidden-gems-map.html" role="menuitem">✨ Hidden Gems</a>
-          <a href="learn.html" role="menuitem">📚 מידע</a>
+          <a href="vegan-in-israel.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🗺️</span><span class="navItemLabel">טבעוני בישראל</span></a>
+          <a href="hidden-gems-map.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">✨</span><span class="navItemLabel">Hidden Gems</span></a>
+          <a href="learn.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">📚</span><span class="navItemLabel">מידע</span></a>
         </div>
       </details>
 
       <details class="navGroup">
         <summary>
-          קהילה
-          <span class="navChevron" aria-hidden="true">▾</span>
+          בקרוב
+          <span class="navChevron" aria-hidden="true">›</span>
         </summary>
         <div class="navDrop" role="menu" aria-label="קהילה ועשייה טובה">
-          <a href="wall-of-kindness.html" role="menuitem">🤝 Wall of Kindness</a>
+          <a href="wall-of-kindness.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🤝</span><span class="navItemLabel">Wall of Kindness</span></a>
         </div>
       </details>
 
       <details class="navGroup">
         <summary>
           אודות
-          <span class="navChevron" aria-hidden="true">▾</span>
+          <span class="navChevron" aria-hidden="true">›</span>
         </summary>
         <div class="navDrop" role="menu" aria-label="אודות ועזרה">
-          <a href="methodology.html" role="menuitem">🧠 השיטה</a>
-          <a href="about.html" role="menuitem">ℹ️ על האתר</a>
-          <a href="contact.html" role="menuitem">✉️ צור קשר</a>
-          <a href="terms.html" role="menuitem">📜 תקנון</a>
+          <a href="methodology.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">🧠</span><span class="navItemLabel">השיטה</span></a>
+          <a href="about.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">ℹ️</span><span class="navItemLabel">על האתר</span></a>
+          <a href="contact.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">✉️</span><span class="navItemLabel">צור קשר</span></a>
+          <a href="terms.html" role="menuitem"><span class="navItemIcon" aria-hidden="true">📜</span><span class="navItemLabel">תקנון</span></a>
         </div>
       </details>
     </nav>
@@ -119,6 +124,68 @@
     }
     #siteHeader.siteHeader.isScrolled .logoImg{ height: 34px; width: 34px; }
     #siteHeader.siteHeader.isScrolled .logoText{ font-size: .98rem; }
+    /* Nav typography + color (navy) */
+    #siteHeader{
+      --nav-ink: #0b1f3a; /* navy */
+      --nav-font: var(--he-font);
+    }
+    #siteHeader .nav a,
+    #siteHeader .navGroup > summary,
+    #siteHeader .navDrop a{
+      font-weight: var(--fw-semibold);
+      font-family: var(--nav-font);
+      color: var(--nav-ink);
+    }
+
+    /* Mobile hamburger button + drawer header (injected by site.js) */
+    #siteHeader .navToggle,
+    #siteHeader .navToggleIcon,
+    #siteHeader .navToggleText{
+      font-family: var(--nav-font);
+      color: var(--nav-ink);
+    }
+    #siteHeader .navToggle{
+      font-weight: var(--fw-semibold);
+      letter-spacing: -0.1px;
+    }
+    #siteHeader .navToggleText{
+      font-size: 0.98rem;
+      line-height: 1;
+    }
+    #siteHeader .navToggleIcon{
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+    #siteHeader .navDrawerLogoText{
+      font-family: var(--nav-font);
+      color: var(--nav-ink);
+      font-weight: var(--fw-semibold);
+      font-size: 1.08rem;
+      letter-spacing: -0.15px;
+    }
+    #siteHeader .navDrawerClose{
+      color: var(--nav-ink);
+    }
+    /* Top-level nav links (e.g. בית) */
+    #siteHeader .nav > a{
+      text-decoration: none;
+      font-weight: var(--fw-semibold);
+      padding: 12px 10px;
+      border-radius: 14px;
+      font-size: clamp(1.05rem, 0.65vw + 0.9rem, 1.35rem);
+      line-height: 1.1;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    #siteHeader .nav > a:hover{ background: rgba(157,195,230,.18); }
+
+    /* Dropdown items: a bit smaller than top level, but larger than before */
+    #siteHeader .navDrop a{
+      font-size: clamp(1.00rem, 0.45vw + 0.9rem, 1.18rem);
+      line-height: 1.15;
+    }
 
     /* Grouped nav — single-level dropdown, fast & mobile-friendly */
     #siteHeader .nav{ overflow: visible; }
@@ -127,6 +194,7 @@
     /* Touch targets */
     #siteHeader .nav a,
     #siteHeader .navGroup > summary{
+      font-weight: var(--fw-semibold);
       min-height: 44px;
       line-height: 1;
     }
@@ -137,15 +205,15 @@
       width: 44px;
       height: 44px;
       border-radius: 14px;
-      /* Bigger top-menu titles (desktop + mobile), responsive */
-      font-size: clamp(1.05rem, 0.35vw + 1rem, 1.22rem);
+      /* Quick search icon size */
+      font-size: 1.15rem;
       align-items: center;
       justify-content: center;
       text-decoration: none;
       border: 1px solid rgba(31,41,55,.12);
       background: rgba(157,195,230,.18);
-      color: var(--ink);
-      font-weight: 900;
+      color: var(--nav-ink);
+      font-weight: var(--fw-bold);
     }
     #siteHeader .navGroup > summary{
       list-style: none;
@@ -155,8 +223,11 @@
       gap: 6px;
       padding: 12px 10px;
       border-radius: 14px;
-      font-weight: 900;
-      color: var(--ink);
+      /* Bigger top-menu titles (desktop + mobile), responsive */
+      font-size: clamp(1.15rem, 0.8vw + 0.95rem, 1.55rem);
+      line-height: 1.1;
+      font-weight: var(--fw-bold);
+      color: var(--nav-ink);
       user-select: none;
       border: 1px solid transparent;
     }
@@ -200,8 +271,8 @@
       padding: 10px 10px;
       border-radius: 12px;
       text-decoration: none;
-      font-weight: 900;
-      color: var(--ink);
+      font-weight: var(--fw-bold);
+      color: var(--nav-ink);
     }
     #siteHeader .navDrop a:hover{ background: rgba(157,195,230,.18); }
     /* Mobile: keep dropdowns inside flow so they won't get clipped */
@@ -225,10 +296,215 @@
       #siteHeader .navDrop a{ padding: 14px 12px; }
       #siteHeader .navGroup > summary{ padding: 14px 12px; }
     }
-  </style>
+
+    /* Mobile drawer list polish */
+    #siteHeader .navItemIcon{ width: 1.4em; display:inline-flex; align-items:center; justify-content:center; }
+    #siteHeader .navDrop a{ display:flex; align-items:center; gap: 10px; text-align: right; }
+    #siteHeader .navDrop a:focus{ outline:none; }
+    #siteHeader .navDrop a:focus-visible{ box-shadow: 0 0 0 3px rgba(42,91,154,.22); }
+    #siteHeader .navGroup > summary:focus{ outline:none; }
+    #siteHeader .navGroup > summary:focus-visible{ box-shadow: 0 0 0 3px rgba(42,91,154,.22); }
+
+    /* ---------------------------------------------------------
+       Mobile drawer menu polish (applies inside the drawer nav)
+       --------------------------------------------------------- */
+    @media (max-width: 900px){
+      #siteHeader .nav{ padding: 0; gap: 0; width: min(380px, 92vw); }
+
+      /* Drawer header already styled in styles.css; keep it crisp */
+      #siteHeader .navDrawerHeader{ margin: 0; }
+
+      /* Search bar in drawer */
+      #siteHeader .navDrawerSearch{
+        display: flex;
+        position: sticky;
+        top: 64px;
+        z-index: 2;
+        gap: 10px;
+        padding: 10px 12px 12px;
+        background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.90));
+        border-bottom: 1px solid rgba(15,23,42,.06);
+        backdrop-filter: blur(6px);
+      }
+      #siteHeader .navDrawerSearchInput{
+        flex: 1;
+        min-height: 46px;
+        border-radius: 14px;
+        border: 1px solid rgba(15,23,42,.12);
+        padding: 0 14px;
+        font: inherit;
+        font-size: 1.05rem;
+        background: rgba(255,255,255,.96);
+      }
+      #siteHeader .navDrawerSearchBtn{
+        min-width: 46px;
+        height: 46px;
+        border-radius: 14px;
+        border: 1px solid rgba(15,23,42,.12);
+        background: rgba(42,91,154,.10);
+        font: inherit;
+        cursor: pointer;
+      }
+      #siteHeader .navDrawerSearchInput:focus{ outline:none; }
+      #siteHeader .navDrawerSearchInput:focus-visible{ box-shadow: 0 0 0 3px rgba(42,91,154,.22); }
+
+      /* Accordion groups */
+      #siteHeader .navGroup{
+        width: 100%;
+        border-bottom: 1px solid rgba(15,23,42,.06);
+        margin: 0;
+      }
+      #siteHeader .navGroup > summary{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 14px 12px;
+        border-radius: 0;
+        border: none;
+        background: transparent;
+        font-size: 1.15rem;
+        letter-spacing: -0.2px;
+      }
+      #siteHeader .navGroup[open] > summary{ background: rgba(42,91,154,.08); }
+
+      /* Chevron animation (RTL-friendly): left when closed, down when open */
+      #siteHeader .navChevron{
+        opacity: .70;
+        transform: rotate(180deg);
+        transition: transform .18s ease;
+        font-size: 1.15rem;
+      }
+      #siteHeader .navGroup[open] .navChevron{ transform: rotate(90deg); }
+
+      /* Dropdown panel */
+      #siteHeader .navDrop{
+        margin: 8px 12px 14px;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid rgba(42,91,154,.10);
+        background: rgba(42,91,154,.04);
+      }
+      #siteHeader .navDrop a{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        text-align: right;
+        padding: 12px 12px;
+        border-radius: 14px;
+        background: rgba(255,255,255,.96);
+        border: 1px solid rgba(15,23,42,.06);
+        min-height: 48px;
+        font-size: 1.05rem;
+      }
+      #siteHeader .navDrop a + a{ margin-top: 8px; }
+
+      #siteHeader .navItemIcon{
+        flex: 0 0 auto;
+        width: 1.6em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #siteHeader .navItemLabel{ flex: 1; }
+
+      /* Right-side arrow for links */
+      #siteHeader .navDrop a::after{
+        content: "›";
+        opacity: .55;
+        font-size: 1.2rem;
+        line-height: 1;
+        transform: rotate(180deg);
+      }
+    }
+
+/* --- Mobile drawer: dropdown panels must be IN-FLOW (fix "opens on the left") --- */
+@media (max-width: 920px){
+  /* Header fragment has desktop dropdown styles (position:absolute). Override for mobile. */
+  #siteHeader .navGroup{ position: static !important; }
+  #siteHeader .navDrop{
+    position: static !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transition: none !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* Make dropdown links a single clean row (icon + text + arrow), RTL-friendly */
+  #siteHeader .navDrop a{
+    justify-content: flex-start !important;
+    gap: 10px !important;
+  }
+  #siteHeader .navDrop a::after{
+    margin-inline-start: auto !important; /* push arrow to the left edge in RTL */
+  }
+}
+
+/* =========================================================
+   FINAL mobile dropdown fix (prevents submenu opening "outside" the drawer)
+   Applies to your real structure: #siteHeader .nav > details.navGroup > .navDrop
+   ========================================================= */
+@media (max-width: 920px){
+  /* Drawer container should clip sideways overflow */
+  #siteHeader .nav{
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Ensure each group is a full-width block row */
+  #siteHeader details.navGroup{
+    display: block !important;
+    width: 100% !important;
+    position: static !important;
+  }
+
+  /* Summary should be a full-width "row button" */
+  #siteHeader details.navGroup > summary{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  #siteHeader details.navGroup > summary::-webkit-details-marker{ display:none; }
+
+  /* The dropdown must be in-flow and visible when the group is open */
+  #siteHeader details.navGroup > .navDrop{
+    display: none !important; /* closed */
+    position: static !important;
+    inset: auto !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  #siteHeader details.navGroup[open] > .navDrop{
+    display: grid !important; /* open */
+  }
+
+  /* Kill desktop hover behavior on mobile (can cause weird positioning) */
+  #siteHeader .navGroup:hover > .navDrop,
+  #siteHeader .navGroup:focus-within > .navDrop{
+    position: static !important;
+  }
+}
+</style>
 
   <script>
-    (function(){
+(function(){
       var header = document.getElementById('siteHeader');
       if(!header) return;
 
@@ -259,6 +535,235 @@
           header.querySelectorAll('details.navGroup[open]').forEach(function(d){ if(d !== cur) d.removeAttribute('open'); });
         });
       });
+    
+      // 4) Mobile drawer toggle (hamburger + overlay + close button)
+      var toggleBtn = header.querySelector('.navToggle');
+      var closeBtn  = header.querySelector('.navDrawerClose');
+      var overlay   = document.querySelector('.navOverlay');
+
+      function isMobile(){ return window.matchMedia && window.matchMedia('(max-width: 900px)').matches; }
+
+      // 4.5) Galaxy S9 / Android: stop drawer from "jumping" when opening <details>
+      // Some browsers auto-scroll the drawer when <details> expands. We lock scrollTop.
+      var navEl = header.querySelector('.nav');
+      if(navEl){
+        header.querySelectorAll('details.navGroup > summary').forEach(function(s){
+          s.addEventListener('click', function(){
+            if(!isMobile()) return;
+            var st = navEl.scrollTop;
+            // Restore after the browser toggles <details> and tries to scroll
+            window.requestAnimationFrame(function(){ navEl.scrollTop = st; });
+            setTimeout(function(){ navEl.scrollTop = st; }, 0);
+          });
+        });
+        // Also restore on toggle event (extra safety)
+        header.querySelectorAll('details.navGroup').forEach(function(d){
+          d.addEventListener('toggle', function(){
+            if(!isMobile()) return;
+            if(typeof navEl.scrollTop === 'number'){
+              // no-op read forces layout in some browsers
+              var st = navEl.scrollTop;
+              window.requestAnimationFrame(function(){ navEl.scrollTop = st; });
+            }
+          });
+        });
+      }
+
+      function openMenu(){
+        if(!toggleBtn || !isMobile()) return;
+        document.body.classList.add('menuOpen');
+        header.classList.add('navOpen');
+        toggleBtn.setAttribute('aria-expanded','true');
+        if(overlay) overlay.setAttribute('aria-hidden','false');
+
+        // Focus the first summary for keyboard users
+        var first = header.querySelector('.navGroup > summary, .nav a');
+        if(first) setTimeout(function(){ try{ first.focus(); }catch(_){} }, 0);
+      }
+      function closeMenu(){
+        if(!toggleBtn) return;
+        document.body.classList.remove('menuOpen');
+        header.classList.remove('navOpen');
+        toggleBtn.setAttribute('aria-expanded','false');
+        if(overlay) overlay.setAttribute('aria-hidden','true');
+      }
+
+      if(toggleBtn){
+        toggleBtn.addEventListener('click', function(){
+          var open = header.classList.contains('navOpen');
+          if(open) closeMenu(); else openMenu();
+        });
+      }
+      if(closeBtn){ closeBtn.addEventListener('click', closeMenu); }
+      if(overlay){ overlay.addEventListener('click', closeMenu); }
+
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') closeMenu();
+      });
+
+      // Close drawer after clicking a link (mobile only)
+      header.querySelectorAll('.nav a').forEach(function(a){
+        a.addEventListener('click', function(){
+          if(isMobile()) closeMenu();
+        });
+      });
+
+      // If leaving mobile viewport, ensure menu is closed
+      window.addEventListener('resize', function(){
+        if(!isMobile()) closeMenu();
+      }, { passive:true });
+
     })();
   </script>
 </header>
+<div class="navOverlay" aria-hidden="true"></div>
+
+
+<script>
+/* Drawer jump-fix: attaches even if the drawer nav is injected later by JS */
+(function(){
+  function attach(nav){
+    if(nav.__kbwgJumpFixAttached) return;
+    nav.__kbwgJumpFixAttached = true;
+
+    function lockScroll(){
+      var st = nav.scrollTop;
+      requestAnimationFrame(function(){ nav.scrollTop = st; });
+      setTimeout(function(){ nav.scrollTop = st; }, 0);
+    }
+
+    nav.querySelectorAll('details.navGroup > summary').forEach(function(summary){
+      summary.addEventListener('click', function(){
+        if(window.matchMedia('(max-width: 920px)').matches){
+          lockScroll();
+        }
+      }, {passive:true});
+    });
+
+    nav.querySelectorAll('details.navGroup').forEach(function(d){
+      d.addEventListener('toggle', function(){
+        if(window.matchMedia('(max-width: 920px)').matches){
+          lockScroll();
+        }
+      }, {passive:true});
+    });
+  }
+
+  document.querySelectorAll('nav.kbwgDrawerNav').forEach(attach);
+
+  var obs = new MutationObserver(function(muts){
+    muts.forEach(function(m){
+      (m.addedNodes || []).forEach(function(n){
+        if(!n || n.nodeType !== 1) return;
+        if(n.matches && n.matches('nav.kbwgDrawerNav')) attach(n);
+        if(n.querySelectorAll) n.querySelectorAll('nav.kbwgDrawerNav').forEach(attach);
+      });
+    });
+  });
+  obs.observe(document.documentElement, {childList:true, subtree:true});
+})();
+</script>
+
+<script>
+/* v3: Force flyouts to render in-flow inside the injected mobile drawer */
+(function(){
+  function fixDropdowns(nav){
+    nav.querySelectorAll('.navDrop, .navDropdown, .dropdown, [class*="Drop"], [class*="dropdown"], [class*="flyout"]').forEach(function(el){
+      try{
+        el.style.setProperty('position','static','important');
+        el.style.setProperty('left','auto','important');
+        el.style.setProperty('right','auto','important');
+        el.style.setProperty('top','auto','important');
+        el.style.setProperty('bottom','auto','important');
+        el.style.setProperty('transform','none','important');
+        el.style.setProperty('width','100%','important');
+        el.style.setProperty('max-width','100%','important');
+      }catch(e){}
+    });
+  }
+
+  function attach(nav){
+    if(nav.__kbwgV3FixAttached) return;
+    nav.__kbwgV3FixAttached = true;
+
+    fixDropdowns(nav);
+
+    nav.addEventListener('click', function(){
+      if(window.matchMedia('(max-width: 920px)').matches){
+        fixDropdowns(nav);
+      }
+    }, true);
+
+    nav.addEventListener('toggle', function(){
+      if(window.matchMedia('(max-width: 920px)').matches){
+        fixDropdowns(nav);
+      }
+    }, true);
+  }
+
+  document.querySelectorAll('nav.kbwgDrawerNav').forEach(attach);
+
+  var obs = new MutationObserver(function(muts){
+    muts.forEach(function(m){
+      (m.addedNodes || []).forEach(function(n){
+        if(!n || n.nodeType !== 1) return;
+        if(n.matches && n.matches('nav.kbwgDrawerNav')) attach(n);
+        if(n.querySelectorAll) n.querySelectorAll('nav.kbwgDrawerNav').forEach(attach);
+      });
+    });
+  });
+  obs.observe(document.documentElement, {childList:true, subtree:true});
+})();
+</script>
+
+<script>
+/* v4: Stop mobile drawer "jump/disappear" by owning the <summary> click.
+   We prevent default + stop other handlers, then toggle the <details> ourselves
+   while preserving drawer scrollTop. */
+(function(){
+  function attach(nav){
+    if(nav.__kbwgV4SummaryFix) return;
+    nav.__kbwgV4SummaryFix = true;
+
+    nav.querySelectorAll('details.navGroup > summary').forEach(function(summary){
+      summary.addEventListener('click', function(e){
+        if(!window.matchMedia('(max-width: 920px)').matches) return;
+        // Only inside the injected drawer (or the mobile drawer nav)
+        if(!summary.closest('nav.kbwgDrawerNav, #siteHeader nav.nav')) return;
+
+        var details = summary.parentElement;
+        var drawer = summary.closest('nav.kbwgDrawerNav, #siteHeader nav.nav');
+        var st = drawer ? drawer.scrollTop : 0;
+
+        // Prevent any site.js handlers from doing scrollIntoView / positioning.
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        // Toggle
+        details.open = !details.open;
+
+        // Restore scroll position after layout settles
+        requestAnimationFrame(function(){
+          if(drawer) drawer.scrollTop = st;
+        });
+        setTimeout(function(){
+          if(drawer) drawer.scrollTop = st;
+        }, 0);
+      }, true);
+    });
+  }
+
+  document.querySelectorAll('nav.kbwgDrawerNav, #siteHeader nav.nav').forEach(attach);
+
+  var obs = new MutationObserver(function(muts){
+    muts.forEach(function(m){
+      (m.addedNodes || []).forEach(function(n){
+        if(!n || n.nodeType !== 1) return;
+        if(n.matches && (n.matches('nav.kbwgDrawerNav') || n.matches('#siteHeader nav.nav'))) attach(n);
+        if(n.querySelectorAll) n.querySelectorAll('nav.kbwgDrawerNav, #siteHeader nav.nav').forEach(attach);
+      });
+    });
+  });
+  obs.observe(document.documentElement, {childList:true, subtree:true});
+})();
+</script>
