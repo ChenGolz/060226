@@ -23,8 +23,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -65,8 +65,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -104,8 +104,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -188,8 +188,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -228,8 +228,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -310,8 +310,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -393,8 +393,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 100,
+    "priceMax": 150,
     "offers": [
       {
         "store": "amazon-us",
@@ -432,8 +432,8 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-    "priceMin": 0,
-    "priceMax": 50,
+    "priceMin": 50,
+    "priceMax": 100,
     "offers": [
       {
         "store": "amazon-us",
@@ -441,7 +441,8 @@
         "url": "https://www.amazon.com/dp/B0CRZDCPWR?tag=nocrueltyil-20",
         "asin": "B0CRZDCPWR",
         "currency": "USD",
-        "priceUSD": 35.9
+        "priceUSD": 35.9,
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
