@@ -77,7 +77,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B07L5SN9WX.jpg"
   },
   {
@@ -160,7 +160,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B00U8VO4SK.jpg"
   },
   {
@@ -279,7 +279,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "isDiscounted": true,
+    "isDiscounted": false,
     "image": "assets/img/products/B0FPZ5GSWP.jpg"
   },
   {
