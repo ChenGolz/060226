@@ -2127,28 +2127,8 @@ var btnClear = document.createElement('button');
     ctaN.className = 'bundleCTA';
     ctaN.style.gap = '10px';
     ctaN.style.flexWrap = 'wrap';
-
-    var btnEdit = document.createElement('button');
-    btnEdit.type = 'button';
-    btnEdit.className = 'bundleBtn';
-    btnEdit.textContent = 'החלפה ובחירה';
-    btnEdit.style.background = 'rgba(0,0,0,.08)';
-    btnEdit.style.color = '#111';
-    btnEdit.style.border = '1px solid rgba(0,0,0,.12)';
-    btnEdit.addEventListener('click', function(){ openBundleModal(bundle.id); });
-
-    var btnAllN = document.createElement('button');
-    btnAllN.type = 'button';
-    btnAllN.className = 'bundleBtn';
-    btnAllN.textContent = 'לפתיחת כל הלינקים';
-    btnAllN.addEventListener('click', function(){ openAllLinks(bundle.items || [], bundle.title || 'פתיחת לינקים'); });
-
-    ctaN.appendChild(btnAllN);
-    
     // Amazon: add whole bundle to cart
     ctaN.appendChild(makeAmazonCartButton(bundle));
-ctaN.appendChild(btnEdit);
-
     var footerN = document.createElement('div');
     footerN.className = 'bundleBottom';
     footerN.appendChild(ctaN);
@@ -4031,11 +4011,22 @@ card.addEventListener('click', choose);
     // Then ensure freshness (daily) + detect product.json changes quickly
     await maybeRefresh();
 
-    // Poll for products.json changes (e.g., freeShipOver:49 toggled) and refresh ASAP
-    setInterval(function(){
-      if(_refreshInFlight) return;
-      maybeRefresh();
-    }, META_POLL_MS);
+    // Lightweight refresh (no polling): re-check when the tab becomes active again
+    if(!STATE._refreshWired){
+      STATE._refreshWired = true;
+      var _lastKick = 0;
+      function _kickRefresh(){
+        var now = Date.now();
+        if(now - _lastKick < 5000) return; // debounce
+        _lastKick = now;
+        if(_refreshInFlight) return;
+        maybeRefresh();
+      }
+      window.addEventListener('focus', _kickRefresh);
+      document.addEventListener('visibilitychange', function(){
+        if(document.visibilityState === 'visible') _kickRefresh();
+      });
+    }
   }
 
   // ===== Wire + boot =====
