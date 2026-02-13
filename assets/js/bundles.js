@@ -14,7 +14,7 @@
 (function(){
   'use strict';
 
-  try { window.KBWG_BUNDLES_BUILD = '2026-02-13-v2'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
+  try { window.KBWG_BUNDLES_BUILD = '2026-02-13-v3'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
 
   var PRODUCTS_PATH = 'data/products.json';
   var BRANDS_PATH = 'data/intl-brands.json';
@@ -492,13 +492,16 @@ function eligibleProduct(p){
     var price = Number(o.priceUSD);
     if(!isFinite(price)) return null;
 
+    var cats = getCatsRaw(p);
+
     return {
       _id: p.id || ((p.brand||'') + '::' + (p.name||'')),
       id: (p.id || ((p.brand||'') + '::' + (p.name||''))),
       _brand: p.brand || '',
       _name: p.name || '',
       _image: p.image || '',
-      _categories: getCatsRaw(p),
+      _categories: cats,
+      _cats: cats,
       _isPeta: resolveBadgeFlags(p).isPeta,
       _isLB: resolveBadgeFlags(p).isLB,
       _offer: o,
@@ -1179,6 +1182,7 @@ function eligibleProduct(p){
 
   // ===== App state =====
   var STATE = {
+  var PLACEHOLDER_IMG = "data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><rect width='100%' height='100%' fill='#f2f2f2'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='#999' font-family='Arial' font-size='20'>No image</text></svg>";
     // Load-more pagination (v10)
     bundlesPage: 1,
     bundlesPer: 0,
@@ -2165,7 +2169,7 @@ ctaN.appendChild(btnEdit);
     img.loading = 'lazy';
     img.alt = (p._brand ? (p._brand + ' ') : '') + (p._name || '');
     if(p._image) img.src = p._image;
-    img.onerror = function(){ this.onerror = null; this.src = 'assets/img/products/placeholder.jpg'; };
+    img.onerror = function(){ this.onerror = null; this.src = PLACEHOLDER_IMG; };
 
     var body = document.createElement('div');
 
@@ -2475,7 +2479,7 @@ ctaN.appendChild(btnEdit);
     img.loading = 'lazy';
     img.alt = (p._brand ? (p._brand + ' ') : '') + (p._name || '');
     if(p._image) img.src = p._image;
-    img.onerror = function(){ this.onerror = null; this.src = 'assets/img/products/placeholder.jpg'; };
+    img.onerror = function(){ this.onerror = null; this.src = PLACEHOLDER_IMG; };
 
     var body = document.createElement('div');
 
@@ -3104,7 +3108,7 @@ var img = document.createElement('img');
     img.loading = 'lazy';
     img.alt = (p._brand ? (p._brand + ' ') : '') + (p._name || '');
     if(p._image) img.src = p._image;
-    img.onerror = function(){ this.onerror = null; this.src = 'assets/img/products/placeholder.jpg'; };
+    img.onerror = function(){ this.onerror = null; this.src = PLACEHOLDER_IMG; };
 
     var body = document.createElement('div');
 
@@ -3516,6 +3520,8 @@ card.addEventListener('click', choose);
   function addToCustom(productId){
     var custom = STATE.custom;
     if(!custom) return;
+    if(!Array.isArray(custom.items)) custom.items = [];
+    if(!custom.byCat || typeof custom.byCat !== 'object') custom.byCat = {};
 
     var p = findProductById(productId);
     if(!p) return;
@@ -3707,7 +3713,7 @@ card.addEventListener('click', choose);
 
     // ===== Data loading + caching =====
 
-  var CACHE_VERSION = 'v12';
+  var CACHE_VERSION = 'v13';
   var LS_STATE_KEY = 'kbwg_bundle_state_' + CACHE_VERSION;
   var LS_META_KEY  = 'kbwg_products_meta_' + CACHE_VERSION;
   var LS_BRANDS_KEY = 'kbwg_brands_cache_' + CACHE_VERSION;
@@ -3732,34 +3738,68 @@ card.addEventListener('click', choose);
   }
 
   function metaChanged(a, b){
-    if(!a || !b) return false;
-    if(a.etag && b.etag && a.etag !== b.etag) return true;
-    if(a.lm && b.lm && a.lm !== b.lm) return true;
-    return false;
+    // Compare using the strongest available signal.
+    // If we can't compare (missing headers), assume it *may* have changed so we don't keep stale bundles.
+    if(!a || !b) return true;
+
+    if(a.etag && b.etag) return a.etag !== b.etag;
+    if(a.lm && b.lm) return a.lm !== b.lm;
+
+    if(a.hash && b.hash) return a.hash !== b.hash;
+    if(isFinite(a.len) && isFinite(b.len)) return a.len !== b.len;
+
+    return true;
   }
 
   async function headMeta(path){
     try{
       var res = await fetch(path, { method:'HEAD', cache:'no-cache' });
       if(!res.ok) return null;
-      return {
-        etag: res.headers.get('etag') || '',
-        lm: res.headers.get('last-modified') || ''
-      };
+      var etag = res.headers.get('etag') || '';
+      var lm = res.headers.get('last-modified') || '';
+      // Some hosts (or some CDNs) return no useful validators for static files.
+      // In that case, treat HEAD as "unsupported" so we fall back to a body-hash probe.
+      if(!etag && !lm) return null;
+      return { etag: etag, lm: lm };
     }catch(e){
       return null;
     }
+  }
+
+  function fnv1a32(str){
+    // Fast non-crypto hash for change detection (good enough for static JSON).
+    var h = 2166136261;
+    for(var i=0;i<str.length;i++){
+      h ^= str.charCodeAt(i);
+      // h *= 16777619 (with overflow)
+      h += (h<<1) + (h<<4) + (h<<7) + (h<<8) + (h<<24);
+    }
+    // unsigned hex
+    return ('0000000' + (h>>>0).toString(16)).slice(-8);
   }
 
   async function getJson(path){
     // "no-cache" lets the browser revalidate with ETag/Last-Modified (often a quick 304)
     var res = await fetch(path, { cache:'no-cache' });
     if(!res.ok) throw new Error('HTTP ' + res.status + ' for ' + path);
+
+    var etag = res.headers.get('etag') || '';
+    var lm = res.headers.get('last-modified') || '';
+
+    // Read as text so we can detect empty/truncated bodies and compute a hash.
+    var text = await res.text();
+    if(!text || !text.trim()){
+      throw new Error('Empty response body for ' + path);
+    }
+
     var meta = {
-      etag: res.headers.get('etag') || '',
-      lm: res.headers.get('last-modified') || ''
+      etag: etag,
+      lm: lm,
+      len: text.length,
+      hash: fnv1a32(text)
     };
-    var data = await res.json();
+
+    var data = JSON.parse(text);
     return { data: data, meta: meta };
   }
 
@@ -3774,13 +3814,30 @@ card.addEventListener('click', choose);
         lm: res.headers.get('last-modified') || ''
       };
 
-      if(prevMeta && !metaChanged(meta, prevMeta)){
-        // Try to stop downloading the body (best-effort)
-        try{ res.body && res.body.cancel && res.body.cancel(); }catch(e){}
+      // If we have strong validators and they're unchanged, bail fast.
+      if(prevMeta){
+        if(meta.etag && prevMeta.etag && meta.etag === prevMeta.etag){
+          try{ res.body && res.body.cancel && res.body.cancel(); }catch(e){}
+          return { meta: meta, data: null };
+        }
+        if(meta.lm && prevMeta.lm && meta.lm === prevMeta.lm){
+          try{ res.body && res.body.cancel && res.body.cancel(); }catch(e){}
+          return { meta: meta, data: null };
+        }
+      }
+
+      // Otherwise, read body and compute hash/len (works even when headers are missing).
+      var text = await res.text();
+      if(!text || !text.trim()) return { meta: null, data: null };
+
+      meta.len = text.length;
+      meta.hash = fnv1a32(text);
+
+      if(prevMeta && prevMeta.hash && meta.hash === prevMeta.hash){
         return { meta: meta, data: null };
       }
 
-      var data = await res.json();
+      var data = JSON.parse(text);
       return { meta: meta, data: data };
     }catch(e){
       return { meta: null, data: null };
@@ -3814,8 +3871,9 @@ card.addEventListener('click', choose);
       var p = eligibleProduct(productsRaw[i]);
       if(!p) continue;
       eligible.push(p);
-      for(var j=0;j<p._cats.length;j++){
-        categories[p._cats[j]] = true;
+      var cats = (p._categories || p._cats || []);
+      for(var j=0;j<cats.length;j++){
+        categories[cats[j]] = true;
       }
     }
 
@@ -3893,6 +3951,13 @@ card.addEventListener('click', choose);
     var cachedState = wrap && wrap.state;
     var cachedMeta = wrap && wrap.productsMeta;
     var cachedAt = wrap && wrap.at;
+
+    // If we have cached bundles but no cached meta, we can't reliably detect changes.
+    // Rebuild once to seed meta (incl. body hash).
+    if(cachedState && (!cachedMeta || (!cachedMeta.etag && !cachedMeta.lm && !cachedMeta.hash))){
+      await refreshFromNetwork('no-meta');
+      return;
+    }
 
     // Cheap "did products.json change?" check (HEAD)
     var liveMeta = await headMeta(PRODUCTS_PATH);
