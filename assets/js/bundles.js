@@ -14,7 +14,7 @@
 (function(){
   'use strict';
 
-  try { window.KBWG_BUNDLES_BUILD = '2026-02-12-v9'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
+  try { window.KBWG_BUNDLES_BUILD = '2026-02-13-v2'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
 
   var PRODUCTS_PATH = 'data/products.json';
   var BRANDS_PATH = 'data/intl-brands.json';
@@ -3936,11 +3936,21 @@ card.addEventListener('click', choose);
     if(grid) grid.innerHTML = '<p class="muted">טוען באנדלים…</p>';
 
     ensureTaxNotice();
-    wireCheckoutModal();
 
-    injectControls();
-    wireControls();
-    wireCustomTargetControls();
+    // Optional page-level helpers (defined globally by site.js on some pages).
+    if (typeof window !== 'undefined' && typeof window.wireCheckoutModal === 'function') {
+      try { window.wireCheckoutModal(); } catch (e) { try { console.warn('[KBWG] wireCheckoutModal failed', e); } catch(_) {} }
+    }
+
+    if (typeof window !== 'undefined' && typeof window.injectControls === 'function') {
+      try { window.injectControls(); } catch (e) { try { console.warn('[KBWG] injectControls failed', e); } catch(_) {} }
+    }
+    if (typeof window !== 'undefined' && typeof window.wireControls === 'function') {
+      try { window.wireControls(); } catch (e) { try { console.warn('[KBWG] wireControls failed', e); } catch(_) {} }
+    }
+    if (typeof window !== 'undefined' && typeof window.wireCustomTargetControls === 'function') {
+      try { window.wireCustomTargetControls(); } catch (e) { try { console.warn('[KBWG] wireCustomTargetControls failed', e); } catch(_) {} }
+    }
 
     // Load user-specific custom bundle
     STATE.custom.items = loadCustomFromStorage();
