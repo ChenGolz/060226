@@ -16,7 +16,7 @@
 
   try { window.KBWG_BUNDLES_BUILD = '2026-02-12-v9'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
 
-  var PRODUCTS_PATH = 'data/products.json';
+  var PRODUCTS_PATH = 'data/products.json' + (window.KBWG_PRODUCTS_BUILD ? ('?v=' + encodeURIComponent(window.KBWG_PRODUCTS_BUILD)) : '');
   var BRANDS_PATH = 'data/intl-brands.json';
   var BRAND_INDEX = null;
   var FREE_SHIP_OVER_USD = 49;
@@ -392,7 +392,8 @@ function eligibleProduct(p){
       _name: p.name || '',
       _image: p.image || '',
       _categories: getCatsRaw(p),
-      _isPeta: resolveBadgeFlags(p).isPeta,
+            _cats: getCatsRaw(p),
+_isPeta: resolveBadgeFlags(p).isPeta,
       _isLB: resolveBadgeFlags(p).isLB,
       _offer: o,
       _priceUSD: Math.round(price * 100) / 100,
@@ -3627,7 +3628,12 @@ card.addEventListener('click', choose);
 
   async function headMeta(path){
     try{
-      var res = await fetch(path, { method:'HEAD', cache:'no-cache' });
+      // Some static hosts reject HEAD. Use a tiny GET probe (Range) to read ETag/Last-Modified.
+      var res = await fetch(path, {
+        method:'GET',
+        cache:'no-cache',
+        headers: { 'Range': 'bytes=0-0' }
+      });
       if(!res.ok) return null;
       return {
         etag: res.headers.get('etag') || '',
@@ -3821,13 +3827,20 @@ card.addEventListener('click', choose);
   async function init(){
     var grid = $('#bundleGrid');
     if(grid) grid.innerHTML = '<p class="muted">טוען באנדלים…</p>';
-
     ensureTaxNotice();
-    wireCheckoutModal();
 
-    injectControls();
-    wireControls();
-    wireCustomTargetControls();
+    // Checkout modal (defined on some pages by site.js). Guard so bundles page never crashes if missing.
+    if (typeof window !== "undefined" && typeof window.wireCheckoutModal === "function") {
+      try { window.wireCheckoutModal(); } catch (e) { try { console.warn("[KBWG] wireCheckoutModal failed", e); } catch(_) {} }
+    }
+
+    // Controls UI (may be provided by other scripts on some pages). Guard so bundles page never crashes if missing.
+    if (typeof window !== "undefined") {
+      if (typeof window.injectControls === "function") { try { window.injectControls(); } catch (e) { try { console.warn("[KBWG] injectControls failed", e); } catch(_) {} } }
+      if (typeof window.wireControls === "function") { try { window.wireControls(); } catch (e) { try { console.warn("[KBWG] wireControls failed", e); } catch(_) {} } }
+      if (typeof window.wireCustomTargetControls === "function") { try { window.wireCustomTargetControls(); } catch (e) { try { console.warn("[KBWG] wireCustomTargetControls failed", e); } catch(_) {} } }
+    }
+
 
     // Load user-specific custom bundle
     STATE.custom.items = loadCustomFromStorage();
@@ -3843,26 +3856,11 @@ card.addEventListener('click', choose);
     // Then ensure freshness (daily) + detect product.json changes quickly
     await maybeRefresh();
 
-    // Update instantly on next focus/return to the tab (no constant polling)
-    window.addEventListener('focus', function(){
+    // Poll for products.json changes (e.g., freeShipOver:49 toggled) and refresh ASAP
+    setInterval(function(){
       if(_refreshInFlight) return;
       maybeRefresh();
-    });
-    document.addEventListener('visibilitychange', function(){
-      if(document.visibilityState === 'visible'){
-        if(_refreshInFlight) return;
-        maybeRefresh();
-      }
-    });
-
-    // Lightweight polling: does a cheap HEAD check; full rebuild happens only if products.json changed.
-    if (!window.__kbwgBundleMetaInterval) {
-      window.__kbwgBundleMetaInterval = setInterval(function () {
-        if (document.visibilityState !== 'visible') return;
-        if (_refreshInFlight) return;
-        maybeRefresh();
-      }, META_POLL_MS);
-    }
+    }, META_POLL_MS);
   }
 
   // ===== Wire + boot =====
