@@ -242,6 +242,28 @@ const onlyIsrael = qs("#onlyIsrael");
     if (!text) return "";
 
     const lower = text.toLowerCase();
+
+    // ✅ Sets / kits: keep the full "סט ..." title on the card (e.g. "סט שמפו ומרכך")
+    // This prevents the title from collapsing to just "שמפו" / "מרכך".
+    const hasSetCategory = Array.isArray(p.categories)
+      ? p.categories.some((c) => {
+          const v = String(c || "").toLowerCase().trim();
+          return v === "set" || v === "kit" || v === "bundle";
+        })
+      : false;
+
+    const isSetTitle =
+      hasSetCategory ||
+      /(^|\s)(סט|מארז|ערכת)\b/.test(text) ||
+      /\b(set|kit|bundle)\b/i.test(lower);
+
+    if (isSetTitle) {
+      let prefix = text.split(/[–—\-:|(/]/)[0].trim();
+      prefix = prefix.replace(/\s*\+\s*/g, " ו ").replace(/\s*&\s*/g, " ו ");
+      prefix = prefix.replace(/\s+/g, " ").trim();
+      if (prefix.length >= 4) return prefix;
+    }
+
     const cats = Array.isArray(p.categories)
       ? p.categories.map((c) => String(c).toLowerCase())
       : [];
@@ -721,25 +743,25 @@ function normalizeProduct(p) {
   // Helper: האם המוצר ממוקד/מותאם לגברים (לפי שם ומילות מפתח)
   function isMenTargetedProduct(p) {
     if (!p) return false;
-    // אפשרות לסמן מפורשות בדאטה בעתיד
+
+    // Explicit flag from data/products.json
     if (p.isMen) return true;
 
-    // 1) קטגוריות/טייפים שמסומנים לגבר
+    // Categories / type keys
     const cat = String(p.category || "").toLowerCase();
     const typeKey = String(p.productTypeKey || "").toLowerCase();
-    if (cat === "mens-care" || typeKey.startsWith("men-") || typeKey.includes("mens")) return true;
+    const catsText = Array.isArray(p.categories) ? p.categories.map((c) => String(c).toLowerCase()).join(" ") : "";
 
-    // 2) שם מוצר
-    const name = p.name || "";
+    if (cat === "mens-care" || typeKey.startsWith("men-") || typeKey.includes("mens")) return true;
+    if (/\bmens-care\b/.test(catsText) || /\bmen\b/.test(catsText) || /\bmens\b/.test(catsText) || /men's grooming/.test(catsText)) return true;
+
+    // Name (men / גברים etc.) — NOTE: word-boundary avoids matching "women"
+    const name = String(p.name || "");
     const lower = name.toLowerCase();
     const hebMenRegex = /גבר|גברים|לגבר|לגברים/;
-    const enMenRegex = /(men's|for men|for him|mens|pour homme|groom)/i;
-    if (hebMenRegex.test(name) || enMenRegex.test(lower)) return true;
+    const enMenRegex = /(\bmen\b|\bmens\b|men's|for men|for him|pour homme|groom)/i;
 
-    // 3) שם מותג (למשל Every Man Jack)
-    const brand = String(p.brand || "").toLowerCase();
-    const brandMenRegex = /(\bmen\b|\bman\b|mens|groom|shave|beard)/i;
-    return brandMenRegex.test(brand);
+    return hebMenRegex.test(name) || enMenRegex.test(lower);
   }
 
   function getTypeGroupLabel(p) {
