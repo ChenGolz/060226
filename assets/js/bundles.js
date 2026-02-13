@@ -14,7 +14,7 @@
 (function(){
   'use strict';
 
-  try { window.KBWG_BUNDLES_BUILD = '2026-02-13-v2'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
+  try { window.KBWG_BUNDLES_BUILD = '2026-02-12-v9'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
 
   var PRODUCTS_PATH = 'data/products.json';
   var BRANDS_PATH = 'data/intl-brands.json';
@@ -55,7 +55,114 @@
   }
 
 
-  // שימו לב: מעל סך של $150 ייתכנו מיסים/עמלות יבוא (ישראל)
+  
+
+  // ===== Amazon "Add to Cart" bundle links =====
+  // Note: client-side "add to cart" can only work by redirecting the user to Amazon with items prefilled.
+  // We build a /gp/aws/cart/add.html link using ASINs parsed from the offer URLs.
+  function parseAmazonAsin(url){
+    var raw = String(url || '').trim();
+    if(!raw) return null;
+    try{
+      var u = new URL(raw, location.href);
+      var host = String(u.hostname || '').toLowerCase();
+      if(host.indexOf('amazon.') === -1) return null;
+
+      var path = String(u.pathname || '');
+      var m =
+        path.match(/\/dp\/([A-Z0-9]{10})(?:[\/?]|$)/i) ||
+        path.match(/\/gp\/product\/([A-Z0-9]{10})(?:[\/?]|$)/i) ||
+        path.match(/\/product\/([A-Z0-9]{10})(?:[\/?]|$)/i);
+      if(m && m[1]) return String(m[1]).toUpperCase();
+
+      // common query params
+      var q = u.searchParams.get('asin') || u.searchParams.get('ASIN') || u.searchParams.get('pd_rd_i');
+      if(q && /^[A-Z0-9]{10}$/i.test(q)) return String(q).toUpperCase();
+      return null;
+    }catch(e){
+      // best-effort parse for non-URL strings
+      var mm = raw.match(/\/dp\/([A-Z0-9]{10})(?:[\/?]|$)/i) || raw.match(/\/gp\/product\/([A-Z0-9]{10})(?:[\/?]|$)/i);
+      return (mm && mm[1]) ? String(mm[1]).toUpperCase() : null;
+    }
+  }
+
+  function amazonOriginFromUrl(url){
+    try{
+      var u = new URL(String(url||''), location.href);
+      var host = String(u.hostname || '').toLowerCase();
+      if(host.indexOf('amazon.') === -1) return 'https://www.amazon.com';
+      // normalize common subdomains (smile, m, www)
+      host = host.replace(/^smile\./,'').replace(/^m\./,'').replace(/^www\./,'');
+      return 'https://www.' + host;
+    }catch(e){
+      return 'https://www.amazon.com';
+    }
+  }
+
+  function buildAmazonAddToCartUrl(items){
+    var list = Array.isArray(items) ? items : [];
+    if(!list.length) return null;
+
+    // gather ASINs from offer urls
+    var asins = [];
+    var origin = null;
+
+    for(var i=0;i<list.length;i++){
+      var p = list[i];
+      var offerUrl = p && p._offer && p._offer.url;
+      if(!offerUrl) continue;
+      if(!origin) origin = amazonOriginFromUrl(offerUrl);
+      var asin = parseAmazonAsin(offerUrl);
+      if(asin) asins.push(asin);
+    }
+
+    // Amazon cart links need at least 1 ASIN
+    if(!asins.length) return null;
+
+    // cap to avoid ridiculously long URLs
+    var cap = Math.min(asins.length, 25);
+
+    var u = new URL(origin + '/gp/aws/cart/add.html');
+
+    // Affiliate attribution: set both "tag" and "AssociateTag" (some setups use one or the other)
+    if(AMAZON_TAG){
+      u.searchParams.set('tag', AMAZON_TAG);
+      u.searchParams.set('AssociateTag', AMAZON_TAG);
+    }
+
+    for(var k=0;k<cap;k++){
+      u.searchParams.set('ASIN.' + (k+1), asins[k]);
+      u.searchParams.set('Quantity.' + (k+1), '1');
+    }
+    return u.toString();
+  }
+
+  function makeAmazonCartButton(bundle){
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'bundleBtn';
+    btn.textContent = 'הוספה לעגלת אמזון';
+    btn.style.background = '#FF9900';
+    btn.style.border = '1px solid rgba(0,0,0,.08)';
+    btn.style.color = '#111';
+
+    var url = buildAmazonAddToCartUrl((bundle && bundle.items) ? bundle.items : []);
+    if(!url){
+      btn.disabled = true;
+      btn.style.opacity = '0.55';
+      btn.title = 'לא נמצא ASIN בלינקים של אמזון עבור הבאנדל הזה';
+      return btn;
+    }
+
+    btn.addEventListener('click', function(){
+      // open Amazon cart link in a new tab
+      try{ window.open(url, '_blank', 'noopener'); }catch(e){ location.href = url; }
+    });
+
+    return btn;
+  }
+
+// שימו לב: מעל סך של $150 ייתכנו מיסים/עמלות יבוא (ישראל)
   var TAX_THRESHOLD_USD = 150;
 
   var BUNDLE_MIN = FREE_SHIP_OVER_USD;   // 49 (free shipping threshold)
@@ -1930,7 +2037,10 @@ function solveSlots(slotFns, themePred){
 
       cta.appendChild(btnAll);
 
-      var btnClear = document.createElement('button');
+      
+      // Amazon: add whole bundle to cart
+      cta.appendChild(makeAmazonCartButton(bundle));
+var btnClear = document.createElement('button');
       btnClear.type = 'button';
       btnClear.className = 'bundleBtn';
       btnClear.textContent = 'נקה חבילה';
@@ -2030,7 +2140,10 @@ function solveSlots(slotFns, themePred){
     btnAllN.addEventListener('click', function(){ openAllLinks(bundle.items || [], bundle.title || 'פתיחת לינקים'); });
 
     ctaN.appendChild(btnAllN);
-    ctaN.appendChild(btnEdit);
+    
+    // Amazon: add whole bundle to cart
+    ctaN.appendChild(makeAmazonCartButton(bundle));
+ctaN.appendChild(btnEdit);
 
     var footerN = document.createElement('div');
     footerN.className = 'bundleBottom';
@@ -3639,45 +3752,15 @@ card.addEventListener('click', choose);
   }
 
   async function getJson(path){
-    // Try a normal revalidation request first
+    // "no-cache" lets the browser revalidate with ETag/Last-Modified (often a quick 304)
     var res = await fetch(path, { cache:'no-cache' });
-
-    // Some hosts/CDNs can occasionally return an empty body; retry once with a cache-buster.
-    if(res && res.ok){
-      var meta1 = {
-        etag: res.headers.get('etag') || '',
-        lm: res.headers.get('last-modified') || ''
-      };
-      var text1 = await res.text();
-      if(text1 && text1.trim()){
-        try{
-          return { data: JSON.parse(text1), meta: meta1 };
-        }catch(e){
-          throw new Error('Invalid JSON for ' + path + ': ' + (e && e.message ? e.message : e));
-        }
-      }
-    }
-
-    // Retry (bust caches) to avoid empty/truncated responses.
-    var cb = (path.indexOf('?') === -1 ? '?' : '&') + 'cb=' + Date.now();
-    var res2 = await fetch(path + cb, { cache:'reload' });
-    if(!res2.ok) throw new Error('HTTP ' + res2.status + ' for ' + path);
-
+    if(!res.ok) throw new Error('HTTP ' + res.status + ' for ' + path);
     var meta = {
-      etag: res2.headers.get('etag') || '',
-      lm: res2.headers.get('last-modified') || ''
+      etag: res.headers.get('etag') || '',
+      lm: res.headers.get('last-modified') || ''
     };
-
-    var text = await res2.text();
-    if(!text || !text.trim()){
-      throw new Error('Empty response for ' + path);
-    }
-
-    try{
-      return { data: JSON.parse(text), meta: meta };
-    }catch(e){
-      throw new Error('Invalid JSON for ' + path + ': ' + (e && e.message ? e.message : e));
-    }
+    var data = await res.json();
+    return { data: data, meta: meta };
   }
 
   // Fallback when HEAD isn't supported: GET the headers; only parse JSON if changed.
@@ -3697,14 +3780,8 @@ card.addEventListener('click', choose);
         return { meta: meta, data: null };
       }
 
-      var text = await res.text();
-      if(!text || !text.trim()) return { meta: meta, data: null };
-
-      try{
-        return { meta: meta, data: JSON.parse(text) };
-      }catch(e){
-        return { meta: meta, data: null };
-      }
+      var data = await res.json();
+      return { meta: meta, data: data };
     }catch(e){
       return { meta: null, data: null };
     }
@@ -3858,14 +3935,14 @@ card.addEventListener('click', choose);
     var grid = $('#bundleGrid');
     if(grid) grid.innerHTML = '<p class="muted">טוען באנדלים…</p>';
 
-        // Optional page-level helpers (defined on some pages by site.js). Guard so bundles page never crashes.
-    if(typeof window !== 'undefined' && typeof window.ensureTaxNotice === 'function'){ try{ window.ensureTaxNotice(); }catch(e){ warn('[bundles] ensureTaxNotice failed', e); } }
-    if(typeof window !== 'undefined' && typeof window.wireCheckoutModal === 'function'){ try{ window.wireCheckoutModal(); }catch(e){ warn('[bundles] wireCheckoutModal failed', e); } }
+    ensureTaxNotice();
+    wireCheckoutModal();
 
-    if(typeof window !== 'undefined' && typeof window.injectControls === 'function'){ try{ window.injectControls(); }catch(e){ warn('[bundles] injectControls failed', e); } }
-    if(typeof window !== 'undefined' && typeof window.wireControls === 'function'){ try{ window.wireControls(); }catch(e){ warn('[bundles] wireControls failed', e); } }
-    if(typeof window !== 'undefined' && typeof window.wireCustomTargetControls === 'function'){ try{ window.wireCustomTargetControls(); }catch(e){ warn('[bundles] wireCustomTargetControls failed', e); } }
-// Load user-specific custom bundle
+    injectControls();
+    wireControls();
+    wireCustomTargetControls();
+
+    // Load user-specific custom bundle
     STATE.custom.items = loadCustomFromStorage();
     STATE.custom.targetMin = BUNDLE_MIN;
     STATE.custom.targetMax = BUNDLE_MAX;
