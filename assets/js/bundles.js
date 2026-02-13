@@ -3855,7 +3855,14 @@ card.addEventListener('click', choose);
       }
     });
 
-    }, META_POLL_MS);
+    // Lightweight polling: does a cheap HEAD check; full rebuild happens only if products.json changed.
+    if (!window.__kbwgBundleMetaInterval) {
+      window.__kbwgBundleMetaInterval = setInterval(function () {
+        if (document.visibilityState !== 'visible') return;
+        if (_refreshInFlight) return;
+        maybeRefresh();
+      }, META_POLL_MS);
+    }
   }
 
   // ===== Wire + boot =====
