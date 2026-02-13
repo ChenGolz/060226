@@ -1181,8 +1181,8 @@ function eligibleProduct(p){
   }
 
   // ===== App state =====
-  var STATE = {
   var PLACEHOLDER_IMG = "data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><rect width='100%' height='100%' fill='#f2f2f2'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='#999' font-family='Arial' font-size='20'>No image</text></svg>";
+  var STATE = {
     // Load-more pagination (v10)
     bundlesPage: 1,
     bundlesPer: 0,
