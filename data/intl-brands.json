@@ -45,7 +45,7 @@
     "name": "Rahua",
     "website": "https://rahua.com/",
     "amazonUs": "https://amzn.to/3MrKIoW",
-    "amazonUk": "",
+    "amazonFr": "https://amzn.to/40c1agc",
     "categories": [
       "haircare",
       "shampoo",
@@ -69,6 +69,7 @@
     "website": "https://nooni.com/",
     "amazonUs": "https://amzn.to/3NWW1pG",
     "amazonUk": "https://amzn.to/4a1XW4Z",
+    "amazonFr": "https://amzn.to/4kHhQ96",
     "categories": [
       "skincare",
       "cleansers",
@@ -238,7 +239,7 @@
     "name": "RCMA",
     "website": "https://rcmamakeup.com/",
     "amazonUs": "https://amzn.to/3OvVUBv",
-    "amazonUk": "",
+    "amazonFr": "https://amzn.to/4qxLPl6",
     "categories": [
       "makeup",
       "foundation",
@@ -390,7 +391,7 @@
     "name": "Naturally Serious",
     "website": "https://naturallyserious.com/",
     "amazonUs": "https://amzn.to/3ZPLH5p",
-    "amazonUk": "",
+    "amazonFr": "https://amzn.to/3MHSU4B",
     "categories": [
       "skincare",
       "cleansers",
@@ -1759,6 +1760,7 @@
     "website": "https://skin1004.com/",
     "amazonUs": "https://amzn.to/4k728Uv",
     "amazonCa": "https://amzn.to/3MqmLOK",
+    "amazonFr": "https://amzn.to/4apnPKU",
     "categories": [
       "cleansers",
       "toners",
@@ -1818,6 +1820,7 @@
     "website": "https://starface.world/",
     "amazonUs": "https://amzn.to/4qEOc6t",
     "amazonUk": "https://amzn.to/4qUhuyf",
+    "amazonFr": "https://amzn.to/4aKUfAO",
     "categories": [
       "acne patches",
       "acne care",
@@ -3023,6 +3026,7 @@
     "website": "https://marianila.com/",
     "amazonUs": "https://amzn.to/4pYIoU3",
     "amazonCa": "https://amzn.to/3M0ABrf",
+    "amazonFr": "https://amzn.to/409mQcU",
     "categories": [
       "hair",
       "shampoo",
@@ -3199,6 +3203,7 @@
     "amazonUs": "https://amzn.to/4qKhn8f",
     "amazonUk": "https://amzn.to/4bYPJjb",
     "amazonCa": "https://amzn.to/3Mg43ti",
+    "amazonFr": "https://amzn.to/4qENCoz",
     "categories": [
       "home",
       "cleaning",
@@ -3309,6 +3314,7 @@
     "amazonUs": "https://amzn.to/4rli3AX",
     "amazonUk": "https://amzn.to/4qNP351",
     "amazonCa": "https://amzn.to/4typTJp",
+    "amazonFr": "https://amzn.to/4bT2ewW",
     "categories": [
       "lips",
       "skincare",
@@ -3709,6 +3715,7 @@
     "website": "https://acure.com/",
     "amazonUs": "https://amzn.to/4k30nra",
     "amazonUk": "https://amzn.to/3LwYuX8",
+     "amazonFr": "https://amzn.to/4bSXB5Q",
     "categories": [
       "skincare",
       "hair",
@@ -3797,6 +3804,7 @@
     "website": "https://attitudeliving.com/",
     "amazonUs": "https://amzn.to/3Lq6kSl",
     "amazonUk": "https://amzn.to/3YIVrxZ",
+    "amazonFr": "https://amzn.to/4crKx7J",
     "categories": [
       "home",
       "laundry",
@@ -3840,6 +3848,7 @@
     "website": "https://www.tanologist.com/",
     "amazonUs": "https://amzn.to/3MbrUKz",
     "amazonUk": "https://amzn.to/4q9fctV",
+    "amazonFr": "https://amzn.to/4tzSVbu",
     "categories": [
       "self tan",
       "tanning drops",
@@ -3859,6 +3868,7 @@
     "website": "https://www.thehumble.co/",
     "amazonUs": "https://amzn.to/3NB83Fb",
     "amazonUk": "https://amzn.to/3ZDW9gg",
+    "amazonFr": "https://amzn.to/4qxZE2U",
     "categories": [
       "oral care",
       "toothpaste",
@@ -4043,6 +4053,7 @@
     "website": "https://www.herocosmetics.us/",
     "amazonUs": "https://amzn.to/4tl6Vpc",
     "amazonUk": "https://amzn.to/3MemOgG",
+    "amazonFr": "https://amzn.to/4rS4QzO",
     "categories": [
       "acne patches",
       "acne care",
@@ -4064,6 +4075,7 @@
     "website": "https://theordinary.com/",
     "amazonUs": "https://amzn.to/4aezHiB",
     "amazonUk": "https://amzn.to/3MjioF8",
+    "amazonFr": "https://amzn.to/3OG6HZW",
     "categories": [
       "cleansers",
       "toners",
@@ -4108,7 +4120,7 @@
   {
     "name": "Tan-Luxe",
     "website": "https://tan-luxe.com/",
-    "amazonUs": "",
+    "amazonFr": "https://amzn.to/3OaVcK4",
     "amazonUk": "https://amzn.to/3NZ7AwD",
     "categories": [
       "self tan",
@@ -4147,6 +4159,7 @@
     "website": "https://olaplex.com/",
     "amazonUs": "https://amzn.to/3NRaFPk",
     "amazonUk": "https://amzn.to/3ZgiJLW",
+    "amazonFr": "https://amzn.to/4kvVuqO",
     "categories": [
       "hair",
       "shampoo",
@@ -4192,6 +4205,7 @@
     "website": "https://schmidts.com/",
     "amazonUs": "https://amzn.to/3ZXNO7b",
     "amazonUk": "https://amzn.to/46xoLeS",
+        "amazonFr": "https://amzn.to/4rpGTzV",
     "categories": [
       "deodorant",
       "body",
@@ -4300,6 +4314,7 @@
     "website": "https://realtechniques.com/",
     "amazonUs": "https://amzn.to/3O5DKq7",
     "amazonUk": "https://amzn.to/4ahjOYK",
+    "amazonFr": "https://amzn.to/3O5VySf",
     "categories": [
       "tools",
       "makeup",
@@ -4334,7 +4349,7 @@
   {
     "name": "Umberto Giannini",
     "website": "https://umbertogiannini.com/",
-    "amazonUs": "",
+    "amazonFr": "https://amzn.to/3OG62Ys",
     "amazonUk": "https://amzn.to/4bEhHAH",
     "categories": [
       "hair",
@@ -4573,6 +4588,7 @@
     "website": "https://www.biolage.com/",
     "amazonUs": "https://amzn.to/46l9wWq",
     "amazonUk": "https://amzn.to/4tzz8ZQ",
+    "amazonFr": "https://amzn.to/4tzRkm0",
     "categories": [
       "hair",
       "shampoo",
