@@ -2,7 +2,7 @@
 
 (function () {
   // Build marker: use this to verify you loaded the latest JS
-  window.KBWG_BUILD = window.KBWG_BUILD || '2026-02-11-v1';
+  window.KBWG_BUILD = window.KBWG_BUILD || '2026-02-14-v2';
   try { console.info('[KBWG] build', window.KBWG_BUILD); } catch(e) {}
     
 function kbwgInjectFaqSchema(){
@@ -283,6 +283,18 @@ function kbwgSetActiveNav() {
     const open = () => applyDrawerState(true);
     const close = () => applyDrawerState(false);
     const toggle = () => (isOpen ? close() : open());
+
+
+    // Drawer close "X" button (inside the mobile nav)
+    const closeBtn = nav.querySelector('.navDrawerClose');
+    if (closeBtn && !closeBtn.__kbwgBoundClose) {
+      closeBtn.__kbwgBoundClose = true;
+      closeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        close();
+      });
+    }
 
     // Click handlers
     btn.addEventListener('click', (e) => {

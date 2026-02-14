@@ -14,7 +14,7 @@
 (function(){
   'use strict';
 
-  try { window.KBWG_BUNDLES_BUILD = '2026-02-13-v4'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
+  try { window.KBWG_BUNDLES_BUILD = '2026-02-14-v5'; console.info('[KBWG] Bundles build', window.KBWG_BUNDLES_BUILD); } catch(e) {}
 
   var PRODUCTS_PATH = 'data/products.json';
   var BRANDS_PATH = 'data/intl-brands.json';
@@ -1642,6 +1642,7 @@ function buildBundlesFromPool(allEligible){
       cta.style.gap = '10px';
       cta.style.flexWrap = 'wrap';
 
+      
       var btnBuild = document.createElement('button');
       btnBuild.type = 'button';
       btnBuild.className = 'bundleBtn';
@@ -1660,10 +1661,25 @@ function buildBundlesFromPool(allEligible){
         clearCustomBundle();
       });
 
-      cta.appendChild(btnClear);
-      cta.appendChild(btnBuild);
+      // Add-to-cart CTA directly on the custom bundle card (not only inside the modal)
+      var btnCart = document.createElement('button');
+      btnCart.type = 'button';
+      btnCart.className = 'bundleBtn';
+      btnCart.textContent = 'הוספה לעגלת אמזון';
+      btnCart.style.background = 'rgba(0,0,0,.08)';
+      btnCart.style.color = '#111';
+      btnCart.style.border = '1px solid rgba(0,0,0,.12)';
+      btnCart.disabled = !(bundle.items && bundle.items.length);
+      btnCart.style.opacity = btnCart.disabled ? '0.55' : '';
+      btnCart.addEventListener('click', function(){
+        if(btnCart.disabled) return;
+        openAmazonCart(bundle.items || []);
+      });
 
-      var footer = document.createElement('div');
+      cta.appendChild(btnCart);
+      cta.appendChild(btnBuild);
+      cta.appendChild(btnClear);
+var footer = document.createElement('div');
       footer.className = 'bundleBottom';
       footer.appendChild(cta);
 
