@@ -134,6 +134,21 @@ function kbwgSetActiveNav() {
         if (!nav.__kbwgOriginalNext) nav.__kbwgOriginalNext = originalNext;
         document.body.appendChild(nav);
         nav.classList.add('kbwgDrawerNav');
+
+    // KBWG_S9_SCROLL_FIX: when opening a bottom-most menu group on small screens,
+    // ensure the toggled <summary> stays in view (Galaxy S9 / small-height devices).
+    try {
+      nav.querySelectorAll('details.navGroup').forEach((d) => {
+        d.addEventListener('toggle', () => {
+          if (!d.open) return;
+          const s = d.querySelector('summary');
+          if (!s) return;
+          // 'nearest' avoids big jumps while preventing "disappearing" items.
+          s.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+        });
+      });
+    } catch (e) {}
+
       }
     };
 
