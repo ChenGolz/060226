@@ -1,28 +1,10 @@
-/* Global font: Gveret Levin (גברת לוין)
-   Put the webfont files in: assets/fonts/
-   Update the filenames/paths here if yours are different.
+/* Global font: Assistant (Google Fonts)
+   Loaded via <link> in each page head.
+   This CSS uses --he-font as the site-wide Hebrew UI font.
 */
-/*
-  Font: Gveret Levin (גברת לוין)
-  By: AlefAlefAlef — License: SIL Open Font License 1.1
-  Keep the OFL license text in your project if you serve the font files.
-*/
-/*
-  Font: Gveret Levin (גברת לוין)
-  By: AlefAlefAlef — License: SIL Open Font License 1.1
-  Put the webfont file here:
-  /assets/fonts/Gveret Levin AlefAlefAlef Regular.woff2
-*/
-@font-face{
-  font-family: "Gveret Levin";
-  src: url("assets/fonts/Gveret%20Levin-AlefAlefAlef%20Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 /* KBWG – full standalone styling (RTL-first) */
 :root{
-  --he-font: "Gveret Levin", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --he-font: "Assistant", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 550;
@@ -409,7 +391,6 @@ h3{ font-size: 18px; margin:0 0 8px; }
   text-align:center;
 }
 
-
 /* Layout grids */
 .grid{ display:grid; gap:14px; grid-template-columns: repeat(3, minmax(0,1fr)); }
 .grid.two{ grid-template-columns: repeat(2, minmax(0,1fr)); }
@@ -569,7 +550,6 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .offerMeta{ font-size: 12px; font-weight: var(--fw-semibold); color: var(--muted); }
 .offerStore{ font-size: 14px; font-weight: var(--fw-bold); color: rgba(15,23,42,.95); }
 
-
 /* ------------------------------------------------------------------
    מוצרים page (v3) – compatibility styles
    Fixes: mixed checkboxes (RTL), missing pill styling, cleaner spacing
@@ -649,8 +629,6 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   border-color: rgba(42,91,154,.25);
 }
 
-
-
 .price-range-row{
   margin-top:10px;
   display:flex;
@@ -689,7 +667,6 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
   font-size:12px;
   color:var(--muted,#64748b);
 }
-
 
 .price-sep{
   font-size: 14px;
@@ -839,7 +816,6 @@ html[dir="rtl"] .check-pill{ flex-direction: row; }
 .eventDesc{ color: rgba(30,45,70,.78); font-weight: var(--fw-semibold); font-size: 13px; line-height: 1.45; }
 .noEvents{ padding: 14px; color: rgba(30,45,70,.65); font-weight: var(--fw-semibold); font-size: 13px; }
 
-
 /* --- v3 polish & fixes --- */
 img{max-width:100%;height:auto}
 
@@ -884,11 +860,9 @@ img{max-width:100%;height:auto}
   font-size: 12px;
 }
 
-
 /* Botanical additions */
 .steps{ margin:0; padding-inline-start: 20px; }
 .steps li{ margin: 10px 0; font-weight: var(--fw-medium); color: rgba(17,24,39,.78); }
-
 
 /* --- Quote color pills (Botanical Calm + Blue) --- */
 .quotePill{
@@ -913,8 +887,6 @@ img{max-width:100%;height:auto}
 .buyChip{ display:inline-flex; align-items:center; padding:6px 10px; border-radius: 999px;
   border: 1px solid rgba(17,24,39,.12); background: rgba(255,255,255,.7); font-weight: var(--fw-semibold); font-size: 12px; }
 
-
-
 /* --- Layout variation: flip hero order on some pages --- */
 .heroInner.flip .heroCopy { order: 2; }
 .heroInner.flip .heroMedia { order: 1; }
@@ -928,8 +900,6 @@ img{max-width:100%;height:auto}
   aspect-ratio: 16 / 10;
   max-height: 380px;
 }
-
-
 
 /* --- v6: Mixed layouts (more decorative) --- */
 
@@ -1045,8 +1015,6 @@ body::after{
   backdrop-filter: blur(6px);
 }
 
-
-
 /* --- Community gallery --- */
 .communityGrid{
   display:grid;
@@ -1105,7 +1073,6 @@ body::after{
 .skipLink:focus{
   transform: translateY(0);
 }
-
 
 /* --- Unified products-style theme overrides (v2) --- */
 :root{
@@ -1192,12 +1159,10 @@ body{font-family: var(--he-font);}
   .hero.product-hero .badgeRow{justify-content:flex-start;}
 }
 
-
 .heroSmall{padding:18px 0 20px;}
 
 /* ✅ FIX: was global .heroInner{display:flex...} and broke other pages */
 .hero.product-hero .heroInner{position:relative; z-index:2;}
-
 
 /* Contrast fixes (v17) — ensure hero/header text is always readable */
 .hero.product-hero .heroCopy,
@@ -1231,7 +1196,6 @@ body{font-family: var(--he-font);}
   outline: 2px solid rgba(255,255,255,.55);
   outline-offset: 2px;
 }
-
 
 .center-text{text-align:center;}
 .center-text h1{margin:0 0 6px;font-size:1.55rem;line-height:1.06;}
@@ -1291,8 +1255,6 @@ body{font-family: var(--he-font);}
 .footerQuotes{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:10px}
 .quotePill{background:rgba(42,91,154,.10);border:1px solid rgba(42,91,154,.15);border-radius:999px;padding:8px 14px;font-weight:var(--fw-semibold);color:#0f172a;}
 
-
-
 /* ===========================
    Product grid: side-by-side
    =========================== */
@@ -1343,8 +1305,6 @@ body{font-family: var(--he-font);}
   .center-text h1, .hero.heroCompact h1{ font-size:1.55rem; }
   .center-text p{ font-size:0.98rem; line-height:1.22; }
 }
-
-
 
 /* ✅ FIX: Calendar hero decor photo behind hero card (prevents title being hidden) */
 .hero.heroCompact .decorPhoto{ z-index: 0; }
@@ -1544,7 +1504,6 @@ body{ overflow-x: hidden; }
     pointer-events: auto;
   }
 
-
   /* Drawer header (logo + close) */
   .navDrawerHeader{
     position: sticky;
@@ -1627,7 +1586,6 @@ body{ overflow-x: hidden; }
   body.menuOpen{ overflow: hidden; }
 }
 
-
 /* מוצרים filters: force clean stacking on phones */
 @media (max-width: 820px){
   .filters-actions{
@@ -1640,7 +1598,6 @@ body{ overflow-x: hidden; }
   .toggles-row{ justify-content: center; }
   .status-bar{ justify-content: center; }
 }
-
 
 /* Advanced filters (details) */
 .more-filters{
@@ -1734,8 +1691,6 @@ body{ overflow-x: hidden; }
   }
   .decorTL, .decorTR{ top: -56px; }
 }
-
-
 
 /* =========================================================
    מוצרים page layout (desktop sidebar + mobile stack)
@@ -1837,7 +1792,6 @@ body{ overflow-x: hidden; }
   .pMedia{ min-height: 170px; }
 }
 
-
 /* =========================================================
    מוצרים page quick polish (2025-12-31)
    - Smaller text on cards
@@ -1933,8 +1887,6 @@ body{ overflow-x: hidden; }
 .page-products .productsResults .productCard{transition:transform .18s, box-shadow .18s, border-color .18s;}
 .page-products .productsResults .productCard:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(0,0,0,.10);border-color:rgba(42,91,154,.28);}
 .page-products .productsResults .pMedia{background:linear-gradient(180deg,rgba(42,91,154,.10),rgba(255,255,255,.65));}
-
-
 
 /* === New product-card layout (like single tall card design) === */
 .page-products .productCard {
@@ -2033,7 +1985,6 @@ body{ overflow-x: hidden; }
   text-align: center;
 }
 
-
 /* badges row (Leaping Bunny, Vegan, etc.) */
 .page-products .productCard .tags {
   display: flex;
@@ -2044,7 +1995,6 @@ body{ overflow-x: hidden; }
   flex-wrap: nowrap;       /* try to keep all tags on one line */
   overflow-x: auto;        /* allow horizontal scroll if really narrow */
 }
-
 
 /* offer block */
 .page-products .productCard .offerList {
@@ -2081,8 +2031,6 @@ body{ overflow-x: hidden; }
   border-color: rgba(37, 99, 235, 0.25);
   background: #e5edff;
 }
-
-
 
 /* Product grid columns: 3 on desktop, 2 on smaller screens, 4 on very wide */
 .page-products .product-grid{
@@ -2136,7 +2084,6 @@ body{ overflow-x: hidden; }
   margin: 0;
 }
 
-
 /* מוצרים page: collapsible Amazon info heading */
 .amazon-short-intro .amazon-toggle {
   background: none;
@@ -2153,8 +2100,6 @@ body{ overflow-x: hidden; }
 .amazon-short-intro .amazon-toggle .icon {
   font-size: 0.85em;
 }
-
-
 
 /* Recommended brands – filters & card polish */
 .brandsControls{
@@ -2318,7 +2263,6 @@ body{ overflow-x: hidden; }
   font-weight:var(--fw-semibold);
   font-size:.8rem;
 }
-
 
 /* Recommended brands sections (accordion by category) */
 .cardsGrid--brands {
@@ -2561,11 +2505,9 @@ body{ overflow-x: hidden; }
   margin-top: auto !important;
 }
 
-
 /* Keep hero content above decorative photo */
 .hero.heroCompact .heroShell{ position:relative; z-index:2; }
 .hero.heroCompact .heroInner{ position:relative; z-index:2; }
-
 
 /* Hero image: place next to text (left side), not behind */
 .hero.product-hero.heroSmall{
@@ -2603,10 +2545,8 @@ body{ overflow-x: hidden; }
   }
 }
 
-
 /* Ensure hero image never overlaps copy */
 .hero.product-hero > .decorPhoto{ box-shadow: 0 12px 28px rgba(0,0,0,.12); background: rgba(255,255,255,.22); backdrop-filter: blur(2px); }
-
 
 /* =========================
    ✅ FIX: Product hero image beside text (RTL-safe)
@@ -2919,7 +2859,6 @@ body{ overflow-x: hidden; }
   }
 }
 
-
 /* === v38: Recommended Brands hero - make mobile header compact so content is visible === */
 @media (max-width: 640px){
   .page-recommended-brands .hero.product-hero.heroSmall{
@@ -2965,7 +2904,6 @@ body{ overflow-x: hidden; }
   }
 }
 
-
 /* Compact hero text on very small screens (show content sooner) */
 @media (max-width: 520px){
   .hero.product-hero .heroCopy p{
@@ -2975,8 +2913,6 @@ body{ overflow-x: hidden; }
     overflow: hidden;
   }
 }
-
-
 
 /* Mobile: collapse filter/search panels to save space */
 @media (max-width: 768px){
@@ -3018,7 +2954,6 @@ body{ overflow-x: hidden; }
     transition: max-height .22s ease, padding .22s ease, margin .22s ease;
   }
 }
-
 
 /* =========================================================
    v41: Small-phone polish (Galaxy S9 / ~360px)
@@ -3121,7 +3056,6 @@ body{ padding-bottom: env(safe-area-inset-bottom, 0px); }
   h2{ font-size: 24px; }
 }
 
-
 /* =========================================================
    v43: Site-wide responsive cleanup (2026-01)
    Goals:
@@ -3175,7 +3109,6 @@ img,svg,video,canvas{ max-width:100%; height:auto; }
   .navToggle{ padding: 8px 10px !important; }
 }
 
-
 /* ---------- Heroes: shorter, consistent, mobile-first ---------- */
 
 /* heroSmall was historically used to add extra vertical padding/min-height.
@@ -3221,19 +3154,16 @@ img,svg,video,canvas{ max-width:100%; height:auto; }
   .hero.product-hero .badgeRow{ gap: 8px !important; }
 }
 
-
 /* ---------- Tables: always usable on phones ---------- */
 table{ width: 100%; border-collapse: collapse; }
 @media (max-width: 640px){
   .compareTable{ display:block; overflow-x:auto; -webkit-overflow-scrolling: touch; }
 }
 
-
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce){
   *{ scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
-
 
 /* =========================================================
    v44: Compact density (reduce scrolling)
@@ -3310,14 +3240,11 @@ table{ width: 100%; border-collapse: collapse; }
   .page-recommended-brands .brandCard{ min-height: 200px; }
 }
 
-
 /* Mobile-only דף הבית link in hamburger menu */
 .navHomeMobile{ display:none; }
 @media (max-width: 900px){
   .navHomeMobile{ display:block; }
 }
-
-
 
 /* =========================================================
    v8: Compact mobile filters + tighter Intl brands UI
@@ -3358,8 +3285,6 @@ table{ width: 100%; border-collapse: collapse; }
     display:none !important;
   }
 }
-
-
 
 /* =========================================================
    v12: מוצרים page — mobile alignment + collapsible filters
@@ -3412,13 +3337,11 @@ table{ width: 100%; border-collapse: collapse; }
   }
 }
 
-
 /* מחיר tier: renders $$$$$ with inactive $ in gray */
 .price-tier{display:inline-flex;gap:.08em;font-weight:var(--fw-semibold);letter-spacing:.02em;font-family:inherit;user-select:none;}
 .price-tier .dollar{opacity:.9;}
 .price-tier .dollar.inactive{opacity:.25;filter:grayscale(1);}
 .price-tier--sm{font-size:.92em;}
-
 
 /* --- January 2026 UI fixes --- */
 
@@ -3463,7 +3386,6 @@ table{ width: 100%; border-collapse: collapse; }
   .footerQuotes .quotePill{ width: min(340px, 100%); justify-content: center; }
 }
 
-
 /* ===== v44: small UI fixes (mobile overflow, info pills, footer alignment) ===== */
 html, body{ overflow-x: hidden; }
 
@@ -3487,7 +3409,6 @@ html, body{ overflow-x: hidden; }
   .compareTable th, .compareTable td{ padding: 8px 8px; font-size: 12px; }
   .compareTable th{ font-size: 11px; }
 }
-
 
 /* =========================================================
    vNEXT: 2026-01 UI polish
@@ -3567,12 +3488,10 @@ html, body{ overflow-x: hidden; }
   .footerQuotes{ grid-template-columns: 1fr !important; }
 }
 
-
 /* Header: keep nav on one line on desktop (allow horizontal scroll instead of wrapping) */
 @media (min-width: 860px){
   .headerRow{ flex-wrap: nowrap; }
 }
-
 
 /* --- מחיר tier color mapping (same tier = same color) --- */
 :root{
@@ -3622,9 +3541,8 @@ html, body{ overflow-x: hidden; }
 .page-deals .dealBtn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:14px;border:1px solid rgba(42,91,154,.22);background:rgba(157,195,230,.22);color:#0f172a;font-weight: var(--fw-bold);text-decoration:none;}
 .page-deals .dealBtn:hover{background:rgba(157,195,230,.32);}
 
-
 /* --- Hebrew RTL enhancements --- */
-:root { --he-font: "Gveret Levin", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+:root { --he-font: "Assistant", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
 html[dir="rtl"] body { direction: rtl; text-align: right; font-family: var(--he-font); }
 html[dir="rtl"] input, html[dir="rtl"] textarea, html[dir="rtl"] select { font-family: var(--he-font); }
 html[dir="rtl"] .nav, html[dir="rtl"] nav ul { flex-direction: row; }
@@ -3664,7 +3582,6 @@ html[dir="rtl"] .card, html[dir="rtl"] .productCard, html[dir="rtl"] .dealCard, 
 }
 html[dir="rtl"] .price, html[dir="rtl"] .priceLabel { direction: ltr; unicode-bidi: embed; } /* keep numbers readable */
 
-
 /* Mobile nav overlay */
 .navOverlay{
   position: fixed;
@@ -3679,7 +3596,6 @@ body.menuOpen .navOverlay{
   opacity: 1;
   pointer-events: auto;
 }
-
 
 /* ==== FINAL MOBILE DRAWER FIX (v12) ==== */
 @media (max-width: 920px){
@@ -3734,8 +3650,6 @@ body.menuOpen .navOverlay{
     pointer-events: auto !important;
   }
 }
-
-
 
 /* Desktop nav */
 @media (min-width: 921px){
@@ -3799,7 +3713,6 @@ body.menuOpen .navOverlay{
   }
 }
 
-
 /* ==== Top menu: keep in ONE ROW on desktop (v18) ==== */
 @media (min-width: 921px){
   /* Keep header compact */
@@ -3858,7 +3771,6 @@ body.menuOpen .navOverlay{
   .siteHeader .nav a{ font-size: 13px; padding: 6px 9px; }
 }
 
-
 /* --- Product cards: image on top + compact height (hotfix) --- */
 .page-products .productCard{
   display: flex;
@@ -3876,8 +3788,6 @@ body.menuOpen .navOverlay{
   padding: 9px 0;
   font-size: 15px;
 }
-
-
 
 /* === KBWG PATCH: clearer product images + show full image (2026-02-02-v19) === */
 /* Make product thumbnails clearer and show the whole product (no cropping) */
@@ -3902,8 +3812,6 @@ body.menuOpen .navOverlay{
 }
 /* === /KBWG PATCH v6 === */
 
-
-
 /* === KBWG PATCH: larger + sharper thumbnails (2026-02-02-v19) === */
 /* Bigger thumbnail area (still compact) + reduce internal whitespace */
 .page-products .pMedia{
@@ -3924,8 +3832,6 @@ body.menuOpen .navOverlay{
   image-rendering: -webkit-optimize-contrast;
 }
 /* === /KBWG PATCH v7 === */
-
-
 
 /* === KBWG PATCH: crisp full-fit thumbnails (2026-02-02-v19) === */
 /* The fade is coming from low opacity / overlays. Force a clean white canvas and full opacity. */
@@ -3952,8 +3858,6 @@ body.menuOpen .navOverlay{
   height: 100% !important;
 }
 /* === /KBWG PATCH v8 === */
-
-
 
 /* === KBWG PATCH: maximize full image visibility (2026-02-02-v19) === */
 /* Make the media area tall enough so 'contain' can show the full product without cutting.
@@ -3990,8 +3894,6 @@ body.menuOpen .navOverlay{
 }
 /* === /KBWG PATCH v9 === */
 
-
-
 /* === KBWG PATCH: full image + bigger (2026-02-02-v19) === */
 /* If it still feels "cut", it's usually because padding leaves less usable space,
    or the box is still a bit short for portrait product shots.
@@ -4013,8 +3915,6 @@ body.menuOpen .navOverlay{
   object-position: center center !important;
 }
 /* === /KBWG PATCH v10 === */
-
-
 
 /* === KBWG PATCH: square thumb tuned for portrait packshots (2026-02-02-v19) === */
 /* Your images are packshots like the sample (portrait/square with white bg).
@@ -4045,8 +3945,6 @@ body.menuOpen .navOverlay{
 }
 /* === /KBWG PATCH v11 === */
 
-
-
 /* === KBWG PATCH: shorter thumb + shift image up (2026-02-02-v19) === */
 /* Shorter image area (reduce card height) */
 .page-products .pMedia{
@@ -4065,8 +3963,6 @@ body.menuOpen .navOverlay{
   object-position: 50% 42% !important; /* up a bit (default is 50% 50%) */
 }
 /* === /KBWG PATCH v12 === */
-
-
 
 /* === KBWG PATCH: show more bottom of packshot (2026-02-02-v19) === */
 /* With object-fit: contain, the image is NOT cropped unless we shift it.
@@ -4089,8 +3985,6 @@ body.menuOpen .navOverlay{
   .page-products .pMedia{ max-height: 112px !important; }
 }
 /* === /KBWG PATCH v13 === */
-
-
 
 /* === KBWG PATCH: bottom-align packshots (2026-02-02-v19) === */
 /* Best effort for your Amazon-style packshots:
@@ -4122,8 +4016,6 @@ body.menuOpen .navOverlay{
   background: #fff !important;
 }
 /* === /KBWG PATCH v14 === */
-
-
 
 /* === KBWG PATCH: square thumb with capped width (2026-02-02-v19) === */
 /* Problem in desktop: the card is wide, and max-height forces the media to become a wide rectangle,
@@ -4158,8 +4050,6 @@ body.menuOpen .navOverlay{
 }
 /* === /KBWG PATCH v15 === */
 
-
-
 /* === KBWG PATCH: slightly taller thumbs (2026-02-02-v19) === */
 /* Slightly taller by increasing capped width (square aspect-ratio keeps it proportional) */
 .page-products .pMedia{
@@ -4172,8 +4062,6 @@ body.menuOpen .navOverlay{
   .page-products .pMedia{ max-width: 170px !important; } /* was 155 */
 }
 /* === /KBWG PATCH v16 === */
-
-
 
 /* === KBWG PATCH: best-looking thumbs (no fade) + show bottom (2026-02-02-v19) === */
 /* 1) Fix "faded" look: remove any opacity/filters/overlays and force clean white canvas */
@@ -4209,8 +4097,6 @@ body.menuOpen .navOverlay{
   box-sizing: border-box !important;
 }
 /* === /KBWG PATCH v17 === */
-
-
 
 /* === KBWG PATCH: polish product cards (2026-02-02-v19) === */
 /* Visual polish (keep your current layout, just cleaner) */
@@ -4289,8 +4175,6 @@ body.menuOpen .navOverlay{
 }
 /* === /KBWG PATCH v18 === */
 
-
-
 /* === KBWG PATCH: eliminate bottom clip illusion (2026-02-02-v19) === */
 /* Some packshots still look "cut" at the bottom because:
    - the image sits too close to the rounded border, and
@@ -4309,8 +4193,6 @@ body.menuOpen .navOverlay{
   display: block !important;
 }
 /* === /KBWG PATCH v19 === */
-
-
 
 /* === KBWG PATCH: fixed thumb size 100x140 (2026-02-02-v19) === */
 /* Match the attached image dimensions exactly: 100x140px (portrait, 5:7). */
@@ -4361,7 +4243,6 @@ body.menuOpen .navOverlay{
 
 input,button,select,textarea{ font-family: inherit; }
 
-
 /* -------------------------------------------------------
    Cross‑site responsive polish (mobile + iPad)
 -------------------------------------------------------- */
@@ -4390,8 +4271,6 @@ input,button,select,textarea{ font-family: inherit; }
   .heroMedia{ max-height: 320px; }
   .siteHeader .nav a{ padding: 8px 10px; }
 }
-
-
 
 /* ===== HERO RESPONSIVE FIX (v9) =====
    Goal: prevent oversized hero on iPad/tablet and show full hero images without cropping.
@@ -4444,7 +4323,6 @@ input,button,select,textarea{ font-family: inherit; }
   .hero{ padding-top: 40px; padding-bottom: 34px; }
 }
 
-
 /* ===== PAGINATION + LOAD MORE (v10) ===== */
 .kbPager{
   display:flex;
@@ -4466,7 +4344,6 @@ input,button,select,textarea{ font-family: inherit; }
   margin: 16px 0 6px;
 }
 .kbLoadMoreWrap .btn{ min-width: 180px; }
-
 
 /* Home teasers (v12) — lightweight preview grids */
 .homeTeasers .contentCard{ background: rgba(255,255,255,.80); }
@@ -4498,7 +4375,6 @@ input,button,select,textarea{ font-family: inherit; }
 @media (max-width: 900px){
   .homeCardsGrid{ grid-template-columns: 1fr; }
 }
-
 
 /* Pager (v12) — shared pagination UI */
 .pager{
@@ -4532,7 +4408,6 @@ input,button,select,textarea{ font-family: inherit; }
 }
 .pagerEllipsis{ padding: 0 6px; font-weight: var(--fw-bold); color: var(--muted); }
 
-
 /* Sticky header (v13) */
 .siteHeader{
   position: sticky;
@@ -4559,7 +4434,6 @@ input,button,select,textarea{ font-family: inherit; }
   background: linear-gradient(180deg, rgba(157,195,230,.20), rgba(255,255,255,.92));
 }
 .miniCard.isPrimary .miniCardTitle{ color: #0f172a; }
-
 
 /* Ingredient checker mobile (v13) */
 .pasteBlock textarea{
@@ -4589,7 +4463,6 @@ input,button,select,textarea{ font-family: inherit; }
   border-color: rgba(148,163,184,.26);
   color: rgba(30,41,59,.82);
 }
-
 
 /* Notice banner (v13) — less intrusive */
 .siteNotice{ padding: 8px 0; }
@@ -4684,7 +4557,6 @@ input,button,select,textarea{ font-family: inherit; }
   color: rgba(15,23,42,.92);
 }
 
-
 /* Optional (HTML): wrap the “Search for / products / vegan / in Israel” row with class="heroSearchLine" */
 .hero.heroCompact .heroSearchLine{
   display:flex;
@@ -4740,7 +4612,6 @@ input,button,select,textarea{ font-family: inherit; }
 /* Moderate emphasis for a single-weight handwriting font */
 strong, b{ font-weight: var(--fw-semibold); }
 
-
 /* Attribution / credits (optional) */
 .credits{
   font-size: .85rem;
@@ -4749,7 +4620,6 @@ strong, b{ font-weight: var(--fw-semibold); }
   padding: 18px 12px;
 }
 .credits a{ color: var(--brand); text-decoration: underline; }
-
 
 /* =========================================================
    Mobile menu improvements (drawer nav)
