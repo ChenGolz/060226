@@ -5320,3 +5320,9 @@ html, body, main, button, input, select, textarea {
     max-width: 100%;
   }
 }
+
+/* --- Hero image crop tweak: show more of the dog's face (hero-top.png) --- */
+.hero.product-hero > img.decorPhoto[src$="hero-top.png"]{
+  /* tweak these numbers if needed */
+  object-position: 60% 35% !important;
+}
