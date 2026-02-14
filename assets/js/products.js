@@ -1548,7 +1548,7 @@ const frag = document.createDocumentFragment();
         // Avoid broken cards / console noise when an image is missing.
         img.onerror = function(){
           try{ this.onerror = null; }catch(e){}
-          this.src = 'assets/img/products/placeholder.jpg';
+          this.src = 'assets/img/icons/bag-heart.png';
         };
         media.appendChild(img);
       } else {

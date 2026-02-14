@@ -611,8 +611,8 @@ function formatFreeShipText(o) {
         // Image (clickable)
         '<a class="dealMedia" href="' + esc(url || '#') + '" rel="noopener" target="_blank">' +
           (imgSrc
-            ? '<img class="dealImg" src="' + esc(imgSrc) + '" alt="' + esc(safeText(p.name)) + '" loading="lazy" decoding="async" width="640" height="640" />'
-            : '<div class="dealPlaceholder" aria-hidden="true">🧴</div>'
+            ? '<img class="dealImg" src="' + esc(imgSrc) + '" alt="' + esc(safeText(p.name)) + '" loading="lazy" decoding="async" width="640" height="640" onerror="this.onerror=null;this.src=\'assets/img/icons/bag-heart.png\';" />'
+            : '<img class="dealImg" src="assets/img/icons/bag-heart.png" alt="" loading="lazy" decoding="async" width="640" height="640" />'
           ) +
         '</a>' +
         '<div class="dealTop">' +

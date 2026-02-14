@@ -417,7 +417,6 @@
     "isDiscounted": false,
     "image": "assets/img/products/B0CBQPSBF1.jpg"
   },
-
   {
     "id": "eadem-b0cbt2zpsc",
     "brand": "EADEM",
@@ -488,7 +487,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "image": "assets/img/products/B0DFRL3GHB.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "eadem-b0dfs4bcfb",
@@ -523,7 +522,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "image": "assets/img/products/B0DFS4BCFB.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "eadem-b0dfrqgv7s",
@@ -558,7 +557,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "image": "assets/img/products/B0DFRQGV7S.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "eadem-b0dfrl82ks",
@@ -669,7 +668,7 @@
     ],
     "isKids": false,
     "isMen": false,
-    "image": "assets/img/products/B0F9R34GLJ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "dphue-b01nahor2c",
@@ -858,7 +857,7 @@
         "asin": "B09SRWLLX7",
         "currency": "USD",
         "priceUSD": 64.0,
-         "freeShipToIsrael": true
+        "freeShipToIsrael": true
       }
     ],
     "isKids": false,
@@ -2357,7 +2356,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CVSKLBTJ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hairitage-b0crzdrn8f",
@@ -2592,7 +2591,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0D54PT4NT.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b08t7dszyd",
@@ -2977,7 +2976,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DH62626H.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0bsr4qyp4",
@@ -3112,7 +3111,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B09XMYFTB7.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0dhrqxych",
@@ -3145,7 +3144,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DHRQXYCH.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b07zqzvmrx",
@@ -3178,7 +3177,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B07ZQZVMRX.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b08127sc4g",
@@ -3211,7 +3210,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B08127SC4G.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b08tqtt8lk",
@@ -3245,7 +3244,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B08TQTT8LK.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0cpfxrqlk",
@@ -3278,7 +3277,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CPFXRQLK.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0cxqr14j3",
@@ -3310,7 +3309,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CXQR14J3.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0b5mg6phq",
@@ -3343,7 +3342,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0B5MG6PHQ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0dhrqgsmy",
@@ -3377,7 +3376,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DHRQGSMY.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0g1h91lgm",
@@ -3411,7 +3410,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0G1H91LGM.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0cbr3krmb",
@@ -3445,7 +3444,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CBR3KRMB.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0cpfvqc5m",
@@ -3478,7 +3477,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CPFVQC5M.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0cbr2tj82",
@@ -3512,7 +3511,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CBR2TJ82.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b07nsh2b4d",
@@ -3545,7 +3544,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B07NSH2B4D.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0b5mfc5dw",
@@ -3579,7 +3578,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0B5MFC5DW.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0g1gzs1rv",
@@ -3643,7 +3642,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B07CS2ZKQ3.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0c6cb2h86",
@@ -3675,7 +3674,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C6CB2H86.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0crr1sjy7",
@@ -3708,7 +3707,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CRR1SJY7.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0dzqcy8d9",
@@ -3777,7 +3776,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B09857WSXC.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0dhrr3xw8",
@@ -3809,7 +3808,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DHRR3XW8.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0dgvn8s1l",
@@ -3940,8 +3939,8 @@
         "url": "https://www.amazon.com/dp/B0F8VKQKJT?tag=nocrueltyil-20",
         "asin": "B0F8VKQKJT",
         "currency": "USD",
-        "priceUSD": 22.80,
-        "freeShipOver":49
+        "priceUSD": 22.8,
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -4009,7 +4008,7 @@
         "asin": "B0BSP47BS4",
         "currency": "USD",
         "priceUSD": 13,
-                "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -4079,7 +4078,7 @@
         "asin": "B082YTKDXQ",
         "currency": "USD",
         "priceUSD": 16,
-         "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -4153,7 +4152,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0D1D8C4Z5.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b0f3wtpbm2",
@@ -4185,7 +4184,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0F3WTPBM2.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "e-l-f-b07zvwyby7",
@@ -4226,10 +4225,23 @@
     "name": "Mighty Patch™ Nose XL – מדבקות הידרוקולואיד לפצעונים באף",
     "size": "10 יחידות",
     "categories": [
-      "skin", "Personal Care", 
-      "Beauty & Personal Care", "Over-the-Counter Medicine", 
-      "Skincare", "Face Care", "Treatments & Masks", "Pore Strips", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Nighttime Skincare",
-      "Oily Skin Solutions", "Pore Refinement", "Blackhead Removal",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Over-the-Counter Medicine",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Pore Strips",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Nighttime Skincare",
+      "Oily Skin Solutions",
+      "Pore Refinement",
+      "Blackhead Removal",
       "face",
       "acne",
       "patch",
@@ -4261,9 +4273,21 @@
     "name": "Rescue Balm – קרם שיקום לאחר פצעונים",
     "size": "15 מ\"ל",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care",
-      "Skincare", "Face Care", "Moisturizers", "Face Moisturizers", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Skin Repair & Recovery", "Post-Blemish Care", 
-      "Redness Relief", "Soothing Creams", "Dermatological Skincare",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Moisturizers",
+      "Face Moisturizers",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Skin Repair & Recovery",
+      "Post-Blemish Care",
+      "Redness Relief",
+      "Soothing Creams",
+      "Dermatological Skincare",
       "moisturizer"
     ],
     "isVegan": true,
@@ -4292,7 +4316,20 @@
     "name": "Mighty Patch™ Original – מדבקות הידרוקולואיד לפצעונים",
     "size": "144 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Nighttime Skincare", "First Aid", "First Aid Kits",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Nighttime Skincare",
+      "First Aid",
+      "First Aid Kits",
       "acne",
       "patch",
       "spot-treatment"
@@ -4322,7 +4359,20 @@
     "name": "Mighty Patch™ Invisible+ – מדבקות הידרוקולואיד שקופות לפצעונים",
     "size": "78 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Nighttime Skincare", "First Aid", "First Aid Kits",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Nighttime Skincare",
+      "First Aid",
+      "First Aid Kits",
       "acne",
       "patch",
       "spot-treatment"
@@ -4353,7 +4403,20 @@
     "name": "Mighty Patch™ Day + Night – מדבקות הידרוקולואיד לאקנה (יום + לילה)",
     "size": "24 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Nighttime Skincare", "First Aid", "First Aid Kits",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Nighttime Skincare",
+      "First Aid",
+      "First Aid Kits",
       "acne",
       "patch",
       "spot-treatment"
@@ -4376,7 +4439,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0FDWXN2WZ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b074pvtpbw",
@@ -4384,7 +4447,20 @@
     "name": "Mighty Patch™ Original – מדבקות הידרוקולואיד לפצעוני אקנה",
     "size": "36 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Nighttime Skincare", "First Aid", "First Aid Kits",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Nighttime Skincare",
+      "First Aid",
+      "First Aid Kits",
       "acne",
       "patch",
       "spot-treatment"
@@ -4407,7 +4483,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B074PVTPBW.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b07b4kqvk6",
@@ -4415,7 +4491,20 @@
     "name": "Mighty Patch™ Original – מדבקות הידרוקולואיד לפצעוני אקנה",
     "size": "72 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Nighttime Skincare", "First Aid", "First Aid Kits",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Nighttime Skincare",
+      "First Aid",
+      "First Aid Kits",
       "acne",
       "patch",
       "spot-treatment"
@@ -4438,7 +4527,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B07B4KQVK6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b07kjs13pk",
@@ -4446,7 +4535,20 @@
     "name": "Mighty Patch™ Invisible+ – מדבקות הידרוקולואיד שקופות לפצעוני אקנה",
     "size": "39 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Nighttime Skincare", "First Aid", "First Aid Kits",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Nighttime Skincare",
+      "First Aid",
+      "First Aid Kits",
       "acne",
       "patch",
       "spot-treatment"
@@ -4477,7 +4579,18 @@
     "name": "Mighty Shield – פלסטר נוזלי שקוף להגנה על פגמים בעור",
     "size": "1 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "First Aid", "Liquid Bandages", "Bandages & Dressings", "Blemish & Acne Care", "Skin Protection", "Spot Treatments", "Transparent Dressings", "Wound Care",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "First Aid",
+      "Liquid Bandages",
+      "Bandages & Dressings",
+      "Blemish & Acne Care",
+      "Skin Protection",
+      "Spot Treatments",
+      "Transparent Dressings",
+      "Wound Care",
       "acne",
       "patch",
       "spot-treatment"
@@ -4500,7 +4613,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0G66PY3BK.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b0bpdbyrtz",
@@ -4508,7 +4621,20 @@
     "name": "מדבקות Micropoint Large לטיפול ממוקד בפצעונים בשלב מוקדם",
     "size": "8 יחידות",
     "categories": [
-      "face","Health & Household", "Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Microneedle Patches", "Early Stage Acne Care", "Hydrocolloid Patches", "Spot Treatments", "Dermatological Skincare",
+      "face",
+      "Health & Household",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Microneedle Patches",
+      "Early Stage Acne Care",
+      "Hydrocolloid Patches",
+      "Spot Treatments",
+      "Dermatological Skincare",
       "skin",
       "acne",
       "patch",
@@ -4541,7 +4667,20 @@
     "name": "Mighty Patch™ Invisible+ מדבקות הפלא השקופות לטיפול ביום",
     "size": "72 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Daytime Skincare", "Invisible Acne Patches", "Ultra-Thin Spot Treatments",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Daytime Skincare",
+      "Invisible Acne Patches",
+      "Ultra-Thin Spot Treatments",
       "acne",
       "patch",
       "spot-treatment"
@@ -4555,7 +4694,7 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/3M8MVWl",
+        "url": "https://www.amazon.com/dp/B0DVJ7BLQ7?tag=nocrueltyil-20",
         "asin": "B0DVJ7BLQ7",
         "currency": "USD",
         "priceUSD": 29.97
@@ -4564,7 +4703,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DVJ7BLQ7.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "freeShipOver": 49
   },
   {
@@ -4573,7 +4712,19 @@
     "name": "Mighty Patch™ Surface – מדבקות הידרוקולואיד גדולות לאזורים נרחבים",
     "size": "10 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Body Acne Treatments", "Large Area Spot Treatments", "Surface Patches",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Body Acne Treatments",
+      "Large Area Spot Treatments",
+      "Surface Patches",
       "face",
       "acne",
       "patch",
@@ -4597,7 +4748,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B07KJXFJHF.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b09nnf2dxx",
@@ -4605,7 +4756,19 @@
     "name": "Mighty Patch™ Nose – מדבקות לפצעונים באף",
     "size": "10 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Pore Strips", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Nose Pore Care",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Pore Strips",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Nose Pore Care",
       "face",
       "acne",
       "patch",
@@ -4637,7 +4800,19 @@
     "name": "Mighty Patch Mini Invisible+ – מדבקות פצעונים שקופות ודקיקות במיוחד",
     "size": "30 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Pore Strips", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Nose Pore Care",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Pore Strips",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Nose Pore Care",
       "acne",
       "patch",
       "spot-treatment"
@@ -4669,7 +4844,18 @@
     "name": "Mighty Patch™ Micropoint – מדבקות מיקרו-נקודות לכתמים כהים",
     "size": "8 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Dark Spot Correctors", "Hyperpigmentation Treatments", "Microneedle Patches", "Brightening Treatments", "Post-Acne Care", "Blemish & Acne Care",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Dark Spot Correctors",
+      "Hyperpigmentation Treatments",
+      "Microneedle Patches",
+      "Brightening Treatments",
+      "Post-Acne Care",
+      "Blemish & Acne Care",
       "acne",
       "patch",
       "spot-treatment"
@@ -4692,7 +4878,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BS49YW8Z.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b0cgmc8ws9",
@@ -4700,7 +4886,18 @@
     "name": "Mighty Patch™ – מדבקות הידרוג׳ל לעיניים עייפות",
     "size": "6 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Eye Care", "Eye Masks & Patches", "Treatments & Masks", "Under-Eye Treatments", "Hydrating Eye Patches", "Hydrogel Masks", "Anti-Fatigue Skincare",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Eye Care",
+      "Eye Masks & Patches",
+      "Treatments & Masks",
+      "Under-Eye Treatments",
+      "Hydrating Eye Patches",
+      "Hydrogel Masks",
+      "Anti-Fatigue Skincare",
       "eye",
       "acne",
       "patch",
@@ -4724,7 +4921,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CGMC8WS9.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b085p3typs",
@@ -4732,7 +4929,19 @@
     "name": "Mighty Patch™ Variety Pack מארז המדבקות המשולב לטיפול בכל סוגי הפצעונים",
     "size": "26 יחידות",
     "categories": [
-      "skin","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Treatments & Masks", "Acne Treatments", "Blemish & Acne Care", "Hydrocolloid Patches", "Acne Patches", "Spot Treatments", "Skincare Sets & Kits", "Variety Packs",
+      "skin",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Treatments & Masks",
+      "Acne Treatments",
+      "Blemish & Acne Care",
+      "Hydrocolloid Patches",
+      "Acne Patches",
+      "Spot Treatments",
+      "Skincare Sets & Kits",
+      "Variety Packs",
       "acne",
       "patch",
       "spot-treatment"
@@ -4755,7 +4964,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B085P3TYPS.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "freeShipOver": 49
   },
   {
@@ -4788,7 +4997,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0B16VD9RQ.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "freeShipOver": 49
   },
   {
@@ -4821,7 +5030,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DVHVB9DY.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "freeShipOver": 49
   },
   {
@@ -4854,7 +5063,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BMM44HBF.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b0cmdgp48l",
@@ -4915,7 +5124,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0FG655345.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "freeShipOver": 49
   },
   {
@@ -4947,7 +5156,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CCZMSJ4T.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b0bp2wfygj",
@@ -4976,7 +5185,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BP2WFYGJ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b0cgmg1l61",
@@ -5006,7 +5215,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CGMG1L61.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b0crwwscj5",
@@ -5036,7 +5245,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CRWWSCJ5.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "hero-cosmetics-b0crlgx6s6",
@@ -5094,7 +5303,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0FHY2QMRK.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "sukin-b003vjqkss",
@@ -5125,7 +5334,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B003VJQKSS.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "sukin-b003vjxum2",
@@ -5156,7 +5365,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B003VJXUM2.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "sukin-b003vjxufo",
@@ -5187,7 +5396,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B003VJXUFO.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "sukin-b003vjxuk4",
@@ -5217,7 +5426,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B003VJXUK4.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "sukin-b01in3iwoq",
@@ -5247,7 +5456,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B01IN3IWOQ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "sukin-b003vjtrfq",
@@ -5277,7 +5486,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B003VJTRFQ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "sukin-b003vjql64",
@@ -5308,7 +5517,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B003VJQL64.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "sukin-b003vjxuhw",
@@ -5338,7 +5547,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B003VJXUHW.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0btycfck7",
@@ -5368,7 +5577,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BTYCFCK7.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0bxphyqgc",
@@ -5398,7 +5607,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BXPHYQGC.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0c7c7clpl",
@@ -5428,7 +5637,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C7C7CLPL.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0gc7vd8xv",
@@ -5458,7 +5667,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0GC7VD8XV.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0gc7lssys",
@@ -5488,7 +5697,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0GC7LSSYS.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0csdxl86l",
@@ -5519,7 +5728,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CSDXL86L.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0c7c8yl9d",
@@ -5550,7 +5759,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C7C8YL9D.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0btybvlfw",
@@ -5581,7 +5790,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BTYBVLFW.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0c7cb452s",
@@ -5613,7 +5822,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C7CB452S.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0fm8tcgf1",
@@ -5704,7 +5913,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C7C8BSBQ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0csdws3hj",
@@ -5794,7 +6003,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C7C7DDT3.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0dr9v1l1r",
@@ -5855,7 +6064,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DR9VMF5N.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0bj74djxg",
@@ -5885,7 +6094,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BJ74DJXG.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0fm8wqkkv",
@@ -5945,7 +6154,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BZX2RLNX.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0csdvqbzk",
@@ -6033,7 +6242,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CSDWY381.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0c7c8s8ft",
@@ -6063,7 +6272,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C7C8S8FT.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0c7c88zsk",
@@ -6153,7 +6362,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C7C8BZLM.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0dr9wdr2g",
@@ -6184,7 +6393,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DR9WDR2G.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0c7c9n7ss",
@@ -6215,7 +6424,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C7C9N7SS.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0csdxrtnd",
@@ -6275,7 +6484,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CSDWP9SY.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0csdy6h9f",
@@ -6336,7 +6545,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CSDXLPDP.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0csdxpf98",
@@ -6366,7 +6575,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CSDXPF98.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0csdyn1z6",
@@ -6397,7 +6606,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CSDYN1Z6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0csdy4jy3",
@@ -6427,7 +6636,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CSDY4JY3.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0fm99s7l4",
@@ -6457,7 +6666,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0FM99S7L4.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0csdxhtj7",
@@ -6517,7 +6726,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CSDXHTH9.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0fn7qm1vp",
@@ -6548,7 +6757,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0FN7QM1VP.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0fn4m2wgy",
@@ -6578,7 +6787,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0FN4M2WGY.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0fn5fqbng",
@@ -6608,7 +6817,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0FN5FQBNG.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0fn5bqckj",
@@ -6668,7 +6877,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0FN4YL21D.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0fgdqy4ny",
@@ -6792,7 +7001,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0C7CBDHFJ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0d6zgwb7k",
@@ -6822,7 +7031,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0D6ZGWB7K.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0d83zwn4y",
@@ -6855,7 +7064,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0D83ZWN4Y.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0db69tslb",
@@ -6885,7 +7094,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DB69TSLB.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0d842wc8r",
@@ -6917,7 +7126,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0D842WC8R.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0d6gydvl5",
@@ -6948,7 +7157,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0D6GYDVL5.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0dcwc1ygg",
@@ -7044,7 +7253,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0D6GV8D58.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0d8wpdlgq",
@@ -7107,7 +7316,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0D8WNP97B.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "byoma-b0db6bwscw",
@@ -7140,7 +7349,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0DB6BWSCW.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "freck-beauty-b0bn4j254r",
@@ -7148,8 +7357,15 @@
     "name": "עט הנמשים המקורי – נמשים מלאכותיים במראה טבעי, ניתנים לבנייה ועמידים לאורך זמן",
     "size": "XL (Light/Medium) – 13 מ\"ל",
     "categories": [
-      "skin","Makeup", "Face Makeup", "Faux Freckle Pens", "Cosmetic Pens", "Vegan Beauty", "Long-Wear Makeup",
-      "face","Freckle",
+      "skin",
+      "Makeup",
+      "Face Makeup",
+      "Faux Freckle Pens",
+      "Cosmetic Pens",
+      "Vegan Beauty",
+      "Long-Wear Makeup",
+      "face",
+      "Freckle",
       "vegan"
     ],
     "isVegan": true,
@@ -7204,7 +7420,7 @@
     "isKids": false,
     "isDiscounted": false,
     "isMen": false,
-    "image": "assets/img/products/B0CSPSRYGD.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Tanologist-b0cspt1ghy",
@@ -7236,7 +7452,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CSPT1GHY.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Tanologist-b07x8l13jv",
@@ -7263,11 +7479,12 @@
         "url": "https://www.amazon.com/dp/B07X8L13JV?tag=nocrueltyil-20",
         "asin": "B07X8L13JV",
         "currency": "USD",
-        "priceUSD": 14.98      }
+        "priceUSD": 14.98
+      }
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B07X8L13JV.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Tanologist-b0bs4zz7hn",
@@ -7294,11 +7511,12 @@
         "url": "https://www.amazon.com/dp/B0BS4ZZ7HN?tag=nocrueltyil-20",
         "asin": "B0BS4ZZ7HN",
         "currency": "USD",
-        "priceUSD": 9.88      }
+        "priceUSD": 9.88
+      }
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BS4ZZ7HN.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Tanologist-b0bw1njjs8",
@@ -7331,7 +7549,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BW1NJJS8.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0df7glrcd",
@@ -7362,7 +7580,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DF7GLRCD.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0f1nkms4g",
@@ -7393,7 +7611,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0F1NKMS4G.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0fhk9jxst",
@@ -7423,7 +7641,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0FHK9JXST.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0df7hpzyn",
@@ -7431,7 +7649,13 @@
     "name": "שפתון-גלוס 3-ב-1 Effortless Lips (Peony) ",
     "size": "0.53 ounces",
     "categories": [
-      "makeup","Makeup", "Lip Makeup", "Lip Gloss", "Lipstick", "Lip Balms & Moisturizers", "Multipurpose Cosmetics",
+      "makeup",
+      "Makeup",
+      "Lip Makeup",
+      "Lip Gloss",
+      "Lipstick",
+      "Lip Balms & Moisturizers",
+      "Multipurpose Cosmetics",
       "lips",
       "tinted-balm",
       "gloss"
@@ -7445,7 +7669,7 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/4aeQtOD",
+        "url": "https://www.amazon.com/dp/B0DF7HPZYN?tag=nocrueltyil-20",
         "asin": "B0DF7HPZYN",
         "currency": "USD",
         "priceUSD": 24.0,
@@ -7516,7 +7740,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DF77WJWQ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0djfd3tvr",
@@ -7547,7 +7771,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DJFD3TVR.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0djfcvwqf",
@@ -7578,7 +7802,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DJFCVWQF.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0df7b8krv",
@@ -7609,7 +7833,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DF7B8KRV.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0df7cxsnq",
@@ -7640,7 +7864,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DF7CXSNQ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0f1nhgw4f",
@@ -7671,7 +7895,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0F1NHGW4F.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0g2t5pfjb",
@@ -7703,7 +7927,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0G2T5PFJB.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "ravie-beauty-b0g278jg1z",
@@ -7735,7 +7959,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0G278JG1Z.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fleur-bee-b09mzqg4l6",
@@ -7768,7 +7992,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B09MZQG4L6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fleur-bee-b09nypqvm6",
@@ -7801,7 +8025,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B09NYPQVM6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fleur-bee-b0dvbm86yk",
@@ -7829,7 +8053,8 @@
         "asin": "B0DVBM86YK",
         "currency": "USD",
         "priceUSD": 72.0,
-      "freeShipToIsrael": true}
+        "freeShipToIsrael": true
+      }
     ],
     "isKids": false,
     "isDiscounted": null,
@@ -7867,7 +8092,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B07NVXGVWL.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fleur-bee-b09sntxcfb",
@@ -7901,7 +8126,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B09SNTXCFB.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fleur-bee-b0b7qhd7yx",
@@ -7934,7 +8159,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0B7QHD7YX.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fleur-bee-b07ntztrvf",
@@ -7968,7 +8193,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B07NTZTRVF.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fleur-bee-b09q2n29b9",
@@ -8002,7 +8227,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B09Q2N29B9.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fleur-bee-b0b195n45y",
@@ -8036,7 +8261,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0B195N45Y.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fleur-bee-b0d8rd7ssp",
@@ -8063,7 +8288,7 @@
         "asin": "B0D8RD7SSP",
         "currency": "USD",
         "priceUSD": 54.0,
-       "freeShipToIsrael": true
+        "freeShipToIsrael": true
       }
     ],
     "isKids": false,
@@ -8101,7 +8326,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B07NV16NR7.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fleur-bee-b0d4621q1j",
@@ -8134,7 +8359,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0D4621Q1J.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "מארז טיפוח Discovery Set – חמישה מוצרי פרימיום בגודל מיוחד: קרמי לחות, סרומים וקרם עיניים. מתנה מושלמת ונוחה לנסיעות.",
@@ -8157,7 +8382,7 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/4rwlswB",
+        "url": "https://www.amazon.com/dp/B0BP4YDVM7?tag=nocrueltyil-20",
         "asin": "B0BP4YDVM7",
         "currency": "USD",
         "priceUSD": 42.0,
@@ -8174,7 +8399,15 @@
     "name": "שמן/סרום לשיער  HoliRoots Strengthening Serum – לשיער פגום/מקורזל ",
     "size": "55ml",
     "categories": [
-      "hair","Hair Care", "Hair Styling Products", "Hair Oils", "Hair Serums", "Hair & Scalp Treatments", "Strengthening Hair Care", "Anti-Frizz Products", "Damaged Hair Repair",
+      "hair",
+      "Hair Care",
+      "Hair Styling Products",
+      "Hair Oils",
+      "Hair Serums",
+      "Hair & Scalp Treatments",
+      "Strengthening Hair Care",
+      "Anti-Frizz Products",
+      "Damaged Hair Repair",
       "scalp",
       "hair-oil",
       "serum",
@@ -8190,7 +8423,7 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/4kvozTu",
+        "url": "https://www.amazon.com/dp/B09CMX7X8H?tag=nocrueltyil-20",
         "asin": "B09CMX7X8H",
         "currency": "USD",
         "priceUSD": 38.0,
@@ -8207,7 +8440,15 @@
     "name": "מרכך ללא שטיפה מתיר קשרים – עם הגנה מחום וקרינת UV לשיער חלק, מלא לחות וללא קשרים. מועשר באלוורה.",
     "size": "140ml",
     "categories": [
-      "hair","Hair Care", "Conditioners", "Leave-In Conditioners", "Hair Styling Products", "Heat Protection Sprays", "Detanglers", "UV Protection for Hair", "Moisturizing Hair Care",
+      "hair",
+      "Hair Care",
+      "Conditioners",
+      "Leave-In Conditioners",
+      "Hair Styling Products",
+      "Heat Protection Sprays",
+      "Detanglers",
+      "UV Protection for Hair",
+      "Moisturizing Hair Care",
       "conditioner",
       "leave-in",
       "detangling",
@@ -8222,7 +8463,7 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/4ryV4Cl",
+        "url": "https://www.amazon.com/dp/B0CBQRTTTN?tag=nocrueltyil-20",
         "asin": "B0CBQRTTTN",
         "currency": "USD",
         "priceUSD": 30.0,
@@ -8262,7 +8503,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0F8P5HJJP.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fable-mane-b09y52h1bl",
@@ -8285,7 +8526,7 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/3ZmUgEM",
+        "url": "https://www.amazon.com/dp/B09Y52H1BL?tag=nocrueltyil-20",
         "asin": "B09Y52H1BL",
         "currency": "USD",
         "priceUSD": 38.0,
@@ -8326,7 +8567,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0C15PVHBW.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fable-mane-b09y68zw3m",
@@ -8349,7 +8590,7 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/4bHQEEM",
+        "url": "https://www.amazon.com/dp/B09Y68ZW3M?tag=nocrueltyil-20",
         "asin": "B09Y68ZW3M",
         "currency": "USD",
         "priceUSD": 32.0,
@@ -8357,7 +8598,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B09Y68ZW3M.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "fable-mane-b0b3yr5r2n",
@@ -8386,7 +8627,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0B3YR5R2N.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0crf6c8kd",
@@ -8419,7 +8660,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0CRF6C8KD.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0d6wgfkvj",
@@ -8548,7 +8789,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DWLX71BM.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0dpnksglh",
@@ -8582,7 +8823,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DPNKSGLH.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0dwlvyljj",
@@ -8615,7 +8856,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DWLVYLJJ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0dwlvw4w5",
@@ -8680,7 +8921,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0F9HTRKV8.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0dh55t542",
@@ -8712,7 +8953,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DH55T542.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0dlbqsdnv",
@@ -8720,7 +8961,14 @@
     "name": "ספריי SPF50 Hydrating Glow Mist – מארז 2",
     "size": "pack",
     "categories": [
-      "skin","Skincare", "Face Care", "Sunscreen", "Sunscreen Sprays", "Facial Mists", "Hydrating Skincare", "Multi-Pack",
+      "skin",
+      "Skincare",
+      "Face Care",
+      "Sunscreen",
+      "Sunscreen Sprays",
+      "Facial Mists",
+      "Hydrating Skincare",
+      "Multi-Pack",
       "face",
       "sunscreen",
       "spf-50",
@@ -8745,7 +8993,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DLBQSDNV.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0dtwpkfjh",
@@ -8810,7 +9058,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0CRFW3YZ5.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0g75lyqt6",
@@ -8842,7 +9090,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0G75LYQT6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0dkg7swj6",
@@ -8874,7 +9122,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DKG7SWJ6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0dktkv7w8",
@@ -8906,7 +9154,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DKTKV7W8.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0dl8pm2s2",
@@ -8914,7 +9162,12 @@
     "name": "צבע שיער חצי-קבוע Arcane League of Legends – VI ",
     "size": "5.6 fl oz",
     "categories": [
-      "hair","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Bright Hair Color", "Licensed Beauty Products",
+      "hair",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Bright Hair Color",
+      "Licensed Beauty Products",
       "hair-color",
       "semi-permanent",
       "vegan",
@@ -8946,7 +9199,12 @@
     "name": "צבע שיער חצי-קבוע Arcane League of Legends – Jinx ",
     "size": "5.6 fl oz",
     "categories": [
-      "hair","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Bright Hair Color", "Licensed Beauty Products",
+      "hair",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Bright Hair Color",
+      "Licensed Beauty Products",
       "hair-color",
       "semi-permanent",
       "vegan",
@@ -8978,7 +9236,12 @@
     "name": "צבע שיער חצי-קבוע Arcane League of Legends – Caitlyn",
     "size": "5.6 fl oz",
     "categories": [
-      "hair","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Bright Hair Color", "Licensed Beauty Products",
+      "hair",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Bright Hair Color",
+      "Licensed Beauty Products",
       "hair-color",
       "semi-permanent",
       "vegan",
@@ -9010,7 +9273,12 @@
     "name": "צבע שיער חצי-קבוע Purple Madness ",
     "size": "5.6 fl oz",
     "categories": [
-      "hair","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Bright Hair Color", "Licensed Beauty Products",
+      "hair",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Bright Hair Color",
+      "Licensed Beauty Products",
       "hair-color",
       "semi-permanent",
       "vegan",
@@ -9034,7 +9302,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CTVFLQYN.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0ctvdgkny",
@@ -9045,7 +9313,12 @@
       "hair",
       "hair-color",
       "semi-permanent",
-      "vegan","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Bright Hair Color", "Licensed Beauty Products",
+      "vegan",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Bright Hair Color",
+      "Licensed Beauty Products",
       "cruelty-free",
       "color"
     ],
@@ -9067,7 +9340,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CTVDGKNY.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0ctvl1sl6",
@@ -9075,7 +9348,12 @@
     "name": "צבע שיער חצי-קבוע Semi Permanent Emerald ",
     "size": null,
     "categories": [
-      "hair","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Bright Hair Color", "Licensed Beauty Products",
+      "hair",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Bright Hair Color",
+      "Licensed Beauty Products",
       "hair-color",
       "semi-permanent",
       "vegan",
@@ -9100,7 +9378,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0CTVL1SL6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0dkqbrqgf",
@@ -9111,7 +9389,12 @@
       "hair",
       "hair-color",
       "semi-permanent",
-      "vegan","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Bright Hair Color", "Licensed Beauty Products",
+      "vegan",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Bright Hair Color",
+      "Licensed Beauty Products",
       "cruelty-free",
       "color"
     ],
@@ -9133,7 +9416,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0DKQBRQGF.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0d9phhnwj",
@@ -9141,7 +9424,12 @@
     "name": "צבע שיער חצי-קבוע Cotton Candy Dreams ",
     "size": "8 fl oz",
     "categories": [
-      "hair","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Bright Hair Color", "Licensed Beauty Products",
+      "hair",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Bright Hair Color",
+      "Licensed Beauty Products",
       "hair-color",
       "semi-permanent",
       "vegan",
@@ -9166,7 +9454,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0D9PHHNWJ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0d9phmjky",
@@ -9177,7 +9465,12 @@
       "hair",
       "hair-color",
       "semi-permanent",
-      "vegan","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Bright Hair Color", "Licensed Beauty Products",
+      "vegan",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Bright Hair Color",
+      "Licensed Beauty Products",
       "cruelty-free",
       "color"
     ],
@@ -9199,7 +9492,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0D9PHMJKY.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0d9phn59k",
@@ -9266,7 +9559,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B00MM8C0GA.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b083tn9hr1",
@@ -9298,7 +9591,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B083TN9HR1.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147ruws6",
@@ -9362,7 +9655,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B00VIQX9OY.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147ruwvi",
@@ -9426,7 +9719,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0147QBZ74.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147puduk",
@@ -9459,7 +9752,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0147PUDUK.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b00wydzpa6",
@@ -9492,7 +9785,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B00WYDZPA6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0756mnbs6",
@@ -9524,7 +9817,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0756MNBS6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b01kn0upqa",
@@ -9556,7 +9849,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B01KN0UPQA.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b01kn27wtq",
@@ -9684,7 +9977,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B019G870EU.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b00mm8c0g0",
@@ -9716,7 +10009,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B00MM8C0G0.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147ruww2",
@@ -9749,7 +10042,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0147RUWW2.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0756lkntx",
@@ -9782,7 +10075,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0756LKNTX.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b09hvcm1d8",
@@ -9815,7 +10108,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B09HVCM1D8.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b09wz8ytz4",
@@ -9848,7 +10141,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B09WZ8YTZ4.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b00wye3d6i",
@@ -9880,7 +10173,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B00WYE3D6I.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b07pxdm2tg",
@@ -9945,7 +10238,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B07QMZ5JKX.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b01gp29pes",
@@ -9978,7 +10271,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B01GP29PES.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b019g7ybaw",
@@ -10074,7 +10367,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0896WQYP2.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147r9uma",
@@ -10107,7 +10400,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0147R9UMA.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147r9uhu",
@@ -10140,7 +10433,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0147R9UHU.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147r9uha",
@@ -10172,7 +10465,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0147R9UHA.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147r9ufm",
@@ -10205,7 +10498,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0147R9UFM.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b00mm8c0yc",
@@ -10238,7 +10531,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B00MM8C0YC.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147r9ukc",
@@ -10270,7 +10563,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0147R9UKC.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147r9ui4",
@@ -10303,7 +10596,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0147R9UI4.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0147r9ul6",
@@ -10335,7 +10628,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0147R9UL6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b01492lpey",
@@ -10368,7 +10661,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B01492LPEY.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b014930qne",
@@ -10399,7 +10692,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B014930QNE.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b019g82gxu",
@@ -10431,7 +10724,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B019G82GXU.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b07kpy5n8t",
@@ -10463,7 +10756,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B07KPY5N8T.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0842ysrpr",
@@ -10495,7 +10788,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0842YSRPR.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b01kmvi792",
@@ -10527,7 +10820,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B01KMVI792.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b07qp1xrhj",
@@ -10559,7 +10852,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B07QP1XRHJ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b07kpxqbsn",
@@ -10591,7 +10884,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B07KPXQBSN.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b01gp1ejk4",
@@ -10634,7 +10927,12 @@
       "hair",
       "hair-color",
       "semi-permanent",
-      "vegan","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Ginger Hair Dye", "Professional Hair Care",
+      "vegan",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Ginger Hair Dye",
+      "Professional Hair Care",
       "cruelty-free",
       "color"
     ],
@@ -10656,7 +10954,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0C7DPRS3V.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0756myyd8",
@@ -10664,7 +10962,14 @@
     "name": "צבע שיער חצי-קבוע Arctic Fox – Arctic Fox Vegan Porange Permanent – Vegan & Cruelty-Free",
     "size": null,
     "categories": [
-      "hair","Hair Care", "Hair Coloring Products", "Semi-Permanent Hair Color", "Vegan Beauty", "Cruelty-Free Hair Care", "Bright Hair Color", "Professional Hair Care",
+      "hair",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Semi-Permanent Hair Color",
+      "Vegan Beauty",
+      "Cruelty-Free Hair Care",
+      "Bright Hair Color",
+      "Professional Hair Care",
       "hair-color",
       "semi-permanent",
       "vegan",
@@ -10689,7 +10994,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0756MYYD8.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b0756lx7yt",
@@ -10721,7 +11026,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B0756LX7YT.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b07pyhsgyf",
@@ -10787,7 +11092,7 @@
     ],
     "isKids": false,
     "isDiscounted": null,
-    "image": "assets/img/products/B09HW2GN1C.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "arctic-fox-b09wzb31r6",
@@ -10820,7 +11125,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B09WZB31R6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "dotted-zebra-super-clay-face-b0cj38jw5s",
@@ -11055,7 +11360,7 @@
         "asin": "B01MA35EGM",
         "currency": "USD",
         "priceUSD": 20.0,
-                "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -11355,7 +11660,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0BYPMN677.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "derma-e-b00niokab0",
@@ -11419,7 +11724,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B09BPBGRBZ.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "derma-e-b084z48bcf",
@@ -11512,7 +11817,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B00VU68T6U.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "derma-e-b0chtmmghvh",
@@ -11544,7 +11849,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B0CHTMGHVH.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "derma-e-b0d1ksq9tj",
@@ -11607,7 +11912,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B00IV29IH0.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "derma-e-b000gezu14",
@@ -11639,7 +11944,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B000GEZU14.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "derma-e-b000gezu1e",
@@ -11703,7 +12008,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B07FSRJ54T.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "derma-e-b07fsrhrkw",
@@ -11735,7 +12040,7 @@
     ],
     "isKids": false,
     "isDiscounted": false,
-    "image": "assets/img/products/B07FSRHRKW.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "skin1004-b0b1jrgglf",
@@ -11926,7 +12231,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-      "priceMin": 50,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -11958,7 +12263,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-     "priceMin": 50,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -11990,7 +12295,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-      "priceMin": 50,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -12022,7 +12327,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-      "priceMin": 50,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -12054,7 +12359,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-   "priceMin": 50,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -12085,7 +12390,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-       "priceMin": 50,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -12118,7 +12423,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-       "priceMin": 50,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -12152,7 +12457,7 @@
     "isVegan": true,
     "isPeta": null,
     "isLB": null,
-     "priceMin": 50,
+    "priceMin": 50,
     "priceMax": 100,
     "offers": [
       {
@@ -12238,12 +12543,13 @@
     "name": "סבון רפואי לניקוי עם חומצה סליצילית 2% (4 oz)",
     "size": "4 oz",
     "categories": [
-      "skincare", "soap", "body",
+      "skincare",
+      "soap",
+      "body",
       "cleanser"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 0,
     "priceMax": 50,
     "offers": [
@@ -12270,7 +12576,6 @@
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 0,
     "priceMax": 50,
     "offers": [
@@ -12297,7 +12602,6 @@
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": null,
     "priceMax": null,
     "offers": [
@@ -12307,7 +12611,8 @@
         "url": "https://www.amazon.com/dp/B0CPD67RT2?tag=nocrueltyil-20",
         "asin": "B0CPD67RT2",
         "currency": "USD",
-        "priceUSD": null      }
+        "priceUSD": null
+      }
     ],
     "isKids": false,
     "image": "assets/img/products/B0CPD67RT2.jpg"
@@ -12337,7 +12642,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0D9KTPF7M.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "a-p-chem-b0cpn5ycq8",
@@ -12378,8 +12683,7 @@
       "eyes"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 40,
     "priceMax": 50,
     "offers": [
@@ -12401,12 +12705,18 @@
     "name": "Matte Fluid Eye Paint – Blue Monday צללית נוזלית בפיגמנט גבוה, עמידה לאורך זמן בגימור מאט.",
     "size": "0.81 ounces",
     "categories": [
-      "makeup","Makeup", "Eye Makeup", "Eyeshadow", "Liquid Eyeshadow", "Matte Eyeshadow", "Long-Wear Makeup", "High-Pigment Cosmetics",
+      "makeup",
+      "Makeup",
+      "Eye Makeup",
+      "Eyeshadow",
+      "Liquid Eyeshadow",
+      "Matte Eyeshadow",
+      "Long-Wear Makeup",
+      "High-Pigment Cosmetics",
       "eyes"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 0,
     "priceMax": 50,
     "offers": [
@@ -12429,12 +12739,17 @@
     "name": "Fractal Glitter Eye Paint – Take A Trip צללית גליטר נוזלית עמידה – נצנוץ אינטנסיבי במרקם מוס",
     "size": "0.13 oz",
     "categories": [
-      "makeup","Makeup", "Eye Makeup", "Eyeshadow", "Liquid Eyeshadow", "Glitter Eyeshadow", "Long-Wear Makeup",
+      "makeup",
+      "Makeup",
+      "Eye Makeup",
+      "Eyeshadow",
+      "Liquid Eyeshadow",
+      "Glitter Eyeshadow",
+      "Long-Wear Makeup",
       "eyes"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 50,
     "priceMax": 65,
     "offers": [
@@ -12457,11 +12772,19 @@
     "name": "Matte Fluid Eye Paint – Capulets צללית נוזלית בפיגמנט גבוה, עמידה לאורך זמן בגימור מאט.",
     "size": "1.06 ounces",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Eye Makeup", "Eyeshadow", "Liquid Eyeshadow", "Matte Eyeshadow", "Long-Wear Makeup", "High-Pigment Cosmetics",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Eye Makeup",
+      "Eyeshadow",
+      "Liquid Eyeshadow",
+      "Matte Eyeshadow",
+      "Long-Wear Makeup",
+      "High-Pigment Cosmetics",
       "eyes",
       "eyeshadow"
     ],
-   "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": null,
     "priceMin": 50,
@@ -12486,12 +12809,18 @@
     "name": "Matte Fluid Eye Paint – Art of Darkness צללית נוזלית בפיגמנט גבוה, עמידה לאורך זמן בגימור מאט.",
     "size": " 0.32 ounces",
     "categories": [
-      "makeup","Makeup", "Eye Makeup", "Eyeshadow", "Liquid Eyeshadow", "Matte Eyeshadow", "Long-Wear Makeup", "High-Pigment Cosmetics",
+      "makeup",
+      "Makeup",
+      "Eye Makeup",
+      "Eyeshadow",
+      "Liquid Eyeshadow",
+      "Matte Eyeshadow",
+      "Long-Wear Makeup",
+      "High-Pigment Cosmetics",
       "eyes"
     ],
-     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isVegan": true,
+    "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -12514,12 +12843,17 @@
     "name": "Fractal Glitter Eye Paint – Above Santorini צללית גליטר נוזלית עמידה – נצנוץ אינטנסיבי במרקם מוס",
     "size": "0.13 oz",
     "categories": [
-      "makeup","Makeup", "Eye Makeup", "Eyeshadow", "Liquid Eyeshadow", "Glitter Eyeshadow", "Long-Wear Makeup",
+      "makeup",
+      "Makeup",
+      "Eye Makeup",
+      "Eyeshadow",
+      "Liquid Eyeshadow",
+      "Glitter Eyeshadow",
+      "Long-Wear Makeup",
       "eyes"
     ],
-   "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isVegan": true,
+    "isPeta": null,
     "priceMin": 50,
     "priceMax": 65,
     "offers": [
@@ -12543,12 +12877,18 @@
     "size": "0.43 oz",
     "categories": [
       "makeup",
-      "eyes","Makeup", "Eye Makeup", "Mascara", "Volumizing Mascara", "Lengthening Mascara", "Clean Beauty", "Smudge-Proof Makeup",
+      "eyes",
+      "Makeup",
+      "Eye Makeup",
+      "Mascara",
+      "Volumizing Mascara",
+      "Lengthening Mascara",
+      "Clean Beauty",
+      "Smudge-Proof Makeup",
       "mascara"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -12574,9 +12914,8 @@
       "makeup",
       "eyes"
     ],
-     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isVegan": true,
+    "isPeta": null,
     "priceMin": 45,
     "priceMax": 60,
     "offers": [
@@ -12602,8 +12941,7 @@
       "eyes"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 40,
     "priceMax": 50,
     "offers": [
@@ -12625,12 +12963,17 @@
     "name": "מייקאפ The Performer (גוון F2 Olive) – בסיס נושם הממוקד בטיפוח העור",
     "size": "1.08 oz",
     "categories": [
-      "makeup","Makeup", "Face Makeup", "Foundation", "Skincare-Infused Makeup", "Liquid Foundation", "Clean Beauty",
+      "makeup",
+      "Makeup",
+      "Face Makeup",
+      "Foundation",
+      "Skincare-Infused Makeup",
+      "Liquid Foundation",
+      "Clean Beauty",
       "face"
     ],
-   "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isVegan": true,
+    "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -12653,7 +12996,14 @@
     "name": "THE PERFORMER מייקאפ/פאונדיישן  – כיסוי בינוני, עמיד ונושם",
     "size": "1.08 oz",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Face Makeup", "Foundation", "Liquid Foundation", "Long-Wear Makeup", "Vegan Beauty",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Foundation",
+      "Liquid Foundation",
+      "Long-Wear Makeup",
+      "Vegan Beauty",
       "face"
     ],
     "isVegan": true,
@@ -12682,11 +13032,16 @@
     "categories": [
       "איפור",
       "פנים",
-      "קונטור","Beauty & Personal Care", "Makeup", "Face Makeup", "Contour & Highlight Palettes", "Sculpting Makeup", "Vegan Beauty"
+      "קונטור",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Contour & Highlight Palettes",
+      "Sculpting Makeup",
+      "Vegan Beauty"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": null,
     "priceMax": null,
     "offers": [
@@ -12700,7 +13055,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0BZXWNQ7V.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "act-acre-b07q74bcvb",
@@ -12709,12 +13064,18 @@
     "size": "3 fl oz",
     "categories": [
       "hair",
-      "scalp","Beauty & Personal Care", "Hair Care", "Hair & Scalp Treatments", "Scalp Treatments", "Hair Oils", "Detox Skincare", "Cold-Pressed Beauty",
+      "scalp",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair & Scalp Treatments",
+      "Scalp Treatments",
+      "Hair Oils",
+      "Detox Skincare",
+      "Cold-Pressed Beauty",
       "treatment"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 150,
     "priceMax": 200,
     "offers": [
@@ -12737,13 +13098,21 @@
     "name": "שמפו יבש לנפח על בסיס חומצה פולבית מהצומח ספריי אבקה טבעי ללא בישום עם אורז | מרענן שיער שומני ומחזיר נפח | לכל סוגי השיער (ללא אירוסול)",
     "size": "0.46 oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Dry Shampoo", "Hair Styling Products", "Volumizing Hair Products", "Fragrance-Free Skincare", "Clean Beauty", "Natural Hair Care", "Aerosol-Free",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Dry Shampoo",
+      "Hair Styling Products",
+      "Volumizing Hair Products",
+      "Fragrance-Free Skincare",
+      "Clean Beauty",
+      "Natural Hair Care",
+      "Aerosol-Free",
       "shampoo",
       "dry-shampoo"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 70,
     "priceMax": 90,
     "offers": [
@@ -12773,7 +13142,6 @@
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 100,
     "priceMax": 150,
     "offers": [
@@ -12788,7 +13156,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B091R87682.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "act-acre-b0b8smvn44",
@@ -12796,13 +13164,20 @@
     "name": "סרום תאי גזע לקרקפת בעיבוד קר",
     "size": "2.2 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair & Scalp Treatments", "Scalp Treatments", "Hair Serums", "Stem Cell Skincare", "Cold-Processed Beauty", "Vegan Beauty",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair & Scalp Treatments",
+      "Scalp Treatments",
+      "Hair Serums",
+      "Stem Cell Skincare",
+      "Cold-Processed Beauty",
+      "Vegan Beauty",
       "scalp",
       "treatment"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 250,
     "priceMax": 300,
     "offers": [
@@ -12825,13 +13200,20 @@
     "name": "פילינג לקרקפת עם חומצה סליצילית בכבישה קרה לטיפול בקשקשים, עודפי שומן והצטברות לכלוך | חומצה סליצילית, פפאיה ונענע | לאיזון והרגעה",
     "size": "2 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair & Scalp Treatments", "Scalp Treatments", "Scalp Scrubs & Exfoliators", "Anti-Dandruff Products", "Cold-Pressed Beauty", "Salicylic Acid Skincare",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair & Scalp Treatments",
+      "Scalp Treatments",
+      "Scalp Scrubs & Exfoliators",
+      "Anti-Dandruff Products",
+      "Cold-Pressed Beauty",
+      "Salicylic Acid Skincare",
       "scalp",
       "treatment"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 100,
     "priceMax": 150,
     "offers": [
@@ -12854,11 +13236,18 @@
     "name": "שמן שיער ארגן לשיקום בעיבוד קר 5% (מבוסס צמחים)",
     "size": null,
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair Oils", "Argan Oil", "Hair & Scalp Treatments", "Repair & Treatment", "Cold-Processed Beauty", "Plant-Based Beauty"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair Oils",
+      "Argan Oil",
+      "Hair & Scalp Treatments",
+      "Repair & Treatment",
+      "Cold-Processed Beauty",
+      "Plant-Based Beauty"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 140,
     "priceMax": 175,
     "offers": [
@@ -12881,15 +13270,22 @@
     "name": "סרום לקרקפת לקירור ואיזון המיקרוביום",
     "size": "2.2 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair & Scalp Treatments", "Scalp Treatments", "Hair Serums", "Soothing Skincare", "Microbiome-Friendly", "Cooling Hair Care",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair & Scalp Treatments",
+      "Scalp Treatments",
+      "Hair Serums",
+      "Soothing Skincare",
+      "Microbiome-Friendly",
+      "Cooling Hair Care",
       "scalp",
       "treatment"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
-    "priceMin":200,
-    "priceMax":250,
+    "priceMin": 200,
+    "priceMax": 250,
     "offers": [
       {
         "store": "amazon-us",
@@ -12910,13 +13306,20 @@
     "name": "סרום תאי גזע לקרקפת בעיבוד קר (1 fl oz)",
     "size": "1 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair & Scalp Treatments", "Scalp Treatments", "Hair Serums", "Stem Cell Skincare", "Cold-Processed Beauty", "Vegan Beauty",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair & Scalp Treatments",
+      "Scalp Treatments",
+      "Hair Serums",
+      "Stem Cell Skincare",
+      "Cold-Processed Beauty",
+      "Vegan Beauty",
       "scalp",
       "treatment"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 155,
     "priceMax": 190,
     "offers": [
@@ -12939,12 +13342,19 @@
     "name": "מערכת שיער לעיבוי ומראה מלא בעיבוד קר (סט 3 חלקים)",
     "size": null,
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair Loss Products", "Hair & Scalp Treatments", "Thinning Hair Treatments", "Hair Care Sets", "Cold-Processed Beauty", "Volumizing Hair Products",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair Loss Products",
+      "Hair & Scalp Treatments",
+      "Thinning Hair Treatments",
+      "Hair Care Sets",
+      "Cold-Processed Beauty",
+      "Volumizing Hair Products",
       "treatment"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 385,
     "priceMax": 475,
     "offers": [
@@ -12967,11 +13377,18 @@
     "name": "מרכך תאי גזע לחיזוק והזנה (Stem Cell Conditioner) מחזק קצוות, מעניק ברק ומלחח שיער דק | תאי גזע של תפוח, שמן קיק ונוגדי חמצון | במרקם קליל, בשיטת כבישה קרה® ומתאים לשיער צבוע",
     "size": "10 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Conditioners", "Strengthening Conditioners", "Hair & Scalp Treatments", "Cold-Pressed Beauty", "Vegan Beauty", "Safe for Color-Treated Hair"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Conditioners",
+      "Strengthening Conditioners",
+      "Hair & Scalp Treatments",
+      "Cold-Pressed Beauty",
+      "Vegan Beauty",
+      "Safe for Color-Treated Hair"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 100,
     "priceMax": 150,
     "offers": [
@@ -12986,7 +13403,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0F1WG36S9.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "act-acre-b0f1wlhzvm",
@@ -12994,11 +13411,18 @@
     "name": "שמפו תאי גזע לעיבוי וטיפוח (Stem Cell Shampoo) משפר צפיפות, מלחח את הקרקפת ומסיר הצטברות לכלוך | למראה שיער עבה ומלא יותר | תאי גזע של תפוח שוויצרי, קפאין וחומצה היאלורונית | בשיטת כבישה קרה®",
     "size": "10 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoos", "Volumizing Shampoos", "Hair & Scalp Treatments", "Thinning Hair Treatments", "Cold-Pressed Beauty", "Vegan Beauty"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoos",
+      "Volumizing Shampoos",
+      "Hair & Scalp Treatments",
+      "Thinning Hair Treatments",
+      "Cold-Pressed Beauty",
+      "Vegan Beauty"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 100,
     "priceMax": 150,
     "offers": [
@@ -13021,12 +13445,19 @@
     "name": "טיפול פפטידים ותאי גזע 3% בעיבוד קר (3 fl oz)",
     "size": "3 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair & Scalp Treatments", "Scalp Treatments", "Hair Serums", "Peptide Skincare", "Stem Cell Skincare", "Cold-Processed Beauty",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair & Scalp Treatments",
+      "Scalp Treatments",
+      "Hair Serums",
+      "Peptide Skincare",
+      "Stem Cell Skincare",
+      "Cold-Processed Beauty",
       "treatment"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 335,
     "priceMax": 415,
     "offers": [
@@ -13049,13 +13480,20 @@
     "name": "סרום ניאצינאמיד 4% לקרקפת שומנית בעיבוד קר (2.2 fl oz)",
     "size": "2.2 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair & Scalp Treatments", "Scalp Treatments", "Hair Serums", "Niacinamide Skincare", "Oily Scalp Care", "Cold-Processed Beauty",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair & Scalp Treatments",
+      "Scalp Treatments",
+      "Hair Serums",
+      "Niacinamide Skincare",
+      "Oily Scalp Care",
+      "Cold-Processed Beauty",
       "scalp",
       "treatment"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 190,
     "priceMax": 235,
     "offers": [
@@ -13078,7 +13516,13 @@
     "name": "סקראב פנים מבהיר במיוחד (האריזה עשויה להשתנות)",
     "size": "4 fl oz",
     "categories": [
-      "טיפוח עור","Beauty & Personal Care", "Skin Care", "Facial Cleansers", "Exfoliators & Scrubs", "Brightening Skincare", "Vegan Beauty",
+      "טיפוח עור",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Facial Cleansers",
+      "Exfoliators & Scrubs",
+      "Brightening Skincare",
+      "Vegan Beauty",
       "פנים",
       "פילינג",
       "ניקוי"
@@ -13100,7 +13544,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B003Z4OD24.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b003z4qgre",
@@ -13108,13 +13552,20 @@
     "name": "קרם לילה מבהיר (האריזה עשויה להשתנות)",
     "size": "1.7 fl oz",
     "categories": [
-      "טיפוח עור","Beauty & Personal Care", "Skin Care", "Moisturizers", "Night Creams", "Brightening Skincare", "Anti-Aging Skincare", "Vegan Beauty",
+      "טיפוח עור",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Moisturizers",
+      "Night Creams",
+      "Brightening Skincare",
+      "Anti-Aging Skincare",
+      "Vegan Beauty",
       "פנים",
       "קרם לילה",
       "הבהרה",
       "לחות"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13131,7 +13582,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B003Z4QGRE.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b003z4qhp0",
@@ -13140,12 +13591,18 @@
     "size": "1.7 fl oz",
     "categories": [
       "טיפוח עור",
-      "פנים","Beauty & Personal Care", "Skin Care", "Moisturizers", "Day Creams", "Brightening Skincare", "Vegan Beauty",
+      "פנים",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Moisturizers",
+      "Day Creams",
+      "Brightening Skincare",
+      "Vegan Beauty",
       "קרם יום",
       "לחות",
       "הבהרה"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13170,12 +13627,18 @@
     "name": "סרום זוהר מבהיר (Brightening Glow Serum) (האריזה עשויה להשתנות)",
     "size": "1 fl oz",
     "categories": [
-      "טיפוח עור","Beauty & Personal Care", "Skin Care", "Facial Serums", "Brightening Skincare", "Glow Serums", "Vegan Beauty",
+      "טיפוח עור",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Facial Serums",
+      "Brightening Skincare",
+      "Glow Serums",
+      "Vegan Beauty",
       "פנים",
       "סרום",
       "הבהרה"
     ],
-      "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13200,12 +13663,20 @@
     "name": "שמן ארגן אורגני לשיער ולעור (כבישה קרה)",
     "size": "1 fl oz",
     "categories": [
-      "טיפוח עור","Beauty & Personal Care", "Hair Care", "Hair Oils", "Skin Care", "Body Oils", "Argan Oil", "Cold-Pressed Beauty", "Organic Beauty",
+      "טיפוח עור",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair Oils",
+      "Skin Care",
+      "Body Oils",
+      "Argan Oil",
+      "Cold-Pressed Beauty",
+      "Organic Beauty",
       "שיער",
       "שמן",
       "טיפול"
     ],
-        "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13222,7 +13693,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B004DTQ9L8.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b007n7326w",
@@ -13230,12 +13701,19 @@
     "name": "סקראב פנים לחידוש והחייאה (אנטי-אייג'ינג) (האריזה עשויה להשתנות)",
     "size": "4 fl oz",
     "categories": [
-      "טיפוח עור","Beauty & Personal Care", "Skin Care", "Facial Cleansers", "Exfoliators & Scrubs", "Anti-Aging Skincare", "Skin Renewal Treatments", "Vegan Beauty",
+      "טיפוח עור",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Facial Cleansers",
+      "Exfoliators & Scrubs",
+      "Anti-Aging Skincare",
+      "Skin Renewal Treatments",
+      "Vegan Beauty",
       "פנים",
       "פילינג",
       "אנטי-אייג'ינג"
     ],
-        "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13252,7 +13730,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B007N7326W.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b00b4c35iw",
@@ -13261,11 +13739,18 @@
     "size": "4 fl oz",
     "categories": [
       "טיפוח עור",
-      "פנים","Beauty & Personal Care", "Skin Care", "Facial Cleansers", "Cleansing Creams", "Soothing Skincare", "Sensitive Skin Care", "Vegan Beauty",
+      "פנים",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Facial Cleansers",
+      "Cleansing Creams",
+      "Soothing Skincare",
+      "Sensitive Skin Care",
+      "Vegan Beauty",
       "ניקוי",
       "קרם ניקוי"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13282,7 +13767,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B00B4C35IW.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b00gcylkc0",
@@ -13290,13 +13775,20 @@
     "name": "קרם לילה מבהיר (1.7 fl oz)",
     "size": "1.7 fl oz",
     "categories": [
-      "טיפוח עור","Beauty & Personal Care", "Skin Care", "Moisturizers", "Night Creams", "Brightening Skincare", "Anti-Aging Skincare", "Vegan Beauty",
+      "טיפוח עור",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Moisturizers",
+      "Night Creams",
+      "Brightening Skincare",
+      "Anti-Aging Skincare",
+      "Vegan Beauty",
       "פנים",
       "קרם לילה",
       "הבהרה",
       "לחות"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13313,7 +13805,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B00GCYLKC0.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b00yz1j3fi",
@@ -13322,11 +13814,17 @@
     "size": "4 fl oz",
     "categories": [
       "טיפוח עור",
-      "פנים","Beauty & Personal Care", "Skin Care", "Facial Cleansers", "Exfoliators & Scrubs", "Brightening Skincare", "Vegan Beauty",
+      "פנים",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Facial Cleansers",
+      "Exfoliators & Scrubs",
+      "Brightening Skincare",
+      "Vegan Beauty",
       "פילינג",
       "ניקוי"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13343,7 +13841,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B00YZ1J3FI.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b01b4hwfo6",
@@ -13356,7 +13854,7 @@
       "פילינג",
       "ניקוי"
     ],
-      "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13373,7 +13871,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B01B4HWFO6.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b078zhplnr",
@@ -13385,7 +13883,7 @@
       "שמפו",
       "לחות"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13402,7 +13900,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B078ZHPLNR.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b07jqgnnf4",
@@ -13416,7 +13914,7 @@
       "הבהרה",
       "לחות"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13433,7 +13931,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B07JQGNNF4.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b07nj4h5s3",
@@ -13447,7 +13945,7 @@
       "אנטי-אייג'ינג",
       "לחות"
     ],
-     "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13464,7 +13962,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B07NJ4H5S3.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b07px9cgd5",
@@ -13478,7 +13976,7 @@
       "לחות",
       "הבהרה"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13495,7 +13993,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B07PX9CGD5.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b082yfn2zk",
@@ -13507,7 +14005,7 @@
       "שמפו",
       "ניקוי עמוק"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13524,7 +14022,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B082YFN2ZK.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b082yg2vt8",
@@ -13536,7 +14034,7 @@
       "מרכך",
       "נפח"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13553,7 +14051,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B082YG2VT8.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b082yg4lnc",
@@ -13566,7 +14064,7 @@
       "החלקה",
       "נוגד פריז"
     ],
-      "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13595,7 +14093,7 @@
       "שמפו",
       "נפח"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13612,7 +14110,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B082YGK39W.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b082yh2cd8",
@@ -13624,7 +14122,7 @@
       "מרכך",
       "ניקוי עמוק"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13641,7 +14139,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B082YH2CD8.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b08wx9w5xc",
@@ -13655,7 +14153,7 @@
       "טיפול",
       "בקוצ'יול"
     ],
-      "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13672,7 +14170,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B08WX9W5XC.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0b6q6bcsn",
@@ -13685,7 +14183,7 @@
       "פילינג",
       "ניקוי"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13702,7 +14200,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0B6Q6BCSN.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0b6q6bshc",
@@ -13715,7 +14213,7 @@
       "קרם יום",
       "מרגיע"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13732,7 +14230,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0B6Q6BSHC.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0b6q773t5",
@@ -13746,7 +14244,7 @@
       "לחות",
       "הבהרה"
     ],
-        "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13763,7 +14261,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0B6Q773T5.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0bdzjfpky",
@@ -13776,7 +14274,7 @@
       "קרם לילה",
       "לחות"
     ],
-      "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13793,7 +14291,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0BDZJFPKY.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0cmzjvn9k",
@@ -13806,7 +14304,7 @@
       "חיזוק",
       "שיקום"
     ],
-        "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13865,7 +14363,7 @@
       "שמן",
       "קפסולות"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13882,7 +14380,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0CZGBVZPG.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0fswsppqq8",
@@ -13894,7 +14392,7 @@
       "פנים",
       "קרם לחות"
     ],
-        "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": null,
@@ -13911,7 +14409,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0FSWSPQQ8.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Aesop-b01lrx5rpg",
@@ -13950,7 +14448,7 @@
       "home",
       "candles"
     ],
-  "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": true,
     "priceMin": 300,
@@ -13974,7 +14472,15 @@
     "name": "מארז איפור קרמי 3 ב-1 Stack The Odds (גוון Sassy Pants) – סומק, ברונזר והיילייטר במארז קומפקטי אחד",
     "size": "8.1g",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Face Makeup", "Makeup Palettes", "Blush", "Bronzer", "Highlighter", "Cream Makeup",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Makeup Palettes",
+      "Blush",
+      "Bronzer",
+      "Highlighter",
+      "Cream Makeup",
       "eyes"
     ],
     "isVegan": true,
@@ -14003,7 +14509,15 @@
     "name": "מארז איפור קרמי 3 ב-1 Stack The Odds (גוון Sunkissed) – סומק, ברונזר והיילייטר במארז קומפקטי אחד",
     "size": "0.28 oz",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Face Makeup", "Makeup Palettes", "Blush", "Bronzer", "Highlighter", "Cream Makeup",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Makeup Palettes",
+      "Blush",
+      "Bronzer",
+      "Highlighter",
+      "Cream Makeup",
       "eyes"
     ],
     "isVegan": true,
@@ -14031,10 +14545,18 @@
     "name": "11th Hour – צללית סטיק קרמית עמידה במים צללית ועפרון עיניים עמיד לאורך זמן | מעבר ממרקם קרם לאבקה | גוון: Chestnut Matte",
     "size": "0.05 ounces",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Eye Makeup", "Eyeshadow", "Eyeliner", "Eyeshadow Sticks", "Waterproof Makeup", "Long-Wear Makeup",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Eye Makeup",
+      "Eyeshadow",
+      "Eyeliner",
+      "Eyeshadow Sticks",
+      "Waterproof Makeup",
+      "Long-Wear Makeup",
       "eyes"
     ],
-   "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 50,
@@ -14059,7 +14581,15 @@
     "name": "קרם פנים עם גוון SPF 50 – מסנן קרינה מינרלי יומי לפנים – לחותי ומגן  (Shine)",
     "size": "—",
     "categories": [
-      "makeup","Beauty & Personal Care", "Skin Care", "Sun Protection", "Face Sunscreen", "Mineral Sunscreen", "Tinted Moisturizers", "SPF 50", "Face Makeup",
+      "makeup",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Sun Protection",
+      "Face Sunscreen",
+      "Mineral Sunscreen",
+      "Tinted Moisturizers",
+      "SPF 50",
+      "Face Makeup",
       "face"
     ],
     "isVegan": true,
@@ -14086,10 +14616,16 @@
     "name": "קונסילר Game Face – All Star (קליל, נבנה בשכבות, לחותי, מתאים לאזור מתחת לעיניים)",
     "size": "0.19 fl oz",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Face Makeup", "Concealers", "Under-Eye Concealers", "Hydrating Makeup",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Concealers",
+      "Under-Eye Concealers",
+      "Hydrating Makeup",
       "face"
     ],
-   "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 100,
@@ -14113,7 +14649,13 @@
     "name": "קונסילר Game Face – קליל, נבנה בשכבות, מעניק לחות – לכיסוי כהויות מתחת לעיניים –",
     "size": "—",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Face Makeup", "Concealers", "Under-Eye Concealers", "Hydrating Makeup",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Concealers",
+      "Under-Eye Concealers",
+      "Hydrating Makeup",
       "face"
     ],
     "isVegan": true,
@@ -14140,9 +14682,15 @@
     "name": "סט מברשות איפור קומפקטי 4-ב-1 – לפודרה, טשטוש, דיוק ומייקאפ – אידאלי לנסיעות –",
     "size": "—",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Makeup Tools & Accessories", "Makeup Brushes", "Makeup Brush Sets", "Travel Accessories"
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Makeup Tools & Accessories",
+      "Makeup Brushes",
+      "Makeup Brush Sets",
+      "Travel Accessories"
     ],
-     "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 70,
@@ -14166,10 +14714,20 @@
     "name": "Pen Pal 4-in-1 – עט איפור רב-שימושי אייליינר, עפרון שפתיים, היילייטר ועפרון גבות באחד| קומפקטי ומושלם לתיקונים בדרכים | גוון: In A Rouge (Light)",
     "size": "0.40g",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Eye Makeup", "Lip Makeup", "Face Makeup", "Eyeliner", "Lip Liners", "Eyebrow Pencils", "Highlighter", "Multi-Use Makeup",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Eye Makeup",
+      "Lip Makeup",
+      "Face Makeup",
+      "Eyeliner",
+      "Lip Liners",
+      "Eyebrow Pencils",
+      "Highlighter",
+      "Multi-Use Makeup",
       "eyes"
     ],
-   "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 50,
@@ -14197,7 +14755,7 @@
       "makeup",
       "face"
     ],
-   "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 50,
@@ -14224,7 +14782,7 @@
       "makeup",
       "face"
     ],
-   "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 120,
@@ -14248,9 +14806,15 @@
     "name": "Swift Eyebrow – עיפרון גבות הכל-ב-אחד כולל מחדד מובנה ומברשת ספולי | עמיד במים ובפני מריחות | גימור מאט טבעי | גוון: Taupe",
     "size": "0.2 g",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Eye Makeup", "Eyebrow Pencils", "Waterproof Makeup", "Makeup Tools & Accessories"
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Eye Makeup",
+      "Eyebrow Pencils",
+      "Waterproof Makeup",
+      "Makeup Tools & Accessories"
     ],
-     "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 50,
@@ -14302,9 +14866,14 @@
     "name": "עיפרון גבות Swift Eyebrow All-In-1 – עיצוב והגדרה למראה מושלם - Dark Brown",
     "size": "0.2g",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Eye Makeup", "Eyebrow Pencils", "Makeup Tools & Accessories"
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Eye Makeup",
+      "Eyebrow Pencils",
+      "Makeup Tools & Accessories"
     ],
-   "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 50,
@@ -14321,7 +14890,7 @@
       }
     ],
     "isKids": false,
-        "isDiscounted": true,
+    "isDiscounted": true,
     "image": "assets/img/products/B0DFFT6VZV.jpg"
   },
   {
@@ -14330,13 +14899,20 @@
     "name": "שמפו רוזמרין לניקוי עמוק וחיזוק הקרקפת (Rosemary Scalp Scaling) שמפו ביוטין לעידוד הצמיחה ומניעת דלילות | פורמולה טבעית ומטהרת | ללא סולפטים, סיליקונים ופרבנים",
     "size": "13.53 oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoos", "Scalp Care", "Hair Regrowth & Anti-Thinning", "Sulfate-Free Hair Care", "Natural Beauty", "Rosemary & Biotin Treatments",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoos",
+      "Scalp Care",
+      "Hair Regrowth & Anti-Thinning",
+      "Sulfate-Free Hair Care",
+      "Natural Beauty",
+      "Rosemary & Biotin Treatments",
       "scalp",
       "shampoo"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -14359,7 +14935,12 @@
     "name": "קרם גוף לתינוק ללא בישום – בפיקוח EWG ונבדק דרמטולוגית למראה עור בריא ולחות מוגברת",
     "size": "16 fl oz",
     "categories": [
-      "baby","Beauty & Personal Care", "Baby & Child Care", "Baby Skin Care", "Moisturizers", "Sensitive Skin Care"
+      "baby",
+      "Beauty & Personal Care",
+      "Baby & Child Care",
+      "Baby Skin Care",
+      "Moisturizers",
+      "Sensitive Skin Care"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -14370,7 +14951,7 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/4a3mVF1",
+        "url": "https://www.amazon.com/dp/B07J4KHSMC?tag=nocrueltyil-20",
         "asin": "B07J4KHSMC",
         "currency": "USD",
         "priceUSD": 17.24
@@ -14387,7 +14968,7 @@
     "categories": [
       "face"
     ],
-  "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": null,
     "priceMin": 0,
@@ -14411,7 +14992,15 @@
     "name": "סבון גוף לעור רגיש עם שיבולת שועל (Oat) מאושר בתקן EWG | נבדק דרמטולוגית | נוסחה עדינה במיוחד ללא בישום",
     "size": "16 fl oz",
     "categories": [
-      "body","Beauty & Personal Care", "Personal Care", "Bath & Body", "Body Wash", "Sensitive Skin Care", "Fragrance-Free", "EWG Verified", "Dermatologist Tested"
+      "body",
+      "Beauty & Personal Care",
+      "Personal Care",
+      "Bath & Body",
+      "Body Wash",
+      "Sensitive Skin Care",
+      "Fragrance-Free",
+      "EWG Verified",
+      "Dermatologist Tested"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -14438,7 +15027,16 @@
     "name": "מרכך שיער טבעי לילדים – וניל ואגס היפואלרגני | על בסיס רכיבים מהצומח ומינרלים | לשיער רך וקל לסירוק",
     "size": "8 fl oz",
     "categories": [
-      "kids", "conditioner","Beauty & Personal Care", "Hair Care", "Conditioners", "Baby & Child Care", "Children's Hair Care", "Natural Beauty", "Hypoallergenic", "Plant-Based Products",
+      "kids",
+      "conditioner",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Conditioners",
+      "Baby & Child Care",
+      "Children's Hair Care",
+      "Natural Beauty",
+      "Hypoallergenic",
+      "Plant-Based Products",
       "hair"
     ],
     "isVegan": true,
@@ -14466,7 +15064,16 @@
     "name": "Bubble Wash לילדים (3 ב-1) מאושר בתקן EWG סט שמפו +  סבון גוף וקצף אמבטיה| ניחוח מנגו מרענן | על בסיס רכיבים מהצומח ומינרלים",
     "size": "16 fl oz",
     "categories": [
-      "kids","Beauty & Personal Care", "Personal Care", "Bath & Body", "Body Wash", "Baby & Child Care", "Bubble Bath", "Children's Bath Products", "EWG Verified", "Plant-Based Products",
+      "kids",
+      "Beauty & Personal Care",
+      "Personal Care",
+      "Bath & Body",
+      "Body Wash",
+      "Baby & Child Care",
+      "Bubble Bath",
+      "Children's Bath Products",
+      "EWG Verified",
+      "Plant-Based Products",
       "body"
     ],
     "isVegan": true,
@@ -14494,7 +15101,17 @@
     "name": "שמפו וסבון גוף לילדים (2 ב-1) – ניחוח מנגו מאושר בתקן EWG | ניקוי עדין לשיער ולעור הגוף | מבוסס על רכיבים מהצומח ומינרלים",
     "size": "16 fl oz",
     "categories": [
-      "kids","Beauty & Personal Care", "Hair Care", "Shampoos", "Personal Care", "Bath & Body", "Body Wash", "Baby & Child Care", "Children's Bath Products", "EWG Verified", "Plant-Based Products",
+      "kids",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoos",
+      "Personal Care",
+      "Bath & Body",
+      "Body Wash",
+      "Baby & Child Care",
+      "Children's Bath Products",
+      "EWG Verified",
+      "Plant-Based Products",
       "hair",
       "body"
     ],
@@ -14523,7 +15140,8 @@
     "name": "שמפו Moisture Rich להזנה עמוקה (קינואה וחוחובה) מאושר בתקן EWG | לשיער יבש ופגום | מבוסס על רכיבים טבעיים ומהצומח",
     "size": "946ml",
     "categories": [
-      "hair", "shampoo"
+      "hair",
+      "shampoo"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -14534,7 +15152,7 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/3ZTwMHk",
+        "url": "https://www.amazon.com/dp/B08YFBY7XL?tag=nocrueltyil-20",
         "asin": "B08YFBY7XL",
         "currency": "USD",
         "priceUSD": 21.87
@@ -14549,7 +15167,14 @@
     "name": "מרכך Moisture Rich להזנה ושיקום (קינואה וחוחובה) לשיער יבש ופגום | מסייע בהתרת קשרים | רכיבים ממקור טבעי | נבדק דרמטולוגית",
     "size": "32 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Conditioners", "Hair Repair & Treatments", "Moisturizing Hair Care", "Natural Beauty", "Dermatologist Tested"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Conditioners",
+      "Hair Repair & Treatments",
+      "Moisturizing Hair Care",
+      "Natural Beauty",
+      "Dermatologist Tested"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -14590,7 +15215,8 @@
         "url": "https://www.amazon.com/Attitude-Conditioner-Hypoallergenic-Cruelty-free-60511/dp/B097MM895Y?tag=nocrueltyil-20",
         "asin": "B097MM895Y",
         "currency": "USD",
-        "priceUSD": 20.56      }
+        "priceUSD": 20.56
+      }
     ],
     "image": "assets/img/products/B097MM895Y.jpg",
     "isKids": false
@@ -14627,7 +15253,15 @@
     "name": "שמפו בר (מוצק) לנפח וברק – חלבון סויה וחימר אדום לשיער דק וחסר חיוניות | מאושר בתקן EWG | ניחוח פריחת תפוז ואקליפטוס",
     "size": "4 oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoos", "Shampoo Bars", "Volumizing Hair Care", "Natural Beauty", "EWG Verified", "Sustainable Beauty"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoos",
+      "Shampoo Bars",
+      "Volumizing Hair Care",
+      "Natural Beauty",
+      "EWG Verified",
+      "Sustainable Beauty"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -14680,7 +15314,14 @@
     "name": "מארז 6 סבוני מוצק לגוף ולידיים לגבר – 99% רכיבים ממקור טבעי עם שמן אבוקדו, בניחוח אקליפטוס ומרווה (113 גרם ליחידה)",
     "size": "4 oz (מארז 6)",
     "categories": [
-      "men", "Beauty & Personal Care", "Personal Care", "Bath & Body", "Bar Soap", "Men's Grooming", "Hand Soap", "Natural Beauty",
+      "men",
+      "Beauty & Personal Care",
+      "Personal Care",
+      "Bath & Body",
+      "Bar Soap",
+      "Men's Grooming",
+      "Hand Soap",
+      "Natural Beauty",
       "soap",
       "body"
     ],
@@ -14710,7 +15351,14 @@
     "name": "מארז 6 סבוני גוף מוצקים – רכיבים טבעיים להגנה וריכוך עור יבש",
     "size": "4 oz (מארז 6)",
     "categories": [
-      "body","Beauty & Personal Care", "Personal Care", "Bath & Body", "Bar Soap", "Body Care", "Natural Beauty", "Dry Skin Care"
+      "body",
+      "Beauty & Personal Care",
+      "Personal Care",
+      "Bath & Body",
+      "Bar Soap",
+      "Body Care",
+      "Natural Beauty",
+      "Dry Skin Care"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -14737,7 +15385,17 @@
     "name": "סבון ידיים קצף לילדים – רכיבים מהצומח ומינרלים, בפיקוח EWG ונבדק דרמטולוגית. ניחוח אבטיח וקוקוס, טבעוני.",
     "size": "10 fl oz (מארז 3)",
     "categories": [
-      "kids","Beauty & Personal Care", "Personal Care", "Hand Care", "Hand Soap", "Baby & Child Care", "Children's Bath Products", "Foaming Hand Soap", "EWG Verified", "Natural Beauty", "Vegan Beauty",
+      "kids",
+      "Beauty & Personal Care",
+      "Personal Care",
+      "Hand Care",
+      "Hand Soap",
+      "Baby & Child Care",
+      "Children's Bath Products",
+      "Foaming Hand Soap",
+      "EWG Verified",
+      "Natural Beauty",
+      "Vegan Beauty",
       "soap"
     ],
     "isVegan": true,
@@ -14765,7 +15423,14 @@
     "name": "סט שמפו ומרכך 2 ב-1 לגבר – טיפול בקרקפת וניקוי הצטברויות שומן",
     "size": "14 fl oz (מארז 3)",
     "categories": [
-      "men","Beauty & Personal Care", "Hair Care", "Shampoos", "Conditioners", "2-in-1 Shampoo & Conditioner", "Men's Grooming", "Scalp Care",
+      "men",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoos",
+      "Conditioners",
+      "2-in-1 Shampoo & Conditioner",
+      "Men's Grooming",
+      "Scalp Care",
       "hair"
     ],
     "isVegan": true,
@@ -14794,7 +15459,15 @@
     "name": "נר ריחני בעבודת יד – Orange & Ginger שעוות סויה ללא פרפין | שמנים אתריים טבעיים | 50 שעות בעירה | ניחוח תפוז וג'ינג'ר",
     "size": "10oz",
     "categories": [
-      "home","Home & Kitchen", "Home Decor", "Home Fragrance", "Candles", "Scented Candles", "Soy Candles", "Essential Oil Products", "Natural Living",
+      "home",
+      "Home & Kitchen",
+      "Home Decor",
+      "Home Fragrance",
+      "Candles",
+      "Scented Candles",
+      "Soy Candles",
+      "Essential Oil Products",
+      "Natural Living",
       "candles"
     ],
     "isVegan": true,
@@ -14953,7 +15626,15 @@
     "name": "שמן פנים Blue Tansy – לטיפול בפגמי עור וכיווץ נקבוביות סרום לשיפור מרקם העור | מועשר בשמן כמון שחור ורוז היפ | להרגעת אדמומיות",
     "size": "1 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Oils", "Serums", "Acne & Blemish Treatments", "Redness Reduction", "Natural Beauty",
+      "hair",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Oils",
+      "Serums",
+      "Acne & Blemish Treatments",
+      "Redness Reduction",
+      "Natural Beauty",
       "face"
     ],
     "isVegan": true,
@@ -15008,7 +15689,14 @@
     "name": "סבון פנים ויטמין C – לניקוי עמוק, הבהרה וחידוש העור מתאים לכל סוגי העור | לטיפול בסימני גיל, יובש ופגמי עור | לנשים ולגברים",
     "size": "170ml",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Cleansers", "Vitamin C Skincare", "Anti-Aging Skincare", "Brightening Skincare",
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Cleansers",
+      "Vitamin C Skincare",
+      "Anti-Aging Skincare",
+      "Brightening Skincare",
       "cleanser"
     ],
     "isVegan": true,
@@ -15036,7 +15724,14 @@
     "name": "סבון פנים קומבוצ'ה וחומצה גליקולית – לחידוש ומילוי עור בוגר אפקט ליפופילינג למראה עור מלא | פילינג עדין | מועשר בפרוביוטיקה ונוגדי חמצון",
     "size": "170ml",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Cleansers", "Anti-Aging Skincare", "Exfoliators", "Probiotic Skincare",
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Cleansers",
+      "Anti-Aging Skincare",
+      "Exfoliators",
+      "Probiotic Skincare",
       "cleanser"
     ],
     "isVegan": true,
@@ -15110,7 +15805,7 @@
       }
     ],
     "isKids": false,
-        "isDiscounted": false,
+    "isDiscounted": false,
     "image": "assets/img/products/B086W2S5LV.jpg"
   },
   {
@@ -15132,10 +15827,10 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/3Zre9KO",
+        "url": "https://www.amazon.com/dp/B086W38SXX?tag=nocrueltyil-20",
         "asin": "B086W38SXX",
         "currency": "USD",
-        "priceUSD": 26.80
+        "priceUSD": 26.8
       }
     ],
     "isKids": false,
@@ -15148,7 +15843,13 @@
     "name": "סט טינט לשפתיים Glossy Lip Stain – ארבעה גוונים למראה זוהר, עמיד וטבעי לאורך זמן",
     "size": "0.13 Fl Oz (Pack of 4)",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Lip Makeup", "Lip Stains", "Lip Gloss", "Makeup Sets",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Lip Makeup",
+      "Lip Stains",
+      "Lip Gloss",
+      "Makeup Sets",
       "lips"
     ],
     "isVegan": true,
@@ -15176,7 +15877,14 @@
     "name": "מארז שמן שפתיים Glow Reviver – שמנים למראה מלא (Plumping), הזנה וברק גבוה. מועשר בשמן חוחובה, 4 גוונים.",
     "size": "5.28 ounces מארז 4 גוונים",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Lip Makeup", "Lip Oils", "Lip Gloss", "Plumping Lip Products", "Makeup Sets",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Lip Makeup",
+      "Lip Oils",
+      "Lip Gloss",
+      "Plumping Lip Products",
+      "Makeup Sets",
       "lips"
     ],
     "isVegan": true,
@@ -15391,7 +16099,14 @@
     "name": "סרום לילה Sleep and Renew – לחידוש ושיקום עור בוגר פורמולה אנטי-אייג'ינג לצמצום קמטים | מועשר בפרוביוטיקה מותססת למראה זוהר",
     "size": "1.18 fl oz",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Serums", "Anti-Aging Skincare", "Night Treatments", "Probiotic Skincare"
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Serums",
+      "Anti-Aging Skincare",
+      "Night Treatments",
+      "Probiotic Skincare"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -15418,7 +16133,15 @@
     "name": "פודרה מקבעת HD Bamboo – למראה עור חלק ונטול ברק על בסיס מינרלים טבעיים | ללא טלק | מתאימה לכל גווני העור ולעור רגיש",
     "size": "3.84 ounces",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Face Makeup", "Setting Powder", "Face Powder", "Mineral Makeup", "Natural Beauty", "Sensitive Skin Care",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Setting Powder",
+      "Face Powder",
+      "Mineral Makeup",
+      "Natural Beauty",
+      "Sensitive Skin Care",
       "face"
     ],
     "isVegan": true,
@@ -15446,7 +16169,14 @@
     "name": "רביעיית צלליות מינרליות – גוני Venice Beach (זהב ואדמה) נוסחה בטוחה לעיניים רגישות | פיגמנט עשיר ועמיד | 4 גוונים הרמוניים",
     "size": "1.76 ounces",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Eye Makeup", "Eyeshadow", "Mineral Makeup", "Sensitive Skin Care", "Natural Beauty",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Eye Makeup",
+      "Eyeshadow",
+      "Mineral Makeup",
+      "Sensitive Skin Care",
+      "Natural Beauty",
       "face"
     ],
     "isVegan": true,
@@ -15764,7 +16494,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B095J91VC9.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "good-light-b095jb7v5x",
@@ -15785,11 +16515,11 @@
       {
         "store": "amazon-us",
         "storeLabel": "Amazon ארה\"ב",
-        "url": "https://amzn.to/4klGSu5",
+        "url": "https://www.amazon.com/dp/B095JB7V5X?tag=nocrueltyil-20",
         "asin": "B095JB7V5X",
         "currency": "USD",
         "priceUSD": 27.5,
-                "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -15804,7 +16534,7 @@
       "face",
       "acne"
     ],
-      "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 0,
@@ -15860,7 +16590,7 @@
       "פנים",
       "סרום"
     ],
-     "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 100,
@@ -15873,7 +16603,7 @@
         "asin": "B0BC9SJT55",
         "currency": "USD",
         "priceUSD": 30,
-                "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -15885,7 +16615,18 @@
     "name": "Taste of Space Lip Milk – תחליב שפתיים משקם ופריימר עם קולגן וחמאת מנגו לשפתיים מלאות | טעם פטל מרענן | פורמולה קוריאנית",
     "size": "0.15 Fl. Oz",
     "categories": [
-      "makeup","Personal Care", "Beauty & Personal Care", "Skincare", "Lip Care", "Lip Balms & Moisturizers", "Lip Primers", "K-Beauty", "Korean Skincare", "Anti-Aging Skincare", "Lip Repair & Recovery", "Plumping Lip Treatments",
+      "makeup",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Lip Care",
+      "Lip Balms & Moisturizers",
+      "Lip Primers",
+      "K-Beauty",
+      "Korean Skincare",
+      "Anti-Aging Skincare",
+      "Lip Repair & Recovery",
+      "Plumping Lip Treatments",
       "lips"
     ],
     "isVegan": true,
@@ -15913,7 +16654,21 @@
     "name": "Alphabet Oil – שמן ויטמינים ופרוביוטיקה במרקם קליל מועשר בוויטמין C, E ושמן חוחובה | לחיזוק המיקרוביום | לפנים ולגוף",
     "size": "1 Fl. Oz",
     "categories": [
-      "face","Health & Household", "Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Body Care", "Facial Oils", "Body Oils", "Moisturizers", "Probiotic Skincare", "Vitamin C Skincare", "Vitamin E Skincare", "Microbiome Support", "Antioxidant Treatments",
+      "face",
+      "Health & Household",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Body Care",
+      "Facial Oils",
+      "Body Oils",
+      "Moisturizers",
+      "Probiotic Skincare",
+      "Vitamin C Skincare",
+      "Vitamin E Skincare",
+      "Microbiome Support",
+      "Antioxidant Treatments",
       "serum",
       "body"
     ],
@@ -15942,11 +16697,22 @@
     "name": "טיפול מולטי-פפטידים ללחות",
     "size": null,
     "categories": [
-      "טיפוח עור","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Moisturizers", "Face Serums", "Treatments & Masks", "Peptide Skincare", "Anti-Aging Skincare", "Hydrating Treatments", "Dermatological Skincare",
+      "טיפוח עור",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Moisturizers",
+      "Face Serums",
+      "Treatments & Masks",
+      "Peptide Skincare",
+      "Anti-Aging Skincare",
+      "Hydrating Treatments",
+      "Dermatological Skincare",
       "פנים",
       "סרום"
     ],
-     "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": null,
@@ -15962,7 +16728,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0FMHXGQ6D.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "grace-stella-b0d9pmvr92",
@@ -15970,7 +16736,18 @@
     "name": "רולר להבהרת אזור מתחת לעיניים – סרום עיניים עם Retinol + Caffeine להפחתת נפיחות, כהויות וקמטוטים",
     "size": "—",
     "categories": [
- "Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Eye Care", "Eye Roll-On & Serums", "Treatments & Masks", "Anti-Aging Skincare", "Under-Eye Treatments", "Dark Circle Treatments", "Puffy Eye Solutions", "Retinol Skincare",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Eye Care",
+      "Eye Roll-On & Serums",
+      "Treatments & Masks",
+      "Anti-Aging Skincare",
+      "Under-Eye Treatments",
+      "Dark Circle Treatments",
+      "Puffy Eye Solutions",
+      "Retinol Skincare",
       "face"
     ],
     "isVegan": true,
@@ -15997,10 +16774,21 @@
     "name": "מיסט לפנים – חומצה היפוכלורית, לעור רגיש, לאדמומיות",
     "size": "—",
     "categories": [
-      "face","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Facial Mists & Sprays", "Treatments & Masks", "Hypochlorous Acid Sprays", "Sensitive Skin Care", "Redness Relief", "Soothing Skincare", "Dermatological Skincare",
+      "face",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Facial Mists & Sprays",
+      "Treatments & Masks",
+      "Hypochlorous Acid Sprays",
+      "Sensitive Skin Care",
+      "Redness Relief",
+      "Soothing Skincare",
+      "Dermatological Skincare",
       "mist"
     ],
-      "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 0,
@@ -16024,10 +16812,22 @@
     "name": "סרום עיניים סרמיד וקפאין לעיניים נפוחות מבהיר מתחת לעיניים עם כדור מתכת מקרר מוצרי טיפוח בגודל נסיעות",
     "size": "15 ml / 0.51 fl oz",
     "categories": [
-      "face","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Eye Care", "Eye Roll-On & Serums", "Under-Eye Treatments", "Dark Circle Treatments", "Puffy Eye Solutions", "Travel Size Toiletries", "Ceramide Skincare", "Caffeine Skincare",
+      "face",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Eye Care",
+      "Eye Roll-On & Serums",
+      "Under-Eye Treatments",
+      "Dark Circle Treatments",
+      "Puffy Eye Solutions",
+      "Travel Size Toiletries",
+      "Ceramide Skincare",
+      "Caffeine Skincare",
       "serum"
     ],
-     "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 0,
@@ -16051,7 +16851,18 @@
     "name": "סרום בקוצ׳יול – חלופה טבעית לרטינול",
     "size": "30 ml",
     "categories": [
-      "skincare","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Face Serums", "Treatments & Masks", "Bakuchiol Skincare", "Anti-Aging Skincare", "Natural Skincare", "Retinol Alternatives", "Plant-Based Beauty",
+      "skincare",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Face Serums",
+      "Treatments & Masks",
+      "Bakuchiol Skincare",
+      "Anti-Aging Skincare",
+      "Natural Skincare",
+      "Retinol Alternatives",
+      "Plant-Based Beauty",
       "face",
       "serum"
     ],
@@ -16067,10 +16878,11 @@
         "url": "https://www.amazon.com/dp/B07YZNT3RV?tag=nocrueltyil-20",
         "asin": "B07YZNT3RV",
         "currency": "USD",
-        "priceUSD": 58      }
+        "priceUSD": 58
+      }
     ],
     "isKids": false,
-    "image": "assets/img/products/B07YZNT3RV.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "herbivore-b09xn69w4m",
@@ -16078,7 +16890,18 @@
     "name": "סרום “רטינול” מפירות – חלופה עדינה לרטינול",
     "size": "30mL",
     "categories": [
-      "skincare","Personal Care", "Beauty & Personal Care", "Skincare", "Face Care", "Face Serums", "Treatments & Masks", "Anti-Aging Skincare", "Natural Skincare", "Fruit-Based Skincare", "Retinol Alternatives", "Gentle Skincare",
+      "skincare",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Skincare",
+      "Face Care",
+      "Face Serums",
+      "Treatments & Masks",
+      "Anti-Aging Skincare",
+      "Natural Skincare",
+      "Fruit-Based Skincare",
+      "Retinol Alternatives",
+      "Gentle Skincare",
       "face",
       "serum"
     ],
@@ -16107,7 +16930,17 @@
     "name": "טיפות MIXED FEELINGS לנטרול גוון צהוב – Leave-In Blonde Toning Drops להבהרה ונטרול Brass | התאמה אישית של הגוון | לבלונד קריר וזוהר",
     "size": "30ml",
     "categories": [
-      "hair","Personal Care", "Beauty & Personal Care", "Hair Care", "Hair Coloring Products", "Hair Color Toners", "Blonde Hair Care", "Leave-In Treatments", "Purple Toning Drops", "Brassiness Neutralizers", "Professional Hair Care",
+      "hair",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair Coloring Products",
+      "Hair Color Toners",
+      "Blonde Hair Care",
+      "Leave-In Treatments",
+      "Purple Toning Drops",
+      "Brassiness Neutralizers",
+      "Professional Hair Care",
       "toner"
     ],
     "isVegan": true,
@@ -16134,7 +16967,17 @@
     "name": "באלם לחות לשיער – סדרת מיסטרס – נגד פריז, להברקה, לחות",
     "size": "—",
     "categories": [
-      "hair","Personal Care", "Beauty & Personal Care", "Hair Care", "Styling Products", "Hair Styling Creams & Lotions", "Conditioners", "Leave-In Conditioners", "Anti-Frizz Products", "Hair Moisturizers", "Shine Enhancers",
+      "hair",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Styling Products",
+      "Hair Styling Creams & Lotions",
+      "Conditioners",
+      "Leave-In Conditioners",
+      "Anti-Frizz Products",
+      "Hair Moisturizers",
+      "Shine Enhancers",
       "styling"
     ],
     "isVegan": true,
@@ -16161,7 +17004,17 @@
     "name": "ספריי הכנה GOOD BEHAVIOR 4-in-1 – מרכך ללא שטיפה, מתיר קשרים ומגן מחום",
     "size": "207ml",
     "categories": [
-      "hair","Personal Care", "Beauty & Personal Care", "Hair Care", "Styling Products", "Heat Protection Sprays", "Conditioners", "Leave-In Conditioners", "Detanglers", "Hair Primers", "Professional Hair Care",
+      "hair",
+      "Personal Care",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Styling Products",
+      "Heat Protection Sprays",
+      "Conditioners",
+      "Leave-In Conditioners",
+      "Detanglers",
+      "Hair Primers",
+      "Professional Hair Care",
       "spray"
     ],
     "isVegan": true,
@@ -16181,7 +17034,7 @@
       }
     ],
     "isKids": false,
-        "isDiscounted": true,
+    "isDiscounted": true,
     "image": "assets/img/products/B08HY9C5P6.jpg"
   },
   {
@@ -16190,7 +17043,17 @@
     "name": "Clear Hair Gloss – טיפול גלוס שקוף לברק עוצמתי אפקט Glass Hair למראה שיער משי | מעטפת הגנה והחלקה | גימור מקצועי ומבריק",
     "size": "124ml",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair Treatments", "Hair Glaze", "Shine Enhancers", "Hair Masks", "Smoothing Treatments", "Professional Hair Care", "Glossing Treatments", "Hair Protection",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair Treatments",
+      "Hair Glaze",
+      "Shine Enhancers",
+      "Hair Masks",
+      "Smoothing Treatments",
+      "Professional Hair Care",
+      "Glossing Treatments",
+      "Hair Protection",
       "treatment"
     ],
     "isVegan": true,
@@ -16217,7 +17080,15 @@
     "name": "שמפו Dream Hair – לשיער חזק, רווי בלחות וזוהר פורמולה משקמת למראה בריא | הידרציה עמוקה | ברק קריסטלי",
     "size": "238ml",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoos", "Hydrating Shampoos", "Hair Strengthening Shampoos", "Moisturizing Shampoos", "Repairing Shampoos", "Shine Shampoos",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoos",
+      "Hydrating Shampoos",
+      "Hair Strengthening Shampoos",
+      "Moisturizing Shampoos",
+      "Repairing Shampoos",
+      "Shine Shampoos",
       "shampoo"
     ],
     "isVegan": true,
@@ -16326,7 +17197,12 @@
     "name": "סרום Instant Repair לשיקום מיידי – הגנה משבירה ואיחוי קצוות מגן מפני חום (Heat Protection) | אוטם קצוות מפוצלים | למראה שיער חזק ובריא",
     "size": "50ml",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair Treatments", "Hair Serums", "Heat Protection for Hair",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair Treatments",
+      "Hair Serums",
+      "Heat Protection for Hair",
       "serum"
     ],
     "isVegan": true,
@@ -16435,7 +17311,8 @@
     "name": "מארז פרימיום לצביעה וחידוש השיער – צבע קבוע + טונר גלוס להענקת ברק",
     "size": "8 oz + 5 oz סט",
     "categories": [
-      "hair", "haircolor"
+      "hair",
+      "haircolor"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -16488,7 +17365,11 @@
     "name": "שמפו Color Extending Gloss – להארכת חיי הצבע וברק אינטנסיבי נועל את הפיגמנט למניעת דהייה | אפקט גלוס זוהר | ללא סולפטים",
     "size": "236ml",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoo & Conditioner", "Hair Coloring Products",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Hair Coloring Products",
       "shampoo"
     ],
     "isVegan": true,
@@ -16504,7 +17385,7 @@
         "asin": "B0CT9S1BRM",
         "currency": "USD",
         "priceUSD": 32,
-                                "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -16516,7 +17397,12 @@
     "name": "מרכך Color Extending Gloss – לשימור הצבע וברק מראה נועל לחות ופיגמנט | מונע דהייה ומעניק רכות | אפקט גלוס משקם",
     "size": "236ml",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoo & Conditioner", "Hair Coloring Products", "Hair Treatments",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Hair Coloring Products",
+      "Hair Treatments",
       "conditioner"
     ],
     "isVegan": true,
@@ -16532,7 +17418,7 @@
         "asin": "B0CTB4FD9M",
         "currency": "USD",
         "priceUSD": 32,
-                        "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -16544,8 +17430,13 @@
     "name": "מארז שמפו ומרכך MORE LIFE – להארכת חיי הצבע והענקת ברק עוצמתי",
     "size": "236ml X 2",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoo & Conditioner", "Hair Coloring Products",
-      "hair-set", "sets"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Hair Coloring Products",
+      "hair-set",
+      "sets"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -16598,7 +17489,13 @@
     "name": "ספריי הכנה 4 ב-1 – מתיר קשרים, מגן מחום ומטפח (Leave-In)",
     "size": "207ml X 2",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Styling Products", "Heat Protection for Hair", "Hair Treatments", "Conditioners"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Styling Products",
+      "Heat Protection for Hair",
+      "Hair Treatments",
+      "Conditioners"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -16613,10 +17510,11 @@
         "asin": "B0DQQDL7N2",
         "currency": "USD",
         "priceUSD": 49,
-"freeShipToIsrael": true      }
+        "freeShipToIsrael": true
+      }
     ],
     "isKids": false,
-                "isDiscounted": true,
+    "isDiscounted": true,
     "image": "assets/img/products/B0DQQDL7N2.jpg"
   },
   {
@@ -16625,7 +17523,11 @@
     "name": "סרום לשיער Cash In לתיקון וחיזוק (מארז 2)",
     "size": "1.7 oz ×2",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Hair Treatments", "Hair Serums"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Hair Treatments",
+      "Hair Serums"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -16640,11 +17542,11 @@
         "asin": "B0DSJPYFV3",
         "currency": "USD",
         "priceUSD": 47.52,
-         "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
-            "isDiscounted": true,
+    "isDiscounted": true,
     "image": "assets/img/products/B0DSJPYFV3.jpg"
   },
   {
@@ -16681,7 +17583,12 @@
     "name": "Anti-Frizz Smoothing Serum – סרום מחליק ומגן מפני לחות מעניק ברק עוצמתי | הגנת UV וחום | לשיער יבש, מרדני ונוטה לקרזול",
     "size": "50ml",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Styling Products", "Hair Serums", "Heat Protection for Hair",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Styling Products",
+      "Hair Serums",
+      "Heat Protection for Hair",
       "serum"
     ],
     "isVegan": true,
@@ -16710,7 +17617,11 @@
     "size": "13.5ml",
     "categories": [
       "hair",
-      "styling","Beauty & Personal Care", "Hair Care", "Styling Products", "Hair Gels & Waxes"
+      "styling",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Styling Products",
+      "Hair Gels & Waxes"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -16737,7 +17648,13 @@
     "name": "קרם לחות והבהרה לפנים ולצוואר – נוסחת ורדים ורימונים טיפול אינטנסיבי לעור יבש | הבהרת כתמי עור | מועשר בנוגדי חמצון | לנשים ולגברים",
     "size": "1.7 oz",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Moisturizers", "Skin Brightening", "Men's Grooming"
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Moisturizers",
+      "Skin Brightening",
+      "Men's Grooming"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -16818,7 +17735,14 @@
     "name": "מארז כפול: סרום ויטמין C עוצמתי לפנים – Anti-Aging & Brightening עם חומצה היאלורונית וויטמין E | לטיפול בכתמי שמש וגיל | לעידוד קולגן ואלסטין",
     "size": "30g X 2",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Serums", "Anti-Aging Skincare", "Skin Brightening", "Moisturizers"
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Serums",
+      "Anti-Aging Skincare",
+      "Skin Brightening",
+      "Moisturizers"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -16871,7 +17795,15 @@
     "name": "פילינג פחם פעיל לחידוש עור הפנים – אפקט Microdermabrasion ניקוי עמוק וניקוז רעלים | מועשר בלבנדר ושמן עץ התה | לעור חלק ורענן | לנשים ולגברים",
     "size": "3 oz",
     "categories": [
-      "face", "Facial Exfoliator", "Face Scrub","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Exfoliants", "Face Masks", "Men's Grooming"
+      "face",
+      "Facial Exfoliator",
+      "Face Scrub",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Exfoliants",
+      "Face Masks",
+      "Men's Grooming"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -16892,7 +17824,8 @@
     "image": "assets/img/products/B08L463DZ6.jpg",
     "isKids": false,
     "isMen": true,
-        "isDiscounted": true  },
+    "isDiscounted": true
+  },
   {
     "id": "lilyana-b09h9hw2jr",
     "brand": "Lilyana Naturals",
@@ -16925,7 +17858,8 @@
     "name": "מארז מתנה ויטמין C לטיפוח הפנים – להבהרה, חידוש ואנטי-אייג'ינג",
     "size": "סט מתנה (4 פריטים)",
     "categories": [
-      "face","sets"
+      "face",
+      "sets"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -16952,7 +17886,13 @@
     "name": "קרם עיניים משקם: טיפול בכהויות, נפיחות וסימני גיל פורמולה מרגיעה לעור רגיש | טשטוש קמטוטים ושקיות | לחות עמוקה למבט רענן",
     "size": "1.7 oz",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Eye Care", "Anti-Aging Skincare", "Sensitive Skin Care"
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Eye Care",
+      "Anti-Aging Skincare",
+      "Sensitive Skin Care"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -17139,7 +18079,11 @@
     "size": "2 x 4.2oz",
     "categories": [
       "oral-care",
-      "teeth","Beauty & Personal Care", "Oral Care", "Toothpaste", "Sensitive Teeth Care",
+      "teeth",
+      "Beauty & Personal Care",
+      "Oral Care",
+      "Toothpaste",
+      "Sensitive Teeth Care",
       "toothpaste"
     ],
     "isVegan": true,
@@ -17168,9 +18112,16 @@
     "size": "כולל 6 ראשים",
     "categories": [
       "teeth",
-      "toothbrush", "electric-tooth-brush","Beauty & Personal Care", "Oral Care", "Toothbrushes", "Electric Toothbrushes", "Baby & Child Care", "Children's Oral Care"
+      "toothbrush",
+      "electric-tooth-brush",
+      "Beauty & Personal Care",
+      "Oral Care",
+      "Toothbrushes",
+      "Electric Toothbrushes",
+      "Baby & Child Care",
+      "Children's Oral Care"
     ],
-     "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": null,
     "priceMin": 50,
@@ -17187,7 +18138,7 @@
       }
     ],
     "image": "assets/img/products/B0F3JPTKC4.jpg",
-        "isDiscounted": true,
+    "isDiscounted": true,
     "isKids": true
   },
   {
@@ -17249,14 +18200,19 @@
     "brand": "Melixir",
     "name": "חמאת שפתיים Lip Butter (גוון #03 Red Velvet) – לחות וצבע טבעי פורמולה טבעונית (Plant-Based) | עשיר בחמאת שיאה | ללא וזלין ושעוות דבורים",
     "size": "0.14 ounces",
-    "categories": [ "face",
-      "skincare","Beauty & Personal Care", "Makeup", "Lip Makeup", "Lip Balm & Treatment", "Vegan Beauty",
+    "categories": [
+      "face",
+      "skincare",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Lip Makeup",
+      "Lip Balm & Treatment",
+      "Vegan Beauty",
       "lips",
       "lip-balm"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 0,
     "priceMax": 50,
     "offers": [
@@ -17283,7 +18239,6 @@
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -17310,7 +18265,6 @@
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -17337,7 +18291,6 @@
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -17363,7 +18316,6 @@
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -17390,7 +18342,6 @@
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 0,
     "priceMax": 50,
     "offers": [
@@ -17412,12 +18363,18 @@
     "name": "סטיק פריימר למראה עור אחיד ומט – Pore Invisible Finish מטשטש נקבוביות (Blur Effect) | ללא צורך במייק-אפ | לחות שקופה למראה פנים מושלם",
     "size": "10g",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Face Makeup", "Face Primers", "Skin Care", "Face Care", "Oil Control Skincare",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Face Primers",
+      "Skin Care",
+      "Face Care",
+      "Oil Control Skincare",
       "face"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 100,
     "priceMax": 150,
     "offers": [
@@ -17444,7 +18401,6 @@
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -17467,11 +18423,14 @@
     "size": "0.63 ounces",
     "categories": [
       "makeup",
-"Beauty & Personal Care", "Makeup", "Lip Makeup", "Lipstick", "Liquid Lipstick"
+      "Beauty & Personal Care",
+      "Makeup",
+      "Lip Makeup",
+      "Lipstick",
+      "Liquid Lipstick"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -17494,12 +18453,16 @@
     "name": "פלטת 10 צלליות Everynight – מניוד טבעי ועד גלאם דרמטי פיגמנט עוצמתי | שילוב גוונים ניטרליים וכהים | ללא פראבנים | למראה יום ולילה",
     "size": "17g",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Eye Makeup", "Eyeshadow", "Eyeshadow Palettes",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Eye Makeup",
+      "Eyeshadow",
+      "Eyeshadow Palettes",
       "eyes"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 100,
     "priceMax": 150,
     "offers": [
@@ -17522,12 +18485,17 @@
     "name": "פלטת סומק שימר למראה זוהר – מועשרת בוויטמין E פיגמנט עשיר בגימור מנצנץ | ללא פראבנים | מזין ומטפח את העור | למראה פנים קורן",
     "size": "7g",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Face Makeup", "Blush", "Highlighters", "Makeup Palettes",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Blush",
+      "Highlighters",
+      "Makeup Palettes",
       "face"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -17550,12 +18518,17 @@
     "name": "פלטת ברונזר שימר והיילייטר – למראה שזוף וזוהר מועשרת בוויטמינים A + E | ללא פראבנים | פיסול והארת הפנים | גימור יוקרתי",
     "size": "10g",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Face Makeup", "Bronzers", "Highlighters", "Makeup Palettes",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Bronzers",
+      "Highlighters",
+      "Makeup Palettes",
       "face"
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -17583,7 +18556,6 @@
     ],
     "isVegan": true,
     "isPeta": null,
-     "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -17605,13 +18577,20 @@
     "name": "טיפות סרום הגנה SPF 50 עם גוון – CabanaGlow™ Illuminating Serum הגנה מינרלית (Zinc Oxide) | לחות והבהרה | פיגמנט מתקן עור למראה זוהר וקטיפתיר",
     "size": "40ml",
     "categories": [
-      "sun","Beauty & Personal Care", "Skin Care", "Face Care", "Sunscreen", "Facial Serums", "Makeup", "Face Makeup", "Color Correcting Skincare",
+      "sun",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Sunscreen",
+      "Facial Serums",
+      "Makeup",
+      "Face Makeup",
+      "Color Correcting Skincare",
       "face",
       "makeup"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 0,
     "priceMax": 50,
     "offers": [
@@ -17663,11 +18642,17 @@
     "name": "קרם הגנה לגוף SPF50 למראה זוהר – הגנה רחבת טווח UVA/UVB, גימור מנצנץ, ללא בישום. פורמולה ממצקת שאינה מלכלכת את הבגד.",
     "size": "100ml",
     "categories": [
-      "skincare","Beauty & Personal Care", "Skin Care", "Body Care", "Sunscreen", "Body Moisturizers", "Fragrance-Free Skincare",
+      "skincare",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Body Care",
+      "Sunscreen",
+      "Body Moisturizers",
+      "Fragrance-Free Skincare",
       "Body",
       "sunscreen"
     ],
-   "isVegan": true,
+    "isVegan": true,
     "isPeta": true,
     "isLB": null,
     "priceMin": 50,
@@ -17709,10 +18694,11 @@
         "url": "https://www.amazon.com/dp/B0CRGCWBCM?tag=nocrueltyil-20",
         "asin": "B0CRGCWBCM",
         "currency": "USD",
-        "priceUSD": 10.99      }
+        "priceUSD": 10.99
+      }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0CRGCWBCM.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "naked-sundays-b0cx67mn53",
@@ -17720,13 +18706,20 @@
     "name": "טיפות ברונזר SPF 50 להגנה וזוהר – CabanaGlow™ Bronzing Drops סרום הגנה מינרלי (Zinc Oxide) | גוון ברונזה שזוף | לחות וטשטוש פגמים | הגנה רחבת טווח",
     "size": "50ml",
     "categories": [
-      "sun","Beauty & Personal Care", "Skin Care", "Face Care", "Sunscreen", "Facial Serums", "Makeup", "Face Makeup", "Bronzers",
+      "sun",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Sunscreen",
+      "Facial Serums",
+      "Makeup",
+      "Face Makeup",
+      "Bronzers",
       "face",
       "makeup"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 0,
     "priceMax": 50,
     "offers": [
@@ -17736,12 +18729,13 @@
         "url": "https://www.amazon.com/dp/B0CX67MN53?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.3K78OR8KXY0ZX&linkCode=tr1&tag=nocrueltyil-20&linkId=amzn1.campaign.3K78OR8KXY0ZX_1769253177982",
         "asin": "B0CX67MN53",
         "currency": "USD",
-        "priceUSD": 15
+        "priceUSD": 15,
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
     "image": "assets/img/products/B0CX67MN53.jpg",
-        "isDiscounted": true
+    "isDiscounted": true
   },
   {
     "id": "naked-sundays-b0fwrpxw8r",
@@ -17754,8 +18748,7 @@
       "makeup"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 0,
     "priceMax": 50,
     "offers": [
@@ -17783,8 +18776,7 @@
       "blush"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 0,
     "priceMax": 50,
     "offers": [
@@ -17809,8 +18801,7 @@
       "face"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 300,
     "priceMax": 350,
     "offers": [
@@ -17832,11 +18823,16 @@
     "name": "ניקוי פנים Blue Aura – מים מיסלריים ללא שטיפה פורמולה מרגיעה עם אזדרכת הודית (Neem), בזיליקום קדוש וכורכום | מסיר איפור, לכלוך וזיהום אוויר",
     "size": " 4.0 fl. Oz",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Cleansers", "Makeup Removers", "Micellar Water"
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Cleansers",
+      "Makeup Removers",
+      "Micellar Water"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 100,
     "priceMax": 150,
     "offers": [
@@ -17859,7 +18855,13 @@
     "name": "סרום אנטי-אייג'ינג מרוכז: ורד הבר וילאנג-ילאנג לטיפול בקמטוטים וסימני גיל | הזנה עמוקה לעור בוגר | למראה עור מוצק, מלא וחיוני",
     "size": "0.17 Fl. Oz",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Serums", "Anti-Aging Skincare", "Moisturizers"
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Serums",
+      "Anti-Aging Skincare",
+      "Moisturizers"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -17886,7 +18888,14 @@
     "name": "מי פנים ותרסיס לחות אלוורה ואימורטל – Hydra-Repair Facial Mist מרענן ומשקם | אנטי-אייג'ינג לעור בוגר ורגיש | לחות קלילה בפורמט ספריי",
     "size": "1.69 fl. oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Mists & Essences", "Toners", "Anti-Aging Skincare", "Sensitive Skin Care"
+      "hair",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Mists & Essences",
+      "Toners",
+      "Anti-Aging Skincare",
+      "Sensitive Skin Care"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -17914,7 +18923,12 @@
     "size": "100ml",
     "categories": [
       "face",
-  "Beauty & Personal Care", "Skin Care", "Face Care", "Facial Cleansers", "Acne & Blemish Treatments", "Oil Control Skincare"
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Cleansers",
+      "Acne & Blemish Treatments",
+      "Oil Control Skincare"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -17942,7 +18956,12 @@
     "size": "—",
     "categories": [
       "face",
-      "Beauty & Personal Care", "Skin Care", "Face Care", "Skincare Tools", "Anti-Aging Skincare", "Eye Care"
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Skincare Tools",
+      "Anti-Aging Skincare",
+      "Eye Care"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -17969,7 +18988,16 @@
     "name": "שמפו בר (Shampoo Bar) ארגן וקוקוס – שמפו מוצק ללא סולפטים לכל סוגי השיער, שיער מתולתל וצבוע | מעניק לחות | ללא פלסטיק (Plastic-Free)",
     "size": "3.7 oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoo & Conditioner", "Shampoo", "Shampoo Bars", "Sulfate-Free Hair Care", "Plastic-Free Beauty", "Curly Hair Care", "Color Protected Hair Care"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Shampoo",
+      "Shampoo Bars",
+      "Sulfate-Free Hair Care",
+      "Plastic-Free Beauty",
+      "Curly Hair Care",
+      "Color Protected Hair Care"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -17996,7 +19024,13 @@
     "name": "עט לעיסוי ואקופרסורה לפנים Mon Ami – פיסול וחיטוב הפנים להפחתת נפיחות ועיגולים שחורים | טיפול ממוקד בקמטוטים | כלי אנטי-אייג'ינג מקצועי",
     "size": "1.38 ounces",
     "categories": [
-      "face", "Beauty & Personal Care", "Skin Care", "Face Care", "Skincare Tools", "Anti-Aging Skincare", "Eye Care",
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Skincare Tools",
+      "Anti-Aging Skincare",
+      "Eye Care",
       "makeup"
     ],
     "isVegan": true,
@@ -18077,7 +19111,13 @@
     "name": "מרכך צבע לשיער בגוון ורוד פטל – Raspberry Pink Conditioner פיגמנט זמני למראה נועז | מועשר בחמאת שיאה, שמן קוקוס ואבוקדו | לחות אינטנסיבית לכל סוגי השיער",
     "size": "8 oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoo & Conditioner", "Conditioner", "Hair Coloring Products", "Temporary Hair Color"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Conditioner",
+      "Hair Coloring Products",
+      "Temporary Hair Color"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -18104,7 +19144,14 @@
     "name": "מרכך צבע חצי-קבוע סגול עמוק – Vivid Violet Hair Mask פיגמנט עוצמתי ללא נזק | מועשר בחמאת שיאה ושמן קוקוס | הזנה וצבע במוצר אחד",
     "size": "8 oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoo & Conditioner", "Conditioner", "Hair Coloring Products", "Hair Masks", "Semi-Permanent Hair Color"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Conditioner",
+      "Hair Coloring Products",
+      "Hair Masks",
+      "Semi-Permanent Hair Color"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -18149,7 +19196,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/Overtone-b0f3g1pq92.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Overtone-b0fh5r8wzj",
@@ -18175,7 +19222,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/Overtone-b0fh5r8wzj.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Pacifica-b0f2lwktdv",
@@ -18186,8 +19233,7 @@
       "hair"
     ],
     "isVegan": true,
-    "isPeta": true,
-     "isPeta": null,
+    "isPeta": null,
     "priceMin": 50,
     "priceMax": 100,
     "offers": [
@@ -18317,7 +19363,13 @@
     "name": "פלטת צלליות מינרליות Pink Nudes – 10 גוונים ניטרליים פיגמנט עשיר ועמיד | טשטוש קל ונוח | למראה טבעי או מעושן | נבדק אופתלמולוגית",
     "size": "5.7g",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Eye Makeup", "Eyeshadow", "Mineral Makeup", "Eyeshadow Palettes",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Eye Makeup",
+      "Eyeshadow",
+      "Mineral Makeup",
+      "Eyeshadow Palettes",
       "eyes"
     ],
     "isVegan": true,
@@ -18397,7 +19449,15 @@
     "name": "סרום ויטמין C וחידוש העור – Glow Booster Serum מועשר בחומצה גליקולית | הבהרת כתמים ופיגמנטציה | אנטי-אייג'ינג וזוהר מיידי | נבדק דרמטולוגית וללא בישום",
     "size": "29ml",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Serums", "Vitamin C Skincare", "Brightening Skincare", "Anti-Aging Skincare", "Fragrance-Free Skincare",
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Serums",
+      "Vitamin C Skincare",
+      "Brightening Skincare",
+      "Anti-Aging Skincare",
+      "Fragrance-Free Skincare",
       "serum"
     ],
     "isVegan": true,
@@ -18413,7 +19473,7 @@
         "asin": "B07VRTP6SY",
         "currency": "USD",
         "priceUSD": 14.97,
-                "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -18640,7 +19700,12 @@
     "size": "50ml",
     "categories": [
       "face",
-    "Beauty & Personal Care", "Skin Care", "Face Care", "Facial Moisturizers", "Pore Minimizers", "Oil Control Skincare"
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Moisturizers",
+      "Pore Minimizers",
+      "Oil Control Skincare"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -18654,7 +19719,7 @@
         "url": "https://www.amazon.com/dp/B096TKBYDJ?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.2Y4ZUJ9JL4R6X&linkCode=tr1&tag=nocrueltyil-20&linkId=amzn1.campaign.2Y4ZUJ9JL4R6X_1769179177757",
         "asin": "B096TKBYDJ",
         "currency": "USD",
-        "priceUSD": 18.00,
+        "priceUSD": 18.0,
         "freeShipOver": 49
       }
     ],
@@ -18667,7 +19732,14 @@
     "name": "סט שמפו ומרכך Pineapple Curls – עיצוב והגדרת תלתלים למראה זוהר ללא פריז. פורמולה טבעונית ללא סולפטים, נבדק דרמטולוגית.",
     "size": "236ml",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoo & Conditioner", "Shampoo", "Conditioner", "Curly Hair Care", "Sulfate-Free Hair Care",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Shampoo",
+      "Conditioner",
+      "Curly Hair Care",
+      "Sulfate-Free Hair Care",
       "shampoo-conditioner"
     ],
     "isVegan": true,
@@ -18695,7 +19767,14 @@
     "name": "סדרת Salty Waves – שמפו ומרכך למראה שיער גלי וטבעי",
     "size": "236ml",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Shampoo & Conditioner", "Shampoo", "Conditioner", "Styling Products", "Beach Wave Products"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Shampoo & Conditioner",
+      "Shampoo",
+      "Conditioner",
+      "Styling Products",
+      "Beach Wave Products"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -18722,7 +19801,14 @@
     "name": "מארז טיפוח Glow – סבון פנים מבהיר ופילינג אנזימטי",
     "size": "147ml X 2",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Cleansers", "Exfoliators", "Skin Care Sets & Kits", "Brightening Skincare"
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Cleansers",
+      "Exfoliators",
+      "Skin Care Sets & Kits",
+      "Brightening Skincare"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -18776,7 +19862,16 @@
     "name": "סרום לחיזוק ריסים + פריימר מסקרה שקוף עם קולגן וויטמינים בי ואי",
     "size": "—",
     "categories": [
-      "makeup","Skincare", "Eye Care", "Eyelash Treatments", "Makeup", "Eye Makeup", "Mascara Primers", "Eyelash Serums", "Vegan Beauty", "Vitamin-Infused Cosmetics",
+      "makeup",
+      "Skincare",
+      "Eye Care",
+      "Eyelash Treatments",
+      "Makeup",
+      "Eye Makeup",
+      "Mascara Primers",
+      "Eyelash Serums",
+      "Vegan Beauty",
+      "Vitamin-Infused Cosmetics",
       "eyes"
     ],
     "isVegan": true,
@@ -18803,7 +19898,15 @@
     "name": "מסכה מתחת לעיניים טבעונית עם ג'לי לחות - מסכות מתחת לעיניים וקמטי חיוך לקמטוטים ונפיחות,  ללא בישום ",
     "size": "10ml",
     "categories": [
-      "face","Skincare", "Eye Care", "Eye Masks", "Treatments & Masks", "Vegan Beauty", "Anti-Aging Skincare", "Puffy Eyes Treatment", "Fragrance-Free Skincare",
+      "face",
+      "Skincare",
+      "Eye Care",
+      "Eye Masks",
+      "Treatments & Masks",
+      "Vegan Beauty",
+      "Anti-Aging Skincare",
+      "Puffy Eyes Treatment",
+      "Fragrance-Free Skincare",
       "mask"
     ],
     "isVegan": true,
@@ -18830,7 +19933,18 @@
     "name": "Pacifica Beauty טבעוני קולגן מלחלח מיסט לקיבוע – מלחלח Illuminating פנים פריימר ל Dewy עור, w/טבעוני קולגן וSqualane ל Radiant Glow, Soft-Focus נקבוביות",
     "size": "—",
     "categories": [
-      "makeup","Skincare", "Face Care", "Facial Cleansers", "Makeup", "Face Makeup", "Setting Sprays", "Face Primers", "Vegan Beauty", "Hydrating Skincare", "Squalane Skincare", "Dewy Finish Products",
+      "makeup",
+      "Skincare",
+      "Face Care",
+      "Facial Cleansers",
+      "Makeup",
+      "Face Makeup",
+      "Setting Sprays",
+      "Face Primers",
+      "Vegan Beauty",
+      "Hydrating Skincare",
+      "Squalane Skincare",
+      "Dewy Finish Products",
       "face"
     ],
     "isVegan": true,
@@ -18979,7 +20093,8 @@
         "url": "https://www.amazon.com/dp/B09WH3KJRJ?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.38847RYUAKEQK&linkCode=tr1&tag=nocrueltyil-20&linkId=amzn1.campaign.38847RYUAKEQK_1769201993816",
         "asin": "B09WH3KJRJ",
         "currency": "USD",
-        "priceUSD": 17.30      }
+        "priceUSD": 17.3
+      }
     ],
     "isKids": false,
     "image": "assets/img/products/B09WH3KJRJ.jpg"
@@ -18990,7 +20105,14 @@
     "name": "מארז מדבקות סיליקון רב-פעמיות לעיניים ולמצח – Reusable Mask Set להחלקת קמטים ומיצוק העור | מתאים לאזור העיניים והמצח | לשימוש חוזר אינספור פעמים",
     "size": "3 יחידות",
     "categories": [
-      "makeup","Beauty & Personal Care", "Skin Care", "Eye Care", "Face Care", "Anti-Aging Skincare", "Skincare Tools", "Reusable Face Masks",
+      "makeup",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Eye Care",
+      "Face Care",
+      "Anti-Aging Skincare",
+      "Skincare Tools",
+      "Reusable Face Masks",
       "face"
     ],
     "isVegan": true,
@@ -19072,7 +20194,13 @@
     "name": "טיפול לקרקפת Scalp Smoothie – מסיכת לחות ללא שטיפה להרגעה וקירור הקרקפת. פתרון לקרקפת יבשה, מגרדת ושיער דליל.",
     "size": "6 fl oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Scalp Treatments", "Hair Masks", "Leave-In Conditioners", "Hair Loss Products"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Scalp Treatments",
+      "Hair Masks",
+      "Leave-In Conditioners",
+      "Hair Loss Products"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -19099,8 +20227,16 @@
     "name": "מארז מתנה שלישיית שפתוני לחות – שלישיית ליפ באלם בטעמי מנדרינה, לבנדר-לימון ווניל עם קולגן טבעוני. הזנה וטיפוח לשפתיים.",
     "size": "מארז 3",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Lip Makeup", "Lip Balms & Care", "Skin Care", "Lip Care", "Gift Sets",
-      "face", "lipstick"
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Lip Makeup",
+      "Lip Balms & Care",
+      "Skin Care",
+      "Lip Care",
+      "Gift Sets",
+      "face",
+      "lipstick"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -19127,7 +20263,15 @@
     "name": "סט ניקוי והארה  סבון פנים מבהיר ופילינג אנזימטי. מועשר בוויטמין C, חומצה גליקולית וויטמין E למראה עור זוהר.",
     "size": "5 fl oz + 4 fl oz (סט 2)",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Cleansers", "Exfoliators", "Skin Care Sets & Kits", "Brightening Skincare", "Vitamin C Skincare"
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Cleansers",
+      "Exfoliators",
+      "Skin Care Sets & Kits",
+      "Brightening Skincare",
+      "Vitamin C Skincare"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -19154,7 +20298,13 @@
     "name": "מסכת בד לשיקום והחייאת העור – Skin Rehab Mask עם קוקוס, קפאין ותה ירוק | להפחתת נפיחות ורענון מיידי | לכל סוגי העור",
     "size": "6 יחידות",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Masks", "Sheet Masks", "Sensitive Skin Care"
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Masks",
+      "Sheet Masks",
+      "Sensitive Skin Care"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -19181,7 +20331,13 @@
     "name": "סרום עיניים Future Youth Time Shift – למיצוק, הרמה וטיפול בכהויות עם קומפלקס Flora ופפטידים (Peptide-11) | ללא בישום | מטפל בקמטוטים ומעניק מראה צעיר ורענן",
     "size": "29ml",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Eye Care", "Eye Serums", "Anti-Aging Skincare", "Fragrance-Free Skincare",
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Eye Care",
+      "Eye Serums",
+      "Anti-Aging Skincare",
+      "Fragrance-Free Skincare",
       "serum"
     ],
     "isVegan": true,
@@ -19197,7 +20353,7 @@
         "asin": "B0CH3ZZ37C",
         "currency": "USD",
         "priceUSD": 24.0,
-                                        "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -19209,7 +20365,13 @@
     "name": "Pacifica Future Youth Time Shift סרום עיניים – Peptide סרום עיניים ל קמטוטים ועיגולים שחורים, Lifting וממצק Under Eye טיפול w/Flora + Peptide-11, Unscented",
     "size": "20ml",
     "categories": [
-      "face","Beauty & Personal Care", "Skin Care", "Eye Care", "Eye Serums", "Anti-Aging Skincare", "Fragrance-Free Skincare",
+      "face",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Eye Care",
+      "Eye Serums",
+      "Anti-Aging Skincare",
+      "Fragrance-Free Skincare",
       "eyes"
     ],
     "isVegan": true,
@@ -19556,7 +20718,12 @@
     "name": "תוחם שפתיים Soft Definition™ – עמיד במים לאורך זמן גוון Fig (תאנה) | שרטוט מדויק ללא מאמץ | עמיד בפני מריחות | למראה שפתיים מוגדר ומלא",
     "size": "0.32 oz",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Lip Makeup", "Lip Liners", "Waterproof Makeup",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Lip Makeup",
+      "Lip Liners",
+      "Waterproof Makeup",
       "face"
     ],
     "isVegan": true,
@@ -19584,7 +20751,12 @@
     "name": "תוחם שפתיים Soft Definition™ – עמיד במים ועמיד לאורך זמן גוון Mocha (מוקה) | שרטוט מדויק וקל | עמיד בפני מריחות (Smudge-Resistant) | למראה מעוצב לאורך כל היום",
     "size": "0.042 oz",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Lip Makeup", "Lip Liners", "Waterproof Makeup",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Lip Makeup",
+      "Lip Liners",
+      "Waterproof Makeup",
       "face"
     ],
     "isVegan": true,
@@ -19600,7 +20772,7 @@
         "asin": "B0FHK6CMPM",
         "currency": "USD",
         "priceUSD": 18.0,
-                                                "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -19638,7 +20810,12 @@
     "name": "עיפרון גבות Easy Everyday – למראה טבעי ומדויק גוון Dark Brown (חום כהה) | קצה דק 1.2 ממ לדיוק מקסימלי | עמיד למריחות וכולל מברשת ספולי",
     "size": "—",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Eye Makeup", "Eyebrow Makeup", "Eyebrow Pencils",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Eye Makeup",
+      "Eyebrow Makeup",
+      "Eyebrow Pencils",
       "hair"
     ],
     "isVegan": true,
@@ -19693,7 +20870,13 @@
     "name": "קרם לחות משקם Dream Barrier – לחיזוק והגנת עור הפנים עם פפטידים, סרמידים וניאצינמיד | ספיגה מהירה | מתאים לעור רגיש | משמש כבסיס מושלם לאיפור",
     "size": "1.7 fl oz",
     "categories": [
-      "makeup","Beauty & Personal Care", "Skin Care", "Face Care", "Facial Moisturizers", "Sensitive Skin Care", "Makeup Primers",
+      "makeup",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Facial Moisturizers",
+      "Sensitive Skin Care",
+      "Makeup Primers",
       "face"
     ],
     "isVegan": true,
@@ -19802,7 +20985,12 @@
     "name": "מארז זוג סטיק פומייד Dart Pomade – לעיצוב, פיסול ושליטה בשוונצים",
     "size": "מארז 2",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Styling Products", "Hair Pomades", "Hair Styling Tools",
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Styling Products",
+      "Hair Pomades",
+      "Hair Styling Tools",
       "styling"
     ],
     "isVegan": true,
@@ -19830,7 +21018,12 @@
     "name": " קרם לשיער R+Co COOL WIND pH Perfect – עיצוב מושלם ללא חום",
     "size": "5 Fl Oz + 0.5 Fl Oz",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Styling Products", "Hair Creams", "Air-Dry Styling"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Styling Products",
+      "Hair Creams",
+      "Air-Dry Styling"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -19871,7 +21064,7 @@
         "url": "https://www.amazon.com/dp/B0D63KCBLD?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.29Y9YD1VHTET1&linkCode=tr1&tag=nocrueltyil-20&linkId=amzn1.campaign.29Y9YD1VHTET1_1769017734296",
         "asin": "B0D63KCBLD",
         "currency": "USD",
-        "priceUSD": 193.80,
+        "priceUSD": 193.8,
         "freeShipToIsrael": true
       }
     ],
@@ -19884,7 +21077,12 @@
     "name": "ספריי דאלאס לעיבוי ונפח השיער – Dallas Hair Thickening Spray מעניק נפח עוצמתי, גוף וברק | אידיאלי לפן ורולרים | מתאים לכל אורכי השיער",
     "size": "5.1 Fl Oz (Pack of 2)",
     "categories": [
-      "hair","Beauty & Personal Care", "Hair Care", "Styling Products", "Hair Volumizers & Thickeners", "Hair Sprays"
+      "hair",
+      "Beauty & Personal Care",
+      "Hair Care",
+      "Styling Products",
+      "Hair Volumizers & Thickeners",
+      "Hair Sprays"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -19938,7 +21136,14 @@
     "name": "באלם הזנה לגוף Belly Balm – לשיקום העור ומניעת סימני מתיחה מועשר בשמן קלנדולה וויטמין E | לחות אינטנסיבית לעור יבש מאוד | נוסחה עשירה ומרגיעה",
     "size": "5 fl oz",
     "categories": [
-      "body","Beauty & Personal Care", "Skin Care", "Body Care", "Body Moisturizers", "Body Butter & Balms", "Maternity Skin Care", "Stretch Mark Care",
+      "body",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Body Care",
+      "Body Moisturizers",
+      "Body Butter & Balms",
+      "Maternity Skin Care",
+      "Stretch Mark Care",
       "moisturizer"
     ],
     "isVegan": true,
@@ -19996,7 +21201,7 @@
       "makeup",
       "face"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 100,
@@ -20023,7 +21228,7 @@
       "makeup",
       "lips"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 50,
@@ -20050,7 +21255,7 @@
       "face",
       "set"
     ],
-     "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 100,
@@ -20074,10 +21279,16 @@
     "name": "מסכות הידרוג'ל לעיניים Jet Lag – לרענון והפחתת נפיחות עם קפאין ופפטידים | לחות עמוקה והרגעה מיידית | למראה עיניים ערני וזוהר",
     "size": "6 זוגות",
     "categories": [
-      "face","Eyes", "Skin Care", "Eye Care", "Eye Masks", "Hydrogel Masks", "Anti-Aging Skincare",
+      "face",
+      "Eyes",
+      "Skin Care",
+      "Eye Care",
+      "Eye Masks",
+      "Hydrogel Masks",
+      "Anti-Aging Skincare",
       "eye-mask"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 50,
@@ -20102,10 +21313,18 @@
     "name": "טיפות ברונזר למראה שזוף וזוהר – Bronzing Drops סרום לחות עם חומצה היאלורונית | למראה שחום טבעי וגימור Dewy | לחיזוק מחסום העור",
     "size": "1 fl oz",
     "categories": [
-      "makeup","Beauty & Personal Care", "Skin Care", "Face Care", "Serums", "Makeup", "Face Makeup", "Bronzers", "Hyaluronic Acid Skincare",
+      "makeup",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Serums",
+      "Makeup",
+      "Face Makeup",
+      "Bronzers",
+      "Hyaluronic Acid Skincare",
       "face"
     ],
-       "isVegan": true,
+    "isVegan": true,
     "isPeta": null,
     "isLB": true,
     "priceMin": 100,
@@ -20371,7 +21590,15 @@
     "name": "טבליות צחצוח ללא פלואוריד – לעיסה, צחצוח ורעננות ללא פלסטיק (Zero Waste) | טעם מנתה מרענן | מושלם לטיולים ולנסיעות | ידידותי לסביבה",
     "size": "60 טבליות X 3",
     "categories": [
-      "teeth","Health & Household", "Personal Care", "Oral Care", "Toothpaste", "Fluoride-Free Toothpaste", "Eco-Friendly Products", "Sustainable Living", "Zero Waste",
+      "teeth",
+      "Health & Household",
+      "Personal Care",
+      "Oral Care",
+      "Toothpaste",
+      "Fluoride-Free Toothpaste",
+      "Eco-Friendly Products",
+      "Sustainable Living",
+      "Zero Waste",
       "oral"
     ],
     "isVegan": true,
@@ -20399,7 +21626,14 @@
     "name": "משחת שיניים לשיניים רגישות ללא פלואוריד – Spearmint & Repair עם ננו-הידרוקסיאפטיט (nHAp) וקסילטול | שיקום האמייל והפחתת רגישות | ללא SLS",
     "size": "מארז 2",
     "categories": [
-      "teeth","Health & Household", "Personal Care", "Oral Care", "Toothpaste", "Fluoride-Free Toothpaste", "Sensitive Teeth Care", "Enamel Repair",
+      "teeth",
+      "Health & Household",
+      "Personal Care",
+      "Oral Care",
+      "Toothpaste",
+      "Fluoride-Free Toothpaste",
+      "Sensitive Teeth Care",
+      "Enamel Repair",
       "oral"
     ],
     "isVegan": true,
@@ -20427,7 +21661,14 @@
     "name": "משחת שיניים מלבינה ללא פלואוריד – Peppermint & Natural Whitening עם קסילטול ופרליט אקולוגי | ללא SLS | הלבנה טבעית והגנה על החניכיים",
     "size": "מארז 2",
     "categories": [
-      "teeth","Oral Care", "Toothpaste", "Fluoride-Free Toothpaste", "Whitening Toothpaste", "Natural Oral Care", "Enamel Care", "Gum Protection"
+      "teeth",
+      "Oral Care",
+      "Toothpaste",
+      "Fluoride-Free Toothpaste",
+      "Whitening Toothpaste",
+      "Natural Oral Care",
+      "Enamel Care",
+      "Gum Protection"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -20454,7 +21695,13 @@
     "name": "מי פה מרוכזים לריח פה – ללא פלואוריד – Spearmint",
     "size": "—",
     "categories": [
-      "teeth","Oral Care", "Mouthwash", "Fluoride-Free Mouthwash", "Breath Fresheners", "Natural Oral Care", "Travel Size Toiletries"
+      "teeth",
+      "Oral Care",
+      "Mouthwash",
+      "Fluoride-Free Mouthwash",
+      "Breath Fresheners",
+      "Natural Oral Care",
+      "Travel Size Toiletries"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -20480,7 +21727,13 @@
     "name": "מדבקות הלבנת שיניים מתקדמות לשיניים רגישות ללא חמצן (Peroxide Free) | בטוח לזגוגית השן (Enamel Safe) | תוצאות מקצועיות בבית",
     "size": "14 טיפולים (28 יחידות)",
     "categories": [
-      "teeth","Health & Household", "Personal Care", "Oral Care", "Teeth Whitening", "Teeth Whitening Strips", "Sensitive Teeth Care"
+      "teeth",
+      "Health & Household",
+      "Personal Care",
+      "Oral Care",
+      "Teeth Whitening",
+      "Teeth Whitening Strips",
+      "Sensitive Teeth Care"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -20507,7 +21760,15 @@
     "name": "ראשי במבוק למברשת שיניים חשמלית – תואם Oral-B סיבים רכים ועדינים | אקולוגי ומתכלה | לשמירה על היגיינת הפה והחניכיים | עיצוב במבוק טבעי",
     "size": "4 יחידות",
     "categories": [
-      "teeth","Health & Household", "Personal Care", "Oral Care", "Toothbrush Replacement Heads", "Manual Toothbrushes", "Eco-Friendly Products", "Sustainable Living", "Natural Living"
+      "teeth",
+      "Health & Household",
+      "Personal Care",
+      "Oral Care",
+      "Toothbrush Replacement Heads",
+      "Manual Toothbrushes",
+      "Eco-Friendly Products",
+      "Sustainable Living",
+      "Natural Living"
     ],
     "isVegan": true,
     "isPeta": true,
@@ -20534,7 +21795,13 @@
     "name": "באלם הארה למראה זוהר – SuperDew Highlighter Balm למראה עור זכוכית (Glass Skin) | ללא נצנצים | שקוף וקליל | מתאים לעור רגיש",
     "size": "0.16 oz",
     "categories": [
-      "face","Beauty & Personal Care", "Makeup", "Face Makeup", "Highlighters", "Sensitive Skin Care", "Natural Beauty",
+      "face",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Highlighters",
+      "Sensitive Skin Care",
+      "Natural Beauty",
       "moisturizer"
     ],
     "isVegan": true,
@@ -20562,7 +21829,14 @@
     "name": "ג'לי שפתיים חלבי של ShineOn, שקדים, ליפגלוס טבעוני לא דביק, לחותי בטעם שוקולד חלבי, משמש ושמן זרעי פטל, לחות, ניקיון",
     "size": "1.13 ounces",
     "categories": [
-      "makeup","Skincare", "Lip Care", "Lip Gloss", "Lip Balms & Moisturizers", "Vegan Beauty", "Hydrating Lip Treatments", "Clean Beauty",
+      "makeup",
+      "Skincare",
+      "Lip Care",
+      "Lip Gloss",
+      "Lip Balms & Moisturizers",
+      "Vegan Beauty",
+      "Hydrating Lip Treatments",
+      "Clean Beauty",
       "lips"
     ],
     "isVegan": true,
@@ -20589,7 +21863,17 @@
     "name": "סרום הרגעה ושיקום SOS Rescue – לטיפול באדמומיות וגירויים עם חומצה היפוכלורית | להרגעת עור רגיש ומגורה | ללא בישום (Fragrance-Free)",
     "size": "59.2ml",
     "categories": [
-      "face","Skincare", "Face Care", "Face Serums", "Treatments & Masks", "Hypochlorous Acid Sprays", "Sensitive Skin Care", "Redness Relief", "Soothing Skincare", "Dermatological Skincare", "Fragrance-Free Skincare",
+      "face",
+      "Skincare",
+      "Face Care",
+      "Face Serums",
+      "Treatments & Masks",
+      "Hypochlorous Acid Sprays",
+      "Sensitive Skin Care",
+      "Redness Relief",
+      "Soothing Skincare",
+      "Dermatological Skincare",
+      "Fragrance-Free Skincare",
       "serum"
     ],
     "isVegan": true,
@@ -20617,7 +21901,17 @@
     "name": "קרם לחות לפנים – אס-או-אס – חומצה היאלורונית, סרמידים, שיקום מחסום העור, שיקום נזק, לעור רגיש, לאדמומיות",
     "size": "—",
     "categories": [
-      "face","Skincare", "Face Care", "Moisturizers", "Face Creams", "Sensitive Skin Care", "Barrier Repair", "Ceramide Skincare", "Hyaluronic Acid Skincare", "Redness Relief", "Soothing Skincare",
+      "face",
+      "Skincare",
+      "Face Care",
+      "Moisturizers",
+      "Face Creams",
+      "Sensitive Skin Care",
+      "Barrier Repair",
+      "Ceramide Skincare",
+      "Hyaluronic Acid Skincare",
+      "Redness Relief",
+      "Soothing Skincare",
       "moisturizer"
     ],
     "isVegan": true,
@@ -20671,7 +21965,15 @@
     "name": "קונסילר-סרום Swipe – כיסוי גבוה והבהרת אזור העיניים בגוון 1.0 Fair/Neutral | מועשר בחומצה היאלורונית וסנטלה | פורמולה משלבת טיפול ואיפור",
     "size": "0.22 Fl Oz",
     "categories": [
-      "makeup","Beauty & Personal Care", "Makeup", "Face Makeup", "Concealers", "Skin Care", "Eye Care", "Serums", "Hyaluronic Acid Skincare",
+      "makeup",
+      "Beauty & Personal Care",
+      "Makeup",
+      "Face Makeup",
+      "Concealers",
+      "Skin Care",
+      "Eye Care",
+      "Serums",
+      "Hyaluronic Acid Skincare",
       "face"
     ],
     "isVegan": true,
@@ -20699,7 +22001,14 @@
     "name": "שפתון טיפולי צבעוני LipSoftie – לחות וגוון במוצר אחד בטעם תפוז דם ווניל | גוון אדום-כתום שקוף וזוהר | לשיקום שפתיים יבשות",
     "size": "0.35 ounces",
     "categories": [
-      "makeup","Beauty & Personal Care", "Skin Care", "Lip Care", "Lip Balms & Treatments", "Makeup", "Lip Makeup", "Natural Beauty",
+      "makeup",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Lip Care",
+      "Lip Balms & Treatments",
+      "Makeup",
+      "Lip Makeup",
+      "Natural Beauty",
       "lips"
     ],
     "isVegan": true,
@@ -20727,7 +22036,15 @@
     "name": "קרם הגנה מינרלי SOS FaceGuard SPF 30 – הגנה ושיקום עם סרמידים ואבץ לעור רגיש | הגנה רחבת טווח | מרקם קליל נטול שומן | נבדק דרמטולוגית",
     "size": "50ml",
     "categories": [
-      "sun","Beauty & Personal Care", "Skin Care", "Face Care", "Sunscreen", "Mineral Sunscreen", "Facial Moisturizers", "Sensitive Skin Care", "Dermatologist Tested",
+      "sun",
+      "Beauty & Personal Care",
+      "Skin Care",
+      "Face Care",
+      "Sunscreen",
+      "Mineral Sunscreen",
+      "Facial Moisturizers",
+      "Sensitive Skin Care",
+      "Dermatologist Tested",
       "face"
     ],
     "isVegan": true,
@@ -20743,7 +22060,7 @@
         "asin": "B0FTZHT24Z",
         "currency": "USD",
         "priceUSD": 32.0,
-                "freeShipOver": 49
+        "freeShipOver": 49
       }
     ],
     "isKids": false,
@@ -21276,7 +22593,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0F9NYQ76T.jpg"
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "yuni-b07f2t14rb",
@@ -21327,7 +22644,7 @@
       {
         "store": "amazon-uk",
         "storeLabel": "Amazon בריטניה",
-        "url": "https://amzn.to/46sLXLh",
+        "url": "https://www.amazon.co.uk/dp/B0BHHYP2PL?tag=nocrueltyil-20",
         "asin": "B0BHHYP2PL",
         "currency": "ILS",
         "priceUSD": null,
@@ -21494,7 +22811,8 @@
       "serum",
       "hydrating",
       "soothing",
-      "anti-aging", "sets"
+      "anti-aging",
+      "sets"
     ],
     "isVegan": true,
     "isPeta": null,
@@ -21808,7 +23126,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b09myc86pg",
@@ -21836,7 +23154,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b09l5ggn1z",
@@ -21864,7 +23182,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b00yz1j3fi",
@@ -21895,7 +23213,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B00YZ1J3FI.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -21924,7 +23242,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b082yfmntk",
@@ -21952,7 +23270,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0040zhuh2",
@@ -22012,7 +23330,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0cmz87h5j",
@@ -22040,7 +23358,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b003z4qgre",
@@ -22072,7 +23390,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B003Z4QGRE.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22101,7 +23419,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b003z4mcja",
@@ -22129,7 +23447,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0dhjh8534",
@@ -22157,7 +23475,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0cmz1g5f9",
@@ -22185,7 +23503,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b00gcylkc0",
@@ -22217,7 +23535,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B00GCYLKC0.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22281,7 +23599,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B0B6Q6BSHC.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22312,7 +23630,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B082YGK39W.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22345,7 +23663,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B07NJ4H5S3.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22376,7 +23694,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B082YFN2ZK.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22441,7 +23759,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B00B4C35IW.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22473,7 +23791,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B004DTQ9L8.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22536,7 +23854,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B082YH2CD8.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22569,7 +23887,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B07PX9CGD5.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22598,7 +23916,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0071hie94",
@@ -22626,7 +23944,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0cxqz3d4t",
@@ -22654,14 +23972,22 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0cmz44q3l",
     "brand": "Acure",
     "name": "Acure Radiance Overnight Wrinkles Lackluster",
     "size": null,
-    "categories": ["Skincare", "Face Care", "Moisturizers", "Night Creams", "Anti-Aging Skincare", "Brightening Skincare", "Treatments & Masks"],
+    "categories": [
+      "Skincare",
+      "Face Care",
+      "Moisturizers",
+      "Night Creams",
+      "Anti-Aging Skincare",
+      "Brightening Skincare",
+      "Treatments & Masks"
+    ],
     "isVegan": true,
     "isPeta": true,
     "isLB": true,
@@ -22682,7 +24008,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0dhj73pqw",
@@ -22710,14 +24036,22 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0czg69np7",
     "brand": "Acure",
     "name": "Acure Mineral Sunscreen Squalane Oxide",
     "size": null,
-    "categories": ["Skincare", "Face Care", "Sunscreen", "Mineral Sunscreen", "Squalane Skincare", "Zinc Oxide Sunscreen", "Moisturizing Sunscreen"],
+    "categories": [
+      "Skincare",
+      "Face Care",
+      "Sunscreen",
+      "Mineral Sunscreen",
+      "Squalane Skincare",
+      "Zinc Oxide Sunscreen",
+      "Moisturizing Sunscreen"
+    ],
     "isVegan": true,
     "isPeta": true,
     "isLB": true,
@@ -22738,14 +24072,22 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0fsx3n7nv",
     "brand": "Acure",
     "name": "Acure Peptide Serum Face Skin",
     "size": null,
-    "categories": ["Skincare", "Face Care", "Face Serums", "Peptide Skincare", "Anti-Aging Skincare", "Hydrating Treatments", "Dermatological Skincare"],
+    "categories": [
+      "Skincare",
+      "Face Care",
+      "Face Serums",
+      "Peptide Skincare",
+      "Anti-Aging Skincare",
+      "Hydrating Treatments",
+      "Dermatological Skincare"
+    ],
     "isVegan": true,
     "isPeta": true,
     "isLB": true,
@@ -22766,14 +24108,22 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b0czg4vcyk",
     "brand": "Acure",
     "name": "Acure Invisible Sunscreen Stick Vitamin",
     "size": null,
-    "categories": ["Skincare", "Face Care", "Sunscreen", "Sunscreen Sticks", "Mineral Sunscreen", "Vitamin Infused Skincare", "Travel Size Toiletries"],
+    "categories": [
+      "Skincare",
+      "Face Care",
+      "Sunscreen",
+      "Sunscreen Sticks",
+      "Mineral Sunscreen",
+      "Vitamin Infused Skincare",
+      "Travel Size Toiletries"
+    ],
     "isVegan": true,
     "isPeta": true,
     "isLB": true,
@@ -22794,7 +24144,7 @@
     "isKids": false,
     "isMen": false,
     "isDiscounted": false,
-    "image": null
+    "image": "assets/img/icons/bag-heart.png"
   },
   {
     "id": "Acure-b01b4hwfo6",
@@ -22802,7 +24152,15 @@
     "name": "סקראב פנים מבהיר (פילינג) – שטיפת פנים עם אצות וחרסית ירוקה",
     "size": "4 fl oz",
     "categories": [
-      "טיפוח עור","Skincare", "Face Care", "Facial Cleansers", "Exfoliators", "Facial Polishes & Scrubs", "Brightening Skincare", "Clay Masks & Cleansers", "Natural Skincare",
+      "טיפוח עור",
+      "Skincare",
+      "Face Care",
+      "Facial Cleansers",
+      "Exfoliators",
+      "Facial Polishes & Scrubs",
+      "Brightening Skincare",
+      "Clay Masks & Cleansers",
+      "Natural Skincare",
       "פנים",
       "פילינג",
       "ניקוי"
@@ -22825,7 +24183,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B01B4HWFO6.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   },
   {
@@ -22834,7 +24192,13 @@
     "name": "שמפו אולטרה-לחות עם שמן ארגן (האריזה עשויה להשתנות)",
     "size": "8 fl oz",
     "categories": [
-      "שיער","Hair Care", "Shampoos", "Hydrating Shampoos", "Moisturizing Shampoos", "Argan Oil Hair Care", "Dry Hair Treatments",
+      "שיער",
+      "Hair Care",
+      "Shampoos",
+      "Hydrating Shampoos",
+      "Moisturizing Shampoos",
+      "Argan Oil Hair Care",
+      "Dry Hair Treatments",
       "שמפו",
       "לחות"
     ],
@@ -22856,7 +24220,7 @@
       }
     ],
     "isKids": false,
-    "image": "assets/img/products/B078ZHPLNR.jpg",
+    "image": "assets/img/icons/bag-heart.png",
     "isDiscounted": false
   }
 ]

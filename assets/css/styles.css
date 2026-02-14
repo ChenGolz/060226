@@ -15,7 +15,7 @@
 */
 @font-face{
   font-family: "Gveret Levin";
-  src: url("/assets/fonts/Gveret%20Levin-AlefAlefAlef%20Regular.woff2") format("woff2");
+  src: url("assets/fonts/Gveret%20Levin-AlefAlefAlef%20Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -64,8 +64,7 @@ img{ max-width:100%; height:auto; display:block; }
 
 .muted{ color: var(--muted); }
 .mini{ font-size: 13px; color: var(--muted2); font-weight: var(--fw-medium); }
-h1,h2,h3{ line-height: 1.15; letter-spacing: .2px; }  font-weight: var(--fw-semibold);
-}
+h1,h2,h3{ line-height: 1.15; letter-spacing: .2px; font-weight: var(--fw-semibold); }
 h1{ font-size: clamp(30px, 4vw, 44px); margin:0 0 10px; }
 h2{ font-size: clamp(20px, 2.6vw, 28px); margin:0 0 10px; }
 h3{ font-size: 18px; margin:0 0 8px; }
