@@ -15,7 +15,7 @@
 */
 @font-face{
   font-family: "Gveret Levin";
-  src: url("/assets/fonts/Gveret%20Levin%20AlefAlefAlef%20Regular.woff2") format("woff2");
+  src: url("assets/fonts/Gveret%20Levin-AlefAlefAlef%20Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -64,8 +64,7 @@ img{ max-width:100%; height:auto; display:block; }
 
 .muted{ color: var(--muted); }
 .mini{ font-size: 13px; color: var(--muted2); font-weight: var(--fw-medium); }
-h1,h2,h3{ line-height: 1.15; letter-spacing: .2px; }  font-weight: var(--fw-semibold);
-}
+h1,h2,h3{ line-height: 1.15; letter-spacing: .2px; font-weight: var(--fw-semibold); }
 h1{ font-size: clamp(30px, 4vw, 44px); margin:0 0 10px; }
 h2{ font-size: clamp(20px, 2.6vw, 28px); margin:0 0 10px; }
 h3{ font-size: 18px; margin:0 0 8px; }
@@ -5322,18 +5321,63 @@ html, body, main, button, input, select, textarea {
   }
 }
 
-
-/* ============================
-   HERO IMAGE FIT (no cropping)
-   ============================
-   Shows the full hero photo instead of cropping it.
-   Put this block at the END of the file so it wins over older rules.
-*/
-.heroMedia img,
-.hero.heroCompact .heroMedia img{
-  width: 100%;
-  height: 100% !important;
-  object-fit: contain !important;
-  object-position: 50% 15% !important; /* adjust if needed */
-  background: rgba(255,255,255,.10);
+/* KBWG FIX v7: deals cards + drawer nav */
+/* Deals page: ensure card backgrounds include all text (mobile especially) */
+.page-deals .dealsGrid{ align-items:stretch; }
+.page-deals .dealCard{
+  display:flex !important;
+  flex-direction:column !important;
+  height:100%;
+  overflow:hidden; /* keep rounded corners consistent */
 }
+.page-deals .dealMedia{ flex:0 0 auto; }
+.page-deals .dealTop{ flex:0 0 auto; }
+.page-deals .dealMeta{ flex:0 0 auto; }
+.page-deals .dealCta{ margin-top:auto; }
+
+/* Prevent long text from “spilling” visually */
+.page-deals .dealName{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  overflow:hidden;
+}
+.page-deals .dealWhy{ 
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  overflow:hidden;
+}
+
+/* Mobile drawer nav: make dropdowns work even after JS moves the nav into <body> */
+@media (max-width: 920px){
+  nav.kbwgDrawerNav{
+    padding-bottom: calc(22px + env(safe-area-inset-bottom, 0px)) !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding-bottom: 90px;
+  }
+
+  /* Hide dropdown by default, show only when <details> is open */
+  nav.kbwgDrawerNav details.navGroup > .navDrop{
+    display:none !important;
+    position:static !important;
+    inset:auto !important;
+    transform:none !important;
+    margin: 8px 0 12px !important;
+    padding: 6px !important;
+    width: 100% !important;
+    background: rgba(255,255,255,.78) !important;
+    border: 1px solid rgba(0,0,0,.08) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 18px rgba(0,0,0,.08) !important;
+  }
+  nav.kbwgDrawerNav details.navGroup[open] > .navDrop{ display:grid !important; }
+
+  /* Keep items readable & aligned RTL */
+  nav.kbwgDrawerNav a{
+    justify-content:flex-start !important;
+    text-align:right !important;
+  }
+}
+/* /KBWG FIX v7 */
+
