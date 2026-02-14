@@ -5251,3 +5251,31 @@ html, body, main, button, input, select, textarea {
 }
 /* /KBWG FIX v7 */
 
+
+/* KBWG FIX v8: iPhone deals card overflow (keep text inside the card) */
+.page-deals .dealCard{
+  height: auto !important;      /* override previous height:100% */
+  min-height: 0 !important;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+
+/* Let flex children shrink (prevents long words from spilling outside) */
+.page-deals .dealTop,
+.page-deals .dealBrandRow,
+.page-deals .dealBrandRow > div{
+  min-width: 0;
+}
+
+/* Strong wrapping rules for long Latin words / URLs */
+.page-deals .dealBrand,
+.page-deals .dealName,
+.page-deals .pMetaPill{
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Extra safety: keep the card background covering all content */
+.page-deals .dealCard > *{
+  width: 100%;
+}
