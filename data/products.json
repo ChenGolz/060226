@@ -15127,8 +15127,7 @@
         "url": "https://www.amazon.com/Attitude-Verified-Cleanser-Dermatologically-Products/dp/B07VC8BZB1?tag=nocrueltyil-20",
         "asin": "B07VC8BZB1",
         "currency": "USD",
-        "priceUSD": 17.65,
-        "freeShipOver": 49
+        "priceUSD": 17.65
       }
     ],
     "isKids": true,
@@ -24214,8 +24213,8 @@
         "url": "https://www.amazon.com/dp/B078ZHPLNR?tag=nocrueltyil-20",
         "asin": "B078ZHPLNR",
         "currency": "USD",
-        "priceUSD": null,
-        "freeShipOver": null,
+        "priceUSD": 12,
+        "freeShipOver": 49,
         "isDiscounted": false
       }
     ],
